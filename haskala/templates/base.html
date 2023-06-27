@@ -22,7 +22,9 @@
         {% endif %}
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/haskala.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/overrides.css' %}">
 
         {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
@@ -30,11 +32,18 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+    <div class="wrapper">
         {% wagtailuserbar %}
+
+        {% include 'partials/mainmenu.html' %}
 
         {% block content %}{% endblock %}
 
+        {% include 'partials/footermenu.html' %}
+    </div>
+
         {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/bootstrap.bundle.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/haskala.js' %}"></script>
 
         {% block extra_js %}
