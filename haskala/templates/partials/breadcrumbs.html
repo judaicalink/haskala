@@ -1,0 +1,17 @@
+{% load static %}
+{% load wagtailcore_tags %}
+
+
+<nav class="bread-crumbs">
+    {% if self.get_ancestors|length > 1 %}
+        <ul>
+            {% for p in self.get_ancestors %}
+                {% if p.is_root == False %}
+                    <li class="first"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            <li class="last">{{ self.title }}</li>
+        </ul>
+    {% endif %}
+</nav>
