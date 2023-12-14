@@ -1,0 +1,53 @@
+@prefix hs: <http://haskala-libarary.net/haskala#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+# Define the Person class
+hs:Person rdf:type rdfs:Class;
+    rdfs:label "Person"@en.
+
+# Define properties for the Person class
+hs:hasName rdf:type rdf:Property;
+    rdfs:label "Name"@en.
+
+hs:prefLabel rdf:type rdf:Property;
+    rdfs:label "Preferred Label"@en.
+
+hs:hebrewName rdf:type rdf:Property;
+    rdfs:label "Hebrew Name"@en.
+
+hs:germanName rdf:type rdf:Property;
+    rdfs:label "German Name"@en.
+
+hs:sameAs rdf:type rdf:Property;
+    rdfs:label "Same As"@en.
+
+hs:VIAFID rdf:type rdf:Property;
+    rdfs:label "VIAF ID"@en.
+
+hs:hasGender rdf:type rdf:Property;
+    rdfs:label "Gender"@en.
+
+hs:hasOccupation rdf:type rdf:Property;
+    rdfs:label "Occupation"@en.
+
+# Define the Place class
+hs:Place rdf:type rdfs:Class;
+    rdfs:label "Place"@en.
+
+# Define a property for the Place class
+hs:hasName rdf:type rdf:Property;
+    rdfs:label "Name"@en.
+
+# Occupation
+hs:Occupation rdf:type rdfs:Class;
+    rdfs:label "Occupation"@en.
+
+# Book
+hs:Book rdf:type rdfs:Class;
+    rdfs:label "Book"@en.
+
+# Properties for the Book class
+hs:hasTitle rdf:type rdf:Property;
+    rdfs:label "Title"@en.
