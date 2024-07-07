@@ -1,7 +1,7 @@
 anyascii==0.3.2
 asgiref==3.7.2
 beautifulsoup4==4.11.2
-certifi==2023.7.22
+certifi==2024.7.4
 charset-normalizer==3.3.2
 defusedxml==0.7.1
 Django==4.1.13
