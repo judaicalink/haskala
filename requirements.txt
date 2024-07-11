@@ -30,6 +30,6 @@ SPARQLWrapper==2.0.0
 sqlparse==0.5.0
 telepath==0.3.1
 urllib3==2.2.2
-wagtail==4.1.9
+wagtail==5.2.6
 webencodings==0.5.1
 Willow==1.6.2
