@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_new_edition_general_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_new_edition_general_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_new_edition_general_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_new_edition_general_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="24" avg_row_length="682" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:02" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 80 (field_new_edition_general_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_new_edition_general_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">מחבר &lt;strong&gt;האגרת הראשונה&lt;/strong&gt; המובאת כאן הוא ''אברהם פריצול'', אשר נולד ב- 1451 באוויניון ונפטר אחרי 1525 בפרארה (האנצ' העברית). הוא היה פרשן מקרא, חוקר וגאוגרף. ספרו &lt;ins&gt;אגרת ארחות עולם&lt;/ins&gt;  (ונציה, תמ&quot;ז; לטינית: אוכספורד, 1691 - ולפי וינוגרד היו מהדורות נוספות של הספר, כגון אוקספורד 1747, 1767 ועוד) הוא &quot;הספר הגיאוגרפי העברי הראשון&quot;.
+בסוף החלק הראשון של אותה אגרת, ולפני החלק השני, הוסיף המביא לדפוס את &lt;ins&gt;מאמר מגיד חדשות&lt;/ins&gt; מאת ''נפתלי הרץ וייזל''.
+
+לגבי &quot;סוג המהדורה החדשה&quot;, לנדא הוסיף הן הקדמות והן הערות שוליים.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2082</field>
+		<field name="revision_id">2082</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">יערי נשען על השוואה בין כתב היד של הטקסט המקורי לבין צורתו המודפסת.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">בספרו של יצחק סטנוב &lt;ins&gt;ספר איוב מתורגם אשכנזית&lt;/ins&gt; רשום מחירם של מספר ספרים, נכון לשנת 1799. ביניהם מופיע:
+&quot;תפלה - מתורגמת אשכנזית מר' דוד פרידלענדר - א&quot;רט&quot;</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">על &quot;הטקסט הישן&quot; ראו לשונית &quot;תרגום&quot;.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">לפי דובנא, המביא לדפוס, הספר הודפס ע&quot;י &quot;המחבר בעצמו באמשטרדם בשנת תק&quot;ג, ולא הדפיס ממנו רק חמשים ספרים, ולא הובאו כי אם אל אוצרות הגבירים הספרדים שבאמשטרדם יצ&quot;ו, ולכן כל מבקשו לא ישיגהו, אם לא יתן הו רב באהבתו&quot;.
+כך הוא מתאר את הספרות העומדת לרשות הקורא המתעניין במליצה עברית: &quot;אם עמדו איזה מחברים קדמונים וחברו ספרים בחכמת המשל והמליצה ובשירים יקרים, כמו ספרי האלחריזי והבדרשי והפניני והנקדן ובן סהולא ובן חסדאי, הנה מעטים המה הספרים ההם, גם קצתם לא דרכו בנתיבות מליצות ספרי הקודש, אשר עניניהם ומוסרם... וההצלחה האמתית תכליתם, והאושר הנצחי פרי כוונתם, ועם קוצר מאמריהם מאד עמקו מחשבותיהם, לא כן שירי התחכימוני וספר המחברות, כי רוב עניניהם בנוים על מעשים דלי התכלית ורזי הכוונה...&quot;</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">כפי שמציין סנדלר, הביאור לתורה, עמ' 42: &quot;ספר הדקדוק &quot;לשון הזהב&quot; למנדלסון אינו אלא העתקה, בשנויים קלים ובתוספת שער, מתוך החלק הדקדוקי של &quot;אור לנתיבה&quot;, יש גם הרושם כאילו רובם של שינויים אלה לא באו אלא להעיד על אי תלותה של מחברת זו בהקדמה &quot;אור לנתיבה&quot;...&quot;</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">יש להוסיף אוצפיה: פרסום מתוך המאסף.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">&quot;ספר מגלת קהלת עם באור קצר ומספיק להבנת הכתוב על פי פשוטו לתועלת התלמידים&quot;, ברלין תק&quot;ל</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">כפי שסטנוב מציין בהקדמתו, מטרות אחדות שם לו בפירושו זה: &quot;א' לא הלכתי בגדולות ובנפלאות ממני, ב' לא צללתי במי הפילסופי' עמוק מאור השכל, ג' לא סרתי מלכת בדרך המפרשים הישנים... ד' סדרתי פרקיו זה אל זה לידע ולהודיע כוונתו בפרק המיוחד להם...&quot;
+
+
+בסוף הספר: &quot;פירוש מהמלות זרות אשר במאמר הנכבד מורה צדק&quot;. כפי שסטנוב מציין שם, &quot;חובה על כל מחבר לפחת רוח חיים במליצותיו למען לא יהיה כדורש אל המתים&quot;. לכן הוא מביא רשימת מלים שהכין &quot;הרב החכם ר' שמואל בר&quot;י אב תבון מעתיק ס' המורה מערבי אל עברי בהיותו כמוכרח לחדש מלות זרות משקלי שמות ובניני פעלים חדשים בהעתקתו על כן הוכרח לפרש דבריו&quot;. סטנוב מקצר את דבריו הארוכים, ומוסיף אחרות, &quot;ועוד ראיתי כי טוב להורות על מקומם במלות הגיון ולהעתיק רובי המלות ללשון אשכנז ולטיין, למען יבין המעיין ולא יתעה&quot;.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">השוואה בין נוסח מהדורת תק&quot;ט, אמסטרדם (כרוכה עם הספר &quot;נגיד ומצוה&quot; של צמח, יעקב בן חיים), מעלה כי מדובר בטקסט ערוך על ידי סטנוב: ההקדמה שבה סיפור המסגרת דומה מאוד למקור, ואילו לטקסט הנבואי עצמו הוסיף סטנוב ביאור.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2253</field>
+		<field name="revision_id">2253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">חלק מן התרגום הינו מאת מנדלסון, כפי שמציין הפרשן בהקדמתו. התרגום הזה הופיע קודם בתוך &quot;קליינען פילאזאפישען שריפטען&quot; וב&quot;אור לנתיבה&quot;.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">בטבלאות הדיקדוקיות, מוסיף אביגדור לוי תרגום לגרמנית (באותיות עבריות) של מונחים אשר הופיעו בעברית. למשל, לצד &quot;מקור&quot; [הפועל] נרשם &quot;אינפיניטיף&quot; וכן הלאה.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2272</field>
+		<field name="revision_id">2272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">הרב נותן ההסכמה מציין הבדלים חשובים ושיפורים שהוכנסו למהדורה הנוכחית, הנוגעים בצורתו של הספר: כשהוא מזכיר את 'לוח הבנין' המצורף לספר, הוא מציין כי 'לא כראשונם שנעשו על לוח גדול כאחת והיה צריכים לקפלו ומחמת הקיפול הלך ונקרע ונשחת. גם לא היה להקורא לנחת. לא כן עתה נעשה בבינה יתירה. ועל דפין קטנים וקצרים מסודרה. למען יעמוד ימים רבים ולא ינתק במהרה. ומתוקן בסידור חדש ויפה. בשכל טוב ומנוקה היטב בכפה. והטיבו לעשות בו הוספה. בתועלת רבות לתרופה. ובארו על הלוחות...'</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2277</field>
+		<field name="revision_id">2277</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">&lt;strong&gt;ספר הגדרים&lt;/strong&gt; למנחם בן אברהם פרפיניאן יצא לאור בסלוניקי בשנת שכ&quot;ז</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">מהדורה חדשה של תרגום &lt;strong&gt;ספר המדות&lt;/strong&gt; לאריסטו.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">מהדורה חדשה של תרגום &lt;strong&gt;ספר המדות&lt;/strong&gt; לאריסטו.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">לפי וינוגרד 1993 - כעשר שנים קודם לכן, ראתה אור מהדורה אחרת של הספר (וינה 1757). וינוגרד מציין לגבי מהדורה זו: &quot;עם לטינית&quot;.
+הספר הודפס מספר פעמים במהלך התקופה, בשילוב עם ספרים אחרים, לפי בחירתו של המביא לדפוס. כך למשל:
+
+1)   זכר רב : ... בו שרשי לשון הקודש... / אשר יסד וחקר... בנימין מוספיא... ; והיה... חתום וסתום עד שקמתי... ירחמיאל המכונה פלק בן כה&quot;ר נתן כהן... ופתרתי אותו בל&quot;א, והצבתי ציונים על כל שורש מקומו בתנ&quot;ך, ברין תק&quot;ן.  
+
+2) נ&quot;ה שולמן, זכר רב..., שקלוב 1804. הוציא את הספר יחד עם:
+המצאה חדשה מדבר שין, מאת פיזא, משה בן יהודה</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">המביא לדפוס מציין בהקדמתו את תרומתו לספר: תוספות והבהרות שהוסיף (וכוונות שהיו לו להוספות נוספות, שנמנע מהן כי &quot;חסתי על הוצאות הדפוס...&quot; וגם: &quot;אך מעמדי, ומלאכתי ובריאת גופי לא נתנוני לבצע מעשי&quot;</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">בתוך ההקדמה מעיד המוציא לאור על כוונותיו: &quot;מה טוב ומה נעים להדפיס ספר זה לזכו' את הרבים... וזאת להודיע שלא באתי בס' הזה להוסי' או לגרוע או לחדש דבר על גבול שגבלו הראשונים אנשי שם אשר מעולם היה לבם פתוח כפתחו של אולם ולא באתי עד הנה אלא להכזי' העטרה ליושנה כדי שנוכל להבין במקרא סודות התורה התלוים בשערה...&quot;</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">ספר רוח חן בעיבודו של זמושץ, ישראל 
+יצא לראשונה ב-1744
+)&lt;strong&gt;Ruderman 1995&lt;/strong&gt;, 332)
+
+&lt;strong&gt;ספר רוח חן&lt;/strong&gt; הוא פרשנות של אבן תיבון על &lt;strong&gt;מורה נבוכים&lt;/strong&gt; לרמב&quot;ם</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">החיבור &lt;ins&gt;עלים לתרופה&lt;/ins&gt; כולל הדגמה של מלאכת הביאור לתורה, שהובטח לפרסם בקרוב.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2402</field>
+		<field name="revision_id">2402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">חלק אחד מהספר הוא הדפסה מחודשת של:
+
+Gedanken über Wessely's Moseide, von Dr. W Fr. Hufnagel (: im 2ten Bande IV Heft VII Abtheilung für Aufklärung und Menschenwohl Pag. 311:)</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2415</field>
+		<field name="revision_id">2415</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">ישנה מהדורה מוקדמת יותר של הספר: 1744.</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_general_notes_value">לפי הקדמתו של פרידלענדר, ה&quot;מאמר הראשון&quot; הוא תרגום ותמצית של ספרו פעדון לקהל שאינו מבין גרמנית; ה&quot;מאמר השני&quot; הוא &quot;דרוש קשר הנפש עם הגוף... וגם הוא לרבינו משה נ&quot;ע ורצוף היה בתוך אגרת אשר כתב המנוח למיודעו החכם הרב צבי הירש ליבשיץ זכרונו לברכה.&quot; עבודתו של פירדא: הוספת באור לתרגום/באור של פרידלענדר ותוספות משלו, כגון: &quot;מן שכר ועונש והנבואה&quot; (עמ' 64 - 66); &quot;התרת השאלה מענין ההכנה&quot; (עמ' 66 - 67).</field>
+		<field name="field_new_edition_general_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

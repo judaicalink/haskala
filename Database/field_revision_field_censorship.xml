@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_censorship">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_censorship_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_censorship_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_censorship" engine="InnoDB" version="10" row_format="Dynamic" rows="14" avg_row_length="1170" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:15" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 27 (field_censorship)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_censorship">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">Avec Approbation &amp; Privilége du Roi, &amp; de la Société Royale de Metz</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">Bewilligung der K. und K. Zensur</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2052</field>
+		<field name="revision_id">2052</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">כפי שמוזכר בספר, הטקסט צונזר לפני הדפוס</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">יש אישור של הצנזור:
+
+W.B.A. de Steinwehr</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2106</field>
+		<field name="revision_id">2106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">חותמת הצנזורה מופיעה על גבי שער הספר</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">בעמוד השער:
+Vidi C. Fischer
+Pragae 3. Octobris 1808</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2264</field>
+		<field name="revision_id">2264</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;הצנזור - הרץ הומברג? ראו שדה &quot;הערות&quot;. יש לבדוק שוב על גבי הספר.&lt;/p&gt;
+</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">מאחורי עמוד השער, אישור מאת קארל פישר, הצנזור.</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">אישור הצנזור,
+Carolus Fischer</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">על גבי עמוד השער רשום:
+Carlous Fischer
+Caes. Regius Censor, Revisor &amp; Translatior in Hebraicis.</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">בעמוד השער</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2416</field>
+		<field name="revision_id">2416</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">חותמת הצנזורה מופיעה בעמוד השער</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">ראו עמ' [4-5]</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2477</field>
+		<field name="revision_id">2477</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_censorship_value">Yes</field>
+		<field name="field_censorship_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

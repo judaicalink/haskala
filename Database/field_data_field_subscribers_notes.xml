@@ -1,0 +1,2047 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_subscribers_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_subscribers_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_subscribers_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_subscribers_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="52" avg_row_length="1575" data_length="81920" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:10" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 174 (field_subscribers_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_subscribers_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1991</field>
+		<field name="revision_id">1991</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">בהקדמה לקס מזכיר סובסקריבנטים שאת שמותיהם התכוון לפרסם בכרך שני (לא ברור אם יש כזה)
+ס.ל.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים הכוללת בשמות לא יהודים רבים. גם שם שני שמות של נשים:
+Dem. Henriette Hirschen, in Schoenebeck;
+Dem. Wilhelmine Schaefer, in Schoenebeck</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חתומים - 3 עמ' - יש להעתיק !!
+
+לפני רשימת השמות, מסביר המביא לדפוס כי הוא לא הסכים &quot;לעכב מלאכת הדפוס עד כנוס כל החתומים וגם לא רשמתי פה רק אלה שמות אשרר שלחו את ידם טרם כלות הספר והבאים אחריהם אם שמם פה נעלמים אל ירע בעיניהם&quot;.
+
+לדברי קסטנברג-גלדשטיין, יהודים בארצות בוהמיה, עמ' 161, רשימת החותמים תושבי פראג מצביעה על העניין שגילו יהודי הקהילה בספר מעין זה. לטענתה, לא רק יהודים המוכרים לנו מתולדות ההשכלה, אלא גם אישים שהיו פעילים בתחום הכלכלה והפוליטיקה. לדבריה (עמ' 161):
+&quot;Das bedeutet, daß Baruch Jeitteles und Israel Landau, die Wortführer der Prager Aufklärung in den neunziger Jahren, nich isoliert waren, sondern sich auf eine Peripherie von aktiv Interessierten, meist aus den gehobenen Schichten, stützen konnten.&quot;</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">&lt;ins&gt;Subscribers&lt;/ins&gt;:
+
+
+(Berlin) אבר ליב חלומניץ
+
+(Kassel) אברהם
+
+(Prague) אברהם דושניס
+
+(Königsberg) אברהם דרעזדן
+
+(Amsterdam)אברהם ירושלמי
+
+(Berlin) אברהם צילץ
+
+(Vienna) אברהם ראנשבורג
+
+(פו&quot;מ, Berlin) אברהם שטעליץ
+
+(Berlin) אברהם שלאחוב
+
+(Berlin) אברם ב&quot;ר משולם
+
+(Berlin) אהרון האללי
+
+(Prague) אהרן בער קוטנפלוין
+
+(Berlin) אהרן צבי
+
+(Berlin) אולמן (אולמא), משה בר&quot;י
+
+ungenannte, אונדגנאנטי (Vienna)
+
+(Königsberg) אופנהיים, זיסקינד ובניו
+
+(Königsberg) איגר, חיים
+
+(Königsberg) איגר, קאפל
+
+(Bleicherode) איזק איממנראדי
+
+(Bleicherode) איזק בלייכראדי
+
+(Berlin) איזק פ&quot;ד
+
+(Berlin) אייזק בר&quot;נ ה&quot;ש
+
+(Berlin) אייזק דעסויא
+
+(Berlin) איסור ניקלשבורג
+
+(Potsdam) איצק א&quot;ה
+
+(Berlin) איצק בר&quot;מ מליסא
+
+(Potsdam) איצק ה&quot;ס
+
+(Halberstadt) איצק מעלהויזן
+
+קרעפעלד (פו&quot;מ), איצק
+
+(Berlin) אלחנן ברי&quot;ל
+
+(Berlin) אלי' צבי
+
+(Königsberg) אליה קארנויא
+
+(Amsterdam) אמרספורט, בנימין
+
+(Berlin) אנשיל עשווא
+
+(Vienna) אנשל יעסניץ
+
+(Berlin) אסתר אשת ר&quot;ל כהן
+
+(Hamburg) אפטרויד, ליב
+
+(Hamburg) אפפנהיים,אלי'
+
+(Berlin) אפרים וויימאר
+
+(Berlin) אפרים פרידלאנד
+
+(Vienna) ארנשטיין, בילקה
+
+(Vienna) ארנשטיין, דוד
+
+Arnstein, Natan von, ארנשטיין, נתן (Vienna)
+
+Arnstein, Franziska (Fanny) von, ארנשטיין, פעגלכה (Vienna)
+
+(Nancy) ארשל, בער
+
+(Amsterdam) אשר בר&quot;א בר&quot;פ
+
+(Breslau) בארטנשטיין, הירש
+
+(Prague) בארייט, דוד
+
+(Amsterdam) בארקי, לוי
+
+(Berlin) בונם ברא&quot;ד
+
+(Berlin) בורכארד, אסתר
+
+(Berlin) בורכארד, האנכי
+
+(Berlin) בילכה בת ר' דניאל
+
+(Berlin) הירץ בינג
+
+(Amsterdam) בינג, משה רייז
+
+(Amsterdam) בינגר, זלמן
+
+(Amsterdam) חיים בינגר
+
+(Amsterdam) בינגר, ישיע
+
+(Berlin) בנימן וואלף
+
+(Berlin) בעהם, משה
+
+(Berlin) בענדיט נייאבורג
+
+(Königsberg) בענדיט צעמפלבורג
+
+(Prague) בענדיט קוטנפלוין
+
+(Berlin) בער דעסויא
+
+(Königsberg) בער המבורג
+
+(Dessau) בער כ&quot;ץ
+
+(Dessau) בער מ&quot;ס
+
+(Amsterdam) בער קליף בניימעגן
+
+(Königsberg) בערמן ב&quot;ר זעליגמן מק&quot;ב
+
+(Königsberg) בערנהארד, מאיר
+
+(Berlin) בערנהארד, משה
+
+(Prague) בראנדאייס, נפתלי
+
+(Vienna) ברוך ווייסוויילר
+
+(Strasbourg) ברוך מעדלסהיים
+
+(Breslau) ברוך פ&quot;פ
+
+(Berlin) ברוך קעסלין
+
+Löwe, Joel, ברי&quot;ל, יואל (Berlin)
+
+(Breslau) גאטטינר, אברהם
+
+(Breslau) גאטטינר, יעקב
+
+(Berlin) גאלדי בר&quot;ב בורג
+
+(Berlin) גבריאל גבר
+
+(Amsterdam) געטטינגן, משה
+
+(Hamburg) געטשליק בר&quot;ש ה&quot;ש
+
+(Vienna) געץ פראנקפורט
+
+(Königsberg) גראף, יאקב
+
+(Stralsund) גרשון ל&quot;ב
+
+(Königsberg) דבורה פרידברג
+
+(Königsberg) דוד בר&quot;א משאטלאנד
+
+(Königsberg) דוד בר&quot;י
+
+(Königsberg) דוד בר&quot;ל וועלויא
+
+(Königsberg) דוד בר&quot;ש האללי
+
+(Königsberg) דוד צעמפלבורג
+
+(Berlin) דוד ק&quot;ב
+
+(Hamburg) דייארן, זלמן
+
+(Vienna) דעווידלס, שמואל
+
+(Berlin) דעסויא, זלמן
+
+(Berlin) דעסערי, יעקב
+
+(Frankfurt am Main) האדנה, וואלף
+
+(Hamburg) האהן, בער
+
+(Frankfurt am Main) האז, זנוויל
+
+(Frankfurt am Main) האז, ליב
+
+(Frankfurt am Main) האז, לימא
+
+(Hamm) האס (פו&quot;מ המדינה), אנשיל
+
+(Königsberg) היילבוט, אפרים
+
+(Königsberg) הינדא האללי
+
+(Hamburg) (הירץ (האחים
+
+(Strasbourg) מעדלסהיים (פו&quot;מ), הירץ
+
+(Berlin) הירץ קליף
+
+(Königsberg) הירש מינדן בק&quot;ב
+
+(Bleicherode) הירש מעלהויזן
+
+(Stralsund) הירש פ&quot;מ
+
+(Copenhagen) הירש פרידלאנד
+
+(Halberstadt) הירש קעסלין בה&quot;ש
+
+הירש קרעפעלד
+
+(Berlin) הירש ראטנויא
+
+(Hamburg) הלבוט, איצק
+
+(Berlin) המבר, געללה
+
+(Amsterdam) הנובר, נחמה 
+
+(Berlin) איצק העלפט
+
+(Berlin) געטשליק העלפט
+
+(Berlin) העלפט, יטכה
+
+(Braunschweig) העלפט, נתן
+
+(Prague) הענך קוטנפלוין
+
+(Hamburg) העקשר, אברהם
+
+(Frankfurt am Main) וואלך, איזק
+
+(Hechingen) וואלף
+
+(Prague) וואלף איידלין מלין
+
+(Königsberg) וואלף באמבערג בק&quot;ב
+
+(Krossen an der Oder) וואלף בר&quot;י
+
+(Frankfurt am Main) וואלף ברייטנבאך
+
+(Berlin) וואלף האללי
+
+(Dessau) וואלף מ&quot;ס
+
+(Dessau) וואלף סג&quot;ל
+
+(Berlin) וואלף שטרעליץ
+
+(Hamburg) וואלף, זלמן
+
+(Breslau) (Dr. med.) ווארבורג
+
+(Berlin) וויזל, יואל
+
+(Frankfurt am Main) ווייל, ליב
+
+Wiener, Moses, ווינר (לעהרר אן דער נארמאל שולי), משה (Prague)
+
+(Vienna) דוד ווערטהיים
+
+(Vienna) ווערטהיים, זלמן
+
+(Vienna) יוזיל ווערטהיים
+
+Wessely, Moses, וייזל, משה (Hamburg)
+
+(Berlin) זאקס, יואל
+
+(Halberstadt) זיסל אסטראדע בה&quot;ש
+
+(Berlin) זלמם ק&quot;ב
+
+(Lissa) זלמן ב&quot;ר דוד
+
+(Berlin) זלמן וויצנהויזן
+
+(Potsdam) זלמן ליסא בפ&quot;ד
+
+(Stralsund) זנוויל בר דוד
+
+(Bleicherode) זעליג ב&quot;ר
+
+(דאקטאר, Königsberg) זעליגא
+
+(Königsberg) זעליגמן בר&quot;י בק&quot;ב
+
+חיים אנראט
+
+(Berlin) חיים בר&quot;א בר&quot;פ
+
+(Prag) חיים ברעזניץ
+
+(Vienna) חיים לייטרסדארף
+
+(Strasbourg) חיים מארבורג
+
+(Königsberg) חיים מפרידלאנד
+
+(בחורי חמד, Prag) חיים משה מאשלש
+
+(Vienna) חיים קוטנפלוין
+
+(Berlin) חלפן, דניאל בר'ש
+
+(Berlin) חלפן, וואלף בר&quot;ש
+
+(Berlin) חלפן, ליב בר&quot;ש
+
+(Strasbourg) חלפן, משה
+
+(גובה, Berlin) חלפן, מ' בר''ש
+
+(Berlin) חלפן, שמואל בר&quot;ש
+
+(Berlin) חלפן, שפרינצכה
+
+(Berlin) טויסק, ברוך
+
+(Berlin) טויסק, ליב
+
+(פו&quot;מ, Berlin) טויסק, ליפמן
+
+(Krossen an der Oder) טעבלי בר&quot;י מקראסן
+
+(Prag) אהרן בער יאס
+
+(Prag) יאס, שמעון
+
+(דאקטער, Königsberg) יאעל בק&quot;ב
+
+(Berlin) יאקב בר&quot;א קעסלין
+
+(Sulechów) יאקב בר&quot;ה
+
+(Berlin) יאקב ברא&quot;ד
+
+(Berlin) יאקב בר&quot;ד
+
+(Hamburg) יאקב ל&quot;ב
+
+(Königsberg) יהודה ליב באמבערג
+
+(Berlin) יואל האללי
+
+(Berlin) יוזל שווא
+
+(Frankfurt) יוזפא מ&quot;ז
+
+(Berlin) יוזפא מינדן
+
+(Berlin) יוזפא שווארצבורג
+
+(Breslau) יונה ביראווי
+
+(Vilnius) יוסף בר אליה
+
+(Berlin) יוסף בר&quot;י בר&quot;א
+
+(Berlin) יוסף נייאבורג
+
+(Königsberg) יוסף נייאמארק בק&quot;ב
+
+(הרופא, Berlin) יוסף פליס
+
+יוקלי געלדרן
+
+(Berlin) יחזקאל פרענצלויא
+
+(Vienna) יטול הילדסהיים
+
+(Berlin) יידל ק&quot;ב
+
+(הרופא, Prag) ייטולס, יונה
+
+(Berlin) יעקב בר&quot;מ ה&quot;ש
+
+(Frankfurt am Main) יעקב ווירמס
+
+(Dessau) יעקב מיץ
+
+(Frankfurt am Main) יעקב מערגנדהיים
+
+(Berlin) יפה, בונם בן פו&quot;מ דניאל
+
+Itzig (Oberlandesältester), Daniel (Jaffe), יפה, דניאל (Berlin)
+
+(Breslau) יפה, זעליג
+
+(Prag) יקותיאל אין איגר
+
+(Berlin) ירמי' בר&quot;י
+
+(Dessau) ירמיה קאנטר
+
+(Potsdam) ישראל בר&quot;ל
+
+(Vienna) ישראל קוטנפלוין
+
+(Strasbourg) כהן, אברהם
+
+(Potsdam) כהן, איצק
+
+(Berlin) כהן, יוטל בת ר&quot;ל
+
+(Berlin) כהן, ליב
+
+(Berlin) כהן, מייכה בר&quot;ל
+
+(Strelitz) כהן, נתן
+
+(פו&quot;מ, Frankfurt /Oder) כץ, ליב
+
+(Amsterdam) לוי, אברהם
+
+(Berlin) לוי, ירמי
+
+(Berlin) לוי, משה
+
+(Prag) לוי, שמואל
+
+(Greifswald) ליב
+
+(הרופא, Vienna) ליב
+
+(Berlin) ליב ב&quot;ר פתחיה
+
+(Berlin) ליב ברעסלויא
+
+(Dessau) ליב גרעבציג
+
+(Berlin) ליב דעסויא
+
+(Königsberg) ליב וועלויא
+
+(Frankfurt am Main) ליב חר&quot;זץ
+
+(Vienna) ליב לייטרסדארף
+
+(Berlin) ליב ליסא
+
+(Vienna) ליב נייאמעגן
+
+(Kassel) ליב פופרט
+
+ליב קרעפעלד
+
+(Königsberg) ליב שטאטהאגן
+
+(Strelitz) ליזר
+
+(Berlin) ליזר בישיטץ
+
+(Prag) ליזר דושניס
+
+(Berlin) ליזר קראטשין
+
+(Vienna) ליזר ראדניץ
+
+(Königsberg) ליזר שאטלאנד
+
+(Berlin) ליפמן לאנדסקראן
+
+(Strasbourg) ליפמן מעדלסהיים
+
+(Königsberg) ליפשיץ, זעליג
+
+(Königsberg) לעוואנטיץ, יעקב
+
+(Breslau) לעמאס, הערצל
+
+(Frankfurt am Main) לעמלי באמבערג
+
+(Berlin) לעקיש וורבורג
+
+(Königsberg) מאדל האמבורג
+
+(Königsberg) מאיר גורי
+
+(Königsberg) מאיר היידלבערג
+
+(Berlin) מאיר ווארבורג
+
+(Prag) מאיר וועליוא
+
+(Prag) מאיר טושקא
+
+(Breslau) מאיר עלס
+
+(Breslau) מאיר פירדא
+
+(Dessau) מאיר פיורדא
+
+(Vienna) מאיר קוטנפלוין
+
+(Prag) מאיר ראקניץ
+
+(Hagenau) מאך, אברהם
+
+(Breslau) מארקוס, וואלף
+
+(Strasbourg) מוציך, מאיר
+
+(Berlin) מיילכה אשת ר&quot;ל בר&quot;ג
+
+(Vienna) מיינדל דאברישקין
+
+(Braunschweig) מיכל ה&quot;ש
+
+(Stralsund) מכאל ל&quot;ב
+
+(Stralsund) מל, אהרן בר&quot;מ
+
+Mendelssohn, Moses, מנדלסון, משה (Berlin)
+
+(Königsberg) מענדל בר&quot;א בק&quot;ב
+
+(Königsberg) מענדל בר&quot;ש ברלין
+
+(Königsberg) מענדל ברעסלוי בק&quot;ב
+
+(Dessau) מענדל דסעסויא
+
+(Stralsund) מענדל מייסלינג
+
+(Prag) מענדל פראטיווין
+
+(Amsterdam) מערצבאך, יעקב
+
+(Königsberg) מרדכי בר&quot;א
+
+(Vienna) מרדכי וויסבאדן
+
+(Königsberg) מרדכי וועלי בק&quot;ב
+
+(Strasbourg) מרדכי מעדלסהיים
+ 
+(Königsberg) מרדכי צעמפלבורג
+
+(Potsdam) מרדכי ראטנויא
+
+(Anklam) משה
+
+(Dresden) משה ב&quot;ר מאיר
+
+(Halle) משה בעוורינג
+
+(Königsberg) משה בר&quot;ז
+
+(Potsdam) משה בר&quot;ל
+
+(Strelitz) משה בר&quot;ל גלויגא
+
+(Berlin) משה דאנציג
+
+משה העכים
+
+(Berlin) משה זלאטווי
+
+(Berlin) משה ליב
+
+(Stralsund) משה מייסלינג
+
+(Königsberg) משה מעמל
+
+(Breslau) משה פלעס
+
+(Königsberg) משה פרידבורג
+
+(Vienna) משה קוטנפלוין
+
+קרעפעלד (פו&quot;מ), משה
+
+(Königsberg) נחום ק&quot;ב
+
+(Königsberg) נטע בר&quot;י
+
+(Breslau) נטע רייכנבאך
+
+(Vienna) נס, איצק
+
+(Potsdam) נתן בר&quot;ל
+
+(Greifswald) נתן ל&quot;ב
+
+(Dessau) נתן מ&quot;ס
+
+(Strasbourg) נתנאל בוסוויילר
+
+(Berlin) נתנאלבר&quot;מ ה&quot;ב
+
+(Königsberg) סג&quot;ל, אשר
+
+(Potsdam) סג&quot;ל, בענדיט
+
+(Strasbourg) סג&quot;ל, וואלף
+
+(Strasbourg) סג&quot;ל, יוסף גרינשטאט
+
+(Strasbourg) סג&quot;ל, ליב הנובר
+
+(Potsdam) סג&quot;ל, ראובן
+
+(Königsberg) סענדר שאטלאנד
+
+(Berlin) עדל פאן האללי
+
+(Breslau) עזריאל בר&quot;מ
+
+(Berlin) עלקיש, יצחק
+
+(Vienna) עשקלעס, בערש
+
+(Potsdam) פאגל
+
+(Berlin) פאהן, אלעזר
+
+(פו&quot;מ , Berlin) ליפמן פאהן
+
+(Amsterdam) פאלק, אברהם בר&quot;מ
+
+(Amstersam) פאלק, זנוויל
+
+(Frankfurt am Main) פאלק, יאקב בר&quot;מ
+
+(Breslau) פאנאפקי, מענדל
+
+(Hamburg) פאפפנהיים, אנשיל
+
+(Stralsund) פויזנר, אבריל
+
+(Stralsund) פויזנר, שמואל
+
+(Köslin) פייבל ב&quot;ר משולם
+
+(Königsberg) פייבש וויצנהויזן
+
+(Frankfurt am Main) פייס עמדן
+
+(Vienna) פיסלינג, יאכד
+
+(Berlin) פירשט, בנימין
+
+(The Hague) פליס, בער
+
+(Königsberg) פנחס ב&quot;ר שמשון
+
+(Berlin) פענקל, יחיאל
+
+(Prague) פפאפר כ&quot;ץ, אברהם
+
+(Berlin) פרומד אשת ר' הירש בר&quot;ן
+
+(Königsberg) פרידלנדר, בערמן
+
+(Berlin) אברהם פרידלענדר
+
+(Königsberg) פרידלענדר, גאלדכה
+
+Friedländer, David, פרידלענדר, דוד (Berlin)
+
+(Königsberg) פרידלענדר, הינדא
+
+Friedländer, Wolf, פרידלענדר, וואלף (Königsberg)
+
+(Königsberg) פרידלענדר, זנוויל
+
+(Königsberg) פרידלענדר, פינחס
+
+(Breslau) פריינד, מלכה
+
+(Berlin) פרעגר, איזק
+
+(Amsterdam) פרעגר, דוד
+
+(Prague) פרענקל, ברוך
+
+(פרנס פרימוס, Prague) גבריאל פרענקל</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימה ארוכה של חותמים מראש, בעיקר מברסלאו וכן מהמבורג ואלטונא.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2200</field>
+		<field name="revision_id">2200</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים מראש מופיעה בראש אוסף הכרכים של חמש מגלות</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים מראש כללית לחמשת הכרכים (ראו הערות בחלון &quot;חוקר ומקורותיו&quot;).</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים בתחילת כל הכרכים.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2204</field>
+		<field name="revision_id">2204</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;רשימת חותמים מראש כללית לחמשת הכרכים (ראו חלון &quot;חוקר ומקורותיו&quot;, הערות).&lt;/p&gt;
+</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים מראש מופיעה בראש אוסף הכרכים של &quot;חמש מגלות&quot; (ראו הערות בחלון &quot;חוקר ומקורותיו&quot;).</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים ארוכה מופיעה בראש הספר 
+(תוכנס בעתיד על ידי אורית)
+
+בהקדמה ציין המחבר כי הוא קיבל מכתבים &quot;מאנשים נכבדים ממקומות שונות&quot;, שחתמו על ספריו. הוא מציין אחד מהם בשמו: יעקב ב&quot;י ברוינשוייג המכונה הערר פרעזידענט יאקאבסזאהן, שאף בא לבקרו בבית סיפרו (הקדמת המחבר, עמ' 8).</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">אין רשימה בחלק זה של הספר, אך סטנוב מודיע: &quot;שמות הנדיבים אשר באו על החתום ואשר עוד יבואו יודפסו לשם ולתפארת בסוף החלק השלישי אם יגזור הש&quot;ית בחיים&quot;. ואכן בסוף החלק השלישי מופיעה רשימת החותמים.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">אין רשימת חותמים, אבל בעמוד האחרון של &quot;הסכמות וחרמות&quot; שבפתח הספר, מופיעים הדברים הבאים:
+&quot;ויתר ההסכמו' מגאוני הזמן נר&quot;ו זא וויא דיא נאמן דער העררן סובסקריבענטן זאללן דען נעכסט פאלגענדן כרכים פאראנגעדרוקט ווערדן אי&quot;ה&quot;.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ישנה רשימת חותמים ארוכה
+
+
+List of subscribers:
+
+
+Bamburger, S.A. (Frankfurt am Main)
+
+Baruch, J. (Frankfurt am Main)
+
+Baruch, S.J. (Frankfurt am Main)
+
+Baschwitz, B.M. (Rödelheim)
+
+Becker, E. (Rödelheim)
+
+Beer, J.H. (Berlin)
+
+Bendavid, Lazarus, בנדוד, לצרוס (Berlin)
+
+Benkard (Pfarrer, Frankfurt am Main)
+
+Berend, Samuel Bacher (Potsdam)
+
+Beschütz, A.Ph. (Berlin)
+
+Beyfus, S.L. (Frankfurt am Main)
+
+Bibliothek der Gesellschaft deutscher Sprachforscher (Berlin)
+
+Bibliothek des Berlinischen Gymnasiums (Berlin)
+
+Bibliothek des Suminariums für gelehrte Schulen (Berlin)
+
+Binge, M.J. (Frankfurt am Main)
+
+Bock, Moses Hirsch, בוק, משה (בן) צבי (Berlin)
+
+Bodenheimerssohn (Strasbourg)
+
+Bötow, S.L. (Berlin)
+
+Breidenbach (Frankfurt am Main)
+
+Brese (Geheim-Hof-Post-Sekretairinn, Berlin)
+
+Burg, J. (Berlin)
+
+Büschenthal (Neuwied)
+
+Bütow, J.L. (Berlin)
+
+Cahn, W. (Frankfurt am Main)
+
+Campe, J.H. (Rat, Braunschweig)
+
+Cassel, D. (Frankfurt am Main)
+
+Cramer, M.L. (Braunschweig)
+
+Dalberg, Carl von (Fürstprimas, Ebf. von Mainz, Mainz)
+
+Deeken (Pfarrer und Konsistorialrat, Frankfurt am Main)
+
+Diehl (Schullehrer, Frankfurt am Main)
+
+Eberstein, Freiherr von (Geh. Staatsrat und Kommissar, Frankfurt am Main)
+
+Ehler, A.Ph. (Halberstadt)
+
+Elsas, S. (Frankfurt am Main)
+
+Emden, F. (Frankfurt am Main)
+
+Emden, M.J. (Frankfurt am Main)
+
+Engelbrecht (Justiziar, Braunschweig)
+
+Ephraim, Veitel H., אפרים, פייטל (Berlin)
+
+Faber (Conrector, Braunschweig)
+
+Feidel, A. (Kassel)
+
+Feidel, L. (Kassel)
+
+Flaschin, S. (Frankfurt am Main)
+
+Flersheim, L.H. (Frankfurt am Main)
+
+Flersheim, M.S. (Frankfurt am Main)
+
+Flersheim, S.J. (Frankfurt am Main)
+
+Fränkel, David (Direktor der Jüdischen Freischule, Dessau)
+
+Fränkel, M.J. (Berlin)
+
+Fränkel, M.L. (Berlin)
+
+Fraustädter, S. (Berlin)
+
+Friedländer, David, פרידלענדר, דוד (Berlin)
+
+Fürst, פירשט (Dr., Berlin)
+
+Fürstenthal (Münden)
+
+Gebert, N.J. (Berlin)
+
+Geisenheimer (Vorsteher des Philantropins, Frankfurt am Main)
+
+Gobert, J. (Frankfurt am Main)
+
+Goldschmid, H. (Berlin)
+
+Goldschmied (Dr. med., Frankfurt am Main)
+
+Goldschmied, B.S. (Frankfurt am Main)
+
+Goldschmied, M.M. (Frankfurt am Main)
+
+Goldschmied, S.R. (Kassel)
+
+Goslar, M. (Berlin)
+
+Götz, L.H. (Frankfurt am Main)
+
+Gumperz, R.S. (Berlin)
+
+Günderode, von (Geheimrat und Stadtschultheiß, Frankfurt am Main)
+
+Haas, M.L. (Frankfurt am Main)
+
+Haas, S.D. (Frankfurt am Main)
+
+Halle, Joel Samuel von (Berlin)
+
+Haller, M (Berlin)
+
+Hanau, H.L. (Frankfurt am Main)
+
+Hanstein, Gottfried August Ludwig (Probst, Oberkonsistorialrat, Berlin)
+
+Hechinger, S.M. (Kassel)
+
+Hecker (Oberkonsistorialrat, Berlin)
+
+Heidenheim, Wolf, הידנהים, וולף (Rödelheim)
+
+Heinsius (Prof. Dr., Berlin)
+
+Herz, J. (Kassel)
+
+Herzfeld, M. (Frankfurt am Main)
+
+Hess, M. (Frankfurt am Main)
+
+Hildesheimer, I. (Frankfurt am Main)
+
+Hirsch, D. (Oberältester, Berlin)
+
+Holländer, B. (Berlin)
+
+Holzmann (Inspektor, Magdeburg)
+
+Isaac, L. (Berlin)
+
+Itzig, L.D. (Potsdam)
+
+Jacobssohn, S. (Frankfurt am Main)
+
+Jakobson, Israel (Kammeragent, Braunschweig)
+
+Joelssohn, S. (Frankfurt am Main)
+
+Jonas, Koppel (Braunschweig)
+
+Joseph, Herz (Berlin)
+
+Jüdel (Braunschweig)
+
+Jüdische Freischule (Berlin)
+
+Kirchheim, H. (Frankfurt am Main)
+
+Kirchner (Professor, Frankfurt am Main)
+
+Koch (Doctor, Prediger, Berlin)
+
+Königsberger, I.A. (Berlin)
+
+Krautwadel (Prediger, צ'ופלוויץ)
+
+Kulp, D.H. (Frankfurt am Main)
+
+Kunze, I.S. (Berlin)
+
+Lazarussohn, N. (Berenburg)
+
+Leipnik, F.S. (Frankfurt am Main)
+
+Lettow (Prediger, Berlin)
+
+Levi, N. (Ratibor)
+
+Levi, S. (Kassel)
+
+Levin, M. (Berlin)
+
+Levinsohn (Frankfurt am Main)
+
+Liefländer (stud. med.)
+
+Lilig, L. (Frankfurt am Main)
+
+Lindau, Baruch, לינדויא, ברוך (Berlin)
+
+Lomnitz, S.B. (Berlin)
+
+Lövi, G.S. (Berlin)
+
+Lövisohn, A. (Kassel)
+
+Lüdeke (Prediger, Berlin)
+
+Maas, J. (Frankfurt am Main)
+
+Mathiä (Professor, Frankfurt am Main)
+
+Mathier (Dr., Bernburg)
+
+May, A.B. (Frankfurt am Main)
+
+May, Seligmann B. (Frankfurt am Main)
+
+Metz, L. (Frankfurt am Main)
+
+Meyer (Inspektor, Braunschweig)
+
+Meyer, J.D. (Frankfurt am Main)
+
+Meyer, J.L. (Berlin)
+
+Mitgau (Prediger, Seesen)
+
+Moses, A. (Berlin)
+
+Moses, A.J. (Berlin)
+
+Moses, J. (Berlin)
+
+Moses, J.A. (Berlin)
+
+Moses, S.J. (Berlin)
+
+Moses, Salomon
+
+Moses, W.J. (Berlin)
+
+Muhr, J.S. (Berlin)
+
+Münter (Dr., Copenhagen)
+
+Neugaß, M.L. (Berlin)
+
+Neumann, Israel (Lehrer, Dessau)
+
+Nolti (Oberkonsistorialrat, Berlin)
+
+Offenbach, A.A. (Kassel)
+
+Oppenheim (Dr. med., Frankfurt am Main)
+
+Oppenheim J.H. (Frankfurt am Main)
+
+Oppenheim, E.N. (Braunschweig)
+
+Oppenheim, J. (Frankfurt am Main)
+
+Oppenheim, L.H. (Frankfurt am Main)
+
+Philipssohn, Moses (Lehrer, Dessau)
+
+Poll, S. (Braunschweig)
+
+Reimann (Erzieher des Prinzen Friedrich, Berlin)
+
+Reis, J. (Frankfurt am Main)
+
+Reis, S.M. (Frankfurt am Main)
+
+Reitlinger, J. (Frankfurt am Main)
+
+Ribbeck, Konrad Gottlieb (Probst, Berlin)
+
+Ries, D.J. (Berlin)
+
+Ries, J.J. (Berlin)
+
+Rindskopf, J.S. (Frankfurt am Main)
+
+Rindskopf, M.L. (Frankfurt am Main)
+
+Rintel, L.W. (Berlin)
+
+Ritter, C. (Frankfurt am Main)
+
+Rothschild, Meyer Amschel (Frankfurt am Main)
+
+Runkel, A.M. (Frankfurt am Main)
+
+Sachs, J. (Lehrer, Frankfurt am Main)
+
+Sachs, S.L. (Berlin)
+
+Salomon (Lehrer, Dessau)
+
+Salomon, L. (Frankfurt am Main)
+
+Salomonssohn (Amsterdam)
+
+Samson, J.H. sen. (Braunschweig)
+
+Samson, M.H. jun. (Braunschweig)
+
+Sandersleben, J. Jacob (Münden)
+
+Sandersleben, M. (Kassel)
+
+Schlesinger, Liebermann Marcus, שלעזינגר, ליברמן (Berlin)
+
+Schlesinger, M.J. (Kassel)
+
+Schloß&amp;Pfungst (Frankfurt am Main)
+
+Schloß, C.A. (Frankfurt am Main)
+
+Schnapper, A.B. (Frankfurt am Main)
+
+Schottländer (Hofrat, Seesen)
+
+Schuster, S.M. (Frankfurt am Main)
+
+Schwarzschild, A.D. (Frankfurt am Main)
+
+Sichel, B. (Frankfurt am Main)
+
+Sichel, J.M. (Frankfurt am Main)
+
+Simon, J.M. (Kassel)
+
+Simon, Michel (Kassel)
+
+Simon, N. (Potsdam)
+
+Simon, Z. (Berlin)
+
+Simonssohn, Abraham (Hofagent, Berlin)
+
+Speyer, J.M. (Frankfurt am Main)
+
+Speyers Söhne (Frankfurt am Main)
+
+Stern (Frankfurt am Main)
+
+Stiebel, H.J. (Frankfurt am Main)
+
+Troschel, H. (Prediger, Berlin)
+
+Troschel, D.S. (Prediger, Berlin)
+
+Ulmann, D. (Frankfurt am Main)
+
+V., von (Graf, Berlin)
+
+Veit, Joseph (Berlin)
+
+Veit, Ph. (Berlin)
+
+Veit, Simon (Berlin)
+
+Veitel, H. Ephraim (Ober-Ältester, Berlin)
+
+Vogt (Legationsrat und Curator, Frankfurt am Main)
+
+Vollrath zu Solms-Rödelheim (Reichsgraf)
+
+Wallach, David (Berlin)
+
+Wallach, D. (Berlin)
+
+Wetzlar, G.J. (Frankfurt am Main)
+
+Witternheim (Strasbourg)
+
+Wolf (Lehrer, Dessau)
+
+Wolf jun. (Dr. med., Frankfurt am Main)
+
+Wolf, A. (Frankfurt am Main)
+
+Wolf, L.M. (Ober-Landesältester, Berlin)
+
+Worms, J.M. (Baumeister, Frankfurt am Main)
+
+Zacharius, L.J. (Münden)</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2232</field>
+		<field name="revision_id">2232</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">שמות החברים בחברת &quot;מרפא לנפש&quot; מופיעים בעמוד הראשון</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">יש להעתיק את הרשימה</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2253</field>
+		<field name="revision_id">2253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">אין רשימת חותמים מראש בעותק שנבדק. אך צורפה בקשת סליחה מאת המוציא לאור לפרענומערנטן על כי לא עלה בידו לקיים את הבטחתו באשר למועד הפרסום.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">שמותיהם מופיעים בעמ' האחרון לספר</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2262</field>
+		<field name="revision_id">2262</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">(ללא כותרת): עמ' [1]: סטנוב מתאר בהקדמה את הקושי בהוצאת ספרים, מציג רשימת חותמים ומציין כמה כסף שילם כל חותם,
+ואח&quot;כ מציג רשימת ספרי הוצאת חינוך נערים הניתנים להשגה: לידע ולהודיע למוכרי הספרים ולקוני הספרים רשימה מהספרים ומקחם הקצוב שת&quot;י (שתחת יד? ט.ק.) ר' איצק למכור ולהחליף עם מוכרי הספרים&quot; (עמ' 2, מספור שלי)</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2277</field>
+		<field name="revision_id">2277</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ישנה רשימת חותמים ארוכה</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">יש רשימת סובשקריבענטען במהדורה השנייה של 1803. יש לבדוק אם היא זהה לזו במהדורה הראשונה (ש.ל., 06.08)</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">לפי פיינר, מהפכת הנאורות, עמ' 237, &quot;רב המכר הגדול ביותר [של ההשכלה] היה התרגום של מנדלסון לספר תהלים, שראה אור לצד ביאורו של ברי&quot;ל בשנת 1791: חתמו עליו מראש 705 איש, שהזמינו יחד 1013 עותקים&quot;. גם: שם, עמ' 297.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת החותמים מראש הופיעה בחלק האחרון של הספר.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">יש להדפיס את רשימת החותמים. 
+ישנן שלוש רשימות: אחת ע&quot;פ מקום המגורים, השניה &quot;ממקומות מפוזרים&quot; - אנשים שחתמו אצל המו&quot;ל שבתי מיאנוב, והשלישית - שמות אשר נשמטו בטעות מן הרשימה הראשונה.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">בסוף הספר נכתב: &quot;הפרענומעראנטין והלוח הטעות יבואו בדברות השניות אי&quot;ה&quot;.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת החותמים מראש - בסוף הספר.
+
+כל ארבעת העתקים בספרייה הלאומית אינם כוללים רשימת חותמים (שטפן, 5/06/08)</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים לא נמצאת כאן, אך המחבר מודה לחותמים ומכאן ניתן ללמוד כי אכן היו. בעמוד האחרון לספר הוא רושם כך:
+&quot;יטיב ה' לטובים ולשרים בלבותם אשר נדבו לבם לקחת את ספרי &lt;strong&gt;חקי חיים&lt;/strong&gt; במחיר הקצוב, ובזכות זה יברך ה' אותם ויפרוץ שפעת טובם לרוב, ואיריכו ימיהם ושנותיהם עם כל הנלוים אליהם אמן:&quot;</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2307</field>
+		<field name="revision_id">2307</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ישנה רשימה ארוכה שתוקלד על ידי אורית, כנראה שזה לא קרה עד עכשיו (29/10/2009), ש.ל.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימה ארוכה של חותמים מופיעה מתחת ל&quot;הקדמת המביא לבית הדפוס&quot;</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ישנה רשימת חותמים ארוכה שתוקלד על ידי 
+אורית
+שטפן הקליד אותה בספטמבר 2010</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2323</field>
+		<field name="revision_id">2323</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">מופיעה רשימת חותמים ארוכה, מן הערים:
+פיורדא, אמסטרדם, ברלין (רק חותם אחד: מהו&quot;רר דוד בערווא, שקנה 20 עותקים, דרך דוד פ&quot;ה כהן מפיורדא), במברג, דיטנע, המבורג (גומפל שנאבר-לויזון), הנובר, העכים, וייגערשהיים, מיינץ, נאנסע, פראג, פרנקפורט ע&quot;נ מיין, פרעשבורג, קאסל, קרלסרוא, בארייט.
+יש להקליד את הרשימה בעתיד.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">בספר מלכים א' ישנה רשימת חותמים אחת, והמשכה במלכים ב'.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים המופיע בחלק זה של הספר מוצגת כ&quot;המשך&quot; מן הרשימה בחלק א'.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת החותמים מראש מופיעה בפיצול (ייתכן כי רשימה אחת היא תוספת של שמות לאחר שהוכנה רשימה אחת). רשימה אחת ארוכה מופיעה תחת הכותרת: &quot;נאמן דער העררן פרענומעראנטן אונד סובסקריבענטן&quot;, ומחולקת ע&quot;פ יישובים. רשימה שניה, קצרה יותר, נושאת כותרת: &quot; נאכטראג דער העררן זובסקריבענטען אונד פרענומעראנטן&quot;, ואינה מוחלקת ע&quot;פ ערים, אלא כוללת שמות המנוים ברצף אחד (כולל עיר מושב).</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ישנה רשימה ארוכה שיש להקלידה בהמשך.
+היא צולמה על ידי במצלמה דיגיטלית.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2348</field>
+		<field name="revision_id">2348</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת החותמים בכרך אחר.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2349</field>
+		<field name="revision_id">2349</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים בכרך אחר.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2350</field>
+		<field name="revision_id">2350</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת החותמים בכרך אחר.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2351</field>
+		<field name="revision_id">2351</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימת חותמים בכרך אחר.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ראו אצבע &quot;על תהליכי הכתיבה&quot; בחלון &quot;קהל יעד&quot;.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">הכריכה המקורית איננה -  אין לדעת האם היו רשומים שם שמות של חותמים מראש</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">בנוסף לשמות ברשימה הגדולה, ישנם שמות נוספים בעמוד אחרי.
+
+
+List of Subscribers:
+
+
+(Leslau) אברהם בהר&quot;ר צבי הירש
+
+(Berlin) אברהם בר&quot;נ ה&quot;ש
+
+(Breslau) אברהם דאנציגר
+
+(Pressburg/Bratislava) אברהם פ&quot;ש
+
+(Glogau) אורי פייבל חר&quot;ש
+
+(Glogau) איגר, מאיר
+
+(Berlin) אייזק בר&quot;נ ה&quot;ש
+
+(גובה, Berlin) אייזק דעסויא
+
+(Breslau) איצק גד
+
+(רופא, Berlin) איצק פליס
+
+(פו&quot;מ, Berlin) אלחנן לייפציג
+
+(Berlin) אלי' ב&quot;ר דניאל יפה
+
+(Hamburg) אפנהיים, הירש
+
+(Berlin) אפנהיים, מענדל
+
+(Berlin) אשר שעניפליס
+
+(Breslau) בארטנשטיין, הירש
+
+(Berlin) ביטו, ליב
+
+(Pressburg) בכרך, חיים
+
+(יועץ פנימי לאדונינו המלך יר&quot;ה, Berlin) בנימין בר&quot;פ
+
+(Berlin) ברוך עשווא
+
+(Leslau) ברי, רפאל
+
+(Pressburg) בריל, עזריאל
+
+(Berlin) ברעסלא, שמואל
+
+(Pressburg) גדלש, מענדל
+
+(ג&quot;צ, Berlin) גרידץ, ליב
+
+(Leslau) דוד בהר&quot;ר יצחק אייזק
+
+(Berlin) דוד ב&quot;ר אפרים
+
+(Hamburg) דייארן, גבריאל
+
+(Berlin) דעסוי, גרשון
+
+(פו&quot;מ המדינה, Hamm) האס, אנשיל
+
+(מהו', Hamburg) הויזן, ישראל
+
+(Leslau) הירש במה&quot;ר אברהם בר&quot;ה
+
+(פו&quot;מ, Berlin) הירש בר&quot;נ
+
+(Berlin) הירש דאברש
+
+(Berlin) הירש הערפורט
+
+(Berlin) הירש ה&quot;ש
+
+(Berlin) הירש ראטנויא
+
+(Berlin) הירש שטראלזונד
+
+(Berlin) וואלף שטארגראד
+
+(Hamburg) ווארבורג, גדלי'
+
+(Berlin) וולאטוי, משה
+
+(Hamburg) ווערטהיים, שמואל
+
+(Berlin) זנוויל בר&quot;ה ר&quot;נ
+
+(Berlin) זנוויל בר&quot;נ
+
+(מנהיג, Berlin) חיים ב&quot;ר אפרים
+
+(מהו', Berlin) חיים לאנצבורג
+
+(Berlin) חלפן, דניאל בר&quot;ש
+
+(גובה, Berlin) חלפן, משה בר&quot;ש
+
+(Berlin) טאקלש, בונפט
+
+(Pressburg/Bratislava) טעבין, בנימין וואלף
+
+(Berlin) טעבלי ב&quot;ר קאפיל ריס
+
+(Pressburg/Bratislava) טעבן, יחיאל
+
+(Pressburg/Bratislava) טעבן, מענדל
+
+(Pressburg/Bratislava) טעבן, משה יעקב בה' אברהם
+
+(Berlin) יאסקי האמבורג
+
+(Berlin) יאקב בר&quot;ד
+
+(Berlin) יואל האללי
+
+(Berlin) יודא דאנציג
+
+(Berlin) יוזפא אראניבורג
+
+(Leslau) יוסף בר&quot;ה
+
+(Berlin) יוסף בר&quot;ה בר&quot;י
+
+(Berlin) יוסף בר&quot;ש בר&quot;א
+
+(מהו', Königsberg) יוסף מליסא
+
+(Berlin) יוסף פ&quot;ד
+
+(Berlin , הרופא) יוסף פליס
+
+(Berlin) יוסף צבי
+
+(Berlin) יחיאל קאפנהאגן
+
+(Glogau) יעקב לוי
+
+(Berlin) יעקב פ&quot;ל מקראנקי
+
+(Berlin , פו&quot;מ מדינה) Moses, Jacob , יעקב צבי
+
+(Berlin) יפה, בונם בן פו&quot;מ דניאל
+
+Itzig, Daniel (Jaffe), יפה, דניאל (Oberlandesältester, Berlin)
+
+(Glogau) לאנשטיין, וואלף
+
+(פו&quot;מ, Hamburg ) לוי, יוזפא
+
+(פו&quot;מ, Berlin) לוי, ליפמן בר&quot;מ
+
+(Berlin) ליב בר&quot;נ ר&quot;ז
+
+(Breslau) ליבש דעסא
+
+(Hamburg) ליזר ב&quot;ר יוזפא לוי
+
+(Hamburg) לייטרשדארף, נתן
+
+(Berlin) ליפמן ה&quot;ס
+
+(Breslau) ליפמן מ&quot;ס
+
+(Breslau) מאיר הירץ
+
+(Berlin) מאיר ווארבורג
+
+(Pressburg/Bratislava) מענדל נ&quot;כ
+
+(Halle) מרדכי האללע
+
+(Leslau) משה בה' יחיאל מיכל
+
+(Breslau) נחמי' גלויגא
+
+(פו&quot;מ, Berlin) סאמטור, ליפמן
+
+(Leslau) סג&quot;ל, אליעזר בהרב מהו' משה
+
+(Leslau) סג&quot;ל, משה בהרב מהו' עליעזר
+
+(Berlin) סמטור, דוד
+
+(Königsberg) סענדר קעניגשבורג
+
+(Pressburg/Bratislava) עזריאל בהר&quot;ר וואלף
+
+(מנהיג, Berlin) פאן, זלמן
+
+(Breslau) פאנאפקי, מענדל
+
+(Hamburg) פופרע, מאיר
+
+(Pressburg/Bratislava) פייבל ברעסלוי
+
+(Berlin) פרידלנדר, אברהם
+
+Friedländer, David, פרידלענדר, דוד (Berlin)
+
+(Pressburg/Bratislava) פרייסיך, איצק במהו' דוד
+
+(גובה, Berlin) פרעגר, דוד
+
+(Glogau) פרעגר, ליזר
+
+(Glogau) פרענקל, מאיר
+
+(Hamburg) פרענקל, נפתלי הירש
+
+(Berlin) צילץ, אברהם בר&quot;נ
+
+(Berlin) צילץ, משה ב&quot;ר בערמן
+
+(Berlin) קאפל פ&quot;ד
+
+(Berlin) קינשבורג, דוד
+
+(Berlin) קעסלין, מאיר בר&quot;ה
+
+(Berlin) ריז, קאפל ב&quot;ר מאדל
+
+(פו&quot;מ, Berlin) רינטל, משה
+
+(Berlin) רינטל, קאשמן
+
+(Glogau) רפאל גלוגא
+
+(Pressburg/Bratislava) שאכרלש, זלמן
+
+(ג&quot;צ, Berlin) שטרעליץ, קאפל בן פו&quot;מ אברהם
+
+(Hamburg) שיף, איזק בר&quot;ב
+
+Schiff, Isaak Benedix, שיף, בנדיט איצק (Altona)
+
+(Berlin) שלמה פ&quot;ל מקראנקי
+
+(Breslau) שלעזינגר, מיכל
+
+(Leslau) שמואל בן כהר&quot;ר מאיר יצ&quot;ו
+
+(ג&quot;צ, Berlin) שמואל ניקלסוברג
+
+(Berlin) שמעון וויצנהויזן
+
+(Pressburg/Bratislava) שמעון פ&quot;ל מפ&quot;ב
+
+(Pressburg/Bratislava) שמעון ק&quot;ס בפ&quot;ב</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">יש לי צילום דיגיטלי של החותמים מראש. הרשימה ארוכה.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">בעותק ששימש למילוי השאלון אין רשימת חותמים מראש. עם זאת, נאמר בעמוד השער: &quot;שלמה במו' יואל מדובנא... כתת רגליו ממדינה למדינה להדפיסה ולהראות העמים והשרי' את יפיה ... רודפי צדק אנשי אמ&quot;ת קנו את הספר הזה ובזכות זה תזכו לעלות לציון ברננה&quot;.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2371</field>
+		<field name="revision_id">2371</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">מופיעה רשימה ארוכה, שיש להקלידה בהמשך.
+בראש הרשימה רשם המחבר:
+אלה האלופים... אשר נדבה לבם לקחת את ספרי שפה ברורה וחתמו את שמותיהם והממעיט לא פחת מסך א' זהב...&quot; (דף [ב']).</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">רשימה ארוכה של חותמים מופיעה בסוף הספר, וצולמה בצילום דיגיטלי על ידי ב5.7.07.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2420</field>
+		<field name="revision_id">2420</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">יש רשימת חותמים מראש עם כשישים שמות, רבים מדסאו. בין החותמים: דוד פרידלנדר, הרופא יוסף פליס והרופא מרדכי פלאק, אהרן וויזל, הב&quot;ח כה' דוד פרענקל, הירץ האמבורג, זלמן דעסויא, שמות מבילפעלד, צילץ, ברעסלויא, עקיבא איגר...</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ב&quot;בשורת ספרים חדשים&quot; שפרסם לינדא ב&lt;ins&gt;המאסף&lt;/ins&gt; תקמ&quot;ח, טו'-טז', רשום כך:
+מקח הספר יהיה לאנשים אשר יבואו על החתומים א' גדול בעד באגן אחד, וישולם אחר קבלת הספר תחת אשר לאיש זר לא ימכר כי אם בעד ח&quot;י פשיטים... המאסף החתומים יקח אחד על עשר עבור טרחתו...&quot;
+לא מופיעה רשימת חותמים על ספרו של לינדא, ולכן אי אפשר לדעת אם בסופו של דבר אחר נדפס הספר בתמיכה של חותמים מראש.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ב&quot;מודעה&quot; בסוף הספר ניתן הסבר מדוע גם בחוברת השלישית אינם מובאים שמות החותמים - על אף ההבטחה על כך שניתנה בספר השני:  &quot;יען לא שלחו לידי עדיין ממרחקים שמות הנדיבים כלם אשר באו על החתם, ועוד אחרים הבטיחו שיחתמו גם הם עליו, על כן לא הדפסנו זכרון שמות החתומים בראש החוברת הזאת, אבל בוא יבוא בעז&quot;ה בראש החוברת הרביעית&quot;.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">61 חותמים מדסאו, עוד רבים אחרים מערים נוספות. הרשימה מפוצלת על שני החלקים.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">מופיעה כאן רשימה ארוכה שתוקלד על ידי אורית. בסופה מציין בן-זאב במיוחד את התורני המשכיל פייסט הילדסבאך, שהתעשר ממסחר הקשור במלחמה (? - &quot;בהיותו מכין צידה לאנשי המערכה..., עמ' [4]), שתומך ביד נדיבה ב&quot;תופסי ספר&quot; בכלל, ובסיפרו זה של בן-זאב בפרט.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscribers_notes_value">ראו דברי ליב מינדן באצבע &quot;המלצות&quot; כאן למעלה.</field>
+		<field name="field_subscribers_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

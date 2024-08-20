@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_founders_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_founders_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_founders_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_founders_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="18" avg_row_length="910" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:17" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 54 (field_founders_notes)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_founders_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1993</field>
+		<field name="revision_id">1993</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בעמוד השער רשום:
+Auf Kosten des Verfassers zum Besten der im Felde blessirten vaterländischen Krieger</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בהקדמתו מברך הקלירי את &quot;תרי גבירי רברבא הנזכרים הרמים אשר נדבו להזיל זהב מכיסן להוצאת הדפוס לזכות את החכמים&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">העורך/מוציא לדפוס מציין בסוף הקדמתו:
+&quot;דע נא קורא הנעים שנתתי העתקה על מלה תחת כמה פעמים במקום אשר הוא דם למען לבל ילאה מעיין לחפש תמיד אי' מקום מצבו והנכם רואים שלא חסתי על הוצאות הדפוס אך למען עשות הטוב והישר למלאות רצון יראה ה' המתאוים בה&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">אין רשימה אך בסוף הספר ישנה עדות של מממן אחד, &quot;הקטן משה בן הר&quot;ר מענדל&quot; ז&quot;ל מדעסויא&quot;, הפונה ל&quot;בני גילי וחתי סודי הנאהבים והנעימים&quot; ללכת בעקבותיו. כדבריו: אחרי שדעת הרבני מוהר&quot;ר זאב וואלף הנ&quot;ל להדפיס את חבורו התנדבתי לו מכיסי סך עשרה ר&quot;ט אין ל&quot;ד לצורך הוצאות הדפוס, וממני יראו בני גילי... וכן יעשו גם הם איש כנדבת לבו וכברכת ה' עליו והי' מעשה הצדקה והחסד שלו רב לאוהבי תורתה&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">אין שמות של אנשים שממנו במפורש את הספר, אך יש תודות לאישים שונים בהמבורג - החל בזוג בהקדשה וכלה בשמות המוזכרים בהקדמה: &quot;שמואל ווערטהיימר ועוד אנשי חפץ כמוהו... אתם מכובדי הגדלתם והוספתם טובה וחסד עמדי... באתי בצל קורתכם... כלכלתם אותי לתת לי ארוחתי כל ימי שבתי אתכם... לא כגר שמתוני, לא כזר ... חשבתם אותי, ולא כאורח עשיתם עמדי, אכן כבן קרבתוני&quot;. כמו כן מוזכר בהקדמה אליהו ליינע.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2199</field>
+		<field name="revision_id">2199</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בהקדמה שנית מהבמיא לדפוס:
+&quot;וברכתי תעלה לש&quot;ב הבחו' הנעלה המשכיל והמושלם כ' שלמה יצ&quot;ו במהור&quot;ר אברהם פ&quot;ל מקראנקי נר&quot;ו על אשר הלוה לי סך מסוים להוצאת הדפוס הוא וכל הנלוים אליו יזכו לחנא וחסדא ...&quot;</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">נראה כי לפחות חלק מן ההוצאות למימון הספר יצאו מכיסו של המחבר. בהקדמה הוא כותב: &quot;לא למען רבת המחיר אשר תמצא חברתיהו [את הספר], כי גלוי וידוע לפני הרבה אנשים ממכירי אשר דברתי עמהם אודות הספר הזה כי הוצאות הדפוס רבה כמו רבה יען תרתי אחרי אותיות יותר יפות וניר לבן מאוד כאשר לפניך&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בהקדמת המחבר</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2301</field>
+		<field name="revision_id">2301</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בעמוד השער</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">ראו אצבע &quot;תודות לספר&quot; כאן</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">אין רשימה של ממש, אך מוזכרים שמות של אנשים אשר ככל הנראה תמכו בהוצאת הספר, הן על-ידי מתן כסף למחבר, והן על-ידי כך שארחו את המחבר, אולי בזמן שעמל להוצאת הספר. ראו לעיל, בסעיף &quot;האם מופיעות תודות לספר&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">מרכוזי מודה למיחאל באבראווסקי &quot;שהזיל מעות מכיסו לסייעני לדבר מצוה זו&quot;.
+על כך ראו: שמרוק, &quot;משה מרכוזה&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בסוף רשימת החותמים מראש, נכתבה ברכה ל&quot;הגבירים תורניים ונכבדים, אשר מלאו את ידי ועזרוני בהלוואה לצורך הדפוס לפי רוב הענוה והצנע לכת, פקדו עלי לבלתי אפתח את שמותם פתח ספרי...&quot;</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">המחבר מימן בעצמו את הוצאת הספר, והוא כלל לא בטוח כי יפיק רווחים מכך: &quot;וגם זאת לא ידעתי היום, אם הכסף אשר הוצאתי אודות השיר הזה בהביאי אותו לאורה, אם הושב יושב באמתחתי?&quot;</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בכרך הראשון של שירי תפארת (בעותק לפנינו) אין שמות מממנים. עם זאת, במחברת השניה ישנה הודעה ארוכה ומפורטת החתומה על ידי וולפסון וברי&quot;ל, אשר לפי עדותם כאן הוציאו לאור את המחברת הראשונה, במימונם. למרבה אכזבתם, היה זה כשלון מסחרי: &quot;בלבבנו אמרנו, בוודאי יקפצו הקונים עליו, ועל ידם הושב יושב לנו הכסף אשר הזלנו מכיסנו להוצאת הדפוס, כי לא להרבות על ידו כסף וזהב גשנו אל המלאכה הזאת, כי אם לכבוד ה' ותורתו ולכבוד המחבר המהולל לבדו&quot; - אך &quot;אין דורש ואין מבקש&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">לדברי וולפסון וברי&quot;ל, המו&quot;לים, בדברי ההקדמה לספר זה, כאשר הם הוציאו לאור את המחברת הראשונה משירי תפארת &quot;הבטחנו ואמרנו שנמהר ונחוש מעשינו להדפיס גם שאר המחברות זאת אחר זאת בזמן קצר כפי האפשרי, כי בטחנו ברב טוב ויופי הספר הזה... ובלבבנו אמרנו, בוודאי יקפצו הקונים עליו, ועל ידם הושב יושב לנו הכסף אשר הזלנו מכיסנו להוצאת הדפוס&quot;. אך מפאת מיעוט הקונים, &quot;ארכו הימים, כמו שנה ומחצה מיום צאת המחברת הראשונה לאור, עד עתה אשר העיר ה' ברחמיו רוח איזה נדיבי עם בעיר הזאת ובפרטות הגביר המפורסם ויקר רוח ר' שמואל בן ר' שלמה חלפן נר&quot;ו, אשר נשאו לבו להזיל כסף מכיסו כפי מסת הוצאת הדפוס.&quot;</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">יוזל מוהר, שהיה אחראי להוצאה לאור של הספר, מודה למממן: &quot;בהתנדב הגביר המפואר החכם... מהור&quot;ר ראובן גומפערטץ נר&quot;ו להוציא כסף מכיסו להדפסת המחברת 
+הרביעית הזאת...&quot; גם וייזל מוקיר תודה לגומפרץ, &quot;איש יקר רוח, כי לא נדרשתיו ונדרש לי, לא בקשתיו ונמצא לי, מדעת עצמו קדם את פני, ויאמר אלי, אותה נפשי לעשות דבר טוב, לתת לכסף מוצא להדפיס בו שלשה מחברות השירים הנשארים תחת ידך...&quot;
+אותו גומפרץ מילא ככל הנראה תפקיד פעיל בהפקת הספר. כפי שמציין מוהר, גומפרץ &quot;בחר בי להתעסק במציה זו, להשגיח על המלאכה גם לחלק את הספרים בצאתם מן הדפוס לידי הפרענומעראנטן ולקבל מהם תמורתם את כסף מקנתם...&quot;
+ההכנסות ממכירת הספר היו מיועדות, כך נראה, להוצאת הספרים הבאים. כותב מוהר: &quot;בעד הכסף המובא מידם [של הקונים] אלי יודפסו המחברת החמישית ואחריה המחברת הששית&quot;.</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_founders_notes_value">בראשית הספר כותב וייזל: &quot;וביען אחרי צאת החוברת הרביעית לאור, לא בא מכסף מקנתו לידי אהו' התו' מוה&quot;רר יוזל מוהר נר&quot;ו אפילו החלק הרביעי מן הצורך להוצאת דפוס החוברת החמישית, ואם בוא יבוא הכסף עם הזמן ממדינות אשר עוד יבואו שמה, היתה המלאכה בטלה ימים רבים, על כן הודעתי הדבר להגבירים כמהו&quot;רר מאיר ומהו&quot;רר מענדל הנ&quot;ל לקאפנהאגן, ומדי דברי שלחו מיד הכסף ברוח נדיבה למלאת המחסור, ובעזרת הנדבה הזאת יצאה גם החוברת החמישית הזאת לאור.&quot;</field>
+		<field name="field_founders_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

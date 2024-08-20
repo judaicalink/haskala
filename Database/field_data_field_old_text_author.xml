@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_old_text_author">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_old_text_author_target_id" type="int(10) unsigned" null="NO" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_old_text_author" engine="InnoDB" version="10" row_format="Dynamic" rows="14" avg_row_length="1170" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:03" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 94 (field_old_text_author)" />
+	</table_structure>
+
+	<table_data name="field_data_field_old_text_author">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2132</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2134</field>
+		<field name="revision_id">2134</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">1949</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2163</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2197</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2244</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2244</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2247</field>
+		<field name="revision_id">2247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2244</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2257</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2308</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2310</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2315</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">1064</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">2392</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_old_text_author_target_id">347</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

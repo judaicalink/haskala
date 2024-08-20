@@ -1,0 +1,3262 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_printing_press_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_printing_press_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_printing_press_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_printing_press_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="240" avg_row_length="477" data_length="114688" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:06" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 140 (field_printing_press_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_printing_press_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: M. DCC. LXXIX.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @&lt;strong&gt;ויקם מלך חדש&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">Schoeps gibt in der NDB, vol. I., S. 411 falsch Frankfurt/Oder als Druckort an. Neuestes gelehrtes Berlin, vol. I, S. 1795, S. 16 gibt Berlin bei Kunze an.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">Das Erscheinungsdatum steht nicht auf dem Titelblatt, jedoch in der Verlagsanzeige am Ende des Texts steht als Erscheinungsdatum 1810. Auch hier steht der Preis von 18 Gr.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בית הדפוס כפי שמופיע בעמוד השער:
+In Kommission bei Wilhelm Vieweg</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1987</field>
+		<field name="revision_id">1987</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שנת ההוצאה רשומה בשער כך:
+Im 9zen Jahre der Republik</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על בית הדפוס כפי שרשום על הספר:
+in Comission bei Friedrich Bruder</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">Jahr auf cover: MDCCXCII</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2006</field>
+		<field name="revision_id">2006</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">Vertrieb auch über die &quot;Gesellschaft des Guten und Edlen&quot;.
+
+
+למחיר הספר:
+
+3 Reichsthaler, bei Abnahme großer Stückzahlen Rabatt: &quot;Schulen, welche eine Anzahl Exemplare bestellen, erhalten einen angemessenen Rabat. Auf 3 Hefte, von circa 36 Bogen in gr. 8, wird mit 2 Rthlr. Preuß. Cour., das ist, à Heft 16 Gr., pränumeriert.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בית הדפוס:
+
+In den Schulanstalten des Verfassers</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שם בית הדפוס כפי שמופיע על עמ' השער:
+Carl Friedrich Barth jun.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: יש לציין כי התאריך שמופיע בשער הספר מתייחס לשנת מותו של ר' יעקב עמדן, לא בהכרח לתאריך הדפסת הספר.  השנה כפי שהיא מופיעה:
+&quot;שנת &lt;strong&gt;&lt;ins&gt;ואיך אתנחם&lt;/ins&gt;&lt;/strong&gt;&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2044</field>
+		<field name="revision_id">2044</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער בעברית רשום: &quot;בדפוס חברת חנוך נערים&quot;.
+
+ואילו בעמוד השער בגרמנית רשום:
+
+Berlin, gedruckt bey Johann Friedrich Unger</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: התאריך שמופיע בשער (&quot;י&quot;ז לחדש אלול שנת תקו&quot;ם&quot;, 10.9.1786), הינו ה&lt;ins&gt;תאריך שבו נישא נאום זה&lt;/ins&gt;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2061</field>
+		<field name="revision_id">2061</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער רשום: 
+Bei Ernst Felisch
+בסוף הספר רשום:
+Gedruckt bei Müller und Mylius</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: יש לציין כי התאריך שמופיע בשער הספר מתייחס לשנת מותו של ר' יעקב עמדן, לא בהכרח לתאריך הדפסת הספר.  השנה כפי שהיא מופיעה:
+&quot;שנת &lt;strong&gt;&lt;ins&gt;ואיך אתנחם&lt;/ins&gt;&lt;/strong&gt;&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: והי&lt;strong&gt;ה&lt;/strong&gt; כאשר י&lt;strong&gt;ר&lt;/strong&gt;ים &lt;strong&gt;משה&lt;/strong&gt; את י&lt;strong&gt;ד&lt;/strong&gt;ו וגבר ישראל</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת ויאמר ה' אלי בשליכה&lt;strong&gt;&lt;ins&gt;ו&lt;/ins&gt;&lt;/strong&gt; אל הי&lt;strong&gt;&lt;ins&gt;ו&lt;/ins&gt;&lt;/strong&gt;צר &lt;strong&gt;&lt;ins&gt;אדר היקר&lt;/ins&gt;&lt;/strong&gt; (תקל&quot;ב).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בלאומית העברית מופיעה ההערה: חמו&quot;ל
+ 
+
+נוסח כתיבת התאריך: @ כי ב'יתי בית ת'פ'ל'ה' י'קרא' לכל 
+ה'עמים</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בדף כ' מופיעה מודעת פרסומת מטעם בית הדפוס:
+אווערטיזימאנג
+מן 
+המדפיסים
+כהר&quot;ר אברהם פרופס ובנו מאמסטרדם
+ביא לאזן היא מיט באגנד (?) מאכן, רש/דש (?) דא נון מיהרי בוק דרוקראיי בכל הלשונות זא וואל אין בעשטר ארדנונג כאן הער גשטעלט, אלס אויך ביא דעספאלס מי הין וערקליך
+האך
+פערשטליכי
+פריווילעגיע
+פר דעהן זינד, אלזא ערביטן ניא בוק אן יעדם דער אצלם אייני עקסעמפלאהר הן גדול או קטן, פון וועלכי שריפט עז אימר זיין מאג בייא איהנן אויף זו ליגן גזאנן איזט, מיט ביליכי פרייסן ובתכלית היופי, ובאותיות יפות צו בריהנן.
+המדפיסים הנל, זינד רעזאלפינרט תוך ימים מעוטים צו דרוקן איין נייאי גאמאדע קינדר תפלה מיט פילה הוספות דא בייא עם אותיות חדשות ובנייר טוב &quot;וועלצי אלי אנדרי דיא ביז דאטא צום פאר שיין גקאמן, בהידור בויפי איבר טרעפן ווערד.
+
+
+נוסח כתיבת התאריך: &lt;strong&gt;מתק&lt;/strong&gt; שפתים יוסיף לקח לפ&quot;ק:</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מרדכי בונדי בהקדמתו:
+Wegen der Entfernung vom Druckorte konnten wir, indem die Correctur nicht von uns selbst besorgt wurde, das Einschleichen mehrerer sinnverderbender Druckfehler nicht verhindern. Auch haben verschiedene griechische Wörter, welche ich mit Originalbuchstaben schrieb, wider mein Verschulden, Verunstaltungen erlitten. Gleiches Schicksal traf die erklärten Wörter selbst in Hinsicht der Punctirung, die nach meiner gegenwärtiger Ueberzeugung füglich hätte unterbleiben können.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2091</field>
+		<field name="revision_id">2091</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ יפיפית מבני אדם הוצ&lt;strong&gt;ק ח&lt;/strong&gt;ן בשפ&lt;strong&gt;ת&lt;/strong&gt;ותי&lt;strong&gt;ך&lt;/strong&gt;
+על כן ברכך אלהים לעולם</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2094</field>
+		<field name="revision_id">2094</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעותק שנבדק (ת&quot;א), בכריכה צוין שנת 1757. אך בתוך הספר, בעמוד השער, נרשם:
+M DCC LXVI
+
+
+נוסח כתיבת התאריך: M DCC LXVI</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2099</field>
+		<field name="revision_id">2099</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">התאריך שצוין: ניסן תקמט&quot;ל פה [?] בערלין</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2101</field>
+		<field name="revision_id">2101</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">אין עמוד שער (על כל פנים, לא בעותק במיקרופילם שנבדק).  התאריך והמקום על פי הרשום בסוף הטקסט, לפני שמות החותמים.  (ברעסלויא ר&quot;ח כסליו תקנ&quot;ג לפ&quot;ק)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בהקדמה (עמ' 5, מספור שלי) בן-זאב מציין את סיפרו &lt;strong&gt;תלמוד לשון עברי&lt;/strong&gt; - יש להעביר לשדה המתאים, לאחר שאיילה תכין אותו</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2113</field>
+		<field name="revision_id">2113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">התאריך כפי שמופיע בעמוד השער:
+
+ערב ר&quot;ה שנת תקמ&quot;ח לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">אין בעמוד השער כל מידע על מקום ההוצאה או שם ההוצאה. עם זאת, נראה כי הספר יצא בברלין בדפוס חינוך נערים, ונכרך יחד עם ספר &lt;ins&gt;יונה&lt;/ins&gt; (עם תרגום ובאור מאת יואל ברי&quot;ל).
+
+מידע על מחיר הספר על פי רשימת ספרים שהתפרסמה מטעמו של וולפסון כנראה בשנת תקנ&quot;ט: 
+געבטי די יודן בגרמנית באותיות עבריות: 1 ר&quot;ט ו-8 גראשן. אותו חיבור עם&quot;לשון קודש&quot;
+1 ר&quot;ט ו-12 גראשן. אותו חיבור &quot;מיט דייטשע לעטרין&quot;  והמתרגם הוא יצחק אייכל-1 ר&quot;ט</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2117</field>
+		<field name="revision_id">2117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת תשית &lt;strong&gt;לראשו&lt;/strong&gt; עטרת פז לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;מכתם ל&lt;/strong&gt;דוד לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על פי רשימת ספרי דפוס &quot;חינוך נערים&quot; 
+משנת תקנ&quot;ט
+מחיר החיבור הוא 1  ר&quot;ט ו12 גראשן
+לא ברור באיזו מהדורה מדובר
+והאם המחיר כולל את שני חלקי הספר
+ח&quot;כ
+
+
+נוסח כתיבת התאריך: בשנת כי י&quot;י &lt;strong&gt;יתן&lt;/strong&gt; ח&lt;strong&gt;כמה&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת כי &lt;strong&gt;ה&lt;/strong&gt;י&lt;strong&gt;א&lt;/strong&gt; ח&lt;strong&gt;כמתכם&lt;/strong&gt; ובינתכם לעיני העמים לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">התאריך נרשם:
+
+תבקע (=תקע&quot;ב)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בלאומית העבריתר רשומה ההערה לגבי מקום ההוצאה:
+קונשטאנטינא [ברלין]
+מקום ההוצאה האמיתי נחשב לברלין, למרות שעל גבי הספר נרשם &quot;קונשטאנטינא&quot;. על כן, ציינתי את שני המקומות גם יחד. תאריך ההוצאה לאור אינו רשום על הספר.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בלאומית העבריתר רשומה ההערה לגבי מקום ההוצאה:
+קונשטאנטינא [ברלין].
+מקום ההוצאה האמיתי נחשב לברלין, למרות שעל גבי הספר נרשם &quot;קונשטאנטינא&quot;. על כן, ציינתי את שני המקומות גם יחד. תאריך ההוצאה לאור אינו רשום על גבי הספר.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: הספר (למעשה מכתב) חתום בתאריך 
+&quot;יו&quot;ד אייר תקמ&quot;ב&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2127</field>
+		<field name="revision_id">2127</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: התאריך אינו מופיע בעמוד השער אלא בסוף הספר/ המכתב. שם כתוב: 
+&quot;פה ברלין יו' ו' ט' אייר תקמ&quot;ד לע&quot;ק&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2128</field>
+		<field name="revision_id">2128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: התאריך אינו מופיע בעמוד השער אלא רק בסוף הספר. הספר חתום בתאריך &quot;כ&quot;ב סיון תקמ&quot;ה&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">ככל הנראה מקום ההוצאה של הספר הוא ברלין, אבל מקום בית הדפוס ושם בית ההוצאה אינם מופיעים על גבי הספר</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;והוא יישר&lt;/strong&gt; אורחותיך לפ&quot;ק
+
+
+מקום הדפוס כפי שנרשם בשער באנגלית: 
+
+A. Alexander
+
+גם כתובתו מופיעה בשער:
+
+No. 78 White-Chapel High-street</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: לפרט &lt;strong&gt;אז בנדבה אזבחה לך אודה שמך ה' כי טוב&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2139</field>
+		<field name="revision_id">2139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מהדורת 1812 מוזכרת בקטלוגים, אך לא ניתנת להשגה בארץ.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;יגיד לך ימין ומשמאל&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת &lt;strong&gt;בתו&lt;/strong&gt;ך &lt;strong&gt;ק&lt;/strong&gt;ה&lt;strong&gt;ל א&lt;/strong&gt;הל&lt;strong&gt;ל&lt;/strong&gt;ך לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחיר הכרך רשום בעמוד השער</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחיר הכרך רשום בעמוד השער</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2149</field>
+		<field name="revision_id">2149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">עמוד השער לא כולל את פרטי ההוצאה, ואין בו שנת ההוצאה ומקום ההוצאה. במקום זאת מופיע בעמוד השער הקדמה מטעמו של המחבר.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">התאריך מופיע גם בתאריך מתקופת המהפכה: 
+
+17 Brumaire an X</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2153</field>
+		<field name="revision_id">2153</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ובשנת מלך שופט &lt;strong&gt;באמת דלים&lt;/strong&gt; כסאו לעד יכון לפ&quot;ק
+
+בעמוד השער לא צוין מקום ההוצאה או שם ההוצאה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת &lt;strong&gt;והתפללו&lt;/strong&gt; אליך דרך ארצם לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">יש לבדוק שוב כיצד התאריך נרשם = לא ברור האם מדובר בגימטריה המופיעה בשער הספר, או שהתאריך שנרשם בקטלוגים נלקח ממקור אחר.
+
+בדף מז' כותב המחבר: &quot;מחמת גודל הוצא' הדפוס. וחסרוני חסרון כיס לא יוכל להמנה. קימתי מאמר הכתוב תן חלק לשמנה. וחלקתי הספר לגזרים. ודפסתי רק שמנה שערים. והלואי יהיו דברי אלה נעשים ונזכרים... אציגה פה מסוף ספרי באות התו&quot;ו קצור המדות כאגדים...&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;קטנתי&lt;/strong&gt; מכל החסדים [?] לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @בשנת &lt;strong&gt;לישועה ונחמה&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;מ&lt;/strong&gt;צ&lt;strong&gt;א&lt;/strong&gt; חפ&lt;strong&gt;ץ&lt;/strong&gt; ודב&lt;strong&gt;ר דבר&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער הספר כתוב: &quot;נדפס... בחדש אדר שני&quot;
+
+בשדה שיתווסף בחלונית זו &quot;ספרים שמוזכרים כאן&quot; מוזכר &lt;strong&gt;ספר קנה המידה ל&lt;/strong&gt;שיק, ברוך בן יעקב, שלדברי המחבר תרגם את הדברים מאנגלית וקיצר מדי כך שאי אפשר להבינם (דף יז').</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;ע&lt;/strong&gt;ו&lt;strong&gt;יק&lt;/strong&gt;ם מ&lt;strong&gt;ש&lt;/strong&gt;ה ו&lt;strong&gt;יו&lt;/strong&gt;ש&lt;strong&gt;ין&lt;/strong&gt; .</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ לפרט וב&lt;strong&gt;כן לך הכ&lt;/strong&gt;ל יכ&lt;strong&gt;ת&lt;/strong&gt;ירו לפ&quot;ק
+
+כל הפרטים הנוגעים לעמוד השער נלקחו מ&quot;ספר כתר מלכות&quot; לאבן גבירול, שכן ספר &quot;חי בן מקיץ&quot; יצא לאור בכריכה משותפת איתו, ללא עמוד שער נפרד.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעניין שם ההוצאה/בית דפוס, נכתב בשער:
+im Verlage bei Moses Philippssohn
+und
+gedruckt bei C. Schlieder
+לדיון על פעילותו של בית הדפוס של 
+Christoph Schlieder
+ראו: 
+Antje Marquardt, Das jüdische Wesen im Dessau..., pp. 41 - 42.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2168</field>
+		<field name="revision_id">2168</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ שנת אך &lt;strong&gt;קרוב ליראיו&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת וי&lt;strong&gt;ה&lt;/strong&gt;י &lt;strong&gt;ככלו&lt;/strong&gt;ת &lt;strong&gt;שלמה לבנו&lt;/strong&gt;ת את ביתו לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בקטגוריה &quot;ספרים אחרים המוזכרים בספר זה&quot; צריך להוסיף את:
+
+&lt;strong&gt;ספר חובות הלבבות&lt;/strong&gt;/בחיי ב&quot;ר פקירא
+&lt;strong&gt;פי' משניות; ספר המורה; מלות ההגיון&lt;/strong&gt;/הרמב&quot;ם</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;אני בתמי אלך&lt;/strong&gt; לפ&quot;ק
+
+
+מקום הדפוס אינו וודאי. וינוגרד מציין: אולי ורשה.
+
+לפי הקטלוג הממוחשב: ביאליסטוק (&quot;ע&quot;פ וינר&quot;).
+
+לפי מאגר הביבליוגרפיה: מקום הדפוס ע&quot;פ צייטלין, קרית ספר, עמ' 81; ש' ווינער, קהלת משה, מס' 5561.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער הספר מוזכר סיפרו של בן-זאב &quot;תלמוד לשון עברי&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">פרטי ההוצאה מופיעים על גבי עמוד השער של &quot;עמודי הלשון&quot; של ברי&quot;ל, שספר זה נכרך יחד איתו</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מאחורי עמוד השער מזהיר המחבר: &quot;וזאת לדעת לכל בר דעת שהשגות גבולי הדפוס מספר חדש כזה שכיחי היזיקו אם ידפיס אחריו מי שאינו בקי כי אם טעה במספר אחד בלוחות האלו התועלת בכלל מקולקל ואני יגעתי ביגיעת הרבה עד שיצא מתחת ידי דבר מתוקן שאין בו אפילו טעות אחד לכן באתי בחתימת ידי ממש בכל ספר וספר כדי שידעו משל מי הוא אם והוא מדפוס שלי או מדפוס הבא אחרי וכל ספרר שאין בו חתימת שמי בכתב ידי לאו דידי הוא.&quot; [חתימת 'רפאל הלוי']</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2183</field>
+		<field name="revision_id">2183</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">רפאל לוי מנצל במה זו כדי &quot;להודיע כי שמעתי שאחד מן לומדי תורה בשמו ר' משה טיקטין הדפיס באמשטרדם ספר אחד על תכונה על שמי בלי ידיעתי ובלי רשותי, והאיש הזה היה פעם אחת אצלי ואמר לי שקיבל ספר הנזכר מאחד מתלמידי, ואמרתי לו שספר הזה ביד כל תלמידי והיה להם לזכרון על מה ששמעו ממני פא&quot;פ, כי באמת אינו ראוי לקרא אותו בשם ספר, על כן כל מי שקנה ספר הנזכר אל יאשימני שיצא לאור דבר שאינו מתוקן כי לא היה דעתי מעולם שיבא ספר הלז אל הדפוס בלי הוספה...&quot; (עמ' [ב])</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2188</field>
+		<field name="revision_id">2188</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">התאריך בו חתום השיר: כ&quot;ה אדר תקמ&quot;ה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בתוך הספר אין מידע על תאריך/מקום &lt;ins&gt;ההוצאה&lt;/ins&gt;. עם זאת, יש מידע על תאריך/מקום &lt;ins&gt;כתיבת&lt;/ins&gt; הספר. בסוף הספר כתוב: &quot;ראש חדש התשיעי בשנת תקמ&quot;ג לפ&quot;ק ברלין יע&quot;א&quot;.
+
+סנדלר, &lt;ins&gt;הביאור לתורה&lt;/ins&gt;, עמ' 43, מתייחס לקושי הביבליוגרפי של קביעת מקום/תאריך ההוצאה. ביבליוגרפים שונים ציינו, לעיתים בלא פיקפוק, כי הספר ראה אור בברלין, שנת תקמ&quot;ג (חלקם ציינו 1782, אחרים 1783), אם כי אין עדות חד משמעית לכך בתוך הספר.
+ 
+לפי סנדלר, &quot;קרוב לוודאי ש&quot;לשון הזהב&quot; הוצאה מתוך ההוצאה המיוחדת של החוברת &quot;אור לנתיבה&quot;, ברלין, ר&quot;ח כסלו תקמ&quot;ג, 1782..., שמנדלסון הפיץ ב- 300 טפסים, ובה הוא מבטיח 'להדפיס את ההקדמה ההיא אי&quot;ה בדפוס גדול כתבנית החומש... ולא באה עתה בדפוס קטן כי אם למלאות רצון התלמידים'&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">הוצאות פירטיות: 
+מאחורי עמוד השער רשם המחבר:
+&quot;המחבר יודיע בזה לכל קורא, שכל מחברת אשר איננה חתומה פה בחתימת ידו ביהודית ובסוף המאמר בלע&quot;ז, איננה שלו&quot;
+כאן חתום שמו בעברית (&quot;משה&quot;), ובסוף הספר חתום שמו בלועזית
+Moses Lemans
+
+נוסח כתיבת התאריך: &quot;בשנת &lt;strong&gt;ו&lt;/strong&gt;צרפתים &lt;strong&gt;כצרוף א&lt;/strong&gt;ת &lt;strong&gt;הכסף&lt;/strong&gt; לפ&quot;ק&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2192</field>
+		<field name="revision_id">2192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">סוף הספר מצויינים שמותיהם של  המגיה ושל פועלי הדפוס: יוקל בן לא&quot;א ה&quot;רר משה ז&quot;צל מלאמסהיים המגיה; מאזוס בן כהרר הירץ האג ז&quot;ל מק&quot;ק אמשטרדם ולע&quot;ע בק&quot;ק לונדן; שמואל בן כ&quot;ה מענדלה האג ז&quot;ל מק&quot;ק אמשטרדם ולע&quot;ע בק&quot;ק לונדן; יעקב בן גדלי' ז&quot;ל מק&quot;ק אמשטרדם ולע&quot;ע בק&quot;ק לונדן</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">ובעתק שלפניי אין עמוד שער ואין כל פרט המאפשר לענות על פרטי ההוצאה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2202</field>
+		<field name="revision_id">2202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שנת ויהי כי זקן יצחק &lt;ins&gt;ותכהינה&lt;/ins&gt; עי&lt;ins&gt;ניו&lt;/ins&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בסוף המגילה: &quot;נ&quot;ב&quot;. בו מודיע ברי&quot;ל כי יחד עם מגילה זו יוצאת רשימת הכותרות ורשימת החותמים מראש, אשר יוכרכו לפני שיר השירים. 
+כמו כן, הוא מתנצל על כך כי לא מתפרסמת רשימת מונחים - &quot;וואקאבעלאריום&quot; - כפי שהובטח. הוא מסביר כי מחלה שתקפה את וולפסון מתחילת החורף מנעה ממנו כל פעילות אינטלקטואלית, ואילו הוא עצמו היה עסוק בפרויקט אחר. הוא מבקש את הבנתם וסליחתם של החותמים מראש.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2204</field>
+		<field name="revision_id">2204</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;בסוף מגלת רות ישנה מודעה מאת וולפסון וברי&quot;ל: &quot;באור המלות בלשון אשכנז שהבטיחנו להדפיס אחר כל מגלה ומגלה לתועלת התלמידים ומלמדיהם, יבוא אי&quot;ה אחרי כלות דפוס כל חמשת הספרים. להיות שלפעמים שם אחד או אנין אחד כפול בזה ובזה, ויש שלתיבה מה הוראה אחת בזה הספר, והוראה אחרת באחד מהספרים האחרים.&quot;&lt;/p&gt;
+</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2208</field>
+		<field name="revision_id">2208</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">לפי וינוגרד, ייתכן כי נדפס בקרלסרוהה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער מצוינות &lt;ins&gt;שתי&lt;/ins&gt; הוצאות:
+האחת בלייפציג (היינריך גרף), השניה בדסאו (משה פיליפסון).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בתחתית עמוד השער רשום:
+Dessau bei dem Verfasser, und Leipzig in allen reelen Buchhandlungen</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת אזן &lt;strong&gt;ותקן&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שנת מהם תקנו</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ שנת אזן &lt;strong&gt;ותקן&lt;/strong&gt; משלים הרבה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2220</field>
+		<field name="revision_id">2220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בתחתית עמוד השער כתוב:
+&quot;נדפס... במשב&quot;ח [במשכ&quot;ח?] חדש אשר בנה שלמ&quot;ה ברשיון אדונינו המלך אוהב משרי' תחת ממשלת האדון הגדול שטשענסני טשאצקי שר ומושל על מחוזות וערים נגיד ארצו וחבר האדירים הקלים מנשרים ע&quot;י חברי' המעולים מדפיסי&quot;ם ועולים הרבני חסידא ופרישא מוהרר שלמה והנגיד מוה' אלימלך וחתן תמים מוה' אברהם ובהשקפת הגי&quot;ה אור ספרי המדקדק בחסידות מוהרר שמשון מחאליוב נרם יהיל לנצח&quot;
+
+
+נוסח כתיבת התאריך: בשנת יראת יי ראשית &lt;strong&gt;דעת חכמה&lt;/strong&gt; ומוסר וגו' לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער נרשם:
+
+Gedrukt in der priviliegirten oriental- u. occidentalischen Buchdruckerey von W. Heidenheim in Rödelheim</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">לגבי ההוצאה - בספר רשום כך:
+&quot;ווין / מיט אמשטרדאמר שריפטן/ געדרוקט/ בייא אנטאן שמיד/ ק' ק' פריווילעגירטען העברעישען בוכדרוקער...&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בעמוד השער רשום: &quot;שנת שתו שכרו וקיו לפק&quot;, ללא הדגשות.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">לא רשום על שער הספר &quot;ברלין&quot; - רשמתי זאת על פי הידוע על מקום ההוצאה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2238</field>
+		<field name="revision_id">2238</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ערב חג האסיף בס' ובשנת ברך ה' חילו ופ&lt;strong&gt;על ידי&lt;/strong&gt;ו &lt;strong&gt;ת&lt;/strong&gt;רצה לפק.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת כבוד הלבנון &lt;strong&gt;נתן לה&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">להעביר לשדה שאיילה תוסיף &quot;איזכור ספרים אחרים&quot;:
+בהקדמה מציין המחבר את סיפרו של 
+לוצטו, משה חיים (לוודא שזהו הכתיב הנכון של מחבר זה) - &lt;strong&gt;לישרים תהלה, מורה נבוכים לרמב&quot;ם, תנ&quot;כ, ספר משלי שועלים&lt;/strong&gt; לר' ברכיה הנקדן, ואת &lt;strong&gt;ספר תחכמוני&lt;/strong&gt; (ככל הנראה, סיפרו של אלחריזי, יהודה בן שלמה). הוא מבקר את העיבודים החדשים לספרי המשל שמעוותים לעיתים את כוונת המקור, וגם משלבים משלים שאין להם לקח מוסרי כלל. המחבר טוען שכתב את הספר לטובתם של הילדים. הוא בחר במשלים מובחרים, ואותם עיבד. בשל הקושי הכלכלי להוציא את הספר, הוא חילק אותו שני חלקים - חלק שני, שיהיה גדול יותר, הוא יוציא אם החלק הראשון יצליח.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת &lt;strong&gt;ו&lt;/strong&gt;עשית &lt;strong&gt;הטוב והישר&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;תקן&lt;/strong&gt; משלים הר&lt;strong&gt;ב&lt;/strong&gt;ה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2247</field>
+		<field name="revision_id">2247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;מזמור לאסף אלהים בא&lt;/strong&gt;ו גוים בנחלתך.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ בשנת מאתים ששים ושנים 
+ל&lt;strong&gt;חיי יצחק הלוי&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;לפי רפל, ביבליוגרפיה של ספרי לימוד, עמ' קכז (מס' 99), &quot;יצאו רק שתי חוברות&quot; מן הספר נתיב לשון עברית, &quot;עד האות ג&quot;. בעמ' קמא מציין רפל כי מחבר הספר אלמוני.&lt;/p&gt;
+</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2250</field>
+		<field name="revision_id">2250</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">לא כל העותקים שהודפסו (ע&quot;פ עמוד השער) בברלין, תקמ&quot;ה הינם זהים. השוואה (לא מעמיקה) של שני עותקים הנראים על פניו זהים מגלים הבדלים כגון: שינוי קל בסידור האותיות בהקדשה, שינויים קלים באיות בהקדמה (לעזריננען במקום לעזרינן).
+לפי יודלוב, &lt;ins&gt;אוצר ההגדות&lt;/ins&gt;, מס' 318, מן ההשוואה בין שני עותקי הספר עולה כי אחד כולל נח דפים, בעוד שאחר כולל רק נ דף. בעותק זה, &quot;דף נ (הוא הדף הראשון של קונטרס 'שיח יצחק') כולל דין מכירת חמץ ונוסח שטר המכירה. דף נא-נח, הערות על ההגדה, לא נדפסו בו. בטופס של נ דף רשימת תיקוני הטעויות (שבדף מח, א)קצרה (2 שורות בלבד), ובסוף דף נ נדפס שמו של מסדר האותיות. בטופס בן נח דף ברשימת הטעויות 6 שורות ושמו של הפועל נשמט... יש טפסים שנדפסו על נייר כחול.&quot; יודלב שולח אל: י' ריבקינד, &lt;ins&gt;הגדה של פסח באספקלריה של הדורות&lt;/ins&gt;, ניו יורק תשכ&quot;א, עמ' 10 - 11.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2251</field>
+		<field name="revision_id">2251</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">את המהדורה הראשונה לא ניתן להשיג בארץ</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2253</field>
+		<field name="revision_id">2253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בית הדפוס כפי שמופיע על גבי הספר:
+איצק צירנפארף -
+Isaac David Zirndorffer</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ציון השנה ע&quot;פ ראשי התיבות המצויינים:
+בשנת &lt;strong&gt;תכונן ו&lt;/strong&gt;תוסד &lt;strong&gt;ק&lt;/strong&gt;רית &lt;strong&gt;כ&lt;/strong&gt;לילת היופי לפ&quot;ק.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על פי הספרייה הלאומית - 
+מקום הוצאת הספר הוא אלטונה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2256</field>
+		<field name="revision_id">2256</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @הוא זוכה בו לדברים הרבה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך:  @ה' יס&lt;strong&gt;ד צי&lt;/strong&gt;ו&lt;strong&gt;ן&lt;/strong&gt; ובו &lt;strong&gt;יחסו עניי עמו&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2259</field>
+		<field name="revision_id">2259</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ בשנת &lt;strong&gt;כי יהוה יהיה לך לאור עולם&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @(זה הוא חלק הא' הטוב אור עולם) לפ&quot;ק.
+
+יש לבדוק שוב האם באמת תקמ&quot;ג, כפי שנרשם בקטלוג המאוחד. בהמשך רשום:
+
+(כלם אחד מהם לא נעדר) לפ&quot;ק.
+
+[תקמ&quot;ג]&quot;. בשער הספר מופיעה גימטריה אחרת, השווה לתקמ&quot;ב.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2261</field>
+		<field name="revision_id">2261</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ כי &lt;strong&gt;עמך מקר חיי&lt;/strong&gt;' באורך נראה אור לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;והמשכילים יבינו ה&lt;/strong&gt;כל.
+
+על גבי השער מופיע הכיתוב הבא בלטינית:
+Metaphisica cabbalistica, sive Philosophia orientalis antiqua, ad notoiones nostri aevi accommodata.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2265</field>
+		<field name="revision_id">2265</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">הודעות על פרסום טקסטים נוספים (ציון שמות הטקסטים) &lt;ins&gt;טוביה שלשה חלונות&lt;/ins&gt;; &lt;ins&gt;ספר חטבות אט&quot;ן&lt;/ins&gt;; &lt;ins&gt;ספר פנת הדת&lt;/ins&gt;; &lt;ins&gt;ספר חנוכת הבית&lt;/ins&gt;; &lt;ins&gt;ספר שקל החודש&lt;/ins&gt; (כולם של המחבר)
+
+נוסח כתיבת התאריך: בחכמה יבנה בית</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2266</field>
+		<field name="revision_id">2266</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: טוב עשו &lt;strong&gt;בישראל&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער כתוב:
+&quot;נדפס על ידי הנעלה ר' שמואל פלקלש וכ' שמואל בן ר' ליזר בחור&quot;
+
+נוסח כתיבת התאריך: נדפס... בשנת &lt;strong&gt;ו&lt;/strong&gt;דבר &lt;strong&gt;בעתו מ&lt;/strong&gt;ה &lt;strong&gt;טוב&lt;/strong&gt;...</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2268</field>
+		<field name="revision_id">2268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ בשנת דברי האמת &lt;strong&gt;והיושר&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: כתוב גם:
+Ao. 5 der Baraasche Vryheid</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בנוגע לבית הדפוס, בשער רשום:
+im Verlage bei Moses Philippssohn, gedruckt bei C. Schlieder</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2272</field>
+		<field name="revision_id">2272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת  &lt;strong&gt;ואל היה&lt;/strong&gt;וד&lt;strong&gt;ים כ&lt;/strong&gt;כ&lt;strong&gt;ת&lt;/strong&gt;בם לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;&lt;ins&gt;ה'&lt;/ins&gt; ישגיח דרכי&lt;/strong&gt; ליצירה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2274</field>
+		<field name="revision_id">2274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשער הספר:
+@נעשה בשנת &lt;strong&gt;יתענגו&lt;/strong&gt; על רוב שלום</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת &lt;strong&gt;קנה&lt;/strong&gt; חכמה ואל &lt;strong&gt;ת&lt;/strong&gt;מכור לפ&quot;ק
+
+מקום הדפוס וכן שם המחבר מוסווים מאחורי סיפור מסגרת דימיוני. לפי פיינר, עמ' 389, מקום הדפוס: פראג.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;להי&lt;/strong&gt;ו&lt;strong&gt;ת גלוי לכ&lt;/strong&gt;ל
+
+חמו&quot;ל</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ &lt;strong&gt;הולך תמים&lt;/strong&gt; ופועל צ&lt;strong&gt;ד&lt;/strong&gt;ק
+
+שם בית ההוצאה לא רשום על גבי הספר</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שנת הדפוס נרמזת בדף לא,א: ות'ק'ה'ל' [תקל&quot;ה]. עיין: שטיינשניידר, , V ,ZGDJD 1892, עמ' 164. ?</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2281</field>
+		<field name="revision_id">2281</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת על ה' &lt;strong&gt;להתענג&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: כי &lt;strong&gt;תקנה&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">המוציא לאור מתייחס בהקדמתו (בחלק האחרון) ל&quot;מודעא שהדפסתי וצדקת פזרונו בישראל בקהל רב&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2284</field>
+		<field name="revision_id">2284</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת ויהי אי&lt;strong&gt;ש&lt;/strong&gt; אחד מ&lt;strong&gt;ן&lt;/strong&gt; ה&lt;strong&gt;ר&lt;/strong&gt;מת&lt;strong&gt;י&lt;/strong&gt;ם צ&lt;strong&gt;ו&lt;/strong&gt;פים לפ&quot;ק.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ שנת &lt;strong&gt;קדמת&lt;/strong&gt; עדן 
+
+מחיר הספר מצויין בהסכמה (דף ב').
+עוד התייחסות לגבי ענייני ההוצאה לאור ראו בחלון &quot;מבנה הספר&quot; באצבע &quot;אחרית דבר&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחירו של הספר אין מידע בספר, אך בהמאסף תקמ&quot;ד, עמ' קנח', קובע המחבר את מחירו של הספר: &quot;מקח שני כרכים הנ&quot;ל הוא א' ר&quot;ט ח' גארשין...&quot;  מחיר כרך א של ספר המידות הוא 6 גראשן, כך על פי רשימת ספרי חינוך נערים שהתפרסמה ע&quot;י אהרן וולפסון כפי הנראה בתקנ&quot;ט
+
+
+בעניין שנת ההוצאה של המהדורה הראשונה: במקומות מסוימים (כגון קלויזנר, עמ' 135), צוין כי שנת ההוצאה הראשונה היתה תקמ&quot;ה. לפי קרסל, א', עמ' 647, שנת ההוצאה היתה תקמ&quot;ח, 1788.
+מתוכן הספר עולה כי הוא נכתב לאחר כתיבת 4 המכתבים הידועים כ&quot;דברי שלום ואמת&quot;, שהרי וייזל מתייחס בספר זה ל&quot;מכתבנוו הנכבד שקראנו &lt;strong&gt;דברי שלום ואמת&lt;/strong&gt;&quot; ול&quot;שלשה מכתבים אחרי' שהוספנו עליו&quot; (עמ' כו/א). (גם בהקדמה עמ' [6] מצטט מתוך המכתב השלישי של דברי שלום ואמת, שם כתב על &quot;ספר המדות או ספר מוסר השכל שאנו עוסקים לחברו...&quot;
+על סמך מידע זה ורמזים נוספים, ברויאר, &lt;ins&gt;וייזל&lt;/ins&gt;, עמ' 42 (הערה 48) משער כי הספר ראה אור לקראת סוף 1786 או &quot;in all probability&quot; 
+ב- 1787.
+ניתן להוסיף כי בהקדמתו לתרגום לעברית של פעדאן (שהובא לדפוס באייר תקמ&quot;ז) כותב וייזל: &quot;כמו שנבאר בעז&quot;ה בספר המדות שאנו מוציאין עתה לאור&quot; (עמ' שלישי בהקדמה).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחיר הספר כפי שכתוב ברשימת ספרי &quot;חינוך נערים&quot; משנת תקנ&quot;ט- 3 ר&quot;ט ו-8 גראשן
+ח&quot;כ</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת י&lt;strong&gt;קר&lt;/strong&gt;ה היא מפנ&lt;strong&gt;י&lt;/strong&gt;נ&lt;strong&gt;י&lt;/strong&gt;ם &lt;strong&gt;ו&lt;/strong&gt;מחר&lt;strong&gt;ו&lt;/strong&gt;ץ נבח&lt;strong&gt;ר&lt;/strong&gt; לפ&quot;ק.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחיר ספר &quot;השורשים כולל שפת אמת ודברים אחדים&quot;
+כפי שמופיע ברשימת ספרי דפוס &quot;חינוך נערים&quot; בשנת תקנ&quot;ט
+2 ר&quot;ט-ח&quot;כ</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">צילום של מהדורה מצולמת של ברוקלין, תשמ&quot;ה.
+לבדוק שוב גימטריה.
+בעמוד [2] רשום: 'ותהי ראשית מלאכת הדפוס ך&quot;כ תמוז תקמ&quot;דל' 
+בעמוד האחרון לספר רשום:
+'וחתום מלאכתו ט&quot;ו שבט תקמ&quot;ה'
+
+
+נוסח כתיבת התאריך: 
+@שנת ויצא &lt;strong&gt;יצחק לשוח&lt;/strong&gt;
+
+בעמוד האחרון נרשם:
+וחתום מלאכתו ט&quot;ו שבט תקמ&quot;ה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: התאריך ע&quot;פ אישור הצנזור, שחתם:
+16.11.1794</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על תהליך הוצאת הספר כותב &quot;המדפיס&quot; שבתי מיאנוב בעמוד האחרון (תחת הכותרת &quot;התנצלות המדפיס&quot;):
+&quot;נא אל יאשימו אותי האישים הנכבדים אשר מלאם לבם לחתום על הספר הזה (זמירות ישראל), על אודות המשך זמן רב אשר עבר מיום החילותי להדפיסו עד עתה, לאמור נרפה אני ממלאכתי זאת או כיושב בטל או כפונה ועוסק במלאכה אחרת. ואף כי לא קבלתי ולקחתי שום מחיר מקודם, ואין להם עלי תלונות ממון, מ&quot;מ לא אהבתי להיות בעיניהם כמתעתע שאינו עומד בדבורו. לכן הנה באתי עתה להנקות ולהשבע בחיי הכותב כי  כל ישעי וכל חפצי רק למלאות העבודה הזאת אשר יקרה בעיני, ואין זה כי אם הטרחה הרבה מאד, אשר לא נהיתה כמוה בדפוס עברי מעולם, כאשר יבין כל משכיל במלאכת ההדפסה וסדור האותיות, היא האריכה למעניתה...&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחיר כל ארבעת הכרכים כפי תחת הכותרת זמירות ישראל  3 ר&quot;ט וארבעה גראשן   ב&quot;ארדינערי פאפיר&quot; 4 ר&quot;ט ו-8 גראשן ב&quot;מיטטעל פאפיר&quot; ו- 5 ר&quot;ט ו-8 גראשן ב&quot;פיין פאפיר&quot;, כך על פי רשימת ספרים של &quot;דפוס חברת נערים משנת תקנ&quot;ט ח&quot;כ</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בקטלוג הממוחשב מופיע &quot;חינוך נערים&quot; כבית דפוס, אך לפי שנת הדפוס, יש בעיה עם מידע זה.
+לפי קלוזנר, הספר נכתב לפני התקופה שלנו: 1742, ונדפס בקניגסברג. (עמ'108)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בעמ' השער רשום: &quot;הובא לבית הדפוס בשנת כל אשר &lt;strong&gt;טוב&lt;/strong&gt; בעיני &lt;strong&gt;ישראל&lt;/strong&gt; לפק&quot;.
+בעמ' שער פנימי נוסף רשום:
+&quot;שנת אשתעשע &lt;strong&gt;במצותך&lt;/strong&gt; לפ&quot;ק&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ &lt;strong&gt;וישמר&lt;/strong&gt; משמרתי מצותי חקותי ותורותי לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2305</field>
+		<field name="revision_id">2305</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @נדפס בשנת &lt;strong&gt;אז תצלח&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ מה רב טובך אשר צ&lt;strong&gt;פנת&lt;/strong&gt; ליראך לפ&quot;ק שנת אורה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשנת  תקנ&quot;ט, הספר עדיין נמכר ב-2 ר&quot;ט
+
+כך על פי  רשימת ספרי &quot;חינוך נערים, המופיעה בשנת תקנ&quot;ט  בספר איוב לסאטנוב בעמוד 3
+ח,כ
+
+
+נוסח כתיבת התאריך:  @&lt;strong&gt;ת&lt;/strong&gt;בא &lt;strong&gt;חכמה בלבך וד&lt;/strong&gt;עת לנפשיך יגעם</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בהסכמת צבי הירש (עמ' ב') מוזכר המחבר היש&quot;ר מקנדיא
+
+בדף קט' מוזכר סיפרו של &lt;strong&gt;הכים, אליהו בן חיים &lt;ins&gt;ספר שבילי דרקיע&lt;/ins&gt;&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת אנ&lt;strong&gt;כ&lt;/strong&gt;י א&lt;strong&gt;ש&lt;/strong&gt;לח ג&lt;strong&gt;די&lt;/strong&gt; מ&lt;strong&gt;ן&lt;/strong&gt; ה&lt;strong&gt;צ&lt;/strong&gt;א&lt;strong&gt;ן&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">יש הבדל בין תאריך ההוצאה כפי שנרשם על גבי הספר (תקמ&quot;ד) לבין תאריך ההוצאה כפי שמופיע  במקורות אחרים (תקנ&quot;ד). ראו גם ב&quot;אצבע&quot; הבאה.
+
+בשער הספר כתוב: &quot;בשנת ו&lt;strong&gt;כתוב ישר&lt;/strong&gt; לפק&quot;.
+יתכן כי המחבר חיבר את הספר באותה שנה (תקמ&quot;ד), וכי הספר עבר בין הקוראים בכתב יד, אך לא הובא לדפוס עד לשנת 1794 או 1795. (פלאי, &lt;ins&gt;כתב יושר&lt;/ins&gt;, עמ' 124)
+לפי &quot;המאסף&quot;, לא מדובר אלא ב&quot;טעות סופרים&quot;, וצריך להיות רשום תקנ&quot;ד. (פרידלנדר, &lt;ins&gt;הסטירה&lt;/ins&gt;, עמ' 66)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ לפרט וב&lt;strong&gt;כן לך הכ&lt;/strong&gt;ל יכ&lt;strong&gt;ת&lt;/strong&gt;ירו לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שם בית הדפוס אינו מופיע בשער אלא בעמוד האחרון:
+&quot;געדרוקט אין לעמבערג בייא ר' אורי צבי רובינשטיין, בוכדרוקר אונד בוך הענדלער בייא וועלכעס אויך אללער ארט ספרים, טהיילס בייא איהם זעלבסט טהיילס בייא אנדרען הערויסגעקאממען צו האבין זינד&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: נדפס בשנת ''תקל''' תקילתא במאזנים לפ&quot;ק
+
+מקום הדפוס ושם ההוצאה - אינם מופיעים ע&quot;ג הספר, למיטב הבנתי.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2319</field>
+		<field name="revision_id">2319</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;בשער&lt;/strong&gt; בת רבים לפ&quot;ק
+
+בעמוד השער צוין:
+&quot;בבית ובדפוס הבחור דוד בן המנוח כה&quot;רר יעקב פרופס כץ זצ&quot;ל/ דירתו בהויאוין נומר 35&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת יתרון &lt;strong&gt;הכשר&lt;/strong&gt; חכמה לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;ל&lt;/strong&gt;ה&lt;strong&gt;תענג&lt;/strong&gt; על ה' בהיכל קדשו</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">יש מידע רב בספר המתייחס לנושאי דפוס ומכירת ספרים. בטקסט הכרוך עם ספר מודע לבינה, שנקרא &quot;ספר רפואות העם&quot; (ראו פירוט בחלון &quot;חוקר ומקורותיו&quot; בשדה &quot;הערות&quot; בעמוד &quot;מודעה&quot; יש פירוט של מוכרי הספרים ודרכי המכירה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת ויוסף הוא &lt;ins&gt;המשביר&lt;/ins&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: לפרט &lt;strong&gt;יהודה אתה יודוך&lt;/strong&gt; א&lt;strong&gt;חיך&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שם המדפיס כפי שרשום בספר:
+Joseph Edlen von Kurzbeck</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2330</field>
+		<field name="revision_id">2330</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">דומה כי חסר שער ראשי (עם השם &quot;מנחה חדשה&quot;).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">&lt;strong&gt;מחיר הספר&lt;/strong&gt;:
+
+בסוף הספר מודע ל&lt;ins&gt;בני בינה א'&lt;/ins&gt; מפרסם משה פיליפסון ספרים אשר יצאו בהוצאתו, וביניהם התרגום של תרי עשר הנביאים. המחיר הנקוב שם הוא:
+&quot;Auf Schreibpapier 2 Rthlr. 12 Gr. Auf Druckpap. 2 Rthlr.&quot; 
+על חלקו העברי של בית הדפוס, על פעילותו של פיליפסון ועל בחירתו בפרויקט מנחה טהורה לתחילת דרכו ראו: 
+Ph. Philippson, Biographische Skizzen, I, pp. 66 ff.
+מעניין חלקה של אשתו ביוזמת הקמת בית הדפוס העברי ובהשגת מימון למנחה טהורה (שם).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על ההוצאה רשום בעמוד השער:
+נדפס בהמבורג בדפוס המשותפים כהר&quot;ר אליעזר ליזר שמש וכהר&quot;ר נתן בר&quot;מ מאיי</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2339</field>
+		<field name="revision_id">2339</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער רשום:
+תחת ממשלת אדוננו המיוחס הגדול החסיד הדוכוס ישר צבא הגדול דמדינת ליטא מיכל קאזמיר ראדזוויל יר&quot;ה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: לפרט &lt;strong&gt;ויער&lt;/strong&gt;וך &lt;strong&gt;אבר&lt;/strong&gt;ה&lt;strong&gt;ם&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: התאריך בעמוד השער:
+&quot;לפרט ה&lt;strong&gt;נני נשפט&lt;/strong&gt; אותך&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">תאריך הוצאת הספר: תקנז - נרמז בחתימת נותני ההסכמה, שם כתוב:
+היום יום &lt;strong&gt;ב' ח' לחדש אדר&lt;/strong&gt; לפ&quot;ק.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;ע&lt;/strong&gt;דות&lt;strong&gt;י&lt;/strong&gt;ך נאמנו מאד לביתך &lt;strong&gt;נאוה קדש&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">יש לוודא האם ספר בראשית במהדורתו הראשונה אכן הופיע באותו בית דפוס.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2349</field>
+		<field name="revision_id">2349</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">אין עמוד שער שני עותקים בנבדקו בספריה הלאומית. המלים הראשונות: &quot;הקדמת והתנצלות כותב הבאור על ספר ויקרא&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2350</field>
+		<field name="revision_id">2350</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעותקים שנבדקו בספריה הלאומית, אין עמוד שער כלל. גם לא הקדמות כלשהן.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מאחורי עמוד השער ישנה הודעה מאת המחבר והמדפיס:
+&quot;...לבל יגזול איש לבבי ועמלי אבקש מאחינו בני ישראל שלא לקנות חיבור זה לבתי עדותינו המדפיס והמחבר שנינו כי אנחנו נחתום ונכתוב את שמינו על כל הספרים בחתימת ידינו ועל השומע יבוא ברכת אלקינו&quot;.
+
+נוסח כתיבת התאריך: בשנת &lt;strong&gt;עומדות&lt;/strong&gt; היו רגלינו בשעריך לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: לפר&lt;strong&gt;ט&lt;/strong&gt; והח&lt;strong&gt;כ&lt;/strong&gt;מה &lt;strong&gt;ת&lt;/strong&gt;חי' &lt;strong&gt;א&lt;/strong&gt;ת ב&lt;strong&gt;עלי&lt;/strong&gt;ה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @בשנת &lt;strong&gt;כתבם על&lt;/strong&gt; לוח לבך
+(מופיע בעמ' [2])</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @דרשו הטוב וחיו</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &quot;לפרט &lt;strong&gt;הקסת&lt;/strong&gt; במתניו&quot;
+
+
+לגבי שם ההוצאה כתוב בשער הספר:
+Gedruckt auf dem altstädter Ringe Nro. 716 in der Hladkyschen  Buchdruckerey
+
+בנוגע למכירת הספר, רשום מאחורי עמ' השער:
+&quot;הקונים הנגשים לקנות יזכו במסת שלשה רייניש (?)&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;ואמרנו בצלו נחיה בגוי&lt;/strong&gt;ם לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;ו&lt;/strong&gt;שפ&lt;strong&gt;כתי עליכ&lt;/strong&gt;ם רוח חן לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ... &lt;strong&gt;לשרך&lt;/strong&gt; לפ&quot;ק
+
+בעניין המחיר, שמרוק מציין כי בלפחות בעותק אחד שנותר לא רשום על השער מחיר הספר  (כפי שמופיע כאן). לטענתו, ייתכן שחלק מהעותקים נועדו למסחר וחלק חולק חינם בהתאם להתחייבות שקיבל מממן הספר הלא יהודי.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בספר מודע לבינה התפרסמה מודעה על פרסום קרוב של ספר רפואות העם, שיעלה 
+בערך 12 בוגן.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ושמרתיך &lt;strong&gt;בכל אשר&lt;/strong&gt; תלך לפ&quot;ק
+
+מחיר הספר כפי שרשום ב&quot;ערוגת הבושם&quot;: א' דוקאט.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;נתיבי חכמה&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">האותיות בעמוד השער בשחור ואדום.
+
+
+נוסף מעל הכותרת:
+
+Catechismus Integer Iudaeorum. Auctore, E. Jacob Soldin</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2369</field>
+		<field name="revision_id">2369</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;ש&lt;/strong&gt;ע&lt;strong&gt;רי ז&lt;/strong&gt;מר&lt;strong&gt;ה&lt;/strong&gt; לפ&quot;ק
+
+לא רק הרב נותן ההסכמה כי אם גם המביא לדפוס מזהירי מפני העתקה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &quot;בשנת &lt;strong&gt;נע&lt;/strong&gt;ימ&lt;strong&gt;ות&lt;/strong&gt; בימינך נצח לפ&quot;ק&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ ויהי ה&lt;strong&gt;אדם לנפש חיה&lt;/strong&gt;
+
+
+&lt;strong&gt;חמו&quot;ל&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">@ הא תקנד לבע</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת &lt;strong&gt;היה תמים בלב&lt;/strong&gt; לפק
+
+
+איזכורים של ספרים אחרים בספר זה:
+
+המחבר מציין כי עסק בנושא סיבה ומסובב בגוף האדם &quot;בספרי על הדם אשר כתבתיו לרבי בחכמת הנתוח הפראפעסר הונטר בלונדן&quot; (עמ' ד')
+
+הוא מציין את הספרים הבאים:
+
+-מאור עיניים/ האדומי - עמ' יב'
+
+- את סיפרו מאמר התורה וחכמה - עמ' כו'
+
+
+בסוף הספר מצויין פועל הדפוס הירץ יאקב מטריר</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @יהי&lt;strong&gt;ו מ&lt;/strong&gt;ת&lt;strong&gt;י&lt;/strong&gt;ך נבל&lt;strong&gt;ת&lt;/strong&gt;י י&lt;strong&gt;ק&lt;/strong&gt;ומון</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ע&lt;strong&gt;ל פי משה&lt;/strong&gt; עבדת &lt;strong&gt;הלוי&lt;/strong&gt;ם לפ'ק
+
+ספרים המוזכרים בספר זה (הקדמת המחבר, דף א'):
+הלכות קדוש החודש/ הרמב&quot;ם</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: לפר&lt;strong&gt;ט&lt;/strong&gt; והח&lt;strong&gt;כ&lt;/strong&gt;מה &lt;strong&gt;ת&lt;/strong&gt;חי' &lt;strong&gt;א&lt;/strong&gt;ת ב&lt;strong&gt;עלי&lt;/strong&gt;ה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2381</field>
+		<field name="revision_id">2381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ בשנת כחסדך חייני וא&lt;strong&gt;שמרה&lt;/strong&gt; עדות פיך לפ'ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת &lt;strong&gt;ישא ברכה&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2386</field>
+		<field name="revision_id">2386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: כי פי ה' דבר &lt;strong&gt;כל בשר&lt;/strong&gt; לפ&quot;ק
+
+שם בית הדפוס ע&quot;פ כרטיסיה של שמואל פיינר, דפוס חינוך נערים.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @בשנת וא&lt;strong&gt;נחנו נ&lt;/strong&gt;חלץ ח&lt;strong&gt;ש&lt;/strong&gt;ים לפ&quot;ק
+
+בסוף הספר חתימת הפועל העובד בדפוס:
+יעקב בר אורי הלוי</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @בשנת &lt;strong&gt;ולירו&lt;/strong&gt;שלים &lt;strong&gt;מב&lt;/strong&gt;שר &lt;strong&gt;אתן&lt;/strong&gt; לפ&quot;ק
+- יש טעות כאן (1995), והשנה הנכונה היא ככל הנראה 1795.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2389</field>
+		<field name="revision_id">2389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @בשנת וה&lt;strong&gt;חכמ&lt;/strong&gt;ה &lt;strong&gt;מא&lt;/strong&gt;י&lt;strong&gt;ן&lt;/strong&gt; תמצא</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ ש&lt;strong&gt;פה אחת ו&lt;/strong&gt;דברים &lt;strong&gt;אחדים&lt;/strong&gt;
+
+בקטלוגים מצאתי כי תאריך ההוצאה הוא תקס&quot;ג, אך חישוב גימטרי מצא כי השנה היא 1797. יש לבדוק זאת שוב.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;בו מחמדים פרי מגדים&lt;/strong&gt;@
+(ראו דיון על שנת ההוצאה בחלון &quot;חוקר ומקורותיו&quot; בשדה &quot;הערות&quot;).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ בשנת הל&lt;strong&gt;א חכ&lt;/strong&gt;מה &lt;strong&gt;תק&lt;/strong&gt;רא לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">הפרטים בחלון זה ע&quot;פ המופיע בעמ' [7].
+
+שם הדפוס כפי שרשום שם:
+
+Joseph Edlen von Kurzbeck</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בכותרת משולב תאריך, שהוא ככל הנראה תאריך ההדפה : &quot;כמבשר&quot; [=תקס&quot;ב]</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2405</field>
+		<field name="revision_id">2405</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &quot;שנת &lt;strong&gt;תקו&quot;ם&lt;/strong&gt; לפ&quot;ק&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2408</field>
+		<field name="revision_id">2408</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ ביום א' דחה'ס שיר &lt;strong&gt;המעלות&lt;/strong&gt; לפק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ שנת &lt;strong&gt;ושרים&lt;/strong&gt; כחוללים
+
+
+Angabe des Druckortes auf Titelseite: Ismir</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2412</field>
+		<field name="revision_id">2412</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;כל&lt;/strong&gt; צפור טה&lt;strong&gt;ר&lt;/strong&gt;ה לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2413</field>
+		<field name="revision_id">2413</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ שנת &lt;strong&gt;בקס&quot;ת&lt;/strong&gt; סופר לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ בשנת המשכילים יזהירו &lt;strong&gt;כזוהר הרק&lt;/strong&gt;יע</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער הספר:
+
+&lt;strong&gt;קנה חכמה מה טוב מחרוץ&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2420</field>
+		<field name="revision_id">2420</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: וזה יהיה לך לאות (גמטריה)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מחיר הספר לא רשום על גביו, אך מצויין ברשימת בקורת עליו שהתפרסמה ב&lt;ins&gt;המאסף&lt;/ins&gt;
+תשרי תקמ&quot;ט, כד' (של יצחק אייכל) - 'מקחו י&quot;ח גדולים'.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בתחתית שער הספר רשום :
+Bei Moses Philippsohn und gedruckt bei Christoph Schlieder
+
+פיליפסון, משה היה מעורב, אם כן, בתהליך הפקתו של הספר - אך לא ברור כיצד.
+
+
+כשאיילה תוסיף את השדה &quot;ספרים אחרים המוזכרים בספר זה&quot; יש להוסיף בו ספרים שמצויינים באחרית הדבר שכתב פיליפסון, משה. הוא מציין ספרים נוספים שיצאו בהוצאה שלו:
+- תרי עשר מתורגם ומבואר/ ד' מורי חנוך נערים בדעסויא
+-הרב אבן יחייא/ וולף, יוסף; פיליפסון, משה (משה בן אורי)
+-שמנה פרקים לרמב&quot;ם/ פרשנות של שלמה זלמן הלוי
+-מודע לבני בינה/ פיליפסון, משה (משה בן אורי)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2423</field>
+		<field name="revision_id">2423</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: @ שנת &lt;strong&gt;ל&lt;/strong&gt;דור ו&lt;strong&gt;ד&lt;/strong&gt;ור &lt;strong&gt;אמונתך&lt;/strong&gt; לפ&quot;ק
+צריך לבדוק שוב שזה תואם את התאריך
+1791 שנקבע על פי המידע הקטלוגי</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בארץ נמצא עותק יחיד בספריה הלאומית ללא עמוד שער. פרטי השער: הכותרת, שם ההוצאה, מקום ההוצאה והשנה, וכן שמו של המחבר -רשומים בעמוד האחרון של הספר.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2429</field>
+		<field name="revision_id">2429</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">פיינר, יהודה הורוויץ, עמ' 151: &quot;שני דפים מודפסים של אפולוגטיקה מרה שהודבקו לכמה עותקים של הספר&quot;.
+לכן, אין שנת/מקום הוצאה או פרטים נוספים, אין עמוד שער.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2430</field>
+		<field name="revision_id">2430</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &lt;strong&gt;אשרי כל&lt;/strong&gt; ירא ד'</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת ההדפסה כפי שהיא רשומה בשער הספר: &quot;שנת אבות אכלו בוסר ושני בנים &lt;strong&gt;תקהנה&lt;/strong&gt; לפרט קטן&quot;..
+
+
+רמזים למקום ההדפסה ולשם המחבר נרשמו בכתב יד בעותק אשר באוסף שלום, בספריה הלאומית:
+&quot;על פי עדותו של ש. כהן בבכורי עתים 1822?&quot;
+
+&quot;המחבר: ר' יהודה ייטעלש (1838 - 1773)&quot;
+
+&quot;לא! אלא אחיו ברוך בן יונה ייטליש 1762 - 1813) ועיין רות קסטנברג-גלדשטיין ב&quot;קרית ספר&quot; כרך א' (תשכ&quot;ה), עמ' 569-570.&quot;
+&quot;ומ. סמט בק&quot;ס מז (תשל&quot;ב), עמ' 278 תומך שוב פעם בדעה הקודמת, מפני שעדותו של ש... כהן נכתבה בימי חייו.&quot;
+
+&quot;נדפס בברין על פי פטר בער
+P. Beer, Sulamith II, 1, p. 60
+
+יש לציין כי מאחורי עמוד השער ישנו אישור מן הצנזור החתום בפראג, ספטמבר 1800.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">לא רשומים שם בית הדפוס ושנת ההוצאה על גבי השער</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2434</field>
+		<field name="revision_id">2434</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: כ&lt;strong&gt;י לא טוב היות האדם לבדו&lt;/strong&gt; לפק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2435</field>
+		<field name="revision_id">2435</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער רשום התאריך כך: יום הולדת את מלכנו, ב' לחדש סיפטימבר 1808
+
+בעמוד השער רשום: 
+Imprimee pour les Auteurs. Et se vend a Amsterdam chez van Embden Libraires.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2438</field>
+		<field name="revision_id">2438</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על גבי העותק של הלאומית לא מופיעה שנת הוצאה. צריך לברר האם בעותק שבתל אביב רשומה השנה 1811.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2441</field>
+		<field name="revision_id">2441</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: לפרט פתחו לי &lt;strong&gt;שער&lt;/strong&gt;י צדק לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2444</field>
+		<field name="revision_id">2444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: ראוה בנות &lt;strong&gt;ויאשרוה&lt;/strong&gt; לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2446</field>
+		<field name="revision_id">2446</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">מקום ההוצאה ושם ההוצאה מופיעים בעמוד האחרון של הספר. תאריך ההוצאה - בעמוד השער.
+
+נוסח כתיבת התאריך: 
+בשנת שלום אל עמו לפ&quot;ק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2448</field>
+		<field name="revision_id">2448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: &quot;ביום ש&quot;ק יוד תמוז &lt;strong&gt;מבשר&lt;/strong&gt; לפק&quot;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2450</field>
+		<field name="revision_id">2450</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: שנת ועטרת תפארת &lt;strong&gt;בראשך&lt;/strong&gt; לפ&quot;ק.
+אחרי הפסוק: תרגומו לגרמנית.
+
+לפני הפסוק כתוב:
+Hier folgt die Jahr-Zahl in einem Text: Ezechiel 16. v. 12</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בנוגע למחיר הספר, ב&quot;מחברת שניה&quot; של שירי תפארת נאמר כי מחירה &quot;כמו מחיר הראשונה והוא ט&quot;ז פגים&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נראה כי הספר ראה אור בשנת 1790 ולא בשנת 1791, שכן דברי המביאים לדפוס בסוף הספר חתומים בתאריך &quot;תשרי תקנ&quot;א&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">&lt;ins&gt;מחיר הספר&lt;/ins&gt; לא רשום בו, אך בחוברת השניה צוין כי המחיר הנקוב עבור החוברת הראשונה והשניה (ט&quot;ז פגים) תקף עבור כל החוברות.
+
+ברשימת ספרים שמופיעה על כריכת שירי תפארת בשנת תקנ&quot;א-מצוין המחיר הזה. נאמר גם כי חוברת ג' &quot;עם צורת הרב המחבר&quot;
+תהיה 20 .</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">הוצאת החלק הרביעי (והחלקים הנוספים) של שירי תפארת התעכבה, בין היתר בשל התפרקות חבורת המאספים, והתאפשרה בסופו של דבר בעזרת התערבותו של נדיב, &quot;הגביר המפואר הקצין המפורסם כבוד מוהר&quot;רר ראובן גומפערטץ...&quot;, אשר מימן את ההוצאה. כך כותב וייזל בהקדמתו על גילגולי ההוצאה של הסדרה: &quot;זה שתים עשרה שנה בקשו ממני המשכילים בעלי חברת המאסף לתת אל ידם שירי תפארת אלו שחברתי אז, ושיוציאו אותם לאור על ידי פרענומעראציאהן, ואומר להם טוב הדבר. אכן אחרי צאת החוברת הראשנוה לאור בשנת תקמ&quot;ט לפ&quot;ק, לא יכלו עוד להשלים מעשיהם מאפס יד, אז נדבה רוח הגביר הנכבד והמפואר הקצין המפורסם כמוה&quot;רר שמואל לוי... בן ... שלמה לוי חלפן ז&quot;ל והלוה להם כספו, והדפיסו גם החוברת השנית והשלישית... אחרי כן נפרדו בעלי חברת המאסף הנ&quot;ל ונסעו מזה, ומאז שבתה המלאכה ימים רבים אין דורש לה, ואני זקנתי ושבתי, לא אוכל עוד לצאת ולבוא כמלפנים ואמרתי נואש.&quot; (עמ' 2)</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">אין בעמוד השער פרטים על תאריך/מקום ההוצאה של הספר.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2458</field>
+		<field name="revision_id">2458</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שם בית הדפוס לא רשום על גבי הספר.
+נג: הוא מופיע כך גם אצל וינוגרד.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2460</field>
+		<field name="revision_id">2460</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: בשנת שומע תפלה עדיך &lt;strong&gt;כל בשר יבאו&lt;/strong&gt; לפק</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך:  &lt;strong&gt;לכן  שמח ל&lt;/strong&gt;בי &lt;strong&gt;ויגל&lt;/strong&gt; כבוד&lt;strong&gt;י&lt;/strong&gt;
+
+ד' מרחשוון</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשערים רשום תאריך מדוייק -
+21/2/1811</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2467</field>
+		<field name="revision_id">2467</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער בעברית התאריך אינו מודרני: @שנת &lt;strong&gt;חיים&lt;/strong&gt; לפ&quot;ק
+
+
+התאריך המדוייק שנרשם בכל ארבעת השערים של הספר:
+20/11/1807</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על גבי הספר לא רשום מקום ההוצאה. צריך לבדוק שוב את המידע הרשום כאן &quot;רדלהיים&quot;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">התאריך העברי כסלו תקע&quot;ג, רשום סמוך לחתימת המחבר על ההקדמה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">כפי שכתוב בשני עמודי השער, העברי והגרמני:
+im Verlage bei Moses Philippsohn/ Gedruckt bei C. Schlieder</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">נוסח כתיבת התאריך: התאריך ע&quot;פ החתימה בסוף ההקדמה.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעותק בלאומית השנת בלועזית מחוקה, לא ניתן לקרוא אותה</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער הספר מצויין גם שמו של &lt;strong&gt;פיליפסון, משה&lt;/strong&gt;, אך לא ברור מה היה תפקידו ביצירת הספר:
+
+Bei Moses Philippsohn
+gedruckt bei Christoph Schlieder</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער הספר מצויין גם שמו של &lt;strong&gt;פיליפסון, משה&lt;/strong&gt;, אך לא ברור מה היה תפקידו ביצירת הספר:
+
+Bei Moses Philippsohn
+gedruckt bei Christoph Schlieder
+
+כשאיילה תוסיף את השדה &quot;ספרים נוספים המוזכרים בספר זה&quot; יש להוסיף:
+בן-זאב, יהודה ליב &lt;strong&gt;תלמוד לשון עברי&lt;/strong&gt; (עמ' מז').</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בשער הספר מצויין גם שמו של &lt;strong&gt;פיליפסון, משה&lt;/strong&gt;, אך לא ברור מה היה תפקידו ביצירת הספר:
+
+Bei Moses Philippsohn
+gedruckt bei Christoph Schlieder
+
+בתחתית העמוד האחרון בספר ממליץ המחבר על ספר הדקדוק &lt;strong&gt;ספר שערי זמרה לר&quot;זה&lt;/strong&gt;.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2477</field>
+		<field name="revision_id">2477</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">אין וודאות לגבי מקום/שנת ההדפסה. הפרטים כאן: כפי שמופיעים בקטלוג של הספריה הלאומית. הספריה של בר אילן מוסרת כשנת הדפסה: &quot;אחרי תקמ&quot;ג&quot;, וכמקום הדפסה: אמסטרדם כנראה. הספריה בברלין: וינה 1793.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמ' [6] של ההקדמה מזכיר בן-זאב את ספר הפרשנות שלו על &lt;strong&gt;ספר האמונות והדעות&lt;/strong&gt;</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2480</field>
+		<field name="revision_id">2480</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">שם בית הדפוס כפי שרשום בספר:
+Christian Immanuel Meinhold</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2481</field>
+		<field name="revision_id">2481</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">בעמוד השער הלועזי כתוב:
+
+Chez Van Embden Imprimeur Libraire</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2483</field>
+		<field name="revision_id">2483</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">פרטים על הוצאת החיבור: לפי השיר שעימו כרוך חיבור זה, שהודפס לרגל אותו הארוע.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2484</field>
+		<field name="revision_id">2484</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">החיבור כרוך (בעותק בספריה הלאומית) יחד עם &quot;שיר רנן ושמחה&quot;, שיר פטריוטי לרגל אותו אירוע.</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printing_press_notes_value">על האופן שבו הגיע כתב היד של פרנקו מנדס לידי הידנהים, שהוציאו לאחר מות המחבר, מצוין בתחילת הספר:
+&quot;אמר וואלף היידנהיים. צדיק באמונתו יחי', כי זה חיים [דהיינו חיים בינגר, שמוזכר באותו עמוד] האיש המוכתר במעלות מעולות ומדות נכבדות שמר חסדו לדוד נאמנו ובכסף מלא לקח לו את המגילה הזאת מעזבון הרב המעתיק זצ&quot;ל וישלחה אלי לאמר: &quot;המגילה נתונה לך ומאומה לא תתן מחירה אך העלה אותה על מכבש הדפוס כי חפץ בה אהובי הרב זצ&quot;ל ואלה דברי דוד האחרונים טרם חלף הלך לו לארץ החיים, ואנכי לעשות רצונו חפצתי&quot; עכ&quot;ל. ונדיב נדיבות יעץ והוא על נדיבות יקום.
+
+נוסח כתיבת התאריך: נימין זאב (וולף) היידנהיים הביא ספר זה לדפוס 12 שנה לאחר פטירתו של פרנקו-מנסד (קלוזנר, עמ' 201).</field>
+		<field name="field_printing_press_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,820 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_volumes_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_volumes_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_volumes_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_volumes_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="60" avg_row_length="819" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:28" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 197 (field_volumes_notes)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_volumes_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">UB Kiel: Ka 9256</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר יצא בשלוש גירסאות מקבילות: עברית (תקע&quot;ב), גרמנית (1811) וצרפתית (1811)</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בהקדמתו (עמ' [4]), מבקש לוי שיתוף פעולה להמשך מפעל פרסום מכתביו של מנדלסון: &quot;ואשר יש אתו אגרות מיד הרמ&quot;ד נ&quot;ע, ראויות להגלות לטובן ויפין, וירצה לפרסמן בדפוס בעט ברזל ועופרת, למען תעמודנה ימים רבים למשמרת... יעשה נא אתי ברכה וימהר לשלחן אלי הנה לשם הערן אנטאן שמיד...&quot;</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">השם &quot;בית הספר&quot; אינו מופיע על גבי הכרך המקורי  שיצא בתקס&quot;ב, אך בהקדמה מציין המחבר כי יש בכוונתו להוציא חלק נוסף לספר זה (ראו להלן בחלונית &quot;הקדמות&quot;). השם &quot;בית הספר&quot; הופיע פעם ראשונה על גבי החלק השני &lt;strong&gt;למודי המישרים&lt;/strong&gt;, שיצא יחד עם הכרך הראשון 4 שנים אחר כך. בהקדמה ל&lt;strong&gt;למודי המישרים&lt;/strong&gt; מציין בן-זאב כי ספר זה הוא חלק שני ובלתי נפרד מן החיבור הראשון (&lt;strong&gt;מסלול הלמוד&lt;/strong&gt;).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">חלו שיבושים בכריכת העותק אשר בספרית בר אילן: כלולים בתוך הספר כמה דפים מן ההגדה של פסח. כמו כן, שני הדפים האחרונים של הספר ממוקמים במקום לא נכון (הדבר ברור מתוך מספור הדפים).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בעותק שבידי הספרים כרוכים יחד,
+אך ממידע ביבליוגרפי על הספר עולה כי הם נדפסו בנפרד: החלק הראשון בשנת תקנ&quot;ט, והחלק השני בשנת תק&quot;ס.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בעותק שבידי הספרים כרוכים יחד,
+אך ממידע ביבליוגרפי על הספר עולה כי הם נדפסו בנפרד: החלק הראשון בשנת תקנ&quot;ט, והחלק השני בשנת תק&quot;ס.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">ספר זה מורכב משלושה &quot;ספרים&quot;, שכל אחד מהם עוסק בנושא שונה. אך כמעט בוודאות יצאו שלושתם יחד, עם עמוד שער משותף. ההסכמות מופיעות רק בספר הראשון. כן מקום הדפוס ושם בית הדפוס מופיע רק בשער הספר הראשון. לוח טעות ישנו בסוף הספר הראשון ובסוף הספר השלישי (עבור הספר השני והשלישי).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">העותק בספריה הלאומית כרוך יחד עם ספר אחר של המחבר: &quot;ספר זכר רב&quot;. לא ברור האם גם במקור היה כך. צבע הדפים נראה שונה, לכן לא נראה כי נדפסו יחד.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בספר שבידי נכרכו הכרך הראשון והשני שיצאו בתק&quot;ן, והכרך השלישי והרביעי שיצאו בתקנ&quot;א</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בספר שבידי נכרכו הכרך הראשון והשני שיצאו בתק&quot;ן, והכרך השלישי והרביעי שיצאו בתקנ&quot;א</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בספר שבידי נכרכו הכרך הראשון והשני שיצאו בתק&quot;ן, והכרך השלישי והרביעי שיצאו בתקנ&quot;א</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בספר שבידי נכרכו הכרך הראשון והשני שיצאו בתק&quot;ן, והכרך השלישי והרביעי שיצאו בתקנ&quot;א</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בהקדמה ל&lt;ins&gt;חלקת מחקק&lt;/ins&gt; הביע סלומון את רצונו לפרסם ספר/י המשך: &quot;בין איך וויללענס' אוטר דיזם טיטל [חלקת מחוקק], ווען דאז פובליקום דיזר איבערזעטצונג זיינן בייאפ'אלל ניכט פ'ערווייגערט, אונד עס דעם העררן פ'ערלעגר רעכט טהעטיג אן דען טאג צו לעגן דיא געוואגענהייט האבן ווירד, דיזר פ'ערדאלמעטשונג, מעהרערע פ'אן מאימאנידעס שריפ'טען... אין איינם דייטשן געוואנדע פ'אלגן צו לאסן, וועלכע אבהאנדלונג, מיט ניצליכן אנמערקונגן פ'ערזעהן, געוויס איינן זעהר וויכטיגן טהייל דעס אויף דאז הערץ דער יוגענד ווירקענדן רעליגיאנסאונטערריכט אין יידישן שול אבגעבן קענטען.&quot;</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2183</field>
+		<field name="revision_id">2183</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הן בחלק א' והן בחלק ב' של &quot;לוחות העיבור&quot; מתייחס הנובר לחלק שלישי שאמור לבוא בעקבות ספרים אלה. &quot;אם יזכני השם ית&quot;ב להעלות חיבוררי הגדול לבית הדפוס משם תראה כל חכמת לימודיות ובפרט סדר וחשבון התכונה ופירוש מספיק על קידוש החודש להרמב&quot;ם. ופירוש מכמה מאמרים סתומים בתלמוד. ובו כלול המופת על לוחות האלו&quot; (עמ' [ב]).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">דומה כי יצא תחילה בנפרד, כספר בפני עצמו.
+
+לספר הקדשה משלו, מבוא נפרד, עימוד נפרד, וכן לוח טעות בסוף הספר.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">דומה כי יצא תחילה בנפרד.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2204</field>
+		<field name="revision_id">2204</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">&lt;p&gt;דומה כי יצא תחילה בנפרד. לספר עמוד שער, הקדשה והקדמה משלו. כמו כן, יש מודעה מאת אהרן האללי ויואל ברי&quot;ל על תהליך הוצאת המגילות בסוף הספר הזה.&lt;/p&gt;
+</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">דומה כי תחילה ראה אור בנפרד. לספר עמוד שער, הקדשה ומבוא משלו. כמו כן, תאריך חתימת המבוא שונה.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בלאומית רשומים 8 כרכים</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">שלום הכהן רצה להוציא חלק ב' לספר ופנה למנויי המאסף שיתרמו לכך (ראו כאן חלון &quot;קהל יעד&quot;, איזכור בהמאסף).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">ככל הידוע לא יצאו חלקים נוספים של ספר זה. בהקדמת המתרגם (עמ' [11-12]) הוא מציין כי הוצאות הדפוס הן כבדות, ואם חלק זה יזכה להצלחה, הוא יוציא את המשכיו.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;לא ידועים כרכים נוספים של הספר. עם זאת, ברור כי במקור תכנן המחבר יצירה בעלת היקף רחב הרבה יותר. רשימת המילים בגרמנית מגיעה עד לאות &quot;ג&quot; בלבד, אך ישנם הפניות לערכים שאינם נכללים בספר (כפי שהוא עומד לנגד עינינו כיום). דוגמא: &quot;געליבטער, זיהע ליבהאבער&quot; (דהיינו, ערך אשר למעשה לא נכלל). לפי רפל, ביבליוגרפיה של ספרי לימוד, עמ' קכז (מס' 99), &quot;יצאו רק שתי חוברות&quot; מן הספר נתיב לשון עברית, &quot;עד האות ג&quot;.&lt;/p&gt;
+</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2253</field>
+		<field name="revision_id">2253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">העותק שנבדק מופיע ככרך אחד. אך ב&quot;בקשת סליחה&quot; מאת המביא לדפוס נרמז כי הספר יצא מחברות מחברות.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">לפי פיינר, מהפכת הנאורות, 73-74, ספר זה מיועד לשמש רק חוליה אחת במפעלו הגדול - שברובו לא יצא אל הפועל: הוא הלך לעולמו ב- 1769 והותיר רק שרידים מעטים מכתביו. [וורמס בהקדמתו מתייחס לסיבות שבעטיין בחר לפתוח בספר זה.]</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">התייחסתי לספר &quot;פירוש על שיר השירים&quot; כספר נפרד ל&quot;ספר אור עולם&quot;, למרות שהם כרוכים יחד, ויש המשכיות ביניהם מבחינת המיספור. הסיבות לכך: מופיע עמוד שער נפרד לכל אחד מהם, וישנה אף אי בהירות באשר לשנת הוצאתו של &quot;פירוש על שיר השירים&quot;. כמו כן, מדובר בשני ספרים שונים בתכלית במאפייניהם. המחבר עצמו רואה אותם כספרים נפרדים. בעמ' האחרון לספר מציג מרגליות את &quot;לוח הטעות&quot; של שני הספרים הכרוכים יחד, ואומר:
+
+&quot;ראינו לתקן פה לוח הטעות על &lt;strong&gt;חלק הא&lt;/strong&gt;' מזה הספר הנקרא אור עולם וגם על &lt;strong&gt;חלק הב&lt;/strong&gt;' שהוא פירוש שיר השירים.&quot;(הדגשות שלי)</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">המחבר בהקדמה מפרט את תוכן הספר ומוסיף: &quot;ובח&quot;ש [חלק שני] כל השרשים מתורגמים (בל&quot;א)...&quot;
+בסוף הספר ישנו דף &quot;דוגמא של חלק שני מה שנדפוס בעתיד בקיץ הבע&quot;ל...&quot;</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2268</field>
+		<field name="revision_id">2268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בעותק שבידי נכרכו יחד חלק א'+ב'. ככל הנראה זהו דפוס צילום מאוחר של שני הכרכים, שהופיעו קודם לכן בנפרד</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2269</field>
+		<field name="revision_id">2269</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בעותק שבידי נכרכו יחד חלק א'+ב'. ככל הנראה זהו דפוס צילום מאוחר של שני הכרכים, שהופיעו קודם לכן בנפרד</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">כרכים אחרים שתוכננו: ראו כותרת. לפי מידע מספרות משנית: לא יצאו (ראו הערות החוקר).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2281</field>
+		<field name="revision_id">2281</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">בסוף הספר רשום: &quot;נשלם חלק ראשון מהיכל עונג&quot;.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">כוונתו של וייזל להוציא לאור ספר המשך עולה גם בסוף הספר הנוכחי, שם כתב המחבר: &quot;יען מספר קונטרסי הכרך הזה רבו מאשרר דמיתי, נחמתי מחבר אליהם תוספות דברים, שמצויין עליהם במקצת המקומות בשולי היריעות באותיות קטנות, שקראתים &lt;strong&gt;מחקרי לב&lt;/strong&gt;, אבל אציגם בעז&quot;ה בסוף הכרך השני: אקוה שתשיג ידי בעז&quot;ה להוציאו מהרה בדפוס.&quot;
+
+כמו כן, בהקדמה לחלק הרביעי של &lt;ins&gt;שירי תפארת&lt;/ins&gt;,  מעיד וייזל כי כאשר נשאל ע&quot;י נדבנים יהודים &quot;על דבר הכ&quot;י אשר עודם תחת ידי, מה שמותם, ואם רוצה אני להוציאם לאור... אמרתי מי יתן אם רק יודפסו בתחלה שלשה חלקי השירים [שלוש הכרכים הנותרים מ&lt;ins&gt;שירי תפארת&lt;/ins&gt;] וכרך שני מ&lt;ins&gt;ס' המדות&lt;/ins&gt;, שיש חתומים עליהן...&quot; (עמ' [4])</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">להבדיל מן הכרכים שיצאו קודם לכן, אין הכרך הזה נקרא &quot;חלק חמישי&quot; (בהמשך לחלק ראשון, שני וכו'). הכרך שונה משאר החלקים בכך שהוא איננו כולל טקסט מתוך תהלים אלא מהווה הקדמה לכל שאר החלקים.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">המחבר מוסיף בתחתית רשימת החותמים הערה, המעידה על כך שהוא מתכוון להוציא חלקים נוספים של ספר זה לאור:
+&quot;כל איש אשר ייטב בעיניו באשר הוא שם, לקבץ חתומים לחלקים הבאים,...&quot; (עמ' ד')</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">נראה כי הספר נכרך יחד עם &quot;ספר פרקי רבי אליה&quot;.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2330</field>
+		<field name="revision_id">2330</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">אמנם ישנם שערים נפרדים לשני החלקים ואף הקדמות נפרדות, אך המספור ממשיך (עם שיבוש מסוים שכן המספור מדלג על מספר דפים). השער לחלק השני: &quot;נביאים אחרונים ספר ישעיה עם תרגום אשכנזי ובאור מאת מאיר אברניק חלק שני&quot;.
+
+[מיספור 4 לא מופיע על גבי הספר!] 
+כולל כרך ראשון וחלק שני</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2332</field>
+		<field name="revision_id">2332</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">(לפי הרשום בעט ע&quot;ג הכריכה)</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">על מספר הכרך: בתחתית הגליון מופיע
+Tom. X</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2334</field>
+		<field name="revision_id">2334</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">(לפי הרשום בעט ע&quot;ג הכריכה)</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2335</field>
+		<field name="revision_id">2335</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">מספר הכרך מופיע בתחתית הגליון:
+Tom. XII</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">אמנם תחת הכותרת &lt;ins&gt;ספר מנחה טהורה&lt;/ins&gt; התפרסמו יחד כמה ספרים, כל אחד עם עמוד שער והקדשה משלו. עם זאת, ישנו גם עמוד שער משותף, הקדמה ארוכה המשותפת לכל הספרים, וחתומה על-ידי &quot;מחברי &lt;ins&gt;מנחה טהורה&lt;/ins&gt;&quot;. גם רשימת החותמים מראש היא משותפת לכל הספרים.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר הזה אמנם איננו חלק מ&quot;סדרת ספרים&quot;, אך המחבר קושר אותו ישירות לספר אחר שפרסם מספר שנים קודם לכן: סדר לוח הבנינים ולוח הכנויים עם לוח משקלי השמות (המבורג תקמ&quot;ה) - ספר אשר מהווה כלי עזר חיוני לספר הנוכחי, לפי שיטתו הדידקטית של המחבר.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר השני יצא כשנה אחרי הראשון בעיר אחרת ובבית דפוס אחר (ראו חלק ב'), ואילו השלישי יצא
+בתקע&quot;ג ב- Bonn Gebrueder
+(ולכן לא שייך לקורפוס שלנו).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2342</field>
+		<field name="revision_id">2342</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר השני יצא כשנה אחרי הראשון בעיר אחרת ובבית דפוס אחר (ראו חלק א'), ואילו השלישי יצא
+בתקע&quot;ג ב- Bonn Gebrueder (ולכן לא שייך לקורפוס שלנו).</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2379</field>
+		<field name="revision_id">2379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">ככל הידוע לא יצאו חלקים נוספים של ספר זה</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">חלק ד' הוא ספר קבלה, שאינו שייך לספרות ההשכלה: 
+
+&lt;strong&gt;מאמר מעין גנים נובע מן גינת אגוז להרב הגדול רבינו יוסף גיקטילא זלה&quot;ה, מקורו בהררי קדש מראש אמנה, נוזלים מים חיים בדעת בחכמה ותבונה, דלה דלה, ויזל מים מדליו, להשקות הצמאים לדבר ח'.&lt;/strong&gt;
+
+&lt;strong&gt;ברלין: דפוס חינוך נערים, תקס&quot;ג.&lt;/strong&gt;
+
+&lt;strong&gt;יש לנו צילום של החלק הזה&lt;/strong&gt;
+
+&lt;strong&gt;לאומית:&lt;/strong&gt;
+
+S 59 A 4265</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">חלק ד' הוא ספר קבלה, שאינו שייך לספרות ההשכלה: 
+
+&lt;strong&gt;מאמר מעין גנים נובע מן גינת אגוז להרב הגדול רבינו יוסף גיקטילא זלה&quot;ה, מקורו בהררי קדש מראש אמנה, נוזלים מים חיים בדעת בחכמה ותבונה, דלה דלה, ויזל מים מדליו, להשקות הצמאים לדבר ח'.&lt;/strong&gt;
+
+&lt;strong&gt;ברלין: דפוס חינוך נערים, תקס&quot;ג.&lt;/strong&gt;
+
+&lt;strong&gt;יש לנו צילום של החלק הזה&lt;/strong&gt;
+
+&lt;strong&gt;לאומית:&lt;/strong&gt;
+
+S 59 A 4265</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2389</field>
+		<field name="revision_id">2389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">חלק ד' הוא ספר קבלה, שאינו שייך לספרות ההשכלה: 
+
+&lt;strong&gt;מאמר מעין גנים נובע מן גינת אגוז להרב הגדול רבינו יוסף גיקטילא זלה&quot;ה, מקורו בהררי קדש מראש אמנה, נוזלים מים חיים בדעת בחכמה ותבונה, דלה דלה, ויזל מים מדליו, להשקות הצמאים לדבר ח'.&lt;/strong&gt;
+
+&lt;strong&gt;ברלין: דפוס חינוך נערים, תקס&quot;ג.&lt;/strong&gt;
+
+&lt;strong&gt;יש לנו צילום של החלק הזה&lt;/strong&gt;
+
+&lt;strong&gt;לאומית:&lt;/strong&gt;
+
+S 59 A 4265</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">חלק ד' הוא ספר קבלה, שאינו שייך לספרות ההשכלה: 
+
+&lt;strong&gt;מאמר מעין גנים נובע מן גינת אגוז להרב הגדול רבינו יוסף גיקטילא זלה&quot;ה, מקורו בהררי קדש מראש אמנה, נוזלים מים חיים בדעת בחכמה ותבונה, דלה דלה, ויזל מים מדליו, להשקות הצמאים לדבר ח'.&lt;/strong&gt;
+
+&lt;strong&gt;ברלין: דפוס חינוך נערים, תקס&quot;ג.&lt;/strong&gt;
+
+&lt;strong&gt;יש לנו צילום של החלק הזה&lt;/strong&gt;
+
+&lt;strong&gt;לאומית:&lt;/strong&gt;
+
+S 59 A 4265</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">התייחסתי לספר &quot;פירוש על שיר השירים&quot; כספר נפרד ל&quot;ספר אור עולם&quot;, למרות שהם כרוכים יחד, ויש המשכיות ביניהם מבחינת המיספור. הסיבות לכך: מופיע עמוד שער נפרד לכל אחד מהם, וישנה אף אי בהירות באשר לשנת הוצאתו של &quot;פירוש על שיר השירים&quot;. כמו כן, מדובר בשני ספרים שונים בתכלית במאפייניהם. המחבר עצמו רואה אותם כספרים נפרדים. בעמ' האחרון לספר מציג מרגליות את &quot;לוח הטעות&quot; של שני הספרים הכרוכים יחד, ואומר:
+&quot;ראינו לתקן פה לוח הטעות על &lt;strong&gt;חלק הא&lt;/strong&gt;' מזה הספר הנקרא אור עולם וגם על &lt;strong&gt;חלק הב&lt;/strong&gt;' שהוא פירוש שיר השירים.&quot;(הדגשות שלי)</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">אין מידע על כרך נוסף לספר זה. עם זאת, המחבר הביע בהקדמתו רצון לפרסם &quot;חלק שני מרבי עקיבא&quot;, במידה והספר הראשון יתקבל באהדה. (עמ' [6])</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2401</field>
+		<field name="revision_id">2401</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר יצא בשני גירסאות: יידיש ועברית.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2407</field>
+		<field name="revision_id">2407</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">העותק שנבדק כרוך יחד עם ספרים/חיבורים אחרים שאינם שייכים לספריית ההשכלה. מדובר בקינות על מות שליט, שהודפסו כולם ב- 1822, בעברית או בגרמנית.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2416</field>
+		<field name="revision_id">2416</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר יצא בשני גירסאות: עברית ויידיש</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">ככל הנראה שני החלקים נכרכו יחד - אך זה לא בטוח - לא ברור למה הופיעה סוף הכרך השני נוסח קרוב להקדמה שהופיעה בספר הראשון.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">ככל הנראה הספרים שני החלקים נכרכו יחד - אך זה לא בטוח - יש לבדוק שוב</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2430</field>
+		<field name="revision_id">2430</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">למעשה זהו נספח של &quot;זכר רב&quot;, אותו ערך פולק עצמו.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2437</field>
+		<field name="revision_id">2437</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">דומה כי החיבור לא היה כרוך תחילה. העותק שנבדק כרוך יחד עם חיבור שהודפס לרגל אותה הזדמנות (עלייתו של המלך): &quot;תפלה בעד אדונינו המלך האדיר... פרידריך ווילהעלם השלישי...&quot;</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">הספר בגרמנית והספר בעברית נכרכו יחד. לכל אחד עמוד שער משלו. רשימת חותמים והקדמה - רק בחלק הגרמני.</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2483</field>
+		<field name="revision_id">2483</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_volumes_notes_value">דומה כי החיבור לא נכרך תחילה. בעותק בספריה הלאומית החיבור כרוך יחד עם חיבור אחר שהודפס לרגל אותו הארוע (עליית המלך לכס המלכות): &quot;שיר ותודה לכבוד ולשלום אדונינו המלך... פרידריך ווילהעלם השלישי...&quot;</field>
+		<field name="field_volumes_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

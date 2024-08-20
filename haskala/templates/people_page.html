@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+
+{% block content %}
+    {{ page.body|richtext }}
+    <div class="panel">
+    Alphabet
+    </div>
+
+    <div class="col-3">
+
+    </div>
+    <div class="col-9">
+    {% for name in page.people_names %}
+        <div class="books-by-letter">
+        <div class="book-title">
+            <a href="person/{{ name }}"><span>{{ name }}</span></a>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,784 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_diagrams_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_diagrams_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_diagrams_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_diagrams_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="61" avg_row_length="268" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:16" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 39 (field_diagrams_notes)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_diagrams_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1978</field>
+		<field name="revision_id">1978</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">Nur Kopie, Original liegt in Warschau</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1996</field>
+		<field name="revision_id">1996</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור/ציור בין החלק הגרמני לעברי.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד השער.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2003</field>
+		<field name="revision_id">2003</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">nur Kopie ohne Maßangaben vorhanden.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">צורות גיאומטריות בחלק של הנספח.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2031</field>
+		<field name="revision_id">2031</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד השער.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">unbekannt, Microfiche</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">קסטנברג-גלדשטיין מייחדת דיון נרחב לנושא האיורים. לדעתה, האיורים נעשו במיוחד עבור ספר זה, לפי הנחיותיו המדויקות של המביא לדפוס, והיו כרוכים בשיתוף פעולה הדוק בין לנדא לבין המאייר הלא יהודי. (קסטנברג-גלדשטיין, יהודים בארצות בוהמיה, עמ' 154)
+המאייר היה
+Anton Balzer</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ציור של שני האישים החובקים איש את רעהו.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">&lt;p&gt;בסוף חלק א': איורים מתחום האסטרונומיה. בעמודה 39 מפנה אל האיורים הללו. בעמודה 25 - איור נוסף - גיאומטריה.&lt;/p&gt;
+</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2113</field>
+		<field name="revision_id">2113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד הראשון.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2117</field>
+		<field name="revision_id">2117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד השער, וכן מסגרת מעוטרת בכל עמוד.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2122</field>
+		<field name="revision_id">2122</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ישנו איור קטן בתחתית העמוד היחיד של הספר.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטורים בדפים שונים.
+
+ב- Postcript
+
+כתוב:
+
+&quot;The little drawing inclosed is a copy from one found with the original Manuscript; and which Cao-tsou has prefixed to the Chinese translation.&quot;</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2139</field>
+		<field name="revision_id">2139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">מן העותק שראיתי בלאומית באוקטובר 2007 כנראה נשרו דפי האיורים. מצויין על שערו שם המאייר, ובהקדמה מצויין כי יש לאיורים של הספר תפקיד חינוכי. מהדורות מאוחרות של מקראה זו כללו איורים בדרך כלל..</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2153</field>
+		<field name="revision_id">2153</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">יש עיטורים.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטורים בעמוד השער. בעיטור משולב טקסט.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">האיור מופיע במעבר בין שני חלקי הספר.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">Kopie von Microfiche per Fernleihe</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ישנו עיטור סביב הטקסט בעמוד השער</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בעמוד האחרון לספר מובא, איור של &quot;קיקיון דיונה&quot; מתפרש על עמוד שלם. בתוך ההקדמה (סעיף ח') מפנה ברי&quot;ל אל אותו איור, כשהוא מתאר את אותו הצמח: &quot;כשהוא [הצמח] בארץ מולדתו... גדולים עליו כאורך אמה, וע&quot;י התחברותם עם הקנה (באופן הנרשם בצורה שבסוף הספר)...&quot;.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד השער.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד השער.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2183</field>
+		<field name="revision_id">2183</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד השער.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">איור-קישוט</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2208</field>
+		<field name="revision_id">2208</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">שני עיטורים/ציורים (מעניינים).</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">למשל, עמ' לא.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">לפי בן-ישי, ספר שירים, עמ' 64 - 65, ייתכן כי הציורים בספר היו מעשה ידיו של האפרתי עצמו. בן-ישי גורס כי האפרתי היה, בין היתר, &quot;אמן גראפי&quot; (עמ' 65).</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">איור של כדור הארץ מופיע בעמ' לא ממוספר לפני ה&quot;מבוא&quot;, שמתחיל בעמ' מס' 1</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ישנם שני עיטורים: בשער הספר, ובעמוד האחרון שלו</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ישנם ארבעה עמודי איורים המודבקים בסוף הספר, שצולמו על ידי דיגיטלית ומופיעים כאן</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">למשל: עמ' מב, מג/ב</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">איור קטן בסוף הספר.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עבדתי על עותק מצולם של הספר. עמוד השער המצולם מעוטר - אך צריך לבדוק שהעיטור הזה הופיע במקור.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמ' ח.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בספר מופיעים  תחריטי נחושת</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור: כד ופרחים בעמוד האחרון.
+עיטור גם בעמוד השער.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">איור של יפתח ובתו?? כתובית: &quot;אהה בתי! הכרע הכרעתני&quot;
+מאיר אברניק מודה לאיצק בן שמשון ווערטהיים על ה&quot;ציור על לוח נחושת&quot; שהכין עבור כל ספר וספר.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2329</field>
+		<field name="revision_id">2329</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ציור מאת איצק ווערטהיים המציג את ....
+כתובית: &quot;וישקו ויבכו איש את רעהו&quot;</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2346</field>
+		<field name="revision_id">2346</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמוד האחרון.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">ציור של בית מאחורי עמוד השער</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עמוד השער מקושט במסגרת פרחונית, וישנו גם איור באותו עמוד.  איורי קישוט גם בסוף הספר.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטורים קטנים בראש ההסכמות: כתרי תורה.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטור בעמ' 1.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2369</field>
+		<field name="revision_id">2369</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטורים</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">כל האיורים הם שרטוטים של מערכת השמש על פי התפיסה הגיאוצנטרית, להוציא את האיור האחרון המופיע בעמ' לג' שהוא קישוט.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בשני האיורים משולב שם המדפיס  (אברהם פרופס כ&quot;ץ).</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">קישוט מסביב לכתוב בעמוד השער</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2409</field>
+		<field name="revision_id">2409</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטורים מופיעים בראש הטקסט בעברית ובסופו, ובסוף השיר בגרמנית (כיוון שמספרי העמודים לא רשומים ויש בלבול בשל כך שמדובר בצילום - אני לא בטוחה באילו מספרי עמודים מדובר)</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">שירטוטים גיאומטריים - בשני עמודים ללא מיספור בסוף הספר</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בשני מקומות ישנו ציור של פרח</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בהקדמה, עמ' 8 - 9, 39,57 ישנם שני איורים פשוטים ובסיסיים ביותר.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2437</field>
+		<field name="revision_id">2437</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">קישוטים/ציורים בעמודים שונים.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2439</field>
+		<field name="revision_id">2439</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בעמוד שער, בעמ' [2]??, ובעמוד [5]??</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2449</field>
+		<field name="revision_id">2449</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">איור בתחילת הטקסט ובסוף</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2452</field>
+		<field name="revision_id">2452</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">עיטורים מעמודים שונים</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">האיור הראשון והאחרון הינם ציורים של דמויות היסטוריות, על סמך פסוקים מקראיים.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">בעמ' א/1, בתחילת הטקסט, ישנו ציור עם הכתובית: &quot;ויפגשהו בהר האלהים וישק לו&quot;. 
+בעמ' נו/2, בסוף הטקסט, ישנו ציור של פרחים.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">האיורים רבים, ויש גם שילוב של אמצעים גראפיים בחלק הטקסטואלי</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_diagrams_notes_value">איורים מודרניים. לשמל בתחילת &quot;השיר הראשון&quot;.</field>
+		<field name="field_diagrams_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,5349 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_copy_of_book_used">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_copy_of_book_used_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_copy_of_book_used_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_copy_of_book_used" engine="InnoDB" version="10" row_format="Dynamic" rows="427" avg_row_length="191" data_length="81920" max_data_length="0" index_length="147456" data_free="0" create_time="2024-07-08 12:42:57" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 35 (field_copy_of_book_used)" />
+	</table_structure>
+
+	<table_data name="field_data_field_copy_of_book_used">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Bayerische Staatsbibliothek: Ph.pr. 20 t; Fiche Ph.pr. 20 t</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1953</field>
+		<field name="revision_id">1953</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: R8 = 35 V4487</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Ez 6310&lt;a&gt;</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1958</field>
+		<field name="revision_id">1958</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Mv 8283</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1959</field>
+		<field name="revision_id">1959</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב - צילום</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Kile: Ka 9256</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריית מהלמן, אונ' תל אביב (עותק צילום - על כן לא נרשמו מידות הספר: מהדורת צילום: 1968 פריס)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק דיגיטלי באתר של ספריית פרנקפורט.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Nh 4984</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">892.418 פרי (וול ) אוסף יפה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Universitätsbibliothek Bonn: Ka 333</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1969</field>
+		<field name="revision_id">1969</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: X 2161</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1975</field>
+		<field name="revision_id">1975</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: S 57 B821</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1976</field>
+		<field name="revision_id">1976</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Kile: Ca 4487</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1977</field>
+		<field name="revision_id">1977</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: S63 B3938</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1978</field>
+		<field name="revision_id">1978</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">National library Warszawa: XVIII.266adl.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1979</field>
+		<field name="revision_id">1979</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SUB Göttingen: 8 H POLON 86/14</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1982</field>
+		<field name="revision_id">1982</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: S 55 B781</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1987</field>
+		<field name="revision_id">1987</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 59 B 48</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBKP: Bm 160</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1990</field>
+		<field name="revision_id">1990</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Tübingen: Fo XVIII 154</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1991</field>
+		<field name="revision_id">1991</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: S56 B 1052</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1992</field>
+		<field name="revision_id">1992</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Fd 4764</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1993</field>
+		<field name="revision_id">1993</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Neudruck: Jerusalem 1994.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1995</field>
+		<field name="revision_id">1995</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית: L 2248
+
+(עותק מצולם ולא המקור)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1996</field>
+		<field name="revision_id">1996</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Uni Frankfurt/Main: Jud. 9698</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב (מהלמן)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2003</field>
+		<field name="revision_id">2003</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">National library Warszawa: XVIII.26623adl.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBKP: Ym 5721</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2006</field>
+		<field name="revision_id">2006</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Rostock: CIc-368.4a</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 56 B 1051</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2008</field>
+		<field name="revision_id">2008</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">צילום של עותק בספריה הלאומית.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2009</field>
+		<field name="revision_id">2009</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: R 0 35 V 3291</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2012</field>
+		<field name="revision_id">2012</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: S 38 B1723</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB München: 8 H.ecd.4109</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2015</field>
+		<field name="revision_id">2015</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - עותק מצולם</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2017</field>
+		<field name="revision_id">2017</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 2004 B 1441 (ממנו לקחתי גדלים) את שאר העבודה עשיתי תוך הסתמכות על המהדורה המוערת: Shavit, Zohar. 1990. David Friedländer: Lesebuch für jüdische Kinder. Frankfurt a/M: Dipa. [A new annotated edition with an introduction and appendices by Zohar Shavit].</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב (הנמצא בצילום)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Hochschule für jüdische Studien: 296.109 Asch</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק דיגיטלי, Bayerische Staatsbibliothek.
+http://daten.digitale-sammlungen.de/~db/bsb00003672/images/index.html?id=00003672&amp;fip=85.250.69.179&amp;no=30&amp;seite=1</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק מצולם באוסף שלום, הספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Rostock: Hb 3166</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2027</field>
+		<field name="revision_id">2027</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית S 54 B 1005</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2028</field>
+		<field name="revision_id">2028</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Bo 9830</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2029</field>
+		<field name="revision_id">2029</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBKP: Rb 3080</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2030</field>
+		<field name="revision_id">2030</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2031</field>
+		<field name="revision_id">2031</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2032</field>
+		<field name="revision_id">2032</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2039</field>
+		<field name="revision_id">2039</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 98 B744</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2040</field>
+		<field name="revision_id">2040</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: S 2006 B5389</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2041</field>
+		<field name="revision_id">2041</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+S 97 B 5531</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2042</field>
+		<field name="revision_id">2042</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ÖNB: 80.Cc.84</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2043</field>
+		<field name="revision_id">2043</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Universitätsbibliothek Kiel: 5 in Kf 3166</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2044</field>
+		<field name="revision_id">2044</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2047</field>
+		<field name="revision_id">2047</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2048</field>
+		<field name="revision_id">2048</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SUB Göttingen: 8 POL IV, 9779</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2050</field>
+		<field name="revision_id">2050</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ULB Düsseldorf: JüdG.341 [Kopie], Original in: Library of Congress: E184.J5 S37</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2052</field>
+		<field name="revision_id">2052</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: S 40 B671</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2053</field>
+		<field name="revision_id">2053</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2054</field>
+		<field name="revision_id">2054</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Rostock: CIc-368.3</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2055</field>
+		<field name="revision_id">2055</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S 57 A 1918</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הספריה הלאומית: S 23V6525</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2057</field>
+		<field name="revision_id">2057</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: MIC 666</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2058</field>
+		<field name="revision_id">2058</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: 22 V2080</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">http://mdz1.bib-bvb.de/~db/bsb00001295/images/</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2060</field>
+		<field name="revision_id">2060</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: S 56 B63</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2062</field>
+		<field name="revision_id">2062</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Tübingen: Fo XVIII 67-OR</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2063</field>
+		<field name="revision_id">2063</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: S 59 B1167</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2064</field>
+		<field name="revision_id">2064</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SL: JNUL: S 60 B584</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2066</field>
+		<field name="revision_id">2066</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Universitätsbibliothek Regensburg: BD 9260 A375</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2067</field>
+		<field name="revision_id">2067</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: S 64 B13</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2068</field>
+		<field name="revision_id">2068</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Bayerische Staatsbibliothek: Res/Asc. 5311,14</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2069</field>
+		<field name="revision_id">2069</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2070</field>
+		<field name="revision_id">2070</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Rostock: CIc-377</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2071</field>
+		<field name="revision_id">2071</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Ay16198</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2072</field>
+		<field name="revision_id">2072</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ÖNB: MF 5790</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2073</field>
+		<field name="revision_id">2073</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Greifswald: 520/G 428</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">26V504   הלאומית העברית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Univ. Tel Aviv, Slg. Jaffe: 892</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית
+R /8= 22 V 12082</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, מהלמן 296.3116 סטנ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית:
+R8 88 A 514</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2082</field>
+		<field name="revision_id">2082</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן:
+B43 בן-זאב.או תקס&quot;ז</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן
+B43 בן-זאב.או תקס&quot;ז</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן
+B43 בן-זאב.או תקס&quot;ז</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2091</field>
+		<field name="revision_id">2091</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 35 V 3487</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2094</field>
+		<field name="revision_id">2094</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">צילום עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2098</field>
+		<field name="revision_id">2098</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2099</field>
+		<field name="revision_id">2099</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - צילום</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2100</field>
+		<field name="revision_id">2100</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">NYPL: 31225 MF</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2101</field>
+		<field name="revision_id">2101</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק (מיקרופילם) בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2106</field>
+		<field name="revision_id">2106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת ת&quot;א CT
+492.45 לוי</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">.C. OMPB 12113 (האותיות כאן מתהפכות, איילה צריכה לטפל כאן בבעייה. הסיגנטורה שנרשמה היא זו המופיעה על גבי העותק שצולם בפרוייקט הג'יף הקודם. בנסיון לאתר ספר זה דרך הקטלוג הממוחשב שבאינטרנט לא הצלחתי להעלות דבר )</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">המוזיאון הבריטי 58JY6</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">&lt;p&gt;עותק בספריה הלאומית, מאוסף מהלמן&lt;/p&gt;
+</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2110</field>
+		<field name="revision_id">2110</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Univ. Tel Aviv, Slg. Jaffe 
+ריז892.412</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2112</field>
+		<field name="revision_id">2112</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית:
+
+R8 88 A 514</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2113</field>
+		<field name="revision_id">2113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית
+S 31 V 1707
+(אכס 2)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2115</field>
+		<field name="revision_id">2115</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספרייה לאומית:
+
+R 8= 29 V 1251</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2117</field>
+		<field name="revision_id">2117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">תל אביב מהלמן:
+
+296.45 שיף (עותק מצולם. יש לוודא שצולם במלואו)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2122</field>
+		<field name="revision_id">2122</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, אוסף מהלמן: 296.19 סטנ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, אוסף מהלמן: 296.19 סטנ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 82 A 539</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (צולם)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">&lt;p&gt;בר-אילן: B46 חבי.דר תקס&quot;ו&lt;/p&gt;
+</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2134</field>
+		<field name="revision_id">2134</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">&lt;p&gt;לאומית S 58 A 499&lt;/p&gt;
+</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Uni München: BV004642957</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Uni München: BV004642957</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק הספריה הלאומית.  קיים עתה עותק דיגיטלי באתר של הספריה הלאומית.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2138</field>
+		<field name="revision_id">2138</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">העותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2139</field>
+		<field name="revision_id">2139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 8= 56 A 50</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2140</field>
+		<field name="revision_id">2140</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הספרייה הבריטית:
+
+1978c22</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 23 V 3604</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 23 V 3604</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 23 V 3604</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 23 V 3604</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2149</field>
+		<field name="revision_id">2149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 31 V 258</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2151</field>
+		<field name="revision_id">2151</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה באוניברסיטת תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 0 39 A 1689</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית
+
+R 8= 31 V 4109</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית
+R /8= 35 V 1762</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">UB Frankfurt/Main: MF 10306 Rolle 15 Nr. 5</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">תל אביב מהלמן:
+
+892.4113 שלמ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2167</field>
+		<field name="revision_id">2167</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2168</field>
+		<field name="revision_id">2168</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 4=67 A 696</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2170</field>
+		<field name="revision_id">2170</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית:
+
+S 23 V 4234</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, אוסף יפה
+892.42 ברז</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SBBPK: Ez 10270</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית
+S 61 A 1612</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2176</field>
+		<field name="revision_id">2176</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">&lt;p&gt;עותק בספריית מהלמן, אונ' ת&quot;א&lt;/p&gt;
+</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית S /26 V 182</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2180</field>
+		<field name="revision_id">2180</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S 26 V 186</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית
+
+חלק א' וב' כרוכים יחד (בעותק שנבדק זה).</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2183</field>
+		<field name="revision_id">2183</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית.
+
+חלק א' וב' כרוכים יחד (בעותק שנבדק זה).</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2186</field>
+		<field name="revision_id">2186</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2187</field>
+		<field name="revision_id">2187</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (עותק מקורי)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2188</field>
+		<field name="revision_id">2188</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - עותק מצולם</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק אלקטרוני, באמצעות הספריה בפרנקפורט.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2192</field>
+		<field name="revision_id">2192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית R /4= 35 V 4587</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק הספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר-אילן
+
+B46 חבי.דר תקס&quot;ו</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2200</field>
+		<field name="revision_id">2200</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">224.87=3 
+תנך (וול)
+Univ. Tel Aviv, Slg. CT</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2202</field>
+		<field name="revision_id">2202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית
+S 23 V 4485</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2206</field>
+		<field name="revision_id">2206</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 39 A 502</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2208</field>
+		<field name="revision_id">2208</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית בירושלים</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S /26 V 842</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2212</field>
+		<field name="revision_id">2212</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן (צולמו דפים ראשונים)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2216</field>
+		<field name="revision_id">2216</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2217</field>
+		<field name="revision_id">2217</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית תל אביב:
+
+879.1 שלר אוסף יפה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, מהלמן
+
+892.4116עמנ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2220</field>
+		<field name="revision_id">2220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2221</field>
+		<field name="revision_id">2221</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית: 
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2227</field>
+		<field name="revision_id">2227</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 16496</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ת&quot;א מהלמן:
+
+892.412 כהן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2231</field>
+		<field name="revision_id">2231</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">23 V 8979</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2233</field>
+		<field name="revision_id">2233</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2236</field>
+		<field name="revision_id">2236</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S /31 V 4122</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2238</field>
+		<field name="revision_id">2238</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (צילום).</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2240</field>
+		<field name="revision_id">2240</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - עותק צילום (לכן לא צוין גודל)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית 
+S 29 V 1390</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב 892.412 כהן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב: 892.48 סטנ (359242);  (גדלים על פי עותק בתל אביב מהלמן: 892.48סטנ)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">892.48 סטנ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת בר-אילן: 
+
+A124 נבו.יל תקמ&quot;ט</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2251</field>
+		<field name="revision_id">2251</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+96 L 121</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2252</field>
+		<field name="revision_id">2252</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">אוניברסיטת תל אביב, מהלמן:
+תפל  296.31531</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2253</field>
+		<field name="revision_id">2253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הספרייה הלאומית העברית
+FI 10376(Po+Ne)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2256</field>
+		<field name="revision_id">2256</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">B450.9 מרג.אג תקנ&quot;ו - מיוחדים S
+
+S 25 V 13470כותרת הספר הושלמה מן הספר שלאומית, כי בבר-אילן היא פגומה.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית R 0= 23 V 4461</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2259</field>
+		<field name="revision_id">2259</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S 35 v54(עותק שני)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן:
+
+A95 מרג.או תקמ&quot;ג MIC</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2261</field>
+		<field name="revision_id">2261</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, מהלמן
+
+296.41 יהו</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2262</field>
+		<field name="revision_id">2262</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית 
+S 40 A 148</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת ת&quot;א, מהלמן סטנ296.655</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2264</field>
+		<field name="revision_id">2264</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">&lt;p&gt;S 36 A 2030 לאומית&lt;/p&gt;
+</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2265</field>
+		<field name="revision_id">2265</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Univ. Tel Aviv, Slg. Mehlmann: פדר296.41</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2266</field>
+		<field name="revision_id">2266</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת בר אילן (מעט פגום)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2268</field>
+		<field name="revision_id">2268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב
+
+492.45 שוב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2269</field>
+		<field name="revision_id">2269</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית סוראסקי באוניברסיטת ת&quot;א
+
+492.45 שוב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית מהלמן, אונ' תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת חיפה + עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2272</field>
+		<field name="revision_id">2272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 4= 22 V 13526</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2277</field>
+		<field name="revision_id">2277</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית 22V 13073</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+Fi 1193</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">מהלמן 296.158 משה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הגדלים לפי:
+
+בר אילן
+
+C2 סטנ.חז תקל&quot;ה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2281</field>
+		<field name="revision_id">2281</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">מהלמן 296.174 יהו</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2284</field>
+		<field name="revision_id">2284</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+R 0=22 V 13514</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית S 62 A 3590הלאומית S 62 A 3590</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית S 62 A 3590</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת בר-אילן: T131/2'  סטנ.שר תקמ&quot;ז</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2291</field>
+		<field name="revision_id">2291</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת בר אילן:
+T131/2'  סטנ.שר תקמ&quot;ז</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+S2005A5613
+
+עותק מצולם מישיבת הר עציון:
+
+0005799
+
+ש / תמר / 117
+
+מהדורת צילום: ברוקלין, תשמ&quot;ה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב - יפה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית. העותק עליו עבדתי: חתוך מעט בשולים.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2305</field>
+		<field name="revision_id">2305</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב,
+
+אוסף יפה 296.317 יהו</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2307</field>
+		<field name="revision_id">2307</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">22V11695</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר-אילן:
+
+A175 אבן-עז.יס תק&quot;ל</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת בר אילן 
+A952.93 היש.יס תש&quot;ל</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R /8= 71 A 3775 
+(S 71 A 3775)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, מהלמן:
+
+892.4113 אבן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2319</field>
+		<field name="revision_id">2319</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 68 A 1547 הלאומית העברית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבית אריאלה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - עותק מס' 1</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - עותק מס' 1</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2329</field>
+		<field name="revision_id">2329</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2330</field>
+		<field name="revision_id">2330</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2331</field>
+		<field name="revision_id">2331</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2334</field>
+		<field name="revision_id">2334</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2335</field>
+		<field name="revision_id">2335</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספרית בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר-אילן: S T380.7 = 3,  תקס&quot;ה (כולל רק 6 ספרי נביאים, בנוסף להקדמה הכללית)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 36 A 2240</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2339</field>
+		<field name="revision_id">2339</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+R 69 A 2149</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">SO 22V 11517</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 22 V 3550</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2342</field>
+		<field name="revision_id">2342</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 22 V 3550</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבר אילן (מיקרופילם)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2346</field>
+		<field name="revision_id">2346</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק ב&quot;אוסף שלום&quot;, הספריה הלאומית.
+
+על העותק שנבדק נרשמו דברים בכ&quot;י, בין היתר (כנראה ע&quot;י שלום): &quot;הספר הראשון (אחרי זמיר עריצים) נגד החסידים (מאמר א' וב')&quot;</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (עותק 1)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2348</field>
+		<field name="revision_id">2348</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (עותק 2)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2349</field>
+		<field name="revision_id">2349</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2350</field>
+		<field name="revision_id">2350</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2351</field>
+		<field name="revision_id">2351</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2352</field>
+		<field name="revision_id">2352</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הספרייה הלאומית העברית
+S 52 A 394</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית 
+S 35 V 1820</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר-אילן:
+
+A19 חור.עמ תקס&quot;ג</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+S 23 V 5842</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק מצולם באוסף שלום, הספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2360</field>
+		<field name="revision_id">2360</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב 
+296.158 אבן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק ספריית פרנקפורט (דיגיטלי)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית R 67 A 3914</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2369</field>
+		<field name="revision_id">2369</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בבית אריאלה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באונ' בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2371</field>
+		<field name="revision_id">2371</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר-אילן:
+
+B450.9 הכי.שפ תק&quot;ן
+S מיוחדים</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן
+ 
+B450.9 סטנ.שפ תקל&quot;ג
+
+(שער הספר בבר אילן היה פגום מעט, והשלמתי אותו על ידי העותק שבלאומית)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן:
+
+T417 סטנ.תה תקנ&quot;ד</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R /8= 22 V 6233 
+(R 8 22 V 6233)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית R 8= 23 V 8386</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת בר אילן, T278 טיכ.אמ תשנ&quot;ו (דפוס צילום), כרוך יחד עם טיכר, יוסף משה, אמרי יוסף).</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2379</field>
+		<field name="revision_id">2379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">המוזיאון הבריטי
+
+1981d16  OMPB 12108
+
+הערה:
+המחזה דמיוני, וממוקם בתקופת המלך שפטיה, במקום המכונה &quot;כלנה&quot;.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2380</field>
+		<field name="revision_id">2380</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר אילן:
+
+B45 אלי.עי תקס&quot;ג</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2381</field>
+		<field name="revision_id">2381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית תל אביב (מהלמן):
+
+296.081 ננס MR</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית - עותק מצולם</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (סרוק).</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק אלקטרוני באתר של ספריית פרנקפורט</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2386</field>
+		<field name="revision_id">2386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 22 V 12032</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 22 V 12032</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2389</field>
+		<field name="revision_id">2389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 22 V 12032</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S 25 V 13718 (עותק שני)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2391</field>
+		<field name="revision_id">2391</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית בר-אילן:
+A95 מרג.או תקמ&quot;ג MIC</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית: R 8= 56 A 2188</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת בר אילן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2396</field>
+		<field name="revision_id">2396</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+S 35 V 1897</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2397</field>
+		<field name="revision_id">2397</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית: S 23 V 5182</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת ת&quot;א:
+CT אבן 492.45</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2401</field>
+		<field name="revision_id">2401</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S 33 V 4297</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2402</field>
+		<field name="revision_id">2402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותקים בתל אביב וירושלים</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית [מעט פגום, חתוך בצדדים].</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2405</field>
+		<field name="revision_id">2405</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2406</field>
+		<field name="revision_id">2406</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8=57 A 1666</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2407</field>
+		<field name="revision_id">2407</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב.</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2408</field>
+		<field name="revision_id">2408</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית
+
+S 31 V 1457</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2409</field>
+		<field name="revision_id">2409</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית: L 2241</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2410</field>
+		<field name="revision_id">2410</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8=45 A 847</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב, מהלמן
+
+892.412 לוצ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2412</field>
+		<field name="revision_id">2412</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2413</field>
+		<field name="revision_id">2413</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">R 8= 2003 A 1779</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית
+אוסף שולם 
+R 1302</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2416</field>
+		<field name="revision_id">2416</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+R69 A 1766</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">המוזיאון הבריטי 
+
+OMPB 12102</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">המוזיאון הבריטי
+
+1938d13 OMPB12102</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית R 53 A 1816</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2420</field>
+		<field name="revision_id">2420</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 36 A 469a</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת ת&quot;א: 892.481לינ (גדלים על פי עותק שבתל אביב, מהלמן: 892.481לינ)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית אוניברסיטת תל אביב
+892.481 לינ</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2423</field>
+		<field name="revision_id">2423</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">S 53 A 2278</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2424</field>
+		<field name="revision_id">2424</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוניברסיטת תל אביב (אוסף יפה)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2426</field>
+		<field name="revision_id">2426</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק  2 בספריה הלאומית [צילום]</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית S 31 V 746</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2429</field>
+		<field name="revision_id">2429</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (שני דפים מצולמים)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2430</field>
+		<field name="revision_id">2430</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק ב&quot;אוסף שלום&quot;, הספריה הלאומית [מס' קטלוגי: 5436].</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ת&quot;א, מהלמן:
+
+892.42 זיל
+
+(עותק זה כרוך עם ספר נוסף בשם &quot;צדק ורשע&quot; של זילבשטיין, רדלהיים תקס&quot;ג. בדקתי בספרייה לאומית את העותק ששם, וראיתי כי מדובר בצילום מהדורה זו. במהדורה שבלאומית חסר עמוד שער. גדלי הספר הם על פי המהדורה המקורית הנמצאת בלאומית
+R 8= 35 V 4175).</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">892.418 כרי (ויז)  אוסף יפה</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2435</field>
+		<field name="revision_id">2435</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2436</field>
+		<field name="revision_id">2436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 2+= 56 A 2133</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2437</field>
+		<field name="revision_id">2437</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2438</field>
+		<field name="revision_id">2438</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">MR Rare book collection  892.418 נפו (שיר)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2439</field>
+		<field name="revision_id">2439</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית L 2215</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2440</field>
+		<field name="revision_id">2440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 4=53 A 410</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2441</field>
+		<field name="revision_id">2441</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2442</field>
+		<field name="revision_id">2442</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL:  L 2226</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2443</field>
+		<field name="revision_id">2443</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2444</field>
+		<field name="revision_id">2444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">בר-אילן: 1204 L  נדירים</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2445</field>
+		<field name="revision_id">2445</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2446</field>
+		<field name="revision_id">2446</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספריית תל אביב:
+
+892.418 פרי (הרט)  אוסף מהלמן</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2447</field>
+		<field name="revision_id">2447</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+R 2+= 50 A 1323</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2448</field>
+		<field name="revision_id">2448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2449</field>
+		<field name="revision_id">2449</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק (מצולם) בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2450</field>
+		<field name="revision_id">2450</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2451</field>
+		<field name="revision_id">2451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בתל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2452</field>
+		<field name="revision_id">2452</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק באוסף מלמן, אונ' תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">אוסף מלמן, אונ' תל אביב</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2458</field>
+		<field name="revision_id">2458</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית
+R 8= 35 V 4351</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2459</field>
+		<field name="revision_id">2459</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2460</field>
+		<field name="revision_id">2460</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">מתוך העותקים המצולמים בירושלים באגף כתבי יד. המקור נמצא בספריית הלאומית בברלין:
+F 2045 
+
+ספרית מקור    ברלין - ספרית המדינה 10/1267 OR. FOL. 
+
+Berlin - Staatsbibliothek (Preussischer Kulturbesitz) Or. fol. 1267</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">JNUL: 1095976</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית:
+
+S 64 A 2830</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק אלקטרוני - ספריית פרנקפורט</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2466</field>
+		<field name="revision_id">2466</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">Kopie in der JNUL: L222S [Y361 (431.55)]</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2467</field>
+		<field name="revision_id">2467</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">ספרייה לאומית: R 2+=75 A 826</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית
+
+R 2= 31 V 1504</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2469</field>
+		<field name="revision_id">2469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">לאומית: L 2239</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק דיגיטלי מספריית פרנקפורט</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">טק: R 30 V 811</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">PJ 4566 C66</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית
+PJ 4566 C66</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית
+PJ 4566 C66</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">הלאומית העברית S 25 V 14284</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2479</field>
+		<field name="revision_id">2479</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2480</field>
+		<field name="revision_id">2480</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2481</field>
+		<field name="revision_id">2481</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2484</field>
+		<field name="revision_id">2484</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2486</field>
+		<field name="revision_id">2486</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית (העותק פגום, על כן הכותרת קטועה)</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_copy_of_book_used_value">עותק בספריה הלאומית</field>
+		<field name="field_copy_of_book_used_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

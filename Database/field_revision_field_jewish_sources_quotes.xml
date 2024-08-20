@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_jewish_sources_quotes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_jewish_sources_quotes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_jewish_sources_quotes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_jewish_sources_quotes" engine="InnoDB" version="10" row_format="Dynamic" rows="32" avg_row_length="512" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:19" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 66 (field_jewish..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_jewish_sources_quotes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">Maimonides, Moses, משה בן מימון: מורה נבוכים.
+
+יוסף אלבו: ספר עיקרים.
+
+תלמוד
+
+תנ&quot;ך
+
+אלבו מוזכר בעמ' 53.
+רמב&quot;ם - מורה נבוכים: ציטוט ארוך עמ' 48 - 50.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">פרקי אבות
+
+תנ&quot;ך
+
+
+משולבים ציטוטים רבים מן המקורות. ישנם במיוחד ציטוטים רבים המתייחסים למלכי ישראל.
+הטקסט כולו פותח בציטוט מתוך פרקי אבות.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">חז&quot;ל
+
+תנ&quot;ך
+
+
+וייזל מצטט מחז&quot;ל כדי להוכיח את קדימותה של דרך ארץ על פני התורה. (למשל: עמ' [3])</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">גמרא
+
+Moses Mendelssohn, משה מנדלסון: הקדמה לתשועות ישראל למנשה בן ישראל.
+
+פרקי אבות
+
+תנ&quot;ך
+
+
+
+מקרה אחד שבו וייזל נשען על דברי ראשונים כדי לחזק את דבריו: כאשר מבקש לתקן את העיוות שנוצר בסדר הלימוד. בעוד שבגמרא נאמר כי על האדם להקדיש שליש משנותיו למקרא, שליש למשנה ושליש לתלמוד, &quot;מי בנו שומר על הסדר הזה?&quot; (עמ' [21])
+
+לקראת סוף הספר, וייזל מביא ציטוט ארוך מתוך ההקדמה של משה מנדלסון לספרו של מנשה בן ישראל.
+
+[להעביר לספר של וייזל]</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">Hartwig Wessely, נפתלי הרץ וייזל: דברי שלום ואמת.
+
+Maimonides, Moses, משה בן מימון: מורה נבוכים.
+
+תלמוד.
+
+תנ&quot;ך.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">Josephus Flavius, יוסף בן מתתיהו: Bellum Judaicum.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">רש&quot;י
+
+ברוך לינדא, ראשית לימודים.
+
+תלמוד
+
+בעמ' הראשון והשני בהקדמה מביא ברי&quot;ל דברים מתוך תלמוד ירושלמי ומתוך פרוש רש&quot;י. 
+הספר ראשית לימודים לברוך לינדא מוזכר על ידי ברי&quot;ל בבואו לתאר את סוג בעל החיים שיכול היה לבלוע את יונה. (סעיף ז' בהקדמה)</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">בהקדמת המחבר, עמ' [4], מוזכר סיפרו של משה חיים לוצאטו &lt;strong&gt;לישרים תהילה&lt;/strong&gt;, וגם - &lt;strong&gt;מלות ההגיון&lt;/strong&gt; של הרמב&quot;ם, עמ' [5], &lt;strong&gt;שמואל&lt;/strong&gt; א' ב', עמ' [6-7].</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">אליקים מלונדון: מאמר עין הקורא.
+
+ראב&quot;ע: ספר צחות.
+
+
+למנס מצטט את הנאמר ב&lt;ins&gt;מאמר עין הקורא&lt;/ins&gt; (ברלין 1803) בזכות המבטא האשכנזי ובגנות הספרדי. בין היתר, המחבר אליקים מלונדון ביקר מדקדקים אשכנזים על שקיבלו את דברי חכמי הדקדוק הספרדים וסמכו עליהם כאילו נתנו בסיני. למנס יוצא להוכיח את טעותו של אליקים מלונדון. לאחר הצגת תמצית הדברים מתוך אותו ספר הוא מוסיף: &quot;את כל הדברים האלה אבטל בלי טרח. וזאת לדעת שלא באתי ח&quot;ו לקנטר ולהתעולל עלילות נגד החכם הנ&quot;ל, חלילה לי, כי אוהב האמת אני וכל ישעי וחפצי להעמיד האמת על תלה, וגם בטוח אני שהחכם הנ&quot;ל לא יקציף עלי כלל על סתרי את דבריו בדברי טעם, ובאלת רשות &lt;ins&gt;כתלמיד לפני רבו, כי הרשות נתונה לכל איש לחוות דעתו&lt;/ins&gt;.&quot;
+
+למנס מצטט מדברי רא&quot;בע בעמ' ט/2 והלאה.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">רד&quot;ק
+
+מנשה בן ישראל
+
+Maimonides, רמב&quot;ם: אגרת תימן.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">ציטוט מדברי ירמיהו הנביא: עמ' א/2.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">חז&quot;ל</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תהילים
+
+תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">עמ' 83: תלמוד</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך
+
+כפי שמציין שקד, מבוא, עמ' 16, בשונה ממחזאים אחרים מתקופתו, &quot;האפרתי אינו מביא קטעי מקרא ככתבם וכלשונם, אלא טובע בהם תמיד את חותמו שלו&quot;.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">משחקי מילים עם טקסטים יהודים מסורתיים, למשל תפילות מהימים הנוראים. &quot;פותחים הגרון... כי הנה כחומר ביד היוצר ברצותו מרחיב וברצותו מקצר. כן אנחנו היום כדורך בגת ענבים בוצר. ליין הבט ואל תפן לאוצר...&quot; (עמ' ו).</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">ישעיה (סה')
+
+&quot;כי הנני בורא שמים חדשים וארץ חדשה&quot; מופיע בעמוד השער))</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">מגן אברהם הלכות פורים.
+יעקב פרנסיס: עץ הדעת.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">קהלת: למשל בהקדמה.
+מצוטטים מקורות יהודיים רבים.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">אסף
+
+אבן יקרה ילוטש במסור יפותח בחכמה&quot;
+אסף ל&quot;ב) - בהקדמה</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">פרקי אבות
+
+תנ&quot;ך
+
+בהקדמה מציין וייזל כי המחקרים בספר &quot;נעזרים מדברי התורה ומכתבי הקדש ומאמרות טהורות הנמצאות בדברי רבותינו ז&quot;ל&quot; (עמ' [7] בהקדמה).</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">רד&quot;ק
+
+רש&quot;י
+
+ישנם בוודאי ציטוטים ממקורות נוספים.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">שלמה בן גבירול
+
+שלמה בן גבירול: שיר על מצות לא תעשה
+
+
+בסוף חלק א' ובסוף חלק ב' מביא ישראל לנדא שירים מאת אבן גבירול. השיר הראשון הוא &quot;שיר על מצות לא תעשה לר' שלמה בן גבירול&quot; (חלק א', עמ' מז/2). בפתח השיר בחלק ב' צוין: &quot;מצות עשה הנאמרים בשיר השירים אשר לשלמה מהמשורר הגדול המפורסים [כך] מו&quot;ה שלמה בן גבירול ז&quot;ל אשר שמו נודע אצלינו בפיוטים והשיר הזה אומרים הספרדים בחג השבועות&quot; (חלק ב', עמ' עא/2).</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך
+
+חלקי פסוקים רבים מתוך ספרי התנ&quot;ך משובצים לכל אורך הספר.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך
+
+ספרי התנ&quot;ך השונים הם המקור הבולט להבאת דוגמאות לכללי וניתוח הלשון.</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">רמב&quot;ם. ז&quot;ל: &quot;כח מעשה בראשית לבשר ודם אי אפשר&quot;. החכם מקנדיאה: ספר אלים.
+
+שני הציטוטים הראשונים מופיעים בעמ' [4]. ככל הנראה הכוונה ב&quot;רב המורה&quot; לרמב&quot;ם. הציטוט השלישי מופיע ב&quot;מבוא הספר&quot;, עמ' [8].</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2448</field>
+		<field name="revision_id">2448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">פרקי אבות
+
+תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_jewish_sources_quotes_value">תנ&quot;ך</field>
+		<field name="field_jewish_sources_quotes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

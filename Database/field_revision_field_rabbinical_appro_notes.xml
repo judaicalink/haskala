@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_rabbinical_appro_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_rabbinical_appro_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_rabbinical_appro_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_rabbinical_appro_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="64" avg_row_length="1024" data_length="65536" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:25" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 152 (field_rabbinical..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_rabbinical_appro_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">&quot;Mit Bewilligung der K.K. Censur&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">מאחורי עמוד השער ולפני ההקדמה כותב העורך: &quot;ההסכמות והחרמות, ושארי הכתבים המגיעים לשבח כותב האגרות האלה נ&quot;ע והמחזיקים ביד המעיר ההערות עליהן, למען ירוץ כל קורא בהן בלתי משגה, נדפוס אי&quot;ה אצל מחברת השנית, כי לא חפצנו להאריך מענית בזאת מחברת ראשונה, להקל על הקונה...&quot;
+כל הסכמה לא מופיעה ב&quot;מחברת השניה&quot; (שהודפסה בתוך &quot;חותם תכנית&quot;).</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בהקדמה שכתב לספר טוען המחבר כי: &quot;... גם יש להמחבר הסכמות רבו' מרבני פולין וגם מהרב המג'  דפה קהלתנו...&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">אב&quot;ד לבוב שלמה מוצג כבעל הספר &quot;מרכבת המשנה&quot;, ומקום ההסכמה - ברסלאו. הוא מספר בהסכמה כי בכל פעם שהוא מגיע לברסלאו מפצירים בו להסכים לספר. הוא מציג את סטנוב כמי שיש לו &quot;ידיעה רבה בחכמת התכונה&quot;.
+ההסכמה השניה של דוד אב&quot;ד סטנוב המנוח ניתנה בשמו על ידי אברהם דוד. 
+
+בתחתית עמוד ההסכמות נרשם:
+&quot;יתר ההסכמו' והחרמו' הועלועל ספ' שפתי רננות אשר להמקב' הלזה&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">&lt;p&gt;אין הסכמות, והמחבר מקדיש עמוד שלם להסביר מדוע כך. (אחרי עמוד השער.)&lt;/p&gt;
+</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ההסכמות נמצאות בחלקו הראשון של הספר.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">אין בספר זה הסכמות. אולם בחלקים הבאים של &quot;דברי שלום ואמת&quot; ישנו נסיון לספק מעין הסכמות לספר. כך בספר השלישי, &quot;עין משפט&quot;, הכולל מכתבים על הספר מאת רבני איטליה, ובספר הרביעי, &quot;רחובות&quot;, המדגיש את מעמדם של אותם רבנים.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">אברהם בן אריה ליב ממעזריטש הינו אחיו של המחבר.
+מיכאל שמעון מייא הינו &quot;מחותנו&quot;. &quot;לא רב ומורה אני&quot;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בדף ב' רושם המחבר:
+&quot;(הסכמות גאוני חכמי אשכנז ופולין כבר הדפיס המחבר בס' קרבן ראשית הכוללים גם ספר בית המדות ועוד יד המחבר נטוי' להדפיס יתר ההסכמו' בחלק שני מספר זה)&quot;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמה אחת מאת צבי הירש [לוין] מברלין, ותחתיו חתומים גם: אהרן בן יוסף אהרן הלוי הורוויץ, זנוויל נייאגס מפ&quot;פ דמיין, שמואל זנוויל מבראנדיבורג, יהודה ליב פ&quot;ב.
+הסכמה נוספת מאת: ר' שמחה בן רצ&quot;ה [ר' צבי הירש אשכנזי ?] מדסאו.
+הסכמה שלישית מאת: ר' שאול בן צ[בי] ה[ירש] [לוין]</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2170</field>
+		<field name="revision_id">2170</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">מופיעה מעין הסכמה - של אב&quot;ד קהילת מענץ - חיים הירש - שבאופן עקרוני נמנע מהסכמה על ספרים, אך לדברי המחבר - עודד אותו להוציאו</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">במקום הסכמה, מאחורי עמוד השער ישנו הנוסח הבא: 
+&quot;שני המאורות הגדולים הגאונים הגדולים, החכמים השלמים, אבות בתי דינים, בשתי הקהלות אשכנזים וספרדים יע'א בעירנו, אמרו, כי יען שמאמר הזה אין בו דבר אסור והיתר, טהור או בלתי טהור וכיוצא, לכן איננו צריך הסכמה בכתב, אבל דעתם מססכמת שיחלק ביעקב ויפוץ בישראל, וגם הם יקחו אותו כפי המחיר הקצוב.&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">נותן ההסכמה כותב: &quot;להפצרת מחברו... אשר בקשני לחפות עליו בזה מפני הטועים או הקנאים אשר פגעו בו להוציא דבר לאמר כי צריך בדיקה אחרי ביאורי תרגומי' כאלה פן יכשילו עלינו לשוננו פן באחת יבערו וכסלו והיה למכשול עון למשוך לב עם הארץ אחר דעות כוזבו' ואמונות זרות ע&quot;כ העברתי על החבור הזה עין עיוני ומצאתי כי כל ביאוריו מיוסדים על אדני הקודש... ואין לחשדו... כי מה לעני יודע לאבד יגיע כחו והונו וזמנו לכתוב ספר על מנת לקבעו בדפוס ולהוציאו דוקא לישראל במכירה ולא ישים אל לבו ולא דעת ולא תבונה להטיל מום במקחו בקדשי שמים למען יפסל ולהקרבה לישראל והיה יגיע לריק...&quot; אם איש מוצא פגם בספר, הוא מוסיף, עליו &quot;להראות באצבע בחבור הזה איה מקום המעוות הזה...&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2220</field>
+		<field name="revision_id">2220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ב&quot;התנצלות המחבר&quot; מסביר מדוע נמנע מלצרף את ההסכמות אשר לדבריו נמצאים בידיו. (הוכרח לקצר את כתב היד.)</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">לא הייתי בטוחה שמדובר בפנחס הורביץ בעל ספר הברית, ולכן לא בחרתי בו - אך יתכן שמדובר באותו האדם. צריך לבדוק אם הורביץ שכתב את ספר הברית שימש כאב&quot;ד בפרנקפורט ד'מיין בשנים אלה.
+ההסכמה מלווה בהתנצלות החתומה על ידי הידנהים על דברים מסויימים שהביא בספר.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">צילמתי דיגיטלית את שני עמודי ההסכמות. בהסכמות מסופר על פנייתם לקבלת הסכמות של הידנהים ושותפו לצורך הוצאת הכרכים הנוספים של המחזור. בהסכמה של ארי' ליב ברעסלא מתואר בשוויץ מתואר כשותף חשוב בהוצאה לאור: &quot;וארא לחברה עם אומן גדול במעשה הדפוס ה&quot;ה המושלם והנעלה האלוף בהר&quot;ר ברוך בר&quot;מ בשוויץ יצ&quot;ו..&quot; אח&quot;כ הוא מתאר את הסכנות שיעתיקו את תרגומו האשכנזי של הידנהים, ואז: &quot;והוא ושותפו הנ&quot;ל יגעו לריק וילדו לבהלה.&quot; מכאן עולה כי בשוויץ שימש לא רק כמדפיס טכני אלא כשותף חשוב יותר בתהליך ההבאה לדפוס, ולכן הוא נרשם כאן כיוצר.
+
+המסכים ארי' ליב ברעסלא משבח את הינדהים על כך שהוא ברר והוציא טעויות ושגיאות בנוסח הזה. 
+לגבי המסכים משה טובי' רשום כי הוא חונה בהנאו, אבל הוא מזונטהיים.
+
+
+בעמוד האחרון של &quot;הסכמות וחרמות&quot; שבפתח הספר, מופיעים הדברים הבאים:
+&quot;ויתר ההסכמו' מגאוני הזמן נר&quot;ו זא וויא דיא נאמן דער העררן סובסקריבענטן זאללן דען נעכסט פאלגענדן כרכים פאראנגעדרוקט ווערדן אי&quot;ה&quot;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">לא רשומים שמות המסכימים, אך בעמוד שבגב עמוד השער נרשם כך:
+
+&quot;הסכמות וחרמות מרבותינו הגאונים נר&quot;ו, מלבד אותם שכבר נדפסו בכרך ראשון של פסח, הלא המה באחד הכרכים הבאים על מקום נאות יבואו בשלום&quot;.
+
+כלומר, יש לחפש את שמות המסכימים בכרכים אחרים, ובכללם - &quot;ראשון של פסח&quot;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2238</field>
+		<field name="revision_id">2238</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">אך כתוב בסוף השיר:
+&quot;נדפס ברשות מע' הפרנסים שרי המעמד יצ&quot;ו ובהסכמת מורנו ורבנו שלם נר&quot;ו עטרת המשוררים&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">כותרת ה&quot;הסכמה&quot; היא &quot;רשיון&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">על צבי הירש נאמר כי הוא חונה בשווערין; על יוסף ברוך כי הוא חונה במעזריטש; על שמואל שמעלקא כי הוא חונה בדעמביץ; ועל שאול כהנא כי הוא חונה בלנצהוט</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">רשימת המסכימים ארוכה מאוד, תוקלד בעתיד על ידי אורית</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות:
+אברהם נר&quot;ו אב&quot;ד ור&quot;מ פה ק&quot;ק פ&quot;פ דמיין.
+חתימה: הק' אברם הוא אברהם באא&quot;מו הרב ה&quot;ה מוהר&quot;רן הירש ...
+עוד אחד: הרב אברהם סג&quot;ל מחעלמא אב&quot;ד ור&quot;מ דק&quot;ק עמדין. חותם אברהם בא&quot;א מ&quot;ו מוהר&quot;ר משה הלוי זלה&quot;ה מחעלמא חונה בק&quot;ק עמדין וחותם פה ק&quot;ק פ&quot;פ דמיין יע&quot;א.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2272</field>
+		<field name="revision_id">2272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">חותמים על ההסכמה: 
+הרב אהרן ראב&quot;ד פה ק&quot;ק ברלין (בן משה)
+בצירוף בית דינו הצדק:
+הקטן יואל במהורר יקותיאל זצ&quot;ל מגלוגא דיין דק&quot;ק ברלין
+הקטן גרשון בן הרר אלי' זצ&quot;ל דמתקרי' גרשון אונגר דיין פה ק&quot;ק ברלין
+הקטן זנוויל נייאגס מפ&quot;פ דמיין דיין... מיושבי בית המדרש דק&quot;ק ברלין</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">המחבר כותב בהקדמתו: &quot;הסכמות הרבנים אנשי השם&quot; יופיעו לאחר הדפסת כל חלקי החיבור.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">נותן ההסכמה מדגיש את מעלותיו של ספר הכוזרי ומהלל את &quot;הרב הגדול החריף המפורסם&quot; - מפרש הספר ואת עבודתו.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ההסכמה היא עבור סיפרו זה של סטנוב, וספר נוסף של סטנוב: &quot;ספר הנפש אמץ לבו בגבורים&quot; (דף ב'). ספר זה מופיע לאחר ספר המדות, ללא עמוד שער, ולכן לא הפרדתי את השניים, אם כי, על פי תפיסת בני התקופה - מדובר בשני ספרים.
+יש טענה במחקר כי ההסכמה הזו היא זיוף, אך יש לבדוק אם יש צידוק מספיק לטענה זו.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות רבות: 
+* הסכמת הרב... האב&quot;ד ור&quot;מ דק&quot;ק לבוב והגליל ה&quot;ה בעל מרכבת המשנה... שלמה [לא ברור]
+* הסכמת הרב... האב&quot;ד ור&quot;מ דפה ק&quot;ק זאלקוי... [לא ברור]
+* הסכמת הרב... ר&quot;מ דק&quot;ק לבוב [לא ברור] 
+* הסכמת הרב ... האב&quot;ד ור&quot;מ דק&quot;ק יערסלוב... זכריה [לא ברור]
+*הסכמת הרב... מהור&quot;ר הירץ ראש כ&quot;ד פה ק&quot;ק זאלקווא... נפתלי הירץ בהמנו' הרבני מו' משה ז&quot;ל ה&quot;ה מבראד
+*הסכמת הרב... מגיד משרים דק&quot;ק קרעמניץ בעל מחבר שבט מישראל...  [לא ברור]
+* הסכמת הרב המאור הגדול החריף א&quot;בד דק&quot;ק שענדשוב... אליעזר בהרב הגדול מוהר&quot;י יעקב הלוי הורוויץ... חונה פה ק&quot;ק שענדשוב</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות לכל החלקים הופיעו בחלק השני של &lt;ins&gt;זמירות ישראל&lt;/ins&gt;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בחלק הראשון של &lt;ins&gt;זמירות ישראל&lt;/ins&gt;, שראה אור שנה קודם לכן, נכתב בסוף הספר:
+&quot;לדעת שיש תחת ידי הסכמות וחרמות מכמה רבני הדור שלא ישיג את גבולי להדפיס הספר הזה... ומחמת קוצר הזמן לא אוכל להדפיסם עתה&quot;.
+ההסכמות אכן נושאות תאריך מוקדם: 
+תקמ&quot;ד.
+שמו של אחד מנותני ההסכמה איננו ברור לגמרי, אך קרוב לוודאי רשום:
+&quot;הכ&quot;ד הק' שמעי' לאנצבורג מברלין&quot;.
+
+ההסכמות עוסקות במידה רבה ב&quot;זכויות יוצרים&quot; - באיסור להדפיס את הספר או חלקים ממנו בפרק זמן של עשר שנים.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות לכל החלקים הופיעו בחלק השני של &lt;ins&gt;זמירות ישראל&lt;/ins&gt;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ההסכמות לכל חלקי &lt;ins&gt;זמירות ישראל&lt;/ins&gt; הופיעו בחלק השני.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הרבנים החותמים על ההסכמות:
+מרדכי בן מאיר מרגלית אב&quot;ד בק&quot;ק צעמפלבורג/ מרדכי מזלאטווי החונה פק&quot;ק צעמפלבורג
+
+נפתלי הירש אב&quot;ד בק&quot;ק פפ'דא/ נפתלי הירש לבית קצנאילנבוגן חונה פק&quot;ק פפ&quot;דא
+
+יוסף אב&quot;ד בק&quot;ק מעזריטש/ יוסף בן ברוך מארץ יון חוב&quot;קק מעזריטש
+
+רבני זלאטווי:
+ישראל בן יצחק אייזק קרא מליסא
+הירץ בן הענך הענא סג&quot;ל מפ&quot;פדמיין
+אהרן בן יהודה סג&quot;ל
+נתן ברנט בן ישראל סג&quot;ל
+חיים בן יצחק אייזק</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">מאחורי עמוד השער כתוב: &quot;יש תחת ידי הסכמות גאוני ארץ רבני זמנינו נר&quot;ו. שנתנו רשיון להוציא לאור הספר הזה אבל לפי שאין בזה תועלת לקורא, מנעתי עצמי להדפיסם שלא להכביד הוצאות הדפוס. גם גזרו שלא ידפיס זולתי הספר הזה טרם יגלה את אזני להפיק ממני רשיון.&quot;
+עם זאת יש להתייחס להסכמתו של יחזקאל לנדאו לספרו של וייזל מסכת אבות עם יין לבנון, בו מתייחס גם (בהסתייגות מסוימת) לספר חכמת שלמה.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמה אחת מאת אלעזר קאליר, מק&quot;ק קעלין.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">על זנוויל נאייא גאס וזנוויל בראנדיבורג נאמר כי הם יושבים כעת בברלין.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">דוד מברלין רשום כי הוא 'חפ&quot;קק אה&quot;וב' - כיוון שאלטונה והמבורג הם שמות המופרדים בתוכנה, ואין אפשרות לבחור ביותר משם מקום אחד - לא יכולתי לציין את מגוריו, באחת משתי הערים הללו.
+
+בהסכמתו מציין שאול,  אב&quot;ד קהילת האשכנזים באמסטרדם,  כי הוא ידידו של הרב דוד מברלין והוא סומך עליו כי הוא מכיר מכיר ומעריך את המביא לדפוס בנימין משה מעלי, הזקוק לעידוד:
+
+&quot;אמנם החכם המדפיסם עכשיוהוא צריך חיזוק וסעד לתומכו... אך מצדי לא יגרע כח תקנת אנשי קהלתי קהל אשכנזים ... על הדפסת ספרים ישנים&quot; (דף ג').</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">במקום הסכמה מפורשת מאת כל רב ורב, מובאים שמות המסכימים תחת טקסט קצר, בן חצי עמוד, בו נאמר בין היתר: &quot;אחרי הפלגת התוארים שתוארו החכמים השלמים ח&quot;מ למעלת חיבורנו בית יהודה הלא הוא בית יהודה... קצרתי במקום שה&quot;ן רשאי' להאריך מפני סכנת ממון אשר בהוצאות הדפוס כי רבה היא ולא דפסתי כ&quot;א שמות היקרים יענו ויעידו על תוקף ועוז מאמרינו הזה והמה לבל ירים איש את ידו ורגלו להרוס את הח&quot;רם אשר נטעו על עשר שנים מיום כלות הדפוס...&quot;
+
+לשון החתימות: 
+-נאום אהרן בלא&quot;א ה&quot;ה כמ&quot;והרר יוסף אהרן הלוי הורוויץ זלה&quot;ה החו' פה ק&quot;ק שקוד יע&quot;א וק&quot;ק האזנפוט במדינת קור לאנד
+-ונאום ישראל בה&quot;רב הגאון המפורסם מו&quot;ה&quot;רר חיים ז&quot;ק החונ' בק&quot;ק בירו והמדינה יע&quot;א
+-ונאום אליעזר בהרב ה&quot;ג מה&quot;ר&quot;א נרו החונ' ב&quot;גק&quot;ק ע&quot;ח וז&quot;ח ושאוויל והמדינה יע&quot;א
+-ונאום אליעזר בהרב מו&quot;הרר יצחק זצ&quot;ל החונ' בק&quot;ק פומפיאן ואגפי'
+-ונאום יעקב בהרב ה&quot;ג מ&quot;הר&quot;א החונ' בק&quot;ק לוקניק ואגפי' יע&quot;א</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמה ראשונה: &quot;דוד  הקטן מברלין&quot;, אב&quot;ד דשלש קהילות אהו&quot;ב.
+
+הסכמה שניה: &quot;יצחק זאבי?, שליח מעה&quot;ק חברון&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">תחת הכותרת &quot;הסכמות&quot; מופיעים דבריהם לא של רבנים כי אם של  החותמים הבאים:
+הק' שלמה זלמן בה&quot;רר גומפל עמרך ז&quot;ל
+הק' מיכאל בלא&quot;א מוה&quot;רר זנוויל בכרך זל&quot;הה
+הק' יעבק גינשבורג
+הק' אלעזר פלעקלש
+תחת חתימותיהם: &quot;וההסכמות ומצודות החרמות אשר פרשו גאוני הדור למשיגי גבול מחברי ספרי החכמות ראינו בעינינו והמה יבואו בעזרת ה' עם כל החותמות...&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">על &quot;הסכמת הגאונים&quot; חתומים:
+חנוך הענך במהורר שמואל זצ&quot;ל שיק
+צבי הירש בלא&quot;א הרב מהר&quot;ם זצלה&quot;ה</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בעמ' השני בהקדמה, כהערת שוליים, מופיע ציטוט מתוך מכתב שקיבלו המחברים ממלומד, &quot;פראפעסר &lt;ins&gt;טיקסן&lt;/ins&gt; בעיר האשטאק&quot;, המהווה מעין הסכמה/המלצה (לא יהודית, ככל הנראה) לספר. [קרסל מציין כי הרבו לצטט, בעיקר ביהדות גרמניה, מתוך אותו מכתב עברי של חוקר המקרא הנוצרי (קרסל ב', 609).]
+ 
+לשון ההערה: &quot;פראפעסר טיקסן... בשמעואת בשורת ההעתקה ההיא (כלומר, התרגום הנוכחי) כבדנו בדבריו הנעימים, ונתן לנו הלל ותודה על אשר עלה על רוחנו לגשת למלאכה הכבדה הזאת. וכה דבריו בקצור: 'תשואות חן חן לכם, רעים משכילים! מגישי מנחה טהורה! על אשר העמסתם על שכמיכם עול העבודה הקשה לתרגם הספר החתום הזה בלשון אשכנזי צחה ונקייה, ולעשות לראשו לוית חן בבאור הדברים הקשים הנמצאים בו. בהעתקתכם תועילו לתלמידי עמכם, בהסיר מעל שפתותיהם לשון עלגים המורגלת בפי המורים אשר בלעגי שפה ובלשון מגומגמת ידברו אל העם הזה. ולא מפי הדת והאמונה הם עושים כן, כ&quot;א הוא תנובת ההרגל המשובש, שורש מנהג ישן נושן מימי אבותינו הראשונים, עמי אשכנז הקדמונים, אשר למדו לשונם לדבר בכה. - ואתם בודאי תצליחו במעשיכם. חזקו ותתחזקו בעד עמכם, ויהי אלהים עמכם!&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">(&lt;ins&gt;שאול מאמסטרדם: כנראה אחיו של צבי הירש מברלין&lt;/ins&gt;)
+בהסכמתו, מדגיש ר' שאול (מאמסטרדם) את כוונותיו הטובות של המחבר, להבדיל ממחברים אחרים בזמנו: &quot;לבי נכון ובטוח באמונתו שלא יערב בספרו מחשבות אחרות של &lt;ins&gt;קצת מהמתחכמים&lt;/ins&gt; בזמננו זה שפשטו ידם למקום שאינה מגעת ועשו בלבול גדול בסדורי התפלות אשר בידינו מקדמת דנא והם שבשו נסחאות הרבה שלא במשפט כידוע לי ולמקשיבים בקולי. מובטחני בההוא גברא &lt;ins&gt;שאין חלקו עמהם&lt;/ins&gt;, לא מהם ולא מהמהם, ולא בא לרחק את המקורבים ומקובלים אצלינו מאבותינו או לשנות שום דבר או אפי' אות אחת מהנסחאות שבידינו בסדורי התפילות... לא בא זה החכם אלא ללמד דעת את המשכילים ולהבינם מה שידברו בלשון של זהורית...&quot;
+( שני נותני הסכמה - הראשון והאחרון - מציינים כי לא קראו את כל הספר )</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ראו בהקדמה התייחסותו להעדר ההסכמה</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמת הרב אב&quot;ד דק&quot;ק ברלין והמדינה: צבי הירש
+הסכמת הרב אב&quot;ד דק&quot;ק האנובר והמדינה: ארי' ליבש (איש זה מכנה את שמעון וואלטש: &quot;תלמידי&quot;. הוא אביו של יששכר בערש, נותן ההסכמה השלישי.)
+הסכמת הגא&quot;ה התוכן מהו' יששכר בערש בן הגאון אב&quot;ד דק&quot;ק האנובר (גם הוא מכנה את וואלטש &quot;תלמידי&quot;). הוא מציין: &quot;ובאי אלי במכתבו מק&quot;ק ברלין לאמר ראה מעשה ידי כי יגעתי בחכמה זו, והנה מחשבתו להעלות דבריו על מזבח הדפוס. והנה קודם נסיעתו לק&quot;ק ברלין הי' פה והראה לי עלים לתרופה. וראיתי כי מיוסדים על אדני צדק. &lt;ins&gt;ויען כי אין דרכי להסכים  על מלאכת הדפוס&lt;/ins&gt;. אקצר ובמיעט אתפוס.&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות בספר שמות.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2349</field>
+		<field name="revision_id">2349</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות בכרך אחר.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2350</field>
+		<field name="revision_id">2350</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות בכרך אחר.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2351</field>
+		<field name="revision_id">2351</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות בכרך אחר.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בראש הספר קטע ששמו &quot;הסכמה&quot; עליו חתום צבי הירש. הירש פותח ואומר כי אינו נוהג עוד לתת הסכמות, אך התייחסותו לספר מחמיאה וממליצה: &quot;... מה טוב להוציא דבריו לאורה. לעורר לב תלמידים לעשותם סניף לתורה.כי בלי ספר ימצאון בו דברים מחודדים.&quot; (דף ג').</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בהסכמה הארוכה (עמ' [3-5]), מחלק המסכים את קהל היעד לכמה קבוצות: 
+&quot;... וידעתי כי בדור הזה רובם אזנם הכבדה משמוע דבר ועינם השע מראות דבר חדש חובר בזמנם, ולהודות על האמת הנמצא בו. ישנם אשר לא יבקשו האמת מפני שפקרו עול התורה והיראה והמוסר מעליהם... וישנם אשר יאהבו האמת אבל דמיונם הטעם לשום חשך לאור ואור לחשך... מעטים המה בני עלי' השומים עצת החכם...&quot; (עמ' [3]). קוניץ מודה למחבר על סיפרו ואומר: &quot;... אשביעך כה תוסיף ולא תקוץ מהר מחבר מאמרים יקרים כאלה כשאר משכילי זמנינו... ועל תלונות אנשי מרמה וחנך לא תשים עין...&quot; (עמ' [5]).</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ראו התייחסות לפנייתו ל&quot;מסכימים&quot; בכותרת. כמו כן, בהקדמתו הקצרה מציין המחבר: &quot;דרך המחברים ליטול הסכמה אצל חכמי הדור. ובאמת הדבר נכון מצד עצמו כי לא כל הרוצה ליטול את שם השם יטול... אך בעו&quot;ה שרבו מסכימים לדברים בטלים ואף שהם מיעוטא עכ&quot;ז הוא מיעוט דשכיחי ע&quot;כ מנעתי מזה...&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">&lt;strong&gt;הסכמה ראשונה&lt;/strong&gt; איננה כלולה בספר: &quot;הסכמת הגאון מופת הדור... אלעזר אב&quot;ד דק&quot;ק קעלין &lt;ins&gt;נאבד&lt;/ins&gt; ממני ואני מציב לו יד חתימתו...&quot; 
+
+&lt;strong&gt;הסכמה שניה&lt;/strong&gt;: מאת &quot;הרב הגאון מופת הדור שלשלת היוחסין החריף... מרדכי הלוי אב&quot;ד ור&quot;מ דק&quot;ק טיקטין והגליל&quot;.  רב זה משבח את המחבר ואת הספר בעיקר על טיפוח הלשון: &quot;כי הוא רב טוב לבית ישראל למען ישמעו ולמען ילמדו דרכי הלשון והמליצה...&quot;
+
+בסוף הסכמה זו יש שיר קצר שכתב בנו של כותב ההסכמה בשבח המחבר וחיבוריו הקודמים, וחתום: &quot;ארי' ליב בהגאון האמיתי המפורסם מאור הגולה מהו' מרדכי סג&quot;ל מטיקטין&quot;. גם הוא משבח את 'שיקום' השפה: &quot;...רעים רבים שחתו לשון היהודים/ אתה בנית הנהרסות וגדרת בחכמתיך...&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">על נותן ההסכמה הראשון נאמר כי הוא &quot;חונה פה ק&quot;ק בירז והמדינה יע&quot;א&quot;.
+שמות אחרים הוזכרו בנוסף, אך לא מובאים דברי ההסכמה:
+אחרי הרב הנ&quot;ל (ישראל) &quot;החזיק את ידי הרב הגדול המפורסם בתורה ובירא מ&quot;ו הר&quot;ר אהרן ראש לבית לוי א&quot;ב&quot;ד ור&quot;מ בק&quot;ק שקוד וב&quot;ק האזינפוט יע&quot;א ולראי' מהימנא בא על החתום... אהרן ב&quot;לא&quot;א ה&quot;ה כמוהרר יוסף אהרן הלוי הורוויץ ז&quot;ל ה&quot;ה הח&quot;ונ פה ק&quot;ק שקוד וק&quot;ק האזינפוט במדינת קור לאנד.
+ואחריהם החזיקו האחים הנאמנים ה&quot;ה הרבנים המפורסמים הא&quot;ב&quot;ד ד&quot;ג ק&quot;ק ז&quot;ח וע&quot;ח ושאוול ואחיו הגדול בחכמה ובירא א&quot;ב&quot;ד דק&quot;ק לוקניק ... נאום יעקב בהרב מ&quot;ו הרר אברהם הונ' בק&quot;ק לוקניק ואגפי' יצו ונאום ה&quot;ק אליעזר בהרב הג' מהר&quot;א נרו החונ' בג&quot;ק&quot;ק&quot; עיר חדש זאגור חדש ושאוויל והמדינה.
+ואחריהם בא המאסיף ה&quot;ה הזקן המופלא שקנה חכמה ויראה א&quot;ב&quot;ד דק&quot;ק פומפיאן ואגפי'... נאום אליעזר בהרב מ&quot;ו הר&quot;ר יצחק ז&quot;צ&quot;ל הח&quot;ו בק&quot;ק פומפיאן יצו ואגפי'.
+כל החכמים האלו יצאו בשיר המעלות חבורינו בית יהודה כנ&quot;ל ומהעדר הזו&quot;זים בע&quot;מ לההוצאות הדפוס כי רבה היא קצרתי גם פה ולא כתבתי את התוארים והארורים אשר גזרו על משיגי גבול עו&quot;לם ולראי' מהימנא באו על החתום כנ&quot;ל...&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">שמרוק מעמיד רשימה זו של נותני הסכמות לרשימת הממליצים המופיעה בתרגומו לעברית של לפין (משכילי ברלין).
+
+הסכמות נוספות מאת: 
+-אבד קק לאקטאש - צבי הירש בהגאון שלמה זלמן ז&quot;ל חונה בקק לאקאטש.
+-אבד דקק קאוולא והגליל - יעקב החונה בקק קאוולא והגליל
+-אבד דקק פאריצק - שניאור פייבוש בהרב ישראל הלוי, חונה קק פאריצק
+-אבד דקק אוסטילוג - יוסף ישראל הלוי חונה קק אוסטילג
+-הרב המאה&quot;ג האב&quot;ק דקק מאציוב - שמואל בן הגאון חיים</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ההסכמה הראשונה היא מאת אבי המחבר, ר' צבי הירש. 
+אחריה בא &quot;מכתב&quot; (לעומת ה&quot;הסכמה&quot; הראשונה, אין דברים אלה מכונים בתואר &quot;הסכמה&quot;). ואכן דברים מעניינים כתובים כאן, אשר מציבים סימני שאלה על מוסד ההסכמות, ואולי אף מפקפקים, בצורה אירונית, באמינותו של המחבר. כך כתב הרב יחזקאל הלוי לנדאו במכתבו:
+מפאת מחלה, הוא כותב, &quot;אשיב בקוצר מילין, על דבר הסכמה אשר דרש ממני צר לי מאד כי לא אוכל למלאת רצונו בזה, יען זה כחמשה שנים אשר גדרתי בעדי לבלתי תת הסכמה על שום ספר, ואין הצער שוה בזה לצאת מן הנדר, כי מעלתו אינו צריך לזה ואין בו שום תועלת. כי דברי הרא&quot;ש שהן עיקר הספר אינם צריכין לשום הסכמה. ואם בשביל הגהות ופלפלא חריפתא של כבוד מעלת ש&quot;ב הגאון נרו, לדעתי הוא נגד כבודו שיסכים שום הסכמה. ומפורסם אינו צריך ראי', והכל יודעים שלא יוציא מעלתו דבר שאינו מתוקן תחת ידו, לכן כבודו הוא שלא יגיש שום הסכמה בראש הספר, כי אין זה דרך מחברים מגדולי התורה&quot;.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">שלמה מחלם כתב &quot;הסכמה והקדמה&quot;, שכן הוא למעשה מחבר הספר. בהקדמתו הקצרה מביע את הסכמתו להבאת הספר לדפוס.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ישנה רשימת מסכימים ארוכה, שצולמה על ידי דיגיטלית ב75.7.07
+
+והוקלדה לתוכנה.
+
+על צבי הירש מירילש מלונדון נאמר &quot;חופ&quot;ק ווירעשני&quot;.
+
+הטקסט משובש. חסרים לי השמות הבא, ויש לבדוק אותם שוב:
+
+?? בהמנוח מו' לוי בראד
+
+משה בהרבני מו' הלל??</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2398</field>
+		<field name="revision_id">2398</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">שתי ההסכמות הראשונות זהות לאלו אשר בספר שנכרך יחד עם &quot;פרקי רבי אליה&quot;, דהיינו, &quot;ספר מאזנים&quot;.
+הסכמה ראשונה: &quot;דוד  הקטן מברלין&quot;, אב&quot;ד דשלש קהילות אהו&quot;ב.
+הסכמה שניה: &quot;יצחק זאבי?, שליח מעה&quot;ק חברון&quot;
+אך נוספו שתי הסכמות נוספות, המתייחסות גם לספר מאזנים:
+הסכמה מאת אב&quot;ד ור&quot;מ דק&quot;ק ספרדים בעיר אמשטרדם, שלמה שלם. 
+הסכמה מאת אב&quot;ד ור&quot;מ דק&quot;ק אשכנזים באמשטרדם שאול חונה בק&quot;ק אמשטרדם.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בהסכמה טוענים המסכימים כי הלשון העברית אובדת והולכת בשל צרות הגלות. הם משבחים את &quot;בחורים מופלאים&quot; אהרן ירוסלוב וראובן ארענסוואלד על הוצאת את הספר הזה, שיסייע לשימור העברית</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">יוסף אב&quot;ד פפד&quot;א מתאר בהסכמה כיצד סטנוב הגיע אליו עם &quot;מגלת סתרים כתוב ספרדי ומתורגם ארמי... כעין ספר הזהר והדברים עתיקים ואמר שכן מצאם בבית הספרים של אחד המלכים, ואבינה בדברים וארא כי הם שוני הענינים... וקצתם בנתיבות החכמה יהלכון ואחר כל מחקר יחקורון... אך לא ידעתי מבטן מי יצא הדברים ואולי המביא עצמו כתבם כי ידעת את האיש ואת שיחו שהוא ממגנבי דברי' אך חלוק מהם בהיות שכל מגנבי דברי' גונבים משל אחרי' ומייחסים לעצמו וזה גונב משלו ומייחסם לאחרי'...&quot;. בהסכמה השניה של חיים מצאנז כתובים דברים דומים. בשולי העמוד נרשם:
+&quot;(יתר הסכמו' משלומי אמוני הגאוני' יודפסו בגוף הספר)&quot;. לא ראיתי הסכמות אלה, אבל אולי הם מסתתרות בגוף הטקסט הארמי.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">אין הרב כותב הסכמה של ממש. מאחורי עמוד השער ישנה הודעה בזו הלשון: &quot;להודיע ולהודע - טרם יצא החבור הזה לאור הדפוס היה ביד הרב הגדול אב&quot;ד ור&quot;מ העומד על התורה בק&quot;ק העיר הזאת כמו' צבי הירש נר&quot;ו וקרא אותו עד תומו. ולולי גמר אמר לבלתי תת הסכמתו להדפיס איזה ספר שיהיה בל ישא פני דל ובל יהדר פני גדול היה מסכים על ידי יען לא מצא בו דבר לא נגד הדת ולא נגד חז&quot;ל (?) כי כולו הנובע (?) על אדני האמת וברשיונו ועל פיו אני כותב המודעה הזאת לעיני כל ישראל.&quot;</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2444</field>
+		<field name="revision_id">2444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">בצד שמאל בעמ' השער מופיע הטקסט הבא:
+
+'ע&quot;י אדונינו מ&quot;ו הגאון אב&quot;ד דקהלתינו נר&quot;ו ראוה בנות ויאשורה לפ&quot;ק בדפוס פרופס'.
+
+לא מופיע שמו המלא של הרב, ואי אפשר לדעת האם מדובר בהסכמה, בהקדשה וכד'.</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2451</field>
+		<field name="revision_id">2451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">הסכמות בחלק א', מאת:
+-ר' יצחק הלוי מלבוב חונה בק&quot;ק קראקא והגליל
+-ר' אליעזר אב&quot;ד דק&quot;ק קעלין והגליל
+-ר' הירץא&quot;בד דק&quot;ק ראווא
+-ר' מרדכי (הלוי) אב&quot;ד בק&quot;ק טעקטין והמדינה
+-ר' נח (מליסא) אב&quot;ד דק&quot;ק בלאשקי
+-ר' דוד [אבי המחבר]</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_rabbinical_appro_notes_value">ההסכמה ניתנה לפרנקו מנדס בשנת תקנ&quot;ב. חותם: הצעיר דניאל בכמוה&quot;רר דוד הכהן די אזיבידו</field>
+		<field name="field_rabbinical_appro_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

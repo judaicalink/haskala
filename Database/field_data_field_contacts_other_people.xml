@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_contacts_other_people">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_contacts_other_people_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_contacts_other_people_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_contacts_other_people" engine="InnoDB" version="10" row_format="Dynamic" rows="32" avg_row_length="1536" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:57" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 29 (field_contacts_other_people)" />
+	</table_structure>
+
+	<table_data name="field_data_field_contacts_other_people">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">לטענת המחבר, רעיון החיבור נולד בעת מפגש עם חבורת ידידים נאורים, שתמכו כמוהו בחופש אמיתי, פטריוטים מושבעים, אויבי דעות קדומות. לנוכח הנסיבות החדשות בצרפת באותה תקופה, ערב הקונגרס שתוכנן בלינוויל, עודדוהו ידידיו לכתוב חיבור על נושא שזכה כבר בעבר להתייחסות לא מבוטלת.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1991</field>
+		<field name="revision_id">1991</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">מזכיר את פיליפסון</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">Auf deren Veranlassung, besonders aber aus Erkenntlichkeit und Achtung für die lebhafte und innige Theilnahme an dem hoffentlich nicht zu verfehlenden Endzweck meiner uneigennützigen Absicht bey dieser Arbeit von Seiten eines meiner würdigsten Freunde und Gönner, des Kaufmanns Herrn Friedrich Salomon Stöltzner in Leipzig, welcher seiner Verdienste nach, weit mehr Lob würdig ist, als ich ihm beylegen kann, und welchem ich dieses schwache Werkzeug meiner noch ganz unvollständigen Arbeit, bis zu mehreren theoretischen Betrachtungen und Vervollkommnung meiner Ideen, als einen kleinen Beweis von meinem Dankgefühl widme, und mich selbst zu dessen fernern geneigtem Wohlwollen empfehle.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2052</field>
+		<field name="revision_id">2052</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">הטקסט אושר ע''י טלר לפני הדפוס</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">הקדמת דוד פרידלנדער</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">לוי יודע כי עלולים לפקפק באמינות האגרות, ועל כן מציין את שמותיהם של שלושה אנשים שיעידו על אימותן. בעמ' [4] בהקדמה: &quot;הא' הוא, מבעלי תריסין, ושלשלת היוחסין, הקצין הפו' המופלג המושלם הנדיב מהו' דוד וו&quot;ה ני'. והב' הקצין המושלם המהולל, נותן פזר ומחלק שלל, מהו' שלמה ארענשטיין ני'. ואחרון... הוא מכיר ביותר כ&quot;י מהר&quot;מד נ&quot;ע, וביחוד אופן גלגול תוכן דבריו... הרץ האמבורג&quot;.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בהקדמתו ובהערותיו, מצביע המביא לדפוס ישראל לנדא על מגעיו האינטלקטואלים במהלך הכנת הספר עם מלומדים אחרים ועם הספרנים. מן המלומדים שישבו לידו בספריה, למשל, ביקש עזרה להבנת הערות בלטינית שלא עלה בידו להבין.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">על הענקת כתב היד ע&quot;י המחברים לבית הספר בדסאו - בתוך הקדמת המוציאים לאור.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2089</field>
+		<field name="revision_id">2089</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">מנדלסון כותב: &quot;והיה כאשר חנן לי ה' ילדים בנים זכרים והגיע העת ללמדם תורה ולשננם דברי אלהי' חיים ככתוב הואלתי לתרגם את חמשת חמשי התורה בלשון אשכנז המסולסל והמתוקן כפי אשר הוא נהוג בימינו לתועלת הילדים הרכים... והנה הקרה ה' לפני את הרב מוה&quot;רר שלמה נ&quot;י מדובנא... וכאשר ראה הרב הנ&quot;ל את תרגום התורה שבידי מצא חן בעיניו ויכשר לפניו ויבקש מאתי לתת לו רשות להדפיסו לתועלת התלמידים, אשר חלק להם אלוה בבית משל ומליצה. נעניתי לו ראשי אבל בתנאי שישים עיניו ולבו להעיר על כל מקום אשר הכרעתי בתרגומי דעת מפרש ממפרשי' הקדמוני', או אשר נטיתי מדעת כלם לבחור לי דרך אשר נאות ומסכים לדעתי עם דרכי הלשון, המשך הענין או הנחת הטעם ויסודותיה, על כל אלה ידרוש ויחקור וישא ויתן עמי ויכתוב על ספר והיה' לבאר הכתובי' בלשון קל להכין לכל קורא. ואף גם זאת הבטחתיו הבטחה נאמנה להיות לו לעזר בחבור וכתיבת הבאור ההוא, כאשר תשיג ידי. ועוד תנאי אחד התניתי עמו שישתף את אחי הרבני מוהר&quot;ר שאול נ&quot;י במלאכת הדפוס והגהה הנכונה, וחלק כחלק יקחו שכר עמלם... לא עלתה על דעתי מראש, אף לא קויתי להשיג בצע כסף או תועלת כבוד במלאכה זו, ולא רציתי להקרא שמי עליה, לולי בקש מאתי הרב הנ&quot;ל לעשות כן, למען רבות החושקים בו...&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">הקלירי מפרט בהקדמתו את הקשרים שקשר בברלין עם שני &quot;קצינים&quot; בקהילה (פייטל אפרים? ...?): &quot;ויורוני ואמרו לי שני הקצינים הגבירים הרמים המשותפים... מחזיקי תלמוד התורה... עליך מוטל הדבר לדפוס באור מלות ההגיון להרמב&quot;ם ז&quot;ל לזכות נבונים. וה' אנה לידי פרוש קצר מספיק אשר עדין לא היה לעולמים....&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">&lt;p&gt;בעמ' 77 מזכיר את אהרן וועסטיל מלבוב, שעודדו להדפיס ספר זה ומביא בשמו חידוש למס' נזיר סח, ב.&lt;/p&gt;
+</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בין היתר, כתיבת החיבור היתה כרוכה במגעים הדוקים עם יהודים בולטים בברלין, ובראשם משה מנדלסון.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">מזכיר מגעים עם אנשים בפראג, וכן עם &quot;אחד מבני עיר פה פראג&quot;, שהדפיס את המשנה ו&quot;ביקש בבקשה שטוחה מאת אדוני&quot; שיתנו לו רשיון להדפיס טקסט זה.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">לפי עדות המחבר, הספר הוא תוצאה של הפצרות רבות מצד ידידיו בקהילה היהודית. בהקדמה הוא כותב (עמ' ג): &quot;הסבה אשר עוררתני לחבר המחברת הזאת... היא בקשת רבים מאוהבי מילדי בני ישראל האשכנזים כמוני, אשר הלו פני והפצירו בי עד בוש, שאגיד להם טעם מספיק על נטותי ממנהג אחי האשכנזים&quot; בנוגע למבטא השפה העברית. &quot;ויהי באמרם אלי יום יום כדברים האלה, ודחיתי אותם תמיד בקש, באמרי שעוד חזון למועד, ויבא יום אשר אפנה מכל עסקי, לתת להם טעם מספיק על הדבר הזה. ארכו הדברים בינינו, עד שהרימותי ידי לשלם את נדרי, ואכתוב מחברתי זאת לדפק [לספק?] רצונם.&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">מאמר זה נכתב כחלק מדיון בעניין האמונה בשכר ועונש, בגהנום וכו', שהתנהל על דפי &quot;המאסף&quot;. המחבר מתייחס אל דברים שכתבו &quot;המשכילים בעלי המאסף&quot; באותו נושא.
+כעדותו, הוא כותב בעקבות פניה אליו: &quot;לא בשמחת לבב אני הולך לתור ולדרוש [על נשמת האדם ומה יקרה לה אחרי המוות], אך על דברת שלומי אמוני ישראל ממרחקים, השואלים מאתי דברי חפץ בענין זה, את קולם שמעתי לאמור אם יש איתך דבר... עליך הדבר לעשותו להעמיד דבריהם על מכונן...&quot; (עמ' ד', ה')</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">וייזל מציין כי ה&quot;מכתב&quot; שאותו הוא תרגם לעברית ופירסם בספר &lt;ins&gt;מגיד חדשות&lt;/ins&gt; הגיע לידיו הודות ל&quot;איצק אייכל, שהיה זה שמנה חדשים בעיר געטינגן [שם התגורר אייכ'הארן, מי שביקש לפרסם את הטקסט בגרמנית בכתב עת שהוא הוציא], ובקש ממנו שכבוא איזו דבר חדש מענין זה לידו, שישלחהו בדובו מיד לכאן, שלח עתה הקונטרס הכולל ספור ד&quot;ה [דברי הימים] זה לכאן שאנו מעתיקים עתה ללשון עברי.&quot; (עמ' ח')</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">מגע עם בערמן פרידלענדר זצ&quot;ל בקניגסברג איפשר למחבר להלוות ספרים מספריתו הגדולה. &quot;קראתי איזה מכתבים שונים על הענין צדיק ורע לו כאשר כתבו אנשי שם על הענין הזה ובתוכם חכם אחד קאנט שמו...&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בהקדמתו מספר בן זאב כי בקשה מאת המדפיס אנטון שמיד - הקשורה בפרויקט &quot;מנחה חדשה&quot; - היא שהביאהו לחיבור הספר. &quot;החבור הזה היוצא מתחת ידי לא היה כונה ראשונה ממני לחבר אותו על האופן הזה, ועל הסדר אשר הוא נמצא, כי הוא יליד ההזדמנות וסבה זולתי. והמסב בדבר, המדפיס המשבח אדון אנטאן שמיד, בהוציאו לאור ס' ישעי' בהעתקה אשכנזית ובאור מידי המשכיל כה' מאיר אוברניק ז&quot;ל. ולא נמצא הקדמה להעתקה הזאת, כאשר נמצאו בשאר העתקות תהלים משלי. ושאל המדפיס מאתי לחבר אליו הקדמה. ואנכי נעניתי לו בה, אך לא לחבר הקדמה (אשר איננו ענין לחבר הקדמה לחבור זולתו) כי אם לחבר מבוא אל גוף הספר. והעיון בענין הזה הובילנו אל ההכרה לדעת הצרך וההכרח אשר לספר וספר אל מבוא כזה, המפיץ אור על עניני הספר בכלל, ומן הפרט הזה השתרעה המחשבה הזאת אל מקראי הקדש בכלל כי כל ספר וספר נדרש לו מבוא כזה...&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בשני העמודים האחרונים מופיע קטע בגרמנית באותיות עבריות, המפאר את מלאכתו של סטנוב כסופר ומו&quot;ל ובסופו הבטחה מאת התומכים בו מבחינה כלכלית, &quot;איהם יעהרליך אללי זייני צו פ'רלעגנדי שריפ'טן, יעדאך דש זיא ניכ'ט מעהר אלס יעדר זיך פ'רבונדן האט בייא זיינר אונטרשריפ'ט בטראגן, אונד אין בילליגן פרייזן אנגזעצט זינד, געגן באארי צאהלונג אבצונעהמן&quot;.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בהקדמה מספר המתרגם כי נפתלי הירץ וייזל עודדו בכתיבת הספר, ואף ערך את סיפרו(הקדמה, עמ' [9-10]), ואילו קאמפה, מחבר טקסט המקור, כתב לו מכתב עידוד ושמחה כי סיפרו יתורגם לעברית (הקדמה, עמ' 10-11)</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בהקדמה מספר סטנוב כי הפציר במשה מנדלסון לתרגם מחדש את &lt;ins&gt;ספר המדות&lt;/ins&gt; ומנדלסון אף נעתר לכך, אך לא הספיק לעשות זאת: 
+וכבר דברתי עם החכם המפורסם הרב מו' משה דעסוי אודות מעלת זה הספר וידבר בו נכבדות ואמר שבכל החבורים שחבר אריסטו אין שלם ומועיל כמוהו, אז אמרתי הנה מקום אתי לדבר עמו על דבר ההעתקה שיעתיקהו בלשון צח אשר תבונה בו, כי ידעתי את האיש ואת שיחו שהי' מכיר ויודע לדבר בשפת עמים רבים ... ובפרט בשלש אלה הלשונות עברי יוני ורומי, ואבקשה ממנו על זאת וייטיב הדבר בעיניו, ויאמר בהניח ה' לי אשים את לבי עליו להעתיקו כיד ה הטובה עלי, אבל מה נעשה כי הזמן **** לא נתנו לשלם את נדרו...</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בהקדמה לסיפרו משלי אסף - חלק א', מספר סטנוב על הפכפכותם של חלק מן החותמים מראש, ועל הנזק הכלכלי שנגרם לו כתוצאה מכך: &quot;והנה זה ימים או שנה רבי' מנדיבי עמנו עמדו למעוז לי לקחת במקח ס' השרשים, והן עתה קצת מהחתומים מושכים את ידיהם אחר שנמנו, ואני אין לאל ידי לתבוע אותם בדין כי גרמו לי היזק רב והנושה בא לקחת את נשיו ואין לאל ידי, לכן מי אשר חטא לי אמחנו מספרי, ובכתב הדת לחברת מצדיקי הרבים לא יכתב עוד, ואשר מוצא שפתיו לא ישנה יעמוד שמו לעולם וזכרו לדור דורים כי טובה עשה בישראל והיה מעשה הצדקה שלום&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2291</field>
+		<field name="revision_id">2291</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בהקדמה לסיפרו משלי אסף - חלק א', מספר סטנוב על הפכפכותם של חלק מן החותמים מראש, ועל הנזק הכלכלי שנגרם לו כתוצאה מכך: &quot;והנה זה ימים או שנה רבי' מנדיבי עמנו עמדו למעוז לי לקחת במקח ס' השרשים, והן עתה קצת מהחתומים מושכים את ידיהם אחר שנמנו, ואני אין לאל ידי לתבוע אותם בדין כי גרמו לי היזק רב והנושה בא לקחת את נשיו ואין לאל ידי, לכן מי אשר חטא לי אמחנו מספרי, ובכתב הדת לחברת מצדיקי הרבים לא יכתב עוד, ואשר מוצא שפתיו לא ישנה יעמוד שמו לעולם וזכרו לדור דורים כי טובה עשה בישראל והיה מעשה הצדקה שלום&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">במכתביו מציין מנדלסון כי הוא היה בקשר עם הצעיר אשר ביקש להעתיק את תרגומו לגרמנית לאותיות עבריות. גם ברי&quot;ל מציין ב&quot;המאסף&quot; כי הוא  ניגש למלאכה באישורו של מנדלסון. ויינברג, &lt;ins&gt;רשימות מילים&lt;/ins&gt;, עמ' 281 - 282.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">לפני הסכמתו של יעקבקא סג&quot;ל לנדא, בנו של ר' יחזקאל  לנדא, כותב המביא לדפוס כי נועץ אתו בדבר הדפסת ספר לשון למודים.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בנימין כהן מפרט על בואו לקופנהגן ועל המפגש האינטלקטואלי עם וייזל, ספריו וחוגו: &quot;נחני ה' בשליחות מצוה לשם עה&quot;ק טבריא לק&quot;ק קאפניהאגן הבירה. ושם ראיתי איש חכם א' מאלף מצאתי. חכם לבב ואמיץ כח החכמה והמדע כולהו איתנהו ביה. וזה אחד מן המקומות שהחזיק מעט את המרובה. ה&quot;ה התורני הרבני המפולא ומושלם בכל מדות שמנו חכמים מוה&quot;רר נפתלי הירץ וייזיל נר&quot;ו ומידי דברי בו הביאני אל בית ועד לחכמים אשר בנה בחכ&quot;מה יסד אר&quot;ש יסודתו על אר&quot;שי לבנון אשר נטע אשר אר&quot;ש א&quot;רש בלבנון. ואורו עיני כי טעמתי בקצה מטהו קנ&quot;ה חכמה ואבא החדרה ואשא עיני ואראה בל&quot;ון גן נעול מעין חתום ואקרא בקול גדול פתח לבנון דלתיך ויאכל איש מארשיך ואשת' אחרי קול קורא במד&quot;בבר השער הזה סגור יהיה לא יפתח כ&quot;א לאשר בא דרך המד&quot;בר אך לא לאשר נבוכי' הם בארש סגר עליהם המד&quot;בר. כמוני היום לא ידעתי דבר וחשקה נפשי להבין ולהשככיל בחכמה וכרואי שחכמ' המבטא היא ראשית חכמה נתתי לבי לידע מוצאה ומבואה ואמרתי אל מי מקדושים אלך ואנא אפנה לעזרה זולתי הרב הגדול מה&quot;רא אבן עזרא ז&quot;ל...&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">על איש בשם חיים בר&quot;ז נכתב בהקדמה הראשונה: &quot;חסד עשה עמדי, ימינו תמכני, נדיבתו הראני...ביתו פתוח לרווחה, אשר במשך זמן הדפוס זכיתי להיות חד מאכלי שלחנו... וסך מסויים לדבר מצוה הלוה לי מהונו&quot;</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">בסוף הספר מספר המחבר כי בהיותו בקהילת המבורג, התארח אצל &quot;המופלג בתורה... זנוויל הנובר... הוא הפצירני להשאילו כל המכתבים לשום עינו עליהם כי מבין הוא&quot;. רק ברגע שעזב את העיר קיבל המחבר בחזרה חלק מן המכתבים מאת אותו איש. &quot;הוא שאל ממני ועתה הי' בעוכרי, לא ידעתי אם עשה כוונים...&quot; (עמ' פז ב' והלאה).
+
+באגרות ע&quot;ב, פ, מוסר בוכנר כי ביקש מברוך ייטלש עזרה בהוצאת ספר זה בפראג. ראו: זהר, עוללות מבציר, עמ' 28 (הערה 60).</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">דובנא מתאר את מגעיו עם משה מנדלסון, אשר לדבריו פנה אליו וביקש ממנו לשתף איתו פעולה בהכנת הביאור והתרגום. לדברי דובנא, מנדלסון פנה אליו ואמר לו: &quot;ידיד לבי!... קום נא! וחבר אל העתקתי ביאור קצר ומלוקט...&quot; (בהקדמה)</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">וייזל בהקדמתו מציין כי המתרגם שלח את הספר אל ידיד בברלין. הרצברג, &lt;ins&gt;הנאורות הצרפתית&lt;/ins&gt;, עמ' 176, הערה 91, משער כי מדובר במשה אנסהיים -
+Moses Ensheim.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2415</field>
+		<field name="revision_id">2415</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">ראו אצבע בחלון &quot;מודלים&quot;.</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contacts_other_people_value">&quot;החוברת יצאה ביוזמת 'אגודת הידידים' בברסלאו ובמימונה&quot; (פיינר).</field>
+		<field name="field_contacts_other_people_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,1246 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_structure_preface_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_structure_preface_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_structure_preface_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_structure_preface_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="94" avg_row_length="1045" data_length="98304" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:10" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 172 (field_structure_preface_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_structure_preface_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">Einleitung</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמתו מודה זלקינד-הורביץ לאקדמיה של מץ על שהעניקה לו, יחד עם גרגואר ותיירי, פרס על תשובתו לשאלה שהציגה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1969</field>
+		<field name="revision_id">1969</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">Widmung im März 1797 abgefaßt.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">Hinweis auf seine Bücher תולדות ישראל
+und Kelch des Heils
+Ausführliche Verteidigung der Benutzung der deutschen Sprache und deutschen Lettern für das vorliegende Buch</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הקדמה בצורת שיר מתוך כתבי גלרט 
+Gellert</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמתו מספר מנדלסון על מחלת העצבים שמנע ממנו במשך שנים רבות להתעדכן בחידושים בתחום הפילוסופיה, מהם מסתייג במידה רבה ומצהיר כי הינו משתייך לאסכולה ישנה יותר.
+הוא מתאר כיצד נולד החיבור הזה ומביע את כוונתו לפרסם חלק ב'.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2032</field>
+		<field name="revision_id">2032</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">דברי הפתיחה:
+
+&quot;כתיב (מלכים א' ח' כ&quot;ב) ויעמוד שלמה לפני מזבח ה', נגד כל קהל ישראל, ויפרוש כפיו השמים. ומבואר שם, שנתן הודיה על חסד האל על העבר, והתפלל על העתיד. כן אנכי עומד לפני ארון ה', נגד כל קהל ישראל, ליתן שבח והודיה לאל יתברך ויתעלה, על חסדו הגדול העבר, שנתן שלום בארץ, ולהתפלל על אדוננו המלך יר&quot;ה, ועל כל בית מלכותו, על העתיד, לטוב להם כל הימים.&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה מסביר אביגדור לוי מה היו המניעים לפרסום המכתבים. &quot;האמות השלמות, וביחוד האמה הנוצרי', אשר הגדילה לעשות בכל חכמה מחקרית, ועשות בה ספרים עד אין קץ, לבקש במטמונים ולחפש בנרות, ולקבץ בזרוע את אגרות גדולי חכמיהם, אשר כתבו והריצו למכיריהם רעיהם ותלמידיהם, ומהן, יוציאו לאור צדק חכמיהם, ומשפטם כצהרים; בשהן מגלות הנסתרות ותעלומות לבבם, יותר מכל מעשיהם וחבוריהם הנגלות לנו ולבנינו... האגרות אשר כתבו בקרן זוית בירכתי ביתם... ודאי ממעמקי הלב באו הדברים שבתוכן, ונוזלים ממקור האמת... למה נהיה אנחנו אחרוני' להשיב ולקבץ נפוצותיהן [של אגרות מנדלסון]? חרפה היא לנו, שיקדימונו זולתינו, לעשות זכר עולם לגבר יולד לנו ואיש נתן לנו, ותהי המשרה על שכמו!... והלא מרבית החכמים והשלמים, היא עטרת תפארת להעם שנולדו בו...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה מספר סטנוב על תשוקתו &quot;לעיון&quot;, שבגללה הגיע לברלין. אך כאן תחילה לא הכיר אנשים ולא הצליח להגשים את רצונותיו, ולכן החליט לפרסם את ספרו זה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">המחבר בדברי פתיחה (תחת הכותרת &quot;שלמי תודה&quot;) מדבר על &quot;תורת אדם&quot; ומציין כי &quot;מיום שאבדנו האורים והתומים תורה זו מעינינו נעלמים ומה שנמצאים לפעמים אין לנו שלמים, ורובים ככולם נמסרים לחכמי העמים. המה מאלמים אלומים, עניינו אילנות וסמים, צמיחות עשבות ובשמים, נטיעות שדות וכרמים, מקור נהרות וימים, חלוקות ארץ ואקלימים...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בדפים ה'-ו' מתואר ההקשר שבו נכתבה האגרת - סיפורו הטראגי של כותב האגרת (ראו הרחבה בשדה &quot;הערות&quot;).</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הצעה&quot;, עמ' [17-10]:
+בן זאב סוקר את התפתחות הלשון העברית מראשיתה ועד ימיו. הוא מדבר על פריחת העברית בתקופת חייו של מנדלסון, ומצר על שקיעתה ועל השינוי שחל בחינוך היהודי מאז מותו של מנדלסון.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2106</field>
+		<field name="revision_id">2106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">דפים ב'-ד': דיון על מבנה שם עצם פרטי וכללי בעברית, והשוואה שלה לשפות אירופאיות מודרניות אחרות</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בן-זאב כותב כי החליט לכתוב ספר זה בשל מחסור הקיים בספרים מסוג זה. הוא מבקר את אופן לימוד העברית המסורתי שנעשה תוך הפעלת אלימות כלפי ילדים וגם אינו נעשה באופן יסודי. הוא מתאר את סדר לימוד העברית הנכון בעיניו, ומציג את סיפרו כתואם סדר לימוד זה. הוא מציג את אחת ממטרות המקראה להורות את הילדים &quot;תולדות אבותנו... יסודי הדת ועמודי האמונה&quot;, ומציין כי הוא הולך בכך בעקבות אבטליון לוולפסון-האלה. כמו כן, המקראה מחנכת לדבריו להתנהגות מוסרית של הבן להוריו ולמוריו. בן-זאב חותם את המקראה באמירה שאם החיבור ימצא חן בעיני הקוראים, הוא יוציא מקראה נוספת שתעסוק ב&quot;למודי מוסר והנהגות יושר וספורים וענינים נעימים לנפש נער משכיל, אשר עלה ממדרגת הקריאה אל מעלת הלמוד&quot; (עמ' 3, מיספור שלי)</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בן-זאב מציג את למודי המישרים כחלק ב' של מסלת הלמוד וכספר משלים לו שנועד לנערים, בעוד החלק הראשון נועד לילדים קטנים יותר. מטרת הספר לדבריו היא להכשיר את נפש הנער לחכמה ולמוסר: להתנהגות מוסרית, לידע, וליריאת ה'. המחבר פונה למורי התלמידים וטעון כי עדיף לחנך את הנער על ידי דברים שימשכו את ליבו: א) מליצה - ולכן שילב בחיבורו שירים. והוא מציין את וייזל, נפתלי הרץ וטוען שהוא הולך בדרכו ביחס לערך החינוכי של השיר; ב) משלים; ג) סיפורי חכמים.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2112</field>
+		<field name="revision_id">2112</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הספר פותח ב&quot;דרכי מלאכת הכתיבה&quot; שבו מתאר את דרך לימוד התלמיד את הכתיבה (&quot;מאן מוס דען אנפעגער גווענען דאש פאפיהר גראדע פאר זיך צו האבן, דיא פפעדרער איבר דען שניט צווישטען דריי פינגער צו האלטען,...) עמ' [1]. 
+
+בסעיף השני בספר &quot;סדר האגרת&quot; (עמ' [2-5]) מציג המחבר את מבנה האגרת ומוסיף פתיחות מתאימות למכתב הפונה לאב, אם, סבא, סבתא, בן, בת, מורה, גיס, גיסה וכד'.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה מציג המחבר מהו תפקיד התפילה בעיניו. התפילה &quot;ווירד אונס אויף דיא אונבגרענצטן געטטליכ'ן אייגנשאפ'טן דעס אללרהעכ'סטן פ'יהרן, אונד אונזרי בגריפ'י דאריבר ערווייטרן, אויפ'קלעהרן אונד גריכ'טיגן... וויר לערנן ווייזי ווערדן, גיטיג זיין, נאכ'זיכ'ט האבן, רעדליך האנדלן, פ'עהלר אונזרר נעכ'סטן פ'רצייהן, דען בעסטן גברויך פ'אן אונזרן קרעפ'טן מאכ'ן...&quot; הוא מדגיש, בין היתר, את תפקיד התפילה כאמצעי להשגת אושר האדם: &quot;זא ווירד דאס גבעט דען מענשן גליקליך מאכ'ן&quot;.   
+הוא גם מציין מהם המקורות ההיסטוריים של התפילה וטוען: &quot;דיזי גבעטס-פ'ארמלן זינד גרעסטן-טהיילס פ'אן עזרא אונד דען איהם צוגארדנטן גזעץ-לעהררן פ'רפ'אסט ווארדן&quot;. הצורך בקביעת פורמולות עלה, לדעתו, עם גלות היהודים, כאשר רוב בני העם לא שלטו בשפה העברית.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">פתיחת המחבר השניה - הראשונה: בספר הראשון.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;איינלייטונג&quot; של דוד פרידלנדר העוסק בתרגום, ושתי הערות שלו המתייחסות לתוכן ההפטרות</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">המבוא הוא בצורת שירה והוא נקרא: &quot;דברי השירה הזאת&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמה שני&quot; (&quot;על חלק דברי המוסר...&quot;, דף ג'), ו&quot;הקדמה שלישית&quot; (&quot;כוללת עיונות לעין הקורא ...&quot;, דף ד' -ו').</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמה&quot;, דפים [ב'-ו']: המחבר מדגים את מטרת הספר על ידי משל: מלך שמרד בו עבדו, והוא הודח, ואח&quot;כ הצליח להחזיר שלטונו בזכות עצת איש חכם. המלך גומל בכך שלוקח תחת חסותו את בנו. אבל בן זה הולך בדרך הרעה, ולבסוף המלך מכניס אותו לבית הסוהר. לאחר זמן נאמר לו שהנער מתחרט על פשעיו, והוא שולח את נציגו לראות אם אכן כך. הנער רוצה להראות כי השתנה, ומקריא לשליח המלך מתוך מגילה, אבל קריאתו אינה נכונה, ולבסוף הוא מתחנן לפניו שיתן לו כסף. השליח חוזר למלך ואומר לו כי הנער לא השתנה. המחבר מציג את הנמשל: כך עם ישראל, שהיה עובד אלילים מלכחילה ואברהם הנהיגו לאמונה באל, חזר לסורו ולבסוף הוגלה מארצו על ידי ה'. וגם בגלות הוא לא חוזר מסורו ומוסיף לדבוק בשלושה &quot;פשעים&quot;: 1. אין הבנה פילוסופית של עבודת האל; 2. אין קריאה נכונה על פי חכמת הדקדוק; 3. התפילה עוסקת בצרכי השעה ולא בגאולה. מטרת ספר זה לעסוק ב&quot;פשעים&quot; אלה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ההקדמה הארוכה עוסקת בנושאים כגון &quot;ימי חיי הנביא ונבואתו&quot;, &quot;כותב הספר&quot;(ברי&quot;ל פוסק כי &quot;כותב הספר היה אחד מאנשי כנסת הגדולה&quot;), &quot;תועלת הספר&quot;, על &quot;סגנון הלשון&quot;, &quot;בענין הדג&quot;, &quot;בענין הקיקיון&quot;.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;ערקלערונג אייניגר ווערטר וועלכי אין דיזם טהייל פארקאממן&quot;, עמ' [9-17]</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">יש &quot;פתיחה&quot; קצרה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הספר כולל שני מבואות:
+
+&quot;הצעה&quot; (עמ' [2-5]): יסודות התנועות &quot;מה שישים המורה בפי התלמיד טרם יקריבו ללמוד הפעלים&quot; (עמ' [2]).
+
+&quot;פארלייפיגע ערקלערונגן צום לוח הבנינים&quot; (עמ' [6-14)]: הסברים על סוגי הפעלים, זמני הפעלים, מין, יחיד/רבים וכד'.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">נוסח ההקדמה ב&quot;הערות&quot; [חלון &quot;חוקר ומקורותיו&quot;]</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">במבוא מטעם המביא לדפוס הידנהים, שמנתח את 4 תת-התחומים של &quot;חכמת הלשון&quot;: תולדות הלשון, מעשה הכתב, מלאכת הדקדוק ומדע השרשים. הוא טוען כי תת-התחום השלישי - הדקדוק - הוא החשוב מכולם, ולכן השקיע בו את מירב &quot;להורות למתחילים את הדרך ילכו בה עד יפתחו להם שערי הלשון...&quot; (עמוד ראשון, לא ממוספר).</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">במבוא עוסק וולפסון בעיקר בשאלה: מי כתב את הספר, מתי התרחשו הדברים - &quot;על מה נתיסדה [מגלה זו] ועל מה תכונן&quot;. כמו כן, נוגע ב&quot;איכות הקינות האלה&quot;, המבנה שלהם וכד'.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">מדובר בהקדמה אחת החתומה ע&quot;י שני המביאים לדפוס</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בפתח דבריו, מהרהר המחבר על מטרת ההקדמה: &quot;לב הקורא ישתומם לדעת מה זה עשה המחבר לנו הלא כאלה רבים עמנו... מה ידע ולא נדע. לכן בפעם הזאת אודע את ידי הקצרה מפדות מה ראיתי לחבר את הספר הזה ומה המה הדברים אשר נאמרו ושונו אני מונה אל סדר החדשים ...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הקדמה נוספת מאת משה נורבוני: הקדמת החכם הנורבוני.
+&quot;הקדמתו&quot; של אייכל: בסוף הספר.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמת המעתיק&quot; (עמ' [2]):
+המתרגם מהלל את נפוליון שנמלט מאויביו, ולכן החליט לתרגם שיר מלטינית, והוסיף להם באור של מילים למען להקל על הקורא.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמת המגיה&quot;, (עמ' [1]): סטנוב מתאר את חשיבות הספר, העוסק ב&quot;שירי עגבים&quot; וב&quot;אהבת נשים&quot;, ונסמך על העיסוק בזה במסורת - בשיר השירים, אצל מקובלים שונים וכד'. הספר מועיל ללימוד העברית, ומונע את &quot;חרפת רעב בלשון כמאן דאמר בזוי אתה מאד זה אדום שאין לה כתב ולשון&quot;. כלומר, מטרת הדפסת הספר הפצת העברית, והרחבת הספרות העברית לתחומים בהם היא חסרה. הוא חוזר על דבריו בשער כי איציג מימן את הדפסת הספר, וטוען כי ערך אותו באופן מסיבי: &quot;... ואני הגבר הוקם על להגיהו ואתנה את לבי אל הספרים הישנים והנם משובשים מאד, כי בתי החרוזות היו רצוצים, וארמונות השירים היו מפורצים, ואבני המשקל היו כאבני גיר מנופצים, ואקום לעשות מלאכתי מלאכת ההגהה ואגדור פרוצות החרוזות ואעמידה בתיהם על תלם וארמנות השירים על משפטם, והוצאתי במספר צבאם, ושקלתי בשקל הקודש מבטאם, ומי חכם יבין דעת שאין ערוך לראשונים עם זה כלל:&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">של הידנהים: &quot;אמר המבאר והמתרגם&quot;. הידנהיים מתאר פיוטים וסליחות, ואת דרך תרגומו,&quot;ואלה דברי הרב...&quot;:
+דובנא מתאר את מה שהינדנהים עשה, בביאור ובתרגום, ומשבח את עבודתו.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ההקדמה לא חתומה, אך נראה שכתבו אותה המדפיסים הידנהים ובשוויץ - ציינתי כאן רק את הראשון כי אין אפשרות בתוכנה לציין שניים (צריך לשנות כשאילה תתקן זאת). ההקדמה כתובה בלשון &quot;אנחנו&quot;, ולכן הנחתי כי מדובר במביאים לדפוס.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הפיוטים והפייטנים&quot;: הידנהים מציג ב-12 עמודים את הפייטנים השונים  ופיוטיהם, ומבקש מקוראיו לידע אותו אם שכח מישהו</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">לשון ההקדמה: &quot;אמר המגיד, ראה ראיתי מגלות עפות, הולכות וטופסות, כיום זה בכל שנה, בכל עבר ובכל פנה, זה אומר בכה וזה אומר בכה, איש איש כדרכו. וכאשר חקרתי יסודותים ואבוא עד תכונותם ועקבותיהם אלי נודעו על מה אדניהם הטבעו ראיתי מקצתו מלאכת המליצה רודף ומקצתו ריחו נודף וסרח העודף מקצתו כדבש תמרים ומקצתו כלענה מרים וכתאנים השוערים מקצתו תפוחי זהב מן ואהב גדולה ורהב ומקצתו קשה כברזל גורל אחד לה' וגורל אחד לעזאזל ויותר מזה ראיתי אותמים שמם בראשי הדלתות ושמו אותותם אותות איש איש לבית אבותם למען יעמדו לדורותם והוא לעד על מעוט הכרתם וחסרון הבנתה ולא תמחה חרפתם כי לא ראו חכמת המליצה היפה כתרצה בלי דופי ושמצה וכאשר יראו האנשים האלה איזה אגרת נועם המליצה אוגדת וחן ההגיון חוגרת יאחרו הנה היא סגורה ומסוגרת אין זה לשון אדרת כ&quot;א צרעת ממארת לא בזא' יתהלל המתהלל ואת נזרו לארץ יחלל בעיניו קורץ וברגליו חולל... והנה איש כזה נדמה בעניניו לעטלף בחלשת עיניו אשר לא יכול להביט בשמש ואל נצניו ויחשוב כי בשמש מקרה מה ופגע ובאמת בעיניו עמך הנגע כן אלו האנשים בדעתם חלשים ע&quot;כ אמרתי אל לבי אל תשמיע כיום קולך פן יבוזו לשכל מליך.
+אמר המגיד וכאשר גמרתי עמדי למשוך את ידי ולעמוד על עמדי יעצוני כליותי אל נא תהי כאיש עצל עשה זאת אפה והנצל ערוך אגרת והכן אל אשר ידע למקרא כתבא על כן חבר אותו ממלות קלות שחוק והוללות דבר חלקות מזה מהתלות מעניני שמחת פורים ממעשי השכורים סדר אכילתם ומרוב שמחתם איש על דגלו יחנה ודבר כזה לא ישבח ולא יגונה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ראו פירוט באצבע &quot;תוכן עניינים&quot; להלן,המתרגם עוסק בהגדרה של &quot;חוכמה&quot; &quot;נפש חיונית&quot; 
+&quot;ותבונה&quot;. המתרגם טוען כי תרגום ספר זה בא בעקבות עניינו ב&quot;בחינת הארץ, והדרים עליה, ותולדות הימים וחלופיהם&quot; (עמ' [6]). הוא בחר בספר זה לתרגמו כי הוא עוסק בכיבוש הארץ, ואפשר להפיק ממנו לקח מוסרי רב. סיבה נוספת - הספר זכה לפופולריות בקרב העמים. הוא מספר על תהליך תרגום ועיבוד הספר, על סיועו של נפתלי הירץ וייזל, ועל עידודו של קאמפה עצמו את הוצאת הספר. הוא אומר שהוצאת הספר קשה לו כלכלית, ואם הספר יצליח - יוציא גם ספר שני. המתרגם חותם בתודות לאביו.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בעמ' [3-1] סטנוב מספר את סיפור המסגרת:
+ילד שנולד לאשה שהיתה עקרה, שהחל לנבא, ואביו אסר עליו לעשות זאת. בהגיעו לגיל 12 האב משחרר אותו מן האיסור. הספר כולל את נבואותיו.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;אין הקדמה של ממש - זו תוכננה ככל הנראה אך לא מופיעה בספר כפי שהוא בידינו היום (ראו לשונית &quot;הקדמות&quot;). לעומת זאת, ישנו לוח קיצורים המקדים את הטקסט.,אין מדובר בהקדמה של ממש, רק לוח קיצורים המקדים את הטקסט ולא נכלל במספור הספר. הערה בסוף הרשימה מעידה על כך שהמחבר התכוון לפרסם הקדמה נפרדת: &quot;וויר האבען היר נור פ'ארלייפ'יג בעמערקט די בעדייטונגן דיזער ווערטער. אין אונזרר הקדמה ווערדען וויר אויספ'יהרליכ'ער דא פ'אן האנדלן.&quot;&lt;/p&gt;
+</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">שנאבר -לויזון  מעיד בהקדמה על יחס של בוז שהוא זוכה לו: &quot;וידעתי כי רבים ילעיגו לי שמתי פני כחלמיש ולא אבוש מהמלעיגי' אשר חדשים מקרוב באו לא שערום אבותינו&quot;.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;פתיחה&quot;: (דפים ח'-י'):
+
+מרגליות טוען כי החכמות עומדות בצילה של המסורת היהודית, ורק אם הם עומדים בקנה אחד איתה יש לקבלם. הוא טוען כי האדם לא יכול לרדת לגמרי לחיקרו של הטבע, והדבר דומה למגנט, שאת תכונותיו הוא מפרט היטב בהערת שוליים, שיודעים את תכונותיו אבל לא מבינים את סיבת פעולתו. דוגמה נוספת שהוא נותן : בן ששואל את אביו מאין בא, ולא מקבל את ההסבר שחי בתוך גוף אימו, שכן אין חי שיכול להתקיים בתוך מעיים. 
+
+לדעת מרגליות, כך החכמים שלא ניזונו די מן המסורת, אינם יכולים להתמודד עם הבנה של ידע שאינו עומד במבחן ההגיון. הוא מזכיר גם את אריסטו במסגרת דיון זה.,&quot;הקדמה לחלק בית מדות&quot;: (דפים ב' וג'):
+המחבר מודיע על כוונתו להוציא לאור חלק ב' של ספרו בית המדות, ועל כך שזכה להסכמה של &quot;גאוני הזמן&quot; לסיפרו, ומצרף כאן את ההקדמה לספר זה (שככל הידוע, לא הופיע לבסוף).</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2262</field>
+		<field name="revision_id">2262</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">'...במקח א' ר&quot;ט נייר פשוט, ועל נייר טוב במקח א' ר&quot;ט ח&quot;ג' - הקדמת המחבר, עמ' [1]</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמה&quot;, עמ' [2]  ועמוד ימני של דף א': תיאור הדמויות בסיפור, והמבוכה שתקפה את נועם הקבלי, בעקבותיה הלך להיפגש עם ידעיה</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמתו, מדגיש המחבר את חשיבות לימוד השפה העברית להבנת התורה, ומביא חיזוקים מדברי חז&quot;ל.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;פתיחה&quot;, דפים ו'-ט'.,&quot;הקדמה&quot;, דפים א'-ו':
+המחבר מציג את מבנה הספר, תכניו, ואת דרך העבודה על הספר</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמה&quot;, דף א' (צד ימני): סטנוב דן במשמעות המונח &quot;שלמות&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">לפני הפרק הראשון בספר מופיע טקסט בשם &quot;מפתחות&quot;, שבו ראשי פרקים של עשרת המאמרים הכלולים בשני כרכי הספר, כולל ציון מספר הפרקים בכל מאמר.,אחרי הצגת ההסכמות של הרבנים, הוסיף סטנוב קטע משלו: &quot;רבים מחכמי האומות התפלאו בשמעם שאני מדפיס את הספר עם ביאור כי רחוק הוא אצלם...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">על ה&quot;ערגלעהרונג&quot; - רשימת מילים לבירור מושגים עבור הקורא היהודי שאולי לא הכיר היטב את השפה הגרמנית, ראו: ויינברג, &lt;ins&gt;רשימת מילים&lt;/ins&gt;. רשימות אלה הופיעו בשלושת החלקים הראשונים של הספר, אך לא בחלק הרביעי.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">אין מבוא לספר, אך ברי&quot;ל מקדים לטקסט שיר תודה אשר מופנה אל בני הזוג יורש.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">חלק זה של סדרת הספרים מהווה כולו הקדמה ליתר החלקים. הוא מורכב משלוש הקדמות ארוכות.,חלק זה של הספר מורכב משלוש הקדמות, כשהוא מהווה הקדמה לכל סדרת הספרים.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">דפים ד'-ה': על העולם העליון והעולם השפל</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בעמ' הראשון לספר תיאור התכנים של הספר</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2330</field>
+		<field name="revision_id">2330</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמתו מציין בן זאב כי חיבר מבוא מפני שאוברניק הלך לעולמו בטרם הספיק לעשות זאת. הוא רואה בפרויקט מנחה חדשה המשך למפעל שהחל בו משה מנדלסון עם תרגום התורה וס' תהילים.
+בן זאב אף חיבר הקדמה נפרדת לחלקו השני של הספר.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ההקדמה הארוכה משמשת כדי להפוך את הפרסום הזה למוצר מורכב יותר , בו נמסר לא רק תרגום וביאור של ספרי הנביאים, אלא גם ידע עיוני, הכולל דיון בעניין הנבואה והנביאים (תתי כותרת כגון: תכלית הנבואה, פועל הנבואה, צורת הנבואה, חומר הנבואה, שמות הנבואה, משך ימי נבואת הנביאים), רתוריקה, גיאוגרפיה, רקע היסטורי ועוד. 
+ההקדמה השלישית מציגה בסדר א&quot;ב את הערים והמקומות הגיאוגרפיים המוזכרים בספרי הנביאים, עם פירוט על מיקומם ומעט מידע היסטורי עליהם.
+&lt;ins&gt;מחבר ההקדמות&lt;/ins&gt;: ההקדמות חתומות בסוף ע&quot;י קבוצת המחברים. ברוב המקורות המשניים מצוין כי &lt;ins&gt;יוסף וולף&lt;/ins&gt; חיבר את ההקדמה. אך לפי קרסל (א', עמ' 346), &lt;ins&gt;יואל ברי&quot;ל&lt;/ins&gt; &quot;הקדים הקדמות לתרי-עשר (אחת - לכסיקון גיאוגרפי)&quot;.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;מנחת מרחשת&quot; היא למעשה הבעת תודה והערכה לאיש יקר למחבר, שמואל ווערטהיים.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2339</field>
+		<field name="revision_id">2339</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;ספר מעדני מלך&quot;: המחבר מספר על אירוע שקרה לו שנוגע למשחקים: אב שהיו לו שני בנים, האחד שאהב לשחק, והשני שנמנע מכך, ביקש ממנו לסייע לפשר בין השנים שהגיעו לסכסוך עמוק בשל כך. המבחר הקשיב לאח שאהב לשחק, והגיע למסקנה שאין הוא עושה זאת במקום לימוד, ומביא להשלמה בין השנים, והוא מסכם: &quot;וזאת היתה הסיבה והטעם אשר כתבתי זה הספר&quot; (עמ' [21]).</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;מודעה רבה&quot;: המחבר טוען שבידו הסכמה, אך כי לא פרסם אותה בספר, בשל קוצר היריעה של הספר, ודורש כי איש לא ידפיס את הספר בשנתיים הקרובות.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ההקדמה הראשונה חתומה הן על ידי פרידלענדר, &lt;ins&gt;הן על ידי איצק מברלין&lt;/ins&gt;.
+
+בהקדמתם מציגים המביאים לדפוס ביוגרפיה (דימיונית למחצה?) של המחבר, &quot;ר' עובדיה&quot;. לפי דבריהם בהקדמתם, איש זה ישב בברלין שנים רבות והיה מקורב אליהם, אך עזב את העיר וכעת שלח להם את החיבור הזה, כדי שהם ידפיסו אותו, כמי שעומדים בראש דפוס חנוך נערים, שכן &quot;החבור הלז לא יעלה הוצאות מרובות בהדפסתו&quot;. הם מביאים את היסוסם להדפיס ספר זה, אף כי הבינו את תרומתו ואת חשיבותו: &quot;היינו נבוכים זמן מה למלאות רצונו אחרי כי חומר הספר וצורתו הוא פלפול והוויות בגמרא ובפוסקי' ואיננו מן הדברים אשר אנחנו מתגדרים בם, ואף &lt;ins&gt;כי הוא נמצא לריב את אחד מראשי ישראל הנודעים בדורנו&lt;/ins&gt;&quot;.
+
+סמט, &quot;בשמים ראש...&quot; קרית ספר מח, עמ' 511: לפי דרבי המחבר בהקדמתו, ועוד יותר לפי הקדמת המו&quot;לים, נועד הספר לנקום את נקמת המשכילים בר' רפאל כהן בעל &quot;תורת יקותיאל&quot; - וכן להרתיע את שאר הקנאים מסוגו. לפי סמט - ספר זה הוא חלק מהמתיחות הניכרת ביהדות גרמניה בין הרבנים למשכילים (בראשם פרידל') על רק העדר תמיכה מצד הרבנים בתכניות המשכילים ולעיתים אף התנגדות להם. (510)
+
+בהקדמתו מוסיף המחבר &quot;פרטים ביוגרפים&quot; נוספים: &quot;אמר עובד' ברבי ברוך איש פולניא המתגורר כעת בדינת עלזאס, מסבות מתהפך הזמן עלי... עד כי הנידני וטלטלני מעיר לעיר וממדינה למדינה עד בואי לארץ הזאת גם פה ישיבתי אין בה סמיכה כי אין לי מכיר... ואני יושב לבדי...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">על המבוא ראו לשונית &quot;הקדמות&quot;,ההקדמה הראשונה כללית וקצרה, היא עוסקת בין היתר במניעים לפרסום הספר. בסיומה ישנו קטע קצר המציג את שפת החשבון, &quot;לתועלת המתחיל&quot;, דהיינו את הסימני החיבור, החיסור, הכפל, החילוק והשווה.
+
+ההקדמה הראשונה ארוכה יותר, מעין מבוא מדעי.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2346</field>
+		<field name="revision_id">2346</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">מדברי ההקדמה הקצרה: &quot;הנה אנכי נצב על ראש הגבעה... שוד אקרא ואעער זעקת שבר... לאמור ישמעו העברי'... כי אש יצאה מחשבון ולהבה מקרית און ותקד באפי...כי לא יכולתי לכלוא הרוח העצור בבטני כי חזק הוא ממני עד כי יצא ויגע ב...אנשי הזמן והלך בסערות תימן... אחת דברתי ולא אשנה ולא אחוש לקול מלחשים...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">משה זאללשין הוא מחבר-שותף. יש לציין זאת כשאיילה תוסיף קטגוריה זו.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">עמ' ג' בו מתאר המחבר את נושאי הספר: גיאומטריה כבסיס לאסטרונומיה וחישובי לוח השנה:
+&quot;ועתה נבאר העיקרים בכדי ללמד לבני ישראל קשת המשולש ופינותיו בשלימות וגם כל חכמת התכונה השייך לקידוש החודש במופת נכון:&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;הקדמה&quot;, דפים א'-ז': הקדמה פילוסופיתשל האל, האדם, החוכמה והידיעה וכד'. בסוף ההקדמה מציג המחבר שנים מתוך שלושת חלקי הספר:  את החלק הראשון &quot;ראש אמנה&quot;, כעוסק בבאור שיר שכתב על האמונה, ואת החלק השני &quot;דירת אהרן&quot; - שעוסק בהלכות לקהילת אראד, אותם כתב מתוך עבודתו בקהילה זו.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;פתיחה אור לפני הדורשין&quot;, דפים [ג'-ז']:
+
+מבוא המיועד לקהל היעד של הדרשנים,&quot;הקדמה&quot;, דפים ב'-ג':
+
+המחבר מתאר את מטרת הספר - &quot;... ללמד את העם הידיעות והענינים המוסרים הבאים בהצעות הדרושים... אין להפליא עלי הרבה לפי שקריתי בימי נעורי ספרי דרוש הרבה&quot; (דף ב')</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמת הקצרצרה מתייחס המחבר  לעניין ההסכמות (ראו אצבע באישים מוזכרים).</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה לספר אומר המחבר כי בכל העמים יש ספרי רפואה לעם, ורק לנו היהודים אין בשפתנו. הוא טוען כי ישנן קהילות שאין בהם כלל רופאים, והתוצאה היא שזייפנים ורמאים מוכרים רפואות שגורמות לנזק רב. הוא קורא למשכילי פולין לרכוש ולהפיץ את הספר הזה לטובת עמם,בהקדמה מתאר לפין את תפיסתו לגבי תרגום טקסטים: &quot;... עא&quot;פ שלכאורה נראה מלאכת ההעתקה קשה מאוד ... הנה קלה היא ע&quot;פ קביעות התכלית לכל מעתיק כמי כחו, ולפי תועלת אותם שהעתיק בשכולם: ואעפ&quot;כ בכל זאת ראוי לכל תעתיק לוותר על מדתו ולהידמות לדיוקן שלו בכל כחו...&quot;(עמ' 6, מיספור שלי)</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2371</field>
+		<field name="revision_id">2371</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הקדמת המחבר: בהקדמה מציין המחבר כי הלשון העברית היא לשון נעלה וקדומה, והיהודים צריכים לדעת אותה כדי לחקור את כתבי הקודש הכתובים בעברית.  הספר נועד למתחילים, שכן ספרי העזר שקיימים קשים מדי לשימוש עבורם: &quot;... לכן קמתי אני הצעיר ואזרתי כגבור חלצי לפתוח פתח להרווחה לפני כל עוברי דרך הרעבים והצמאים לדעת יסודי הלשון ודרכיו... אז יכול ללמוד כל הספר מבלתי רב ומורה אשר יורנו&quot;. (דף א'). לפי המחבר, הספר יכול לשמש גם תלמידים מתקדמים. הוא יצר הבחנה בין הידיעות הבסיסיות לבין הפלפולים והמחלוקות, המופיעים בביאור.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">במבוא  הנקרא &quot;הקדמת קרית ספר&quot;, דף [א'] עד דף ג', מציג סטנוב סיפור מסגרת על אדם משכמו ומעלה ששמו בניהו אשר הפך למנהיג ובנה את בית חורון ואת הארץ כולה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הקדמה: סטנוב מדמה את ה' לשמש, ומציג את התיאוריה החומרית של האור על פי ניוטון (דף ג' - בטעות מופיע פה הסימן ו'). הוא טוען כי מטרת הספר ליצור הבנה של התפילה, שכן בלעדי זה &quot;מה בצע באיש שוגה ופתי אשר כסיס עגור כן יצפצף בל יבין מוצא שפתו בתפלתו...&quot; (דף ג' - בטעות מופיע פה הסימן ו'), ומציג את הספר הזה כספר אבוד שמצא אותו בספרייה וגאל אותו משכחה על ידי הוצאתו לאור מחדש, עם הערותיו של סטנוב אותן הוא מפריד מביאורו של הרשב&quot;ם על ידי הסימן (* (דף ד').
+
+ראו גם חלון &quot;מבנה הספר&quot; ב&quot;אחרית דבר&quot;, שבה התייחסות לדברים שסטנוב אומר בהקדמה שלו</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">המבוא בנוי מחמש הקדמות, שעוסקות בעניינים הבאים:
+
+1. הקדמה המבארת כוונת המלך בספרו קהלת ומעניו ומליצת משליו. ועל מה הטבעו אדניו (דפים א'-ב'. תיאור ספר &lt;strong&gt;קהלת&lt;/strong&gt; וכיצד שנאבר-לויזון הביא אותו כאן - כגון, בעיית הטעמים).
+
+2. הקדמה שניה: ודרך הקדש לה (דפים ג'-ט'. דיון בלשון העברית בחשיבותה ובמבנה שלה - שמות נרדפים, בניינים וכד')
+
+3. הקדמה שלישית: משמות הבורא יתברך... (דף ט'. דיון באמונה באל).
+
+4. הקדמה רביעית (עמ' י'-יג'.  דיון במצוות בין אדם לחברו, במוסר).
+
+5. הקדמה חמישית: ראיתי להעתיק פה. פרק אחד מספרי הרפואות אשר לי בלה&quot;ק... (דפים יג'-טו'.
+על ענייני בריאות, תזונה נכונה, הרגלי שתיה נכונים).
+
+
+לאחר חמש ההקדמות מופיע טקסטים בשם &quot;דברי החכם המבאר ושאלתי עליהם&quot; ו&quot;מקראות הדומות אלו לאלו בזה הספר יעידו איש על רעהו&quot; (דפים טו'-יז'. תיאור הנושאים בתוך ספר &lt;strong&gt;קהלת&lt;/strong&gt;, ולסיום מוסיף המחבר &quot;הערה&quot;ביחס אליהם).,&quot;לגוסטאף השלישי מלך צפון שלום עד בלי ירח&quot;: המחבר מרעיף שבחים על מלך שוודיה, שהעניק לו תואר פרופסור. שנאבר-לויזון אומר כי דבריו אלה תורגמו למלך לשוודית על ידי שריו הנאמנים: &quot;הארכאטר רופא המלך&quot; &quot;וכהן המלך ראזני&quot; ושאר יודעי העברית בקרב חכמי המלך, כפי שתרגמו לשוודית את ספריו על הרפואר &quot;והויכוח&quot; שכתב באנגלית</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בדפים א' וב' מציג המחבר 10 עיקרים מתוך הגיאומטריה והמתמטיקה: מהי נקודה, מהו עיגול, זוויות, קווים מקבילים, יחס בין מספרים וכד'.,ללא כותרת (דף א'): לוי, רפאל מדבר על אובדן הידע של היהודים בגלות. מטרת סיפרו היא לבאר את הידע שהפך לסתום עבור היהודים, המצוי בסיפרו של הרמב&quot;ם &quot;הלכות קדוש החודש&quot; - ידע זה מבוסס על האסטרונומיה העתיקה, והמחבר מתכוון לבאר אותה כדי שיהיה אפשר להבין את ספרו של הרמב&quot;ם.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ללא כותרת: [2-4] עמ':
+המחבר מספר על דבר מופלא שסיפר לו הרב צבי הירש מברלין הנוגע לתורת האור, שממנו יוצא כי האמת על האור היתה ידועה לאבותינו.,הקדמה: דפים א'-ג': המחבר מתאר את מקומו של האדם בעולם שיצר הבורא</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמתו, מציין המחבר מסורת ארוכת שנים של תרגום התורה ללשון המקום בו ישבו היהודים - החל בגלות בבל ולאורך הדורות.
+אך הוא מבכה את העובדה כי אין בנמצא תרגום ראוי לגרמנית: &quot;אין איש שם על לב להעתיק תורתינו אל לשון האשכנזי המורגל כעת בעמנו&quot;. תרגום אחד, של יקותיאל בן יצחק, איננו מקצועי כלל וכלל ונעשה על-ידי אדם שאינו שולט לא בשפה העברית ולא בשפה הגרמנית, לטענתו. לכן, היהודים נאלצים להעזר בתרגומים שנעשו על-ידי לא יהודים - תרגומים אשר אינם מסתמכים על ביאורי חז&quot;ל.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמתו מציין המחבר כי בכוונתו להציג אלטרנטיבה לספרי לימוד השפה העברית הקיימים בזמנו, המשניאים את לימוד העברית על התלמידים ומרחיקים אותם מן השפה. בניגוד לגישתם - שלטענת ברי&quot;ל מבוססת על לימוד בעל פה של כללי השפה - מבקש הוא להיצמד לתכנית שהתווה משה מנדלסון באור לנתיבה, דהיינו: לחבר &quot;דקדוק מיט הגיון, די שפראכלעהרע מיט דער פ'רנונפ'טלעהרע&quot; (עמ' [1])</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הערה: עמ' [1], סטנוב משבח את הנדבנים שנותנים מכספם להוצאת ספרים, ובכך &quot;יחייהו חיי עולם וצדקתו עומדת לעד&quot;, בעוד שצדקה חומרית &quot;יחייהו חיי שעה&quot; בלבד.
+הוא טוען כי לסידורי התפלות והסליחות יש ביקוש רב של קונים, אך ספרי חוכמה אין להם דורש וכך אובדת החוכמה, ומשכילי העם ניתנים לחרפת רעב. הוא טוען כי עורר את נדיבי העם לתת כסף להוצאת &quot;ספרים חדשים עם ישנים וגם מועתקים&quot;, כדי לאפשר קיום כבוד למשכילים.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2398</field>
+		<field name="revision_id">2398</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הקדמת המחבר המקורי, אך לא הקדמת המביא לדפוס (מעבר לדברים שהובאו בעמוד השער).</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ב&quot;מבוא לספר&quot; מבקש המחבר לספק רקע היסטורי לתקופה הנדונה, כולל פרטים על &quot;קורות עדת ישרון&quot; בתקופת חייו של רבי עקיבא ומידע על השליטים ועל מצבם המדיני של היהודים.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה הכתובה בגרמנית באותיות עבריות טוען המחבר שבכוונתו לתקן את החסר בתחום ספרי ההיסטוריה הלא-יהודית הקיימים בעברית, ויתחיל בהיסטוריה עתיקה של רומי. הספר עוסק בעלייתה של הרפובליקה הרומית ועד נפילתה- בחלק הראשון הוא מסיים בעלייתו לשלטון של טארקוויניאוס.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">שיק פרסם בראש הספר את האגרת ששלח ל&quot;אלופי קצינים ונגידים... ק&quot;ק פראג המעטירה&quot;. בהקדמה הוא מציין כי מטרת הספר &quot;להגדיל כבוד התורה... לכבוד והדר בעיני העמים והשרים... לרומם עטרת ישראל הנפולה, ולהראות את יופי לשון הקודש&quot;. [עמ' 2, מיספור שלי].</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2420</field>
+		<field name="revision_id">2420</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;התנצלות והקדמת המגיה&quot;: &quot;אם אמור יאמר עלי הקורא מה אמולה לבתך לא יראת לגשת ולהעתיק ספר הלזה הלא שלימים וכן רבים ממך אשר חלפו ועברו לא הי' די ידם ויראו ממנו להוריקהו מלשון ללשון אין זה כי אם גודל לבבך ורוח יתירה אשר בך ע&quot;כ אתנצל אותי ואומר לא כן אנכי עמדי הנה יש באמתחתי חיבור מה שחברתי זה כמה שני' ויראתי להוציאו לאור ולהעמידני בין שורת חכמי' אמנם עתה באתי אין זה כי אם חסד ה' אשר חנני בזה למען לא ימנע טוב מבעליו ולמען לא יחסר כל טוב בזה החיבור אמרתי להעלות כאן אף שארי ידיעות כוללות מדברי אקלידוס אשר לא הביאן המחבר בעבור שלדעתו דברי' פשוטי' הן כאשר כתב בספר כללי הנדסה סי' ל&quot;ד אמנם בהיות תועלתן מרובה והן עיקר לדיני המדות והשיעורים ע&quot;כ ראויין לזוכרן והן: .....[א עד ז] והתמדה לזכור הידיעות הכוללות האלו צריכה להיותה ממש יתירה מהתמדה לזכור שארי דינים המובאים בחיבור הזה...&quot;</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;מבוא הספר&quot;, עמ' [7-11]:
+וולף, יוסף החתום על מבוא זה, מגדיר בו את המונחים &quot;טבע&quot; (כל יצירי הטבע, כוח הטבע=אל, תכונות יצירי הטבע); &quot;חכמת הטבע&quot; (חקר/לימוד הטבע ופיסיקה) שנחלק ל-3 תחומים: 
+1. &quot;ספור הטבע&quot;(=נאטורגעשיכטע=דומם, צומח, חי, מדבר).
+2. קורות הטבע - התפתחות יצורי הטבע.
+3. למודי הטבע (=פיסיקה, הכרת הכוחות הפועלים בברואי הטבע), שהם יוצרים את &quot;תולדות או מראות הטבע&quot; (=תופעות טבע כגון, גשם, שלג... ברקים, רעמים וכד', שנגרמות על ידי חוקי הטבע הנצחיים &quot;חקות הטבע&quot;, כגון, כח הכבידה.
+&quot;מלאכת הכימיא&quot; היא תורה העוסקת בהרכבם של החומרים הדוממים.
+&quot;הנדסה והשעורים&quot; (=מתמטיקה), שהם הבסיס למדע.
+וולף טוען כי הכרת הטבע נעשית על ידי חושינו, והוא אף מגדיר את ההבדל בין המתודה המדעית של ה&quot;בחינה&quot; (=תצפית, התבוננות) ולבין המתודה המדעית של ה&quot;נסיון&quot; (=ניסוי). כדי לסייע לחושינו להכיר את הטבע, פיתחו חכמי הטבע כלים שונים. הוא מתאר את שיטת עבודתו של החוקר כאינדוקציה - הסתכלות על פרטים והגעה להכללות, אך טוען כי בחקר הטבע ישנם נעלמים רבים, ולכן רבו ההיפותזות השונות, שחלקן חסרות יסוד ואחרות מוסכמות ומתקבלות על הדעת. וולף מתאר את התהליך שעבר המדע במהלך הדורות, כמעבר מעיסוק בסיבות, להסתכלות במה שנמצא ובעריכת ניסויים, ולכן המדע התקדם מאוד אל האמת.
+הוא מבחין בין &quot;חכמת הטבע הכוללת&quot; (חקר כוחות הטבע הכלליים) לבין &quot;חכמת הטבע הפרטית&quot; (חקר המאפיינים הפרטיים של ברואי טבע שונים). וולף אומר כי ספר זה מתרכז ב&quot;חכמת הטבע הכוללת&quot;, שיש בה תועלת לתלמידים.,וולף, יוסף אינו חתום על ההקדמה, אך ניתן להבין ממה שכתוב בה כי הוא כתב אותה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;שיחה בעולם הנשמות&quot;, דפים א'-ג': סיפור מסגרת הכולל פגישה דמיונית בעולם הבא (?) בין נשמתו של ר' קמחי ויואל ברי&quot;ל. מתוארת פגישה נרגשת לאחר פרידה. השניים עולים לפיסגת הר כדי לנאום ל&quot;נפשות המשכילים האוהבות לשיח ולמשוע כל דברי חכמה&quot; (דף ב'). שאר הספר הוא לכאורה הדיון של השניים בנושאי דקדוק לשון עברית.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה, המחבר עוסק בשירה מבחינה תיאוריטית. הוא מדגיש את קדמוניותו ונפוצותו של השיר. בפתח דבריו הוא מציין: &quot;מראש ומקדם היה השיר כלי חפץ לאלהים ולאנשים. תראה כי כששפט העם את יציר כפו על חטאתו אשר חטא, נאמרו הדברים בדמות השיר. תוכחת השם לקין היתה בארח שיר. למך דבר לנשיו בארח שיר...&quot; (עמ' [1] בהקדמה) 
+אך גם &quot;אם נרד מן ההר הטוב הזה, מכל אשר נמצא כתוב בספרי הקדש בדרך שיר, ונביט על פני תבל ארצה... גם הם יחדיו ישאו קול ירונו בשירים, כל אחד כפי דרכו וכפי כחו...&quot; (עמ' [2] בהקדמה)
+לאחר שקבע את נפוצותו של השיר, מבקש המחבר &quot;להתבונן על החפץ הזה לשיר בשירים... לדעת על מה יסודתו ועל מה יוצר הנפשות ב&quot;ה נטע כזאת נפשות יצוריו, כי בלי ספק מבע ה' הוא...&quot; (עמ' [3] בהקדמה)
+המחבר מצהיר כי כוונתו בשירי תפארת היא לבאר את &quot;דברי התורה הסתומים&quot; (ליתר דיוק, את הדברים שנוגעים לגלות מצרים), שנכתבו &quot;בעט אלהי&quot; ועל כן &quot;לא רבים יבינו בם&quot;. הוא הולך &quot;בדרך אבותינו הראשונים, לפרש אמרות אלהינו בארח שיר&quot;. עם זאת, בהקדמה הוא מבחין בין יצירתו של המשורר לבין עבודתו של המפרש.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">דבריהם של וולפסון וברי&quot;ל אינם נושאים כותרת. בעותק ששימש למילוי השאלון, העמוד הראשון של דבריהם ממוקם בראשית הספר, בעוד העמוד השני מופיע בסופו. ייתכן כי העמוד השני מוקם בסוף הספר במהלך השימוש בעותק זה, כתוצאה מכך שדף זה נתלש וחובר שוב במקום הלא נכון.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">הקדמתו של פרידלנדר מן המהדורה הקודמת: &quot;כתבתיו בחודש אדר ה'תחמ&quot;זיין ליצירה&quot;.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">היינמן טוען כי ספרו זה הוא קיצור של דברים שכתב בספרו הקודם ודברים שיופיעו בספרו הבא. דברים אלה צריכים לשמוע מפי נער העולה למצוות. הספר נועד לסייע לרבנים או לאחרים בהבאת הנערים לטקס הקונפירמציה.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">דברי ההקדמה - בחלק גרמני של הספר.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">במבוא לספר עוסק המחבר בקשר בין החברה האנושית ללשון האנושית, ובחשיבות הלשון בעיצובו של עם - ולכן, מקומה החשוב של העברית בעיצובו של העם היהודי, עמ' א'-ב'.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">&quot;איינלייטונג&quot;, עמ' [1-2]:המחבר עוסק בקשר ההכרחי בין תרבות אנושית ובין שפה, ובמיוחד השמות הם היסוד של השפה האנושית,ראו התייחסות לספר זה בהקדמות של 
+תורת לשון עברית - חלק א'</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">ראו התייחסות לספר זה בהקדמות של 
+&lt;strong&gt;תורת לשון עברית - חלק א&lt;/strong&gt;'.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">חלק א' - &quot;מבוא-איינלייטונג&quot;: תיאור אותיות, תנועות וטעמים (עמ' א'-לא').,בן-זאב מדבר על תכונותיו של האדם, המבחינות אותו מן החיות - השכל (=יושר ההגיון, הלוגיקה); הדבור (=יושר המבטא; גרמטיקה), והכתיבה (=יושר הכתיבה; ארטוגרפיה). הוא טוען כי היהודים מוכרחים ללמוד להכיר את שפתם העברית על בורייה, כמו שהלא-יהודים שולטים בשפתם-הם. הנסיבות הביאו לקושי עם העברית: א) 
+&quot;קיום הלשון בקיום אומתה&quot; (עמ' [4] של ההקדמה)- ובשל הגלות מיעטו לדבר בה ושכחו את השפה, כשהשריד היחידי שמשמר אותה הוא כתבי הקודש; ב) העברית אינה לשון מדוברת, והוראת העברית נעשית על ידי &quot;מורי הילדים אשר בזמנינו ובמדינותינו (זולתי הספרדים) רובם אינם יודעים מאומה מחכמת הדקדוק&quot; (עמ' [5] של ההקדמה). כמו כן, הריחוק בזמן ובמקום מן המקום בו היתה העברית חיה, יוצר קשיים ואי-הבנות של השפה. בן-זאב טוען כי אלה הן הסיבות שהניעו אותו לכתיבת הספר: א) יש צורך בספר 
+דקדוק עברי מקיף, וכזה אין בנמצא; ב) יש צורך בספר שמבוסס על סדר לימוד עיקבי; 
+ג) יש צורך בספר שבנוי על עקרון הלוגיקה של השפה, בהמשך לדרכו של מנדלסון, משה. בן-זאב 
+מתאר את מבנה הספר שלו (ראו פירוט באצבע של שדה &quot;תוכן עניינים&quot; בחלונית &quot;מבנה הספר&quot;), וחותם באמירה כי ספר זה יהיה אולי קשה ללמוד עצמי של ילדים ונערים.</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2485</field>
+		<field name="revision_id">2485</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_structure_preface_notes_value">בהקדמה מתאר סטנוב את הצורך להשתמש בספרי תפילות נכונים, וכי השתמש בקלף משנת רמ&quot;ט שנקרה לפניו, כמקור לספר זה</field>
+		<field name="field_structure_preface_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

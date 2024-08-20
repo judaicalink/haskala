@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_sources_not_mentioned_ref">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_sources_not_mentioned_ref_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_sources_not_mentioned_ref_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_sources_not_mentioned_ref" engine="InnoDB" version="10" row_format="Dynamic" rows="19" avg_row_length="862" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:27" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 170 (field_sources_not..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_sources_not_mentioned_ref">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2066</field>
+		<field name="revision_id">2066</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">Alexander: Schriften, 1998, S. 38.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">קלוזנר 1930, 257; קלוזנר (1930, 259)מציין מקורות נוספים להשפעה על פפנהיים בסיפרו זה: ג'ון לוק ועמנואל קאנט</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">פרידלנדר, הסטירה, עמ' 77.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">Zitat eines &quot;Meisters in der Erziehungskunst&quot; auf S. 160-162.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">לחובר, א'; קלוזנר, א', 310
+
+שמותיהן של הדמויות במחזה הינם בחלקם תרגום מאיטלקית: נוגה היא ונוס, חשק - קופידון, עושר - פורטונה, חוסן - קונסטאנסיה. השאר שמות עבריים: צדק, תפארת, תקוה, שלום.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">סוף ההקדמה כותב המחבר: &quot;יסלח לי הקורא, כי לא שמתי לפניו שמות המחקרים אשר ממבועיהם שתיתי, ומגנם לקטתי איזה משפטי השכל אשר עליהם הוסדו המופתים הנמצאים במכתב הזה. יען אמרתי דברי נוספות כאלה לא יועילו ליודעי מעיני החכמה...&quot;</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2204</field>
+		<field name="revision_id">2204</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">&lt;p&gt;מביא מידע מתוך &quot;ספרי מסעות&quot; המתארים כיצד נוהגים בהודו באישה אלמנה, ומשווה עם הייבום כפי שדורשו התורה.&lt;/p&gt;
+</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">לטענת נותן ההסכמה, פירושיו של המחבר למילים &quot;מיוסדים על אדני הקודש אשר בית ישראל נשען עליהם והם פירושי תנ&quot;כ למאורי הגולה רש&quot;י והראב&quot;ע והרד&quot;ק ז&quot;ל אשר המחבר הנ&quot;ל בקי בהן&quot;.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">שקד, מבוא, עמ' 17 - 21.
+
+ראו דיון בדבר ה&quot;השפעות&quot; השונות על האפרתי בעת כתיבת המחזה בתוך: שקד, מבוא, עמ' 17 והלאה (כולל סיכום של דיונים קודמים ע&quot;י חוקרים אחרים). שקד  מציין שם מקורות השראה אפשריים נוספים, כגון שילר, גתה. (בעקבות דיונים מעין אלה, שביט, בעלות השחר, עמ' 45, מציין כי היצירה מצטיירת כ&quot;אנציקלופדיה של השפעות&quot;).</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">בור, ז'אנר המוסר, עמ' 58, 60.
+
+לפי בור, &lt;ins&gt;ז'אנר המוסר&lt;/ins&gt;, תפיסותיו של לוק בנוגע ל- 
+mind
+ולתפיסת הרעיונות מוצאות ביטוי בספר המידות לוייזל.
+הוא גם מצביע על הקבלה מסוימת בין ספרו של וייזל לבין ספרו של ריימרוס:
+Wessely begins his ''Sefer Hamidot'' on similar lines to Reimarus…, by stressing that, unlike animals, man is a social being who does not concern himself simply with the pleasures of the moment but with future goods, and the desire to attain ever greater perfection.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">פרידלנדר, הסטירה, עמ' 77.
+
+פרידלנדר, הסטירה, עמ' 77, כותב: &quot;אין בידי ראיות של ממש על מידת בקיאותו של שאול לוין-ברלין בכתבי וולטר, ואיני יודע אם קראם במקור, אולם יש בהחלט מקום להערה זהירה כי יש בסאטירה של שאול לוין-ברלין לא מעט מאמצעי ההבעה הסאטיריים המאפיינים את כתיבתו של וולטר בכתבי הפלסתר שלו&quot;. 
+
+רפאל מהלר מכנה את שאול ברלין: &quot;וולטר היהודי היושב על כסא הרבנות&quot; (פרידלנדר, הסטירה, עמ' 77).</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">ראו הרחבה באצבע בחלונית זו</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">המחבר מסביר את יתרון השימוש במליצה וההמחזה, כשהוא משתמש ברעיונות המופיעים ב&lt;ins&gt;שירי תפארת&lt;/ins&gt; של וייזל. כך למשל: &quot;דבר הוא נודע ליודעים חין(?) וערך המליצה, משכילי ומביני מדע; שכל דבר אשר יפעול בנו באמצעית [כך] החושים, יותר חזקה מפעולת הדבר שיפעול בנו באמצעית העיון&quot; (עמ' [4]).</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">מכמן, דוד פרידריכספלד, עמ' 162, רואה בדבריו על הערצת הלשון הדים לרעיונותיו של הרדר.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">דף ד'</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">קלויזנר, א', עמ' 310.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">קלויזנר, א', עמ' 137 - 138
+שאנן, א', עמ' 64 והלאה
+
+קלויזנר, בהתבססו על מייזל (Wolf Aloys Meisl, Leben und Wirken Naphtali Hartwig Wesselys, Breslau 1841), משער ש&quot;וויזל נתעורר לכתוב אפופיאה כזו על-ידי הרדר. ואמנם, דבריו של הרדר בנידון זה כאילו קוראים לוויזל לחבר חיבור מעין 'שירי תפארת'. בחיבורו הגדול 'על רוח השירה העברית'...שיצא בשנות 1782 - 1783, כשנתיים קודם שניגש וויזל לכתיבתם של 'שירי תפארת' - אומר הרדר כדברים הללו: 'תמהני, שלמרות מה שכבר יש בלשוננו כמה וכמה שירי-גיבורים בעלי תוכן עברי, עדיין אין לנו אפופיאה על משה...' &quot;
+
+מקור נוסף שקלויזנר מציין הוא ה&quot;מסיאד&quot; של קלופשטוק, ומוסיף כי &quot;בכלל נתרבו בדור-ההשכלה בגרמניה היצירות המיוסדות על נושאים מן התנ&quot;ך... ביחוד נתרבו אז היצירות העוסקות באבות התנ&quot;כיים&quot;.</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">קלויזנר, א', עמ' 137 - 138</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_not_mentioned_ref_value">קלויזנר, א', עמ' 137 - 138</field>
+		<field name="field_sources_not_mentioned_ref_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

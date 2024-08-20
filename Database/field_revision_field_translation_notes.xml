@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_translation_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_translation_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_translation_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_translation_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="27" avg_row_length="606" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:28" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 191 (field_translation..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_translation_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">bereits 1799 ins Deutsche übersetzt:
+Der Gefangene in Spanien / aus dem Französischen des N. Massias. - Zürich, Leipzig : Ziegler, 1799.
+Bendavid übersetzte nur die Novelle &quot;Leo und Isabelle&quot;.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2072</field>
+		<field name="revision_id">2072</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">Gutman (2000)</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">פרידלנדר מציין בהקדמתו כי חלקים מסוימים בספרו הועתקו, בשינויים קלים, מתוך תרגומים של משה מנדלסון. כך למשל, תרגום החלקים מן התפילה הלקוחים מספר &lt;ins&gt;תהילים&lt;/ins&gt; &quot;איזט ביס אויף אייניגי גרינגפ'יגיגי אבענדרונגן, אויס דער מיט דייטשן לעטטרן ערשינינן איברזעצונג דער פסאלמן אונזרס גראסן לעהררס אונד צייטפ'רוואנדטן, דעס יעצט פ'רעוויגטן ר' משה ב&quot;ר מנחם [מאזס מענדלסזאהן] גנאממן. איך האבי היא אונד דא דען בויא זיינר פעריאדן, אונד זייני נאכ'דריקליכ'י קירצי, דיא דעם ארגינאל גלייכ'קעממט, אבענדרן אונד צרשטערן מיסן, אום דען זין פ'אסליכר צו-מאכ'ן.&quot;
+בחלק של &lt;ins&gt;פרקי אבות&lt;/ins&gt;, פרידלנדר הוסיף גם הבהרות והערות בתחתית העמוד. כפי שמציין בהקדמה, &quot;אין דען ערקלעהרונגן אונד אנמערקונגן [של פרקי אבות], בין איך גרעסטן טהיילס דעם העברעישן קאמענטאר אונזרס גראסן לעהררס ר' משה ב&quot;ר מיימון [גוועהנליך דער &lt;ins&gt;רמב&quot;ם&lt;/ins&gt; גנענט] גפ'אלגט&quot;.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2122</field>
+		<field name="revision_id">2122</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">בספר לא מצויין אלא &quot;מועתק ללשון עברי מאת ברוך...&quot;. אין מידע נוסף על טקסט המקור.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">הספר מוצג כתרגום בכמה רמות.
+לפי המסופר בו, מדובר בטקסט עתיק שנכתב בשפת הברהמים, נמצא ע&quot;י חכם סיני בן התקופה, שתירגם אותו לסינית. איש אנגליה ששהה במזרח תרגמו לאנגלית ושלחו לידידו באנגליה, וכך התגלגל לידי אובן אשר תרגמו לעברית.
+
+למעשה, הספר נכתב ע&quot;י סופר אנגלי,
+Robert Dodsley (1703 - 1764)
+דמות מרכזית בסצינה הספרותית בלונדון במאה ה- 18. לפי רודרמן (עמ' 95), היה זה אחד הספרים הפופולריים ביותר באנגליה בכל המאה ה- 18 (יותר מ- 200 מהדורות בין 1750 - 1800, תורגם גם לשפות שונות).
+
+על &quot;מקורו&quot; המזרחי (מטיבט) של הטקסט ראו דברי המכתב שצורף לספר, שנכתב ע&quot;י האיש האלמוני ששלח את החיבור לידידו באנגליה.
+
+לפי אותו סיפור, לא ידוע מי מחברו של הטקסט. באותו מכתב שהוזכר אף עולה ספק לגבי מקורו העתיק:
+
+the plan of it which is entirely new to the eastern people, and so unlike any thing they have ever seen, that, if it was not for some turns of expression peculiar to the East, and the impossibility of accounting for its being written in this very ancient language, many would suppose it to be the work of an European. (p. 9)</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">&lt;ins&gt;סוג טקסט המקור&lt;/ins&gt;: קטעים מתוך ספר ישעיה, או: קטעים מתוך המחזור ליום כיפור (הפטרה לשחרית).</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">תרגום לעברית, שפת המקור של הטקסט.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">טקסט המקור נכתב על-ידי הרמב&quot;ם בערבית ותורגם לעברית על-ידי שמואל אבן תיבון (כפי שסלומון עצמו מציין בהקדמתו). סלומון התבסס על התרגום העברי, בבואו לתרגם את הטקסט לגרמנית.
+&lt;ins&gt;סוג טקסט המקור&lt;/ins&gt;: &lt;ins&gt;שמונה פרקים&lt;/ins&gt; הוא אחת ההקדמות שכלל הרמב&quot;ם ב&lt;ins&gt;ספר המאור&lt;/ins&gt;, פירושו למשנה. ליתר דיוק, זו ההקדמה לפירושו למסכת אבות.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">ספר בשם:
+Lebensbeschreibung Kaiser Josephs II. bis an seinen Tod. Aus authentischen Quellen. - Frankfurt und Leipzig (Ulm), (Stettinsche Buchh.), 253 S.
+
+מאת
+Gaum, Johann Ferdinand 
+
+התפרסם ב- 1790.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">לטקסט אותו תרגם וייזל לעברית ופירסם בתוך ספר זה ישנה היסטוריה משלו: איש בשם &lt;ins&gt;ריץ&lt;/ins&gt;, דרשן בעיר האג, מצא את הדברים בתוך כתב יד של אחד הפקידים ב&quot;קומפני האללאנדי השולחים אניותיהם לאינדיא המזרחית, ושמו &lt;ins&gt;מארצעלוס בלעס&lt;/ins&gt;, איש נכבד ומשכיל, ובטבעו חוקר ודורש לדעת הדברים על בוריין, ורשם במכתביו הדברים שראה במדינות שעבר בהם&quot;. בין הדברים שכתב אותו בלעס, מצא ריץ &quot;ראשי דברים מספר &lt;ins&gt;דברי הימים אשר ליהודים היושבים בעיר קושין&lt;/ins&gt; על חוף ארץ מאליבאר שהיא ארץ הודו, אשר קבל הפקיד הנ&quot;ל מיד יהודי שהמיר דתו ושמו &lt;ins&gt;פ'אן דארט&lt;/ins&gt; שהעתיק הדברים &lt;ins&gt;מדברי הימים הגדולה העברית&lt;/ins&gt;  שהיא [רווח - חסרה מילה?] תחת יד נשיא היהודים שבקושין&quot;. 
+וייזל אינו מאמין שאותו מומר ראה בעצמו את הספר הנדון, ספר דברי הימים: &quot;(וכפי הנראה לי לא ראה פ'אן דארט האיגי&quot;נאל הארוך, ו&lt;ins&gt;רק זה הקצור מצא&lt;/ins&gt; ביד מי שמצאו ו&lt;ins&gt;העתיקו ללשון הולאנדי&lt;/ins&gt; ונתה לפקיד הנ&quot;ל)&quot;.  (עמ' ח'-ט')
+
+בקשר ל&lt;strong&gt;שפת טקסט המקור&lt;/strong&gt;: מדברי וייזל עולה כי הוא תרגם מגרמנית לעברית טקסט שהיה כתוב במקור &lt;ins&gt;בעברית&lt;/ins&gt;, תורגם &lt;ins&gt;להולנדית&lt;/ins&gt;, לאחר מכן תורגם &lt;ins&gt;לגרמנית&lt;/ins&gt; (כפי שוייזל מציין, ריץ העתיק את הטקסט מהולנדית לגרמנית).</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">המתרגם לא מציין את שם טקסט המקור, אך מציין את מחבר טקסט המקור, &quot;החכם קאמפא&quot; (עמ' [6]). העובדה כי מדובר בתרגום מצויינת בהסכמה (&quot;רישיון&quot;) מטעמו של צבי הירש:...&quot;לתת לו רשיון להדפיס העתקתו בלשונינו הקודש... (עמ' [2]).</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">מובאים נאומים של אישים בהולנד בשאלת היהודים בתרגום לעברית. המתרגם הוסיף דברי הסבר בגוף התרגום, כשהוא משתמש בפונט שונה כדי להבדיל בין דברי הנואמים לבין הסבריו. (אותיות מרובעות ללא ניקוד, קטנות יותר.)</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">ככל הנראה, סטנוב ראה בספר זה המשך לסיפרו &quot;אמרי בינה&quot; או של &quot;ספר החזיון&quot;. דף ב' נפתח באמירה: &quot;יבאר במשל ומליצה איך השר המסופר ממנו בחלק הא'...&quot;. דמותו של נעם מופיעה גם כאן. יש לבדוק זאת שוב אצל ורסס ופלאי. בדף לו' מוזכרים שני ספרים אלה.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">וייזל מקדיש את הקדמתו הראשונה לעניין התרגום. אין הוא מציין שפה אחת ממנה תרגם את הספר, אלא כותב כי העתיק מלשונות העמים. הוא כותב כי הספר, שנכתב במקור בעברית, תורגם ע&quot;י היונים והרומים, ולאחר מכן לשפות כגון גרמנית וצרפתית.
+לדברי קלוזנר, היסטוריה, א', 109, הוא תרגם את חכמת שלמה &quot;בלשון המקרא הצחה ביותר, בלא מלה או ביטוי מאוחרים, באופן שכשאנו קוראים את התרגום, אנו שוכחים, שתרגום לפנינו ולא ספר מכתבי-הקודש&quot;.
+ועוד (עמ' 114): &quot;רק מתוך ההתעוררות שבאה ע&quot;י התרגום של וויזל התחיל בן זאב מתרגם את בן סירא (ברסלאו תקנ&quot;ח) ואת יהודית (ווינה תקע&quot;ט)&quot; ועוד אחריו מאוחר יותר.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">וולפסון מסביר כי בתרגומו הוסיף דברים שאינם מופיעים בטקסט המקורי, זאת כאשר הרגיש כי ישנם חסרים שמוטב למלא. שינוי נוסף שהכניס בתרגומו: שלא כתרגומים אחרים, הוא בחר להשתמש בשמות מדינות הנהוגים בשפות לועזיות ולא הידועים למרבית הקוראים היהודים (במקרה של מדינות מוכרות). למשל, במקום מצרים, ארם: עגיפטען, זיריע. 
+על מנת לא להעיק על הקורא, בחר לא לפרט ביתר פירוט את הסיבות שבעטיין בחר בדרך זו והבטיח לקורא להסביר זאת במקום אחר. לא &quot;בלאסע נייערונגסזוכט&quot; הביא אותו לכך, אלא &quot;טריפ'טיגע גרינדע&quot;.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">ראו חלון זה בספר מלכים א'.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">על מלאכת התרגום כותב וולפסון בהקדמתו כי &quot;אני את פי מליצת אשכנזית שמרתי&quot;, ולא נצמד תמיד למקור, שכן לפיו המשורר בספר זה &quot;לא שם לו חוק וגבול וידבר כאות נפשו, ועל כן המר ימיר גם היחיד ברבים והרבים ביחיד...&quot;. לכן לא יכול היה ללכת בעקבות המחבר, כי אחרת &quot;גם תרגומי יהיה אז כספר חתום באין מבין דבר מדבריו&quot;.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">ספרו של טיסו תורגם לעברית ע&quot;י לפין: ספר רפואת העם.
+השוואה בין שתי המהדורות אצל שמרוק.
+כפי ששמרוק מציין, ספרו של לפין נאמן יותר למקור ומצהיר על היותו תרגום, אך לא כן ספרו של מרקוזי. התרגום ליידיש הינו יותר בבחינת &quot;אדפטציה&quot; של הספר לקהל היעד שלו: יהודי מזרח אירופה.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">לפי קלוזנר (קלוזנר 1930, 225) לפין לא תרגם מן המקור הצרפתי, אלא מתרגום גרמני של הספר.
+שם מחבר טקסט המקור:
+Tissot</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">החיבור &lt;ins&gt;עלים לתרופה&lt;/ins&gt; כולל תרגום של כמה קטעים מתוך התורה, כדי להמחיש כיצד ייראה תרגום התורה העומד להתפרסם.
+
+בסוף החוברת,הוסיף   דובנא קינה מאת ר' יהודה הלוי, המלווה בתרגום לגרמנית שנעשה על-ידי משה מנדלסון.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">לפי כותב ההקדמה, נ.ה. וייזל, המתרגם &quot;במקצת מקומות &lt;ins&gt;הוסיף מלין מדעתו&lt;/ins&gt; לבאר לשונות סתומות שבה&quot;.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">בהקדמה מציין המחבר כי הוא עיבד את ההיסטוריה העתיקה שעדיין לא הופיעה בעבריתעבור בני עמו, אך לא מציין את מקורותיו (עמ' 9).</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">בהקדמה לחלק הראשון מציין המחבר כי הוא עיבד את ההיסטוריה העתיקה שעדיין לא הופיעה בעבריתעבור בני עמו, אך לא מציין את מקורותיו (מחברת ראשונה, ספר ראשון, עמ' 9).</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">בשער הספר מצויין כי הספר תורגם מן השפה האנגלית, ושהספר הוא של חכמי אוקספורד שבאנגליה. בהקדמה שכתב מציין שיק כי טקסט המקור שלו הוא ספר חדש, שעדיין לא הופיע בשפות אחרות מחוץ לאנגלית</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">ספרו של רף כולל 718 עמודים העוסקים בשלוש ממלכות הטבע, ואילו הטקסט שעובד על פיו לראשית למודים כולל רק 85 דפים. כמו כן, קטעי טקסט מסויימים המופיעים בראשית למודים אינם מצויים בטקסט של רף, ויש גם סטייה בפרטי מידע שונים יחסית לרף. ככל הנראה, הסתמך לינדא על Naturgeschichte für Kinder באופן מרכזי, אך לא באופן בלעדי. ללא ספק השתמש לינדא במקורות נוספים לחיבורם של הפרקים האחרים של ראשית למודים העוסקים באסטרונומיה, מטאורולוגיה, גיאוגרפיה ועוד, שאין להם מקבילה בטקסט של רף.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">תרגום ופרשנות לחלקו הראשון של ספר מלות ההגיון לרמב&quot;ם.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_notes_value">כפי שמעידה הכותרת, החלק העברי הינו תרגום של הדרשות בשפה הגרמנית.</field>
+		<field name="field_translation_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

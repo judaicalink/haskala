@@ -1,0 +1,2040 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_location_of_footnotes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_location_of_footnotes_tid" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_location_of_footnotes" engine="InnoDB" version="10" row_format="Dynamic" rows="182" avg_row_length="90" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:01" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 73 (field_location_of_footnotes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_location_of_footnotes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1958</field>
+		<field name="revision_id">1958</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1958</field>
+		<field name="revision_id">1958</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1969</field>
+		<field name="revision_id">1969</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1970</field>
+		<field name="revision_id">1970</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1976</field>
+		<field name="revision_id">1976</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1979</field>
+		<field name="revision_id">1979</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1980</field>
+		<field name="revision_id">1980</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1992</field>
+		<field name="revision_id">1992</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1996</field>
+		<field name="revision_id">1996</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1998</field>
+		<field name="revision_id">1998</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2008</field>
+		<field name="revision_id">2008</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2009</field>
+		<field name="revision_id">2009</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2012</field>
+		<field name="revision_id">2012</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2028</field>
+		<field name="revision_id">2028</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2028</field>
+		<field name="revision_id">2028</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2031</field>
+		<field name="revision_id">2031</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2032</field>
+		<field name="revision_id">2032</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2041</field>
+		<field name="revision_id">2041</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2042</field>
+		<field name="revision_id">2042</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2048</field>
+		<field name="revision_id">2048</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2053</field>
+		<field name="revision_id">2053</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2058</field>
+		<field name="revision_id">2058</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2060</field>
+		<field name="revision_id">2060</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2061</field>
+		<field name="revision_id">2061</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2062</field>
+		<field name="revision_id">2062</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2064</field>
+		<field name="revision_id">2064</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2070</field>
+		<field name="revision_id">2070</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2071</field>
+		<field name="revision_id">2071</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2072</field>
+		<field name="revision_id">2072</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2073</field>
+		<field name="revision_id">2073</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2094</field>
+		<field name="revision_id">2094</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2106</field>
+		<field name="revision_id">2106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2110</field>
+		<field name="revision_id">2110</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2115</field>
+		<field name="revision_id">2115</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2117</field>
+		<field name="revision_id">2117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2127</field>
+		<field name="revision_id">2127</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2128</field>
+		<field name="revision_id">2128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2139</field>
+		<field name="revision_id">2139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2192</field>
+		<field name="revision_id">2192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2227</field>
+		<field name="revision_id">2227</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2233</field>
+		<field name="revision_id">2233</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2323</field>
+		<field name="revision_id">2323</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2379</field>
+		<field name="revision_id">2379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2402</field>
+		<field name="revision_id">2402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2405</field>
+		<field name="revision_id">2405</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2407</field>
+		<field name="revision_id">2407</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2410</field>
+		<field name="revision_id">2410</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2424</field>
+		<field name="revision_id">2424</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2440</field>
+		<field name="revision_id">2440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2448</field>
+		<field name="revision_id">2448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2451</field>
+		<field name="revision_id">2451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">1</field>
+		<field name="field_location_of_footnotes_tid">432</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2485</field>
+		<field name="revision_id">2485</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_location_of_footnotes_tid">424</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

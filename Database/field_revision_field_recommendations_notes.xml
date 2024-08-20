@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_recommendations_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_recommendations_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_recommendations_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_recommendations_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="31" avg_row_length="528" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:26" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 155 (field..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_recommendations_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">Dekret der K.K. Studien-Hof-Kommission von 14. dez. 1810:
+
+1. &quot;dieses Lehrbuch in allen jüdischen Schulen der deutschen Erbstaaten, als eingesetzliches Lehrbuch eingeführt, und gebraucht, und auf dessen zweckmäßige Anwendung von Allen, denen die Untersuchung der jüdischen Schulen obliegt, genau gewacht werden soll.&quot;
+
+2. &quot;daß jeder Bräutigam und jede Braut von der israelitischen Nation, da sie um die Heirathsbewilligung ansuchen, über den Inhalt dieses Lehrbuches von dem Kreisamte geprüft werden, und nur dann die Bewilligung zu heirathen erhalten, wenn sie bey der Prüfung wohl bestanden sind.&quot;</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2068</field>
+		<field name="revision_id">2068</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">Engel, Johann Jacob: Der Philosoph für die Welt, 2. Teil.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">לפי יוטה שטראוס, ישנו בתחילת הספר מכתב המלצה מאת דוד פרידלנדר.
+Jutta Strauss, &quot;'Do not neglect the education of your children' - Aaron Wolfssohn the pedagogue&quot;, in: Behm, Lohmann…, Jüdische Erziehung und Aufklärische Reform, p. 310.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">אין מדובר בהמלצה של ממש, כי אם בשיר לכבוד המחברים.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">מדובר למעשה בשירים בעברית (אחד נכתב בהולנדית ותורגם לעברית) בשבחו של המחבר וספרו.
+פרטים על קשריו של המחבר לכותבי השירים ו/או תיאור קצר של האיש בראש כל שיר.  (מורי ורבי, הרופא המובהק הפייטן המשובח, הבקי בלשונות, הבקי בחכמת הדקדוק המליצה והשיר.)</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">בלינפנטי כתב שיר ברכה לכבוד וייזל וספרו.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">אחרי ההסכמות ישנם דברי שבח על הספר מאת אחי המחבר, תחת הכותרת: &quot;רגשת נפש&quot;.
+כמו כן, &quot;מכתם&quot; מידידו זלמן הלוי בן רפאל מק&quot;ק גלוגא.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">המלצה ושיר.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">ישנו &quot;מכתב&quot; לכבוד המחבר, המהלל את חיבורו ואת היכרותו הקרובה עם השירה ה&quot;איריינטלית&quot;, מאת:
+
+Silvestre de Sacy</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">בעמוד האחרון של הספר מופיעות שתי &quot;המלצות&quot;. 
+האחת מאת &quot;משה בן מענדל מדעסויא&quot; [מנדלסון], הכותב: &quot;בקראי בו מצאתי בהם דברים נכוחים וישרים למוצאי דעת, מיוסדים על אדני התורה והחכמה האמתית, נאמרים בלי להג הרבה ובלשון צחות... ויש בהם חקירות נכבדות רבות התועלת בענינים רמים ונשגבים דברי מוסר השכל ואמרי בינה...&quot; 
+השניה מאת נפתלי הרץ וייזל. על הספר הוא כותב: &quot;ויישר בעיני מאד. ראיתי כי בתום לב ידבר וישם פניו להבין דבר לאשורו בדרך הפשט, ולשקול כל מלה ומלה בפלס דעתו לפרש אותה כפי משפט הלשון, זה השער יבוא כל משכיל לחקור [__], וזאת חקת כל דולה תבונות ממים עמוקים... נא עשו אדני כסף להקים עליהם עמודי חכמה אשר חצב, למען יחזק בתורת ה'...&quot;. המלצתו של וייזל כוללת גם דברי מליצה: &quot;ריע! ... יקרת בעיניי איש סופר נעמת לי דובר צחות...מי יתן שומע לי תערב עליו מליצתי כי אז תבקש ספרך...איש אל אחיו יאמרו קומה ונחזיק בו קציני עם וגדוליו הבו לו ברכה תרוה נפשו השוקקה כאפיקים בנגב קנו במחיר חכמה קחו מוסר ואל כסף&quot;. וחותם: &quot;פה דובר לכבוד דמחבר נפתלי הירץ וויזל&quot;.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">דברי שבח למחבר ולספר צורפו בראשית הספר: &quot;ויהי בראות הרב הגדול והוא פקיד נגיד ומצוה ומושלים בחכמות ומעלות ומדות אליו נלוה ה&quot;ה מוהרר יהודא ליב בהרב מו' שניאור ז&quot;ל את הכתר מלכות עד מהרה הריץ דברי בקסת הסופר ועל ענין המחבר הרים קולו כשופר ומדד בשעלו שירו ואמרי שפר...&quot;</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">שלוש ה&quot;המלצות&quot; כתובות כשיר. 
+
+&lt;strong&gt;ההמלצה הראשונה&lt;/strong&gt; חתומה כך: &quot;ממני תלמיד המחבר הקשור בו בעבותות האהבה לנצח יוסף בן לא&quot;א כ&quot;ה יקותיאל זלמן בראטיבר במדינת אבער שלעזיען&quot;. אל אותו יוסף מקדיש המחבר את &quot;&lt;ins&gt;אזכרת אהבה&lt;/ins&gt;&quot; בפתח הספר.
+
+&lt;strong&gt;ההמלצה השניה&lt;/strong&gt; חתומה על ידי &quot;ידידך ואוהבך לנצח, אלי' בהמנוח הגאון המפורסם מ&quot;ה יוסף מ&quot;מ ז&quot;ל אב&quot;ד דק&quot;ק קעמפנא&quot;
+
+&lt;strong&gt;ההמלצה השלישית&lt;/strong&gt; חתומה על ידי &quot;אוהב דבק מאת אהרן פאלאק&quot;. לפי ורסס, המחזה מלוכת שאול, עמ' 58, אהרון פולאק היה ידידו של האפרתי ומגיה בבית הדפוס.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">המלומד דוד פרידריך מעגרלין &quot;בא במכתב בהלל הגדול ובשיר המעלות אשר לדוד לפאר החיבור הזה ולשבחו לעיני כל העמים&quot; (כפי שכתוב בשער הספר). מדובר בקטע בלטינית  שנוסף לאחר עמוד שער אף הוא בלטינית (משמאל).</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2281</field>
+		<field name="revision_id">2281</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">מאחורי עמוד השער:
+&quot;מקום ההקדמה הכתיבה והחתימה למאשרי דרך תמימה&quot;. על החתום: &quot;ב.ד אחי אמו יהוד הלוי&quot;.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">מכתב ההמלצה שלו מופיע בעמ' מס' [3] , ולאחריו מכתב התשובה של סטנוב</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">לאחר דברי ההקדמה של בוכנר, ישנם שני שירים לכבוד בוכנר וספרו:
+אחד מאת &quot;ברוך בן יונה&quot;, והשני: 
+&quot;השתפכות נפש על ספר זבד המליצה&quot; - &quot;מאת אוהב נאמן כל אוהב חכמה ודובר צחות יהודה בן יונה לבית ייטלש.
+בסוף הספר ישנו &quot;שיר נחמד מן נכד דודו של המחבר הבחור רך בשנים שפתותיו שושנים דיבר צחות מו&quot;ה דובער גינצבורג נר&quot;ו&quot;. אותו כותב חותם: &quot;הבחור בודער במ&quot;ו אביגדור גצבורג&quot;.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">מדובר בקטע קצר, &quot;מליצת הגבירים והשרים המפורסמים, הלא המה הפרנסים ומנהיגים דמדינות פרייסן&quot;. בדבריהם משבחים את המחבר כרב גדול, שידיו רב לו בים התלמוד ובפלפלא חריפתא, ומלבד זאת נתן ה' לו לשון למודים לשון מדברת צחות בטוב טעם ודעת ורוח המקום ורוח הבריות נוחה הימנו&quot;. דומה כי פתחו לפניו את ביתם, וקוראים לאחרים לעשות כמוהם ולתמוך בו. (עמ' 3 לא ממוספר)</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">ברכתו של דוד פרנקו מנדס מוגדרת כ&quot;ברכת &lt;ins&gt;הדיוט&lt;/ins&gt;&quot;.
+יצחק פרידלנדר הוא בנו של יהודה ליב. וייזל מציגו כ&quot;אהובי ידיד נפשי ה&quot;ה הבחור התורני המשכיל איש מהיר במלאכתו...&quot;</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">בעמוד האחרון של הספר, לפני הלוחות</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">1) מעין המלצה תחת הכותרת הבאה: &quot;זאת עצה היעוצה מאת הרב הגדול... יעקבקא סג&quot;ל לנדא בן הגאון מורנו ורבנו מו' יחזקאל ז&quot;ל אב&quot;ד דק&quot;ק פראג כאשר נועצתי אתו בדבר הדפסת ספר לשון למודים&quot;.
+2) ההמלצה השניה היא עבור רמח&quot;ל, מאת רבו ישעיה באסאן.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">דברי שבח מאת נפתלי הירץ וייזל הופיעו בכרך ב', ספר שמות.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2348</field>
+		<field name="revision_id">2348</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">המלצתו: &quot;מהלל ריע&quot;. כולל שיר.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2349</field>
+		<field name="revision_id">2349</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">המלצה בכרך אחר.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2350</field>
+		<field name="revision_id">2350</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">המלצה בכרך אחר.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2351</field>
+		<field name="revision_id">2351</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">המלצה בכרך אחר.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">מכתב ש&lt;ins&gt;&lt;strong&gt;מנדלסון&lt;/strong&gt;&lt;/ins&gt; שלח למחבר בעניין הספר הודפס בתוך הקדמת המחבר. במכתבו מדגיש מנדלסון כי הספר &quot;רצוף אהבת הדת האמתי ויקר התורה והמצות ואם ישקיפו חכמי הדור על אבדון החכמה והמדות מבינינו אין ספק שיתנו יד ויסכימו שיחוקו מיליו&quot;. הספר מכוון לכל &quot;משכיל וירא ה''. 
+המחבר גם אומר בהקדמתו: &quot;שמעו ובאו כמה חסידי הפילסופים אותם שאינם מכת החונפים מצאו את הנטועים טובים ויפים ואמרו יתן ה' וירבו כאלו הספרים לאלפים&quot;.
+&lt;ins&gt;&lt;strong&gt;יוסף עשווא&lt;/strong&gt;&lt;/ins&gt;: כותב בסוף הספר: &quot;חסדי ה' אודה כי גמר על ידי הגהת ספר בית יהודה, ועתה לכבוד הרב המחבר אומר ואדבר שיר...&quot;
+יש שיר נוסף מאת ידידו של המחבר, &lt;ins&gt;&lt;strong&gt;אריה&lt;/strong&gt;&lt;/ins&gt;... לדברי פיינר (מהפכת הנאורות, עמ' 45) הודפס בראש הספר שיר מאת וייזל, אך לא ראיתיו בעותק שבדקתי.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">ההמלצות באות בהמשך להסכמה שניתנה על-ידי דמות תורנית. הן ככמעט ואינן פונות ישירות אל הקורא, אלא מופנות אל המחבר עצמו ומשבחות אותו, את יצירתו, וכן את יצירותיו הקודמות. 
+
+&lt;strong&gt;המלצה ראשונה&lt;/strong&gt; באה תחת הכותרת: &quot;הקדמת ריע המחבר&quot;. נכתבה ע&quot;י: &quot;הרבני המופלא חכם וסופר ומושלם במעלות מוה' הילל ברי' דרב שמואל סופר ונאמן דק&quot;ק טיקטין והגליל&quot;
+
+&lt;strong&gt;ההמלצה השניה&lt;/strong&gt; מורכבת בעיקר משיר מחורז , בן 2 עמודים. נכתבהה ע&quot;י: &quot;הרבני המופלא בתורה המשורר שלשלת היוחדי' מו&quot;ה אלי[הו] בהגאון אב&quot;ד מקעמפנא&quot;.
+
+&lt;strong&gt;המלצה שלישית&lt;/strong&gt; תחת הכותרת &quot;מתן תודה&quot;, גם כוללת שיר מחורז בן 2 עמ'. נכתבה ע&quot;י &quot;אוהבך י--ס&quot;ס בפראג&quot;. [לפי זהר, עוללות מבציר, עמ' 26 (הערה 53), היה זה ככל הנראה המשכיל יהודה ייטלס (1773 - 1838), אחיו של ברוך ייטלס.]</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">בסוף הספר, לאחר &quot;מפתח הפרקים&quot;</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">בהקדמתו, שהיא גם מעין המלצה לספר, כותב וייזל כי המתרגם &quot;בקש לשמוע גם משפט לבי על זה, ואם תישר המלאכה בעיני, אהיה לה גם אני מליץ אחד מני אלף להגיד לבני אדם ישרה&quot;. מכיוון שמנדלסון הלך לעולמו לפני הבאת הספר לדפוס, מעיד וייזל על שביעות רצונו של מנדלסון ממלאכת התרגום. (עמ' שני בהקדמה)</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">ברוך ייטלש מדגיש את תועלת הספר והתרגום  ל&quot;בחורים אשר לא הורגלו בדרכי למודים האלה&quot;. הוא משבח את מלאכת התרגום ומדגיש את מעלותיה של &quot;חכמת ההגיון&quot;. יהודה ייטלש עוד מוסיף: &quot;למען יוכלו המלמדים לערוך דבריהם לפני התלמידים בשפה ברורה&quot;, ופונה בקריאה אל &quot;אחי המכירים אותי! למלאות ידיכם אחרי... נא אל תמנעו עצמיכם מן ההגיון, הביאו ברכה בבתיכם!&quot;</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_recommendations_notes_value">בעמוד אחרי ההסכמה:
+&quot;ואלה דברי אצילי ישראל השרים והסגנים במע&quot;לה ראשונה הפקודים פקודי העדות יושבי בכסאות השררה בק&quot;ק האשכנזים פה אמשטירדם... על דבר שאלתו [של פרנקו מנדס] דברתי אל האלופים פרנסים לאמר לחכמי קהלתינו לכתוב הסכמה על חבורו מגילת יהודית ואלופירניס ובזה אשיב שזה לא לצורך כי המפורסם אינו צריך ראיה. אבל זאת צריך לדעת שהפרנסים יקחו כל א' וא' מגילה כפי המקח הידוע ובזה אתן רשות למר לכתוב בפרוטרוט השמות של הפרנסים על הנייר ובודאי יקחו יחידי סגולה הרבה מזה, ועלי לשרתו כדאפשר&quot;. 
+החותם (גם בתקנ&quot;ב): הד&quot;ש, &lt;strong&gt;ליב מינדן.&lt;/strong&gt;
+
+לאחר מכן יש דברי שבח מאת &lt;strong&gt;חיים בינגר&lt;/strong&gt;, כולל שיר לכבוד פרנקו מנדס וספרו.
+
+כמו כן, שיר שבח מאת &lt;strong&gt;דוד בן לא&quot;א מ&quot;ו כמוה&quot;רר רפאל מילדולה&lt;/strong&gt;.</field>
+		<field name="field_recommendations_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

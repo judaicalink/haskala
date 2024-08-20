@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="node_type">
+		<field field="type" type="varchar(32)" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="name" type="varchar(255)" null="NO" key="" default="" extra="" />
+		<field field="base" type="varchar(255)" null="NO" key="" default="<null>" extra="" />
+		<field field="module" type="varchar(255)" null="NO" key="" default="<null>" extra="" />
+		<field field="description" type="mediumtext" null="NO" key="" default="<null>" extra="" />
+		<field field="help" type="mediumtext" null="NO" key="" default="<null>" extra="" />
+		<field field="has_title" type="tinyint(3) unsigned" null="NO" key="" default="<null>" extra="" />
+		<field field="title_label" type="varchar(255)" null="NO" key="" default="" extra="" />
+		<field field="custom" type="tinyint(4)" null="NO" key="" default="0" extra="" />
+		<field field="modified" type="tinyint(4)" null="NO" key="" default="0" extra="" />
+		<field field="locked" type="tinyint(4)" null="NO" key="" default="0" extra="" />
+		<field field="disabled" type="tinyint(4)" null="NO" key="" default="0" extra="" />
+		<field field="orig_type" type="varchar(255)" null="NO" key="" default="" extra="" />
+
+		<options name="node_type" engine="InnoDB" version="10" row_format="Dynamic" rows="8" avg_row_length="2048" data_length="16384" max_data_length="0" index_length="0" data_free="0" create_time="2024-07-08 12:43:32" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Stores information about all defined node types." />
+	</table_structure>
+
+	<table_data name="node_type">
+
+	<row>
+		<field name="type">book</field>
+		<field name="name">Book</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_book</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">book</field>
+	</row>
+
+	<row>
+		<field name="type">edition</field>
+		<field name="name">Edition</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_book</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">edition</field>
+	</row>
+
+	<row>
+		<field name="type">mention</field>
+		<field name="name">Mention</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_mention</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">mention</field>
+	</row>
+
+	<row>
+		<field name="type">page_element</field>
+		<field name="name">Page Element</field>
+		<field name="base">node_content</field>
+		<field name="module">page_element</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">page_element</field>
+	</row>
+
+	<row>
+		<field name="type">person</field>
+		<field name="name">Person</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_people</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">person</field>
+	</row>
+
+	<row>
+		<field name="type">preface</field>
+		<field name="name">Preface</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_book</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">preface</field>
+	</row>
+
+	<row>
+		<field name="type">production</field>
+		<field name="name">Person Production Details</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_book</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">production</field>
+	</row>
+
+	<row>
+		<field name="type">translation</field>
+		<field name="name">Translation</field>
+		<field name="base">node_content</field>
+		<field name="module">haskala_book</field>
+		<field name="description"></field>
+		<field name="help"></field>
+		<field name="has_title">1</field>
+		<field name="title_label">Title</field>
+		<field name="custom">0</field>
+		<field name="modified">0</field>
+		<field name="locked">1</field>
+		<field name="disabled">0</field>
+		<field name="orig_type">translation</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

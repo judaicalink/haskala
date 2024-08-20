@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_mention_general_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_mention_general_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_mention_general_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_mention_general_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="29" avg_row_length="564" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:01" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 75 (field_mention_general_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_mention_general_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">Liste der Schüler:
+
+aus Breslau:
+Bie, Abraham; Sontheim, Hermann; Michelsohn, Hermann; Frankfurther, I.; Cohn, L.; Ostertag, H.; Pick, S.; Milch, L.; Pulvermacher, M.; Friedländer, I.; Fränkel, S.
+
+aus Kempen:
+Goldschmidt, B.; Türk, M.
+
+aus Lask:
+Goldblum, Nathan
+
+aus Posen:
+Scherk, Heinrich
+
+aus Rosenberg:
+Strasburger, S.
+
+aus Warschau:
+Flatau, I.
+
+aus Writzen:
+Zadik, I.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">weitere nicht genauer ermittelte Subskribenten:
+Der Hochwohlgebohrne Herr von Behr in Kurland, von Firkß. Erbherr auf Kandlen in Kurland, von Firkß, Erbherr auf Nogalen und Fischreden in Kurland, von Gohr, Erbherr auf Bechhoff und Münden in Kurland, von Roschkul Erbherr auf Bebben in Kurland, von Nolde, Erbherr auf Kleingramsden in Kurl., Emmerich von Offenberg in Jülgen in Kurl., von Schlippenbach in Kurland, Herrn Secretair Aune in Königsberg, Einnehmer Ballath, Münzrendant Cämrer in Königsberg, Studiosus Friedmann in Königsberg, Münzkassierer Gantesweiler, Kontroleur Goldbeck in Königsberg, Studiosus Goldschmidt in Königsberg, Goldstücker in Kopenhagen, Kontroleur Gomme in Königsberg,
+Buchhändler Jakoby in Libau, Kandidat Kirchner in Kikurn in Kurland, Herr Kontroleur Kohnd in Königsberg, Negotiant Kunke, Buchhalter Landmann in Königsberg, Mendel, K. K. Arendator in Wieletzko, Negotiant P. in Königsberg, Kontroleur Pekock in Königsberg, Münzkassierer Schöne, Studiosus Siebert in Frecken in Kurland, Inspektor Sommer in Königsberg, Studiosus Theodor in Kbg., Inspektor Urbany in Kbg.,</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">ישנה כאן רשימה ארוכה, ולא זהה לזו שבספר שבעברית, שתוקלד על ידי אורית</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2028</field>
+		<field name="revision_id">2028</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">Liste der zu prüfenden Schüler:
+
+aus Königsberg:
+Jacob Marcus, 
+
+aus Breslau:
+Salomon Schweizer, Moritz Sachs, Jonas Dohm, Löbel Hildsbach, Mendel Werther, Löbel Dessauer, Louis Meyer Frankel, August Asch, Heinrich Caro, Ludwig Heimann, Louis Itzinger, Heinrich Wertheim, Löbel Levis, David Sington, Leopold Kalkstein, I. L. Dohm, Marcus Lauber, Elcan Heimann, Louis Frankfurter, Moritz Mark
+
+aus Inowraclaw:
+Ignatz Josephy
+
+Aus Lissa:
+Salomon Wiener
+
+aus Friedland:
+Abraham Friedländer
+
+aus Hundsfeld:
+Gustel Cohn</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2071</field>
+		<field name="revision_id">2071</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">Personal der Schule:
+
+
+Itzig, Isaac Daniel (Direktor)
+
+Müller, G.A.H.F. (franz.)
+
+Fayon, Franz (franz.)
+
+Herr Marot (franz.)
+
+Nogier, Louis (franz.)
+
+Cords, Georg (franz.)
+
+Bendav, Salomon (Inspektor)
+
+Rintel, Levin (Inspektor)
+
+Meyer, I. F. (Inspektor, Deutsch, Latein)
+
+Aronson, Dr. I. E. (Inspektor)
+
+Gralipp, Friedrich August (Deutsch, Geographie)
+
+Jakob, Israel (Gehilfe)
+
+David, Levy (Gehilfe)
+
+Cohen, Salomon Jakob (hebr.)
+
+Pinsk, Jakob (Unterlehrer)
+
+Jakob, Israel (Unterlehrer)
+
+Herr Müller (Mathemathik, Naturkunde)
+
+Beschütz, Abraham Philipp (Mathematik)
+
+Züllichauer, Heymann (Schönschreiben)
+
+Isaak Baruch Aron (Zeichnen)
+
+
+Aron Ezechiel, Königsgraben 4 und 5 (Pensionsanstalt)</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2112</field>
+		<field name="revision_id">2112</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">על שער הספר נרשמו תשבוחות למלך פרוסיה פרידריך וילהם</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">(continuation of list of subscribers from above)
+
+
+&lt;ins&gt;rest of subscribers&lt;/ins&gt;:
+
+
+(Breslau) פרענקל, גיטל
+
+(Prague) פרענקל, ליב
+
+(Berlin) פרענקל, משה בר&quot;מ
+
+(Breslau) פרענקל, עדל
+
+(Berlin) צדוק ק&quot;ב
+
+(Königsberg) צעלאנט, יוחנן
+
+(Berlin) צפור אשת ר&quot;ב ברא&quot;ד
+
+(Berlin) קאך, הירש
+
+(Frankfurt am Main) קאן, משה בר&quot;ל
+
+(הרופא, Breslau) קארף
+
+(Breslau) קוא (האחים)
+
+(Prague) קוא, זכרי'
+
+(Vienna) קוא, חיים
+
+(Prague) קוא, משה
+
+(Königsberg) קורלענדר, בער בר&quot;מ
+
+(Königsberg) קורלענדר, הירש
+
+(Hamburg) קיק, מענקי
+
+(Amsterdam) קליף, מאיר
+
+(Brody) קלמן
+
+(Berlin) קרעלינגר, לאזי
+
+(Königsberg) ריז, הענדל
+
+(Berlin) ריז, וואלף
+
+(Berlin) ריז, ישראל
+
+(Berlin) ריזל אשת אהרן יורש
+
+(Frankfurt am Main) רייז, ליב בר&quot;א
+
+(Frankfurt am Main) רייז, מיכל
+
+(Amsterdam) רינטל, דוד, בארהיים
+
+(Frankfurt am Main) רענגאנם, וואלף
+
+(Strasbourg) רפאל א&quot;ש
+
+(Frankfurt am Main) רפאל קיצינגן
+
+(Berlin) שוועד, הירש
+
+(Berlin) ליפמן שטורם
+
+(Berlin) שטורם, רבקה
+
+(Frankfurt am Main) שייאר, אנשל
+
+(פו&quot;מ, Bielefeld) שיף, יאקב
+
+(Vienna) שלמה הילדסהיים
+
+(Breslau) שלמה העללישויא
+
+(Breslau) מיכל שלעזינגר
+
+(Amsterdam) שלעזינגר,משה
+
+(לעוורטאף) שמואל
+
+(Königsberg) שמואל היידלברג
+
+(Dessau) שמואל וואלפן
+
+(Postdam) שמואל ליסא
+
+(Königsberg) שמואל פאצדאם
+
+(פו&quot;מ, Prague) שמואל ק&quot;וו
+
+(Bleicherode) שמחה ב&quot;ר
+
+(Breslau) שמחה ב&quot;ר וואלף
+
+(פו&quot;מ, Breslau) שמחה ברעסלויא
+
+(Königsberg) שמעון בר&quot;ז
+
+(Königsberg) שמעון בר&quot;י
+
+(Königsberg) שמעון בר&quot;ש ברלין
+
+(Strasbourg) שמעון הארבורג
+
+(Berlin) שמעון העכם
+
+(Berlin) שמעון וויצנהויזן
+
+(Bonn) שמעון מערגנטהיים
+
+(Frankfurt am Main) שמעון פירדא
+
+(Königsberg) שמעון פ&quot;ל
+
+(Kassel) שרייבר, אברהם</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">ככל הנראה, ההסכמות בדויות (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;).</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בסוף הספר מופיעים שלוש שמות. כך כתוב:
+&quot;נרשמו פה השמות מן דיא פראוויזיאנעלה דירעקטערן ואלו הן שמותם
+ר' הירץ ב&quot;ר הירש לוי רופא פרעזידענט
+ר' הירץ ב&quot;ר ליב ברומעט
+ר' משה ב&quot;ר קלמן שוחט&quot;</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמוד השער מוזכר לשבח השליט בארון פון הוים: &quot;תחת ממשלת האדון החכם החסיד קיניגליכר פרייסישר ווירקליכר גהיימט עטטס קריגס אונד דירעגירנדר מניסטר איבר דיא שלעזישי לנדי דעס האך וואהל גבאהרנן הערן באראן פאן האוים עקסעלענץ&quot;.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמוד השער מוזכרים שליטי המקום:
+&quot;אונטר דיא רעגיהרונג דער פרויא אנטאינעטע לוויזע אמאליע פערוויטוועטע שטאטס מגיסטר גרעפין פאן האויום געבאהרנע גרעפין פאן דיהרן עקצלענץ&quot;</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">גבי דר' בעללערמאן נאמר (עמ' 9):
+דירעקטאר דעס בערליניש= קעלינישען גימנאזיומ'ס אונד דער דאפאן אבהענגיגען שולען...</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמוד האחרון של הספר מופיעות הזהרות על הדפסות הספרים הללו, ומשתמשים שוב בשמות המסכימים שהופיעו במחזור ליום ראשון ושני של פסח</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">רשימת מנויים ארוכה מופיעה אחרי ההקדמות (עוד לא הכנסתי אותה)</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בראש ההסכמה ש צבי הירש נרשם &quot;אב&quot;ד פה ברלין והמדינה&quot; (דף ב')
+
+המחבר מודה לבנימין האלברשטאט ולאישתו לביאה, על כך שארחו אותו בביתם:
+&quot;אתם מטיביי! אשר ביום התעה אלהים אותי מביתי, שלח מלאכות לפני לתור לי מנוחה בביתכם הפתוחה לרוחה... הכינותם לו עלית קירושמתם שם מטה כסא ומנורה, את לחמכם אכל ואת שקוייכם שתה...&quot;. אך הוא לא סיפר למטיביו על הספר שהוא כותב, ולא ביקש את רשותם. הוא מגיש להם את הספר כ&quot;מנחת תודה&quot;. (עמ' ה')</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">ראו &quot;מודעה&quot; בעמוד האחרון של הספר:
+&quot;ספר מודע לבינה, מצוי לקנות בק&quot;ק ברלין אצל הקצין היקר מהו' דוד פרידלענדר אוצל הקצין הנעלה מהו' שמעון פייט. בק&quot;ק פפ&quot;ד אצל הרופא מומחה המופלא מהו' הירץ במהו' מורא כ&quot;ץ. בק&quot;ק בראד אצל הקצין היקר המופלא מהו' יעקוב א בן הגאון מהו' יחזקאל אבד&quot;ג דק&quot;ק פראג. ובק&quot;ק מעזריטש דליטא אצל הקצין הנעלה המשכיל מהו' גדליה' במהו' זיסקינד...&quot;</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2323</field>
+		<field name="revision_id">2323</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמוד האחרון לספר מוזכרים שמותיהם של שני פועלי דפוס: הירש בן משה איסטרייך מפיורדא, והעגלי בן עזהל??(המילה מחוקה למחצה) משנאטיך.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2353</field>
+		<field name="revision_id">2353</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בשער הספר מוזכר המושל:
+&quot;תחת ממשלת האדון הגדול החסיד יענראל מאייאר קוואליר סעמיאן גאוורילאוויך זאריץ יר&quot;ה&quot;</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בהקדמת המחבר מציין אופנהיים את מורו וואלף בוסקוויץ, אצלו למד תלמוד וגם מטה-פיסיקה, פיסיקה ומתמטיקה (דף ו').</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">שמות המגיהים מופיעים בעמוד האחרון של הספר</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">שם נותן ההסכמה השני לא ברור מתוך העותק בספריית פרנקפורט.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">הסכמות:
+
+- שמואל  זנוויל מצויין בהסכמות, כמי שגר בברנדנבורג. לא ברור האם מדובר בעיר או במחוז.
+
+- צבי הירש מלונדן - &quot;החונה פה שווערין&quot; (עמ' 2, מיספור שלי)
+
+-יעקב  א&quot;ש פייבל - &quot;החונה פה ק&quot;ק זלאטאווא&quot; (עמ' 2, מיספור שלי)
+
+
+על פי פישמן החתום &quot;שאול&quot; הוא בנו של ר' הירש לווין, רב פרנקפורט ע&quot;נ אודר
+(Fishman 1987, 107)</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בסוף הספר רשימת החברים בחבורת מצדיק הרבים, עמ' [6-7]</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2401</field>
+		<field name="revision_id">2401</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בתחתית ההקדמה רשום: 'עיקר ההקדמה הלא היא כתובה בקורת העתים בלשון הקודש. ושם תמצא הסכמות וגזירות מהגאונים הרבנים נר&quot;ו'. ההקדמה שכאן היא בת עמוד אחד בלבד, וחתומה על ידי המחבר.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">לאחר רשימת החותמים מתייחס המחבר לחותמים נוספים שלא הובאו בשמם &quot;ורבים אשר נחבאו אל הכלים מרוב ענותנותם&quot;</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">קלוזנר: הקדיש ספר רוח נכון לפרידלענדר. היה מקורב אליו מאד, ופרידלענדר תמך בו.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2447</field>
+		<field name="revision_id">2447</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמוד הראשון מוזכר אביו של יורש העצר: פרידריך</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמ' [2] שלאחר עמוד השער של שלושת הכרכים, מופיע קטע בשם &quot;אייניגע אפראבאטיכאנען&quot; 
+(&quot;Einige Approbationen&quot;)
+שבו שלוש המלצות שהן &quot;מעין הסכמות&quot; לספר, יחד עם ציון העובדה כי החתומים על ההמלצות - יהושע מליסא; אייכל, יצחק; ודוד פרענקל - הזמינו מראש עותקים של הספר. התאריך הרשום בתחתית ההמלצות של יהושע מליסא ואייכל, יצחק הוא תקס&quot;ב, משמע שהן צורפו למהדורה הראשונה. התאריך הרשום בתחתית המלצתו של דוד פרענקל הוא תקס&quot;ז, כלומר, המלצה זו מאוחרת יותר וצורפה רק למהדורה השניה.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mention_general_notes_value">בעמ' [2] שלאחר עמוד השער של שלושת הכרכים, מופיע קטע בשם &quot;אייניגע אפראבאטיכאנען&quot; 
+(&quot;Einige Approbationen&quot;)
+שבו שלוש המלצות שהן &quot;מעין הסכמות&quot; לספר, יחד עם ציון העובדה כי החתומים על ההמלצות - יהושע מליסא; אייכל, יצחק; ודוד פרענקל - הזמינו מראש עותקים של הספר. התאריך הרשום בתחתית ההמלצות של יהושע מליסא ואייכל, יצחק הוא תקס&quot;ב, משמע שהן צורפו למהדורה הראשונה. התאריך הרשום בתחתית המלצתו של דוד פרענקל הוא תקס&quot;ז, כלומר, המלצה זו מאוחרת יותר וצורפה רק למהדורה השניה.</field>
+		<field name="field_mention_general_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

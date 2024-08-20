@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_editions_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_editions_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_editions_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_editions_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="40" avg_row_length="1228" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:58" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 45 (field_editions_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_editions_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">Einzeldruck: Beilage zum Hameassef</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">מהדורת צילום: פריס 1968.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">Wird als &quot;dritte Auflage&quot; präsentiert, jedoch noch keinen Hinweis auf eine erste und zweite Auflage.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1982</field>
+		<field name="revision_id">1982</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">התרגום הודפס בהמשך באותיות עבריות (ראו: זמירות ישראל).</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">כנראה שלוש לפחות
+
+בתוך
+Jenaische Allgemeine Literatur-Zeitung (1806) 3. Jg, Bd. 3, No. 161, S. 63-64. 
+ישנה התייחסות למהדורה &quot;השלישית&quot; של אותו חיבור. ללא תאריך.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">עד עכשיו לא ראיתי מהדורות נוספות במקור, ש.ל. (06.2008)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2068</field>
+		<field name="revision_id">2068</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">Abdruck in Alexander, Isaak: Kleine Schriften, S. 81-112.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לפי מאמרו של רואיס על בנו של פפנהיים (ראו &quot;חוקר ומקורותיו&quot;), עמ' 187, הופיע החיבור בתרגום לגרמנית בברסלאו בשנת 1801. לא מצאתי עותק בקטלוגים הממוחשבים. (נטלי)
+
+על פי קטלוג בית הספרים הלאומי קיימת מהדורה שנדפסה בוינה בשנת 1860-לא ראיתי אותה. (חגית)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">וינוגרד מציין מספר מהדורות של &lt;ins&gt;איגרת אורחות עולם&lt;/ins&gt;, אך יש לברר האם מדובר בספרו של ישראל לנדא או בספרו המקורי של פריצול.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לפי פיינר, מהפכת הנאורות, עמ' 89, מנדלסון הביע מורת רוח מהעלמת שמו כמפרש, והוציא כעבור זמן מה מהדורה חדשה, ביוזמתו של סטודנט לרפואה בברלין, דב בער מדוהלינוב. 
+על מהדורה שניה זו ראו: שם, הערה 75.
+יצחק סטנוב הוציא ספר זה פעם נוספת (לפיו, מהדורה רביעית) ב- 1795 בברלין, עם פרוש משלו.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">מהדורת וינה כוללת את 4 ה&quot;מכתבים&quot; של &quot;דברי שלום ואמת&quot;.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2139</field>
+		<field name="revision_id">2139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">הספר יצא במהדורות רבות ותחת שמות של מחברים ומאיירים רבים. ראו על כך קוגמן 2000</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">ישנן מהדורות נוספות.
+
+אחת המהדורות, עם תוספת באור, היא זו של מאיר אלחנן פירדא.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">הספר נכלל מאוחר יותר בתוך &lt;ins&gt;מנחה טהורה&lt;/ins&gt;, ספר הכולל את ספרי תרי עשר הנביאים, לצד תרגום גרמני ובאור.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">הספר יצא שוב בלבוב, תקנ&quot;ו, ובאלטונא : שמואל ויודא בון.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">נוסח עברי של הספר היה בלתי ידוע והודפס לראשונה ב- 1955 ע&quot;י דב ויינריב. מירון, עמ' 5.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לפי וינוגרד, במהדורת למברג המאמר הופיעה בתוך: פריצול, אברהם, איגרת אורחות עולם. יש לציין כי החיבור הופיע בתוך אגרת ארחות עולם גם במהדורתו הראשונה, פראג תקנ&quot;ג.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לפי המצוין בקטלוג הממוחשב של הספריה הלאומית ואצל וינוגרד, ישנן שתי מהדורות של אותו ספר: באחת הטקסט הגרמני מופיע באותיות עבריות, בשניה - באותיות גותיות. העותק ששימש למילוי שאלון זה הוא, אם כן, מסוג אחרון זה.
+עיבוד של הספר להולנדית (העיבוד כולל כנראה גם את החלק השני של הספר). כך לפי &lt;strong&gt;פיליפסון&lt;/strong&gt;, &lt;ins&gt;ביוגרפיות&lt;/ins&gt;, חלק ב',עמ'  260.
+&quot;מודע לבני בינה.
+Zijende een nieuw hebreeuwsch spel, ...&quot;, 2 Bdchn., Amsterdam 1817
+&lt;strong&gt;וינוגרד&lt;/strong&gt; מונה מהדורה זו בין מהדורות הספר (אמסטרדם תקע&quot;ז) ומפרט: &quot;עם הולנדית&quot;.
+ספר זה אכן קיים גם בספריה הלאונית: 
+R0=76A 534</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">עיבוד הספר &lt;strong&gt;מודע לבני בינה&lt;/strong&gt; להולנדית כולל כנראה גם את החלק השני של הספר. 
+מהדורה זו יצאה באמסטרדם 1817.  (field:מודע לבני בינה יצא במהדורה מיוחדת עם הולנדית במקום גרמנית. מהדורה זו כוללת (ככל הנראה) גם את החלק השני של הספר.)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2220</field>
+		<field name="revision_id">2220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">הספר הודפס מחדש (מהדורת צילום) יחד עם ספרים אחרים (כגון תומר דבורה למשה קורבואירו ואחרים) בירושלים תשמ&quot;ז.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לדברי קלוזנר (היסטוריה, א', 187), המליצה &quot;נדפסה פעם אחת בווינה בלא שנת הדפוס ופעם שניה - בלא מקום הדפוס ושנתו, וצייטלין משער משום-מה, שההוצאה השניה היא ברסלאו 1800. הוצאה שלישית בצירוף שיר לפורים מתוך הספר &quot;גפן יחידית&quot; לזאב רוזאני נדפסה בשנת תקע&quot;ו (1816), כנראה, בווילנה. על פי רוב נדפסה ה&quot;מליצה לפורים&quot; בתור נספח ל&quot;מסכת פורים&quot;, לבוב תר&quot;ח ותרי&quot;ד, קראקה תר&quot;ם, ועוד [פרידברג עמ' 386-387] וכן באה בכל בו לפורים&quot; של אברהם מנדל מוהר, לבוב תרט&quot;ו/תרכ&quot;ד.&quot;</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2250</field>
+		<field name="revision_id">2250</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">במהדורות רבות נוספו דינים, הלכות בדיקת חמץ, פירושים, וכו'. 
+
+&lt;ins&gt;מהדורת תקמ&quot;ו&lt;/ins&gt;:החל ממהדורה שניה זו, התווסף שמו של משה מנדלסון לכותרת הספר, והוא מוצג כ&lt;ins&gt;מתרגם&lt;/ins&gt;, בזו הלשון: &quot;...אויפ'ס נייע אינס דייטשע איברזעצט פ'אן החכם ר' משה מדעסויא אונד מיט אנמערקונגן פרזעהן פאן יואל בריל&quot;. כפי שמציין ירושלמי, הגדה והיסטוריה, מס' 81, מנדלסון לא היה המתרגם, כי אם ברי&quot;ל. לפי ירושלמי, ייתכן כי הוספת שמו של מנדלסון נועד להוסיף יוקרה לספר ולהגדיל את מכירתו.  
+לא צוין &lt;ins&gt;מקום ההוצאה&lt;/ins&gt; (כתוב רק &quot;כמו שנדפס בברלין&quot;), אך לפי ירושלמי, שם, מהדורה זו יצאה בפיורדא, היא:
+Fürth
+ממהדורת תקמ&quot;ו נעלמם אחרית הדבר, &quot;קונטרס שיח יצחק&quot; מאת יצחק סטנוב, וכן ההערות שהוא הוסיף בשולי העמודים לאורך ההגדה. גם הטיפוגרפיה משתנה: במקום להציג את הטקסט הגרמני בעמוד נפרד מול הטקסט העברי, מוצגים עתה שני הטקסטים במקביל באותו עמוד (בצורה שדומה אולי יותר לביאור?)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">סטנוב הוציא מהדורה נוספת של הספר בתקנ&quot;ג (&lt;strong&gt;פרו ורבו ומלאו&lt;/strong&gt; את הארץ), ברלין:
+&quot;ספר אגרת הקדש ששלח הרב הגדול המקובל הקדוש הגאון  רבנו משה בר נחמן זצ&quot;ל לאחד החברים בעניין חבור האדם אל אשתו כדי לזכות בבנים בעלי הוראה ראוים לקבל עול מלכות שמים נדפס בבסיליאה בשנת ש&quot;ם מרוב הזמן נאבדו, וחבל על האבדון ולא משתכחין אפי' אחד במדינה ורבים אשר כלתה נפשם לראות זרע אמת ולא ילדו לבהלה צמאה נפשם לשתות משוקת מזמתו ע&quot;כ לזכות הרבים נדפס עוד הפעם.&quot; 
+ההקדמה: (ללא כותרת) - הקדמה קצרה בת כמה שורות המציגה את הטקסט כטקסט מכתבים עתיק שכתב הרמב&quot;ן לחברו, ומציגה את חשיבותו: &quot;כדי שתוכל ללכת בדרכי אורה... כדי שתנצל מדרך האפלה...&quot; (דף ב'). לא ברור אם חלק מן הדברים נאמרו במקור או לא. בראש דף ב' רשום:
+&quot;אגרת ששלח הרב רבי משה בר נחמן ז&quot;ל לאחד החברים...&quot;
+הטקסט עוסק בהתעברות והולדת ילדים ובקשר שלה לעולם החומר, כגון, אכילה, וגם לעולם הרוחני של הקבלה. למשל בדף ו' נאמר כי מי שחושב מחשבות רוחניות בזמן קיום יחסי מין, האור העליון יימשך לזרע שלו.
+הר הצופים BM 526 S38 Z6
+יש לי צילום דיגיטלי של הספר
+- Bibliography of the Hebrew Book
+
+שנת ההוצאה בגימטריה: שנת פ'ר'ו' ו'ר'ב'ו' ו'מ'ל'א'ו' את הארץ 
+ז דף. 8°.
+הערות:
+בעמ' האחרון שיר בשבח הספר. פותח: אגרת הקדש קצרה יריעתך. המשורר הוא יצחק הלוי מסטנאב. 
+נדפס עם קונטרס מספר הזהר חיבורא תניינא, מאת יצחק הלוי מסטנאב, ברלין [תקנ&quot;ג]. 
+
+Language עברית  
+מחברי  טקסט ישן: 
+משה בן נחמן (רמב&quot;ן).[מיוחס לו]
+Gikatilla, Joseph, 1248-ca. 1305 - ג'יקאטיליה, יוסף בן אברהם
+
+עיין על כך אצל:
+שמואל ווינער, קהלת משה, עמ' 23, מס' 194.
+הספר נחתם בשיר המהלל את ספרו של הרמב&quot;ן. מחבר השיר אנונימי:
+&quot;בראות אחד השרים, תומת החבורים, אז ישיר אלה השירים&quot;
+הספר מורכב מחמישה מכתבים, שכל מכתב מכונה &quot;פרק&quot;.
+---------------------------------------
+
+קיימת גם מהדורה נוספת של ספר זה שיצאה על ידי מחבר נוסף בתקופת המחקר שלנו:
+גרשון בן אליעזר
+ 
+? ספר אגרת הקודש /... חברו ... כמהר גרשון בהרר אליעזר סג&quot;ל, אשר ראה כל הדרכים וכל הגלילות של ארץ הקדושה ...
+
+בלאומית העברית תחת סיגנטורה: 
+41  718A
+?     הוראדני : [חמו&quot;ל], תקנ&quot;ו. [13] דף ;  8.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">החיבור הודפס שוב כקונטרס, &lt;ins&gt;ללא הפתיחה&lt;/ins&gt;. (ירושלים: אקדמון, תשל&quot;ב)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">קלויזנר (עמ' 135) מציין לרוב מקומות ושנים שונים להדפסות חוזרות.
+
+שינויים במהדורות השונות:
+במהדורת וורשא 1888 צורף לספר &quot;מאמר חקור דין&quot;.
+מהדורת 2002 כוללת הסכמה רבנית (לעומת המהדורה הראשונה, שאין בה הסכמות). וייזל מכונה על-ידי המביא לדפוס &quot;תלמיד חכם מובהק&quot; (עמ' יא)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">(צריך לבדוק אם יצאו עוד מהדורות)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">הספר הודפס מספר פעמים במהלך התקופה, בשילוב עם ספרים אחרים, לפי בחירתו של המביא לדפוס. כך למשל:
+
+1)   זכר רב : ... בו שרשי לשון הקודש... / אשר יסד וחקר... בנימין מוספיא... ; והיה... חתום וסתום עד שקמתי... ירחמיאל המכונה פלק בן כה&quot;ר נתן כהן... ופתרתי אותו בל&quot;א, והצבתי ציונים על כל שורש מקומו בתנ&quot;ך, ברין תק&quot;ן.  
+
+2) נ&quot;ה שולמן, זכר רב..., שקלוב 1804. הוציא את הספר יחד עם:
+המצאה חדשה מדבר שין, מאת פיזא, משה בן יהודה
+ניתוח מהדורה זו של שולמן אצל:
+Fishman, The Jews of Shklov, pp. 68 ff</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">במהדורה נוספת (תקס&quot;ה) צוין בכותרת: &quot;ויקם אחד [רנה&quot;ו]...והעתיקו אף הוא באר אותו...ועתה נדפס פעם שני בבאור קצר ומספיק [מאת אורי צבי רובינשטיין בן מרדכי]&quot;</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">אצל וינוגרד מופיע ספר זה גם תחת למברג (תקמ&quot;ד).</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">מהדורות רבות, כולל עיבוד ליידיש.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לפחות אחד הספרים הכלולים בספר זה, &lt;ins&gt;ספר יונה&lt;/ins&gt; בתרגומו וביאורו של יואל ברי&quot;ל, פורסם קודם לכן. ראו רשומה נפרדת עליו.
+פיליפסון מציין כי הספר זכה להצלחה רבה וכי הודפס מחדש בווינה.
+
+כמו כן, תרגומים ובאורים אלה הודפסו ככרך 7 של &quot;מנחה חדשה&quot; (וינה 1809). כפי שמציין המדפיס שם (התנצלות המדפיס) התכוון להוציא תרגום וביאור חדש, אך בלחץ הקונים שביקשו כי ישלים את מלאכתו במהרה נאלץ להדפיס מחדש  את העבודה שנעשתה &quot;מאנשים שלמים ומפארים ונדפס בדעסויא&quot;.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">לפי קרסל, ספרו זכה במשך מאה שנים ומעלה לעשרים מהדורות בערך. (קרסל ב', עמ' 785)
+וינוגרד: 16 מהדורות; קרסל: &quot;כעשרים במשך מאה שנים ויותר&quot;, מאז המהדורה הראשונה</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">בלאומית קיימת הדפסה נוספת של הספר שבה כרוכים יחד 3 החלקים של הספר, עם תיקונים לחלק ב' וג' שמופיעים בסוף. בכרך זה אחרית דבר המפרטת את חשיבות המטרות החינוכיות מוסריות-אמוניות של הספר ליצור פתח עבור הילד היהודי אל עולם התנ&quot;כ, שכן את נוסח התורה עצמו קשה ללמוד. אך אין המחבר מבקש להחליף את התורה, והוא מבקש מקוראיו להמשיך אח&quot;כ בלימודה ממקור ראשון.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2360</field>
+		<field name="revision_id">2360</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">הספר התפרסם במקור בשנת 1733, יצא שוב ב- 1750, 1755, 1769, 1787, 1805, ובשבע מהדורות נוספות.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">כבר במהדורה הראשונה הביע המחבר את כוונתו לפרסם את יתר האגרות אשר נשמטו מן המהדורה הנוכחית, כפי שאכן היה כעבור  חמש שנים. &quot;הנה בצרה זממי אשר זממתי ולא כאשר דמיתי כן הי', כי עתה חסר יבואנה לזאת אודיע למאהבי אם אשיג ליתר האגרות הכלוים ת&quot;י ר' זנוויל חנל [?], אז אבצע מעשי להוציאם לאור...&quot; (עמ' [פח] ב')</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">ישנן מהדורות נוספות (למשל פראג תקנו)</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2369</field>
+		<field name="revision_id">2369</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">המביא לדפוס מציין במודעה בתחילת הספר כי הוא &quot;נדפס רק פעם אחת שנת תע&quot;ח ולא נדפסו יותר משני מאות... מרוב חביבותי' היו הרבה קופצים עליו ואף גם עתה לא נמצא אפילו אחד בעיר ושנים במשפחה&quot;.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">ויינברג, תרגומו של מנדלסון, עמ' 198, הערה 3, מציין לגבי עלים לתרופה:
+It soon appeared transcribed in Gothic letters with notes and introduction, ed. Christian Gottlob Meyer,  Probe einer 
+jüdisch-deutschen Übersetzung der Fünf Bücher Moses…, 
+.Göttingen, 1780&quot;</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2391</field>
+		<field name="revision_id">2391</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">מהדורה נוספת (ייתכן כי קיימות מהדורות נוספות):
+ביאור מספיק על חד גדיא להבין משל ומליצה דברי חכמים וחידותם: עוז מבטחה להשיב לב בנים על אבותם: תקות בני עמינו בנ&quot;י ישובו לארמנותם: ואת ערובתם תקחו ז&quot;ה לבית לגלגלותם: יסדו וחברו הפילסוף האלקי ורופא הטבעי מהו&quot;רר אשר אנשיל זצ&quot;ל מק&quot;ק פפ&quot;דם יע&quot;א, לונדון תקמ&quot;ה.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2445</field>
+		<field name="revision_id">2445</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_editions_notes_value">במקביל למהדורה הנבדקה כאן, יצאה מהדורה נוספת, עם תרגום לגרמנית באותיות גותיות. למהדורה זו, מחודש אייר תקנ&quot;ג, שער בגרמנית:
+
+Gesang der Freude am Tage der Huldigung des Allerdurchlauchtigsten, Großmächtigsten und Allergnädigsten Königs und Herrn Friedrich Wilhelm des Zweiten in denen unter seine Regierung gekommenen Pohlnischen Provinzen. Gesungen von der jüdischen Gemeinde zu Posen, in ihrem und ihrer übrigen Brrudergemeinden Nahmen, welche den Königl. Preuß. Antheil von Pohlen bewohnen, zur Verzeigung ihrer theilnehmenden Freude und ihrer unverbrüchlichen Treue. Am 7ten May 1793.</field>
+		<field name="field_editions_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

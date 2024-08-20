@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_other_volumes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_other_volumes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_other_volumes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_other_volumes" engine="InnoDB" version="10" row_format="Dynamic" rows="53" avg_row_length="309" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:04" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 113 (field_other_volumes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_other_volumes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1970</field>
+		<field name="revision_id">1970</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">Erste Sammlung, Dritte Sammlung</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">&quot;המשך מאגרות החכם...&quot;: נכלל בתוך &quot;חותם תכנית&quot;</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">אוצר השרשים חלק ב'; אוצר החלקים חלק ג'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">אוצר החלקים חלק א'; אוצר החלקים חלק ג'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">אוצר החלקים חלק א'; אוצר החלקים חלק ב'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">למודי המישרים</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מסלת הלמוד</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">תפילות ישראל</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">גן נעול - הבית השני</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">גן נעול - חלק א'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">דברי ריבות - חלק ב'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">דברי ריבות - חלק א'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">רב טוב לבית ישראל; עין משפט; רחובות</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2127</field>
+		<field name="revision_id">2127</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">דברי שלום ואמת; רב טוב לבית ישראל; רחובות</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2128</field>
+		<field name="revision_id">2128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">דברי שלום ואמת; רב טוב לבית ישראל; עין משפט</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">[...]. Erstes Bändchen.</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">צווייטי אבליפרונג; דריטי אבליפרונג; פירטי אבליפרונג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ערשטי אבליפרונג; דריטי אבליפרונג; פירטי אבליפרונג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ערשטי אבליפרונג; צווייטי אבליפרונג; פירטי אבליפרונג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ערשטי אבליפרונג; צווייטי אבליפרונג;  דריטי אבליפרונג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מודע לבני בינה...
+Zweiter Theil</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מודע לבני בינה...
+Erster Theil</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">משלי אסף - חלק ב', ברלין תקנ&quot;ב; משלי אסף - חלק ג' (זמירות אסף) תקנ&quot;ג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">משלי אסף  - חלק א'; משלי אסף - חלק ג': זמירות אסף</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2268</field>
+		<field name="revision_id">2268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר מליץ יושר</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2269</field>
+		<field name="revision_id">2269</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר דברי יושר</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק שני מן ספר המדות לאריסטוטליס</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק ראשון מן ספר המדות לאריסטוטליס</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק שני מספר השרשים המכונה דברים אחדים</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2291</field>
+		<field name="revision_id">2291</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק ראשון מספר השרשים המכונה שפת אמת</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר זמירות ישראל</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק ראשון, חלק שלישי, חלק רביעי, ---</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק ראשון, חלק שני, חלק שלישי, --</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">חלק ראשון, חלק שני, חלק שלישי, חלק רביעי</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מלכים ב'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מלכים א</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">כרך ט' לא נרשם בתכנה בנפרד מכיוון שזו מהדורה חדשה של ספר משלי עם תרגום וביאור מאת אייכל, שיצא קודם לכן בנפרד.</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר מעשי יהוה - חלק ב'
+
+ספר מעשי יהוה - חלק ג': מספר מוסר ומצות י&quot;י הנהוגים. לקוטים מתורת משה ונוסדים על חקי הטבע ונשענם על משפט השכל. אלטונה, תקע&quot;ג.</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2342</field>
+		<field name="revision_id">2342</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר מעשי יהוה - חלק א'
+
+ספר מעשי יהוה - חלק ג': מספר מוסר ומצות י&quot;י הנהוגים. לקוטים מתורת משה ונוסדים על חקי הטבע ונשענם על משפט השכל. אלטונה, תקע&quot;ג.</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר תפארת אדם: חלק ב' ספר תפארת אדם</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ספר עמודי השמים</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">בינה לעיתים; צוף נובלות</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מלחמות ה'; צוף נובלות</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2389</field>
+		<field name="revision_id">2389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מלחמות ה'; בינה לעיתים</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">מלחמות ה'; בינה לעתים; צוף נובלות</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">קורות שנות קדם - חלק ב</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">קורות שנות קדם - חלק א': מחברת ראשונה, ספר ראשון</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ראשית למודים - חלק ב'</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">ראשית למודים - חלק א</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">שירי תפארת... מחברת שניה/שלישית/רביעית/חמישית/ ___</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">תורת לשון עברית - חלק ב; תורת לשון עברית - חלק ג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">תורת לשון עברית - חלק א; תורת לשון עברית - חלק ג</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_volumes_value">תורת לשון עברית - חלק א; תורת לשון עברית - חלק ב</field>
+		<field name="field_other_volumes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

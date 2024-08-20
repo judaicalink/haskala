@@ -1,0 +1,1100 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_target_general_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_target_general_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_target_general_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_target_general_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="87" avg_row_length="753" data_length="65536" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:27" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 180 (field_target..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_target_general_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">קהל יעד: קהל צרפתי. זו היתה תשובתו לשאלה שהציגה האקדמיה של מץ.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר אינו רושם במפורש מהם קהלי היעד שלו, אך השימוש שלו בעברית מול גרמנית מעיד כי פנה לקהל קורא העברית ולקהל קורא הגרמנית (יהודי ולא יהודי) גם יחד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1975</field>
+		<field name="revision_id">1975</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">הספר פונה ליהודים אורתודוקסיים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1993</field>
+		<field name="revision_id">1993</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר פונה ככל הנראה הן לקהל יהודי - לשיח יהודי פנימי על המשך השימוש בעברית בתפילה - הן לקהל לא יהודי, למשל כאשר הוא מבקש להוכיח ולהדגיש כי השימוש בעברית בתפילה ולימוד העברית הכרוך בו אינם פוגעים בתפקודם כאזרחי המדינה.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">Richtet sich vor allem an jüdisches Publikum, da er ausführlich seine Entscheidung, das Buch in lateinischen Letteren zu drucken, verteidigt, S. VI-XXI.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2067</field>
+		<field name="revision_id">2067</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">הספר מוקדש ל-
+Brüdern 
+של המחבר, כלומר ליהודים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בשער הספר נכתב: &quot;להאיר עיני התלמידים בביאור ענין ב' הקווים שזכר הרב המורה לשם ולתהלה...&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">זאת ניתן להסיק מן השימוש בעברית, אך אין פנייה ברורה לקהל יעד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר לא מציג במפורש את קהל היעד שלו, אך מן המבוא לספר (ראו חלון &quot;מבנה הספר&quot; שדה &quot;מבוא&quot;) עולה כי סיבת ההוצאה לאור של מילון לקסיקלי-דקדוקי זה היא רצונו להילחם בירידה בידיעת העברית ובחינוך הילדים לידיעת עברית. הוא פונה לשני הקצוות - המסורתיים ואלה שעברו אקולטורציה קיצונית - להבין את חשיבות העברית והחינוך לה: 'ע&quot;כ על תופשי התורה ומנהיגי העם להתעשת בדבר הזה... ולערוך מערכת חנוך בנים ולמודם בערך אשר מתישב על אנשי הדור...'.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו אצבע חלון &quot;קהל יעד&quot; בחלק א' של הספר</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו חלון &quot;הקדמה&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2091</field>
+		<field name="revision_id">2091</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">אין הפנייה גלוייה לקהל יעד מסויים, אך מעצם השימוש בעברית ובהולנדית והפנייה למלכות עולה כי התפילה נועדה לקהל יהודי ולקהל לא-יהודי גם יחד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בפתח הקדמת המחבר, מצויין כי חלק ב' של המקראה נועד לנערים מבוגרים יותר, מאשר אלה להם יועד חלק א' של המקראה (הקדמת המחבר, עמ' 1, מספור שלי)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמה רושם המחבר:
+&quot;...לעשות חבור קטן מזה, ללמוד וללמד מתוכו מוסר השכל ומליצה וחידות, לבחורי חמד ואנשים כערכי...&quot; [דף ד']</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">הפנייה לנשים עולה, בין היתר, מכך שהספר מוקדש לשתי נשים - אמו וחמתו של המתרגם.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמתו כותב המחבר: &quot;בעד חרכי חקירתי נשקפתי נבהלתי מראות שועלים קטנים מבני עמנו בשוקים וברחובות בכל פאות שתו בשמים תפארת מליצות העמים הרכות ממחמאות הבלי הגוים המגשי&quot;מים אלהיהם על ההרכים ועל הגבוהות אשר פיהם דבר שוא ועשתונות טמאות והורידו לארץ כבוד צחות לשון הקדש לשון למודים ורפואות... אז אמרתי שמעו נא המורים ותראו כמה וכמה טובה ויקרה לשוננו לשון עברים משפת אדום וישמעאלים מואב והגרים... &quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">&lt;p&gt;המחבר פנה לקהל יעד יהודי - זאת ניתן להבין מן השימוש בעברית ומפעולת ההדפסה מחדש של טקסטים עבריים עתיקים&lt;/p&gt;
+</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2139</field>
+		<field name="revision_id">2139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו הקדמת המחבר</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2140</field>
+		<field name="revision_id">2140</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר לא מציין מהו קהל היעד שלו, אך מעצם השימוש בגרמנית באותיות עבריות אפשר לשער שהפנייה היא לקהל יעד יהודי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לא מצאתי אמירות הכוונות לקהל יעד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לא מצאתי אמירות הכוונות לקהל יעד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לא מצאתי אמירות הכוונות לקהל יעד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לא מצאתי אמירות הכוונות לקהל יעד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2149</field>
+		<field name="revision_id">2149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר לא מציין את קהל יעדו, אך מן הנושא של הספר והשימוש בעברית ניתן להסיק כי קהל היעד הוא קהל עברי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר מתאר בהקדמה את אהבתו לחוכמות, ופונה לקהלו: &quot; ואתה הקורא משכיל עשה אזניך כאפרכסת. הסכת ושמע לכל דברי הספר. כי נעים כי תשמרם לך בבטנך ותמלא מעיך מפה אל פה כי אין בהם דבר נפתל וקשה העכול.&quot; (דף ב').</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">מטרת הספר, על פי המבוא, להילחם במגרעות של העם היהודי (ראו חלון &quot;מבנה הספר&quot;, בשדה &quot;מבוא&quot;).</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמה ובסיום הספר קיימת פנייה של המחבר לצעירים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר אינו מפנה את הספר לקהל, אך יש לשער שהוא פונה לקהל מורים ללעברית בדומה לזה שפונה הספר איתו הוא כרוך - &quot;עמודי הלשון&quot; (ראו פרטי ספר זה)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המביא לדפוס לא מצהיר מהו קהלו, אך העיסוק בדקדוק עברי מרמז על קהל יעד יהודי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2202</field>
+		<field name="revision_id">2202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בביאור שבעמ' א':
+... אמרתי...אחלקם ביעקב ואפיצם בישראל למען ילמדו נערי בני ישראל שפה ברורה ויראי אלהים ילמדו איך יראו את ה' וחכמי לב יוסיפו לקח...</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לקראת סוף המבוא, יוצאים וולפסון וברי&quot;ל נגד &quot;אנשים חכמים בעיניהם, אשר לא ידעו ולא יבינו במקרא מפורש כי אינם יודעים לדבר צחות לא בלשון הקודש ולא בשאר לשונות והמה מחברים ספרים בלשון עלגים ומגלים פנים בתורה שלא כהלכה להפוך דברי אלהים חיים ומאמרי חז&quot;ל הטהורים והנקיים לדברי תהפוכות וסרה ולקללות נמרצות על המעתיקים לכבוד ה' ולכבוד תורתו הקדושה ללמד ולהבין אמרי שפר; ולא זו בלבד אלא שאף מחללים שם שמים בפרהסיא לעיני העמים והשרים האומרים דל ישראל ובזוי מאד שאין לו לא כתב ולא לשון (כנודע מקרוב פעמים)...&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">העורך לא מציין במפורש את קהל הייעד שלו, אך מן השימוש בעברית והדפסה מחדש של טקסט עברי ישן, יש להניח כי פנה אל קהל יהודי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">קהל אשכנזי - בכותרת רשום &quot;מנהג פולין&quot;
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמה כתב המחבר:
+Hiermit empfehle ich meine Morgenländische Pflanzen dem würdigen gelehrten Publico... (IX).</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2231</field>
+		<field name="revision_id">2231</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לתועלת הלומדים בלתי מבינים לשון אשכנז (בשער הספר)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">אין  פניה ברורה לקהל יעד יהודי, אך ניתן להסיק זאת מן השימוש בעברית ומן הנושאים הנבחרים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר מבקש לתרום להשכלת הקוראים ולהביא לידיעתם מידע על אחיהם היהודים היושבים במרוקו, כדי לתקן את חוסר הידע הקיים לגבי נושא זה. כך הוא כותב בהקדמה: &quot;מושב בני ישראל השוכנים לעת הזאת בגלילות הערביאים תחת ממשלת קיסר המאורי&quot;טאניאה באפ'ריק&quot;א הנקראת היום מאראקש בלשון ערבי' או מארוק בלשונותינו במלכות בארבארי&quot;אה, כמעט כלו נעלם מעיני כל העמים היושבים הלום בארצות האאירו&quot;פה. ובאמת איזה דרך תגיע שמועתם עדינו? דרך המסחר הלא מזער היא ... ואף אם מדובר בם בספרים אשר חוברו בלשונות הגוים על ענין קורות המערב הן לא נזכרו שם רק כחלק בערך אל הכל. אך מי זה יפותה לדבר על היהודים בל ידע לשונם?... הן אלה קצות הסבות אשר הדפוני להוציא לאור הספורים האלה הנוגעים באמת לאחי בני עמי בפרט ובכלל אולי אף לזרים אתם אם כי ישנו בתכליתם.&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המביא לדפוס טוען כי הספר נועד לעם ישראל (ראו הקדמת המביא לדפוס).</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2252</field>
+		<field name="revision_id">2252</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ליראי שמיים מתפללים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2256</field>
+		<field name="revision_id">2256</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בשער הספר נכתב:
+&quot;... לבאים להתלמד חכמת המליצה. וגם לדרשני' ... להעזר בהם ולביא ראי' מהם בעת ההזדמן לצורך פרושים ודרושים...&quot;. &quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המביא לדפוס לא ציין את קהל הייעד שלו, אך יש להניח כי פנה לקהל יהודי כללי בשל השימוש בעברית ובטקסט בעל מאפיינים מסורתיים, המיוחס לאישיות יהודית חשובה - הרמב&quot;ן</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2259</field>
+		<field name="revision_id">2259</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר פונה לקהל היהודים, במטרה לנקות עצמו מאשמת תרגום הספר המיסיונרי להולנדית</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">קהל היעד לא מצויין, אך ניתן להניח כי מדובר בקהל יעד יהודי כללי עקב השימוש בעברית והדיון בנושאים יהודיים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר אינו מציין באופן מפורש את קהלו, אך יש להבין זאת מן השימוש בעברית ומן הנושאים המסורתיים שעולים בו</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2264</field>
+		<field name="revision_id">2264</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;הערה לגבי צנזורה מצוייה כאן ב&quot;הערות&quot; - צריך לבדוק שוב על גבי הספר&lt;/p&gt;
+</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר לא מציין במפורש את קהל היעד שלו, אך יש להניח שכיוון לקהל יעד יהודי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו חלון &quot;מבנה הספר&quot; באצבע &quot;אחרית דבר&quot; - סטנוב מתאר את קהל היעד שלו &quot;אחינו בית ישראל&quot; שאינו מעוניין בספרי תבונה בעברית.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">השימוש בעברית</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו הקדמה והסכמות הרבנים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2305</field>
+		<field name="revision_id">2305</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמה המחבר פונה ל&quot;ישראל&quot;, ואומר כי:
+&quot;... וקיויתי שיהיה לתלמידים ולאנשים כגילי רב התועלת&quot;, (עמ' [1])</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2307</field>
+		<field name="revision_id">2307</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בפתח החלקים הגרמני והעברי מציין המחבר את התאמת הספר לילדיו ולילדי ישראל. גם בהסכמתו של אברהם אלחנן מצויין כי הוא מתאים ל&quot;מלמדי תינוקות&quot; ולילדים.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המוציא לאור לא מכוון לקהל מסויים, אך מן השימוש בעברית ובארמית אפשר להבין כי קהלו הוא קהל יהודי קורא עברית</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">אין פנייה ברורה לקהל יעד מסויים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמה המחבר מייעד ספר זה לכל מי שרוצה ללמוד או ללמד לשון עברית:
+&quot;ויהיה בזה תועלת גדול לכל הוגה בזה כתלמיד כמורה להדריך בזה התלמידים הרכים, כפי הדרכים אשר הכינותי ולהרגילה לאט לאט... למען יבין הנער בלבו את אשר ידבר בלשונות הן בעברי' והן באשכנזית... וכל קורא במקהלות עם ה' ינגן וינעים בריאה נעימה וצחה... ובזה קרן לשונינו הקדושה תרומם... ואז יהפך לב האבות על בנים ללמדם ספר ולשון עברית, תחת אשר ילמדם אך לועזית וצרפית לבד&quot;. (עמ' 9-10)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר מציין את קהילת אראד, החלק השלישי של ספרו &quot;דירת אהרן&quot; הדן בהלכות רלוונטי עבורה. במבוא ולאורך הטקסט נוהג המחבר לפנות בגוף שני לקהל היעד שלו &quot;ואתה הקורא הנעים! אל נא תמיט לי און כי חשבתי עלות ברום המעלות... (עמ' [2]); &quot;&quot;קורא הנעים!&quot; (דף נה').</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר שואף &quot;להחזיר עטרה ליושנה היינו להחזיר חכמת האמת מפלפולינו&quot; ויוצא בהצעות לחכמי הדור. הוא צופה התנגדות: &quot;בוודאי ימצאו אנשים שיטיחו דברים נגדי בכתב ובע&quot;פ לאמר מי שמך לאיש לילך בגדולות כאלה&quot; ולאלה הוא משיב כי &quot;לא נופל אנכי מחכמי הזמן בגמרא וסברא&quot;.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">קהל היעד העיקרי: יהודי מזרח אירופה.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">על גבי השער נרשם: &quot;ועתה נעתק ללשונינו הקדושה לתועלת ישראל, ובפרט לאחינו ב&quot;י הגרים בארץ פולין יע&quot;א&quot;. עניין זה חוזר גם בהקדמה &quot;אגרת המודעא: ומה גם משכילי ונדיבי עם ד' בארצות פולין יע&quot;א שאת מכירים עוד יותר בדוחק חולאי עניי מדינתכם ועירככם ...&quot; (עמ' 2, מיספור שלי)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2371</field>
+		<field name="revision_id">2371</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהקדמה מציין המחבר כי הלשון העברית היא לשון נעלה וקדומה, והיהודים צריכים לדעת אותה כדי לחקור את כתבי הקודש הכתובים בעברית.  הספר נועד למתחילים, שכן ספרי העזר שקיימים קשים מדי לשימוש עבורם: &quot;... לכן קמתי אני הצעיר ואזרתי כגבור חלצי לפתוח פתח להרווחה לפני כל עוברי דרך הרעבים והצמאים לדעת יסודי הלשון ודרכיו... אז יכול ללמוד כל הספר מבלתי רב ומורה אשר יורנו&quot;. (דף א'). לפי המחבר, הספר יכול לשמש גם תלמידים מתקדמים. הוא יצר הבחנה בין הידיעות הבסיסיות לבין הפלפולים והמחלוקות, המופיעים בביאור.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">על פי הרשום בשער הספר בהקדמת המחבר, הספר יועד ל&quot;עברים&quot;, לאנשים הרוצים לקרוא טקסטים בעברית בעצמם וללא עזרת מורים.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו הקדמת המחבר - מטרת הספר ביאור הטקסט העברי, כדי שיהודים יבינו את הטקסטים של התפילה</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר מדבר על קהל היעד של פרויקט הביאור והתרגום של התורה לגרמנית: הילדים היהודים. &quot;מה נעשה לילדי בני ישראל אשר ישוטטו לבקש דבר ה' להבין ספרי המקרא ולטעום מטעמי מליצותי' בלשון המורגל אצלם  ולא ימצאו...&quot; (בהקדמה). 
+עם זאת, קהל צעיר זה לא היה בהכרח קהל היעד של &lt;ins&gt;עלים לתרופה&lt;/ins&gt; - חוברת שמטרתה היתה לגייס קונים ומזמינים לביאור.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לא רשום בספר פניה לקהל יעד -אך ברור שהוא פנה לקהל של יהודים קוראי עברית</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">לא רשום בספר פניה לקהל יעד -אך ברור שהוא פנה לקהל של יהודים קוראי עברית</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">הפניה לקהל יעד יהודי כללי משתמעת מן הפתיחה לפרק א' (ראו כאן אצבע לחלון &quot;נושאים&quot;).</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">מרגליות לא מציין באופן מפורש את קהל היעד שלו, אך העיצוב של טקסט מסורתי המלווה בפרשנות, וההסתמכות על פרשן מסורתי - סעדיה גאון - מרמזים על כך.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">התקנון מופנה לחברי חבורת מצדיקי הרבים, שהתארגנו להוצאת ספרים עבריים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2396</field>
+		<field name="revision_id">2396</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו הקדמה.
+נג: לפי דברי המחבר בהקדמה, הוא כתב את ספרו באותיות גרמניות מכיוון שיודע כי מרבית היהודים קוראים שפה זו, וכך יוכל לשמש גם קהל לא יהודי.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2397</field>
+		<field name="revision_id">2397</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו שער הספר - המחבר טוען כי הספר מוצג בנוסח מפושט לטובת כל איש ואישה:
+&quot;למען יוכל כל איש ואשה לקרותו בין הפרקים&quot;. בהקדמה ישנה גם הפנייה שלו לילדים:
+&quot;לחנך בה את בניו. והרב את תלמידיו. לפי דרך המתקבל על דעת התינוק.&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו טענות המסכימים, בחלון &quot;אישים מוזכרים&quot;, אצבע סעיף &quot;הסכמות&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2408</field>
+		<field name="revision_id">2408</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">המחבר אינו מציג את קהלי היעד שלו, אך יש להסיק כי פנה לקהל יהודי ולקהל לא-יהודי גם יחד, בשל השימוש בשלוש השפות השונות</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2409</field>
+		<field name="revision_id">2409</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">הדבר עולה מן הפנייה אל המלכה בשתי השפות.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">העיסוק בקבלה והשימוש בארמית מכוונים לקהל יעד זה, אם כי לא מצאתי אמירה מפורשת בהסכמות על כך.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בהסכמה מציין אליעזר פלעקלס:
+&quot;לתועלת נערי בני ישראל&quot; (עמ' 5).
+המחבר מציין בהקדמתו כי העיבוד הברור שלו מתאים לנוער (עמ' 14).</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2423</field>
+		<field name="revision_id">2423</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו אצבע &quot;אחרית דבר&quot; בחלון &quot;מבנה הספר&quot;</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">מדובר בפרסום של &quot;מודעה&quot; - פנייה לקהל בבקשה לחתום לצורך הוצאת הספר. המודעה שתחת ידי כרוכה כמו ספר, אך לא בטוח שכך יצאה לאור.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו הקדמת המחבר</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2438</field>
+		<field name="revision_id">2438</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">אין הפנייה ברורה לקהל יעד, אבל אפשר להניח שמדובר בקהל יעד קהל יהודי כללי מתוך כך שהספר כולל תפלה בעברית</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2439</field>
+		<field name="revision_id">2439</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">הפנייה היא של גוף המשכילים, אל אחד מחבריה</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2440</field>
+		<field name="revision_id">2440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">סטנוב לא מציין את קהלו, אך יש להניח כי הספר נועד לקהל יהודי כללי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2458</field>
+		<field name="revision_id">2458</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">אין אמירה ברורה לגבי קהל היעד, אך מעצם כך שהטקסט נועד להיאמר בבית כנסת וכתוב בעברית, ניתן להניח שקהל היעד הוא יהודי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">להנתן לאלופי רוזני פ' ו' מ' [פרנסים ומנהגים] ליהודי סגולה, ואנשי קהלתנו יחי</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">כיוון שהספר נכתב ב-4 שפות שונות, נראה כי הוא יועד לקהל היהודים ולקהל הלא-יהודים גם יחד</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">&quot;החוברת נשלחה חינם אל חברות הקבורה בקהילות שונות, במטרה לשכנען לתמוך בהלנת המתים&quot; (פיינר).</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2469</field>
+		<field name="revision_id">2469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">מן השימוש בגרמנית ובעברית גם יחד יש להניח כי קהל היעד הוא יהודי הקהילה ואולי קהילות אחרות, כמו גם השלטונות הלא-יהודיים</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">בשער הספר מציין המחבר: &quot;לתועלת העומדים על משמרת פקודי הנערים ביום בואם לכלל בני מצוה&quot;. בהקדמה הוא פונה ל&quot;הרב או זולתו העוסק במלאכת הקאנפירמצאציאן&quot; וטוען כי יש ללמד את הנער &quot;עניני האמונה בכלל, למען דעת כי באמת למד והשיג הכללים הנוגעים בדברי האמונה&quot; (עמ' 4)</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_general_notes_value">ראו &quot;מכתב לברי&quot;ל&quot; עמ' 10, מספור שלי: אייכל טוען כי ספרו נכתב במסגרת הנסיון &quot;לפעול טוב לנערי בני ישראל החפצים לדעת חכמה..&quot;.</field>
+		<field name="field_target_general_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

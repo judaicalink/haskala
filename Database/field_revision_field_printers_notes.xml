@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_printers_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_printers_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_printers_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_printers_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="25" avg_row_length="655" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:24" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 139 (field_printers..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_printers_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר רשום: &quot;על ידי הפועל העוסק במלאכת הקדש הזעצר כ' [?] גבריאל... ועל ידי הפועל העוסק במלאכת הקדש הזעצר הבחור יעקב...&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">מוזכר שמו של &quot;הפועל העוסק במלאכת הקודש באמונה הזעציר צבי הירש בן הר&quot;ר משולם זלמן סג&quot;ל ז&quot;ל. משפחת הורוויץ. מק&quot;ק פ&quot;פ דאדר.
+הקלירי מברך במיוחד את &quot;האדון הגומל חסד עם בני עמינו ועם כל אדם ה&quot;ה החכם בחכמת הדקדוק דוקטור ופרופיסור גלילו&quot; על מאמציו המיוחדים בהדפסת הספר.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">על ידי הפועל הזעצר העוסק במלאכת הקודש הב&quot;ח איצק בן מהור&quot;ר משה שלעזינגער זצ&quot;ל מק&quot;ק מיץ ולע&quot;ע בק&quot;ק דעסויא.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בעמוד השער רשום, אחרי שם ההוצאה לאור:
+gedruckt bei Schlieder</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר מופיעים שמות המדפיסים:
+&quot;על ידי הפועל העוסק במלאכת הקדש הדרוקר שמואל צבי בן מהור&quot;ר קלונימוס קלמן מהיטן באך ולע&quot;ע בדיהרנפורט.
+על ידי הפועל העוסק במלאכת הקדש הדרוקר משה בן מהור&quot;ר שמואל כץ ריטשוואל.
+על ידי הפועל העוסק במלאכת הקדש הזעציר יאקב בן בהר&quot;ר דניאל ני' מק&quot;ק דיהרנפורט ממשפחת בלאך&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2199</field>
+		<field name="revision_id">2199</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר:
+&quot;על ידי הפועל העוסק במלאכת הקודש באמונה הזעציר הבחור ארי' ליב בן מהור&quot;ר זאב וואלוף [כך] זצ&quot;ל מק&quot;ק ברלין&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2220</field>
+		<field name="revision_id">2220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">אין פרטים ברורים לגבי המדפיסים. ראו אצבע ב&quot;הוצאה/בית דפוס&quot;.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר נרשם: &quot;על ידי הפועל העוסק במלאכת הקודש באמונה הזעציר הבחור &lt;ins&gt;יהודה ליב בן מהו' זאב וואלף&lt;/ins&gt; זצ&quot;ל מברלין&quot;. לוודא האם מדובר בבן זאב המחבר המשכילי.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">שמות המדפיסים מופיעים בדף קמד'</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">על ידי הפועל העוסק במלאכת הקודש המסדר אותיות צבי הירש בן לא&quot;א מוהר&quot;ר שמעון כ&quot;ץ זצ&quot;ל מק&quot;ק גלינא הסמוך לק&quot;ק לבוב הבירה.
+
+ועל ידי הפועל העוסק במלאכת הקודש באמונה הדריקר יוסף משולם פייביל בהר&quot;ר אברה' אבא זצ&quot;ל מק&quot;ק זאלקוו' הסמוך לק&quot;ק לבוב הבירה.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר: &quot;על ידי הפועל העוסק במלאכת הקודש הזעצר בן המדפיס הבחור מאיר בן כהר&quot;ר שמואל פלקלש נכד [?] של המנוח מו&quot;ה מאיר ווייזלש ז&quot;ל&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר:
+&quot;על ידי הפועל העוסק במלאכת הקודש באמונה הזעציר וההדרוקר הבחור ארי' בן מהור&quot;ר אבא שוחט ובודק זצ&quot;ל מק&quot;ק ברלין וארץ מולדתי באויבר שלעזיא מעיר פלעס ממשפחת זינגר
+ועל ידי הפועל העוסק במלאכת הקודש במאונה הדרוקר יוסף יוספא בהר&quot;ר שלום ז&quot;ל מק&quot;ק זאלקוויא סמוך ק&quot;ק לבוב הבירה
+ועל ידי הפועל העוסק במלאכת הקודש באמונה הזעציר הבחור ארי' ליב בן מהור&quot;ר זאב וואלוף זצ&quot;ל בן המנוח הר&quot;ר יוסף זצ&quot;ל בן הרבני מהור&quot;ר אהרן דיין זצ&quot;ל מק&quot;ק ברלין&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">ישנה &quot;התנצלות המגיה&quot; בסוף החלק השני של הספר &quot;זמירות ישראל&quot;.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בעמוד האחרון לספר, חותם שבתי מיאנוב על &quot;התנצלות המדפיס&quot;.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">הזעצער גבריאל בן נטע אוטיץ מפראג, כך בסוף הספר.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בעמוד השער כתוב: &quot;נדפס ב... בשנת... על ידי המתעסק הנעלה כ' אהרן בן כ' אלי' כ&quot;ץ ז&quot;ל&quot;.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר: &quot;על ידי הפועל העוסק במלאכת הקודש באמונה הזעצר שלמה במהורר ישראל יצ&quot;ו מק&quot;ק שקלאוו&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר: &quot;על ידי הפועל העוסק במלאכת הקודש באמונה הזעציר ישראל בן כהר&quot;ר  משה ז&quot;ל. מברעסלויא. ולע&quot;ע עוסק מלאכת הקודש פה ק&quot;ק ברלין הבירה&quot;.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">מאחורי עמ' השער כתוב: &quot;געזעצט דורך ר' מאיר פ'אלקלש&quot;.
+בסוף הספר, לפני תוכן העניינים, מופיע בתוך מסגרת מעוטרת הקטע הבא (אכרוסטיקון עם שם המדפיס):
+
+&lt;strong&gt;מ&lt;/strong&gt; אוד מאד אודה ה' באמרי שפר,
+
+&lt;strong&gt;א&lt;/strong&gt; שר זכני לסדר האותיות בזה הספר,
+
+&lt;strong&gt;י&lt;/strong&gt; ה צור עולמים, דודי אשכול הכופר,
+
+&lt;strong&gt;ר&lt;/strong&gt; צה שועי מלכי, ועצת אויבי הפר,
+
+
+זה מעשה ידי אומן העוסק במלאכת הקודש באמונה הקטן מאיר בן כהר&quot;ר שמואל פ'אלקלש זצ&quot;ל.</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר חתימת הפועל העובד בדפוס:
+יעקב בר אורי הלוי</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף הספר חתימת הפועל העובד בדפוס:
+יעקב בר אורי הלוי</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2389</field>
+		<field name="revision_id">2389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">הבחור ברוך בר שמואל מק&quot;ק לונדון</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בעמוד האחרון מופיעים שמות פועלי הדפוס</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2420</field>
+		<field name="revision_id">2420</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בעמ' מ&quot;ח מופיע שם הסדר: ארי' ליב בן זאב וואלף מק&quot;ק ברלין</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_printers_notes_value">בסוף החלק העברי כבוב: 
+&quot;על ידי הפועל זעצר העוסק במלאכת הקודש הב&quot;ח כ&quot;ה איצק בן מהו' משה שלעזינגר סג&quot;ל זצ&quot;ל מק&quot;ק מיץ ולע&quot;ע בק&quot;ק דעסויא&quot;</field>
+		<field name="field_printers_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

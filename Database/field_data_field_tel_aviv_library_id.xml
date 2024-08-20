@@ -1,0 +1,1071 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_tel_aviv_library_id">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_tel_aviv_library_id_value" type="varchar(255)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_tel_aviv_library_id_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_tel_aviv_library_id" engine="InnoDB" version="10" row_format="Dynamic" rows="86" avg_row_length="190" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:10" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 181 (field_tel_aviv_library_id)" />
+	</table_structure>
+
+	<table_data name="field_data_field_tel_aviv_library_id">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1959</field>
+		<field name="revision_id">1959</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">933.5(42) ALE</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">933.5(44) HOU - Mehlman</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">אוסף יפה  892.418 פרי (וול)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.45=3 ROM (Mehlman)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">933.5 (42) VAN</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">Univ. Tel Aviv, Slg. Jaffe: 892.48 פפנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 296.3116 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CR   492.42 בן-ז</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CR  492.42 בן-ז</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CR  492.42 בן-ז</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2091</field>
+		<field name="revision_id">2091</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">(חלק עברי בלבד) מהלמן:ויל (תפל) 296.3197</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2094</field>
+		<field name="revision_id">2094</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">לוצ 892.412  - אוסף יפה</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2106</field>
+		<field name="revision_id">2106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.45 לוי CT</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2110</field>
+		<field name="revision_id">2110</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">Univ. Tel Aviv, Slg. Jaffe ריז892.412</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.44ויז-CT</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.44ויז-CT</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן: 296.19 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">דוד 181.4</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.418 הלו (אוסף יפה)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">(492) 296.351 תפל (יצח), אוסף יפה</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CT     224.37 תנך (זאב)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 892.4113 שלמ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">ספר (בן-ז) 229.4    CT</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.42 ברז</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.44פפנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.44פפנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2176</field>
+		<field name="revision_id">2176</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן: 892.418 פול</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">221.14פדר - מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">לוצ  812.412 - אוסף יפה</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">943.603יוס(לעב)-מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">221.1 בן-ז  - CT</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2200</field>
+		<field name="revision_id">2200</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">224.87=3 תנך (וול)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2202</field>
+		<field name="revision_id">2202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CR סוראסקי  296.41 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.433אור-מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">879.1שלר</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 892.4116עמנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2220</field>
+		<field name="revision_id">2220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">296.127 הור - CT</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.412 מהלמן: כהן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.42 האפ (אוסף יפה)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CR  892.48 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.412 כהן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.48 סטנ (359242)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2252</field>
+		<field name="revision_id">2252</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">Univ. Tel Aviv, Slg. Mehlmann: תפל  296.31531</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2261</field>
+		<field name="revision_id">2261</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 296.41 יהו</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן סטנ296.655  ,CT Special Material  296.655 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2265</field>
+		<field name="revision_id">2265</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">Univ. Tel Aviv, Slg. Mehlmann: פדר296.41</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2268</field>
+		<field name="revision_id">2268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.45 שוב</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2269</field>
+		<field name="revision_id">2269</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">492.45 שוב</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן: MR - 933.5(492) מרק</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">(4371)933.5 ייט - מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 296.158 משה.כרוך עם באור מלות ההגיון למנדלסון, 1795</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.48 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן   296.174 יהו</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 296.41 סטנ </field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 171 ארי</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 171 ארי</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן (כרטסת ידנית) 492.45 סטנ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.412 בוכ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2305</field>
+		<field name="revision_id">2305</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">אוסף יפה 296.317 יהו</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">296.313 הור - אוסף יפה</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן: 892.4113 אבן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2319</field>
+		<field name="revision_id">2319</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">CT פול 492.45-9249</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">224.07גום - מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2352</field>
+		<field name="revision_id">2352</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.411ידע</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">296.18הור</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">296.41 הור</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">296.158 אבן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן (כרטסת ידנית) 492.43בו (כרוך עם ספר הגדרים של בונאפוס)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">T278 טיכ.אמ תשנ&quot;ו</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2381</field>
+		<field name="revision_id">2381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">296.081 ננס MR מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">אבן 492.45</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2402</field>
+		<field name="revision_id">2402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.418ויז(מיל)- עותק פגום</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2407</field>
+		<field name="revision_id">2407</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.418 נפו (בן-ז) - אוסף יפה</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 892.412 לוצ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">930 פיש</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מרכזית CT לינ  892.481</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.481 לינ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">רומ  JA 892.412</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">מהלמן 892.42 זיל</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">אוסף יפה  892.418 כרי (ויז</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2438</field>
+		<field name="revision_id">2438</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">MR Rare book collection  892.418 נפו (שיר)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2441</field>
+		<field name="revision_id">2441</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">אוסף יפה. 892.412 בוכ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2446</field>
+		<field name="revision_id">2446</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value"> 892.418 פרי (הרט)  אוסף מהלמן</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2451</field>
+		<field name="revision_id">2451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">812.412בוכ</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.412 ויז (אוסף מלמן)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_tel_aviv_library_id_value">892.412 ויז (אוסף מלמן)</field>
+		<field name="field_tel_aviv_library_id_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

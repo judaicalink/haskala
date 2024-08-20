@@ -1,0 +1,810 @@
+tid,vid,"name","description","format",weight
+1,1,"Altona",NULL,"filtered_html",0
+2,1,"Altstadt",NULL,"filtered_html",0
+3,1,"Amsterdam",NULL,"filtered_html",0
+4,1,"Anklam",NULL,"filtered_html",0
+5,1,"Anspach",NULL,"filtered_html",0
+6,1,"Arad",NULL,"filtered_html",0
+7,1,"Arnswalde",NULL,"filtered_html",0
+8,1,"Augsburg",NULL,"filtered_html",0
+9,1,"Bamberg",NULL,"filtered_html",0
+10,1,"Barcelona",NULL,"filtered_html",0
+11,1,"Basel",NULL,"filtered_html",0
+12,1,"Bayreuth",NULL,"filtered_html",0
+13,1,"Berditchev",NULL,"filtered_html",0
+14,1,"Berlin",NULL,"filtered_html",0
+15,1,"Bern",NULL,"filtered_html",0
+16,1,"Bernburg",NULL,"filtered_html",0
+17,1,"Bialystok",NULL,"filtered_html",0
+18,1,"Bidschow",NULL,"filtered_html",0
+19,1,"Bielau",NULL,"filtered_html",0
+20,1,"Bielefeld",NULL,"filtered_html",0
+21,1,"Bielitz",NULL,"filtered_html",0
+22,1,"Bleicherode",NULL,"filtered_html",0
+23,1,"Böhmisch Leipa",NULL,"filtered_html",0
+24,1,"Bonn",NULL,"filtered_html",0
+25,1,"Bourdeaux",NULL,"filtered_html",0
+26,1,"Brandenburg",NULL,"filtered_html",0
+27,1,"Braunschweig",NULL,"filtered_html",0
+28,1,"Breslau",NULL,"filtered_html",0
+29,1,"Brest",NULL,"filtered_html",0
+30,1,"Brieg",NULL,"filtered_html",0
+31,1,"Brno",NULL,"filtered_html",0
+32,1,"Brody",NULL,"filtered_html",0
+33,1,"Brooklyn",NULL,"filtered_html",0
+34,1,"Bruchsal",NULL,"filtered_html",0
+35,1,"Brünn",NULL,"filtered_html",0
+36,1,"Bubwitz",NULL,"filtered_html",0
+37,1,"Buda",NULL,"filtered_html",0
+38,1,"Budapest",NULL,"filtered_html",0
+39,1,"Bunzlau",NULL,"filtered_html",0
+40,1,"Burgkunstadt",NULL,"filtered_html",0
+41,1,"Cambridge",NULL,"filtered_html",0
+42,1,"Casale Monferrato",NULL,"filtered_html",0
+43,1,"Celle",NULL,"filtered_html",0
+44,1,"Cerny",NULL,"filtered_html",0
+45,1,"Chelm",NULL,"filtered_html",0
+46,1,"Chlumetz",NULL,"filtered_html",0
+47,1,"Chur",NULL,"filtered_html",0
+48,1,"Constantinople",NULL,"filtered_html",0
+49,1,"Copenhagen",NULL,"filtered_html",0
+50,1,"Damascus",NULL,"filtered_html",0
+51,1,"Danzig",NULL,"filtered_html",0
+52,1,"Dembitz",NULL,"filtered_html",0
+53,1,"Den Haag",NULL,"filtered_html",0
+54,1,"Dessau",NULL,"filtered_html",0
+55,1,"Detmold",NULL,"filtered_html",0
+56,1,"Dobromil",NULL,"filtered_html",0
+57,1,"Dobruschka",NULL,"filtered_html",0
+58,1,"Domosnitz",NULL,"filtered_html",0
+59,1,"Dorpat",NULL,"filtered_html",0
+60,1,"Dresden",NULL,"filtered_html",0
+61,1,"Driesen",NULL,"filtered_html",0
+62,1,"Drohobytsch",NULL,"filtered_html",0
+63,1,"Dubno",NULL,"filtered_html",0
+64,1,"Duisburg",NULL,"filtered_html",0
+65,1,"Dyhernfurth",NULL,"filtered_html",0
+66,1,"Eger",NULL,"filtered_html",0
+67,1,"Eisenstadt",NULL,"filtered_html",0
+68,1,"Elberfeld",NULL,"filtered_html",0
+69,1,"Essen",NULL,"filtered_html",0
+70,1,"Flatow",NULL,"filtered_html",0
+71,1,"Florenz",NULL,"filtered_html",0
+72,1,"Frankfurt am Main",NULL,"filtered_html",0
+73,1,"Frankfurt/Oder",NULL,"filtered_html",0
+74,1,"Friedland",NULL,"filtered_html",0
+75,1,"Friedrichsfeld",NULL,"filtered_html",0
+76,1,"Fürth",NULL,"filtered_html",0
+77,1,"Glogau",NULL,"filtered_html",0
+78,1,"Gorizia",NULL,"filtered_html",0
+79,1,"Görz",NULL,"filtered_html",0
+80,1,"Göttingen",NULL,"filtered_html",0
+81,1,"Greifswald",NULL,"filtered_html",0
+82,1,"Griechenland",NULL,"filtered_html",0
+83,1,"Grodno",NULL,"filtered_html",0
+84,1,"Hagenau",NULL,"filtered_html",0
+85,1,"Halberstadt",NULL,"filtered_html",0
+86,1,"Halle",NULL,"filtered_html",0
+87,1,"Halle/Saale",NULL,"filtered_html",0
+88,1,"Hamburg",NULL,"filtered_html",0
+89,1,"Hamm",NULL,"filtered_html",0
+90,1,"Hanau",NULL,"filtered_html",0
+91,1,"Hannover",NULL,"filtered_html",0
+92,1,"Hasenpoth",NULL,"filtered_html",0
+93,1,"Hechingen",NULL,"filtered_html",0
+94,1,"Helmstädt",NULL,"filtered_html",0
+95,1,"Hildesheim",NULL,"filtered_html",0
+96,1,"Hirschberg",NULL,"filtered_html",0
+97,1,"Hohenems",NULL,"filtered_html",0
+98,1,"Höritz",NULL,"filtered_html",0
+99,1,"Horodok",NULL,"filtered_html",0
+100,1,"Horschitz",NULL,"filtered_html",0
+101,1,"Hungary",NULL,"filtered_html",0
+102,1,"Jaroslaw",NULL,"filtered_html",0
+103,1,"Jena",NULL,"filtered_html",0
+104,1,"Jersualem",NULL,"filtered_html",0
+105,1,"Jerusalem",NULL,"filtered_html",0
+106,1,"Jeßnitz",NULL,"filtered_html",0
+107,1,"Jewpatorija",NULL,"filtered_html",0
+108,1,"Józefów",NULL,"filtered_html",0
+109,1,"Kanischa",NULL,"filtered_html",0
+110,1,"Karlsruhe",NULL,"filtered_html",0
+111,1,"Kassel",NULL,"filtered_html",0
+112,1,"Kempen",NULL,"filtered_html",0
+113,1,"Kempten",NULL,"filtered_html",0
+114,1,"Kiel",NULL,"filtered_html",0
+115,1,"Koblenz",NULL,"filtered_html",0
+116,1,"Kolin",NULL,"filtered_html",0
+117,1,"Kolmar",NULL,"filtered_html",0
+118,1,"Komarno",NULL,"filtered_html",0
+119,1,"Komorn",NULL,"filtered_html",0
+120,1,"Königgrätz",NULL,"filtered_html",0
+121,1,"Königsberg",NULL,"filtered_html",0
+122,1,"Königslutter",NULL,"filtered_html",0
+123,1,"Kopys",NULL,"filtered_html",0
+124,1,"Korets",NULL,"filtered_html",0
+125,1,"Köslin",NULL,"filtered_html",0
+126,1,"Köthen",NULL,"filtered_html",0
+127,1,"Krakow",NULL,"filtered_html",0
+128,1,"Kreisch",NULL,"filtered_html",0
+129,1,"Krossen an der Oder",NULL,"filtered_html",0
+130,1,"Kuriz",NULL,"filtered_html",0
+131,1,"Kurland",NULL,"filtered_html",0
+132,1,"Kuttenplan",NULL,"filtered_html",0
+133,1,"Landau",NULL,"filtered_html",0
+134,1,"Landsberg/Warthe",NULL,"filtered_html",0
+135,1,"Landshut",NULL,"filtered_html",0
+136,1,"Laszczow",NULL,"filtered_html",0
+137,1,"Leiden",NULL,"filtered_html",0
+138,1,"Leipnik",NULL,"filtered_html",0
+139,1,"Leipzig",NULL,"filtered_html",0
+140,1,"Lemberg",NULL,"filtered_html",0
+141,1,"Lemgo",NULL,"filtered_html",0
+142,1,"Leslau",NULL,"filtered_html",0
+143,1,"Lieben",NULL,"filtered_html",0
+144,1,"Liegnitz",NULL,"filtered_html",0
+145,1,"Lille",NULL,"filtered_html",0
+146,1,"Lissa",NULL,"filtered_html",0
+147,1,"Livorno",NULL,"filtered_html",0
+148,1,"London",NULL,"filtered_html",0
+149,1,"Lübeck",NULL,"filtered_html",0
+150,1,"Luneville",NULL,"filtered_html",0
+151,1,"Lviv",NULL,"filtered_html",0
+152,1,"Magdeburg",NULL,"filtered_html",0
+153,1,"Mährisch Weißkirchen",NULL,"filtered_html",0
+154,1,"Mainz",NULL,"filtered_html",0
+155,1,"Mannheim",NULL,"filtered_html",0
+156,1,"Mantua",NULL,"filtered_html",0
+157,1,"Marienwerder",NULL,"filtered_html",0
+158,1,"Mattersdorf",NULL,"filtered_html",0
+159,1,"Medzeboz",NULL,"filtered_html",0
+160,1,"Mesritsch",NULL,"filtered_html",0
+161,1,"Metz",NULL,"filtered_html",0
+162,1,"Mezhirov",NULL,"filtered_html",0
+163,1,"Mikolajev",NULL,"filtered_html",0
+164,1,"Minkowce",NULL,"filtered_html",0
+165,1,"Minsk",NULL,"filtered_html",0
+166,1,"Mitau",NULL,"filtered_html",0
+167,1,"Mohilev",NULL,"filtered_html",0
+168,1,"Münden",NULL,"filtered_html",0
+169,1,"Munich",NULL,"filtered_html",0
+170,1,"Naarden",NULL,"filtered_html",0
+171,1,"Nachod",NULL,"filtered_html",0
+172,1,"Nancy",NULL,"filtered_html",0
+173,1,"Netivot",NULL,"filtered_html",0
+174,1,"Neubidschow",NULL,"filtered_html",0
+175,1,"Neuhaus",NULL,"filtered_html",0
+176,1,"Neustrelitz",NULL,"filtered_html",0
+177,1,"Neuwied",NULL,"filtered_html",0
+178,1,"Neuzedlisch",NULL,"filtered_html",0
+179,1,"New York",NULL,"filtered_html",0
+180,1,"Niederehnheim",NULL,"filtered_html",0
+181,1,"Niederlande",NULL,"filtered_html",0
+182,1,"Nikolsburg",NULL,"filtered_html",0
+183,1,"Nimwegen",NULL,"filtered_html",0
+184,1,"Nowy Dwor Mazowiecki",NULL,"filtered_html",0
+185,1,"Nuremberg",NULL,"filtered_html",0
+186,1,"Ofen",NULL,"filtered_html",0
+187,1,"Offenbach",NULL,"filtered_html",0
+188,1,"Oleksinets Novy",NULL,"filtered_html",0
+189,1,"Opatow",NULL,"filtered_html",0
+190,1,"Padua",NULL,"filtered_html",0
+191,1,"Pardubitz",NULL,"filtered_html",0
+192,1,"Paris",NULL,"filtered_html",0
+193,1,"Pest",NULL,"filtered_html",0
+194,1,"Pfalz",NULL,"filtered_html",0
+195,1,"Pinczow",NULL,"filtered_html",0
+196,1,"Piotrków",NULL,"filtered_html",0
+197,1,"Pirnitz",NULL,"filtered_html",0
+198,1,"Polen",NULL,"filtered_html",0
+199,1,"Polna",NULL,"filtered_html",0
+200,1,"Porizk",NULL,"filtered_html",0
+201,1,"Posen",NULL,"filtered_html",0
+202,1,"Potsdam",NULL,"filtered_html",0
+203,1,"Prag",NULL,"filtered_html",0
+204,1,"Prague",NULL,"filtered_html",0
+205,1,"Prenzlau",NULL,"filtered_html",0
+206,1,"Pressburg/Bratislava",NULL,"filtered_html",0
+207,1,"Prossnitz",NULL,"filtered_html",0
+208,1,"Przedbórz",NULL,"filtered_html",0
+209,1,"Ragendorf",NULL,"filtered_html",0
+210,1,"Rakonitz",NULL,"filtered_html",0
+211,1,"Ratibor",NULL,"filtered_html",0
+212,1,"Rawa",NULL,"filtered_html",0
+213,1,"Regensburg",NULL,"filtered_html",0
+214,1,"Reggio",NULL,"filtered_html",0
+215,1,"Reichenberg",NULL,"filtered_html",0
+216,1,"Reschow",NULL,"filtered_html",0
+217,1,"Riga",NULL,"filtered_html",0
+218,1,"Rödelheim",NULL,"filtered_html",0
+219,1,"Rom",NULL,"filtered_html",0
+220,1,"Rotenburg",NULL,"filtered_html",0
+221,1,"Rotterdam",NULL,"filtered_html",0
+222,1,"Rszesz?w",NULL,"filtered_html",0
+223,1,"Samocz",NULL,"filtered_html",0
+224,1,"Samuel de Waal",NULL,"filtered_html",0
+225,1,"Sandersleben",NULL,"filtered_html",0
+226,1,"Satanow",NULL,"filtered_html",0
+227,1,"Schklov",NULL,"filtered_html",0
+228,1,"Schottland",NULL,"filtered_html",0
+229,1,"Schotzlar",NULL,"filtered_html",0
+230,1,"Schwedt",NULL,"filtered_html",0
+231,1,"Schwerin",NULL,"filtered_html",0
+232,1,"Seelau",NULL,"filtered_html",0
+233,1,"Seesen",NULL,"filtered_html",0
+234,1,"Senftenberg",NULL,"filtered_html",0
+235,1,"Shkloŭ",NULL,"filtered_html",0
+236,1,"Siegen",NULL,"filtered_html",0
+237,1,"Slawkowiec",NULL,"filtered_html",0
+238,1,"Slonim",NULL,"filtered_html",0
+239,1,"St. Petersburg",NULL,"filtered_html",0
+240,1,"Stampfen",NULL,"filtered_html",0
+241,1,"Stargard",NULL,"filtered_html",0
+242,1,"Stettin",NULL,"filtered_html",0
+243,1,"Stockholm",NULL,"filtered_html",0
+244,1,"Stralsund",NULL,"filtered_html",0
+245,1,"Strasbourg",NULL,"filtered_html",0
+246,1,"Strelitz",NULL,"filtered_html",0
+247,1,"Stuttgart",NULL,"filtered_html",0
+248,1,"Sudilkov",NULL,"filtered_html",0
+249,1,"Sulzbach",NULL,"filtered_html",0
+250,1,"Szereszów",NULL,"filtered_html",0
+251,1,"Tachau",NULL,"filtered_html",0
+252,1,"Tarnau",NULL,"filtered_html",0
+253,1,"Tarnopol",NULL,"filtered_html",0
+254,1,"Tel Aviv",NULL,"filtered_html",0
+255,1,"Teplitz",NULL,"filtered_html",0
+256,1,"The Hague",NULL,"filtered_html",0
+257,1,"Tismenitsa",NULL,"filtered_html",0
+258,1,"Torino",NULL,"filtered_html",0
+259,1,"Trebitsch",NULL,"filtered_html",0
+260,1,"Triesch",NULL,"filtered_html",0
+261,1,"Triest",NULL,"filtered_html",0
+262,1,"Troplowitz",NULL,"filtered_html",0
+263,1,"Tschaslau",NULL,"filtered_html",0
+264,1,"Tschoplowitz b. Brieg",NULL,"filtered_html",0
+265,1,"Tschufut-Kale",NULL,"filtered_html",0
+266,1,"Tübingen",NULL,"filtered_html",0
+267,1,"Turiisk",NULL,"filtered_html",0
+268,1,"Turin",NULL,"filtered_html",0
+269,1,"Turnau",NULL,"filtered_html",0
+270,1,"Tysmienica",NULL,"filtered_html",0
+271,1,"Utrecht",NULL,"filtered_html",0
+272,1,"Venice",NULL,"filtered_html",0
+273,1,"Vienna",NULL,"filtered_html",0
+274,1,"Vilnius",NULL,"filtered_html",0
+275,1,"Wamburg",NULL,"filtered_html",0
+276,1,"Warsaw",NULL,"filtered_html",0
+277,1,"Wasiliszki",NULL,"filtered_html",0
+278,1,"Weikersheim",NULL,"filtered_html",0
+279,1,"Wien",NULL,"filtered_html",0
+280,1,"Witkowo",NULL,"filtered_html",0
+281,1,"Wohlin",NULL,"filtered_html",0
+282,1,"Worms",NULL,"filtered_html",0
+283,1,"Wriezen",NULL,"filtered_html",0
+284,1,"Würzburg",NULL,"filtered_html",0
+285,1,"Zamosc",NULL,"filtered_html",0
+286,1,"Zell",NULL,"filtered_html",0
+287,1,"Zhovkva",NULL,"filtered_html",0
+288,1,"Zolochiv",NULL,"filtered_html",0
+289,1,"Zuellichau",NULL,"filtered_html",0
+290,1,"Zülz",NULL,"filtered_html",0
+291,1,"Zürich",NULL,"filtered_html",0
+292,1,"אבערראבבינער",NULL,"filtered_html",0
+293,1,"אמשניץ",NULL,"filtered_html",0
+294,1,"אפען",NULL,"filtered_html",0
+295,1,"דיהרנפורט",NULL,"filtered_html",0
+296,1,"דיניויץ",NULL,"filtered_html",0
+297,1,"ווערדין",NULL,"filtered_html",0
+298,1,"ויעלקאשט",NULL,"filtered_html",0
+299,1,"ולאטאווי",NULL,"filtered_html",0
+300,1,"זאמחוב",NULL,"filtered_html",0
+301,1,"טורהאוויץ",NULL,"filtered_html",0
+302,1,"טשערנאוויץ",NULL,"filtered_html",0
+303,1,"יוזעפאף",NULL,"filtered_html",0
+304,1,"לעטשוב=לאצוב",NULL,"filtered_html",0
+305,1,"מיץ",NULL,"filtered_html",0
+306,1,"נאווי דוואהר",NULL,"filtered_html",0
+307,1,"סטאבנץ",NULL,"filtered_html",0
+308,1,"קאסנטין הישנה",NULL,"filtered_html",0
+309,1,"ראנינבורג",NULL,"filtered_html",0
+310,1,"שערשאווי",NULL,"filtered_html",0
+311,1,"שקוד האזפוט",NULL,"filtered_html",0
+312,9,"anthology",NULL,"filtered_html",0
+313,9,"edition",NULL,"filtered_html",0
+314,9,"expansion - commentary added",NULL,"filtered_html",0
+315,9,"expansion - new introduction",NULL,"filtered_html",0
+316,9,"expansion - glossary added",NULL,"filtered_html",0
+317,9,"rewrite",NULL,"filtered_html",0
+318,9,"first printing of manuscript",NULL,"filtered_html",0
+319,9,"other additions",NULL,"filtered_html",0
+320,3,"Belles-lettres",NULL,"filtered_html",0
+321,3,"Allegory",NULL,"filtered_html",0
+322,3,"Novel",NULL,"filtered_html",0
+323,3,"Parable",NULL,"filtered_html",0
+324,3,"Bi'ur",NULL,"filtered_html",0
+325,3,"Biblical adaptation",NULL,"filtered_html",0
+326,3,"Biblical history",NULL,"filtered_html",0
+327,3,"Biblical stories",NULL,"filtered_html",0
+328,3,"Blessings",NULL,"filtered_html",0
+329,3,"Book review",NULL,"filtered_html",0
+330,3,"Catechisms",NULL,"filtered_html",0
+331,3,"Dialogue",NULL,"filtered_html",0
+332,3,"Epistolary literature",NULL,"filtered_html",0
+333,3,"Epistolary literature (fictional)",NULL,"filtered_html",0
+334,3,"Epistolary literature (real)",NULL,"filtered_html",0
+335,3,"Guidebook",NULL,"filtered_html",0
+336,3,"Informative text",NULL,"filtered_html",0
+337,3,"Lecture",NULL,"filtered_html",0
+338,3,"Lexicon",NULL,"filtered_html",0
+339,3,"Dictionary",NULL,"filtered_html",0
+340,3,"Encyclopedia",NULL,"filtered_html",0
+341,3,"Manifesto",NULL,"filtered_html",0
+342,3,"Moral literature",NULL,"filtered_html",0
+343,3,"Personal writing",NULL,"filtered_html",0
+344,3,"Autobiography",NULL,"filtered_html",0
+345,3,"Biography",NULL,"filtered_html",0
+346,3,"Memoirs",NULL,"filtered_html",0
+347,3,"Play",NULL,"filtered_html",0
+348,3,"Comedy",NULL,"filtered_html",0
+349,3,"Purim spiel",NULL,"filtered_html",0
+350,3,"Satire",NULL,"filtered_html",0
+351,3,"Poems",NULL,"filtered_html",0
+352,3,"Biblical epic poetry",NULL,"filtered_html",0
+353,3,"Elegies",NULL,"filtered_html",0
+354,3,"Piyyut",NULL,"filtered_html",0
+355,3,"Poems for special occasions",NULL,"filtered_html",0
+356,3,"Prose poems",NULL,"filtered_html",0
+357,3,"Meliza",NULL,"filtered_html",0
+358,3,"Other poetry",NULL,"filtered_html",0
+359,3,"Polemics",NULL,"filtered_html",0
+360,3,"Proverbs and sayings",NULL,"filtered_html",0
+361,3,"Aphorisms",NULL,"filtered_html",0
+362,3,"Epigrams",NULL,"filtered_html",0
+363,3,"Proverbs",NULL,"filtered_html",0
+364,3,"Sayings",NULL,"filtered_html",0
+365,3,"Pseudo-commentary",NULL,"filtered_html",0
+366,3,"Religious literature",NULL,"filtered_html",0
+367,3,"Aggadah/Midrash",NULL,"filtered_html",0
+368,3,"Commentary",NULL,"filtered_html",0
+369,3,"Halachic literature",NULL,"filtered_html",0
+370,3,"Liturgy",NULL,"filtered_html",0
+371,3,"Haggadah",NULL,"filtered_html",0
+372,3,"Prayers",NULL,"filtered_html",0
+373,3,"Selichot",NULL,"filtered_html",0
+374,3,"Tchines",NULL,"filtered_html",0
+375,3,"Report",NULL,"filtered_html",0
+376,3,"Riddles",NULL,"filtered_html",0
+377,3,"Scientific literature",NULL,"filtered_html",0
+378,3,"Essay",NULL,"filtered_html",0
+379,3,"Treatise",NULL,"filtered_html",0
+380,3,"Scientific text model",NULL,"filtered_html",0
+381,3,"Concise phrasing",NULL,"filtered_html",0
+382,3,"Frequent use of numbers",NULL,"filtered_html",0
+383,3,"Professional phrasing",NULL,"filtered_html",0
+384,3,"Scientific instruments mentioned",NULL,"filtered_html",0
+385,3,"Speech",NULL,"filtered_html",0
+386,3,"Story",NULL,"filtered_html",0
+387,3,"Textbook",NULL,"filtered_html",0
+388,3,"Hornbook",NULL,"filtered_html",0
+389,3,"Reader",NULL,"filtered_html",0
+390,3,"Travel literature",NULL,"filtered_html",0
+391,13,"book",NULL,"filtered_html",0
+392,13,"manuscript",NULL,"filtered_html",0
+393,13,"letter",NULL,"filtered_html",0
+394,13,"petition",NULL,"filtered_html",0
+395,13,"journal",NULL,"filtered_html",0
+396,13,"other",NULL,"filtered_html",0
+397,15,"Jewish",NULL,"filtered_html",0
+398,15,"Catholic",NULL,"filtered_html",0
+399,15,"Protestant",NULL,"filtered_html",0
+400,15,"Other Christian",NULL,"filtered_html",0
+401,15,"Other religion",NULL,"filtered_html",0
+402,6,"Author",NULL,NULL,0
+403,6,"Translator",NULL,NULL,0
+404,6,"Editor",NULL,NULL,0
+405,6,"Mevi La'Dfus (Producer)",NULL,NULL,0
+406,6,"Commentator",NULL,NULL,0
+407,5,"Male",NULL,NULL,0
+408,1,"Commentator",NULL,NULL,0
+409,8,"modern",NULL,NULL,0
+410,2,"monolingual",NULL,NULL,0
+411,14,"Montag",NULL,NULL,0
+412,7,"left",NULL,NULL,0
+413,10,"Gothic",NULL,NULL,0
+414,10,"Latin",NULL,NULL,0
+415,11,"German",NULL,NULL,0
+416,11,"French",NULL,NULL,0
+417,2,"bilingual",NULL,NULL,0
+418,11,"Latin",NULL,NULL,0
+419,14,"Michaelis",NULL,NULL,0
+420,17,"general Jewish",NULL,NULL,0
+421,18,"Emancipation",NULL,NULL,0
+422,18,"Political and social revolutions",NULL,NULL,0
+423,19,"parallel",NULL,NULL,0
+424,12,"bottom of pages",NULL,NULL,0
+425,14,"Christian Friedrich Voss",NULL,NULL,0
+426,17,"general - unspecified",NULL,NULL,0
+427,17,"political authorities",NULL,NULL,0
+428,18,"Religious tolerance/ intolerance",NULL,NULL,0
+429,19,"consecutive",NULL,NULL,0
+430,14,"Orientalische Buchdruckerei - חברת חנוך נערים",NULL,NULL,0
+431,18,"Religious rites",NULL,NULL,0
+432,12,"end of book",NULL,NULL,0
+433,14,"Friedrich Maurer",NULL,NULL,0
+434,18,"Philosophy",NULL,NULL,0
+435,18,"Physics",NULL,NULL,0
+436,11,"English",NULL,NULL,0
+437,14,"Levy Alexander",NULL,NULL,0
+438,17,"general non-Jewish",NULL,NULL,0
+439,11,"Hebrew",NULL,NULL,0
+440,14,"Orell",NULL,NULL,0
+441,14,"Geßner",NULL,NULL,0
+442,14,"Füßli & Co.",NULL,NULL,0
+443,18,"Atheism",NULL,NULL,0
+444,18,"Edict of toleration",NULL,NULL,0
+445,18,"Religious fanaticism",NULL,NULL,0
+446,14,"Gattey",NULL,NULL,0
+447,14,"Levrault - לוורו",NULL,NULL,0
+448,11,"Italian",NULL,NULL,0
+449,14,"Heinrich Frölich",NULL,NULL,0
+450,18,"Aesthetics",NULL,NULL,0
+451,18,"Anthropology",NULL,NULL,0
+452,18,"Metaphysics",NULL,NULL,0
+453,18,"Morals",NULL,NULL,0
+454,10,"square with no punctuation",NULL,NULL,0
+455,10,"square with punctuation",NULL,NULL,0
+456,10,"Rashi font",NULL,NULL,0
+457,8,"non-modern",NULL,NULL,0
+458,14,"קעניגליכן בוכדרוקערייא",NULL,NULL,0
+459,18,"Hebrew",NULL,NULL,0
+460,18,"Patriotism",NULL,NULL,0
+461,18,"Wars",NULL,NULL,0
+462,14,"Carl Friedrich Amelang",NULL,NULL,0
+463,14,"Johann Andreas Kunze",NULL,NULL,0
+464,14,"Gottfried Hayn",NULL,NULL,0
+465,14,"Carl Schaumburg",NULL,NULL,0
+466,18,"Logic",NULL,NULL,0
+467,16,"N/A",NULL,NULL,0
+468,14,"Johann Friedrich Starcke",NULL,NULL,0
+469,14,"Matthias Rieger",NULL,NULL,0
+470,14,"Imperiale - דפוס הקיסר",NULL,NULL,0
+471,14,"Michel Lambert",NULL,NULL,0
+472,14,"Baumgärtner - באומגרטנר",NULL,NULL,0
+473,18,"Ethics",NULL,NULL,0
+474,14,"Späth",NULL,NULL,0
+475,17,"Torah scholars",NULL,NULL,0
+476,18,"Commandments",NULL,NULL,0
+477,18,"Orthodoxy",NULL,NULL,0
+478,18,"Religious beliefs",NULL,NULL,0
+479,14,"Schöne",NULL,NULL,0
+480,18,"Christianity",NULL,NULL,0
+481,18,"Talmud",NULL,NULL,0
+482,10,"Tsena u'rena font",NULL,NULL,0
+483,14,"Johann Friedrich Driest - י\"פ דריסט",NULL,NULL,0
+484,14,"Michael Gröll",NULL,NULL,0
+485,18,"Manners",NULL,NULL,0
+486,18,"Rabbinical establishment",NULL,NULL,0
+487,14,"Karl Barth",NULL,NULL,0
+488,14,"F. Vieweg",NULL,NULL,0
+489,18,"Bible",NULL,NULL,0
+490,18,"Central historical figures",NULL,NULL,0
+491,18,"Important personalities in Jewish culture",NULL,NULL,0
+492,18,"Translation",NULL,NULL,0
+493,14,"Vieweg",NULL,NULL,0
+494,14,"Gebr. Levrault",NULL,NULL,0
+495,11,"Greek",NULL,NULL,0
+496,14,"Graß & Barth",NULL,NULL,0
+497,8,"don't know",NULL,NULL,0
+498,14,"Rudolph Gräffer",NULL,NULL,0
+499,17,"children",NULL,NULL,0
+500,17,"young adults",NULL,NULL,0
+501,17,"teachers",NULL,NULL,0
+502,14,"Göschen",NULL,NULL,0
+503,18,"Charity",NULL,NULL,0
+504,18,"Religious reform",NULL,NULL,0
+505,14,"Joseph Stahel",NULL,NULL,0
+506,18,"Anti-Semitism",NULL,NULL,0
+507,18,"Conversion",NULL,NULL,0
+508,18,"False enlightenment",NULL,NULL,0
+509,14,"Grassischen Stadtbuchdruckerey",NULL,NULL,0
+510,7,"right and left",NULL,NULL,0
+511,14,"האחים שמואל ויהודה בון",NULL,NULL,0
+512,14,"Daniel Christoph Kanter - דניאל קריסטאף קאנתר",NULL,NULL,0
+513,14,"Bran",NULL,NULL,0
+514,14,"Carl Ferdinand Beck",NULL,NULL,0
+515,14,"F. Bruder",NULL,NULL,0
+516,18,"Education",NULL,NULL,0
+517,14,"Stamperia Governiale",NULL,NULL,0
+518,18,"Study of Languages",NULL,NULL,0
+519,11,"German with Hebrew letters",NULL,NULL,0
+520,18,"Yiddish-deutsch",NULL,NULL,0
+521,14,"Gottlieb Leberecht Hartung",NULL,NULL,0
+522,17,"maskilim",NULL,NULL,0
+523,17,"men",NULL,NULL,0
+524,18,"Travels",NULL,NULL,0
+525,7,"right",NULL,NULL,0
+526,2,"trilingual",NULL,NULL,0
+527,18,"Geography",NULL,NULL,0
+528,18,"Natural history (zoology/botany/mineralogy)",NULL,NULL,0
+529,18,"World history",NULL,NULL,0
+530,18,"Biblical criticism",NULL,NULL,0
+531,14,"Gottlieb Haase",NULL,NULL,0
+532,18,"Bourgeoisie",NULL,NULL,0
+533,18,"Professions and occupations",NULL,NULL,0
+534,14,"Wilhelm Gottlieb Korn",NULL,NULL,0
+535,18,"Censorship",NULL,NULL,0
+536,14,"A. Alexander",NULL,NULL,0
+537,14,"Musée des aveugles - מוזה דז אובגלה",NULL,NULL,0
+538,10,"handwritten",NULL,NULL,0
+539,14,"W.J. and J. Richardson",NULL,NULL,0
+540,17,"community authorities",NULL,NULL,0
+541,18,"Natural rights",NULL,NULL,0
+542,18,"Productivity",NULL,NULL,0
+543,18,"Professionalization",NULL,NULL,0
+544,18,"Utilitarism",NULL,NULL,0
+545,14,"P. Delaforest",NULL,NULL,0
+546,14,"Friedrich Franke",NULL,NULL,0
+547,18,"Superstitions",NULL,NULL,0
+548,18,"Theology",NULL,NULL,0
+549,14,"Christian Friedrich Voss & Sohn",NULL,NULL,0
+550,18,"Deism",NULL,NULL,0
+551,18,"Important personalities in culture",NULL,NULL,0
+552,14,"יאהאן טילעיאהאן טילע",NULL,NULL,0
+553,18,"Mourning",NULL,NULL,0
+554,14,"Moses Philippssohn - משה פיליפזון",NULL,NULL,0
+555,12,"end of chapters",NULL,NULL,0
+556,14,"Gottlieb August Lange",NULL,NULL,0
+557,14,"Imprimerie de la Cour",NULL,NULL,0
+558,14,"Hampe - המפה",NULL,NULL,0
+559,14,"Waisenhaus-Buchdruckerei in Mainz - בית יתומים בחנות ספרים במיינץ",NULL,NULL,0
+560,14,"Franz Sommer - פראנץ זאממער",NULL,NULL,0
+561,14,"Eliasar Moses Cohen",NULL,NULL,0
+562,14,"Giguet et Michaud",NULL,NULL,0
+563,14,"Josef A. I. von Baumeister",NULL,NULL,0
+564,16,"Salomon Maimon's Lebensgeschichte",NULL,NULL,0
+565,18,"Kabbala",NULL,NULL,0
+566,18,"Matchmaking",NULL,NULL,0
+567,18,"Rationalism",NULL,NULL,0
+568,18,"Religious criticism",NULL,NULL,0
+569,18,"Social criticism",NULL,NULL,0
+570,14,"Juden zu Lüneville und Sarguemines",NULL,NULL,0
+571,14,"Petit und Schöne",NULL,NULL,0
+572,14,"August Mylius",NULL,NULL,0
+573,18,"Halachah",NULL,NULL,0
+574,14,"Gottlieb Friedrich Schniedes",NULL,NULL,0
+575,14,"Gaedicke - האחים",NULL,NULL,0
+576,18,"Death",NULL,NULL,0
+577,14,"Hitzig",NULL,NULL,0
+578,14,"Hübschmann",NULL,NULL,0
+579,14,"Ernst Felisch",NULL,NULL,0
+580,18,"Gender",NULL,NULL,0
+581,14,"Wilhelm Dieterici",NULL,NULL,0
+582,14,"Zeitler",NULL,NULL,0
+583,14,"Tommasini",NULL,NULL,0
+584,14,"Heinrich Gottfried Zunkel",NULL,NULL,0
+585,14,"Schwan",NULL,NULL,0
+586,18,"Medicine",NULL,NULL,0
+587,14,"J.F. Edlen v. Schönfeld",NULL,NULL,0
+588,14,"Carl Wilhelm Hahn",NULL,NULL,0
+589,14,"Mathias Andreas Schmidt",NULL,NULL,0
+590,17,"boys",NULL,NULL,0
+591,8,"modern and non-modern",NULL,NULL,0
+592,11,"Yiddish",NULL,NULL,0
+593,14,"Anton Schmid - אנטאן שמיד",NULL,NULL,0
+594,18,"Astronomy",NULL,NULL,0
+595,18,"Geometry",NULL,NULL,0
+596,14,"Elsenwanger - אלזינוואנגר",NULL,NULL,0
+597,18,"Messianism",NULL,NULL,0
+598,11,"Aramaic",NULL,NULL,0
+599,14,"אברהם פרופס ובנו",NULL,NULL,0
+600,18,"Zion/Eretz Israel",NULL,NULL,0
+601,16,"אוצר השרשים",NULL,NULL,0
+602,18,"Acculturation",NULL,NULL,0
+603,2,"multilingual",NULL,NULL,0
+604,17,"girls",NULL,NULL,0
+605,14,"אברהם יצחק קאשטילו ואליעזר סעדון",NULL,NULL,0
+606,11,"Dutch",NULL,NULL,0
+607,14,"Joseph",NULL,NULL,0
+608,14,"Jacob & Abraham Salomons Proops - יוסף",NULL,NULL,0
+609,14,"יעקב ואברהם בני שלמה פרופס",NULL,NULL,0
+610,14,"G. Richardson & S. Clark",NULL,NULL,0
+611,14,"גירארד יוהאן יאנסון בבית הבחור ישראל מונדווי",NULL,NULL,0
+612,14,"Georg Hraschanzky - געארג הראשאנצקיא",NULL,NULL,0
+613,17,"women",NULL,NULL,0
+614,14,"Delius - דליוס",NULL,NULL,0
+615,14,"Grilo - גרילא",NULL,NULL,0
+616,14,"F. Sommer - פ. זומר",NULL,NULL,0
+617,16,"בית הספר",NULL,NULL,0
+618,14,"Joseph Hraschanzky - יאזעף הראשאנצקיא",NULL,NULL,0
+619,18,"Anatomy",NULL,NULL,0
+620,18,"General knowledge",NULL,NULL,0
+621,14,"Schlomo Jarisch Rapaport - שלמה יארש רפאפורט",NULL,NULL,0
+622,18,"Image of childhood",NULL,NULL,0
+623,18,"Animals",NULL,NULL,0
+624,18,"Discovery of the \"New World\"",NULL,NULL,0
+625,14,"יעקב פרופס כ\"ץ",NULL,NULL,0
+626,16,"גן נעול",NULL,NULL,0
+627,18,"Politics",NULL,NULL,0
+628,16,"דברי ריבות",NULL,NULL,0
+629,18,"Immortality of the soul",NULL,NULL,0
+630,16,"דברי שלום ואמת",NULL,NULL,0
+631,18,"Apologetics",NULL,NULL,0
+632,14,"אלכסנדר בר יהודה ליב",NULL,NULL,0
+633,14,"Heidenheim & Baschwitz - וואלף היידנהיים וברוך בשוויץ",NULL,NULL,0
+634,18,"Expansion of Hebrew literature",NULL,NULL,0
+635,18,"Literary criticism",NULL,NULL,0
+636,18,"Sephardic poetry",NULL,NULL,0
+637,14,"היינריך הייברוך האכפירסטל האפ אונד העזירונגס?=בוכדרוקער",NULL,NULL,0
+638,16,"דת ישראל oder Das Judenthum",NULL,NULL,0
+639,18,"Use of various languages",NULL,NULL,0
+640,19,"top/bottom",NULL,NULL,0
+641,14,"Eva Diesbach - חוה דיעסבאק",NULL,NULL,0
+642,18,"Mishna",NULL,NULL,0
+643,18,"Holidays",NULL,NULL,0
+644,16,"הפטרות מכל השנה",NULL,NULL,0
+645,14,"Wolf Heidenheim",NULL,NULL,0
+646,14,"Imprimerie de la République",NULL,NULL,0
+647,14,"Jochanan Levi Rofe & Sohn Benjamin - יוחנן לוי רופא ובנו בנימן",NULL,NULL,0
+648,18,"Humanism",NULL,NULL,0
+649,18,"Universalism",NULL,NULL,0
+650,14,"Salomo ben Abraham Proops - שלמה בן אברהם פרופס",NULL,NULL,0
+651,18,"Mathematics",NULL,NULL,0
+652,14,"צבי הירש בן אריה ליב ושמואל בן ישכר בער סג\"ל",NULL,NULL,0
+653,14,"Graß - גרוס",NULL,NULL,0
+654,14,"Grasses Erben und Barth - יורשי גראס ובארטה",NULL,NULL,0
+655,11,"Arabic",NULL,NULL,0
+656,14,"Z. H. Spitz - צבי הירש שפיץ",NULL,NULL,0
+657,16,"יריעות שלמה",NULL,NULL,0
+658,14,"Jechiel Michael May - יחיאל מיכל מייא",NULL,NULL,0
+659,14,"יוסף מאי",NULL,NULL,0
+660,18,"Burial",NULL,NULL,0
+661,18,"Friendship",NULL,NULL,0
+662,18,"Love",NULL,NULL,0
+663,18,"Astrology",NULL,NULL,0
+664,18,"Secularization",NULL,NULL,0
+665,16,"לוחות העיבור",NULL,NULL,0
+666,14,"ליסאק",NULL,NULL,0
+667,18,"Calculations of the calendar",NULL,NULL,0
+668,14,"שליטר",NULL,NULL,0
+669,14,"Joseph Rossmann - יוזף ראסמאן",NULL,NULL,0
+670,14,"משה שי'",NULL,NULL,0
+671,14,"איצק ויעקב",NULL,NULL,0
+672,18,"Wanderings",NULL,NULL,0
+673,14,"Itzig Speier - איצק שפייאר",NULL,NULL,0
+674,14,"Orientalische Buchdruckerei - חברת חנוך נעריםv",NULL,NULL,0
+675,18,"Health",NULL,NULL,0
+676,18,"Optics",NULL,NULL,0
+677,14,"Grilo’s Witwe - אלמנת גרילא",NULL,NULL,0
+678,16,"מודע לבני בינה oder Kinderfreund und Lehrer",NULL,NULL,0
+679,16,"מורה נבוכים",NULL,NULL,0
+680,18,"Revelation",NULL,NULL,0
+681,14,"J. Ch. Dieterich",NULL,NULL,0
+682,14,"Proops - פרופס",NULL,NULL,0
+683,18,"Marriage",NULL,NULL,0
+684,14,"שלמה אלימלך ואברהם",NULL,NULL,0
+685,14,"Stamperia della Corte d'Apello",NULL,NULL,0
+686,16,"מחזור (בלאומית רשומים 8 כרכים)",NULL,NULL,0
+687,16,"מחזור (בלאומית ישנם 8 כרכים)",NULL,NULL,0
+688,16,"מחזור (בספריה הלאומית ישנם 8 כרכים)",NULL,NULL,0
+689,16,"מחזור (כולל 8 ספרים לפי מה שיש בספריה הלאומית)",NULL,NULL,0
+690,14,"Varrentrapp und Wenner - וורנטרפ וונר",NULL,NULL,0
+691,18,"Customs",NULL,NULL,0
+692,18,"Liberalism",NULL,NULL,0
+693,16,"מציאת הארץ החדשה",NULL,NULL,0
+694,14,"Schramm u. Frank",NULL,NULL,0
+695,18,"Oriental Jews",NULL,NULL,0
+696,18,"Sephardic Jews",NULL,NULL,0
+697,16,"ספר משלי אגור",NULL,NULL,0
+698,16,"משלי אסף",NULL,NULL,0
+699,18,"Mysticism",NULL,NULL,0
+700,14,"Zirndorf - צירנדארף",NULL,NULL,0
+701,14,"Bayrhofer - בייארהאפיר",NULL,NULL,0
+702,14,"Johann Anton Krüger - יוהאן אנטאן קריגר",NULL,NULL,0
+703,14,"E. E. Eckstorff",NULL,NULL,0
+704,18,"Sexual intercourse",NULL,NULL,0
+705,14,"ליב זוסמנש",NULL,NULL,0
+706,18,"Medieval commentary",NULL,NULL,0
+707,18,"Chemistry",NULL,NULL,0
+708,18,"Expulsion of Jews",NULL,NULL,0
+709,14,"משה בון",NULL,NULL,0
+710,14,"שמואל פלקלש - בן ליזר",NULL,NULL,0
+711,16,"ספר דברי יושר",NULL,NULL,0
+712,14,"J. H. Munnikhuizen - ליב זוסמנש ומשותפו",NULL,NULL,0
+713,16,"ספר הברית",NULL,NULL,0
+714,14,"Joseph Karl Neumann - יוזעף קארל ניימאן",NULL,NULL,0
+715,18,"Psychology",NULL,NULL,0
+716,18,"Extraterrestrial life",NULL,NULL,0
+717,16,"ספר המדות",NULL,NULL,0
+718,14,"David ben Menachem Man",NULL,NULL,0
+719,14,"Chaim David ben Aaron Halevi",NULL,NULL,0
+720,14,"Seev Wolf ben Gerson Halevi - דוד בן מנחם מן",NULL,NULL,0
+721,14,"חיים דוד בן אהרן הלוי",NULL,NULL,0
+722,14,"זאב וואלף בן גרשון הלוי",NULL,NULL,0
+723,16,"ספר השרשים",NULL,NULL,0
+724,16,"ספר זמירות ישראל",NULL,NULL,0
+725,18,"Music",NULL,NULL,0
+726,18,"Openness to non-Jews",NULL,NULL,0
+727,18,"Yiddish",NULL,NULL,0
+728,14,"המחוקקים יודא ואחיו כ' ליפמן בני משה כ\"ק",NULL,NULL,0
+729,14,"Breitkopf & Härtel - ברייטקאפף אונד הערטעל",NULL,NULL,0
+730,14,"Uri Zebi Rubinstein - אורי צבי רובינשטיין",NULL,NULL,0
+731,16,"מאיר נתיב הלשון",NULL,NULL,0
+732,14,"דוד בן יקעב פרופס כ\"ץ",NULL,NULL,0
+733,14,"Spiering - ק.י. שפירינג",NULL,NULL,0
+734,18,"History of science",NULL,NULL,0
+735,14,"קארל יאקוולאויטש",NULL,NULL,0
+736,16,"ספר מלכים",NULL,NULL,0
+737,18,"Jewish history",NULL,NULL,0
+738,16,"ספר מנחה חדשה",NULL,NULL,0
+739,14,"פון קורצברג",NULL,NULL,0
+740,14,"Heinrich Heybruch",NULL,NULL,0
+741,14,"Eliezer Leser & Nathan Mai - אליעזר ליזר שמש - נתן בר\"מ מאיי",NULL,NULL,0
+742,18,"Games",NULL,NULL,0
+743,14,"חיים בן הירש",NULL,NULL,0
+744,16,"ספר מעשי יהוה",NULL,NULL,0
+745,14,"Georg Heinrich Mahnke - געארג היינריך מאהנקע",NULL,NULL,0
+746,14,"זלמן ק\"ב מברעסלוא",NULL,NULL,0
+747,16,"ספר נתיבות השלום",NULL,NULL,0
+748,14,"G. F. Starcke",NULL,NULL,0
+749,14,"A. Hladky",NULL,NULL,0
+750,18,"Sabbatianism",NULL,NULL,0
+751,14,"Prof. Elsner - פרופ' אלסנר",NULL,NULL,0
+752,14,"מנחם מן",NULL,NULL,0
+753,14,"גרשון",NULL,NULL,0
+754,14,"דוד וחיים דוד",NULL,NULL,0
+755,14,"ששה המשותפים",NULL,NULL,0
+756,14,"מרדכי רבין שטיין",NULL,NULL,0
+757,18,"Ban",NULL,NULL,0
+758,14,"Josephi Emmanuelis Diesbach - יאזעף עמאנועל דיסבאך",NULL,NULL,0
+759,14,"J.R. Thieles",NULL,NULL,0
+760,14,"יוסף פעטשויא ובנו מענדל בער",NULL,NULL,0
+761,14,"David Christoph Eckermann - דוד כריסטוף עקרמן",NULL,NULL,0
+762,14,"יאן יאנסון",NULL,NULL,0
+763,14,"אלכסנדר בן יהודה ובנו יהודה",NULL,NULL,0
+764,14,"Abraham ben Salomo Proops - אברהם בן שלמה פרופס",NULL,NULL,0
+765,16,"עשרה מאמרות",NULL,NULL,0
+766,14,"דוד בר מרדכי הלוי",NULL,NULL,0
+767,14,"י'  קעלנר",NULL,NULL,0
+768,14,"(Christoph) Schlieder - כ. (כריסטוף) שלידר",NULL,NULL,0
+769,11,"Danish",NULL,NULL,0
+770,14,"N. Moeller og Soen - נ' מאללער",NULL,NULL,0
+771,18,"Family",NULL,NULL,0
+772,16,"קורות שנות קדם",NULL,NULL,0
+773,14,"Anton Straschiripka - אנטאן שטראשיריפקא",NULL,NULL,0
+774,16,"ראשית למודים",NULL,NULL,0
+775,14,"Joh. Friedr. Valz",NULL,NULL,0
+776,14,"C. (Christoph) Schlieder - כ. (כריסטוף) שלידר",NULL,NULL,0
+777,14,"Nella Tipografia Davolio - דווליא",NULL,NULL,0
+778,18,"Ashkenazi Jews",NULL,NULL,0
+779,14,"Hrabische Erben - יורשי הראב",NULL,NULL,0
+780,14,"J. H. Koffmann",NULL,NULL,0
+781,18,"Philanthropism",NULL,NULL,0
+782,14,"י' פרופס",NULL,NULL,0
+783,14,"C. F. Rellstab",NULL,NULL,0
+784,14,"George Jacob Decker",NULL,NULL,0
+785,14,"H. W. Harpetern",NULL,NULL,0
+786,16,"שירי תפארת",NULL,NULL,0
+787,14,"אלמנת י פרופס",NULL,NULL,0
+788,11,"Polish",NULL,NULL,0
+789,16,"תורת לשון עברית",NULL,NULL,0
+790,14,"מינהולד",NULL,NULL,0
+791,11,"גרמנית",NULL,NULL,0
+792,11,"איטלקית",NULL,NULL,0
+793,11,"רוסית",NULL,NULL,0
+794,11,"הולנדית",NULL,NULL,0
+795,11,"צרפתית",NULL,NULL,0
+796,11,"יידיש",NULL,NULL,0
+797,11,"אנגלית",NULL,NULL,0
+798,4,"Book's seller",NULL,NULL,0
+799,4,"Dedication",NULL,NULL,0
+800,4,"Personal Address",NULL,NULL,0
+801,4,"Approbation",NULL,NULL,0
+802,4,"Thanks",NULL,NULL,0
+803,4,"Subscriber",NULL,NULL,0
+804,4,"Printer",NULL,NULL,0
+805,4,"Recommendation",NULL,NULL,0
+806,4,"Proofreader",NULL,NULL,0
+807,4,"Book's funder",NULL,NULL,0
+808,4,"Seller",NULL,NULL,0
+809,6,"Don't know",NULL,NULL,0

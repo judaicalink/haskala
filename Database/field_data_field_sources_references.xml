@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_sources_references">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_sources_references_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_sources_references_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_sources_references" engine="InnoDB" version="10" row_format="Dynamic" rows="56" avg_row_length="877" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:09" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 171 (field_sources_references)" />
+	</table_structure>
+
+	<table_data name="field_data_field_sources_references">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">11</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">Vorrede und Anmerkungen</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">XXIV;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2008</field>
+		<field name="revision_id">2008</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמה</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">43-51; 51-102</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בעת דיון על ענייני דיקדוק כותב המחבר: &quot;ולכן אין להשגיח במה שנדפס בסידור בית תפלה של מו' זלמן הענא ז&quot;ל...&quot; (עמ' [6])</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2050</field>
+		<field name="revision_id">2050</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">3</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2068</field>
+		<field name="revision_id">2068</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">6-7, 9,  18</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">ד/א
+
+דובנא מתפלמס עם זלמן הענא בענייני דקדוק.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">דברי ר' יחזקאל לנדא - עמ' ס'.
+הפניה לאריסטו: ד' עח.
+
+לנדא, המביא לדפוס, מבליט בהקדמתו כי אברהם פריצול, מחבר האגרת הראשונה המופיעה בספר זה, הסתמך על דברי &quot;חכמי האומות&quot; בבואו למסור תיאור גיאוגרפי כולל של העולם.  המביא לדפוס מציין כי פריצול &quot;העתיק מספר היקר מה שאלקים אנה לידו &lt;strong&gt;קאסמאגראפיע&lt;/strong&gt; מהחכם &lt;strong&gt;תלמי מלך&lt;/strong&gt; המפורסם בפי חכמי אומות  בשם &lt;strong&gt;פטאלמיאוס&lt;/strong&gt; אשר הי' שר צבא אצל אלכסנדרי הגדול וחדושים רבים העתיק מספר עולם חדש אשר נכתב בימיו כשנתגלה אמעריק' ...&quot; (עמ' [1])
+
+לאחר המאמר &lt;ins&gt;מגיד חדשות&lt;/ins&gt;, אותו משלב לנדא בסוף &quot;החלק הראשון&quot; של ספרו של פריצול, הוא מוסיף  הערה: &quot;...הרב הכותב אגרת אחרות עולם כתב חדושי ארץ מאיים וימים ונהרות ומישובים ומדברות אשר קצת מהם נשתנה שמם מחכמי זמנינו כמו סקוציא נקרא כעת שאטלאנד וכדומה לזה. ולאיש התעה במדבר או באיי הכתוב בספר הזה המכונה בשם אשר לא נודע לו. &lt;ins&gt;יעיין בספר אשר חיבור אחד מחכמי הנוצרים (היבנערס לעקסיקאן)&lt;/ins&gt; שם יפתחו עיניו בשמות האלה ואנכי לא אביתי למעול בלשון הרב...&quot; (עמ' כח/2)
+
+דברי ר' יחזקאל לנדא (אביו של המביא לדפוס) מובאים בהרחבה בהערת שולים ב&lt;ins&gt;אגרת תימן&lt;/ins&gt; לרמב&quot;ם ולקוחים מתוך דרשה.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בהקדמתו מציין שמעון בונדי מקורות אשר שמשו אותו בחיבור הספר. הוא מזכיר, בין היתר: צמח דוד, ערוך הקצר, עיר דוד (מאת דוד די לארא), וכן רש&quot;י, ברטנורא.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמת המחבר (עמ' 3,מספור שלי)</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בסוף ההקדמה מציין המחבר כי הערותיו מסתמכות על הרמב&quot;ם</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' ו'</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">פרק ח'</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">לאורך הספר</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">Beers Lektürevorschläge für Lehrer, S. 158f.:
+Niemeyer, August Hermann: Grundsätze der Erziehung und des Unterrichts. Für Eltern, Hauslehrer und Schulmänner, Halle 1806.
+Parízek, Ales Vincenc : Uiber Lehrmethode in Volksschulen : für Präparanden, Katecheten und Lehrer nebst einem Anhange vom Präparandenunterricht für Musterlehrer, Prag 1801.
+Villaume, Peter: Praktisches Handbuch für Lehrer in Bürger- und Land-Schulen, Dessau 1781.
+Fragen an Kinder: Eine Einleitung zum Unterricht in der Religion, Von der Ascetischen Gesellschaft in Zürich, Zürich 1776.
+Villaume, Peter: Philothée oder die ersten Lehren der Religion, Berlin 1788.
+Gunz, Simon: Praktische Bemerkungen und Vorschläge zur Verbesserung des Lesefachs für angehende Haus- und Schullehrer, vorzüglich jene der jüdischen Jugend, nebst einem Gespräche über die Numeration, als ein Beispiel der Sokratischen Lehrart, Prag 1792.
+Schlesinger, Moritz Löwe: Ueber Verbesserung der Erziehungs-Methode bey der jüdischen Jugend, Breslau, Hirschberg a. Lissa (Korn) 1800.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' [4]
+עמ' סד</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">מרבה לצטט מתוך &quot;שעות שחרית&quot; מאת מנדלסון. מזכיר רבות את אריסטו וגם את דקר, אך אולי מתוך מנדלסון.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הספרים מוזכרים ב&quot;הצעה&quot; וב&quot;הקדמה&quot;.
+
+מביא דעה הנוגדת את דעתו של &quot;החכם אייכ'הארן במבוא לספרים הנוספים איינלייטונג אין דיא אפאקריפ'ישען ביכ'ער&quot; (הקדמה) [השוו לכותרת שנמצאה בספרות משנית].</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמה, סעיף ג'
+
+הקדמה, סעיף ז'
+
+הפראפעסאר אייכהארן מוזכר בהערת שוליים בהקדמתו של ברי&quot;ל, סעיף ז'.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בחלק השלישי, הערת שוליים</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">Erwähnt S. 155 aber nicht  nachgewiesen: Salomon Pappenheimer:An die Barmherzigen zu Endor, oder über die frühe Beerdigung der Juden, Breslau 1794.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">מכותרת הספר ניתן להבין כי המחבר השתמש בכתבים שונים שהוא מגדיר אותם כטובים ביותר:
+
+&quot;אויס דען בעסט שריפטן &lt;strong&gt;אויסגעצאגן&lt;/strong&gt;...&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' 1/ב
+
+המחבר מציין בעמ' 1/ב: &quot;צריך שאקדיש לך איזה כללים מחכמת הדבור הפנימי, לקוחים מדברי הרמב&quot;ם ז&quot;ל במלות ההגיון, עם תוספות באור ושנוי לשון, הרחבה וקצור כפי הצורך...&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">ספר המדות: בעמ' ה' ובמקומות אחרים.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' א
+
+עמ' ו</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">צמח דוד: עמ' [5] בהקדמה.
+מדרש/תלמוד: עמ' 69
+
+פיליפסון מציין כי הוא מסתמך על צמח דוד בבואו להעביר מידע על תולדות היהודים.
+
+הוא מציין כי רוב הסיפורים שהוא מביא מעמ' 68 והלאה מקורם בתלמוד ובמדרש.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בפרק החמישי שבספר</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">&quot;הקדמה ומבוא הספר&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">&lt;p&gt;למשל: עמ' מ/1, קיז/2&lt;/p&gt;
+</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בהקדמה</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">&quot;התנצלות המחבר&quot;
+סעדיה גאון: עמ' כב
+
+&quot;אחרי רואי דברי הרב חובת הלבבות, שהזהירר מאד על חיוב החקירה לדעת בוראו, ולא יספיק אונה לב'... אמר בשער הייחוד...&quot;
+&quot;והוסיף הרב מורה נבוכים...&quot;
+ספר הכוזרי לא מוזכר בפרוש אך צוין בהקדמה: &quot;כאשר יבואר בסמוך מאמר החכם למלך כוזר&quot;.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2274</field>
+		<field name="revision_id">2274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בהקדמה מציין המחבר כי השתמש במקורות לטיניים לחיבור ספר בעברית על מניעת מחלות: &quot;על כן נתתי אל לבי להגביר ברית לשון הקודש להעתיק ולהמציא מזור ותרף ללמוד לבני היהודא גדר לא יעבור חוק...&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמה ראשונה, עמ' א/2
+הקדמה ראשונה, עמ' א/1
+הקדמה ראשונה, עמ' ה/1
+הקדמה ראשונה, עמ' ו/1
+הקדמה ראשונה, עמ' ז/2
+
+
+בנוסף לספרים שהוזכרו כאן, ברי&quot;ל מפנה גם לספרי מנדלסון בגרמנית (עמ' ה/2).
+
+הוא גם משווה דברים שקרא אצל אייכל בהקדמתו לספר משלי עם דברים ששמע מפי
+&quot;מורי ר' יצחק הלוי&quot;. (עמ' ז/1)</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">חלק ב', עמ' נא/2, נב/1</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">לאורך הספר
+
+פרידלנדר, &lt;ins&gt;פרקים בסאטירה&lt;/ins&gt;, מצביע על האסוציאציות המקראיות הרבות הפזורות לאורך הספר כאחד ממאפייניו הבולטים.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2319</field>
+		<field name="revision_id">2319</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">המחבר מביא בראשית הספר רשימת מקורות מהם שאב, הכוללת ספרי דקדוק מאת אבן עזרא, רד&quot;ק, זלמן הענא, ר' עמדן, חיים קעסלין, וספרים המודפסים בחברת חינוך נערים. &quot;מן כלם בררתי ובארתי דבריהם בלשון קלילה, ועתה אל יאשימני הקורא שלא אמרתי דבר בשם אומרו כי מן הסתם כל דברי מפי אלו הקדושים והטהורים.&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">המחבר כותב בהסכמתו: &quot;כל מהלך הספור במחברת זאת בנויה על דברי חז&quot;ל במדרשים ועל דברי גדולי המפרשים גם מדברי ספר הישר קטפתי מעט שכבר הוגד לי מפי מגידי אמת בשם גדל דורינו שהספר הנ&quot;ל הוא מדרש כאחד המדרשים&quot;.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">ראו דברי ההקדמה של וולפסון, שם מציין כי הסתמך על חכמים יהודים ולא יהודים כאחד לבאור הספר. [אצבע &quot;על תהליכי כתיבה...&quot;, חלון קהל יעד]</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">&quot;האבן התשיעית&quot; בהקדמה
+
+לפי המחבר, &quot;כל הכללים המבוארים בזה הספר תוצאותיהם &lt;ins&gt;מספרי חשובי המדקדקים הראשונים והאחרונים&lt;/ins&gt; אשר התפשטו אצלנו&quot;.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">מקורות חז&quot;ל המצוינים בספר רבים מכדי לציינם במפורש.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">רשימות הספרים הנזכרים מופיעות בתחילת הספר: &quot;לוח ספרי לשון הקודש הנזכרים בספר הזה&quot; ו&quot;לוח של ספרי האומות הנזכרים בספר הזה&quot;. הרשימה השניה ארוכה מן הראשונה. 
+כפי שציין פישמן, יהודי שקלוב, אחת המגמות המוצהרות של שולמן היתה להראות כי חשוב ואף לגיטימי להסתמך על הידע שצברו לא יהודים.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמת המחבר</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הרמב&quot;ם: למשל, עמ' ה'-ו', טו'
+יואל ברי&quot;ל: הפניה לספרו חרב לה' מופיעה בשער הספר
+משה מנדלסון: עמ' ז', כח'
+חובת הלבבות: עמ' טז' (בביאור)</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בהקדמתו כותב רומנלי: &quot;וגלוי לפניך מה שכתב אלכס&quot;נדר פו&quot;פי בחקירותיו  [על עניין החרוז]... על כן ראשי המשוררים מכל לשונות הגוים גרשו החרווז מכל חבווריהם כאשר עשה לילט&quot;ון בגן עדנו... יו&quot;נג, שיקס&quot;פיר והרבה ממשוררי ספרד ואיטאליאה...החכם פינילון בהקדמתו לטי לימ&quot;אקו...&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמה, עמ' [1]
+הקדמה, עמ' VII
+
+על אור לנתיבה ראו &quot;אצבע&quot; בלשונית הקדמות.
+על מדרש מלים ראו &quot;אצבע&quot; על התייחסות לספר בזמנו, בלשונית קהל יעד.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">באחת מהערות השוליים שלו, מפנה המחבר אל מאמר שפירסם נפתלי הרץ וייזל במאסף.</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">בעמוד השער צוין כי הספר מלקט מידע אודות רבי עקיבא, ה&quot;מפוזר ומפורר בתלמוד בבלי וירושלי ובשאר ספרים&quot;.
+
+בראשית ההקדמה הראשונה מצטט המחבר מתוך &quot;&lt;ins&gt;מלות ההגיון&lt;/ins&gt; שער ט'...&quot;, אמנם מבלי לציין את שמו של הרמב&quot;ם.
+
+את ספרו של ראב&quot;ד מציין המחבר במבוא ההיסטורי לספרו. שם מזכיר גם את &quot;תשובת רבינו סעדיה הגאון... היוחסין וסדר עולם זוטא&quot; (עמ' [7]).
+
+יוספוס פלאביוס מוזכר במע' [9].</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמוד שלישי בהקדמה</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' 16 וכו'
+
+לפי ורסס, השכלה ושבתאות, עמ' 79, &quot;ניכר... כי המחבר הוא חסיד מושבע של מנדלסזון: אופייני ליחסו זה הוא דרך השימוש בדעותיו, כהוכחה ניצחת ...&quot;
+קסטנברג-גלדשטיין, מי היה מחבר..., עמ' 570, מציינת כי למחבר היתה זיקה לר' יחזקאל לנדא (על סמך ציטוט בעמ' 28 בספר).</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הן בהקדמת המחבר והן בהערותיו מצוינים בפירוש המקורות מן התנ&quot;ך.
+ספר כהנת אברהם (ונציה תע&quot;ט) מוזכר בעמ' [18] בהקדמה.
+
+בנוסף לתנ&quot;ך, וייזל מצביע על מקורות אחרים אותם הכיר. בהקדמה [עמ' 2, 3] הוא עוסק בנפוצותו של השיר בין כל התרבויות ומציין שגם בין עמים ש&quot;אין להם לא כתב ולא ספר...טרם יצאו לקרב ישירו בשירים... כמו שספרו לנו קאלומ&quot;בוש וחבריו מוצאי העולם החדש, וכאשר ספר לנו בדורנו רב אנית מלך ברי&quot;טאני השר קא&quot;קש וחבריו, מוצאי האיים הדרומיים בקצות הארץ&quot;. הוא מצביע גם על &quot;שירי הומי&quot;רוס ואנק&quot;רעאן ליונים... שירי הא&quot;ראץ וביר&quot;גיל לרומים... וביותר בממלכות האי&quot;רופי... קצתן [של השירים] מלאים הזיות והבלים ששרו לשקוציהם בחרו בם...&quot;</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' [2], [10] בהקדמה</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">חכמת שלמה: הקדמה;
+נתיבות השלום: לאורך הספר (פרק ז', למשל)
+
+וייזל מציג ב&quot;שירי תפארת&quot; פרשנות לסיפור המכות השונה מן הפרשנות המסורתית. אך כפי שהוא מציין, לשם כך הוא מתבסס במידה רבה ב&quot;ספר חכמת שלמה, שהעתקתי בילדותי ללשון עברי, ושבארתי דבריו בפירוש שקראתי רוח חן. כי בחמלת ה' עלי, למדתי ממליצותיו הקצרות והסתומות הסדר הנפלא הזה שיש במכות מצרים, ועל ידו עעמדתי על פשוטי עומק המקראות שבתורה...&quot; (עמ' [4] בהקדמה)</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">עמ' ד, ה</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_references_value">הקדמה, עמ' [8]
+
+הקדמה, עמ' [8]
+
+הקדמה, עמ' [8]</field>
+		<field name="field_sources_references_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

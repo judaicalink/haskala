@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_personal_addresse_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_personal_addresse_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_personal_addresse_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_personal_addresse_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="23" avg_row_length="712" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:05" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 119 (field_personal_addresse_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_personal_addresse_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">לאחר דברי ההקדמה, ישנה פניה בת שני עמודים אל &quot;האזרח גרגואר&quot;.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">Friedrich Wilhelm II. König von Preußen.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2052</field>
+		<field name="revision_id">2052</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">Probst Teller</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">אמנם תחילה אין פניה ישירה למלך החדש, אך בהמשך עולה ישנה &lt;ins&gt;פניה עקיפה&lt;/ins&gt;. לקראת סוף הנאום, כותב וייזל (כשהוא משווה, כפי שעשה לכל אורך הספר, בין מלכות ישראל למלכותו של המלך בתקופתו): &quot;...כמו שכתוב וגם ישב שלמה על כסא מלוכה, וגם באו עבדי המלך לברך את אדונינו המלך דוד לאמר ייטב אלהיך את שם שלמה משמך, ויגדל את כסאו מכסאך, וישתחו המלך על המשכב (מ&quot;א א' מ&quot;ו מ&quot;ז). וככה נאמר אנחנו ייטיב אלהים את שם אדונינו המלך פרידריך ווילהעלם יר&quot;ה משם המלך דודו שהלך לעולמו, ויגדל את כסאו מכסא המלך המת&quot;. (הקבלה זו אינה מועברת בתרגום הגרמני.)
+שתי הפסקאות האחרונות בסיום הספר &lt;ins&gt;פונות במפורש אל המלך החדש&lt;/ins&gt;: &quot;אשריך ווילהעלם מלכנו, כי מלבד מורא כבודך אשר אנו חייבים לך, שלחה גם אהבתך פארותיה בלבנו. זאת נחלת הולך תמים וזאת פרי צדקתו. / וצדקתך זאת תמלא לבבינו תקוה טובה, כי תנהלנו בטובך כאשר תנהל כל יושבי ארצך, כי מלך חכם אתה, וידעת כי אל אחד בראנו ואב אחד לכלנו, והוא ישפות שלום על כל מעשה ידיו. אמן:&quot;
+מוזכרת גם אלמנתו של המלך, וכן המלכה החדשה.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">מיד לאחר עמוד השער, ישנו שיר באיטלקית הפותח במילים:
+All' Inclita Familia Itzig</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">ב&quot;מכתב&quot; לדוד פרידלנדר, פרידריכספלד מבקש ממנו: &quot;הגד לבני עירך, ובראש לטובים ולישרים בלבותה, אשר עשו חסד עם אבותי צ&quot;ע ועמדי. כי אהבתם לנצח עצורה בקרבי. וביחוד לזרע השר &lt;strong&gt;ר' פייטל&lt;/strong&gt; ז&quot;ל...&quot; (עמ' 5)</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">המחבר פונה אל שני המשכילים ומבקר אותם בחריפות.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2231</field>
+		<field name="revision_id">2231</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">בכותרת ההקדמה</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">בראשית הספר ישנה &quot;אזכרת אהבה&quot; המוקדשת &quot;לידיד נפשי תלמידי ורעי, ה&quot;ה הבח' החתן המופלג פאר ילדי ישרון כ&quot;ה יוסף ראטיבאר&quot;.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">בתחילת הספר ישנו &quot;מכתב המחבר&quot; בו וייזל מברך את אמו (ואת אביו ז&quot;ל), וכותב לה &quot;כי אשת חיל את, ויראת ה' היא אוצרך, לא נטשתי תורתך ולא מאסתי חוסרך יסרתני בנעורי, עתה ראי ריח בכך כריח הלבנון, קומי נא אמי ושתי מיין מסכתי למען תברכני נפשך&quot;.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">השיר בהקדמת הספר מופנה אל בני הזוג יורש, אשר אימצו את ברי&quot;ל אל ביתם מגיל צעיר.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">שיר אשר בפתח הספר נושא הכותרת: &quot;מכתם לדוד&quot;. הוא  מוקדש לדוד פרידלענדר ובין היתר מהלל את הקשר בינו לבין משה מנדלסון ומרמז למעמדו כממשיכו של המורה הדגול.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">בראשית הספר ישנו &quot;מכתב&quot; הפונה אל יצחק אייכל. ברי&quot;ל מתייחס שם למכתב שאייכל עצמו הפנה אליו בראש ספרו &lt;ins&gt;תולדות רבנו החכם...&lt;/ins&gt;</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">מיד לאחר ההסכמות, מקדיש המחבר שני עמודים (תחת הכותרת &lt;ins&gt;מנחת מרחשת&lt;/ins&gt;) להבעת תודה והוקרה ל&lt;ins&gt;שמואל ווערטהיים&lt;/ins&gt;.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">אחרי דברי הקדמתם, מוסיפים המביאים לדפוס את הדברים הבאים:
+&quot;ואלה שמות ראשי אלפי ישראל הנודעים בשערינו אשר אליהם אנו שולחים הספר הזה...
+לכבוד אדונינו מורינו ורבינו הגאון המפורסם, מוה&quot;רר צבי הירש נ&quot;י ולכבוד בנו הגאון מוה&quot;רר שאול נ&quot;י.
+ולכבוד הגאונים המפורסמים רבני קהלות קדושות 
+פראג 
+אמשטרדם 
+פ&quot;פ דמיין 
+הנובר 
+ברעסלוי 
+גלויגא ליסא 
+פוזנא 
+מיינץ 
+הייצפ'עלד 
+פ&quot;פ דאודר 
+ולהגאון החסיד המפורסם מוה&quot;רר אליה מווילנא.
+ולהם ערוכים הדברים האלה אשר הצבנו בפתיחת שער הספר הזה, כמכתב שלוח לכל אחד בפרט למען אשר יראו כל איש ישראל כי בצדק כל אמרי פינו: אנחנו עבדים לה' ולתורתו האמתית ולכל חפיצי אמת וצדק.
+ברלין ר&quot;ח אדר תקמ&quot;ט לפ&quot;ק
+איצק בר&quot;ד מברלין    דוד פ'רידלענדר&quot;</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">ההקדמה הפותחת את הספר הוקדשה על ידי שנאבר-לויזון למלך שוודיה, גוסטב השלישי</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">בפתח הספר פונה יהודה ייטלש אל אחיו ברוך, מחבר הספר.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">פרידריכספלד מעניק ערך רב לדעתו המקצועית של יעקב ששפורטס (המכונה כאן &quot;שש הדלתות&quot;, שהוא תרגום שמו), כמי שאמון על רזי השפה ומסוגל לשפוט אותו כהוגן. בפנייתו אליו כותב: &quot;לכם לבד... המשפט, להגיד אם מצא השיר הזה חן בעיניכם ואם אין, כי אתם ידעתם לערוך את ערכו, היגביה שבת ואם חך הוא ועל גחונו ילך...&quot;</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">יעקב חי חפץ מצויין בדף שמסומן כדף י', ומופיע שיר מספד לכבודו.
+
+אורי מורפורגי מצויין בדף שמסומן יח', וזהו שיר לרגל חתונתו עם רבקה.
+
+יצחק מרפורגו מוזכר בדף שמסומן כיט', וזהו שיר לרגל הולדת לו 3 בנות עם אשתו מלכה.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">לינדא פונה פנייה נרגשת לרעו ליב סג&quot;ל ומבטא את רחשי הידידות כלפיו. הוא מציין את שמו של אביו של ידידו - התורני... זלמן סג&quot;ל.
+
+ליב במהר&quot;ז סג&quot;ל, אגענט בחצר בן המלך מענגללאנד הרצאג פאן יארק, Hannover</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">בטקסט עצמו יש פנייה לאליה החתן ולמרים הכלה. המידע עליהם לקוח מ-
+M. Steinschneider, Die Handschriften-Verzeichnisse der Koeniglichen Bibliothek zu Berlin ... hebraeischen Handschriften, Berlin, 1878-1897, no. 255/5, p. 110.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">אחרי עמוד השער מופיעה פניה: &quot;אל כבוד החכם המובהק התורני כ&quot;ה דוד פרידלענדר נרו בברלין&quot;.</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_personal_addresse_notes_value">ראו הקדמה - אייכל פרסם את מכתבו לרעו ברי&quot;ל</field>
+		<field name="field_personal_addresse_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

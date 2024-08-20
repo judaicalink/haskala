@@ -4,14 +4,15 @@
 
 <nav class="bread-crumbs">
     {% if self.get_ancestors|length > 1 %}
-        <ul>
+        <ul class="list-inline">
             {% for p in self.get_ancestors %}
                 {% if p.is_root == False %}
-                    <li class="first"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                    <li class="first list-inline-item"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                    <span class="separator">&gt;</span>
                 {% endif %}
             {% endfor %}
 
-            <li class="last">{{ self.title }}</li>
+            <li class="last list-inline-item">{{ self.title }}</li>
         </ul>
     {% endif %}
 </nav>

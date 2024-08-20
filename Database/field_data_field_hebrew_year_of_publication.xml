@@ -1,0 +1,1875 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_hebrew_year_of_publication">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_hebrew_year_of_publication_value" type="varchar(255)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_hebrew_year_of_publication_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_hebrew_year_of_publication" engine="InnoDB" version="10" row_format="Dynamic" rows="153" avg_row_length="107" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:00" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 62 (field_hebrew_year_of_publication)" />
+	</table_structure>
+
+	<table_data name="field_data_field_hebrew_year_of_publication">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1968</field>
+		<field name="revision_id">1968</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1970</field>
+		<field name="revision_id">1970</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1976</field>
+		<field name="revision_id">1976</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1978</field>
+		<field name="revision_id">1978</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1989</field>
+		<field name="revision_id">1989</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2003</field>
+		<field name="revision_id">2003</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2006</field>
+		<field name="revision_id">2006</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2007</field>
+		<field name="revision_id">2007</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2011</field>
+		<field name="revision_id">2011</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2028</field>
+		<field name="revision_id">2028</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2029</field>
+		<field name="revision_id">2029</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2032</field>
+		<field name="revision_id">2032</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקע</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2042</field>
+		<field name="revision_id">2042</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2043</field>
+		<field name="revision_id">2043</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2044</field>
+		<field name="revision_id">2044</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2050</field>
+		<field name="revision_id">2050</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2055</field>
+		<field name="revision_id">2055</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקע</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2066</field>
+		<field name="revision_id">2066</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2068</field>
+		<field name="revision_id">2068</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2089</field>
+		<field name="revision_id">2089</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2100</field>
+		<field name="revision_id">2100</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2112</field>
+		<field name="revision_id">2112</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2113</field>
+		<field name="revision_id">2113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2115</field>
+		<field name="revision_id">2115</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקל</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2122</field>
+		<field name="revision_id">2122</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2134</field>
+		<field name="revision_id">2134</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2151</field>
+		<field name="revision_id">2151</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקע</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2153</field>
+		<field name="revision_id">2153</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2170</field>
+		<field name="revision_id">2170</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקע</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקס</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקס</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקס</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2227</field>
+		<field name="revision_id">2227</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקס</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקס</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2262</field>
+		<field name="revision_id">2262</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2266</field>
+		<field name="revision_id">2266</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2268</field>
+		<field name="revision_id">2268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2274</field>
+		<field name="revision_id">2274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2281</field>
+		<field name="revision_id">2281</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקל</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2323</field>
+		<field name="revision_id">2323</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2329</field>
+		<field name="revision_id">2329</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2331</field>
+		<field name="revision_id">2331</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2332</field>
+		<field name="revision_id">2332</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2334</field>
+		<field name="revision_id">2334</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2335</field>
+		<field name="revision_id">2335</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2353</field>
+		<field name="revision_id">2353</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקט&quot;ז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקלז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2381</field>
+		<field name="revision_id">2381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמה</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2401</field>
+		<field name="revision_id">2401</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2406</field>
+		<field name="revision_id">2406</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2416</field>
+		<field name="revision_id">2416</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמד</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקע</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2430</field>
+		<field name="revision_id">2430</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקס</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2435</field>
+		<field name="revision_id">2435</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2436</field>
+		<field name="revision_id">2436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2440</field>
+		<field name="revision_id">2440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2442</field>
+		<field name="revision_id">2442</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמח</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2448</field>
+		<field name="revision_id">2448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2450</field>
+		<field name="revision_id">2450</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקכג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2452</field>
+		<field name="revision_id">2452</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקנ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמב</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעא</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2466</field>
+		<field name="revision_id">2466</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2469</field>
+		<field name="revision_id">2469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמ</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקעג</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקמט</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסז</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2479</field>
+		<field name="revision_id">2479</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_hebrew_year_of_publication_value">תקסו</field>
+		<field name="field_hebrew_year_of_publication_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

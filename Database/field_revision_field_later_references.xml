@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_later_references">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_later_references_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_later_references_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_later_references" engine="InnoDB" version="10" row_format="Dynamic" rows="19" avg_row_length="862" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:19" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 71 (field_later..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_later_references">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Ritter 1861, S. 74-92.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Bendavid, L., Aufsätze verschiedenen Inhalts, in: NADB, Anh. 1797-1803, 1803, Anh. 29-68, Bd., 2.Abt., S. 689-695.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Kompert, Leopold: Ohne Bewilligung(Erzählungen), in: Kompert: Aus dem Ghetto, Leipzig 1848.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Yes</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Ritter 1861, S. 58.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Auerbach, Berthold: Dichter und Kaufmann. Ein Lebensgemälde aus der Zeit Moses Mendelssohn's, Stuttgart 1840. Der Roman erweist Kuh Ehre.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2011</field>
+		<field name="revision_id">2011</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Sulamith, Jg 2 (1809) Nr 2, S. 1-26: Ignaz Jeitteles:  Eine biographische Skizze des Herrn Jonas Jeitteles, der Heilkunde Doktors, der Weltweisheit Baccalaurei, des gewesenen böhmisch-israelitisch-chirurgischen Gremiums immerwährenden Präses, K. beeideten Physici der Prager Israelitengemeinde ...</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">צינברג 116</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">מאפו שאף להחליפו בספר חנוך לנער מפרי עטו (הרמתי, שלמה. 1972. מאפו -  המורה לעברית: ראשית הנחלת-הלשון על רקע המתודיקה להוראת הלשונות במאה ה- XIX. ירושלים: משרד החינוך והתרבות, 29)
+
+על פי אופק (אופק 1979, 47, הערה 28) יש עדויות על כך שהמקראה היתה מוכרת ומוערכת עוד בראשית שנות ה- 20 של המאה ה-20</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">מאיר פירדא בספרו &lt;strong&gt;שלמות וצורת הנפש&lt;/strong&gt; (שהוא למעשה באור על התרגום/באור של פרידלנדר, דהיינו על ספר &lt;strong&gt;הנפש&lt;/strong&gt;) כותב: &quot;יראתי מלגשת אליו [אל הספר הזה] ולעיין בו כי אזהרתו בהקדמתו: 'והי' כל איש זר אשר לא נסה ללכת בעקבות הפילוסופים כי תכונת שכלו עודנה בסתר המדריגה, או אם לא טעם מעולם דבר החכמה והעיון אל יקרוב הלום לקרוא מאמרים רמים ועמוקים כאלו' היתה לי צוויו, אמנם חמדת דבריו הקדושים גוברת עלי עד ששניתי ושלשתי לקרוא ולעיין בו, &lt;ins&gt;יגעתי ומצאתי פעם לבאר דבריו, ופעם לשנותם&lt;/ins&gt;&quot;.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Franz Delitzsch, Zur Geschichte der Juedischen Poesie.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">פ. בער בתוך כ&quot;ע שולמית (1808) משבח את היצירה.
+כן עשה ריב&quot;ל בדברי הסיכום למהדורת תק&quot;פ של המחזה.
+(כך לפי שקד, מבוא, עמ' 7. וראו שם התייחסויות נוספות).</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">בהקדמת המחבר בספר &quot;משלי אגור: בעקבות משלי שלמה&quot; לאפרים דומורצקי 
+(ורשה, 1910), טוען דומורצקי כי הוא הולך בדרכו של יצחק סטנוב ב&quot;משלי אסף&quot;, אך משליו כתובים בסגנון יפה מזה של &quot;משלי אסף&quot;.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2247</field>
+		<field name="revision_id">2247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">בהקדמת המחבר בספר משלי אגור: בעקבות משלי שלמה לאפרים דומורצקי 
+(ורשה, 1910), טוען דומורצקי כי הוא הולך בדרכו של יצחק סטנוב במשלי אסף, אך משליו כתובים בסגנון יפה מזה של משלי אסף.</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">שפרלינג, משה שמואל. &quot;הגיון לאבל-אם&quot; בתוך: תרל&quot;ח. &lt;strong&gt;עלילת שוא&lt;/strong&gt;. ורשה, 4 (הערת שוליים):
+(התייחסות לביטוי &quot;וכרובה יורה חצי צדק אל השערה&quot;)</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">בתוך: &lt;strong&gt;ספר זכרון לסופרי ישראל החיים איתנו היום&lt;/strong&gt;, של זגורודסקי, ישראל חיים וסוקולוב, נחום (ורשה, 1889), יש טקסט של אלימלך וקסלר המתאר כיצד נפל לידיו ספר כליל חשבון וכמה והשפיע עליו (עמ' 142).</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">Yes</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">לפי קלויזנר, א', עמ' 139 והלאה, ושאנן, א', עמ' 68, ישנה &lt;strong&gt;התייחסות חיובית&lt;/strong&gt; לספר בתוך:
+שלמה לוויזון, &lt;ins&gt;מליצת ישורון&lt;/ins&gt; (וינה תקע&quot;ו); שי&quot;ר, בהקדמה ל&lt;ins&gt;שארית יהודה&lt;/ins&gt;; שיר של אד&quot;ם הכהן.
+&lt;strong&gt;התייחסות שלילית&lt;/strong&gt; לספר/רתיעה מן הספר בתוך:
+אגרת מאת שד&quot;ל אל לטריס; 
+גריץ-טריווש, דברי ימי היהודים (וילנה תרס&quot;ט);
+אורי קובנר, &lt;ins&gt;חקר דבר&lt;/ins&gt;;
+Franz Delitzsch, Zur Geschichte der Juedischen Poesie, Leipzig 1836
+ועוד</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_later_references_value">הספר זכה לפופולריות רבה,וקבוצות של משכילים באמסטרדם למדו ממנו לימודים שבועיים בערבים. ראו:
+
+Irene E. Zwiep, &quot;Imagined Speech Communities: Western Ashkenazi Multilingualism as Reflected in Eighteenth-Century Grammars of Hebrew&quot;, in Shlomo Berger et al, eds., Speaking Jewish - Jewish Speak, Multilingualism in Western Ashkenazic Culture, Leuven 2003 (Studia Rosenthaliana 36), pp. 111</field>
+		<field name="field_later_references_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,20 @@
+vid,"name","machine_name","description",hierarchy,"module",weight
+1,"Cities","cities","",0,"taxonomy",0
+2,"Language counts","language_counts","E.g. Bilingual, Trilingual, Multilingual",0,"taxonomy",0
+3,"Models","models","",0,"taxonomy",0
+4,"Description of mentionee","description_of_mentionee","",0,"taxonomy",0
+5,"Gender","gender","",0,"taxonomy",0
+6,"Occupation","occupation","",0,"taxonomy",0
+7,"Alignment of text","alignment","",0,"taxonomy",0
+8,"Date format","date_format","",0,"taxonomy",0
+9,"Type of edition","edition_type","",0,"taxonomy",0
+10,"Fonts","fonts","",0,"taxonomy",0
+11,"Languages","languages","",0,"taxonomy",0
+12,"Location of footnotes","location_of_footnotes","",0,"taxonomy",0
+13,"Type of original text","original_types","",0,"taxonomy",0
+14,"publishers","publishers","",0,"taxonomy",0
+15,"Religion","religion","",0,"taxonomy",0
+16,"Series","series","",0,"taxonomy",0
+17,"Target audience","target_audience","",0,"taxonomy",0
+18,"Topics","topics","",0,"taxonomy",0
+19,"Typography","typography","",0,"taxonomy",0

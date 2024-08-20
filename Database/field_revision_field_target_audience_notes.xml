@@ -1,0 +1,2356 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_target_audience_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_target_audience_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_target_audience_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_target_audience_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="176" avg_row_length="1117" data_length="196608" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:27" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 179 (field_target..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_target_audience_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;aufgeklärtes ... christliches Publikum&quot;, S. XXIX</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1980</field>
+		<field name="revision_id">1980</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">Direkte Anrede der Anwesenden in der Synagoge</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו למהדורה הגרמנית כותב וייזל:
+&quot;So erscheint nunmehr die Moseide im geehrten und grossen Publikum; erscheint unter allen verschiedenen Religionsverwandten, unter allen Klassen von denkenden Köpfen, unter religiösen Menschen sowohl, als unter denjenigen, die nur ihren eigenen Vernunftschlüssen anhänglich sind, so, daß das Werk Lob und Tadel ausgesezt sein wird. Nicht als Philosoph will ich in diesem Werke erscheinen, sondern als Dichter, als Israelit und als wahrer Menschenfreund. Bei allen dem verspreche ich mir, daß, so verschieden auch die Menschen im Denken sein mögen, dennoch jeder Leser, er sei von welcher Denkart er wolle, hie und da Stellen antreffen kann, die ihm seiner Aufmerksamkeit werth zu sein scheinen werden.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">an Juden gewandt: S. 56-66</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1995</field>
+		<field name="revision_id">1995</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">אין אמירה ברורה מצד המחבר/ים לגבי קהלה יעד, אך מן השימוש הדו-לשוני וההפנייה לקהילת ברסלאו וגם למלך יש להניח כי קהל היעד היה יהודי ולא-יהודי גם יחד</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר נראה מופנה לקהל יהודי, אך ייתכן כי היה מיועד גם לקהל לא יהודי.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר פונה בעיקר אל קהל לא יהודי. כדברי לוי, היוזמה לספר באה לאחר שנשאל ע&quot;י &quot;איש שמתעניין בשפה זו&quot; [דהיינו, יידיש-דויטש] כיצד ייתכן שלא רבים מכירים אותה (לעומת אלה שלומדים עברית, ערבית ושפות &quot;מזרחיות&quot; אחרות), וכי אין כמעט בנמצא ספר הדרכה או דקדוק על שפה זו.
+
+מרבית החותמים מראש הינם (כפי הנראה) לא יהודים.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2008</field>
+		<field name="revision_id">2008</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לווה וולפסון פונים בבירור (לפחות בין היתר) אל קהל לא יהודי. למשל, בהקדמתם הם מסבירים בהערת שוליים מהו השימוש שעושים היום היהודים בספר ירמיהו (בתפילה).
+בקרב הקהל הלא יהודי, הפניה היא בעיקר למלומדים והבראיסטים. המתרגמים מתמודדים עם דעות ותרגומים של מלומדים נוצרים, חיים כמתים. הם מזכירים את הרדר ומיכאליס, בין היתר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2015</field>
+		<field name="revision_id">2015</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פונה אל היהודים: &quot;שמעוני בני עמי&quot;.
+
+מוזכר לשבח בנו של המלך שמת, העולה לכתר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2017</field>
+		<field name="revision_id">2017</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו על היעד של המקראה להוות פרוטוטיפ למקראות לילדים יהודים אצל שביט, זהר. 1993. &quot; 'הריהוט של חדר ההשכלה היהודית בברלין' - ניתוח המיקראה המודרנית הראשונה לילדים יהודים&quot;. בתוך: כמנהג אשכנז ופולין ספר יובל לחנא שמרוק. (עורכים) ישראל ברטל, חוה טורניאנסקי ועזרא מנדלסון. ירושלים: מרכז זלמן שזר לתולדות ישראל, 207.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר מבקש לקדם חוק שיתמוך בטיפול עניי הקהילה היהודית, בעקבות התכתבותו עם 
+Patrick Colquhoun.
+
+
+בהקדמתו כותב: 
+
+Although these Letters were not originally intended for publication, yet now that a Petition lies before the House of Commons for the purposes stated in them, it is thought expedient that the Public should be in possession of those important facts, which, by evincing their necessity, have given rise to the Propositions they contain.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר מיועד, בין היתר, להורי תלמידי בית הספר ולהוריהם של תלמידים פוטנציאלים.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2031</field>
+		<field name="revision_id">2031</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">החיבור מיועד למספר קהלי יעד:
+המחבר פונה ישירות לשליט - בנוסף להקדשה ישנו קטע נוסף:
+
+Durchlauchtigster Fürst, Gnädigster Fürst und Herr!
+
+המחבר פונה גם ישירות לקוראים אחרים (דברים המיועדים גם לשליט):
+
+Nun auch ein Paar Worte an dich, Günstiger Leser!
+Bevor ich Dir einen einzigen Ton des folgenden Gedichtes angeben kann, muß ich Dich den silbernen Harfenklang der Durchlauchtigsten erhabnen Stimme, unsers huldreichsten Fürsten hören lassen, mit der Sr. Durchlaucht uns, Judas Stamm so hoch begnadiget…
+
+ומצטט דברי ברכה ששלח השליט אל נתיניו היהודים.
+אחרי דברי השירה ישנו נספח המיועד ל-
+
+Wißbegierige und aufmerksame Leser! Besonders aber Forscher und Kundige der Hebräischen Sprache!
+
+קהל שעשוי לכלול הבראיסטים, לא יהודים.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2048</field>
+		<field name="revision_id">2048</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו מדבר מימון ישירות אל &quot;קוראיו&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2053</field>
+		<field name="revision_id">2053</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פותח במילים: Theure Mitbrüder!
+
+פונה אל אחיו היהודים, לרגל צו מלכותי להקים קונסיסטוריה יהודית בווסטפלן.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הטקסט הינו נאום הספד שנישא בפני חברי הקהילה היהודית.
+אין פניה מפורשת בספר (שאף איננו כולל הקדמה), אך בתוך הטקסט, שנכתב כנאום, ישנה מדי פעם פניה ל&quot;אחי וריעי&quot; (ובתרגום לגרמנית:
+Lieben Brüder
+משתי הפסקאות שחותמות את הספר (הפונות ישירות אל המלך החדש), ניתן להסיק כי אולי נאום זה היה מיועד בעיקר אל המלך החדש, וייתכן כי היה זה נסיון &quot;להטיף לו מוסר&quot;, ולהדגיש בפניו אילו תכונות ראוי שיגלה כמלך ומושל.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2061</field>
+		<field name="revision_id">2061</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">את ספרו מקדיש דוידסון אל השליט וברור שפונה אליו בחיבורו. הוא גם פונה אל הקהל הלא יהודי הרחב. אך דומה כי גם אל היהודים, בתקווה לתקנם. הוא מדבר כביכול בשם 'היהודים' - בלשון 'אנחנו'.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2069</field>
+		<field name="revision_id">2069</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף החיבור:
+
+&quot;Euch aber, weise Vater des Volks! die Ihr nach allen Kräften Euch bemühet, den Ruhm der Nation wieder zu erwecken, und Tugend und Wissenschaften unter sie auszubreiten; Euer Name wird unvergeßlich seyn in dem Volke. Eine zahlreiche und glückliche Nachkommenschaft wird Euer andenken segnen; man wird Euch die Wiederhersteller der Ehre Israels nennen…&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בעמ' [3] של ההקדמה: &quot;אין נבון וחכם כמוך קורא נעים! ישאל מה תועלת וחפץ יש באגרות האלה אשר אנכי נותן לפניכם היום? ... [4] מההערות שעשיתי להן, מבקש אני מהקורא הנעים! שיסלח על כמותן הגדולה ואיכותן הקטנה...&quot;
+[5] &quot;אם אתם אחי ורעי ורבותי! תדעו דבר עוד לפאר ולהקדיש כרס הזה, ביתר שאת ויתר עז, כי העטלף לא יראה, מה שיראה הנשר! נא אל תכחדו ממני מאומה, טרם החלי המחברת השנית לטובה ולמלאות רצונכם יהיה עלי חובה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הרבנים החתומים על ההסכמה מצביעים כי הספר ראוי לקריאה לא רק ל&lt;ins&gt;בעלי בתים&lt;/ins&gt; אלא אף ל&lt;ins&gt;תלמידי חכמים&lt;/ins&gt;, לשעות הפנאי:
+&quot;לחכם ונבון ר' אברהם פריצול בו ידיעות מתחלקות בחלקי הארציי ובאקלימים בו ידיעות רבות טובות ואהובות ויהיו למשיבת נפש לבעלי הבתים בכל עתים עוסקים במלאכתן וקורין  וגם לומדי תורה בעת שהמה בטלין ממלאכתן מלאכת מחשבת דאורייתא ימצאו מרגוע בהני מילי מעלייתא...&quot;
+
+המביא לדפוס, במודעה אפולוגטית בראשית הספר (&quot;מודעא רבה&quot;), פונה &quot;&lt;ins&gt;לקורא משכיל&lt;/ins&gt; להתבונן בספרי האלה שאם ימצאו איזה תלונות על האומות כוונות הכותבים רק על אומות רחוקות אשר אינם מאמינים מציאות הבורא יתברך והמה נקראים עכו&quot;ם עובדי כוכבים ומזלות ולרוב פניהם שחורים... וכל המבחין בין טוב לרע יבחון שאומות הנוצרים אשר אנחנו חוסים בצלם חייבנו להחזיק טובתם ומי שלא יכיר החסדים אשר גמלו עמנו נקר[__] כפוי טובה. ובפרט המלכות והשרים הנותנים לנו מושבות ומחי[_] בארצותם. ופותחים לנו שערי חכמה ומדע ללמוד שם...&quot;
+
+המביא לדפוס מציג בהקדמתו מניע שהביא אותו לפרסם מחדש את הספר ארחות עולם מאת פריצול: הספר, החשוב לדעתו, לא נמצא בבתים יהודים ויש רק עותק &quot;אשר נכתב בלשון הקדש ובלשון לטיין עומד בגנזי הספרים פה בארמון הגדול קייזרליכה קיניגליכה ביבליאטעק&quot;.
+
+במבוא הקצר לספר השלישי המובא כאן, מתואר כיצד צריך הקורא לגשת לקריאת החיבור (אך נראה כי לא לנדא הוא שחיבר מבוא זה - ראו הערה בתוך הלשונית הרלבנטית &quot;מהדורה חדשה&quot;). ראו דף עח בספר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2082</field>
+		<field name="revision_id">2082</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בדברי ההקדמה הקצרים מדגיש דובנא כי כוונתו בעריכת הספר ובהדפסתו היתה, בין היתר, המשכילית ובידורית: הוא כותב שהספר יביא תועלת לא רק &quot;לכל הרוצה ללקבוע דירתו שם, וידע עד כמה תכבד עליו העבודה להכין לו צידה לדרך כמבואר בהקדמת המחבר&quot;, כי אם גם &quot;תועלת גדול לטרודי הפרנסה יגיעי כח למצוא מרגוע לנפשם בעת נוחם ממלאכתם ו&lt;strong&gt;ימצאו בו קורת רוח ותענוגי נפלא בהוודע להם חידושים רבים&lt;/strong&gt; אשר לא ידעו תמול שלשום בהצרף להם לשון הצח והמצוחצח אשר בו על כן קורא בו יחיל טובו ויתענג בו ורחב לבו&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2089</field>
+		<field name="revision_id">2089</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מנדלסון כותב כי הכוונה בהדפסת הספר היתה &quot;לתועלת התלמידים, אשר חלק להם לאוה בבינת משל ומליצה.&quot; ממטרות הספר: &quot;להרחיק את לב ילדי בית ישראל מעל התרגומים אשר הסתפקו בהם עד עתה&quot;.
+בסוף החיבור/הקדמה, מבקש מנדלסון מן הקוראים &quot;שאם מצאו בספרי החומש אשר יצאו כבר מבית הדפוס איזה טעות המדפיס או שגיאות הכותב או מקום ספק הצריך באור להודיע לי חיש מהר בעוד ידי נטויה על המלאכה למען אוכל לתקן את המעוות... בחנוני נא כזאת אנשי האמת! שימו כה נגד כל בית ישראל ויוכיחו בינינו אם לא אודה לדברי חן ושכל ואקבל האמת בשמחה ממי שאמרו&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2098</field>
+		<field name="revision_id">2098</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הרב פונה לכל אורך הטקסט אל &quot;אחי וריעי&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2099</field>
+		<field name="revision_id">2099</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בחיבור הזה, שבא בעקבות התקפות על מחבר הספר מצפה יקתאל ובית הדפוס שהדפיסו, מבקש המחבר מן הקורא: &quot;אתה הקורא בוא וראה מה בין תקיפי ברלין, לפרנסי ומנהיגי ודייני אלטונא...&quot;. לדבריו, נאלץ להגיב להתקפות נגדו, &quot;פן יש באנשים הקוראים לתומם את כל דברי ריבות האלה אשר יעלה על לבבם עלי מחשבה הזאת כי יצאתי להבזות רבני הדור וגדולי ישראל ולתתם לשמצה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2101</field>
+		<field name="revision_id">2101</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כפי שמציינת ההפניה בראש הטקסט: אל הורי התלמידים בביה&quot;ס היהודי בברסלאו. פניה מפורשת גם לאם, אשר נמצאת יותר בקרבת הילד ולה תפקיד חשוב בחינוכו.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הקלירי מברך שני נדבנים אשר תרמו מכספם להדפסת הספר, וכך &quot;לזכות את החכמים&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&lt;p&gt;בעמודה 18: &quot;ונפשי יודעת מאד שחיבור הלזה לא יהיה רצוי בלתי לאנשי אמת המשכילים והשרידים... וריקי המוח בחנפי לעג יאמרו רע עלינו המעשה פליאה ונשגבה ולא נוכל לה, ובעלי שטנה ברבת המשטמה יריבו עלי...&quot; בעמודה 35: &quot;עתה יצאנו להשכילך בינה קורא המשכיל פקח עיניך, וראה...&quot; בעמודה 43: &quot;הנה ערכנו לפני קורא המשכיל...&quot; בעמודה 48: &quot;אתה קורא המשכיל פתח עיניך ויאירו לך דבר השכל ומשפט הנפש חקרנוה... דע לך, השכל הוא מורכב מחומר הדק והזך מאד...והוא עליון לשכל המדברת...&quot; בעמודה 67 פונה, שוב, אל ה&quot;קורא המשכיל&quot;.&lt;/p&gt;
+</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2113</field>
+		<field name="revision_id">2113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ייתכן כי הברכה היתה מיועדת קהל מצומצם ביותר - פרנסי הקהילה ומנהיגיה - או לקהל רחב יותר - כדי להלל את מעשיהם של האישים, הזוכים לתשבוחות.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הפנייה לנשים עולה, בין היתר, מכך שהספר מוקדש לשתי נשים - אמו וחמתו של המתרגם.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקראת סוף הקדמתו כותב וייזל (עמ' כ/ב): &quot;מן הבאורים שהצגנו בפתיחתנו זאת... יבין כל מי שיבוא מחברתי זאת לידו מה כונתינו ומגמתינו בחיבור הספרים האלו וידעתי כי מי שחנן אותו אלהים לב טוב וחפץ אל היושר לא יהיה נבהל להשיב על דברינוו ואין צריך לומר שלא יתאמץ להטיל עליהן דופי וגנאי אבל ישמח בהשתדלותינו הנמרץ ועל הפרושים שייטיבו בעיניו יברכנו ואשר לא ייטיבו בעיניו מ&quot;מ יהלל הכונות הרצויות שנתכווננו במלאכתנו זאת כי כדאי הן לעורר לבות החכמים ומבקשי האמת להוסיף אומץ ולהרחיב הדברים כפי רוחב דעתם ולטהר המעט אשר בארנו מכל שגיאה אם שגיתי ולתקן המעוות אם עויתי...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בפתיחת הקדמתו: &quot;וידעתי גם אני כי כמקרה אשר קרה לכלל הספרים אשר חוברו מלפנים יקרה גם לספר הזה. עדן לא חובר ספר אשר מצא חן בעיני ההמון כלו... גם אם תהיינה כל דברי ספרו אמת ויסודותיו אמונה ומחקריו הולכים מישרים הנה תהיה מלאכתו בזויה בעיני בוזי אמת... וכן לא ינצל מכת האוילים בוזי חכמה... וכן לא ינצל מלעגת הלצים ומדברי הכסילים... וכן לא ינצל מכת המקנאים ומטילים דופי על דבריו מחמת קנאה או שנאה ואפילו משפת אנשים טובים לא ינצל שלא יחלקו על דבריו בעבור אחד מן הטעמים הנ&quot;ל אלא לפי שאינן מורגלים בלמודים כאלה ואינן מתקבלים על דעתם כי אין אדם לומד אלא מה שלבו חפץ בו. וכן כל כיוצא בזה מן הכתות השולחים יד בספרי המחברים יהיה מי שיהיה ומי שכונתו רצויה לא ישת לב לדבריהם...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פנייה ליהודי אלטונה והמבורג במיוחד</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">וייזל פונה אל &quot;אחי ורבותי&quot; בעקבות כתב הסובלנות של יוזף השני, אשר &quot;צוה ליהודים להקים מדרשות ללמד בהן ילדי ישראל את הלשון האשכנזי על בוריה&quot; (כדברי וייזל), ועודד אותם &quot;ליסד מדרשות ולתקן כל התיקונים הצריכין לענין זה&quot; (עמ' [30], פרק ח').
+לאחר שהוא מחלק עצות מעשיות, כותב וייזל: &quot;ועוד יש כמה דברים וענינם שצריכין &lt;ins&gt;אנשים כמוכם&lt;/ins&gt; להשגיח עליהן, אך ידעתי שתשגיחו על הכל בבינת לבבכם, ואולם האגרת הזאת היוצאת ראשונה, איננה רק מזכרת אהבה וחבה, &lt;ins&gt;בעבור מקצת מן ההמון שאינן מבינים עיקרי הדברים&lt;/ins&gt; לשפוט מה הוא טוב באמת ומהו רע כפי האמת, ללמדם ולהורותם תכלית המעשים האלו שגזר עליהן המושל החכם הקיסר יר&quot;ה, ולהודיעם שהוא לטוב להם ולבניהם לעולם, הן להצלחה הזמנית, הן להצלחה הנצחית, אבל &lt;ins&gt;לא כתבתיו לחכמים ולנבונים הנמצאים בכס המבינים מדעתם&lt;/ins&gt; יותר מאשר אוכל להודיעם.
+ועתה &lt;ins&gt;אחי ורבותי ראשי הדור הזה וקציניו&lt;/ins&gt;, אם אתם תמלאו את ידכם לתקן הדבר על אופניו כמצות המושל הטוב יר&quot;ה, תתנו עליכם ברכה...&quot; (עמ' [33], פרק ח')</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">חיבור זה מופנה כתשובה אל &lt;ins&gt;ראשי קהילת טרייסט&lt;/ins&gt;, כתגובה כביכול למכתב תמיכה ששלחו לו בעקבות הפולמוס סביב &lt;ins&gt;דברי שלום ואמת&lt;/ins&gt; (כך בכותרת הספר ובסופו). בתוך הספר הוא פונה אל &quot;אחי ורבותי הקהל הקדוש שבטריעסט&quot; (עמ' [27]).
+
+אך החיבור גם מהווה תשובה (ואתגר) אל אותם &lt;ins&gt;רבנים שיצאו נגדו&lt;/ins&gt;: &quot;אם יש בפיהם דבר, יבואו ויגידו, יכתבו דבריהם על ספר, יחוקו בעט ברזל ונוכחה יחדיו, מאהבת אחים... אהה! אחר שחשדתם אותי בכך, שאני מיסב לב ישראל אחור מן התורה, להוליכם בתהו לא דרך, היה לכם לחמול על בית ישראל, ללמד אותם דעת, שלא יכשלו במכשלה הזאת, ולהודיעם יתרון חכמת התורה על חכמות למודיות וטבעיות, שלא ילכדו ברשת הטמון להם. אך זאת לא עשיתם, אין עונה מכם דבר, העתיקו מכם מלין, לכן אדברה אני. לכו בנים שמעו לי, יראת ה' אלמדכם, האזינו דברי ותחי נפשיכם.&quot; (עמ' [15- 16])
+
+ולקראת סוף הספר מאתגר באופן ישיר ומציב בפניהם &lt;ins&gt;אולטמטום&lt;/ins&gt; (דברים אלה נכתבו באותיות בולטות, השונות משאר הטקסט): &quot;הנני משביע באלהי ישראל, לאותן שלשה רבני עמי, ששפכו עלי דברי איבה ודברי חמה, שיגידו ויתנו עידיהן במכתב ובדפוס, מה רעה או פשע מצאו במכתבנו דברי שלום ואמת? ומה הניא לבבם לחלל את כבודי בבתי כנסיות ובמקהלות ישראל... כי עד הנה לא שמענו מהם בענין זה דברי דעת ולא טענות אנשים, זולתי קול ענות ודברי נאצה. ואני איחל לזה מועד שלשה חדשים המתחילים מהיום, וכי יבואו דבריהם, ישפטו כל בית ישראל הדין עם מיחיבור זה מופנה כתשובה אל ראשי קהילת טרייסט, כתגובה כביכול למכתב תמיכה ששלחו לו בעקבות הפולמוס סביב דברי שלום ואמת (כך בכותרת הספר ובסופו). בתוך הספר הוא פונה אל &quot;אחי ורבותי הקהל הקדוש שבטריעסט&quot; (עמ' [27]).</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2128</field>
+		<field name="revision_id">2128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בדברי הפתיחה לספר פונה וייזל אל &quot;מורי ואחי&quot; (&quot;שמעוני עוד מורי ואחי&quot;) ומרמז על קהל היעד שלו בספר זה: &quot;אילו היה מגמתי לבד להצדיק את נפשי, ולהראות כי רבים אתי מחכמי ישראל, לא הייתי צריך להוסיף עוד דבר על המדובר במכתב השלישי [עין משפט]... אבל לפי שלא על הפרט הזה לבדו יצאתי, אלא בעבור הכלל כלו, ליישר לפניהם המסלה בסדר למוד תורתנו הקדושה, ובדרכי גדול הבנים, להודיעם אשר מצאה נפשי באלה...&quot; (עמ' ב/2)
+ובהמשך: &quot;...פרט אחר המחייבני להוציא גם המכתב הזה לאור. וזהו הדרשה הידועה שדרש רב אחד עלי ועל מכתבי...וחובה עלי להשיב על דבריו ולהסיר מעלי את תלונותיו.&quot; (עמ' ג/1)</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמת הספר הראשון &quot;אמר המחבר&quot;, מבכה לוונשטם את שכחת השפה העברית ופונה אל קוראיו: &quot;&lt;ins&gt;אוי לך, עבד ישראל!&lt;/ins&gt;... אוי לגבר כי לא יכין דבר כן, ולא יבין שפת מלכו ואדונו. מי יגיד לנו עתה תעלומות חכמה, מי יפתח לנו שערי בינה, מי יגלה לנו מטמונו? &lt;ins&gt;בת יעקב! שאי סביב עיניך וראי&lt;/ins&gt; כמה שמות ישנם אתנו, והמה בכתובים, נראים אחדים, והנם תאומים: &lt;ins&gt;ואת, התדעי&lt;/ins&gt; הבדליהן ומחלקות כל שרש על מקורו ועל מכונו? &lt;ins&gt;בתולת בת ציון&lt;/ins&gt;! הטרם תדעי כי לשוננו הקדושה כמו בית בנויה, שרשיה ימלאו חדרים... צאי לך בעקבי צאן ישראל הנדחה ובקשי ברחובות, אן תמצאי דורש לשון עבריה למען השיבה על כנה, ואיה האיש השב על אשמתו ושגיונו? הלא חצי העם מדברים לשון צרפת וחצי העם מלהגים שפת ספרד, ולשון הזהב יבז כל איש בזדונו. הלא בני הכושים, זה העם לא היה, גם יושבי אהלי אדום וישמעאל, ההחליפו את לשונם? ... ואתה מה לך ישראל, כי תגרע שיחה לפני אל אשר נתן לך לשון למודים, מיום היותך לעם קדוש...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2134</field>
+		<field name="revision_id">2134</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&lt;p&gt;בהקדמתו מסביר פיליפסון כי הוויתור על חלקים שהיו במהדורה הראשונה של הספר (הטקסט המקורי בעברית והביאור) תורמים להפיכת המהדורה הנוכחית למתאימה יותר לנשים. (נג)&lt;/p&gt;
+</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">קהל היעד העיקרי על פי וייזל, שכתב המלצה לספר: 'אנשי מחקר' שהתרחקו מן הדת. אמנם יקראו בו גם משכילים שאמונתם איתנה: &quot;מקצת בני אדם יראי ה' אוהבי המחקר, אשר שקלו על מאזני דעתם כל דברי תהפוכות ודברי און אשר מעולם, ושמו בה' מבטחם... לא יזיקום דברי הספרים שכתבו אנשי אמונה, שבכל מחקריהם דבקה נפשם אחרי ה' ואחר דבר קדשו, ומשען להם יהיו, בראותם כי כלבבם כן לב המחבר&quot;.
+וייתכן שיקראו בו גם &quot;מקצת בני אדם שכפי דרכם הם שונאי המחקר וההתבוננות באמונות ובדעות לא נסו ללכת באלה&quot;, אך הם &quot;לא יבינום&quot;.
+אולם קהל היעד העיקרי (ע&quot;פ וייזל) הוא אחר: &quot;לאנשי מחקר אשר נזורו אחור, ומה' יסור לבם, אולי ייטיבו ספרים כאלה, אם יראו כי מחשבות און שגרמו להם להפיל אמת ארצה, כתובים על ספרים שחברו גדולים חקרי לב, ובכל זאת מחבריהם לא משו מיראה וחכמה. אז ערער יתערער לבם, ויבושו מגאותם, ויאמרו אולי מבטחנו שוא, ועצת שכלנו נשענו עליה הבל, ויעזבו דרכם וישובו אל ה'.&quot;
+וייזל מוסיף בסוף המלצתו: &quot;כללו של דבר כל הנכנס לחקור חקירות כאלה צריך שתהיה אמונתו קודמת למחקריו, ואם אין זאת גם אם לא יקרא בספרי המחקר המכשלה קרובה אליו...&quot;.
+
+לפי בן זאב בהקדמתו: את תוצאות העיון המעמיק בספר &quot;חקקתי על ספר לזכרון לי ו&lt;ins&gt;לאנשים בגילי&lt;/ins&gt;... לא עשיתי זה המעט מזער, כי אם &lt;ins&gt;להועיל בהם אנשים המתחילים בעיון&lt;/ins&gt;, היות להם פרושי להקל מטורח ומורה דרך לגיה עיניהם מבלי הפליג ברוב ספרי המעיינים, ו&lt;ins&gt;לא לאנשים אשר עשר ידות להם בחכמה ובתבונה&lt;/ins&gt;, ובכל מעשי חרש וחושב ו&lt;ins&gt;הם יודעים יותר ממני!&lt;/ins&gt; אכן אל המתחילים יהיה להם פרושי זה כנגה שביב באישון חשך. אך בוזי החכמה כי לבם מרעת נבער, דברי למו כאבוקה ביד עור.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2138</field>
+		<field name="revision_id">2138</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לפי הכותרת, הספר מיועד למי שעוסק בהתכתבות בשפות זרות ומי שמבקש לקרוא ספרות ו/או עיתנוים בשפות זרות.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר מציג עצמו בעמוד השער כ&quot;מלמד לנערי בני ישראל&quot; - ייתכן כי הפנה את חיבורו אל קהל זה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו כותב פרידלענדר: &quot;כל איש יקר רוח ונבון דעת , אוהב התחקרות על שרשי אנשתו, ויש לו יד להבין לשון  אשכנזי, כבר השביע בצחצחות נפשו והתענג במעדן רוח, בקראו ספר: פעדאן... אשר לרבינו משה מדעסויא מנוחתו כבוד...
+&lt;strong&gt;ולאהבת איש משכיל דורש את אלהים, אשר לא הבין בלשון אשכנז&lt;/strong&gt;, והתאוה תאוה לדעת את הלמודים אשר עליהם הוסדו... התנדב המחבר להוציאם ממנו ולכתבם בלשוננו הקודש בלשון קצר וצח  וזך ובהיר בלי עודף ויתרון ... וזהו מאמר ראשון מספר הנפש אשר הבאתי לדפוס...
+המאמר השני הוא דרוש קשר הנפש עם הגוף ... גם הוא לרבינו משה נ&quot;ע ורצוף היה בתוך אגרת... מוצק על ידיעות רמות ונשגבות  אשר שאב ממקור מים חיים מספרי החכמים אנשי השם: לייבניץ, וואלף, גילפינגר ותלמידיהם. ונשאתי את לבי להדפיס את הדרוש הזה לתועלת המשכילים בעם חקרי לב אשר להם יד ושם בחכמות אלהיות  כאלו. אף כי מעטים המה. &lt;strong&gt;והיה כל איש זר אשר לא נסה ללכת בעקבות הפילוסופים&lt;/strong&gt; [מזכיר בהמשך פילוסופים יהודים כרמב&quot;ם, סעדיה גאון ועוד]... &lt;strong&gt;אל יקרב הלום לקרוא מאמרים רמים ועמוקים כאלה. כי לא לעזר ולא להועיל יהיו לו&lt;/strong&gt;.........&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו אומר המביא לדפוס והעורך: &quot;ואני הרחבתי מעט לתועלת המלמדים ותלמידיהם לכן הצגתי באיזה מקומות אף דברים קלים למען לא יטעו התלמידים. נוסף לזה הצגתי הוראות השרשים הנוף והעיקר מאין חוברו מאמריה, ואיה מקום מצאו, אם הוא לשון צרפת או איטליע, למען יוכל הקורא לחפש אחריו, ומי שיש לו חיך לטעום יראה כי אמריו צדקו... וגם במקום שצריך להגיה הצגתי בכתב לטיין, כמו שמצאתי וראיתי כתב על גליון משניות של אדוני הקצין...
+
+פנייה ישירה לקורא בתוך טקסט ההקדמה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף הקדמתו, ולאחר שפירט כמה וכמה עניינים, מציין דוד פרידלענדר: 
+&quot;אין דער ווייטרן ענטוויקלונג דער שענהייט דיזר רעדן האט מאן דעם אנדעכ'טיגן לעזר ניכ'ט פ'ארגרייפ'ן וואללן. יע מעהר אונד יע טיפ'ר ער דעם אינהאלט דיזר ___ נאכ'דענקן ווירד, יע גרעסר ווירד דער נוטצן אונד דאס פ'רגניגן זיין, וועלכ'י ער ... ציהן קאן&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בתחילת הספר, ישנה פנייה ישירה לקורא, תחת הכותרת &quot;קורא נעים&quot;: &quot;החבור הזה כמות שהוא הנו בידך לא תחמול ולא תכסה עליו ולך פגע בו אם לא יישר בעיניך הרשיעה זדון לבי וסכלותי המתנשא לאמר בלהקת נביאי שיר פנו מקום ותנו לי מהלכים בין העומדים האלה. למשפט אקרב אליך אם תבין את אשר לפניך ותחיבני בשפטך אשיב אחור מהשירה ימיני ולא אוסיף עוד לדעתה ואם תסכל והחיבני ולא תצדק בדברך אוסיפה לך כהנה וכהנה להתחיב בדינך. ואתה שלום.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2151</field>
+		<field name="revision_id">2151</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;פניה&quot; לנפולאון.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">דברי הקדמה מאת המחבר בשתי שפות, עברית וצרפתית, פונים אל קהל יהודי ואל קהל לא יהודי. כפי שכותב בדברי ההקדמה בצרפתית, תחת הכותרת 
+
+Avertissement:
+
+המחבר תרגם את שירו מעברית לצרפתית וגרמנית כדי להעביר לאחיו האזרחים את הרעיונות שהביאוהו לחבר את השיר. לטענתו, יודעי צרפתית וגרמנית קראו את התרגום לפני הדפסת הספר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר נועד לשימוש בטקס חנוכת בית הכנסת החדש באמסטרדם, &quot;עדת ישרון&quot;. חלק מקהל היעד של הספר הוא לא יהודי: אורחים שבאו לחגוג את חנוכת בית הכנסת החדש. כך כתוב בתפילה &quot;חנוכת הבית&quot;, בסוף הספר: &quot;וגם אחינו יושבי הארץ הזאת, אשר לא מבני ישראל המה, כי יבואו לשאת תחינה ותפילה ולברך את שמך בבית הזה, רצם חינם ומלא משאלותם. ברך אותם בכבוד גדולה ועושר.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מתוך ההקדמה עולה כי המחבר פונה (בין היתר) הישר אל &lt;ins&gt;משכילי ברלין&lt;/ins&gt;. 
+בעמ' ב' פונה ישירות אל קהל קוראיו, וגם כאן דומה כי פנייתו היא אל המשכילים: &quot;אחלי מורי ורבותי, אלופי ומיודעי, חברי ורעי המקשיבים לקולי, שמעו לי ותחי נפשכם!&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כפי שכותב &quot;משה בן מענדל מדעסויא&quot;/ מנדלסון: דברי זאב וולף &quot;נאמרים בלי להג הרבה ובלשון צחות וקל להבין &lt;ins&gt;לתלמידים&lt;/ins&gt; המתאוים להבין את דברי הספר היקר, ויש בהם חקירות נכבדות רבות התועלת בענינים רמים ונשגבים דברי מוסר השכל ואמרי בינה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">למשל, עמ' כא/א.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">אין פנייה ברורה לקהל יעד מסויים</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר פונה לקהל יהודי. תקוותו היא להפיץ את חוכמתו בקרב היהודים. הספר לא נודע בעברית אלא רק בלשונות העמים ולכן הקהל היהודי לא הכירו. היה זה בעיני בן זאב ספר יקר, מלא מליצות ומשלים בדרכי המוסר והמדות, התבוננות והשקפה בדרכי העולם ובעסקי בני אדם, וחקירות בפליאות היצורים והוא קיווה כי בני עמו&quot;יאכלו מפרי דבריו ויהללו בשערים חכמתו&quot;. (כך בדברי ההקדמה) אמנם רבנים בתקופות האחרונות אסרו על הקריאה בספר, אך הוא ביקש להראות (ב&quot;הערה&quot;) כי הדבר נבע מאי הבנה ובלבול, שכן בתלמוד ניתן היה למצוא אישור לאמיתות הטמונות בספר.
+הספר הזה, טוען בן זאב, דומה בצורתו למשלי (פסוקים קצרים וכו'). אך שונה ממנו בכך שחיברו לא מלך כי אם &quot;איש פשוט, מערך ההמון, ע&quot;כ רוב מליצותיו ומוסריו לתועלת המוניי... ומשתדל לרוב עם האנשים אשר במדרגת המון... מורה דרך מוסר והנהגה איש איש לפי מדרגתו ודרכו, ולפי מידת ימיו...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו כותב המתרגם כי דברי הרמב&quot;ם ראויים להיקרא בזמנו, אך הן המקור בערבית והן התרגום העברי אינם שימושיים לאנשים הלא מלומדים (&quot;אונגעלעהרטען&quot;) בתקופתו. &quot;זעלבסט דער, דער אויך אין דער קינדהייט דער עברעאישן מוזע הולדיגן מוסטע, איזט איהר דאך אין שפעטערן יאהרן ניכט גענצליך זא געטרייא מעהר&quot;. מה גם שהשפה הפילוסופית בעברית זרה אף למי שלמד עברית בילדותו. &quot;איינע דייטשע איבערזעטצונג דיזר אבהאנגלונג גלויבע איך דאהער, ווירד איינם גענייגטן פובליקום ניכט אונאנגענעהם זיין...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2167</field>
+		<field name="revision_id">2167</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">רמזים לפנייתו למשכילים ולעוסקים בתרגום טקסטים מעברית לגרמנית בהקדמת המחבר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2168</field>
+		<field name="revision_id">2168</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">אין הפנייה מטעם המחבר, אך אפשר להניח זאת מן השימוש בשפות השונות</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;ולא להקל מעלי המלאכה עשיתי זאת, כי אם יען האמנתי כי על הדרך הזה ירוץ הנער הקורא בו, אשר עליו שמתי עיני&quot;. הקדמה, עמ' [4].</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה עמ' א/ב: &quot;אכן שמעו שמוע לי רדפי צדק מבקשי שלום זרע אמת חנוני חנוני אתם רעי אלי נא תמיטו עלי און ואל תאטר עלי באר תלונתכם פיה כי נאמן עלי עד בשחק האלהי'...&quot; 
+
+עמ' יב/א: &quot;אמנם תועליות הספר יתגלו לעיניך קורא נעים כשתקרא בו ותשכיל בהבדלי השמות ומוצאיותם מן שרשיהם כפי האופן שהסתעפנו אותם מהם למען יקל עליך להבין פירושי המלות... גם תדע מזה כמה צדקו דברי חז&quot;ל...וגם לא יקטן בעיניך ידיעת הבדלי השמות... &quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בשער הפנייה ספציפית ליהודי גרמניה ופולין
+&quot;צום געברויך דיטשן אונד פאלנישן יהודים&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסקירה לא מעמיקה לא נמצאה פניה לקהל הספר. הטקסט פונה כביכול אל בורא עולם.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2180</field>
+		<field name="revision_id">2180</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הטקסט מכוון לתועלת המתפללים. &quot;תועלת לוח זו... כדי שנדע העת שמותר לקרות ק&quot;ש של שחרית... כדי שנוכל להתפלל תפלת שחרית עעם נץ החמה וכן נוכל לכווין (?) התחלת שבת וי&quot;ט שלא לאחר עד שקיעת החמה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף הספר כותב המחבר: &quot;ועתה אתה הקורא ראה והבן הארבע משלים שהבאתי ובארתי בהם כל חלוקות האפשר בחשבונות האלו בלישנא קלילא המשתמע לכל מעיין. והתועלת היוצאין מן לוחות האלו אי אפשר לפרטם בספר קטן הכמות. אמנם יש בהם תועלת גדול למי שנפשו חשקה להבין קידוש החודש להרמב&quot;ם ובהרבה מקומות בתלמוד...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2183</field>
+		<field name="revision_id">2183</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;שני חלקים האלו כתובים בלי טעם ומופת, אבל כל מי שחשקו להבין קידוש החודש להרמ&quot;בם על בוריו צריך להרגיל בחשבונות הנמצאים בשני חלקים האלו, כי שניהם הם הקדמות לחלק השלישי...&quot; (עמ' [ב])</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר מביע את תקוותו כי יזכה לאהדת &quot;פ'ערנינפ'טיגער לעזער&quot;.
+הוא פונה אל קהל של גברים ונשים ומציין: &quot;זאללטע איין לעזר אדר אינע לעזרין דורך דיס גמעהלדע [תיאור הפגמים בחברה היהודית כפי שהוא מציגם] זיך געטראפ'פ'ן פ'יהלן, אונד דאהער דען לעבליכ'ן ענטשלוס פ'אטטן זיך צו בעסרן, זא העטטע איך איינן צוועק ערריכ'ט, וועלכ'ר וואר: דאס פ'רגניגן מיט דעם נוצן צו פ'עראיינען.
+פ'ינדט זיך אבר דיזר ערקלעהרונג אונגעאכ'טעט דעננאך יעמאנד, דעם דיא הערויסגאבע דיזס שטיקס מיטפ'עללט, אונד דער דאס אנאטהעאא (מא?) דאריבר שפריכ'ט, זא דיהנע דיזם פ'אלגנדר בקאנטר שפרוך צור אנטוואר: דער קראטלצע זיך דעם עס יוקקט, וויר אללע האבן איינ ריינע הויט&quot;.
+
+נוסח עברי של הספר נשאר בכתב יד (עד להדפסתו ב- 1755).</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">דובנא, המביא לדפוס, מסביר כי הביא ספר להדפסה שניה &quot;לתועלת בחורי חמד, להלהיב לבותיהם אל הלשון המקודש...ועתה אחי וריעי תנו לבבכם אל הספר הזה, וקראו בו בעתות הפנאי, ותתענגו על יופי מליצותיו ועל צחות לשונו, ולמדו את בניכם להרגיל עצמם בלשון הזה... לרפא לשוננו, ולשון עלגים תמהר לדבר צחות...&quot; 
+הוא פונה בהקדמתו: &quot;אליכם משכילי עם! אליכם בחורי חמד, המשתוקקים לדעת משל ומליצה, הרודפים לדבר צחות! ותבקשו ולא תמצאו, כי גמר ממשל משלים, פסו דוברי צחות מבינינו, מעת נסתם חזון ונביא וכל איש ואיש אף החכם אשר לו חיך לטעום דבש המליצות אשר בכ&quot;ד ספרי הקודש, ילאה לכתוב על ספר בלשון צח ונקי את אשר הולידו עשתונותיו, והחכמה נשארה טמונה בלבו, עד אשר עמו תמות חכמה...
+והתועלת היוצאת מספר זה, כי בחורי חמד יתנו לבם אל לשון הקודש, ללמוד אותו היטיב, עדי ימהרו לדבר צחות, ובל יאמרו אמרנו נגזרנו, בשכבר הכל נשכח, כי אין עוד נביא, ולא אתנו יודע עד מה מדרכי הלשון ההוא, ולמה ניגע לריק, נבקש ללא הועיל? ... אכן עתה בקראם בספר זה המחובר בימינו, ידעו כי לא אלמן ישראל מהלשון ההוא... מלבד התועלת הגדולה מן הראשונה, כי אמריו הטהורים ימשכו לבב כל איש, להפוך מחשבותיו מן הרע אל הטוב, עד אשר ימשול ביצרו להגביר המדות המעולות על הפחותות... ולהשיג התכלית הנרצה לפני ה'&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר מיועד (בין היתר) לקוראי הביאור. בראשית הספר כותב המחבר: &quot;שבתי וראיתי הצורך הגדול להזכיר בראש ובהתחלה את הכללים (דיא רעגלען), אשר עליהם סמכנו בתרגום הכתובים וביאורם, ואשר לא יימצאון בכל ספרי הלשון הנודעים לי (וועלכ'י אין קיינר שפראך לעהרי דיא איר בעקאנט זיין צו פ'ינדן זינד) למען יבין הקורא לשון הקודש ואת דברי הספר בכל מקום שהם מיוסדים על הכללים הללו.&quot; 
+
+בסוף העמוד פונה המחבר אל הקוראים: &quot;ואתה הקורא הנעים, שום תשים את הדברים האלה על לבך, כי נעים כי תשמרם ותטמנם בחבך&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר פונה בעיקר אל קהל &lt;strong&gt;אשכנזי&lt;/strong&gt;, ככל הנראה קהל &lt;strong&gt;משכיל&lt;/strong&gt;. בהקדמתו הוא כותב: &quot;לא ייחלק הקורא ולא יקוה, שימצא בדברי אלה מופתים לימודיים
+''(Demonstrationes Mathematicae)''
+כפי דרכי המופת בחכמת החשבון והמדידה וכיוצא. כי לא בחכמות האלה, הדבר הזה... גם הכרחי הוא לכל קורא את מאמרי זה, שידע הידיעות הראשיות מחכמת דקדוק הלשון, מדיני האותיות והתנועות, ושנוייהן וחלופיהן, כי זולתן לא יבין את כוונתי באיזה מקומות אשר אדבר בם.&quot; 
+
+למנס מקיים מעין דו-שיח עם קוראיו. הוא מניח כי תהיה התנגדות לדבריו, והוא משתדל לענות מראש לטענות שתעלנה נגדו. בהקדמה הוא כותב: &quot;אבקש מאת כל קורא, שיעיין את דברי בנחת ובמתון, ולא ימהר לקפוץ ולחלוק על דברי בטרם יבין את כוונתי. כי ידעתי שאנשים רבים רגילים לחלוק על כל דבר חדש אשר ישמעו, אם הוא מתנגד למה שחשבו עד הנה היות אמת גמור, ובפרט אם יהיה האומר רך בשנים וידוע להם: כי יחשבו שהוא קלון רב להודות על האמת... אף שעדיין אני צעיר לימים, את אשר הנני אלקים אותו אדע, ואדברה נגד חכמי לב ומביני מדע, ולא אבוש.&quot;
+
+לאחר שכותב אחת מטענותיו על השפה העברית, מוסיף בסוגריים: &quot;קורא נעים! שמור לפיך מחסום, לבל תשיבני על דברי אלה, ותאמר, איך תאמר שלא יחסר מאומה בלה&quot;ק, הלא יחסרו בה שמות דברים רבים עד מאד? כי תשוב ותתבונן, שאין החסרון הזה תלוי בלשון אלא בנו, כי אנחנו שכחנוה בארך הימים...&quot; (עמ' ד/1)
+
+[פניות נוספות לקורא: עמ' ו/1 בסוף, וכו']</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקראת סוף המאמר כותב וייזל: &quot;ואתם משכילים, חברת שוחרי הטוב והתושיה!&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">נראה שוייזל מפציר בקוראיו - או ליתר דיוק מנסה למצוא מבין קוראיו מי שיטול על עצמו אחריות ויעשה מעשה שעשוי להיות גורלי עבור עם ישראל: &quot;אמר המעתיק אם אמת הדבר שנמצא דברי הימים עברי כזה ליהודים אשר בקושין ושעד היום יש בידם הספרים הנזכרים בקצור ד&quot;ה זה, כמה תגדל חובת כל איש חכם לתת לבו על הדבר הזה, לעשות מאהבת בקשת האמת מה שיש לאל ידו לעשות, הן בעצה הן בפועל בעבור השג ספר ד&quot;ה אשר לאחינו בקושים, וביותר להשיג העתקה נאמנה מכל הספרים אשר בידיהם, לא שמעתי מעולם דבר גדול כזה, כי אז נראה אם ספר תורת משה רבינו שבידם מסכמת בכל עם ספר תורה שלנו, לא אוכל לפרוט הטובה הגדולה שיגיע מזה לישרי לבב בכל פרטיה, כי אם תסכים בכל עם אותה שבידינו, תהיה לאות לבני מרי האומרים שבבית ראשון נשכחה התורה מישראל ונאבדה מתוך הקהל... ואין ראוי להעלות על ספר מה שאומרים בעלי ריבנו על עזרא הכהן, ושאין התורה שבידינו כמו שהיתה מלפנים... אע&quot;פי שנוכל להראות מצד השכל כי תהו המה, עוד כעשן יכלו, אם יגיע לידנו התורה שהיא ביד היהודים מגלות שלמנאסר... וכן בענין המחלוקת במלא וחסר ובקרי וכתיב...&quot; (עמ' כ)
+
+ושוב מוסיף: &quot;אם אמת הדבר הנאמר בקצור ד&quot;ה זה, לא לכבוד יהיה לבני ישראל, אשר השיבה ידם לחקור ולדרוש בענין זה, ולשאוב האמת ממקורו וממקומו, ולא שמו על לבם לעשות חסד זה עם בני הגולה הנתלים על שבר בית יוסף... להודיעם כי עוד עמק העכור יהיה לפתח תקוה, באשר רבים מהם האובדים בין העכ&quot;ום, עוד לבם לב ישראלי, ואמרים בני ישראל אנחנו, ורבים מהם עד היום הולכים בדרך ה', וספר תורת ה' אתם...&quot; (עמ' כט).
+
+קריאה ישירה עוד יותר יש בסוף ה&quot;מאמר&quot;, שם הוא &lt;ins&gt;פונה ליהודים אשר יושבים במדינות שונות באירופה&lt;/ins&gt; ולהם מהלכים בארצותיהם: &quot;כל איש ישראל אשר השיגה ידו לשאת ולתן עם אחינו היושבים בקושין, ודורש מפיהם האמת בכל פרטיו ויגד לנו הדברים באר היטב, תבוא עליו ברכה, כי מלאכת ה' הוא עושה, ומה נקל הדבר הזה לעשותו למקצת בני עמינו אשר להם יד ושם בחצרות נכבדי ארץ הוללנדי, כי אם הנכבדים האלה ידברו באזני ראשי ומנהיגי האניות, וגם יכתבו לנכבדים מכיריהם באי סילון ובחוף מאליבאר שיחקרו על הדבר הזה... עשה יעשו ויצליחו. וכן נכבדי היהודים שבאינגליטירי...&quot; וכן הלאה. (עמ' ל)</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פונה אל &quot;הקורא המשכיל&quot; (עמ' ב/2). פניות ישירות אל הקורא לכל אורך ההקדמה. למשל: &quot;גם בטוח אני, שכל קורא משכיל אשר יקראם בעיון וישים לבו אל דרכיו ומחשבותיו, יבין מעצמו איך ישתנו הדרכים והמחשבות האלה...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו אצבע בחלון &quot;נושאים&quot;.
+היות ובן זאב מצהיר כבר בפתח החיבור כי בכוונתו לסטות מדברי המסורת בהבנת הטקסט המקראי (נביאים וכתובים), הוא כותב בהקדמתו: &quot;ואתה קורא! פן יהיה דבר עם לבבך בליעל, לשום לי עלילות דברים לאמר: בועט אני בדברי חכמינו בעלי התלמוד. חלילה לך מחשוב זאת, כי אם דעה לך הלא תדע להבדיל בדברי חז&quot;ל, אם הם בדברי דת ודין, חק ומשפט, מנהג והלכה, עליהם באה המצוה: לא תסור מכל אשר יגידו לך ימין או שמאל וגו'. ואולם בדברים היוצאים ממין הזה אשר אמרו דרך סברא או דרש או אגדה גם הן רסן החוב מעל פנינו שלחו מלקבל דבריהם כי לא רצו לקבוע בזה אמונה ולא להחליט בו אמת כ&quot;א ע&quot;ד דרוש וקבל שכר&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2199</field>
+		<field name="revision_id">2199</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו &quot;הערות&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ברי&quot;ל מציג בספרו דברים שכתבו מנדלסון ופרידלנדר, אך משתדל &quot;לבלתי הלאות את הקורא אשר יאמר אין לי חפץ בדברים כאלו, ודי לי כשאדע באור הטעמים. ומזה הטעם גם לא ערבבתי באור המלות בתוכו כאשר עלתה על לבי בתחלה, כדי למעט מספר הפרושים... אמנם ידעתי גם ידעתי כי רבו כתות השוקדים על דלתות התורה, את אשר יאהוב זה לא יאהוב זה, ואשר ירצה בו האחד לא ירצה בו האחר, ואמרתי עת הפר מחשבתי ובטל רצוני כדי להפיק רצון כלם. ושלום להם ולכל אוהבי החכמה והמדע&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2204</field>
+		<field name="revision_id">2204</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;וולפסון פותח את המבוא כך: &quot;כל קורא משכיל, הקורא בספרי הכותבים וסופרים ספורים ודברי הימים, את הקורות אשר הקרה ה' למדינה ומדינה, לעם ועם, יתבונן לחקור על שלשה דברים...&quot; (שם המחבר, זמן המשעה, תועלת הידיעה). בהמשך: &quot;ואתה הקורא ראה איך הבדילועם ישראל עצמם ממנהג שארי העמים, כי כאשר נודע להקורא בספרי המסעות (רייזי בשרייבונגן) לפנים היה המנהג במדינת הודו מזרחית (אסטאינדייען) ובמדינת (גראסי טארטארייע) ובפרטות אצל היושבים על נהר אינדוס (אדר הינדוס)...&quot;&lt;/p&gt;
+</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר מיועד, בין היתר, כמעין הכנה ללימוד מעמיק יותר של המגילה. לדברי וולפסון וברי&quot;ל בהקדמתם, &quot;אי אפשר להקורא לחקור על הנמשל והרמש מהדבר, אם לא ידע מקודם טעם התרגום ובאור מלות המשל; כמו מפתח אשר בו יפתח הדלת לבוא אל הבית פנימה, ובלעדו יהייה הבית סגור, כן הדבר הזה, אחר התבוננות בתרגום המליצה והמשל, וידיעת גלגול והמשך הדברים, יעלה החוקר מעלה מעלה בשכלו עד כי נגלה לפניו תעלומת ומצפונת הדבר.&quot; הם מביאים את התרגום ה&quot;צח&quot; וה&quot;ערב&quot; של מנדלסון לגרמנית, אולם לא הרחיבו בפרוש. ישנם פרושים מפרושים שונים - קבליים, פילוסופיים, &quot;אלהיים&quot;. &quot;ואנחנו לא נדע איזה מהם יכשר יותר להחליט עליו ולאמור זה הדרך הטוב והפרוש הנכון אשר תלכו בה, הידוע נדע מה שיכשר בעינינו הייטב בעיני הקורא? אולי את אשר קרבנו רחוק הוא בעיניו, ואת אשר רחקנו קרוב הוא אליו, ומי יודע אולי כולם כאחד טובים. לכן משכנו ידנו כלל מן הפרושים האלה, ונלווה התרגום הזה רק בבאור קצר ומספיק להודיע טעם תרגום המלה, דקדוקה בלשון העברי, ושאר דברים הנאותים וצריכים לפשטות הענין, וכל מי אשר נשאו לבו למלאות תשוקתו בפירוש על המגלה הזאת, יעיין בהספרים מהמפרשים אשר קדמונו כמו רש&quot;י, ראב&quot;ע  ובעל עקדה ודומיהם וימצא מרגוע לנפשו.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כותב ההסכמה מציין כי הספר יועיל &quot;למעתיק מלשון עברי אל לשון אשכנז או להפך ללמד זאטוטי בני ישראל לה&quot;ק מאז דעתם לדבר&quot;.
+המחבר בהקדמתו מסביר את מניעיו. רבים אינם מבינים את שפת הקודש, לא יכולים לקרוא בכתה&quot;ק, &quot;לא ישיבו אל לבם לחקור אחרי אמרי הקדמונים לראות האם גם הם ככה פרשו ובהתקם המקרא ללשונם אשר ידברו בה עוד יוסיפו סרה ורבה העזובה מדרך האמת... על זה היה דוה לבי... וראיתי באבדן לשון מולדתי לא תאר ולא הדר לה לכן יצאה כאש חמת קנאתי ללבון ולברר כל קצוי הלשון... והכנותי את לבבי לחבר מדרש כל מלים ... ובארם בלשון אשכנזית כדבר העם אשר אנכי בקרבו והחלותי להכינו על דרך אלף בית החל וכלה ולמען ייטב הספר הזה אף לכבד לשון אשר אינינו יודע מוצאי השמות לשרשיהם לא העמדתי השמות למוצאיהם כאשר עשו הראשונים אך גם המה הצגתי על שדרות הא&quot;ב...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">במהלך החיבור, המחבר פונה לעיתים אל קהל היעד שלו בביטוים כגון &quot;ליבע קינדר&quot;, &quot;מיינע ליבן קינדר&quot;.
+אולם  הספר פונה גם כן לאנשים מבוגרים יותר, המבקשים ללמוד את השפה העברית, אליהם מתייחס פיליפסון בהקדמתו (עמ' [5]):
+
+&quot;Da ich aber dieses Buch auch für erwachsene Anfänger [der hebräischen Sprache] bestimmt habe...&quot;
+
+ההקדמה פונה אל המורים, בדברי הדרכה על אופן השימוש בספר לימוד זה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה מציין באק כי הספר יצא בשלוש שפות: עברית, גרמנית וצרפתית, כדי שיוכל לשמש את ילדי ישראל בארצות: גרמניה, צרפת, הולנד, איטליה, דנמרק, שוודיה, רוסיה ופולין (הקדמת המחבר, עמ' 8)</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2212</field>
+		<field name="revision_id">2212</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;מודעה&quot; זו מופנית בעיקר אל קהל הקונים - אף כי יש להניח כי גם אל המחרימים. בסוף ה&quot;מודעה&quot; מציינים המחברים: &quot;ומעתה יצאנו ידי חובותינו להודיע את כל זאת ברבים ולהשקיט לבב הקונים המתאוים לקנות ספרים אשר נדפסו אצלינו לרות צמאונם, להגדיל תורה ולהאדירה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מימון בהקדמתו פונה אל ה&quot;קורא המשכיל&quot;. לדבריו בסוף ההקדמה, הוא מביא את &quot;קורות הפילסופיאה מזמן התחלתה עד זמנינו זה למען דעת כל קורא משכיל כי לא מלבי היתה זאת, אם אמרתי היות החכמות בזמן ארסטו חסרות...&quot;
+אייכל ב&quot;דבר אל הקורא&quot; מציין כי &quot;זה שנים רבים מלאתי את לבבי לעסוק בספרי חכמה ולאסוף אחת אחת את אשר מצאתי בם לתועלת משכילי בני עמינו ולתחם לפניהם בלשוננו הקודש כאשר לאל ידי, יען מצאתי בדור הזה רבים מחכמי התורה אשר יבקשו גם לקחת יד בחכמה, ולא עלתה בידם, מחוסר הספרים אשר יבקשו בם די רוות נפשם.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">סטנוב מבקש להציג ספר שידבר בשפה ברורה לקהל הקוראים. הוא מציין כי קיימים פירושים רבים, אך &quot;לא ללמד יצאו כי אם להראות כחם ועוצם שכלם באלהות... ועם היות אלה המפרשים גדולים חקרי לב בדורותם, הנה לא לנו עזר מהם&quot;.
+סטנוב, לעומתם, &quot;נכמרו רחמי על בני גילי, ואומר יצוא אצא גם אני לישע בני עמי... לאנשים כערכי שבורי לב ודכאי רוח אשר לא גובה להם ולא יהורא להם&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו דברי סטנוב בהקדמתו בחלק השני.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המתרגם לא מציין את קהלו, אך יש להניח מן השימוש הרב-לשוני שקהלו יהודי וגם לא-יהודי</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;)</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקהל אשכנזי - בכותרת רשום &quot;מנהג פולין&quot;
+
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">קהל אשכנזי - בכותרת נרשם &quot;מנהג פולין&quot;
+
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">רשום בכותרת לפי מנהג פולין - לכן נועד לאשכנזים
+
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2227</field>
+		<field name="revision_id">2227</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקהל אשכנזי - &quot;מנהג פולין&quot;
+
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">על פי הכותרת: הטקסט נועד לאשכנזים - מנהג פולין
+
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בכותר הספר נרשם: &quot;לבני פולין פיהם ומעהרין&quot;
+
+לא מצויין קהל יעד יהודי ספציפי, אך כנראה שהמחזור לא נתפס כחתרני או משכילי (ראו שדה &quot;הערות&quot; בחלון &quot;חוקר ומקורותיו&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה לספר, ישנה פניה ישירה אל הקוראים. &quot;הספר הזה המובל לפניך קורא נעים! הוא ראשית מלאכתי בדרכי הלשון והמליצה... אתה אחי הלא ידעת כי ספרים כאלה בלשון עבר מעט המה ונער יכתבם, וכל מגמתי רק להרחיב את לשוננו אשר אבדנו זה כמה - הלא תראה כי לא למען רבת המחיר אשר אמצא חברתיהו... אף לא למען קנות כבוד ותפארת מבני עמינו... ראה תראה ידיד לבי! כי הספר הזה על פני כלו מלא מוסר השכל... אלה דברי ידידיך קורא נעים המשתוקק לראות עלות כנפי הצלחותיך בתורה בחכמה ובאושר.&quot;
+
+לפי ורסס, המחזה מלוכת שאול, עמ' 58, המחבר &quot;צופה מראש, כי קוראים הנמנים עם המחנה של אותם 'בוערים בעם' &quot;בטרם יקראו בו שתים או שלוש דלתות יחרקו שן עליו כאשר טבע המון מן הבוערים בעם בראותו דבר חדש בעיניהם כאלה&quot; [כך כותב האפרתי בדברי ההקדמה]. נוכח תחושה קודרת זו שוקד האפרתי להכשיר יצירתו זו בעיני קוראים עוינים כגון אלה כשהוא מבטיחם נאמנה &quot;כי הספר הזה על פני כולו מלא מוסר השכל, כי מוסר השכל שמתי מטרה לכל הרעיונות הבאות בו&quot;. ביחד עם שימושו במינוח המשכילי הרווח כלפי יריביה של ההשכלה רואה האפרתי מחובתו להצהיר לפני קהל קוראיו אלה של &lt;ins&gt;מלוכת שאול&lt;/ins&gt; על דביקותו באמונה באלהים:
+&quot;והנה כאשר מנעורי ועד עתה שמתי מבטחי באלהי, כי רק הוא יודע את כל לבי, כי חפץ חסדו הוא; כן עתה אתה ה'! -- הורני נא דרכך אלכה, רצה את דרכי! מלא חפצי לבבי אשר התפללתי אליך זה כמה - לדפוק על דלתותיך יום יום, כי ישרים דרכיך ה'!&quot; [גם בהקדמה]
+דומה, כי הצהרה נרגשת מעין זו מצדו של המחבר הצעיר נועדה להעניק ליצירתו בעיני קהל קוראיו העברים לגיטימציה אשר לאמונתו...
+מכל מקום, ניכר כי מלכתחילה ומעיקרו נועד המחזה מלוכת שאול לקהל קוראים ממחנה ההמשכילים.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו טקסט ההקדמה בחלון &quot;הקדמות&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">וייזל פותח את הקדמתו ברמיזה על קהלו: &quot;ללמד לבני יהודה משל ומליצה דברי חכמים וחדותם, הלא היא כתובה על ספר הישר, שנאמר ושננתם לבניך ותניא בספרי בניך אלו התלמידים שנאמר ויצאו בני הצביאים ואין המצוה הזאת מוטלת לבד על המופלאים בכחמה... אלא הגדול והקטן נצטוה בה, כי אין לך חושב מחשבות תורה וחכמה בישראל שלא יהיו קטנים ממנו הצריכין לתורתו והמקבלים תועלת מתלמודו ומדבריו. ולכן כל מבין עם תלמיד המצליח לדלות מים חיים מבאר החכמה, חייב להזיל מים מדליו ולהשקות צאן קדשים הצמאים לשמוע דבר ה'...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2240</field>
+		<field name="revision_id">2240</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר פונה אל &quot;רעיו&quot; בחברת דורשי לשון עבר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף ההקדמה כותב המחבר: &quot;ודע נא הקורא אהוב כי רק האמת תהיה נר לרגלי ואור לנתיבתי. לא אשא פני איש לא אשא פני.
+עתה &lt;ins&gt;קום קרא בספרי ושפטהו ביושר לבך&lt;/ins&gt; אם להימין או להשמיל, פלס דבר במאזני צדק ויהי אלהים עמך.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;פניה לקהל היעד נעשית בעמוד השער: &quot;לתועלת ילדי בני ישראל החפצים ללמוד שפת עברי&quot;.&lt;/p&gt;
+</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2250</field>
+		<field name="revision_id">2250</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר מוקדש לאישה, ובין היתר כתוב שם כי תרגום ההגדה &quot;אויס אכ'טונג פ'יר דיזס גשלעכ'ט איהר דאזיין ערהאלטן&quot;.  
+גם ההקדמה שכתב ברי&quot;ל פונה ל&quot;גנייגטע לעזרינען&quot;. במהלך ההקדמה ישנה חזרה על פנייה לנשים: &quot;מיינע לעזרינן&quot;, &quot;דעניעניגן אונטר מיינן לעזריננן, דענן...&quot;. 
+יש לציין כי לפחות בחלק מן המהדורות המאוחרות, מטושטשת פניה מפורשת זו לנשים.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2253</field>
+		<field name="revision_id">2253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו כותב הפרשן/מתרגם כי כוונתו לאפשר לקורא להבין את הטקסט וכך להגיע להתרוממות דתית, &quot;צור רעליגיעזען טרויער שטיממען, צור מאראלישען בעזזרונג...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בפנייתו אל הקוראים, מתלונן וורמס בהקדמה לספרו על כי &quot;נבערתם מדעת כאיש בער&quot;.  הוא מבקש בכתביו &quot;ללמוד לבני יהודה קסת סופרים בכל נתיבות החכמה ומסילות הידיעות במשעול הקרמים (!) המצויירים ומצויינים בדרכי ציון האפילות עד עתה ליהודים יהיה אור יקרות בכל עבר לעברים יופיע מהר פארם פאר חברו שרים ראשונים ואחרונים. סקלתי מהם אבני נגף ויהי העקוב למישור והגבעות שמתי למסלול ישר למען ירוצו ולא ייגעו לא ייעפו ולא יכשלו...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה רשם שנאבר-לויזון: &quot;... הקדשתי המנחה הזאת לה' ...ויהיה למחסה ולמסתור לנערי בני ישראל אשר יושבים בר' אמות של הלכה וערום ילכו בלי לבוש ואין כסות בקרה.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הרב יחזקאל לנדא בהסכמתו כותב על המחבר: &quot;דבר טוב עשה בעמיו ללמד בני יהודה לשון לימודים. לקיים &lt;ins&gt;חנוך לנער על פי דרכו מנעוריו&lt;/ins&gt;... למען יהיה נקל על &lt;ins&gt;הנער&lt;/ins&gt; לקבל והמלמד יצליח במלאכתו ועל ידי זה תתפשט ידיעת לשון הקדש על מכונו &lt;ins&gt;לנער וזקן&lt;/ins&gt;...&quot;
+
+על/אל המורים כותב אביגדור לוי בפתח הקדמתו: &quot;ידוע הדבר ואמת היא שהלימוד הוא תוהו ובוהו אם אין להמלמד עם תלמידים כל חלקי הלשון בידו לאחדים ובקי ורגיל במקרא ומפרשיו המחודדים...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בפתיחתו כותב המתרגם:
+אליכם אישים אקרא! וקולי אל בני אדם! שמעו כי נגידים אדבר! ומפתח שפתי מישרים!</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2272</field>
+		<field name="revision_id">2272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהסכמה נכתב: 'וממנו [מספר זה] נלמד חחכמת הדקדוק גם חכם גם דרדק'.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ב&quot;התנצלות המחבר לעין הקורא&quot;, פונה המחבר אל &quot;קורא נעים&quot; .
+שם: &quot;ואמרתי שבתועלת מאמר זה מצאתי תרופה לארוכה לפחותי ערך עיון השכל כמוני. באשר שחכם השלם לא אמר שיתחייב לנצח האפיקורס, והניצוח לא יתכן זולת בראיות מופת חותך, וזה דבר קשה מאד בחכמת אלהות. מלבד שצריך בינה יתירה וידיעות הרבה, לעשות מופתי אמתים כאלה, גם ישנו דברים שלא יצליח בהם מופת חותך כלל... לבטל מופתים כאלה צריך ג&quot;כ ידיעה ועיון החקירה, ולעיין בחבורי קדמונים אין יד כל אדם מגעת לעמוד עליהם, באשרר המה יוקר המציאת וההבנה. שקצרו בלשונם והעלימו דבריהם במלות זרות מלשון הפילסופי', כי בימיהם לא נתפרסום חכמה זאת, זולת בין החכמים, ולא הי' להם להלחם מלחמות ה' זולת נגד נבונים וולהם די ברמיזה. אבל בזמננו שנתפרסום חכמה זאת, גם לאנשי פחותי ערך בכל לשונות הגוים עד שבני עמינו ישפיקו בילדי הנכררים, ושגו לחקור על אמתת אמונתנו, בספרי פילסופי' הנפסדים מחכמי נכר. ועליהם נאמר יש דרך ישר לפני איש ואחריתה דרכי מות, באשר שיעעלימו האמת ויכשילו בחלקלקת לשונם. ואלה תלדות פרץ, רבים חללים הפילה מעם ה', אשר נפלו ביד משחית להשחית האמונה, וישכח ישראל עושהו. לכן קמתי אני צעיר שבצעירים ותלמיד מתלמידיהם, להיות מבעלי אסופות אמונה בחקירה, לחוקקם בעט סופר לסעד לבבי, למשעון לבב אנוש כערכי, לגדור פרצה זאת. ... אבאר...בשפה ברורה ובדברים נעים להבין לכל יודעי ספר&quot;.
+גם: מעין הוראות קריאה לקורא: &quot;לכן אבקש ממך [הקורא] לתועלתך לקראו על סדר המסודר.&quot;
+וכן, פונה כך אל הקורא: &quot;ובהמצאך בו דברר בלתי מתוקן, תדונני לכף זכות, כי השגגה היא בטבע אנושי. ואם תמצא בו דבר שקדמני אחר, ולא זכרתי שם בעליו, אל תאמר גנוב הוא אתי... דע שאין לי בית מלא ספרים... אפשר ששכח לבי מה שראו עיני, ונעלמו דבריהם בזכררוני, וכשחזרו ונתגלו בלבי, אמרתי אני היום ילדתיהו...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;ואנכי הרואה כי תועלת גדול יש בו לעם ה'...&quot; (&quot;הקדמה&quot;, דף א').</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המביא לדפוס מציין כי הפרשן &quot;בחר לשון ערומים לפרשו בדרך נקל וצח עד שיקל לכל מתחיל לבא שעריו. גם גדולים חקרי לב אשר להם בינה יתירה ואת כל גבוה יראו בעיונים הדקים ונשגבים...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2284</field>
+		<field name="revision_id">2284</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו הקצרה כותב המחבר: &quot;כי לא אל עם ע[...] שפה וכבדי לשון וחסרי דעת אני שולח ספרי זה כי כבר הא[..] הקדמונים והאחרונים בשבח לשון עברי לה&quot;ק ושמו מוכיח על[...]&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לפי הכתוב בהקדמת הספר (עמ' [6]), במכתב השלישי של דברי שלום ואמת (עמ' ה/א)  הבטיח וייזל כי &quot;ספר המידות... יאיר עיני &lt;ins&gt;התלמידים&lt;/ins&gt; ביראת ה' וחכמת הנפש ודעת המדות... בחורי חמד ומתחילים בחכמה כמוני! הנה לכם ספר זה... זה המעט שאני כותב דרך חדש הוא, להועיל לי ולבני גילי כמוני...&quot;
+
+וייזל ממקם את ספרו בהמשך לשורה ארוכה של ספרים אשר כתבו חכמי ישראל לאורך הדורות, מספר האמונות והדעות לסעדיה גאון, ספר חובת הלבבות לר' בחיי הזקן, ועד ספר מסילת ישרים לרמח&quot;ל וספרים אחרים מתקופתו. ואולם, &quot;לא העתקנו בספר זה דברי מי שקדמונו, כי אין זה דרכנו... אחקור מחקר שכלי כפי כחי בעומק העניני', יבין בם הקורא המשכיל, ולכן עזבתי מליצות וחרוזים להנעים הלשון, אבל כתבתי באר היטב ובדרך קצרה למען ירוץ הקורא בו. כי מחשבתי להועיל.&quot; (הקדמה, עמ' [10])
+ 
+וייזל איננו מעמיד עצמו כסופר שהוא סמכות עליונה ובלעדית, אלא מציג את דבריו כמלאכה אין סופית ומעניק לקורא יכולת להשלים את דבריו: &quot;גם ידע הקורא כי אין מלאכתנו מלאכה תמה שאין אחריה עוד, אלא התחלות דברים היא, כי אין קץ לחכמת הנפש, לא באתי רק לישר המסילה לפני אנשים כערכי, וללמדם על איזו דרך טוב ללכת בבתי הנפש... מי שדעתו רחבה יוסיף שרשים וענפים בלמודים הללו, וישא ברכה מאת ה'&quot; (הקדמה, עמ' [10]).</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">קהל היעד מצויין בעמוד השער</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המביא לדפוס כותב בהקדמתו הקצרה: &quot;והנה זה הספר אינו נמצא ממש אחד בעיר, ואפילו בלאותיהן לא נראה. ובפרט שאינו שוה לכל נפש בשביל התיבות הזרי' שבאים בו שלא יוכלו לפרשן. אף היודע שרשן. מפני שאינו מצויה בידו הספר קונקורדאנץ או ספר השרשים לרד&quot;ק ז&quot;ל. לכן אמרתי לי נאה להדפיסו מחדש ולחברו אל ספר מלים לאלה שחברתי על השרשים שהוא קיצור מופלג משני הספרי' הנ&quot;ל ויהיו לאחדים בידו. והיה הדבר הקשה יחפשו בחבורי הנ&quot;ל. &quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פניה עקיפה אל קהל היעד נעשית בהערת שוליים לרשימת המילים הגרמניות. המוציא לאור (ברי&quot;ל) כותב שם: 
+&quot;איך גלויבע... מיינן לעזרן איינן בפאללן (?) דאמיט צו ערצייגן, ווען איך איהנן דיא אין דען פזאלמן פארקממנרן (?) האכדייטשן ווערטר ערקלעהרע,... דיא... אים גמיינן לעבן, טהיילס זעלטן, טהיילס גאר ניכט פארקאממן...&quot;
+
+תרגום ספר תהלים לגרמנית ע&quot;י מנדלסון פורסם לראשונה באותיות גותיות, ורק לאחר מכן הוא הודפס באותיות עבריות - דבר המעיד על שינוי בקהל היעד. ויינברג, רשימת מילים, עמ' 281.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ר' צבי הירש מברלין, בהסכמתו, ציין כי שבתי מיאנוב, מי שהביא את הספר לדפוס ויזם ככל הנראה את הדפסת הספר, ביקש &quot;לרות נפשות הצמאי' לדעת צחות ס' תהלי' בלשון העמי' אשר אנחנו חוסי' בצלם לדעת מה יעש ישראל להשיב חורפינו (?) דבר, השמים עלילות דברים בשנותם את טעם הס' הנ&quot;ל לפי דרכם&quot;. על כן, הוא העתיק את תרגומו של מנדלסון &quot;בגופין שלהם, לגופין שלנו&quot;.
+
+בנו של ר' צבי הירש, ר' שאול לוין, שיבח בהסכמתו את מנדלסון על תרגומו, אך הוסיף הערה המעידה על קהל היעד שאליו ביקשו לפנות עורכי הספר: אמנם תרגומו של מנדלסון יקר לכל אדם, &quot;אלא שאינו שוה לכל בני פולין ואשכנז בהיות רבים לא ידעו לקרות כתב העמים על כן התעורר האלוף התו' כ&quot;ה שבתי במו' דוד מיאנוב לכתוב הפרוש ההוא בכתב אשורי...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ברי&quot;ל פונה ישירות אל הקורא: &quot;אל יפלא בעיניך הקורא&quot;, כותב בראשית ההקדמה הראשונה (עמ' א), אם תמצא כי אורך המשפטים אינו שווה בשתי השפות - במקור ובתרגום...
+בהקדמה הוא מציין כי הוא חקר את דרך התרגום של מנדלסון, והוא מבקש &quot;לחלקם גם ביעקב ולהפיצם בישראל&quot;.
+הוא פונה לקהל שאינו בקי בספרות ובתרבות הלועזית, שכן הוא רואה לנכון להקדים ולהקדיש כמה מילים לנושא המליצה, &quot;באשר לא מצאתי מהבחינה הזאת בספרינו כי אם מעט מזעיר, אף שהידיעה הזאת נצרכת מאד לכל קורא בשירי הקודש&quot;. (עמ' א/2)
+
+ברי&quot;ל מעודד את קוראיו להעמיק עוד יותר בנושאים בהם הוא נוגע. בהערת שולים הוא כותב: &quot;האריכו חכמי המעטאפיזיק לדבר על גדר יופי והפלאה...דברים טובים מאד ראוים לכל אוהב חכמה לדעתם. ואין כאן המקום להאריך בו... לא באתי אלא לעורר לב אחי על ענינים נכבדים כאלה, וכל המוסיף לבאר תבוא עליו ברכה.&quot; (עמ' ג/2) 
+ובמקום אחר (עמ' י/1): &quot;אעיר את הקורא הנעים הרוצה בזה לקרות שני חלקי הספר שהבאתי לעיל בשם החכם האדון הערדר, וימצא מטעמים לנפשו...&quot;
+כשמפנה אל ספרו של מנדלסון נתיבות השלום, מוסיף ברי&quot;ל: &quot;המצוי בודאי ביד כל משכיל אוהב תורה באחינו&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהערות בפתח הספר כותב המחבר: &quot;בכל מקום שתראה וידמה לדבר פשוט בעינך אל תאשמני! כי לא לגדול כמוך כתבתי ולא לפני איש כערכך חברתי כי מה אדע אשר לא ידעת? ומה הבנתי אשר לא התבוננת? אולם לאשר כערכי שולחני ערכתי...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו מציין וייזל כי הספר &quot;כלו חכמה ומוסר ודעת קדושים, ולכן צריך המפרש אותם לשום עינו ולבו להטעימם היטב, למען ימתקו בפי קוראיהם ויולידו ויצמיחו מחשבות אמת בלבותם... וידעתי גם אני כי מעטים הם המטים אזנם לחכמה והמביאים למוסר לבם, אמנם אם יועיל רק לאלה המעטים, אפילו לא יועיל רק לאחד מני רבבה אשריו... כי לא נוכל לעשות צדקה יותר גדולה מלהיות ממצדיקי הרבים, ולהביא יראת ה' בלב הנלוזים ולפשט עקמומיות שבלבם על ידי שנספר להם גבורות ה' וכבוד מלכותו... וביותר שפרושינו נשענים לבד על הקדמות שכליות הנטועות בדעת כל אדם, יבינם כל נותן לב על דרכי נפשו ומנהגיה, וזאת היא חכמת הנפש&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ספר זה, המציג בשפה פשוטה (במכוון) את תרי&quot;ג המצוות, פונה בראש וראשונה אל &quot;עמי הארץ&quot;, ולפי הצהרתו, כלל וכלל לא אל תלמידי החכמים או אל המשכילים. המחבר פונה במידה רבה אל היהודים &lt;ins&gt;בני ארצו&lt;/ins&gt; וכותב בשפתם. (קסטנברג-גלדשטיין, היהודים בארצות בוהמיה, עמ' 162 והלאה. בעמ' 164 מצביעה קסטנברג-גלדשטיין על הקושי במתן תווית לשפה בה השתמש לנדאו ומציעה לכנותה
+(böhmische Judendeutsch)
+
+לנדא מציין כי מבוקשו &quot;לאסוף מצוות ה' בלשון אשכנזי להעתיקם. למען דעת כל עמי הארץ... ואמרתי אם יהיה ה' עמדי ויתן תמים דרכי אפלס נתיב מצוות בלשון אשכנזי לקטני שבטי ישראל אנשים כערכי... וזה הספר כתבתי בניב שפתי ובמלת לשוני בלשון אשר ידבר ההמוני לא לפני סופרי זמננו דוברי צחצחות לשון למודים, פלג לשונם בלשון עבר ובלשון אשכנזי חכם...&quot; (בהקדמה)
+
+&lt;ins&gt;יחד עם זאת, ישנה גם פניה לקורא המלומד&lt;/ins&gt;. לפי קסטנברג-גלדשטיין, הערות שנכתבו בעברית ע&quot;י המחבר היו מיועדים בדיוק לקהל קוראים זה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה מציין המחבר כי הוא מייעד את סיפרו ל&quot;יושבים באהלי תורה&quot; (דף ז')</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פיינר, &lt;ins&gt;מהפכת הנאורות&lt;/ins&gt;, מציין: &quot;כדי לעמוד על האירוניה ועל הביקורת הסאטירית [המובעות ב&lt;ins&gt;כתב יושר&lt;/ins&gt;] היה הקורא חייב להיות למדן, כדי שיוכל לעמוד על האסוציאציות הרבות הפזורות בחיבור...&quot; (עמ' 189).
+הספר פונה, בין היתר, אל נפתלי הרץ וייזל. כך בפתיחת הפרק האחרון בספר, פרק ח': &quot;הנה אנכי בא אליך, החכם המרומם... רבי נפתלי הירץ יצ&quot;ו, אדברה נא שלום בך...&quot; (עמ' טז/א).
+
+הספר לא נועד תחילה לפירסום. הוא נשאר קרוב לעשר שנים בכתב יד (הודפס רק לאחר מות המחבר ב- 1794), אך סביר להניח כי היו לו קוראים לא מעטים.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לפי הכותרת, הספר פונה אל &quot;נערי בני ישראל השוקדים בלימודיה&quot; [של המליצה/השפה]. 
+בהקדמת המביא לדפוס: &quot;אבקש מידידי הקורא, לשפטני בצדק ובמשור על דבר איזה שמות זרים שקראתי לשירים&quot; - בכך נהגתי כמו רמח&quot;ל מחבר הספר.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2319</field>
+		<field name="revision_id">2319</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מדברי המחבר בראשית הספר עולה כי קהל היעד איננו קהל יהודי מלומד, כי אם &quot;&lt;ins&gt;&lt;strong&gt;ההמונים&lt;/strong&gt;&lt;/ins&gt;&quot;. ב&quot;דברי סליחה&quot; על בחירתו בשפת היידיש לכתיבת הספר, הוא כותב שאם &lt;ins&gt;במקרה&lt;/ins&gt; ייפול הספר לידיהם של מלומדים, עליהם להימנע מביקורת על בחירתו בשפה זו (ולא בצרפתית, גרמנית או הולנדית, שפות נקיות יותר) ולהבין כי זו הדרך היחידה בה יוכל המחבר להשיג את מטרתו, &quot;השכלת העם&quot;: 
+&quot;דא... דיא גראסע מעהרהייט זיינער גלויבענסגענאססען אין דיזען האללענדישען דעפארטעמענטען, וואפ'יר דיזעס ווערק גרעסטענטהיילס בעשטיממט זיין זאלל, ביזהער דיא גהעריגע שטופ'ע דער קולטור אונד דער פ'עהיגקייטען נאך ניכ'ט ערלאנגט האבען, דאס מאן זיך איהנען אין אייניגע דער אבענגענאנטען דרייא שפראכ'ען דייטליך ערקלערען קעננע, דא הינגעגען דיא אלגעמיינע יודישע שפראכ'ע, איהנען זעהר פ'ערשטענדליך איזט; זא האפ'פ'עט דער פ'ערפ'אססער דורך זיינע ארבייט זיינען גלויבנס ברידערען דיא גרינדע, די שעהנהייט אונד דען נוצען דער ''העברעאישען שפראכ'ע'' קעננען צו לערנען, דאמיט דיזע שטודיום וואפ'אן זיא דאס אנגענעהמע עמפפ'ינדען ווערדען, דיא וויסגיהר אונד דיא לופט אין זיא עררעגע אויך אנדערע שפראכ'ע גרונדליך צו ערלערנען.&quot; 
+מנקודת ראות זו, הוא טוען, יש לראות בשימוש בשפת היידיש דבר שימושי יותר מאשר מזיק.
+מהקדמתו עולה כי הוא מבקש להתאים את הספר &lt;ins&gt;&lt;strong&gt;לקהל המקומי&lt;/strong&gt;&lt;/ins&gt;, שאינו יכול להפיק תועלת ראויה מן הספרים הרבים והטובים שהודפסו &lt;ins&gt;בברלין&lt;/ins&gt;, בשל הבדלי השפה.
+הוא מבקש מרבנים לה&lt;ins&gt;&lt;strong&gt;שתמש בספר בחדריהם&lt;/strong&gt;&lt;/ins&gt;, ומאבות ללמוד מתוכו עם &lt;ins&gt;&lt;strong&gt;ילדיהם&lt;/strong&gt;&lt;/ins&gt;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקורא מציג גומפרץ 'ביאור על פירוש הרב ר' אברהם בן עזרא נ&quot;ע למגלות החמש... כי פעמים רבות בא בקצרה ודבריו מעטים ואולי לחידות נוטים כל יודעיו יתנו עידיהן כי הם סתומים ומכיריו יכירו וידעו כי הם חתומים בשגם ידיו רב לו בפי' הכתוב בדקדוק לשונו ובהבנת צחות משליו ומליצותיו ... אמרתי עת לעשות ולא אחדל להוציא מאפלה לאורה חבור כזה אף כי קטן ודל אשר תועלתו גלויה וכוונתו רצויה. והנה הוא למחברת ולתוספת לספר מרגליות טובה לפירושו על התורה שכבר נודע בשערים ונתכוונתי &lt;ins&gt;למען ירוץ בו היודע לקרות ספרים&lt;/ins&gt; כי הרחקתי מאד מדרכי המפרשים הגדולים. באילן גדול דבריהם תולים ולכבודם הסתר מסתירים הביאורים לפעמים וביותר נעלם יבארו הנעלמים. לא כן אנכי עמדי. אמנם &lt;ins&gt;לאנשים כגילי וכערכי הרימותי ידי&lt;/ins&gt; וככל צרכם אל הביאור בארתי &lt;ins&gt;וכאשר ידבר איש אל רעהו דברתי&lt;/ins&gt;... &lt;ins&gt;ואל הקורא המשכיל אתחנן&lt;/ins&gt; לבעבור יחנני ולכף זכות ידינני &lt;ins&gt;ועל השגיאות מי יבין אזני יגלה&lt;/ins&gt;, וידעתי כי מצאתי חן בעיניו ואתנה לו יקר וגדולה. והיה כי אזכה להדפיסו שנית אתן לעיני השמש תודה לו... לבעבור הקים האמת על כנו והאמונה על תלה'.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף הקדמתו כותב הורוויץ: &quot;לכן אספתי ראשית בכורי מחשבותי ושמתם בטנא כתיבותי והבאתי מפרי מליצותי מנחה טהורה לאלקי אבותי ולכהני ה' מורי ורבותי ה&quot;ה חסידי עם ה' ובני ב[...]יו ולגאוני הדור מורי בניו ולחכמי מחקרי מצפוניו יחדיו מאמיניו על ידי תורת משה איש עניו להיות אוהב ומודע לכל בני מדע... כ&quot;ד עבדיכם ובנכם תלמידכם ואחיכם החפץ בשלומיכם ושלותיכם בכל לב ונפש&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">על הקשר בין הקורא לבין המחבר ועל &quot;יחסי האמון&quot; שביניהם, נאמר בהסכמה: &quot;המחבר העלים את שמו ולא רצה להתודע ולהגלות באמרו כי לא לתפארת הוא לו כי תחלת פעולתו המחברת הזאת היתה לכונה שניה וגם העלותו אותה בדפוס הוא אצלו בהכרח ובביטול רצונו ... גם באמרו [המחבר?] שאינו מן הצורך להזכיר שמו לעומת מחברתו זאת אחר שאיננה בנויה על ענין תוריי מאחד מסדרי התלמוד שצריך הקורא לדעת מבטן מ יצא הכרך ואם הוא ראוי לסמוך על דעתו... כי לא היתה פעולת המחבר ואומנות עטו באמונת עתו ולא ישיג בה הקורא חוסן ישועות בחוסן ישועות ולא חכמה ודעת בחכמה ודעת רק יראת ה' היא אוצרו אשר אצר בה בחלק ממנה אשר פיו יקבנו בשם תוכחת מגולה שם תתעדן נפש הקרורא בחקירת ענין יראה ואהבה ושאר עיקרים הנוגעים לדת הקדושה ... (ושאר דבריה [של מחברת זו] הם טפלים להם והם אצלם במדרגת תיק הספר הנצלת עם הספר...) ובענינים הנתלים ביראת ה' רשות נתונה לכל אדם לדבר ואוזן השומע מלין תבחן ואם נכונה בפיו כבר אמרו קבל האמת ממי שאמרו כל אלה דברי המחבר...&quot;
+מן הקוראים הוא מבקש &quot;לדין אותי לכ&quot;ז. גם בקשתי שלא להתעמק במחברת זאת רק לעתות הפנאי בזמן שלשה שבועות מקריאת הסדרים וישב מקץ ויגש כי דבר בעתו וכו'&quot;
+&quot;ותדעו נאמנה שלא תמצא בכל המחברת מ&lt;ins&gt;לה זולת מלשון עברי&lt;/ins&gt; והחפץ ימלא ידו לחפש בספר קונקורדאנציע שם ימצאנה ודרך כלל אומר ש&lt;ins&gt;הבקי במקרא תנ&quot;ך ובלשון מליצה יקראנה בשובה ונחת&lt;/ins&gt; וימצא נחת &quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו מציין וולפסון כי ספר זה, כתרגומיו האחרים, אמור לשמש ספר לימוד לתלמידים. אך בשונה מספרים קודמים, במקרה זה כוונתו היא להפוך את הספר גם לספר קריאה. הוא מצהיר כי בתרגומו ניסה &quot;לנקות&quot; את הטקסט מכמה שיותר הבראיסמים, &quot;דאס זיא בייא איינם גראסן טהייל מיינר נאטציאן דיא שטעללע איינם ניטצליכן אונד אונטרהאלטענדן לעזעבוכס פ'ערטרעטען קאן&quot;. לשם השגת מטרה זו, &quot;קאננטע איך פ'רייליך אין מיינר איברזעטצונג ניכט איממר מיט דעם אריגינאל גלייכן שריטט האלטן, אונד מיך אן זיינע אויסדריקקע דארשטעללונגן אונד בצייכנונגן דער דינגע זא זעהר בינדן, אלס איך עס אין מיינען פ'ריהערן איבקרזעטצונגן, דיא בלאס פ'יר דען אונטרריכט דער יוגענד בעשטיממט ווארן, גטהאן האבע&quot;.
+ראו גם אצבעות בחלונות תרגום ומהדורה חדשה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו חלון זה בספר מלכים א'.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כפי שצוין ב&quot;קול מבשר&quot; לקראת צאת &quot;מנחה חדשה&quot;, ספרים אלה מופנים אל קהל יהודי רחב, שכולל גם נשים. קהל זה מוזכר בפירוש בדברי ההקדשה לדוד וורטהיימר.
+המחברים פונים אל הקהל ומבקשים: &quot;אנשי אמת!... הבינו לנו את אשר שגינו, אם במענה רך וחנינה, אם בתוכחות חמה, בכל אשר יטב בעיניכם, אם אך תפקחו את עינינו, וידענו על מה שגינו. אל תחשבו לתת בלבנו עצבת, אל נא אדוני! גם תתנו שמחה בלבבנו, להיותנו סבה לירד עד עומק כל דבר, ולעמוד על אמיתת ענינו. בלב שמח ונפש חפצה נקבל האמת מיד כל מגיש.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2329</field>
+		<field name="revision_id">2329</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו &quot;קול מבשר&quot; ל&quot;מנחה חדשה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקראת סוף ההקדמה כותב וולפסון: &quot;ואתם נערי בני ישראל אשר לבבכם שלם עם ה'... שימו נא לבבכם על הספר הזה למדו ותהגו בו היטיב, למען תדעו לאהבה את ה' ולדבקה בו כל הימים אשר אתם חיים על האדמה&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">פניה ישירה אל הקורא בסוף ההקדמות לספר: &quot;הא לך, קורא נעים! הנמודים(?) הכוללים אשר ראינו להעיר אותך עליהם, לסקל לפניך המסילה, להדריכך באורח סלולה, למען הרחיב צעדיך תחתיך, בפנותך ללכת אל הקדש פנימה; כי אם תמלא נפשך בידיעות האלה, אז תבין הכתובים אשר יבאו לפניך, ותדע לשפוט על העתקתנו אם היא רצויה ומסכמת עמהם, ואז תשכיל בכל אשר תפנה בבאורנו לדעת על מה אדניו הטבעו.- משכילי עם! הואילו פנו אל המנחה הזאת הערוכה לפניכם בכלי טהור! בקרו נא את מלאכתנו התכשר (?) בעיניכם. והיה אם תמצאו נועם בדברינו וערבה לכם מנחתנו, תהי נא זאת משכרתנו. ואולם אל תמנעו גם מהורות אותנו, אם שגיאה תמצאו בדברינו; כי שוקדים אנחנו לשמוע ולקבל דבריכם, ונשלמה תודות אלף אמרי פיכם. אלה דברי עבדיכם, אוהבי האמת ומכבדי התורה ולומדיה.&quot; [חתום: דעסוי ד' ניסן התקס&quot;ה לב&quot;ע, מחחברי מנחה טהורה]</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה מדגיש המחבר כי במקום ספרי דקדוק מחקריים, המצוים בשפע בעברית, מבקש הוא להעניק ספר, &quot;אשר יהיה לתועלת המתלמד&quot;. (אך כפי שקרסל מציין, יחד עם היותו ספר עממי בצורתו משולבים בו &lt;ins&gt;יסודות מחקריים לרוב ובעיקר במקומות שהוא חולק על קודמיו&lt;/ins&gt;.) המחברים האחרים, טוען המחבר, &quot;בעוצם חכמתם ורוח מבינתם חתרו לתת טעמי' נכונים לדבריהם במועצות ודעת, והאריכו למעניתם בראיות מן הכתובים... ויתערבו הפעלים והשמות והמלים למיניהם, והלכו בגדולות ונפלאות אשר לא ידעו ולא יבינו המתחילים להתהלך בהיכלי החכמה הזאת, בפרט הנערים הקטנים אשר לא נסתה כף רגל ידיעתם לעמוד על חבורי המאמרים וסדור הדבורים. והיה כל זה סבה למוקש הסדור עד אשר ילאה המתחיל למצוא דרך סלולה...&quot;
+המחבר מציין למי מיועד ספרו: &quot;(א) לתועלת המתלמד הקרב אל המלאכה הזאת ... (ב) המלמד את נערי בני ישראל ינהלם לאט וילמדם מתוך הספר הזה כללי דקדוק הלשון אשר ימסור להם ולא יצטרך למסור אותם בע&quot;פ... גם (ג) אשר לא נסה ללמד את החכמה הזאת לאחרים אף לנערים הרכים בשנים ישמור את הדרך הזה אשר אנכי מורה וינצור ארחות חיים...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">אחת מן הכוונות המוצהרות של הספר, לפי המביאים לדפוס, היא לעורר את הקהל, ובין היתר את הקהל הלמדני, אשר מקבל ללא עוררין &quot;נבילות וטריפות בלי טעם וסברא&quot;, כל עוד הספר עוסק &quot;במשפטי התלמוד או בדברי אגדה&quot;, אך לא כך כאשר מדובר ב&quot;חכמה&quot; (&quot;עברתם שמורה רק לכל הבא בעסק חכמה והשכלה או דורש לטוב בני עמינו...&quot;).
+כפי שכותבים המביאים לדפוס, הם מתכוונים לשלוח &quot;מקצת ספרים אל הראשים והגדולים היושבים על כסא הוראה&quot;. בסוף ההקדמה הם אף מציגים רשימה של אותם רבנים אשר בכוונתם לשלוח להם את הספר. בראשם: ר' צבי הירש ובנו שאול (!).
+בנוסף, ישנה פנייה מפורשת ומנומקת אל הקהל הרחב, להסתמך על &quot;הבטת עיניהם&quot; ולא ללכת בצורה עיוורת אחרי דברי החכמים.
+
+המחבר עצמו פונה בתוך הטקסט אל הקהל שלו. כך למשל: &quot;ועתה הקורא משכיל אשר בוודאי נלאית בקריאת דברים בטלים של המחבר הזה [אותו הוא מבקר] וסתירתן...&quot; (עמ' כ/2)</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כפי שעולה מהקדמתו של שולמן, קהל היעד העיקרי של הספר הוא: יהודי רוסיה וסביבותיה. הוא כותב: &quot;והנה עמינו ב&quot;י אשר במדינות רוסיא וסביבותיה איש אל רעהו יתמהו לאמר הנה אחינו ב&quot;י אשר בגלילות (אשכנז והאלנד וענגלנד ואיטליא) אשר נתן להם האלהי' לב בכל מדע ויתן את חנם בלב העמי' והשרים אשר אתם מדוע לא יחקרו על הדבר הגדול הזה [כלומר, &quot;מדוע לא נשמע מאת אחינו בני ישראל עשרת השבטים&quot;, למרות כל הגילויים החדשים]...&quot; - כלומר, מבדיל בין יהודי מזרח אירופה ומרכזה/מערבה - אנחנו והם.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מן ההקדמה הראשונה עולה לאיזה סוג קהל הוא מבקש לפנות, איזה קהל הוא מבקש לשרת: &quot;אין אנו יכולים לעלות בעליות החכמה ולראות בעינינו, מה שראו ברי' נמוכה חכמי קדמונינו, בירושלים עיר הקדש יסוד אדמתינו, אבן שתיה אשר שתו ממנה כל הצמאים, גדלו והצליחו וגם עשו פרי עד שהגיעו למדריגת הנביאים, הלא נאמן הוא בבריתו וקיים מאמרו להותיר לנו בכל דור ודור שריד ופליט פליטת החכמה... כמו שהבטיחנו, לשלוח  מלאך לפנינו, להאיר את עינינו, בחשבון ראיית החדש, לקיים מצות עשה לחשוב ולידע ולקבוע באיזה יום תחלת כל חדש, כמו שמבואר בספר תורת משה רבינו הקדוש. &lt;ins&gt;ואם דבריו טמונים ונעלמים למפרשי דבריו אודת קוצר ידיעותם בחכמת המדידה והמשולשים&lt;/ins&gt;, הלא גלוי וידוע כל תוכן דברי רמב&quot;ם זצ&quot;ל ליודעי בינה לעתים בחשבון תקופות וחדשים, ע&quot;פ מופתים אשר העידו עליו החושים... וספרי חכמה זו היו מימי קדם בכל לשונות המפורסמים ובפרט בל&quot;הק, אבל &lt;ins&gt;אחרי כן שנתדלדל החכמה מישראל&lt;/ins&gt; בעו&quot;ה &lt;ins&gt;נתמעטו ונתאבדו ספרי חכמה זו בל&quot;הק ולא נשארו בידינו&lt;/ins&gt; כי אם בל&quot;א, ו&lt;ins&gt;חדשים מקרוב באו והתחילו להעתיק ספרים האלו&lt;/ins&gt; מל&quot;א ללשון הקודש, וככל זאת לא יצאו ידי חובת ביאור לבאר כל החשבונות הנמצאות ברמב&quot;ם זצ&quot;ל, ובגלל זה &lt;ins&gt;מי שחשקה נפשו ללמוד להבין הלכות ק&quot;ה להרמב&quot;ם זצ&quot;ל ולא מבין לשונות אחרים&lt;/ins&gt; מן הנמנע הוא אצלו להגיע בדרך
+האמת שהוא המופת היורה על פרטי חשבונות האלו, &lt;ins&gt;ואפילו להמבינים ל&quot;א אין בידינו פירוש נכון בציורים נכונים המספיקים לבאר דברי הרמבם&lt;/ins&gt; זצ&quot;ל... ושינה נדד מעיני ומעפעפי מנוחה, עד שמצאתי את שאהבה נפשי להעלות על הכתב &lt;ins&gt;בלשון נקי' וקלה&lt;/ins&gt; פי' נכון על הלכות ק&quot;ה להרמב&quot;ם זצ&quot;ל בציורים נכונים המתוקנים לפי דרך האמתי: ... להבין הלכות האלו ידוע לכל המבינים, שהכרח הוא &lt;ins&gt;להתחיל בחכמת המדידה והמשולשים&lt;/ins&gt;, ע&quot;כ אוציע בתחלה את כל דרכי למודים האלו בלשון צח ונקי, בלי טעות וחבוקה/מבוקה, לבל תהי' בפי המון למכשול... &lt;ins&gt;וכדי להקל על הקורא&lt;/ins&gt; ציינתי בציונים נכונים ... &lt;ins&gt;ולתועלת המתחיל&lt;/ins&gt; אבאר את הציונים הנזכרים בדרך פרט, ואחר השלמת למודים האלו אתחיל בע&quot;ה לפרש דברי הרמב&quot;ם זצ&quot;ל בפי' נכון על כל הלכה והלכה, הן הלכות המוסדות על אדני חכמת התכונה, והן הלכות הנובעות ממקור ים התלמוד בבלי וירושלמי, ובסוף החיבור אבאר את דרכי חשבונות הנזכרות בדברי רמב&quot;ם זצ&quot;ל ע&quot;ד חכמת המשולשים, &lt;ins&gt;כדי שיהיה ביד כל אחד ואחד לעשות לוח נכון ומתוקן&lt;/ins&gt;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2348</field>
+		<field name="revision_id">2348</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">רשימת החותמים כוללת שמות של שליטים ומלומדים לא יהודים. בעמוד השער של חלק זה מוזכרים שמותיהם של חותמים מעין אלה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2352</field>
+		<field name="revision_id">2352</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המתרגם בהקדמתו מציין כי הביאור שעשה אוטנזוסר הוא &quot;בלשון קל ומובן לכל קורא&quot;. כמו כן הוא פונה אל הקהל: &quot;ואתם, בחורי חמד! לכו נא אל באר מים חיים, כרה נדיב העם, במחוקק בידו! שאבו מימי ישועה מבארו, וחיים מדליו!&quot;
+המבאר כותב: &quot;כל איש משכיל, נבון דבר, יפלא על המראה, בקראו שתים, שלוש דלתות מאמרי שפר, מליצות הרב הבדרשי נ&quot;ע ... והנה קם רעי היקר... ותרגם את דברי המליץ הנשגב הזה בלשון אשכנזית, צחה וברה, להועיל לקוראי אמרותיו... וגם אני לא טמנתי ידי בצלחת... ולויתי את התרגום האשכנזי בביאור הענינים, ובפירוש הוראת המלות, לפי גדר שרשיהן ומוצאיהן ובעקבות דקדוק ומחקר הלשון דרכתי, לרגל המלאכה, אשר לפני, ולרגל ילדי ישראל, המבקשים חכמה ודעת.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף הקדמתו פונה המחבר אל הקוראים - ומנחה אותם כיצד לקרוא את ספרו.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו הקדמת המחבר.
+
+הספר נועד גם להדרכת דרשנים - ראו מבוא לספר (חלון &quot;מבנה ספר&quot;).</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2360</field>
+		<field name="revision_id">2360</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו כותב המחבר: &quot;כל איש נלבב... ומי ששכלו צח ונפשו שלימה לא יאות לו להוציא שנותיו בשנת תרדמה וכל מאמצי כחו יוציא אל הפעל כפי מדרגה הכנת תכונתו. ואל ישליך מעליו משא העיון ועמל החקירה להשען על תבונתולהסתפק במה שיעלה על רשת דמיונו בהשקפה ראשונה בתחיל' הדעת אבל ישתדל לעיין היטב בחקירתו&quot;. הוא פונה אל &quot;האיש החוקר חקירה שלימה ועמוקה&quot;.
+לפי צוויפ, ספריו של הנאו 
+[were] primarily written to support biblical translation and exegesis (89).</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בעמוד השער נכתב על מעלותיהן של האגרות, &quot;וזאת היא לתועלת אנשים אשר נפשם חשקה לכתוב צחת, בו ירוו נחת...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו אומר הורוויץ: &quot;והאמת עד לעצמו שמצאתי דאתי' לידי מעט מחבורי בני עמינו דברים כאלה לחיי' העלום. אך ראיתי והנם מסוקלים באבני משקל השירים יתירים וחסרים ומחוזקים ביתדות והתנועות נדות ונעות וסגרו הדלת מעם הדלת. ואף כי תבניתם מזהב מופז ומפנינים יקרים מ&quot;מ לא ידעו ולא יבינו המבין עם התלמיד את תבנית ישרם... ולא כן אנכי עם ביתי וכי דעתי ולבי לעשות כווני&quot;ים למלאכת השמים ולהחזיק את הנפשרות החלושות כמוני כמוהם ולא יאבד נפש אחת מהם כי פתחתי את הפתח תקוה בעמק השו&quot;ה ומשוה קטון וגדול שם ימצאו את החמדה גנוזה היתה לי והוצאתיה לאור...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו כותב זולדין: &quot;ואתם חכמי וסופרי גדולי הערך לא לכם הוכל מנחתי אך לשועלי קטני כמוני. פן תפקחנה עיניה' וידעו כי ערומים הם ויחמדו את ארשי ולקחו מדבשי ומשמני. ותארנה עיניהן. ויהי להן לתרופה ויציצו כעשב השדה. וציצת נובל יהי לגן אדרת יוסיפו חכמה ודעת קדושי' ימצאו ויראת ה יאצרו. ובזה אני בא לפתוח לכן שער חבורי אליכם אישים אקרא אלופי וראשים הגדולי עם הקטנים. וכל העדה כולן קדושי. בואו דרך שערי... אך מפיל אני תחונתי לפניכ' קלי המרוצה אל תפחזו כמים לבכם חוסו נא על שושנת החוחים למה תחי למר[_]ס רגליכם כד הצעיר עבדיכ' דורש טוב ודובר שלום לכם ולזרעיכם.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2380</field>
+		<field name="revision_id">2380</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו בחלון &quot;הקדמה&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">רומנלי מציין בהקדמתו: &quot;לא שמרתי דת החרוז לא כי יבצר ממני... אבל בעבור כי נעם החרוז מפתה אזן הקורא, מטה אותו מהתבונן עומק הענין ולפעמים במסוה יפיו מסתיר השגיאות מנגד כעיניו... וגלוי לפניך מה שכתב אלכס&quot;נדר פו&quot;פי בחקירותיו...&quot; 
+
+בסוף ההקדמה כותב המחבר: &quot;ואתה עתה קורא ברוך יאל, השמר לך ואל תבהל ברוחך להרשיע בחבורי זה ענין אחד או דבור או אף אלו אות אחד טרם תדרוש ותחקור ותשאל היטב מאין מוצאו ולאין מובאו ואל בינתך אל תשען כי אף אם אתה חכם מדניאל אולי תמצא סתום אשר עממוך ובהשקיט רוחך תגלה מה שיסתיר הפחזות מנגד עיניך. והיה ברכה.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לקראת סוף ההקדמה, פונה דובנא ישירות אל קהל הקוראים וכותב: &quot;ועתה אחי ועמי! אודיעכם כי רצוני להדפיס חמשה חומשי תורה באותיות יפות ודיו ונייר יפה מוגה ומדויק כפי הכח האפשרי...&quot;. הוא מתאר את יתר מעלותיו של אותו פרויקט, כשמגמתו המוצהרת היא לגייס מממנים וקונים לביאור. בהמשך הוא כותב: &quot;לכן אליכם עם ה'! החלצו נא חושים לבוא לעזרת ה' בגבורים ומכחכם שחדו בעדי לתת לכסף מוצא למען יהנו רבים מאורו וזה הדבר אשר תעשו לקוח ספר התורה הזה בעד 1/2 7  זהו' האלענדש על נייר פשוט - 9 זהובים האלענש על נייר טוב&quot;.
+המחבר גם פונה אל מוכרים פוטנציאלים של הספר, באומרו: &quot;וכל מי אשר לא תשיג ידו לקנותו יוכל להשיגו באופן אחר, אם ירצה להתעסק להשיג חתומים יקבל שכר טרחתו בעד עשרה חתומים חומש אחד וכן בעד כל עשרה ועשרה.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו מוסר המחבר כי מטרתו בכתיבת הספר היא לשתף מורים אחרים בשיטת לימוד העברית שהוא יישם בבית הספר שבראשו הוא עמד (בברסלאו). &quot;איך גלויבע... דאס עס זעמטליכ'ען לעהרערן אונזרער נאציאן ניכ'ט אונווילקאמן זייען דירפ'טע, ווען איך איהנן דאס האנדבוך מיטטהיילע, דאס איך אין דיזר אבזיכ'ט פיר דיא לעהרער דער אונטרן קלאססען בייא אונזרער שולע אויפ'גזעצט האבע&quot;. (עמ' 
+
+II.
+הוא כותב בפרוש כי ספרו מיועד &lt;ins&gt;למורים&lt;/ins&gt;, לאו דווקא &lt;ins&gt;לתלמידים&lt;/ins&gt;  (אם כי אין לו הסתייגות מכך שגם התלמידים יטלו את הספר לידיהם, אך לא ללא הדרכה.)(הקדמה, עמ' 
+IV</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">העובדה כי המחבר עצמו שלח את הספר אל מערכת &quot;המאסף&quot; מרמזת לכך כי הוא נועד בין היתר לקהל של המשכילים.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2386</field>
+		<field name="revision_id">2386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ברלין פותח בקריאה אל &quot;הולכי על דרך, אלה בעלי משנה ותלמוד, המעיינים בדבר הלכה...&quot; ובהמשך, כשמביע את כוונתו להדפיס את הספר &quot;בשמים ראש&quot; והצורך במימון, כותב: &quot;אקרא אני אל כל לומדי תורת חסד ואמת... אקרא אני אל בעלי העיון הישר והחדוד האמיתי וההוראה המחוודת [או: המהוודת]... אקרא אני אל מאהבי התורה ולומדיה, הגבירים אנשי צדק החפצים לזכות הרבים...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמה שתרם לספר פונה וייזל אל קהל יעד אפשרי, &lt;ins&gt;היראים לתורה&lt;/ins&gt;: &quot;ואם יאמר אדם אין אנו צריכין לעדותן של חוקרים, &lt;ins&gt;תורת ה' אתנו והיא תלמדנו&lt;/ins&gt; כל זאת? נאמר לו יפה דברת, כי התורה הזאת מראשה ועד סופה, כלה אומרת כבוד על נשמת האדם... אבל לא בעבור כי התורה תלמדנו כל זאת, בוז נבוז לדברי חקרי לב... עלינו להתבונן מדעתנו ולחשוב מחשבות ישרות בעומק הענינים, ולשמוע מפי סופרים וספרים מכתבי יושר ודברי אמת...&quot; (עמ' שלישי בהקדמה).
+
+אך הספר מיועד גם ל&lt;ins&gt;קהל יהודי אחר&lt;/ins&gt;: &quot;ספרים כאלו שמוצאם מדברי חכמי העמים שהלכו בדברים רבים בדרך אמונה, אותות הם &lt;ins&gt;לבוזי חכמה ומוסר&lt;/ins&gt;, ותוכחות &lt;ins&gt;לעוזבי תורה&lt;/ins&gt;, כי כאשר יבינו אל מעשה העמים הקדמונים אשר לא ידעו את ה'... איך גם ביניהם קמו אנשים יחידים, אנשי שם בכל חכמה ובכל מדע... שהתנשאו מעל לדיעות ההמון, ופרסמו מציאות השם ואחדותו, מציאות הנפש והשארותה אחרי המות... אף כי בני אדם אשר תורת ה' אתם... שיבושו להרים יד בראותי' ובאמונותיה, לא בצדק ולא בישרת השכל, כי אם כפי העולה על רוחם.&quot; (עמ' חמישי ושישי בהקדמה)
+
+דומה כי וייזל ראה גם כקהל יעד של התרגום &lt;ins&gt;יהודים היושבים במדינות אחרות&lt;/ins&gt;. הוא כותב: &quot;המחברת הזאת פעדאן, המלאה דרך אמונה, טוב טעם ודעת...והיא כתובה בלשון צח אשכנזי, &lt;ins&gt;שאינה מובנת לכל אחינו בכל מושבותיהן&lt;/ins&gt; הי', על המעתיק תבוא ברכת טוב, כי בשר צדקתה בקהל רב&quot; (עמ' חמישי בהקדמה).</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף ההקדמה הראשונה פונה המחבר אל הקהל הרצוי מבחינתו:
+&quot;ועתה אליכם שלומי אמוני בית ישראל! &lt;ins&gt;אוהבי האמת&lt;/ins&gt;, אליכם &lt;ins&gt;מביני מדע&lt;/ins&gt;! אליכם אקרא, על פיכם יבחן מחברתי הן לטוב הן לרע, לכם המשפט, בפניכם נענה ראשי בכבודכם אכדבה, וכי ימצא ספרי חן בעיניכם אזי ישמח וירחב רוחי, או אז אדע כי הגעתי את מטרת לבי שויתי לנגדי, וכי לא לריק עמלתי, ואתעודד אוסיף תת כחי הוציא לאור חלק שני מרבי עקיבא.
+
+&lt;ins&gt;לא אליכם לצים! לא אליכם בוערים בעם!&lt;/ins&gt; עליכם נעדרי הלבב הרחוקים מצדקה, עליכם בל אחוש, על דבריכם בל אדאג, מפחדכם אחור בל אסוג, שבט רשע כסלתכם בל אירא, בגדפת לשונכם נפשי בל יחרף -- אף אם תהללוני בל אתהלל במאמר החכם: אות רע הוא אם מלאכתי לא תמצא חן בעיני המבין, ויותר אם גם תהלת הכסיל תגיעיה. ושנוי בכתובים, מצרף לכסף וכור לזהב ואיש לפי מהללו, ר&quot;ל לפי שווי וערך המהלל יערך ויבחן המהולל. 
+
+לבי לחוקקי ישראל, נדיבי העם הישרים בלבותם! השופטים בצדק את עמיתם, אחלי! אמצא חן בעיניכם, ואם נטמן העון בחבי הורוני ואצטדק, כי אני בתמי הלכתי ואם שגיתי שגיאות מי יבין?&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הטקסט פותח בקריאה: &quot;הקשיבי אזניך בת עמי! ושמעי, כי בשורה בפי. האזינו רוזנים!...&quot; המחברים מסבירים כי המפעל שהם מקדמים מיועדת לקהל רחב, לאנשים שאינם יכולים להרשות לעצמם לרכוש ספרים יקרים, ושאינם שולטים בשפה העברית: &quot;המקראות גדולות אמנם מלאים פירושים על כל גדותם אך רב מחירם מהיותם מקנה כל איש ואיש. ומה יעשו נערי בני ישראל אשר קצרו ידם מהשיג הפירושים אשר בלעדם לא ידעו ולא יבינו והי' להם המקראות לאלפים כדברי ספר החתום? ומה יעשה דלת הארץ אשר גם עליהם להגות בתורת ד', וחלק ונחלה אין להם בלשון הקודש? זאת העיר רוח קצת בני עמינו מקדם לתרגם תנ&quot;כ אל לשון אשכנז&quot;.
+
+אמנם היו בנמצא תרגומים לספרי התנ&quot;ך, אולם המחברים מצטרפים אל הביקורת שהושמע גם ב&quot;נתיבות השלום&quot; בדבר איכותם של תרגומים קודמים, הלשון העלגת, הבעיות שנוספו בעת הדפסת התרגומים, וכו'. &quot;והנה נערי בני ישראל אשר צמאה נפשם אל דבר ד' ואל ספרי נביאיו, ילאו למצוא את אשר יבשו, למלאות נפשם כי ירעבו אל תרגומי חכמי נוצרים ישימו עיניהם וישאבו מים מבורות זרות ויהי להם למוקש כי המתרגמי' הנוצרים אל קבלת חז&quot;ל לא ישמעו ואל דברי מסורה לא יטו אוזן. איש כטוב בעיניו וכעולה על רוחו יפרש הכתובים. ימירו נבואות, יחליפו חזיונות, ויעקשו מליצות כאשר יכשר אל דעתם ותורתם...&quot;
+
+עוד מצוין בטקסט כי הכוונה לפנות אל &quot;גמיינע מאן, אונ' דאס אונגלעהרטע וויב&quot;, על מנת שיכולו אף הם לקרוא את דברי האל, &quot;בהנאה&quot;. שוב ושוב מדגישים המחברים כי כוונתם לפנות אל שכבה רחבה, והלשון שיבחרו לתרגום תהיה בהתאם. במקרים בהם ישתמשו במלים &quot;קשות&quot;, תוצמד הבהרה.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ישנו טון מאד פסימי בדברי המחבר בנוגע להתקבלות השיר (ובכלל בכל הנוגע להתקבלות ההשכלה בקרב תושבי אמסטרדם - ראו דברי המחבר בהקדמתו בנוגע לשלמה דובנא, שהובאו בחלון &quot;פרטי יוצר הספר&quot;, לשונית &quot;קשרים&quot;, שדה &quot;קשרי ידידות...&quot;). כשהוא פונה אל יעקב ששפורטס, אליו מכוונת ההקדמה, הוא כותב: &quot;האח יקר לי, יעקב אהובי! לכה נא איעצך, ואגיד לך מה יהי' אחרית ודבר השיר השלום הזה בבואו תוך קהל עדת בני ישראל. &lt;ins&gt;גם כי יחנוני בני חיל המשכילים בלה&quot;ק ויהללוני בשערים קולם לא ישמע למרחוק, מרוב צעקת כסילים&lt;/ins&gt; ותשואה מלאה כסיר ירתיח, קול ההמון רגז ושחק ואין נחת. זה יאמר אין לי חפץ בו, כי לא ידעתי ממנו דבר. וזה יאמר נבחר כסף משיר, ועשה שבתך ממנו. ורעים מכולם אלה הבוערים המתחכמים - ואין חכמה, המתבוננים ולא תבונה להם, כי יגידו: השיר הזה לא הוד ולא הדר לו. יען לא נמצאו בו דברי כתובים הנשמעים לשני פנים, ואין נקוד וטלוא בככת'בים...&lt;ins&gt;על כל הרעה ועל כל התלאה הזאת יבהל לבב המשכילים ודורשי חכמת המליצה הוסגו אחור&lt;/ins&gt;. אנא ה' פקח נא את עיני האנשים ויראו!&quot; 
+את השיר הוא מעניק לאותו יעקב ששפורטס, ומעמיד אותו כשופט לגבי השירר (&quot;אתה השופט בצדק גם את אחיך ואוהביך תרשיע... כי ישגו&quot;). אך חשוב לו גם לקבל את ההוקרה מאת המשכילים בברלין: &quot;אתה אלופי ומיועדי ידידי ורחימי! קחה נא את השיר השלום הזה, כי לך הבאתיו למנחה, וכי תחון ותרחם אותו ותאהבהו ישמח לבי גם אני - הלא בני הוא וגם ילדתיו. אהבתי כי ידעו כל יושבי העיר, וגם יושבי עיר מולדתי ברלין המלאה חכמים ושרים כחוללים, ידעו ____ באהבתך ורום לבי וגבה מאד ובגאותך שחקים ארכב ואעוף.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2406</field>
+		<field name="revision_id">2406</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">&quot;לאחינו בני ישראל&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2410</field>
+		<field name="revision_id">2410</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הפנייה היא אל יהודי רוסיה במיוחד</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2413</field>
+		<field name="revision_id">2413</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר לא מציין את קהל היעד שלו, אך ניתן להבין מן השימוש בעברית כי הוא פונה לקהל יהודי כללי</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2415</field>
+		<field name="revision_id">2415</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בכותרת: החיבור מובא &quot;תחת מכבש הדפוס כדי להפיק תשוקת התלמידים אשר נדב לבם אותם לקרבה אל מלאכ' חכמת הדקדוק&quot;.
+כדברי המחבר בהקדמתו: &quot;אני אומר על חבורי ספר צוהר התיבה שהוא מלא חכמה ומדע בו יתענג הקורא המשכיל וימצא מרגוע לנפשו. והאנשים האלה ברוע תכונתם ושלהבת קנאתם עלה באשם ותעל צחנתם לשום כל מגמתם להחשיך צוהר זוהר התיבה ולסלף דברי צדק... ואליכם אישים אקרא וקולי אל בני אדם שמעו נא חכמי האזינו אנשי מדע חלילה לי מהחדל מלהודיע אתכם את אשר העליתי ואשר הבאתי בספר הנכבד ההוא הוא ספר צוהר התיבה...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו הקדמת וולף, יוסף, עמ' [5], וגם במבוא, עמ' [9-10] (ראו פירוט בשדה &quot;מבוא&quot; בחלונית &quot;מבנה הספר&quot;(.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כדברי יהודה ייטלש בהמלצתו, התרגום והביאור יועילו למלמדים בבואם להסביר את הדברים לתלמידיהם. רבים מבין המלמדים &quot;אשר חתרו ים ההגיון ולא יכלו להמליץ לזולתם, והנה עד עולמי עולמים נשאר למודי הספר הזה במוחיהם היגיון סלה, מאין הבין לאחרי' בלעגי מעוג בשפתם, נלעג לשון אין בינה, ורק על ידי ההעתקה הזאת יושג התכלית המבוקש ללמוד וללמד ובפרט על ידי שהציג המעתיק לפני פתח כל שער ושער את למודי הלאגיקא אשר אסף מספר חכמי העמים יובנו דברי הרמב&quot;ם יותר ויותר&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">המחבר לא מציין את קהל היעד שלו, אך מעצם השימוש בעברית יש להניח שפנה לקהל יהודי קורא עברית</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2436</field>
+		<field name="revision_id">2436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מעצם השימוש בעברית ובגרמנית ומכך שמדובר בתפילה ליום הכיפורים, ניתן לגזור כי זהו קהל היעד</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2444</field>
+		<field name="revision_id">2444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">לא נאמר במפורש, אבל נועד לקהל יהודי המבקר בבית כנסת: יש תפקידים לחזן ולקהל המתפללים</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2447</field>
+		<field name="revision_id">2447</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">מעצם השימוש בעברית וגרמנית גם יחד ניתן להניח כי הפנייה היא לקהל היהודי והלא-יהודי גם יחד, אם כי אין אמירה מפורשת בעניין</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2451</field>
+		<field name="revision_id">2451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בסוף ההקדמה (לחלק ב') כותב בוכנר: &quot;ועתה אוהבי קורא נעים נפשי יודעת מאוד כי אחד מעיר כו' אשר יתבונן דקות מלאכת השיר הזה, דק על דק עד אין נבדק, וליתר ההמון כאין נחשב... קצת אנשים בראותם איזה דבר נפלא ונורא, ולבם צפון משכל ולא יכולו לעשות כמעשהו, תבער אש הקנאה בהם, וצוף המליצה אצלם לשמצה, יש אשר יאמרו לא לצורך הוא, ויש אשר יאמרו על מי מוטל לרשום בזכרונו איך אלה התיבות כתובים בתנ&quot;ך, כל אחד לפי שכלו השכולה פרי ההגיון יקוסס, וכל זה בא כי לא רגל על לשונם ספרי תנ&quot;ך ולא ידעו שורש המלה אף לא יבינו שמות משתפים ושמות נרדפים, גם עת עין השגתם מראות איזה דרך ישכן אור המליצה. הנה מאנשים כאלה לא יחרף לבבי כי גם שנאתם גם קנאתם לא יחבולו בי.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">וייזל מפנה את ספרו הן &quot;לקורא המשכיל&quot; והן &quot;לקורא דל התבונה&quot;. (עמ' [9] בהקדמה)
+
+לפי שאנן, א', עמ' 65, הספר מופנה בין היתר לאלה שמבקשים לנסות את כוחם בספרות העברית. &quot;שאיפה מודעת ומרובת יומרות לוויזל [היתה] להיות דוגמא ומופת למשוררים עבריים&quot;, כותב שאנן, ומצטט מתוך דברי המבוא של וייזל: &quot;ללמדם דרכי השיר ובמה ינעם אל לב הקורא, וירגילו עצמם לעשות כמתכונתו&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו, פונה וייזל אל &quot;&lt;ins&gt;הקורא המשכיל&lt;/ins&gt;&quot;: &quot;קורא משכיל התבונן  אם לא כדברנו כן הוא...&quot; (עמ' [5] בהקדמה).
+ובסוף ההקדמה (עמ' אחרון): השירים כוללים &quot;דברים במליצות התורה הסתומות, וחדשנו בהן כונות עמוקות הולכים על דרך הפשט, יבינום &lt;ins&gt;הקורא המשכיל&lt;/ins&gt; ממהלך השיר...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בתום הערות המחבר אשר בסוף הספר, כותב וייזל: &quot;ויש בזה עוד דברים אבל בחרתי לקצר... מלבד ארבעה אלה [4 ההערות שפיתח לעומק בסוף הספר] יש דברים רבים חדשנום בשירים אלה, אבל לא ארמוז עליהן, &lt;ins&gt;כי הקורא המשכיל יבן הכל מדעתו אם ישים לבו לדברנו&lt;/ins&gt;.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בפתיחת הערותיו בסוף הספר כותב וייזל: &quot;כל מבין בשיר, כשיראה שירי תפארת הללו, ויבין כי אין מגמתנו בשירי כבוד כאלו לשעשע זולתם במליצות ערבות לקוראיהם, בצחות הלשון וביופי המאמרים, אבל כל הנאמר בהם הוא בעבור תת דעת לבני גילי להבין בספורי התורה, ולקשר (בקרסי?) המליצות מאמריה הקצרים, ומה שראוי להתבונן בהם, עד שיכנסו דבריה בלבו של אדם, כי ההספות שהוספנו בכל ענין וענין, והדברים ששמנו בפי המדברים, כלם יסודתם בתורת ה', ורק הרחבנו הדברים שקצרה בהן התורה, &lt;ins&gt;והניחם לכל משכיל להתבונן בהם&lt;/ins&gt;, וזאת עשיתי גם אני. ובטוח אני ש&lt;ins&gt;הקורא המשכיל&lt;/ins&gt; תסכים דעתו לדעתנו שכפי מה שכתבנו או קרוב להם כן התגלגלו הדברים, ולכן כל כיוצא באלה לא אתעורר עליהן בהערות הללו, רק אב אר פה מקצת מקומות סתומים שבחוברת הזאת, והן המקומות הנוסדים על &lt;ins&gt;פי' חדש שחדשנו במקראות התורה, ולפי שלא פירשו כן המפרשים ז&quot;ל&lt;/ins&gt; שקדמוני, נעלם ענינו גם מן הקורא המשכיל, ועל ידי ההערות שאציע פה יבינו במליצת השיר ועל מה יסדנו דברינו.&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בהקדמתו מתייחס המחבר אל &quot;הקורא המשכיל הנותן כבוד לתורה&quot;.  (עמ' [2])
+
+בהערותיו בסוף הספר כותב וייזל: &quot;היה ראוי לעורר על כל הכתוב בהן [בשיריו], ולהגיד מה ענינו ולמה כתבנוהו, אלא ש&lt;ins&gt;אנו סומכין על הקורא המשכיל כי יבין מדעתו&lt;/ins&gt; איך דבר דבור על אפניו, וילמוד מתוכו המעט שכוננו אליו, זולתי מקצת מקומות שבהן הנוסדים על פרושים חדשים שהוצאנו מדעתנו, אין מהן דבר בפרושי הקדמונים ז&quot;ל, עליהן אני צריך להעיר בעבור הודיע לקורא על מה דברי השיר ערוכים...&quot;
+
+דומה כי הספר נועד גם ל&lt;ins&gt;קוראים מלומדים לא יהודים&lt;/ins&gt;. כפי שהמחבר מעיד, הוא נועד בין היתר לסתור &quot;דברי הבל&quot; שכתב מלומד לא יהודי בנוגע לטביעת פרעה וחילו בים סוף: &quot;בשיר הזה [השיר הי&quot;ג] השבנו דבר לדוברים עתה בגאוה ובוז על הפליאה הזאת, כמו שעשה אחד מנבוני העמים, ששלח יד שכלו, וכחש בחקירותיו במעשה הפליאה הזאת, ולא אעלה הבליו על ספר, כי נאצות הגדולות הם לא יזכרו ולא יפקדו ולא יעלו על שירים הכתובים לכבוד ולתפארת לה' ולתורתו ולנביאו נאמן ביתו, אך קנאתי לה' ולדבר קדשו ולמשה עבדו, והוספתי בשירי זה עוד דברים חדשים בם &lt;ins&gt;השיבותי על דברי הבלים ודמיונות שוא&lt;/ins&gt; שההביל ושדמה המחבר הנ&quot;ל בענין זה, ולא באתי להקטין מעלתו ועיונו בלמודיות טבעיות ומדיניות, אך באלהיות הסכיל עשה, איש נשען על בינתו איך יבן אלה, ובעומק המקראות שבתורה איך ידע, סוד ה' ליראיו, כאשר היו אבותינו קדמונינו ז&quot;ל&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ישנן פניות ישירות אל חברי האגודות.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">נראה שהטקסט פונה לקהל יעד יהודי ולא יהודי גם יחד, אם כי אין כאן פנייה מפורשת</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">כך כתב וולף על הסיבות שבעטיין תרגם את הדרשות לעברית:
+Auch habe ich die Mühe nicht gescheuet, meine Reden ins Hebräische zu übertragen, damit auch derjenige Theil meiner Mitbrüder, welcher der deutschen Sprache nicht kundig ist, sich von dem Inhalte derselben überzeugen möge.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">הספר פונה אל &quot;יונגע לייטע אונזרר נאציואן&quot;, ומטרתו &quot;מעהר אונטער דעם אנשיין דעס פ'רגניגענס אלס דער אונטרווייזונג אונפ'רמערקט צור טוגענד אונד רעליגיאן צו לייטן, דיא שלוממערנדן געפ'יהלע צו וועקן, דאס הערץ צו בעססרן, דיא זעעלע מיט ריינן געדאנקן צו ענטצינדן אונד פ'ערטרויען אן גאטט אונד זיינע געבאהטע איינצופ'לעסן...&quot;
+הספר מבקש גם 'דיא גרויזאמן ווירקונגן דעס פ'אנאטיסמוס איינע אנשפילונג אויף דיא עראברונג פ'אן אמעריקא, דיא פאריזר בלוטהאכ'צייט א' ד' ג' מ''.
+המחבר פונה גם ישירות אל הקוראים &lt;ins&gt;והקוראות&lt;/ins&gt;, ומבקש מהם לא להתיחס אל הספר כאל סתם רומן מבדר, כלומר, &quot;לא לקרוא מהר ולזרוק&quot; אלא לקרוא בעיון כל קטע, פעמים או יותר, במטרה מוצהרת ללמוד ממנו מוסר. &quot;איך ווינשע דאס מאן ניכ'ט דיא צייט צו פ'רטרייבן זאנדערן זיא ניצליך אנצוווענדען זוכ'טע&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2477</field>
+		<field name="revision_id">2477</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">היתייחסות אל קהל היעד: בדברים שצורפו ל&quot;כותרת&quot;.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ראו ההקדמה</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2480</field>
+		<field name="revision_id">2480</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">זו &quot;תפילה&quot; לשלום המלך והמלכה. המחבר פונה אל היהודים - שיתפללו לשלום המלך והמלכה. אל האל - שיברכם. ובאופן עקיף, אל המלך/השלטונות - מראה את מחויבותם של היהודים לשלום השליט.
+
+…ruhen soll die Königswürde auf unserm Vaterlande - לשכון כבוד מלוכה בארצנו</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2482</field>
+		<field name="revision_id">2482</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ייתכן כי קהל היעד היה גם קהל גרמני, נציגי השלטון למשל.</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2485</field>
+		<field name="revision_id">2485</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">ניתן להסיק שהספר פנה לקהל יהודי בשל השימוש בעברית והעיסוק בתפילות</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_target_audience_notes_value">בפתיחה מציין פרנקו מנדס כי תכלית וכונת הספר היא: א) להציג בפני הקהל היהודי סיפור שאינו מוכר מדי, בשל מעמדו של ספר יהודית כספר חיצוני. ב) &quot;להראות לעמים ולשרים הישרים אוהבי דעת לשוננו הקדושה הנצחית המסוגלת והשלמה מכל הלשונו'... כחה להעתיק בה כל פרטי שכיות לבבות החכמים ומשכילים הכתובים בארצותם בלשונתם לגוייהם הן בהלצה והן בשיר מבלי נטות מני דרכם...&quot;. ג) &quot;להגדיל הדרת ומעלת בית מדרשינו המשנה הגדול עץ חיים בהוצאת איזה חיבור מהכח אל הפועל...&quot;</field>
+		<field name="field_target_audience_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

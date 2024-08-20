@@ -1,0 +1,1860 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_textual_models_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_textual_models_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_textual_models_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_textual_models_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="147" avg_row_length="557" data_length="81920" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:10" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 182 (field_textual_models_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_textual_models_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">קריאה להגנת זכויות היהודים.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">טקסט פטריוטי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">Wenige Gedichte.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1993</field>
+		<field name="revision_id">1993</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המודל:
+הבעת עמדה אישית</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1996</field>
+		<field name="revision_id">1996</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פטריוטי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לוי עצמו מגדיר את ספרו כ-
+Lehrbuechlein
+מטרתו: 
+
+[ich] werde bestreben… die Erläuterung des Jüdisch-deutschen … faßlich … darzustellen, daß der Wißbegierige dieselbe in weniger als zwey Monaten von selbst, ohne weitern Unterricht, erlernen kann…</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">טקסט אפולוגטי נגד התקפות על היהדות/ היהודים שנעשו בתקופה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2032</field>
+		<field name="revision_id">2032</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט הינו דרשה. בראש הטקסט כתוב: &quot;תוכן הדרוש&quot;.
+
+חלק מתפילה קהילתית לכבוד המלך.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2041</field>
+		<field name="revision_id">2041</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המודל המתאים יותר כאן הוא &quot;הגיגים&quot;, אבל כיוון שאינו קיים הכי קרוב הוא מניפסט</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2053</field>
+		<field name="revision_id">2053</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט כתוב בצורת מכתב.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">נאום הספד זה נישא, לפי הכותרת, בפני חברי הקהילה היהודית של ברלין, לאחר מותו של פרידריך הגדול.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מודל: הבעת דעה</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2061</field>
+		<field name="revision_id">2061</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר נכתב כהגנה על הענקת זכויות אזרח ליהודים.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2070</field>
+		<field name="revision_id">2070</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">Sammlung verschiedener Schriften</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בהמשך לשיר הקינה,  ישנו גם טקסט שמסביר ענייני דקדוק בנוגע לשיר.
+לפני השיר, מסביר  דובנא את משקלו. שמו של עמדן באכרוסטיכון.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בהקדמה מתאר המחבר את סיפרו כעוסק ביצר הרע והמסית - בדמות געל בת מלך רעל, למול היצר הטוב וידיעת החכמה - בעלה ירובעל.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">סטנוב מנתח דקדוק של מילים בעברית, ומציג סיפורים מוסריים שונים, למשל, סיפור על כפרי ששמע פעם ראשונה בחייו עוגב, והחליט לחטוב עץ כדי לייצר לו כלי נגינה אבל לא הצליח לנגן היטב, אך גם לא הצליח יותר לעבוד בעבודות הכפר כמקודם (דף לד'-לה').</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">עיקר החיבור מציג שיחה דמיונית בין הרב יחזקאל לנדאו ומשה מנדלסון הנפגשים בעולם הבא.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2098</field>
+		<field name="revision_id">2098</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">דרשה ותפילה פטריוטיות.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">&lt;p&gt;החלק השני של הספר: שו&quot;ת&lt;/p&gt;
+</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">חלק מן הדברים שאומרות הדמויות במחזה מובאים בצורת שירים מליציים</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">אני לא בטוחה שכך יש להגדיר את המודל הטקסטואלי -מניפסט - אך זוהי ההגדרה הקרובה ביותר. הטקסט הוא למעשה גילוי דעת של מחברו, הנוגע לסיטואציה אקטואלית-פוליטית בעלת השפעה על מצב היהודים בקהילות הללו.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2122</field>
+		<field name="revision_id">2122</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">דברי יוסף השני מנוסחים כמעין נאום, אם כי אין וודאות שמדובר בנאום פומבי. אלה מעין דברי סיכום על מאמציו כשליט, תוך פניה לאל אשר הפקיד בידו את השלטון.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בסגנון הוויכוח שב&lt;strong&gt;כוזרי&lt;/strong&gt;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בסגנון הוויכוח שב&quot;כוזרי&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מדובר בדרשה שנישאה בביתה הכנסת.
+כמו כן, מדובר בטקסט פטריוטי (ראו אצבע של נושאים להלן)</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">האוטוביוגרפיה הינה קצרה למדי וחלקית, ומשמשת מקור להרהורים. היא מהווה רק חלק קטן מהספר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">&lt;p&gt;מטרת הספר להדפיס מחדש את סיפרו של משה חביב ושל עזרי', וגם ללמד את דרכי השירה ומאפייניה&lt;/p&gt;
+</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2140</field>
+		<field name="revision_id">2140</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט עוסק ברוביזון, ומוצג בצורת שיחה בין אב לילדיו</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מדובר במילון קצר המציג מילים המופיעות אצל ברטנורה ולקוחים משפות שונות. לצד כל מילה מופיעה המקבילה ב&quot;לשון המשנה&quot;, באיטלקית ו&quot;דייטש&quot; או &quot;אשכנזית&quot; - דהיינו בגרמנית באותיות עבריות. כמו כן, מצוין המקום המדויק במשנה בו מופיעה המילה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">אמנם הטקסט בספר זה לקוח מן הנביאים, אולם הוא נבחר בשל היותו חלק מן התפילה ביום הכיפורים, והמתרגם בהקדמתו ממקם אותו בהקשר זה (ועל כן מצוין כאן &quot;ליטורגיה&quot; כמודל טקסטואלי&quot;).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2149</field>
+		<field name="revision_id">2149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר מוקדש לתיאור היסטורי ביוגרפי של כותבי הפיוטים, ומסודר אלפבייתית על פי שמותיהם.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט הוא מחזה אלגורי.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2151</field>
+		<field name="revision_id">2151</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פטריוטי.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פטריוטי.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2153</field>
+		<field name="revision_id">2153</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">תפילות ואודה לכבוד המלך, טקסטים פטריוטים.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מרגליות שילב שירים קצרים לאורך הטקסט. למשל, בדף כא', כו' ועוד.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הדיון מתנהל במסגרת דיאלוג בין שני אחרים, ושזור בסיפור המסגרת הבא: אדם אחד היו לו שני בנים: ידעיה ושמעיה. הם אהבו לקרוא ספרי תכונה. ידעיה מציע כי הם יפנו לפילוסוף המפורסם של תקופתם (לפי פיינר, &quot;הדרקון הכרוך על הכוורת&quot;, זהו רמז למשה מנדלסון). שמעיה לא מעוניין בכך. הדיון הוא בין מי שתומך בידיעה (ידעיה) לבין מי שמצדד בקבלה (שמעיה) - ומרגליות מעדיף את הראשון (ראו פיינר, &quot;הדרקות הכרוך על הכוורת&quot;).
+בדף יג' מופיעה חידה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">את הספר פותח פירוש על מסכת כלאים, פרק ה', משנה ה'.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר כולל שני חלקים:
+1) שיר מאת אביגדור לוי עם הערות מרובות, למעשה טקסט עיוני בפני עצמו.
+2) המשך ההתכתבות בין המחבר לבין משה מנדלסון.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2168</field>
+		<field name="revision_id">2168</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר כולל קטעים מספר תהלים, ראו חלון &quot;חוקר ומקורותיו&quot; סעיף &quot;הערות&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2170</field>
+		<field name="revision_id">2170</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בראש הספר שיר מליצי הפונה למחבר שיר השירים - שלמה המלך</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המחבר משלב בטקסט משלים: משל גור האריות (עמ' [28-31]); משל  היין והחומץ (עמ' [55-56]. מתוך &lt;strong&gt;תענית&lt;/strong&gt;, דף ז'); משל המצפן  (עמ' [68-71]).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">ישנו שיר מאת המחבר בפתח הספר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר יוצא בצורה מופגנת נגד אהרן וולפסון, הוא &quot;אהרן בן זאב הכי קרא שמו בן זאב? טרוף יטרף ילדי העברים בלימודיו הנשחתים&quot;. דברי המחבר מכוונים נגד &quot;הכת החדשה&quot; (בדברי הפתיחה).
+את חרבו השלישית מכוון נגד &quot;איש מבית לוי יצחק שמו&quot;, הוא יצחק סטנוב.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המודל הטקסטואלי של טקסט זה הכי קרוב ללקסיקון. מדובר בלוחות פעלים.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הופעת טבלאות וחישובים רבים.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">וולפסון בהקדמתו במחין בין המחזה שלו לבין סוגים קודמים של מחזות לפורים, חסרי התועלת. הוא מציין כי מחזה זה מיועד &quot;צור בלוסטיגונג אן אונזרם פורים פ'עסטע, אן דער שטעללע דער זאנסט גוועהנליכ'ן זינלאזן אונד צוועקווידריגן הארלעקינאדן&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מחזה אלגורי.  האנשה של מדות אנושיות ומוסריות.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המביא לדפוס מתמקד בעיניני דקדוק, כפי שהצהיר במבוא (ראו חלון &quot;מבנה הספר&quot; סעיף &quot;מבוא&quot;).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שני החלקים הראשונים של הספר עוסקים בדיקדוק העברית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">חידה - עמ' קמח'</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2216</field>
+		<field name="revision_id">2216</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פטריוטי, תפילה, בעברית ובתרגום לגרמנית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">ז'אנר השיר: אודה</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2221</field>
+		<field name="revision_id">2221</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לחובר ופאהן לפניו מאפיינים את השיר &quot;מחזה שדי&quot; כ&quot;מעין חקוי לחזיונות דנטי בקומדיה האלהית שלו&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הידנהים זוכה לתשבוחות מן המסכים ארי' ליב ברעסלא על כך שהוא הוציא טעויות ושיבושים, ומגיש נוסח מתוקן ומשובח.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">ישנם גם שירי יחוד ושיר הכבוד, ובעמוד האחרון &quot;תפלה לשליח ציבור&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">עוד מופיעים שיר הכבוד, שירי ייחוד ושיר השירים</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט כולל שירי ייחוד ליום א' וד', שיר כבוד ותפילת כתר מלכות לאבן גבירול</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">החלק הראשון הוא בסגנון אפוס מקראי ועוסק באברהם  אבינו
+החלק השני עוסק  בחיי דוד המלך - ונכתב בסגנון ספר תהילים
+החלק השלישי  עוסק במעשה נבות היזרעאלי, ונכתב בסגנון מחזה</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר הוא &quot;קובץ 'תפילות' ו'סליחות' כביכול, שהן חיקויים...לתפילות וסליחות מקובלות באומה ויש בלשונן הרבה דברי היתול והלצה&quot;. קלוזנר, היסטוריה, א', 187.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר כולל מכתבים בין סטנוב לבנו שינמן, בקורת ספרים שהתפרסמה בהמאסף, ופתרון חידות שהופיעו בהמאסף.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הקטגוריה המתאימה להגדרת הספר היא: ספרות מסע.
+הספר מסתיים בשיר קצר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בראש הספר מופיע שיר מליצי המהלל את סטנוב ואת סיפרו</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">צריך להוסיף כאן מודל טקסטואלי נוסף: &quot;נבואה&quot;.
+בסופו מופיע שיר מליצי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;הלקסיקון מגיע רק עד האות &quot;ג&quot;.&lt;/p&gt;
+</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2251</field>
+		<field name="revision_id">2251</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מדובר בלוחות בנינים, שנועדו לתלמידים הלומדים לשון עברית</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2259</field>
+		<field name="revision_id">2259</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">זהו כתב הגנה עצמי, שבמסגרתו מתאר המחבר את הביוגרפיה האישית שלו</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בעמוד האחרון לספר - שיר מליצי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">נאומים שנישאו במהלך דיון ציבורי בדבר מעמדם החוקי של היהודים, לאחר הקמת הרפובליקה הבטאווית בהולנד.  
+3 עמודים אחרונים (מעמ' עא/א): &quot;לוח &lt;strong&gt;פירוש המלות הזרות&lt;/strong&gt; מלה&quot;ק ובלתי נודעים הנמצאים בחבור זה, בלשון אשכנז ולפעמים גם בלשון צרפת&quot;.
+המתרגם מביא גם שני קטעים נוספים (חוקה?):
+
+1) &quot;&lt;strong&gt;דתי האומה באטאווע&lt;/strong&gt;&quot;. &quot;העם באטאווע, התחברו להיות לעם אחד אשר לא יתחלק, השכילו, שההפסד בנהוגי אומה הוא, אשר לא יכירו בחברתיה, דת אמתי מהרות אנושי בטבע. לכן המה מבררים שדתות הנזכרים בזה, יהיו השורש אמתי, אשר עליהם יסדו דתי נהוגי מדינתם ועליהם ינטה הקו, לתקן תועלת תושביה ונהוגי אומה. ואז רשימה של 72 &quot;יסודי דת&quot;.
+
+2) &quot;&lt;strong&gt;דתי המדינה&lt;/strong&gt;&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר הוא דיון פילוסופי במהות השלמות. לא הייתי בטוחה כיצד לשייכו כאן.
+בסוף פרק תשיעי ואחרון מופיע שיר קצר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המודל הספרותי הוא מקאמה, לפי ברכה בן-שמאי, ברכה. 2002. &lt;strong&gt;אידיאלים ומגמות של תנועת ההשכלה במאה ה-18 כפי שמשתקפים ב&quot;ספר החזיון&quot; של יצחק סאטנוב.&lt;/strong&gt; עבודת גמר לתואר &quot;מוסמך&quot;. אוניברסיטת תל-אביב.
+מודל משני הוא משל (אילה צריכה לתקן ולתת אפשרות לערוך הבחנה בין מודל ראשי ומשני כאן).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר מליצי קצר חותם את הספר</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בסיפור המסגרת מופיע שר בשם יעקב העמוני שמגיע לעושר רב, וחי חיי נהנתנות ופריצות מינית, אותם מעודד  שר אחר ששמו נועם. בסופו של דבר הוא לוקה במחלה קשה, שמקורה בחולי נפשי. יועציו יועצים לו לפנות לאדם חכם בשם יאיר המדברי, והוא כותב לו אגרת ומבקש את עזרתו. שאר הספר כולל את אגרת התשובה של יאיר המדברי, העוסקת במבנה הנפש, בצרכיה וכד'. בין השאר משולב ידע מדעי, מוזכרים מכשירים מדעיים כגון, המיקרוסקופ  (דף לו').</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מהדורה חדשה של תרגום ספר המדות לאריסטו.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">על המודל בו בחר בעת עריכת הספר כותב אליהו מפינטשוב בהקדמתו:
+&quot;ולמען המשיך את הלבבות אל זה הספר הצגתי הכל בדרך שאילת תלמוד ורב באמרי שפר זה שואל וזה משיב זה אומר וזה מקשיב ...&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">סטנוב מציג מילים עבריות ועוסק במקורן ובמשמעותן</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לפי 
+Fishman, The Jews of Shklov, p. 69
+שניתח את מהדורתו המאוחרת יותר שערך נפתלי הרץ שולמן, זהו:
+a moralistic treatise in rhymed meter praising the marvels of God and His creation.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מודל הספר הינו זה של הביאור. אך נוסף גם פירוש קדום יותר, של ספורנו.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לפי פישמן,
+exegetical treatise on the first three verses of Leviticus 19</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">חסר מודל עיקרי. ספרים חיצוניים.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">זהו ספר דקדוק עברי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מודל מתאים לא קיים כאן - צריך לחשוב על הוספה של מודל נוסף &quot;דרשנות/ הבעת דעה/הרצאה מלומדת&quot;??
+מחבר הטקסט מביע את דעתו ביחס לאמונה באל, חשיבות חוכמות חיצוניות, מצוות וכד'</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בסוף ההקדמה (דף ט') מופיע שיר בין 6 שורות, הפונה אל מבקרי הספר. בסיומו רשם המחבר את ההערה הבאה:
+&quot;בכל חרוזה ארבע עשרה תנועות&quot;.
+
+בעמ' האחרון של הספר (אחרי קכח') מופיע מליצה נוספת בת 8 שורות הפונה לקורא ומשבחת את הספר העוסק בחשבון בשפה העברית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מטרת החיבור היא &quot;להסביר על דרך 'החקירה' את רמזי הפזמון מן ההגדה 'חד גדיא'&quot;. פיינר, יהודה הורוויץ, עמ' 120.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">חוקרים רבים רואים בספר זה &quot;הסטירה העברית הראשונה בספרות העברית החדשה&quot; (קלוזנר, א', עמ' 358 ואחרים).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">כל האגרות ממוענות לאברך &quot;מהו'... שי'&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המחבר לוקח פסוקים מן התורה ומוסיף עליהם רבות.
+כדברי נותני ההסכמה: &quot;המחבר ראשי יונקותיו קטף מדברי חז&quot;ש במדרשים ומדברי גדולי המפרשים רק שלעת מצא בדבריהם הערה כחודה של מחט הרחיב בה מענהו כפתחו של אולם באמרי נועם ומליצות צחות ומשלים וחידות להמשיך לב הקורא.&quot; 
+הספר מורכב מדיאלוגים בין הדמויות.
+בדיאלוגים ישנם משלים, סיפורים, ויכוחים פילוסופים ותיאולוגיים ועוד. (דוגמא לסיפור ארוך המסופר מפיו של לוי על מלך הודו: עמ' כז/ב.)
+בין התוספות: &quot;מכתב מיעקב ליוסף&quot;, שמביאים האחים בבואם למצרים. המכתב כתוב בחרוזים.
+לדברי פישמן (יהודי שקלוב), עמ' 73-74, כתיבת מחזה היתה תופעה כה נדירה עד כי המחבר התקשה למצוא מילה מתאימה לחיבורו. הוא תארו כ&quot;מחברת הלצית על דרך הויכוח&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2330</field>
+		<field name="revision_id">2330</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">יהודה בן זאב, כותב ההקדמה והמבוא, רואה בפרויקט מנחה חדשה המשך ישיר למפעל שהחל בו משה מנדלסון עם תרגום התורה וס' תהילים.
+ישנו שיר מאת בן זאב לרגל הדפסת הספר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לפי פיינר (היציאה מברלין, 417), פרויקט זה &quot;נועד להיות מפעל המשך ל'ביאור' המנדלסוני&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מדובר בספר לימוד מובהק. המחבר מבקש מן הקורא/התלמיד/המורה להתקדם בלימוד השפה לפי הסדר שהוא קבע: &quot;החבור הזה הוסד על שמירת סדר המוקדם והמאוחר. ולא ימצא בו זכרון איזה כלל הצריך אל הקדמת איזה ידיעה אשר איננה מבוארת מקודם לכן במקום הראוי לה...&quot; (בתוך &quot;האבן השלישית&quot; בהקדמה). 
+וכן: &quot;המסלות האלה מסודרות באופן שכל אחת מהן היא הקדמה אל המסלה שאחריה... לכן כל הקרב להשתמש בזה החבור גבר במסלתו ילך ואל יצא מאחת מהן אל מה שאחריה עד אשר יכונו לפניו כל דרכי המסלה הקודמת לה&quot; (&quot;האבן השביעית&quot;) 
+מכיוון שהספר מיועד לקהל צעיר, המחבר בחר במודע בשפה קלה: &quot;בעבור שכוונתי בזה הספר להיותו לתועלת ילדי בני ישראל, לכן כתבתי את כל האמור בו בלשון קלה ומבוארת... גם בהעתקתי דברים מספרי המדקדקים ככתבם וכלשונם, בחרתי בדברי מי שמבאר הענין היטב בלשון קלה להבין לתלמידים... ואולם כל הדבר הנמצא במאמרם אשר העתקתי וקשה להבין למתחילי', כתבתי באורו במקומו בין שני חצאי עגול...&quot; (&quot;האבן הרביעית&quot; בהקדמה)
+שיקולים פדגוגיים שיחקו תפקיד בסינון החומר מתוך ספרי המדקדקים שכתבו לפניו: &quot;והנה המדקדקים האחרונים האריכו עד מאד במשפטי הנקוד וחדשו כללים רבים, ואמנם אנכי לא יצאתי בזה בעקבותיהם ולא הבאתי את כל דבריהם במסלת הנקוד. רק הוצאתי מהם הכללים אשר בלעדם לא ירים איש את ידו לבנות הפעלים והשמות... אותם הכללים שעיקרם הוא לתקון הקריאה בלבד...המה לא יבואו במסלות האלה, אחרי ראותי שאין זכרם מסכים עם כוונת עניננו בזה מאמר, כי כל עוד שלא ידעו המתחילים דרכי נטית הפעלים והשמות אי אפשר להם לעמוד על יסודות הכללים ההם ולא יהיו נשמרים בלבבם כראוי, וקרוב הדבר להיותם סבה לבלבול דעת התלמידים אשר לא נסו ללכת באלה&quot;. מי שחפץ בכך, כותב המחבר, יוכל לגשת בעצמו אל אותם ספרים (ה&quot;מצויים ביד כל אדם&quot;, כדבריו), כשהוא מצויד ביסודות שירכוש בספר הזה. (&quot;האבן התשיעית&quot; בהקדמה)</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לאחר הקדמת המחבר מופיע שיר מליצי בשם &quot;שיר למעלות ולתפארת הלשון&quot;, שמפאר את הלשון העברית</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">כפי שפיינר מציין, ברלין כתב את ספרו &quot;בקודים ובסגנון המקובלים בספרות ההלכתית, כדי להראות שהרב כהן [נגדו יצא] נכשל לאורך כל הדרך [בספרו תורת יקותיאל] בשימושו בטכניקות הלמדניות, ותלמיד חכם רציני ימצא בו רק דברי הבל, טעויות אין ספור ומסקנות מגוחכות...&quot; (פיינר, מהפכת הנאורות, עמ' 308)</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">ההקדמה השניה לספר, &quot;הקדמות ומושכלות ראשונות מחכמת המדידה&quot;, הופכת את הספר למעין ספר לימוד. כלולים בה יסודות הגיאומטריה ועוד. ההקדמה מבקשת להעביר לקורא מונחים בסיסיים לשם לימוד המדע &lt;ins&gt;בעברית&lt;/ins&gt;. לדוגמא: &quot;מלת כמות נאמר על דבר שיש לו מכין או מדה או משקל, ובל&quot;א (גראסע)&quot; (שורה ראשונה בהקדמה זו). המונחים המקצועיים מתחום המדע מוצגים לעיתים בשלוש שפות: עברית, לטינית וגרמנית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2348</field>
+		<field name="revision_id">2348</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר מאת וייזל לכבוד הפרויקט והעוסקים בו.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">&quot;ראש אמנה&quot; - החלק הראשון של הספר, הוא פרשנות נרחבת לשיר המופיע בתחילתו</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מדובר בטקסט דרשני, הכולל הדרכה לדרשנים</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המודל: הבעת דעה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">נראה כי חלק מן המכתבים כתב המחבר עבור עצמו, ואחרים עבור אחרים . עדות על כך באיגרת פ&quot;ג (ראו זהר, עוללות מבציר, עמ' 20).
+
+לפי זהר, עוללות מבציר (למשל, עמ' 27), אגרותיו של בוכנר מגלים קווים ז'ורנאליסטים מובהקים, בתקופה שבה עתונות עברית אינה קיימת עדיין. לטענתה, &quot;בכל השייך לתכנים הוא סולל באגרותיו דרך לכתיבה עתונאית במזרח אירופה, שהיתה כידוע החלוצה בתחום העתונות העברית.&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לפי צינברג, &quot;נקבצו בו 365 פתגמי מוסר בפרוזה מחורזת.&quot; &quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">על השימוש המכוון בסוגה רבנית כדי לערער על הסמכות הרבנית ראו דעתו של פלאי, הריפורמה הדתית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בעמוד השער מופיע מעל הכותרת בעברית: 
+Catechismus Integer Iudaeorum</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מרבית הספר מוקדש לפרשנות של &lt;strong&gt;קהלת&lt;/strong&gt;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט תומך בהלנת מתים במסגרת הפולמוס שהתחולל בעולם היהודי על עניין זה.
+
+בעמודים האחרונים של הספר מופיעים מכתביהם של יואל ברי&quot;ל (&lt;strong&gt;חרב לה&lt;/strong&gt;') ומשה מנדלסון (מכתבו לקהילת שוורין), בלווית תרגומיהם ללגרמנית באותיות עבריות.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2379</field>
+		<field name="revision_id">2379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המחזה דמיוני, וממוקם בתקופת המלך שפטיה, במקום המכונה &quot;כלנה&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2380</field>
+		<field name="revision_id">2380</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר עוסק בדקדוק עברי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בהקדמתו, מציין המחבר כי הספר הינו ספר להדרכת המורים בלימוד השפה העברית - &quot;האנדבוך&quot;.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט הינו הספד שנשא ברוך ייטלש עם פטירתו של הרב יחזקאל לנדא.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2386</field>
+		<field name="revision_id">2386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הטקסט הוא &quot;פרסומת&quot; לספר בשמים ראש שברלין מבקש להדפיס. זו למעשה פנייה להשגת מנויים מראש.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בעמ' הראשון של הספר מופיעה חידה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר עוסק בפירוש לשיר השירים</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">יש להוסיף תחת מודל טקסטואלי &quot;תקנון&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר פותח בהצגת קורותיו של סוקרטס ותורתו.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בהקדמתו הראשונה, מסביר המחבר את החריזה שבשיריו (&quot;השירים מי&quot;א תנועות, ומלעיל בסוף דלתותיהם, וחרוזיהם משושים א&quot;ב ג&quot;ו ד&quot;ה&quot;).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר עוסק בניתוח דיקדוקי של השפה העברית: שמות, פעלים וכד'.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2402</field>
+		<field name="revision_id">2402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">החיבור כולל  דברי הספד, שיר הספד, רשימת כתביו של וייזל, נוסח המצבה שלו בעברית ובגרמנית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">פרסום ל&quot;מנחה חדשה&quot;. כולל דוגמא - העונה למאפיינים של הביאור.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2407</field>
+		<field name="revision_id">2407</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פרטיוטי.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2412</field>
+		<field name="revision_id">2412</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">השירים לכבוד החתונה משולבים במעין סיפור על המשתה שנערך לכבוד האירוע ועל קבוצת משוררים &quot;יודעי מלאכת השיר ומביני מדע בחכמת המשל והמליצה&quot; שחיברו כביכול באופן ספונטני שירים לכבוד החתן והכלה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2413</field>
+		<field name="revision_id">2413</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר הזדמנות - לרגל חתונתם של יעקב בנו של דוד קניגסברג, ושרלוטה בתו של שלמה הירץ.
+
+המחזה הוא אלגוריה, ומופיעות בו הדמויות הבאות: חכמה, תבונה, זריזות, סכלות, קנאה, כבוד, עושר, הבל ויגון.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2415</field>
+		<field name="revision_id">2415</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">פולמוס: הספר יוצא נגד מכפישי ספרו של הנאו, &quot;צוהר התיבה&quot;. כדבריו בהקדמה: &quot;חכם אחד בק&quot;ק פראג... מאסף אליו תלמידים רבים&quot; ומלמדם את תורת הדקדוק, &quot;כדי לעשות לו שם כאחד הגודלים אשר בארץ. ולהשקות את העדרי' עדרי צאן קדשים היה שואב מים חיים מן הבאר אשר כריתי לי כל למודו היה בספר צוהר התיבה אשר חברתי. וירפוש את המים ברגלו רגל גאוה אחרי שתות מהם לרוות את צמאו... בכל מקום אשר לא ירד לסוף דעתי ונעלם ממנו ולא ידע איזה דרך ישכון אור החכמה תלה החסרו בי... ר' מאי&quot;ר שמו רוד&quot;ה ב[...]&quot;. תלמידיו של ר' מאיר העבירו אליו השגות ששמעו אצל המורה, והוא שמע דברים נגד חיבורו גם מפיו של איש אחר. &quot;לכן הציקתנו רוח בטני להראות סכלותם ודעתם המשובשת ושגגתם העולה זדון פן ישתו התלמידם הבאים אחריהם... על כן ערכתי מלין בצדקתי החחזקתי ולא ארפה&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2426</field>
+		<field name="revision_id">2426</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר לכבוד נישואי יואל ברי&quot;ל.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">מדובר בפרסום של &quot;מודעה&quot; - פנייה לקהל בבקשה לחתום לצורך הוצאת הספר. המודעה שתחת ידי כרוכה כמו ספר, אך לא בטוח שכך יצאה לאור.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2429</field>
+		<field name="revision_id">2429</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לפי פיינר, יהודה הורוויץ, עמ' 151, חיבור זה משקף את תחושתו של הורוויץ כנרדף על דעותיו. &quot;בדפים אלה... יצא הורוויץ להגנתו בפני מתקיפיו, ובתחושה של מי שנעשה לו עוול ולא ירדו לסוף דעתו דחה את הביקורת מכל וכול וטען להיפוכם של דברים - שבספרו יצא להגן על האמונה, ו'לא עשיתי בית אלקים למערת פריצים'.&quot;</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2430</field>
+		<field name="revision_id">2430</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">ספר עזר שאמור לשמש כנספח לספרו של אותו יוצר - &quot;זכר רב&quot; (בעריכתו). הספר מורכב כולו מרשימת שורשים ולצדם הפניה למקום ב&quot;זכר רב&quot; בו מופיע השורש.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">טקסט פטריוטי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2438</field>
+		<field name="revision_id">2438</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בנוסף לתפלה לנפוליון ולקסרית מריה לואיזה ולבנו של נפוליון, מופיע גם טקסט תפילה מתוך &lt;strong&gt;תהילים&lt;/strong&gt; עב</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2439</field>
+		<field name="revision_id">2439</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר ברכה לנישואים השלוח לברוך לינדא על ידי חברת שוחרי הטוב והתושיה</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2440</field>
+		<field name="revision_id">2440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">הספר כולל שיר הלל ותודה לדניאל איציג, במלאות לו 76 שנים, ותפילה לאל שיברך את איציג ובני ביתו. בעמוד האחרון מופיע עץ משפחת איציג, הכולל את 13 צאצאיו, בלוויית תאריך הולדתם</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2444</field>
+		<field name="revision_id">2444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לאורך הטקסט מופיעות חלוקה לדברי החזן והקהל. בחלק הראשון מזמורי תהלים כא', מה' ועב'. אח&quot;כ מופיעה תפילה המוקדשת לוילהלם החמישי ולאישתו, וברכה גם לשליטים ומלכים נוספים  - מלך הולנד, צרפת ועוד.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2445</field>
+		<field name="revision_id">2445</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פטריוטי לכבוד המלך.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2449</field>
+		<field name="revision_id">2449</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">שיר פטריוטי</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2450</field>
+		<field name="revision_id">2450</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">תפילה: תפילה פטריוטית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2452</field>
+		<field name="revision_id">2452</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">תפילה לכבוד ילדי המלך.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">סיפור חלומו של יאיר המדברי, שחולם חלום שמזעזע אותו: נוגה וצדק מגינים על הירח. רעו פוגש אותו ואומר ופותר לו את חלומו, ויאיר המדברי משתמש בחוויה המיסטית הזו לכתוב שירים לרגל החתונה.
+וסיפור נוסף על רעים שנסעו לסין: חושם התימני וצלק העמוני, בחוזרם לארץ הדני הם מגיעים לביתו של גביר שביום זה ממש מחתן את בנו. צלק פוצח בשיר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">השיר נכתב לרגל ביקורו של הנדיב יאקובסון בבית הספר של בוק, כפי שרשום בכותרת הספר.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2467</field>
+		<field name="revision_id">2467</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">השיר הוא מסוג אודה 
+ODE</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">בחלק הראשון מופיע שיר הלל לשליט, ובחלק השני תפילה לאל שיברך אותו</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">המדובר בדרשות.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">באשר ל'ספרות מוסר' מציין המחבר לקראת סוף הקדמתו כי הוא משתמש במכוון ב'גייסטרייכ'ן אונד ערבויענדן שטיהל' וכי אחת ממטרותיו העיקריות היא לחנך להתנהגות מוסרית ראויה.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לאחר השער המשותף לשלושת הכרכים, מופיע בעמ' [4-5] שיר מליצי פרי עטו של המחבר (ראו פירוט בהקדמת המחבר).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לאחר השער המשותף לשלושת הכרכים, מופיע בעמ' [4-5] שיר מליצי פרי עטו של המחבר (ראו פירוט בהקדמת המחבר).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">לאחר השער המשותף לשלושת הכרכים, מופיע בעמ' [4-5] שיר מליצי פרי עטו של המחבר (ראו פירוט בהקדמת המחבר).</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">להוסיף - טקסט אינפורמטיבי
+בראש הספר שיר מליצה המפאר את השפה העברית</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2479</field>
+		<field name="revision_id">2479</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">תפילה פטריוטית.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2482</field>
+		<field name="revision_id">2482</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">זו תפילה פטריוטית. בתחילת הטקסט כתוב:
+&quot;אחר תפלת שמונה עשרה ברכות אומרים התפלה הזאת בבה&quot;כ&quot;. משבח את המלך הגיבור.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2486</field>
+		<field name="revision_id">2486</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_textual_models_notes_value">תגובתו של שאול ברלין בעקבות הפולמוס שעורר ספרו מצפה יקתאל, וכן מכתב אביו הרב צבי הירש בעניין.</field>
+		<field name="field_textual_models_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

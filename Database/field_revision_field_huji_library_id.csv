@@ -1,0 +1,385 @@
+"entity_type","bundle",deleted,entity_id,revision_id,"language",delta,"field_huji_library_id_value","field_huji_library_id_format"
+"node","book",0,1953,1953,"und",0,"R 8= 35 V 4487",NULL
+"node","book",0,1954,1954,"und",0,"2032692",NULL
+"node","book",0,1956,1956,"und",0,"FI 668 (NEGATIVE)",NULL
+"node","book",0,1960,1960,"und",0,"2011028",NULL
+"node","book",0,1961,1961,"und",0,"R 8= 35 V 4470(8)",NULL
+"node","book",0,1962,1962,"und",0,"S 57 B 374",NULL
+"node","book",0,1963,1963,"und",0,"1917962",NULL
+"node","book",0,1974,1974,"und",0,"S 45 B296",NULL
+"node","book",0,1975,1975,"und",0,"S 57 B821",NULL
+"node","book",0,1976,1976,"und",0,"2211033",NULL
+"node","book",0,1977,1977,"und",0,"S 63 B3983",NULL
+"node","book",0,1981,1981,"und",0,"S 61 B 433",NULL
+"node","book",0,1982,1982,"und",0,"S 55 B781",NULL
+"node","book",0,1987,1987,"und",0,"S 59 B 48",NULL
+"node","book",0,1991,1991,"und",0,"S56 B 1052",NULL
+"node","book",0,1994,1994,"und",0,"1165272",NULL
+"node","book",0,1995,1995,"und",0,"L 2248",NULL
+"node","book",0,1996,1996,"und",0,"R 8= 89 A 566",NULL
+"node","book",0,2000,2000,"und",0,"COH 376",NULL
+"node","book",0,2001,2001,"und",0,"S 26 V 120",NULL
+"node","book",0,2002,2002,"und",0,"S 93 B 6081",NULL
+"node","book",0,2004,2004,"und",0,"2059794",NULL
+"node","book",0,2007,2007,"und",0,"S 56 B 1051",NULL
+"node","book",0,2008,2008,"und",0,"S60B809",NULL
+"node","book",0,2009,2009,"und",0,"R 0 35 V 3291",NULL
+"node","book",0,2010,2010,"und",0,"FI 692",NULL
+"node","book",0,2011,2011,"und",0,"2217057",NULL
+"node","book",0,2012,2012,"und",0,"S 38 B1723",NULL
+"node","book",0,2015,2015,"und",0,"L 2277",NULL
+"node","book",0,2017,2017,"und",0,"S 2004 B 1441",NULL
+"node","book",0,2022,2022,"und",0,"1912017",NULL
+"node","book",0,2025,2025,"und",0,"R/8=31V1493; אוסף שלום: 5336.14 (עותק מצולם)",NULL
+"node","book",0,2027,2027,"und",0,"S 54 B 1005",NULL
+"node","book",0,2030,2030,"und",0,"R 2+= 75 A 394",NULL
+"node","book",0,2031,2031,"und",0,"S 31 V 1275",NULL
+"node","book",0,2032,2032,"und",0,"R 8= 75 A 1216",NULL
+"node","book",0,2039,2039,"und",0,"S 98 B744",NULL
+"node","book",0,2040,2040,"und",0,"S 2006 B5389",NULL
+"node","book",0,2041,2041,"und",0,"S 97 B 5531",NULL
+"node","book",0,2044,2044,"und",0,"S 31 V 1485",NULL
+"node","book",0,2052,2052,"und",0,"S 40 B671",NULL
+"node","book",0,2053,2053,"und",0,"S 57 B 1927",NULL
+"node","book",0,2055,2055,"und",0,"S 57 A 1918",NULL
+"node","book",0,2056,2056,"und",0,"S 23V6525",NULL
+"node","book",0,2057,2057,"und",0,"MIC 666",NULL
+"node","book",0,2058,2058,"und",0,"22 V2080",NULL
+"node","book",0,2060,2060,"und",0,"S 56 B63",NULL
+"node","book",0,2061,2061,"und",0,"S 22 V 14296",NULL
+"node","book",0,2063,2063,"und",0,"S 59 B1167",NULL
+"node","book",0,2064,2064,"und",0,"S 60 B584",NULL
+"node","book",0,2067,2067,"und",0,"S 64 B 133",NULL
+"node","book",0,2069,2069,"und",0,"S 0 92 B 4690",NULL
+"node","book",0,2074,2074,"und",0,"26V504",NULL
+"node","book",0,2075,2075,"und",0,"R 8= 31 V 1493",NULL
+"node","book",0,2077,2077,"und",0,"SR31V4005",NULL
+"node","book",0,2078,2078,"und",0,"R /8= 22 V 12082",NULL
+"node","book",0,2079,2079,"und",0,"S 71 A 3816",NULL
+"node","book",0,2080,2080,"und",0,"R 8= 23 V 859",NULL
+"node","book",0,2082,2082,"und",0,"R 8=44 A 496",NULL
+"node","book",0,2083,2083,"und",0,"13901 V 25",NULL
+"node","book",0,2084,2084,"und",0,"13901 V 25",NULL
+"node","book",0,2085,2085,"und",0,"13901 V 25",NULL
+"node","book",0,2086,2086,"und",0,"S 25 V 13879",NULL
+"node","book",0,2091,2091,"und",0,"R 8= 35 V 3487",NULL
+"node","book",0,2094,2094,"und",0,"R FR 567",NULL
+"node","book",0,2097,2097,"und",0,"S 59 A 3774",NULL
+"node","book",0,2098,2098,"und",0,"R 4= 75 A 396",NULL
+"node","book",0,2099,2099,"und",0,"L 36",NULL
+"node","book",0,2101,2101,"und",0,"FI 3006 (1)",NULL
+"node","book",0,2105,2105,"und",0,"R8=64A909",NULL
+"node","book",0,2106,2106,"und",0,"R /46 A 1351",NULL
+"node","book",0,2109,2109,"und",0,"R 8= 75 A 495",NULL
+"node","book",0,2113,2113,"und",0,"R 4= 88 A 607",NULL
+"node","book",0,2114,2114,"und",0,"S 31 V 1707",NULL
+"node","book",0,2115,2115,"und",0,"R 8= 29 V 1251",NULL
+"node","book",0,2116,2116,"und",0,"S 23 V 460",NULL
+"node","book",0,2117,2117,"und",0,"S 31 V 1273",NULL
+"node","book",0,2118,2118,"und",0,"R 8= 62 A 3037",NULL
+"node","book",0,2119,2119,"und",0,"S 25 V 14242",NULL
+"node","book",0,2120,2120,"und",0,"S 25 V 14242",NULL
+"node","book",0,2122,2122,"und",0,"/L 2283",NULL
+"node","book",0,2123,2123,"und",0,"S 22 V 12850",NULL
+"node","book",0,2124,2124,"und",0,"S 22 V 12850",NULL
+"node","book",0,2125,2125,"und",0,"S 0= 69 A 204",NULL
+"node","book",0,2126,2126,"und",0,"R 8= 59 A 3631",NULL
+"node","book",0,2127,2127,"und",0,"S 0= 69 A 204",NULL
+"node","book",0,2128,2128,"und",0,"S 0= 69 A 204",NULL
+"node","book",0,2130,2130,"und",0,"SR 36 A 1544",NULL
+"node","book",0,2131,2131,"und",0,"S 25 V 14248",NULL
+"node","book",0,2133,2133,"und",0,"SR 26V248",NULL
+"node","book",0,2134,2134,"und",0,"S 58 A 499",NULL
+"node","book",0,2136,2136,"und",0,"70 B 7",NULL
+"node","book",0,2137,2137,"und",0,"S22V13167",NULL
+"node","book",0,2138,2138,"und",0,"R 0= 35 V 4267",NULL
+"node","book",0,2139,2139,"und",0,"R 8= 56 A 50",NULL
+"node","book",0,2141,2141,"und",0,"R 8= 25 V 13943",NULL
+"node","book",0,2142,2142,"und",0,"S 51 A 121",NULL
+"node","book",0,2143,2143,"und",0,"R 8 24 V 573",NULL
+"node","book",0,2144,2144,"und",0,"S 22 V 5108",NULL
+"node","book",0,2145,2145,"und",0,"R 8= 23 V 3604",NULL
+"node","book",0,2146,2146,"und",0,"R 8= 23 V 3604",NULL
+"node","book",0,2147,2147,"und",0,"R 8= 23 V 3604",NULL
+"node","book",0,2148,2148,"und",0,"R 8= 23 V 3604",NULL
+"node","book",0,2149,2149,"und",0,"S 31 V 258",NULL
+"node","book",0,2150,2150,"und",0,"S 35 V 4354",NULL
+"node","book",0,2151,2151,"und",0,"R 2= 31 V 1476",NULL
+"node","book",0,2152,2152,"und",0,"R 4= 43 A 1417",NULL
+"node","book",0,2154,2154,"und",0,"R 8= 35 V 4347",NULL
+"node","book",0,2155,2155,"und",0,"R 0 39 A 1689",NULL
+"node","book",0,2156,2156,"und",0,"S30V1242",NULL
+"node","book",0,2157,2157,"und",0,"R 8= 31 V 4109",NULL
+"node","book",0,2158,2158,"und",0,"S 22 V 5800",NULL
+"node","book",0,2159,2159,"und",0,"R /8= 35 V 1762           (35 V 1762",NULL
+"node","book",0,2161,2161,"und",0,"2156830",NULL
+"node","book",0,2162,2162,"und",0,"S 45 A 1404",NULL
+"node","book",0,2165,2165,"und",0,"S 45 A 1347",NULL
+"node","book",0,2166,2166,"und",0,"S 23 V 5104",NULL
+"node","book",0,2167,2167,"und",0,"S 25 V 13990",NULL
+"node","book",0,2168,2168,"und",0,"R 4=67 A 696",NULL
+"node","book",0,2169,2169,"und",0,"S 22 V 5108",NULL
+"node","book",0,2170,2170,"und",0,"S 23 V 4234",NULL
+"node","book",0,2172,2172,"und",0,"S 25 V 14253",NULL
+"node","book",0,2173,2173,"und",0,"S 25 V 14253",NULL
+"node","book",0,2175,2175,"und",0,"S 61 A 1612",NULL
+"node","book",0,2176,2176,"und",0,"S 31 V 1412",NULL
+"node","book",0,2177,2177,"und",0,"R 8= 98 A 534",NULL
+"node","book",0,2178,2178,"und",0,"R 8= 35 V 3070",NULL
+"node","book",0,2179,2179,"und",0,"S /26 V 182",NULL
+"node","book",0,2180,2180,"und",0,"R 73 A 1160",NULL
+"node","book",0,2181,2181,"und",0,"S 26 V 186",NULL
+"node","book",0,2182,2182,"und",0,"R 4= 63 A 2195",NULL
+"node","book",0,2183,2183,"und",0,"R 4= 63 A 2195",NULL
+"node","book",0,2184,2184,"und",0,"R 75 A 7333",NULL
+"node","book",0,2185,2185,"und",0,"S 31 V 1646",NULL
+"node","book",0,2186,2186,"und",0,"R 4= 31 V 1319",NULL
+"node","book",0,2187,2187,"und",0,"R 8= 31 V 1322",NULL
+"node","book",0,2188,2188,"und",0,"L44",NULL
+"node","book",0,2189,2189,"und",0,"S 33 V 1301",NULL
+"node","book",0,2190,2190,"und",0,"S 25 V 13497",NULL
+"node","book",0,2191,2191,"und",0,"S 25 V 13726",NULL
+"node","book",0,2192,2192,"und",0,"R /4= 35 V 4587",NULL
+"node","book",0,2193,2193,"und",0,"S 22 V 12602",NULL
+"node","book",0,2194,2194,"und",0,"S 33V93",NULL
+"node","book",0,2195,2195,"und",0,"S 2= 94 A 4666",NULL
+"node","book",0,2196,2196,"und",0,"S 22 V 1677",NULL
+"node","book",0,2201,2201,"und",0,"S 45 A 1337",NULL
+"node","book",0,2202,2202,"und",0,"S 23 V 4485)   R /8= 23 V 4485",NULL
+"node","book",0,2203,2203,"und",0,"S 45 A 1337",NULL
+"node","book",0,2204,2204,"und",0,"S 45 A 1337",NULL
+"node","book",0,2205,2205,"und",0,"S 45 A 1337",NULL
+"node","book",0,2207,2207,"und",0,"S=05041V52",NULL
+"node","book",0,2208,2208,"und",0,"R 28B437",NULL
+"node","book",0,2209,2209,"und",0,"S 26 V 709",NULL
+"node","book",0,2210,2210,"und",0,"S 26 V 709",NULL
+"node","book",0,2211,2211,"und",0,"S /26 V 842",NULL
+"node","book",0,2212,2212,"und",0,"R 8=37 A 1946",NULL
+"node","book",0,2213,2213,"und",0,"S 22 V 13255",NULL
+"node","book",0,2214,2214,"und",0,"S 22 V 13255",NULL
+"node","book",0,2215,2215,"und",0,"S 22 V 13255",NULL
+"node","book",0,2216,2216,"und",0,"S 65 A 1217",NULL
+"node","book",0,2217,2217,"und",0,"R4 = S 31 V 1320",NULL
+"node","book",0,2219,2219,"und",0,"S 31 V 486",NULL
+"node","book",0,2220,2220,"und",0,"R 71 A 1553",NULL
+"node","book",0,2221,2221,"und",0,"R 8= 82 A 536",NULL
+"node","book",0,2222,2222,"und",0,"R 16496",NULL
+"node","book",0,2223,2223,"und",0,"R 16496",NULL
+"node","book",0,2224,2224,"und",0,"R 16496",NULL
+"node","book",0,2225,2225,"und",0,"R 16496",NULL
+"node","book",0,2226,2226,"und",0,"R 16496",NULL
+"node","book",0,2227,2227,"und",0,"R 16496",NULL
+"node","book",0,2228,2228,"und",0,"R 16496",NULL
+"node","book",0,2229,2229,"und",0,"R 16496",NULL
+"node","book",0,2231,2231,"und",0,"23 V 8979",NULL
+"node","book",0,2233,2233,"und",0,"R 8= 23 V 13792",NULL
+"node","book",0,2235,2235,"und",0,"R 8= 63 A 4094",NULL
+"node","book",0,2236,2236,"und",0,"R 8= 53 A 413",NULL
+"node","book",0,2237,2237,"und",0,"S 31 V 4122",NULL
+"node","book",0,2238,2238,"und",0,"L 80",NULL
+"node","book",0,2239,2239,"und",0,"R 2= 23 V 5046",NULL
+"node","book",0,2240,2240,"und",0,"L 1154",NULL
+"node","book",0,2241,2241,"und",0,"S 29 V 1390",NULL
+"node","book",0,2242,2242,"und",0,"S 36 A 987",NULL
+"node","book",0,2245,2245,"und",0,"S /31 V 4110",NULL
+"node","book",0,2246,2246,"und",0,"S /31 V 4110",NULL
+"node","book",0,2247,2247,"und",0,"S /31 V 4110",NULL
+"node","book",0,2248,2248,"und",0,"R 8= 58 A 1449",NULL
+"node","book",0,2249,2249,"und",0,"S 25 V 14221",NULL
+"node","book",0,2250,2250,"und",0,"R 0 23 V 1229",NULL
+"node","book",0,2251,2251,"und",0,"96 L 121",NULL
+"node","book",0,2253,2253,"und",0,"S 42 A 741",NULL
+"node","book",0,2254,2254,"und",0,"R 8= 22 V 1936",NULL
+"node","book",0,2255,2255,"und",0,"FI 10376(Po+Ne)",NULL
+"node","book",0,2256,2256,"und",0,"S 25 V 13470",NULL
+"node","book",0,2258,2258,"und",0,"R 0= 23 V 4461",NULL
+"node","book",0,2259,2259,"und",0,"S 35 v54",NULL
+"node","book",0,2262,2262,"und",0,"S 40 A 148",NULL
+"node","book",0,2264,2264,"und",0,"S 36 A 2030",NULL
+"node","book",0,2265,2265,"und",0,"R/ 21 V 8368",NULL
+"node","book",0,2266,2266,"und",0,"4367 V 35 0",NULL
+"node","book",0,2267,2267,"und",0,"S 25 V 14263",NULL
+"node","book",0,2270,2270,"und",0,"33V292",NULL
+"node","book",0,2271,2271,"und",0,"S 22 V 6395",NULL
+"node","book",0,2272,2272,"und",0,"S 25 V 14272",NULL
+"node","book",0,2273,2273,"und",0,"S 70 A 201",NULL
+"node","book",0,2274,2274,"und",0,"S 23 V 4186",NULL
+"node","book",0,2275,2275,"und",0,"S8=35V4464",NULL
+"node","book",0,2276,2276,"und",0,"R 4= 22 V 13526",NULL
+"node","book",0,2277,2277,"und",0,"22V 13073",NULL
+"node","book",0,2278,2278,"und",0,"Fi 1193",NULL
+"node","book",0,2279,2279,"und",0,"S 22 V 13513",NULL
+"node","book",0,2280,2280,"und",0,"R 8= 52 A 1434",NULL
+"node","book",0,2281,2281,"und",0,"R 8= 31 V 4087",NULL
+"node","book",0,2282,2282,"und",0,"S 22 V 13207",NULL
+"node","book",0,2283,2283,"und",0,"S 22 V 13225",NULL
+"node","book",0,2284,2284,"und",0,"S 64 A 919",NULL
+"node","book",0,2285,2285,"und",0,"R 0=22 V 13514",NULL
+"node","book",0,2286,2286,"und",0,"S 62 A 3590",NULL
+"node","book",0,2287,2287,"und",0,"S 23 V 4760",NULL
+"node","book",0,2288,2288,"und",0,"הלאומית S 62 A 3590",NULL
+"node","book",0,2289,2289,"und",0,"R 8= 22 V 13367",NULL
+"node","book",0,2290,2290,"und",0,"S/2= 25V 13977",NULL
+"node","book",0,2291,2291,"und",0,"S/2= 25V 13977",NULL
+"node","book",0,2292,2292,"und",0,"S2005A5613",NULL
+"node","book",0,2293,2293,"und",0,"S 31 V 516",NULL
+"node","book",0,2294,2294,"und",0,"S25V13942",NULL
+"node","book",0,2295,2295,"und",0,"S 56 A 1559",NULL
+"node","book",0,2296,2296,"und",0,"S /56 A 1559",NULL
+"node","book",0,2297,2297,"und",0,"S 56 A 1559",NULL
+"node","book",0,2298,2298,"und",0,"S 56 A 1559",NULL
+"node","book",0,2299,2299,"und",0,"S 56 A 1559",NULL
+"node","book",0,2300,2300,"und",0,"S23V10878",NULL
+"node","book",0,2302,2302,"und",0,"S 2= 22 V 6877",NULL
+"node","book",0,2303,2303,"und",0,"S 23 V 7612",NULL
+"node","book",0,2304,2304,"und",0,"R 8= 25 V 14310",NULL
+"node","book",0,2307,2307,"und",0,"22 V 11695",NULL
+"node","book",0,2311,2311,"und",0,"R 8= 35 V 1779",NULL
+"node","book",0,2312,2312,"und",0,"R /8= 71 A 3775",NULL
+"node","book",0,2313,2313,"und",0,"R 59 A 3564",NULL
+"node","book",0,2314,2314,"und",0,"R 8= 59 A 3631",NULL
+"node","book",0,2317,2317,"und",0,"S 26 V 250",NULL
+"node","book",0,2318,2318,"und",0,"S 59 A 4532",NULL
+"node","book",0,2319,2319,"und",0,"S 26 V 170",NULL
+"node","book",0,2320,2320,"und",0,"R /8= 54 A 2347",NULL
+"node","book",0,2321,2321,"und",0,"S 22 V 10152",NULL
+"node","book",0,2322,2322,"und",0,"R 68 A 1547",NULL
+"node","book",0,2324,2324,"und",0,"R 8= 23 V 14359",NULL
+"node","book",0,2325,2325,"und",0,"S 25 V 13951",NULL
+"node","book",0,2326,2326,"und",0,"S 56 A 936",NULL
+"node","book",0,2327,2327,"und",0,"S 56 A 936",NULL
+"node","book",0,2328,2328,"und",0,"S 59 A 4969",NULL
+"node","book",0,2329,2329,"und",0,"S 59 A 4969",NULL
+"node","book",0,2330,2330,"und",0,"S 56 A 936",NULL
+"node","book",0,2331,2331,"und",0,"S 56 A 936",NULL
+"node","book",0,2332,2332,"und",0,"S 56 A 936 a 6",NULL
+"node","book",0,2334,2334,"und",0,"S 56 A 936",NULL
+"node","book",0,2335,2335,"und",0,"S 56 A 936",NULL
+"node","book",0,2336,2336,"und",0,"S 22 V 5035",NULL
+"node","book",0,2337,2337,"und",0,"25V14362",NULL
+"node","book",0,2338,2338,"und",0,"S 36 A 2240",NULL
+"node","book",0,2339,2339,"und",0,"R 69 A 2149",NULL
+"node","book",0,2343,2343,"und",0,"R 8= 35 V 3846",NULL
+"node","book",0,2344,2344,"und",0,"R8=54A1995",NULL
+"node","book",0,2345,2345,"und",0,"R 8= 35 V 1758",NULL
+"node","book",0,2346,2346,"und",0,"SR 31 V 619, R 0= 31 V 619, R6563-Shalom",NULL
+"node","book",0,2347,2347,"und",0,"S 22 V 3993",NULL
+"node","book",0,2348,2348,"und",0,"S 22 V 3993",NULL
+"node","book",0,2349,2349,"und",0,"S 22 V 3993",NULL
+"node","book",0,2350,2350,"und",0,"S 22 V 3993",NULL
+"node","book",0,2351,2351,"und",0,"S 22 V 3993",NULL
+"node","book",0,2352,2352,"und",0,"S 23 V 4815",NULL
+"node","book",0,2353,2353,"und",0,"R 8= 35 V 4235",NULL
+"node","book",0,2354,2354,"und",0,"S 52 A 394",NULL
+"node","book",0,2355,2355,"und",0,"S 70 A 154",NULL
+"node","book",0,2356,2356,"und",0,"S 35 V 1820",NULL
+"node","book",0,2358,2358,"und",0,"S 23 V 5842",NULL
+"node","book",0,2359,2359,"und",0,"R 8= 35 V 3329",NULL
+"node","book",0,2360,2360,"und",0,"R 8= 25 V 14319",NULL
+"node","book",0,2362,2362,"und",0,"R 8= 35 V 3520",NULL
+"node","book",0,2364,2364,"und",0,"R 8= 35 V 4608",NULL
+"node","book",0,2365,2365,"und",0,"R 67 A 3914",NULL
+"node","book",0,2366,2366,"und",0,"R 2= 23 V 9250",NULL
+"node","book",0,2367,2367,"und",0,"S64A1632",NULL
+"node","book",0,2368,2368,"und",0,"R 4= 96 A 225",NULL
+"node","book",0,2369,2369,"und",0,"S 0= 51 A 122",NULL
+"node","book",0,2370,2370,"und",0,"S 25 V 13756",NULL
+"node","book",0,2372,2372,"und",0,"R 8= 73 A 1866",NULL
+"node","book",0,2373,2373,"und",0,"R 8= 22 V 5560",NULL
+"node","book",0,2374,2374,"und",0,"R /8= 22 V 6233",NULL
+"node","book",0,2375,2375,"und",0,"R 8= 23 V 8386",NULL
+"node","book",0,2378,2378,"und",0,"S 35 V 1820",NULL
+"node","book",0,2379,2379,"und",0,"R 8= 31 V 1541",NULL
+"node","book",0,2380,2380,"und",0,"S 47 A 1058",NULL
+"node","book",0,2381,2381,"und",0,"S 64 A 2938",NULL
+"node","book",0,2382,2382,"und",0,"S 82 A 3769",NULL
+"node","book",0,2383,2383,"und",0,"22V4175",NULL
+"node","book",0,2384,2384,"und",0,"S 26 V 1",NULL
+"node","book",0,2385,2385,"und",0,"S /23 V 6563",NULL
+"node","book",0,2386,2386,"und",0,"R 8= 37 A 1944",NULL
+"node","book",0,2387,2387,"und",0,"R 8= 22 V 12032",NULL
+"node","book",0,2388,2388,"und",0,"R 8= 22 V 12032",NULL
+"node","book",0,2390,2390,"und",0,"(עותק שני) S 25 V 13718",NULL
+"node","book",0,2391,2391,"und",0,"R 75 A 1189",NULL
+"node","book",0,2394,2394,"und",0,"R 8= 56 A 2188",NULL
+"node","book",0,2396,2396,"und",0,"S 35 V 1897",NULL
+"node","book",0,2397,2397,"und",0,"S 23 V 5182",NULL
+"node","book",0,2398,2398,"und",0,"S 47 A 820",NULL
+"node","book",0,2399,2399,"und",0,"S 56 A 1615",NULL
+"node","book",0,2401,2401,"und",0,"S 33 V 4297",NULL
+"node","book",0,2402,2402,"und",0,"S 55 A 3749",NULL
+"node","book",0,2403,2403,"und",0,"S 62 A 779",NULL
+"node","book",0,2404,2404,"und",0,"SR 31 V 1436",NULL
+"node","book",0,2405,2405,"und",0,"R 8= 31 V 1321",NULL
+"node","book",0,2408,2408,"und",0,"S 31 V 1457",NULL
+"node","book",0,2409,2409,"und",0,"L 2241",NULL
+"node","book",0,2412,2412,"und",0,"R 0= 31 V 149",NULL
+"node","book",0,2413,2413,"und",0,"R 8= 2003 A 1779",NULL
+"node","book",0,2414,2414,"und",0,"אוסף שולםR 1302    ;R 8= 23 V 12521",NULL
+"node","book",0,2415,2415,"und",0,"R 0= 25 V 14326",NULL
+"node","book",0,2416,2416,"und",0,"R69 A 1766",NULL
+"node","book",0,2417,2417,"und",0,"S 33 V 3911",NULL
+"node","book",0,2418,2418,"und",0,"S 33 V 3911",NULL
+"node","book",0,2419,2419,"und",0,"R 53 A 1816",NULL
+"node","book",0,2420,2420,"und",0,"S 36 A 469",NULL
+"node","book",0,2421,2421,"und",0,"R /8= 35 V 1708",NULL
+"node","book",0,2423,2423,"und",0,"S 53 A 2278",NULL
+"node","book",0,2424,2424,"und",0,"R 8= 75 A 1687",NULL
+"node","book",0,2425,2425,"und",0,"S 35 V 4344",NULL
+"node","book",0,2426,2426,"und",0,"L 2236",NULL
+"node","book",0,2427,2427,"und",0,"S 31 V 746",NULL
+"node","book",0,2428,2428,"und",0,"S22V13053",NULL
+"node","book",0,2429,2429,"und",0,"97L171",NULL
+"node","book",0,2430,2430,"und",0,"S 50 A 231",NULL
+"node","book",0,2431,2431,"und",0,"R 79 A 4511",NULL
+"node","book",0,2432,2432,"und",0,"R 8= 35 V 4175",NULL
+"node","book",0,2435,2435,"und",0,"S 31 V 1266",NULL
+"node","book",0,2436,2436,"und",0,"R 2+= 56 A 2133",NULL
+"node","book",0,2437,2437,"und",0,"R 2+= 52 A 1360",NULL
+"node","book",0,2438,2438,"und",0,"R 8=31 V 1484",NULL
+"node","book",0,2439,2439,"und",0,"L 2215",NULL
+"node","book",0,2440,2440,"und",0,"R 4=53 A 410",NULL
+"node","book",0,2441,2441,"und",0,"R 8= 31 V 519",NULL
+"node","book",0,2442,2442,"und",0,"L 2226",NULL
+"node","book",0,2443,2443,"und",0,"R 4= 31 V 1487",NULL
+"node","book",0,2445,2445,"und",0,"R 8= 31 V 1428",NULL
+"node","book",0,2447,2447,"und",0,"R 2+= 50 A 1323",NULL
+"node","book",0,2448,2448,"und",0,"R 8= 64 A 321",NULL
+"node","book",0,2449,2449,"und",0,"L2268.",NULL
+"node","book",0,2450,2450,"und",0,"R 8=93 A 2824",NULL
+"node","book",0,2451,2451,"und",0,"31V518",NULL
+"node","book",0,2452,2452,"und",0,"R 8= 73 A 612",NULL
+"node","book",0,2453,2453,"und",0,"57A1602",NULL
+"node","book",0,2454,2454,"und",0,"57A1602",NULL
+"node","book",0,2455,2455,"und",0,"S 31 V 572",NULL
+"node","book",0,2456,2456,"und",0,"S 31 V 572",NULL
+"node","book",0,2457,2457,"und",0,"S 31 V 572",NULL
+"node","book",0,2458,2458,"und",0,"R 8= 35 V 4351",NULL
+"node","book",0,2459,2459,"und",0,"R 4=46 A 129",NULL
+"node","book",0,2460,2460,"und",0,"R 8= 35 V 4346",NULL
+"node","book",0,2461,2461,"und",0,"F 2045  אגף כתבי יד",NULL
+"node","book",0,2462,2462,"und",0,"R8 = 36 A 2045",NULL
+"node","book",0,2463,2463,"und",0,"1095976",NULL
+"node","book",0,2464,2464,"und",0,"S 64 A 2830",NULL
+"node","book",0,2465,2465,"und",0,"S 23 V 8976",NULL
+"node","book",0,2467,2467,"und",0,"R 2+=75 A 826",NULL
+"node","book",0,2468,2468,"und",0,"R 2= 31 V 1504",NULL
+"node","book",0,2469,2469,"und",0,"L 2239",NULL
+"node","book",0,2470,2470,"und",0,"S 70 A 66",NULL
+"node","book",0,2471,2471,"und",0,"R 8= 23 V 6892",NULL
+"node","book",0,2472,2472,"und",0,"S 39 A 499",NULL
+"node","book",0,2473,2473,"und",0,"R 30 V 811",NULL
+"node","book",0,2474,2474,"und",0,"PJ 4566 C66",NULL
+"node","book",0,2475,2475,"und",0,"PJ 4566 C66",NULL
+"node","book",0,2476,2476,"und",0,"PJ 4566 C66",NULL
+"node","book",0,2477,2477,"und",0,"S 91 A 1404",NULL
+"node","book",0,2478,2478,"und",0,"S 25 V 14284",NULL
+"node","book",0,2479,2479,"und",0,"R 4=64 A 2845",NULL
+"node","book",0,2480,2480,"und",0,"S 62 B 935",NULL
+"node","book",0,2481,2481,"und",0,"R 8= 75 A 478",NULL
+"node","book",0,2482,2482,"und",0,"S 56 A 1329",NULL
+"node","book",0,2483,2483,"und",0,"R 2+= 52 A 1360",NULL
+"node","book",0,2484,2484,"und",0,"R 8 31 V 1428",NULL
+"node","book",0,2485,2485,"und",0,"R 8= 23 V 530",NULL
+"node","book",0,2486,2486,"und",0,"R 0= 35 V 3818",NULL
+"node","book",0,2487,2487,"und",0,"S 31 V 1696",NULL

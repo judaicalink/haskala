@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="users">
+		<field field="uid" type="int(10) unsigned" null="NO" key="PRI" default="0" extra="" />
+		<field field="name" type="varchar(60)" null="NO" key="UNI" default="" extra="" />
+		<field field="pass" type="varchar(128)" null="NO" key="" default="" extra="" />
+		<field field="mail" type="varchar(254)" null="YES" key="MUL" default="" extra="" />
+		<field field="theme" type="varchar(255)" null="NO" key="" default="" extra="" />
+		<field field="signature" type="varchar(255)" null="NO" key="" default="" extra="" />
+		<field field="signature_format" type="varchar(255)" null="YES" key="" default="<null>" extra="" />
+		<field field="created" type="int(11)" null="NO" key="MUL" default="0" extra="" />
+		<field field="access" type="int(11)" null="NO" key="MUL" default="0" extra="" />
+		<field field="login" type="int(11)" null="NO" key="" default="0" extra="" />
+		<field field="status" type="tinyint(4)" null="NO" key="" default="0" extra="" />
+		<field field="timezone" type="varchar(32)" null="YES" key="" default="<null>" extra="" />
+		<field field="language" type="varchar(12)" null="NO" key="" default="" extra="" />
+		<field field="picture" type="int(11)" null="NO" key="MUL" default="0" extra="" />
+		<field field="init" type="varchar(254)" null="YES" key="" default="" extra="" />
+		<field field="data" type="longblob" null="YES" key="" default="<null>" extra="" />
+
+		<options name="users" engine="InnoDB" version="10" row_format="Dynamic" rows="4" avg_row_length="4096" data_length="16384" max_data_length="0" index_length="81920" data_free="0" create_time="2024-07-08 12:43:34" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Stores user data." />
+	</table_structure>
+
+	<table_data name="users">
+
+	<row>
+		<field name="uid">0</field>
+		<field name="name"></field>
+		<field name="pass"></field>
+		<field name="mail"></field>
+		<field name="theme"></field>
+		<field name="signature"></field>
+		<field name="signature_format" xsi:nil="true" />
+		<field name="created">0</field>
+		<field name="access">0</field>
+		<field name="login">0</field>
+		<field name="status">0</field>
+		<field name="timezone" xsi:nil="true" />
+		<field name="language"></field>
+		<field name="picture">0</field>
+		<field name="init"></field>
+		<field name="data" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="uid">1</field>
+		<field name="name">admin</field>
+		<field name="pass">$S$Didh6vOEJnmt/IaO9wXDxR4JABEUrNKuXDnSpqyZOti7D..SeG/w</field>
+		<field name="mail">itamar@gizra.com</field>
+		<field name="theme"></field>
+		<field name="signature"></field>
+		<field name="signature_format" xsi:nil="true" />
+		<field name="created">1428489870</field>
+		<field name="access">1428920256</field>
+		<field name="login">1428497282</field>
+		<field name="status">1</field>
+		<field name="timezone">Europe/Berlin</field>
+		<field name="language"></field>
+		<field name="picture">0</field>
+		<field name="init">itamar@gizra.com</field>
+		<field name="data">b:0;</field>
+	</row>
+
+	<row>
+		<field name="uid">4</field>
+		<field name="name">rachel</field>
+		<field name="pass">$S$Dq8vNvCGauiubxJwgPREhUO2xhkJjK9QnTPVqGp9w.zBWaIbOZGg</field>
+		<field name="mail">r.heuberger@ub.uni-frankfurt.de</field>
+		<field name="theme"></field>
+		<field name="signature"></field>
+		<field name="signature_format">filtered_html</field>
+		<field name="created">1428490426</field>
+		<field name="access">0</field>
+		<field name="login">0</field>
+		<field name="status">1</field>
+		<field name="timezone">Europe/Berlin</field>
+		<field name="language"></field>
+		<field name="picture">0</field>
+		<field name="init">ita.mar@gizra.com</field>
+		<field name="data">a:5:{s:16:&quot;ckeditor_default&quot;;s:1:&quot;t&quot;;s:20:&quot;ckeditor_show_toggle&quot;;s:1:&quot;t&quot;;s:14:&quot;ckeditor_width&quot;;s:4:&quot;100%&quot;;s:13:&quot;ckeditor_lang&quot;;s:2:&quot;en&quot;;s:18:&quot;ckeditor_auto_lang&quot;;s:1:&quot;t&quot;;}</field>
+	</row>
+
+	<row>
+		<field name="uid">5</field>
+		<field name="name">itamar</field>
+		<field name="pass">$S$DRa1Q6TCU2uV6ftfKP26tW2t3SLjxNJJtBb9VJuSvKY6toDdXnKv</field>
+		<field name="mail">ita.ma.r@gizra.com</field>
+		<field name="theme"></field>
+		<field name="signature"></field>
+		<field name="signature_format">filtered_html</field>
+		<field name="created">1428490466</field>
+		<field name="access">1428497252</field>
+		<field name="login">1428490859</field>
+		<field name="status">1</field>
+		<field name="timezone">Europe/Berlin</field>
+		<field name="language"></field>
+		<field name="picture">0</field>
+		<field name="init">ita.ma.r@gizra.com</field>
+		<field name="data" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

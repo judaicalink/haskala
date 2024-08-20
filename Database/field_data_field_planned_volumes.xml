@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_planned_volumes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_planned_volumes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_planned_volumes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_planned_volumes" engine="InnoDB" version="10" row_format="Dynamic" rows="24" avg_row_length="682" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:05" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 120 (field_planned_volumes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_planned_volumes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">ככל הידוע, לא יצאו כרכים נוספים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">[כרך שני - ראו אצבע]</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2112</field>
+		<field name="revision_id">2112</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">ככל הידוע, לא יצאו כרכים נוספים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">גן נעול - הבית השלישי</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2120</field>
+		<field name="revision_id">2120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">גן נעול - חלק ג'</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">חלק ד'</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">חלק רביעי</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">חלקים נוספים ל-כימיאה אודער שיידיקונסט</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">בהקמדמו מביע וולפסון רצון לפרסם &quot;לוסטשפילס&quot; נוספים, אם הנוכחי יזכה לאהדת הקהל.</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2202</field>
+		<field name="revision_id">2202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">בשער הספר נכתב: &quot;ובחלק הב' מזה יודפס נדבת כל איש...&quot;</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">כרך שלישי (בהקדמתו מדבר פיליפסון על שלושה כרכים מתוכננים. בפועל יצאו ככל הנראה רק שניים.)</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">כרך שלישי</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">ספר משלי אגור - חלק ב</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">חלק שני</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">לא יצאו כרכים נוספים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">ספר המדות כרך שני; מחקרי לב (הערות לשני החלקים)</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">יחד עם סיפרו של אבן-עזרא היה אמור גם לצאת לאור סיפרו של היש&quot;ר מקנדיא &quot;נר אלהים&quot; - אך ספר זה אינו מופיע כאן</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">בעמוד האחרון של הספר רושם המחבר כי הוא שואף להוציא חלק שני לספר</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">התפרסמו רק חמשת הספרים הראשונים של &quot;עשרה מאמרות&quot;-
+רשום בקטלוג הספרייה הלאומית:
+חמשת המאמרים האחרונים לא נדפסו והם: 
+ו. באר מים חיים ... באור על מאמר אדם דאצילות, 
+ז. מעין חתום ... על ספר יצירה, 
+ח. דברי אמת ... 
+ט. שער החשבון על סדר המספר בדברי חכמי האמת, 
+י. ארצות החיים ... בדברי תנ&quot;ך וחז&quot;ל ...  
+בעותק עץ חיים 5300 A 79 R נוספו בסוף 2 ד’ המתחילים: אל אצילי ישראל : בקשה לתמיכה בהוצאת שאר החלקים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">התפרסמו רק חמשת הספרים הראשונים של &quot;עשרה מאמרות&quot;-
+רשום בקטלוג הספרייה הלאומית:
+חמשת המאמרים האחרונים לא נדפסו והם: 
+ו. באר מים חיים ... באור על מאמר אדם דאצילות, 
+ז. מעין חתום ... על ספר יצירה, 
+ח. דברי אמת ... 
+ט. שער החשבון על סדר המספר בדברי חכמי האמת, 
+י. ארצות החיים ... בדברי תנ&quot;ך וחז&quot;ל ...  
+בעותק עץ חיים 5300 A 79 R נוספו בסוף 2 ד’ המתחילים: אל אצילי ישראל : בקשה לתמיכה בהוצאת שאר החלקים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2389</field>
+		<field name="revision_id">2389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">התפרסמו רק חמשת הספרים הראשונים של &quot;עשרה מאמרות&quot;-
+רשום בקטלוג הספרייה הלאומית:
+חמשת המאמרים האחרונים לא נדפסו והם: 
+ו. באר מים חיים ... באור על מאמר אדם דאצילות, 
+ז. מעין חתום ... על ספר יצירה, 
+ח. דברי אמת ... 
+ט. שער החשבון על סדר המספר בדברי חכמי האמת, 
+י. ארצות החיים ... בדברי תנ&quot;ך וחז&quot;ל ...  
+בעותק עץ חיים 5300 A 79 R נוספו בסוף 2 ד’ המתחילים: אל אצילי ישראל : בקשה לתמיכה בהוצאת שאר החלקים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">רשום בקטלוג הספרייה הלאומית:
+חמשת המאמרים האחרונים לא נדפסו והם: 
+ו. באר מים חיים ... באור על מאמר אדם דאצילות, 
+ז. מעין חתום ... על ספר יצירה, 
+ח. דברי אמת ... 
+ט. שער החשבון על סדר המספר בדברי חכמי האמת, 
+י. ארצות החיים ... בדברי תנ&quot;ך וחז&quot;ל ...  
+בעותק עץ חיים 5300 A 79 R נוספו בסוף 2 ד’ המתחילים: אל אצילי ישראל : בקשה לתמיכה בהוצאת שאר החלקים</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">חלק שני</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_planned_volumes_value">שני הכרכים כונו &quot;מחברת ראשונה&quot;, אבל לא ידוע על ספרים נוספים שיצאו תחת שם זה</field>
+		<field name="field_planned_volumes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

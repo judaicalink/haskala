@@ -1,0 +1,1468 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_secondary_sources">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_secondary_sources_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_secondary_sources_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_secondary_sources" engine="InnoDB" version="10" row_format="Dynamic" rows="112" avg_row_length="438" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:26" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 161 (field_secondary..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_secondary_sources">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Ritter 1861, S. 74-92.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Hamberger, Gelehrte Teutschland, vol. III, p. 344; vol. XI, p. 358.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">NADB</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Grab: Saul Ascher; Eichstädt: Bibliographie;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1968</field>
+		<field name="revision_id">1968</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Eichstädt, Volkmar: Bibliographie zur Geschichte der Judenfrage. 1750 bis 1848, Hamburg 1938.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Balaban (1916), 215-219.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1976</field>
+		<field name="revision_id">1976</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Ritter 1861, S. 66-69.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1978</field>
+		<field name="revision_id">1978</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Jacobson: Jüdische Trauungen;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1979</field>
+		<field name="revision_id">1979</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Gilman, Sander L.: Jewish Self-Hatred , Baltimore 1986, S.  98- 107.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1989</field>
+		<field name="revision_id">1989</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Alexander, Isaak, Einheitsgedichte, eine Uebersetzung aus dem Hebräischen,
+in: ADB 1790 , 92. Bd., 1.St., S. 212-212.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1993</field>
+		<field name="revision_id">1993</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">M. Brann, Geschichte der Gesellschaft der Brueder, Festschrift zurr Jahrhundert-Feier am 21. Maerz 1880, (Neudruck 1925).</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Bourel, Dominique: Eine Generation später: Lazarus Bendavid (1762-1832), in: Albrecht, Michael/Engel, Eva/Hinske, Norbert (Hrsg.): Moses Mendelssohn und die Kreise seiner Wirksamkeit, Tübingen 1994, S. 363-380.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Feiner 1987, Pelli 1979; Ritter 1861;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1998</field>
+		<field name="revision_id">1998</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">NDB Bd. 2, S. 514; ADB Bd. 3, S. 234-235</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Beer, Peter:  Über die Nothwendigkeit einer Sammlung von Lebensbeschreibungen gelehrter und sonst rühmlich sich auszeichnender Männer in Israel, in: Sulamith, III, 1, S. 249-252; Kestenberg-Gladstein (1969), S.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Koch, Max: Kuh (Ephraim Moses), in: Allgemeine Encyclopädie der Wissenschaften und Künste, hrsg. von Johann Samuel Ersch, Johann Gottfried Gruber, Leipzig 1818, Sect. II, Teil 40, S. 189-191.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2017</field>
+		<field name="revision_id">2017</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">היהודית בברלין' - ניתוח המיקראה המודרנית הראשונה לילדים יהודים&quot;. בתוך: כמנהג אשכנז ופולין ספר יובל לחנא שמרוק. (עורכים) ישראל ברטל, חוה טורניאנסקי ועזרא מנדלסון. ירושלים: מרכז זלמן שזר לתולדות ישראל, 207-193.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ראו: מאמרים ומחקרים על הספר (בחלון זה)</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Grab: Saul Ascher</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2029</field>
+		<field name="revision_id">2029</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Grab 1977</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2042</field>
+		<field name="revision_id">2042</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Brandeis, I.: Biographie des Dichters, in: M.  I.  Landau's hinterlassene vermischte Schriften. Nebst einer Biographie und dem Bildnis des Verfassers, Prag 1867, S. 197-200; Wurzbach, Constant von: Biographisches Lexikon des Kaiserthums Oesterreich, 1856-1923, S.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2043</field>
+		<field name="revision_id">2043</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Dansk Biografisk Lexikon, vol. IV, S. 619-620.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2050</field>
+		<field name="revision_id">2050</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Karp, Abraham J.: From the ends of the earth: Judaic treasures of the Library of Congress, New York 1991.; Göckingk, L.F.G.v.: Schreiben an den amerikanischen Präsidenten, in: Deutsches Museum, 1783, vol. I, p. 558-566.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Manfred Treml, &quot;Elkan Henle (1761-1833), ein Vorkämpfer für die Judenemanzipation&quot;, in: Manfred Treml und Wolf Weigand (Hg.), Geschichte und Kultur der Juden in Bayern, 1988, pp. 59-62.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2062</field>
+		<field name="revision_id">2062</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Ritter 1861, Kap. X.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2065</field>
+		<field name="revision_id">2065</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Besprechung in Realzeitung, Wien 1783, S. 456-459. [vgl. Eichstädt, Volkmar: Bibliographie, S. 17]. Jüdischer Plutarch 1975 - S. 88-91, führt das Buch ebenfalls an. Louis Dubin soll Kopie haben, lt. Dirk Sadowski</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2066</field>
+		<field name="revision_id">2066</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Alexander: Schriften, 1998; Meyer: Geschichte der Juden in Regensburg, 1913.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2072</field>
+		<field name="revision_id">2072</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Gutman, René: Le document fondateur du Judaïsme français : les décisions doctrinales du Grand Sanhédrin 1806-1807, Strasbourg 2000.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קרסל;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">צינברג, קרסל, קלוזנר, DJKJLH, JL
+Alain Ruiz, &quot;Auf dem Wege zur Emanzipation. Der ideologische Werdegang des Aufgeklaerten 'Gelehrten juedischer Nation' H.S. Pappenheimer (1766-1832) bis zur Franzoesischen Revolution&quot;, in Walter Grab (ed.) Deutsche Aufklaerung und Judenemanzipation, Tel Avi 1979, pp. 183-222.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קסטנברג-גלדשטיין, יהודים בארצות בוהמיה:
+Ruth Kestenberg-Gladstein, Neuere Geschichte der Juden in den böhmischen Ländern, I, Tübingen 1969
+[[אצל קסטנברג יש הפניה למאמר שמזכיר את הספר הנדון:
+Nathan Gruen, Die Entdeckung Amerikas und die Juden, Beitraege zur Geschichte der Juden in Prag, Jung Juda XIV, 1913, S. 280]]</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2089</field>
+		<field name="revision_id">2089</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ויינברג, הקדמה</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קוגמן 2000</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קוגמן 2000; קלוזנר 1930;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סמט, ר' שאול ברלין: משה סמט, &quot;ר' שאול ברלין וכתביו&quot;, קרית ספר  מ&quot;ג (תשכ&quot;ח), עמ' 429 - 441.
+
+פלאי, כתב יושר: 
+Moshe Pelli, &quot;Saul Berlin's Ktav Yosher, The Beginning of Satire in Modern Hebrew Literature of the Haskalah in Germany&quot;, YBLBI, XX (1975), pp. 109 – 127.
+
+פרידלנדר, הסטירה:
+יהודה פרידלנדר, &quot;שאול לוין-ברלין&quot;, פרקים בסאטירה העברית, א', תל אביב בש&quot;ם, עמ' 61 - 119.
+
+דוסצ'ינסקי, רבנות לונדון:
+C. Duschinsky, The Rabbinate of the Great Synagogue, London, From 1756 - 1842, London 1921, repr. 1971.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2127</field>
+		<field name="revision_id">2127</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">דובין, טרייסט וברלין:
+Lois C. Dubin, &quot;Trieste and Berlin: The Italian Role in the Cultural Politics of the Haskalah&quot;, Toward Modernity, The European Jewish Model, ed. Jacob Katz, New Brunswick-Oxford 1987, pp. 189-224.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2128</field>
+		<field name="revision_id">2128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">דובין, טרייסט וברלין:
+Lois C. Dubin, &quot;Trieste and Berlin: The Italian Role in the Cultural Politics of the Haskalah&quot;, Toward Modernity, The European Jewish Model, ed. Jacob Katz, New Brunswick-Oxford 1987, pp. 189-224.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">דן מכמן, &quot;דוד פרידריכספלד - משכיל ולוחם אמאנציפאציה&quot;, מחקרים על תולדות יהדות הולנד, 1 (תשל&quot;ה), עמ' 151 - 199.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">דן מכמן, &quot;דוד פרידריכספלד - משכיל ולוחם אמאנציפאציה&quot;, מחקרים על תולדות יהדות הולנד, 1 (תשל&quot;ה), עמ' 151 - 199.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">עותק בספריית בר אילן</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Ritter 1861, S. 61-62; Schulte 2002, S. 92-99</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">הספריה הלאומית</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פיליפסון, ביוגרפיות:
+Ph. Philippson, Biographische Skizzen, 1864-1866
+
+Antje Marquardt, Das jüdische Wesen im Dessau von seinen Anfängen bis zum Beginn des 20. Jahrhunderts, Diplomarbeit im StudiengangWissenschaftlisches Bibliothekswesen an der Hochschule für Technik, Wirtschaft und Kultur Leipzig, Dessau 1994.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קרסל 1965, א', 378-379</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">עותק בתל אביב (מהלמן).</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">IUL</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">נעמי זהר, עוללות מבציר, השכלה-חסידות-מתנגדות ביצירות נשכחות, ירושלים תשמ&quot;ח</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סנדלר, הביאור לתורה:
+פרץ סנדלר, הביאור לתורה של משה מנדלסון וסיעתו, התהוותו והשפעתו, ירושלים תשמ&quot;ד (מהדורה שניה).</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">יוסף מכמן, יהדות הולנד:
+Joseph Michman, Dutch Jewry During the Emancipation Period, 1787-1815, Amsterdam 1995.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2192</field>
+		<field name="revision_id">2192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Ruderman, David. 1987. “Science, Medicine and Jewish Culture in Early Modern Europe”. In: Spiegel Lectures in Europe Jewish History 7, (ed.) P. Lloyd Gartner. Tel Aviv University.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2200</field>
+		<field name="revision_id">2200</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קרסל;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פיליפסון, ביוגרפיות.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קוגמן 2000;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2221</field>
+		<field name="revision_id">2221</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">לחובר, תולדות הספרות העברית החדשה, א'.
+
+פאהן, פרקי השכלה, ב'.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2231</field>
+		<field name="revision_id">2231</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">צינברג, 61</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ורסס, המחזה מלוכת שאול:
+ורסס, שמואל, &quot;מחילופי לשון לחילופי משמעות: המחזה 'מלוכת שאול' בתרגומו ליידיש&quot;, חוליות, 6 (סתיו 2000), עמ' 55 - 78
+
+בן-ישי, ספר שירים:
+א.ז. בן-ישי, &quot;ספר שירים אבוד של יוסף האפרתי&quot;, בחינות 11 (תשי&quot;ז), עמ' 59 - 71.
+
+שקד, מבוא:
+גרשון שקד, &quot;מבוא&quot;, בתוך: יוסף האפרתי, מלוכת שאול, ההדיר וצירף מבוא והערות גרשון שקד, ירושלים תשכ&quot;ט, עמ' 7 - 34.
+
+שביט, בעלות השחר:
+עוזי שביט, בעלות השחר, שירת ההשכלה: מפגש עם המודרניות, תל אביב 1996.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">DJKJLH</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">אופק 1985 , DJKJLH</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ורסס תש&quot;ן ; פלאי 1988</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ורסס תש&quot;ן ; פלאי 1988</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2247</field>
+		<field name="revision_id">2247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ורסס תש&quot;ן ; פלאי 1988</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;רפל, ביבליוגרפיה של ספרי לימוד: דב רפל, ביבליוגרפיה של ספרי לימוד........&lt;/p&gt;
+</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2250</field>
+		<field name="revision_id">2250</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">אברהם יערי, ביבליוגרפיה של הגדות פסח, ירושלים תשכ&quot;א.
+יצחק יודלוב, אוצר ההגדות, ביבליוגרפיה של הגדות פסח מראשית הדפוס העברי עד שנת תש&quot;ך, ירושלים תשנ&quot;ז.
+Yosef Hayim Yerushalmi, Haggadah and History, Philadelphia 1975 (ירושלמי, הגדה והיסטוריה).</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2252</field>
+		<field name="revision_id">2252</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קלוזנר; קרסל; Rezler-Bersohn;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פיינר, מהפכת הנאורות</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Ruderman, David. 1987. “Science, Medicine and Jewish Culture in Early Modern Europe”. In: Spiegel Lectures in Europe Jewish History 7, (ed.) P. Lloyd Gartner. Tel Aviv University</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2265</field>
+		<field name="revision_id">2265</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קלוזנר; קרסל</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קסטנברג-גלדשטיין, היהודים בארצות בוהמיה.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2274</field>
+		<field name="revision_id">2274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Fishman 1987</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">PELLI, NAPHTALI, THE AGE OF HASKALAH, PP 113 - 130
+
+ברויאר, נפתלי הרץ וייזל:
+Eduard Breuer, Naphtali Herz Wessely and the Cultural Dislocations of an Eighteenth-Century Maskil,
+in Feiner and Sorkin, New Perspectives, pp. 27 - 47.
+
+בור, ז'אנר המוסר:
+Harris Bor, The Transformation of the Musar Genre, in Feiner and Sorkin, New Perspectives, pp. 48 - 63.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ויינברג, רשימת מילים:
+Werner Weinberg, &quot;A Word List for Teaching Eighteenth-Century Jews Some Fine Points of High German&quot;, LBIYB XXIX, pp. 277 - 293.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ויינברג, רשימת מילים:
+Werner Weinberg, &quot;A Word List for Teaching Eighteenth-Century Jews Some Fine Points of High German&quot;, LBIYB XXIX, pp. 277 - 293.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פישמן, יהודי שקלוב</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קסטנברג-גלדשטיין, יהודים בארצות בוהמיה, עמ' 162 והלאה.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">לאומית R 8= 25 V 14310</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פיינר, יהודה הורוויץ.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סמט, ר' שאול ברלין: משה סמט, &quot;ר' שאול ברלין וכתביו&quot;, קרית ספר  מ&quot;ג (תשכ&quot;ח), עמ' 429 - 441.
+
+פלאי, כתב יושר: 
+Moshe Pelli, &quot;Saul Berlin's Ktav Yosher, The Beginning of Satire in Modern Hebrew Literature of the Haskalah in Germany&quot;, YBLBI, XX (1975), pp. 109 – 127.
+
+פרידלנדר, הסטירה:
+יהודה פרידלנדר, &quot;שאול לוין-ברלין&quot;, פרקים בסאטירה העברית, א', תל אביב בש&quot;ם, עמ' 61 - 119.
+
+דוסצ'ינסקי, רבנות לונדון:
+C. Duschinsky, The Rabbinate of the Great Synagogue, London, From 1756 - 1842, London 1921, repr. 1971.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">עותק בבר אילן</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קלוזנר; קרסל</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Fishman, The Jews of Shklov, p. 73 ff</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סורקין, יוסף וולף (David Sorkin, &quot;Preacher, Teacher, Publicist: Joseph Wolf&quot;, in F. Malino &amp; D. Sorkin, 	From East and West, Jews in a Changing Europe 1750 - 1870, pp. 107 - 125).
+פיליפסון, ביוגרפיות (Ph. Philippson, Biographische Skizzen, 1864-1866).
+קרסל א', עמ' 694.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סמט, ר' שאול ברלין:
+משה סמט, &quot;ר' שאול ברלין וכתביו&quot;, קרית ספר מ&quot;ג (תשכ&quot;ח), עמ' 429 - 441.
+
+סמט, בשמים ראש:
+משה סמט, &quot;'בשמים ראש' של ר' שאול ברלין, ביבליוגרפיה היסטוריוגרפיה ואידיאולוגיה, קרית ספר מ&quot;ח (תשל&quot;ג), עמ' 509 - 523
+
+פלאי, הריפורמה הדתית:
+משה פלאי, הריפורמה הדתית של הררב &quot;החרדי&quot; שאול ברלין, 
+HUCA 43, 1971, 
+עמ' א - כג.
+
+פיינר, מהפכת הנאורות, עמ' 307 - 318.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פרץ סנדלר, הביאור לתורה של משה מנדלסון וסיעתו, התהוותו והשפעתו, ירושלים תש&quot;א.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2348</field>
+		<field name="revision_id">2348</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פרץ סנדלר, הביאור לתורה של משה מנדלסון וסיעתו, התהוותו והשפעתו, ירושלים תש&quot;א.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2349</field>
+		<field name="revision_id">2349</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פרץ סנדלר, הביאור לתורה של משה מנדלסון וסיעתו, התהוותו והשפעתו, ירושלים תש&quot;א.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2351</field>
+		<field name="revision_id">2351</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פרץ סנדלר, הביאור לתורה של משה מנדלסון וסיעתו, התהוותו והשפעתו, ירושלים תש&quot;א.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2352</field>
+		<field name="revision_id">2352</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Leopold Löwenstein, Zur Geschichte der Juden in Fürth, 3 Teile in 1 Band, Hildesheim-NY 1974. Teil 2, p. 138-9</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2353</field>
+		<field name="revision_id">2353</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">R 8= 35 V 4235</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">מידע החוגו של אופנהיים ומורו וואלף בוסקוויץ נמצא אצל:
+
+Silber, Michael. 1987. “The Historical Experience of German Jewry and Its Impact on Haskalah and Reform in Hungary”. In: Toward Modernity. New Brunswich, NJ: Transaction Book, 107-157.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Fishman 1987;</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">זהר, עוללות מבציר</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">צינברג, תולדות ספרות ישראל, ג'</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">חנא שמרוק, &quot;משה מרקוזה מסלונים ומקור ספרו 'עזר ישראל', ספרות יידיש בפולין, ירושלים תשמ&quot;א, עמ' 184-203.
+ושם הפניות למחקרים נוספים.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סמט, ר' שאול ברלין:
+
+משה סמט, &quot;ר' שאול ברלין וכתביו&quot;, קרית ספר  מ&quot;ג (תשכ&quot;ח), עמ' 429 - 441.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">הלאומית העברית S64A1632</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Fishman 1987</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">סנדלר, הביאור לתורה:
+פרץ סנדלר, הביאור לתורה של משה מנדלסון וסיעתו, התהוותו והשפעתו, ירושלים תשמ&quot;ד, מהדורה שניה.
+ויינברג, תרגומו של מנדלסון:
+Werner Weinberg, &quot;Language Questions Relating to Moses Mendelssohn's Pentateuch Translation (In Commemoration of the 200th Anniversary of the Biur), HUCA 55 (1984), pp. 197 - 242.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">צויפ, ספרי דקדוק:
+Irene E. Zwiep, &quot;Imagined Speech Communities: Western Ashkenazi Multilingualism as Reflected in Eighteenth-Century Grammars of Hebrew&quot;, in Shlomo Berger et al, eds., Speaking Jewish – Jewish Speak, Multilingualism in Western Ashkenazic Culture, Leuven 2003 (Studia Rosenthaliana 36), pp. 77 – 117, esp. 105 – 111.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קסטנברג-גלדשטיין, יהודים בארצות בוהמיה.
+
+פיינר, מהפכת הנאורות.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">הרצברג, הנאורות הצרפתית:
+Arthur Hertzberg, The French Enlightenment and the Jews, NY &amp; London 1968.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2398</field>
+		<field name="revision_id">2398</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">עותק בבר אילן</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">דן מכמן, &quot;דוד פרידריכספלד - משכיל ולוחם אמאנציפאציה&quot;, מחקרים על תולדות יהדות הולנד, 1 (תשל&quot;ה), עמ' 151 - 199.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">בן-מנחם, נפתלי. תשכ&quot;ט. 'קול שחל, שירי אפרים לוצאטו, אזמיר [ברלין] תק&quot;ן'. קרית ספר, 562-561.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Fishman 1987</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">קלונזנר 1930; קרסל 1965; קוגמן 2000</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">ורסס, השכלה ושבתאות:
+שמואל ורסס, השכלה ושבתאות, תולדותיו של מאבק, ירושלים תשמ&quot;ח.
+
+קסטנברג-גלדשטיין, מי היה מחבר...:
+רות קסטנברג-גלדשטיין, מי היה מחבר ה&quot;שיחה בין שנת תק&quot;ס ובין שנת תקס&quot;א&quot;?, קרית ספר מ (תשכ&quot;ה), עמ' 569 - 570.
+
+קסטנברג-גלדשטיין, היהודים בארצות בוהמיה.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">M. Steinschneider, Die Handschriften-Verzeichnisse der Koeniglichen Bibliothek zu Berlin ... hebraeischen Handschriften, Berlin, 1878-1897, no. 255/5.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">Kennecke (2001)</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פיינר, מהפכת הנאורות, עמ' 368 והלאה.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2466</field>
+		<field name="revision_id">2466</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">פיינר, מהפכת הנאורות, עמ 275, 282-288.</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">הלאומית העברית S 70 A 66</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2477</field>
+		<field name="revision_id">2477</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_secondary_sources_value">עותק בבר אילן</field>
+		<field name="field_secondary_sources_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

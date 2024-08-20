@@ -1,0 +1,1702 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_edition_changes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_edition_changes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_edition_changes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_edition_changes" engine="InnoDB" version="10" row_format="Dynamic" rows="138" avg_row_length="356" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:58" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 41 (field_edition_changes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_edition_changes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2507</field>
+		<field name="revision_id">2507</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">2. verbesserte und vermehrte Auflage [Voß und Sohn], 60 S.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2513</field>
+		<field name="revision_id">2513</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">החיבור הודפס מחדש ב- 1808 בכתב העת
+Sulamith</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2515</field>
+		<field name="revision_id">2515</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">אנטון שמיד, משופרת ומורחבת</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2516</field>
+		<field name="revision_id">2516</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">הרבישע ערבן?</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2517</field>
+		<field name="revision_id">2517</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">אנטון שמיד, משופרת ומורחבת</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2526</field>
+		<field name="revision_id">2526</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת יונה ווילהיימר</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2527</field>
+		<field name="revision_id">2527</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בעריכת דוד סלוצקי וי&quot;ד טומפאווסקי</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2532</field>
+		<field name="revision_id">2532</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2533</field>
+		<field name="revision_id">2533</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2534</field>
+		<field name="revision_id">2534</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2535</field>
+		<field name="revision_id">2535</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2536</field>
+		<field name="revision_id">2536</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2537</field>
+		<field name="revision_id">2537</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(עם תרגום לאיטלקית של ליאון ר' ראמאניני)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2538</field>
+		<field name="revision_id">2538</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">א'+ב', נדפס פעם שביעית</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2539</field>
+		<field name="revision_id">2539</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">א'+ב', נדפס פעם שמינית</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2540</field>
+		<field name="revision_id">2540</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">א'+ב', עברית וגרמנית. תרגום: מענדל בר&quot;י שטערן</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2541</field>
+		<field name="revision_id">2541</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2542</field>
+		<field name="revision_id">2542</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[גרמנית באותיות עבריות. שכתוב והרחבה  של ישראל (איזידאר) בוש]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2543</field>
+		<field name="revision_id">2543</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[עברית, יידיש וגרמנית. שכתוב והרחבה ישראל (איזידאר) בוש]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2544</field>
+		<field name="revision_id">2544</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[שכתוב והרחבה ישראל 
+(איזידאר) בוש. כולל חלק מלימודי המישרים]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2545</field>
+		<field name="revision_id">2545</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עם תרגום לאיטלקית</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2546</field>
+		<field name="revision_id">2546</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(עברית ורוסית. תרגום יעקב בן ישראל פאפירנא)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2547</field>
+		<field name="revision_id">2547</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(עברית ורוסית. תרגום יעקב בן ישראל פאפירנא)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2548</field>
+		<field name="revision_id">2548</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עם תרגום חלקי לגרמנית באותיות עבריות של מנדל בן יצחק שטרן</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2549</field>
+		<field name="revision_id">2549</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(תרגום יעקב בן ישראל פאפירנא. הוצאה רביעית עם תיקונים והוספות רבות)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2550</field>
+		<field name="revision_id">2550</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2551</field>
+		<field name="revision_id">2551</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(תרגום יעקב בן ישראל פאפירנא. הוצאה רביעית עם תיקונים והוספות רבות)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2552</field>
+		<field name="revision_id">2552</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2553</field>
+		<field name="revision_id">2553</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2554</field>
+		<field name="revision_id">2554</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2555</field>
+		<field name="revision_id">2555</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2556</field>
+		<field name="revision_id">2556</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2557</field>
+		<field name="revision_id">2557</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב', נדפס פעם שביעית)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2558</field>
+		<field name="revision_id">2558</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2559</field>
+		<field name="revision_id">2559</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(א'+ב', עברית וגרמנית. תרגום: מענדל בר&quot;י שטערן)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2560</field>
+		<field name="revision_id">2560</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2561</field>
+		<field name="revision_id">2561</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[שכתוב והרחבה ישראל (איזידאר) בוש. כולל חלק מלימודי המישרים]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2562</field>
+		<field name="revision_id">2562</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(א'+ב', עם תרגום חלקי לגרמנית באותיות פאפירנא. הוצאה רביעית עם תיקונים והוספות רבות)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2563</field>
+		<field name="revision_id">2563</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(חלק א'+ב')</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2569</field>
+		<field name="revision_id">2569</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">במהדורת וינה צורף גם מאמר חקור דין.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2570</field>
+		<field name="revision_id">2570</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת ורשה כוללת את תולדות המחבר.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2579</field>
+		<field name="revision_id">2579</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בין המהדורות הנוספות של ספר בן סירא</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2585</field>
+		<field name="revision_id">2585</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">שמואל ויודא בון</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2588</field>
+		<field name="revision_id">2588</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">verbessert und mit einer Einleitung versehen von R.J. Fürstenthal</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2593</field>
+		<field name="revision_id">2593</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בתוך: Declinationstabellen der hebräischen Zeitwörter</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2597</field>
+		<field name="revision_id">2597</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יצא עם: מסלול לשון עבר, בגרמנית</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2601</field>
+		<field name="revision_id">2601</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">ראו הערה</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2620</field>
+		<field name="revision_id">2620</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">לפי קלוזנר, א', עמ' 315, המהדורה השלישית יצאה בהשמטות של הצנזורה הרוסית.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2623</field>
+		<field name="revision_id">2623</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עברית ותרגום אנגלי</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2629</field>
+		<field name="revision_id">2629</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[יודלוב, עמ' 29, מציין כי היו למעשה 3 הדפסות שונות בפיורדא באותה שנה] [יערי מוסיף כאן: לא קיימת מהדורת ברלין, תקמ&quot;ו, כפי שרשום אצל ווינער, מס' 154]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2632</field>
+		<field name="revision_id">2632</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[לפי יודלוב: 3 הדפסות]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2636</field>
+		<field name="revision_id">2636</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[יודלוב מציין 2 מהדורות שונות, אצל שתי הוצאות לאור שונות]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2637</field>
+		<field name="revision_id">2637</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[18 (!) הדפסות]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2639</field>
+		<field name="revision_id">2639</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[שלוש הדפסות]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2643</field>
+		<field name="revision_id">2643</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בסוף הכותרת הארוכה נכתב: &quot;עם תרגום אשכנזי מן ר' יואל ברי&quot;ל ור' דוד פרידלענדר...&quot;, אף שלא היה לפרידלנדר כל חלק בתרגום</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2649</field>
+		<field name="revision_id">2649</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">[2 הדפסות]</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2655</field>
+		<field name="revision_id">2655</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(ש' שפרכר)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2656</field>
+		<field name="revision_id">2656</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יצחק סטנוב תקנ&quot;ג (ראו בהרחבה באצבע כאן)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2657</field>
+		<field name="revision_id">2657</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">גרשון בן אליעזר (הוראדני, תקנ&quot;ו)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2659</field>
+		<field name="revision_id">2659</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה מתוקנת</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2670</field>
+		<field name="revision_id">2670</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">במהדורת 2002, הספר הופך לחלק ממדף הספרים הרבני. (ראו אצבע בחלון זה.)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2672</field>
+		<field name="revision_id">2672</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Samson Hamburger, Joseph Bamberger,Samson Hamburger, Joseph Bamberger</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2674</field>
+		<field name="revision_id">2674</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(יש עותק של מהדורה זו באוניברסיטת תל אביב: מהלמן, 492.45 סטנ)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2688</field>
+		<field name="revision_id">2688</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: חברת חינוך נערים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2700</field>
+		<field name="revision_id">2700</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בחלק מן המהדורות המאוחרות (תר&quot;א, למברג תר&quot;ך) נוסף בסוף הספר &quot;סדר לוח הבנינים עם משקלי השמות&quot;, שהמחבר הוציא כספר נפרד.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2707</field>
+		<field name="revision_id">2707</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בחלק מן המהדורות המאוחרות (תר&quot;א, למברג תר&quot;ך) נוסף בסוף הספר &quot;סדר לוח הבנינים עם משקלי השמות&quot;, שהמחבר הוציא כספר נפרד.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2709</field>
+		<field name="revision_id">2709</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">לפני &quot;ספר מסלול&quot;.
+במהדורות אחרות (וילנא, תרמ&quot;ג; וילנא, תרנ&quot;ב) נוספו פרקים מאת משה בן-דוד הכהן רייכערסאהן, והם: &quot;מסילת הנגינות או דרך פיסקי הטעמים&quot;, וכן אוסף של הערות תחת השם &quot;מאיר נתיבות&quot;.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2711</field>
+		<field name="revision_id">2711</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">לפני &quot;ספר מסלול&quot;.
+במהדורות אחרות (וילנא, תרמ&quot;ג; וילנא, תרנ&quot;ב) נוספו פרקים מאת משה בן-דוד הכהן רייכערסאהן, והם: &quot;מסילת הנגינות או דרך פיסקי הטעמים&quot;, וכן אוסף של הערות תחת השם &quot;מאיר נתיבות&quot;.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2713</field>
+		<field name="revision_id">2713</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: A. Schmidt</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2714</field>
+		<field name="revision_id">2714</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: Elsenwanger</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2715</field>
+		<field name="revision_id">2715</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: A. Schmidt</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2716</field>
+		<field name="revision_id">2716</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: A. Schmidt</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2717</field>
+		<field name="revision_id">2717</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: A. Schmidt</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2718</field>
+		<field name="revision_id">2718</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: Moshe Landau</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2719</field>
+		<field name="revision_id">2719</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: A. Schmidt</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2720</field>
+		<field name="revision_id">2720</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: Franz Edlen von Schmid</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2721</field>
+		<field name="revision_id">2721</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: Josef Ruben Man Re'em</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2722</field>
+		<field name="revision_id">2722</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: S. Freund</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2723</field>
+		<field name="revision_id">2723</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: A. della Torre</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2724</field>
+		<field name="revision_id">2724</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: M.E. Lowy's Sohn</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2725</field>
+		<field name="revision_id">2725</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: Salomon</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2728</field>
+		<field name="revision_id">2728</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">Publisher: Jüdische Verlagsanstalt Berlin (4 Auflagen)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2731</field>
+		<field name="revision_id">2731</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">ממהדורת ברלין תק&quot;ע והלאה נכללו 120 אגרות (ולא 80), כמתוכנן במקור על ידי המחבר</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2741</field>
+		<field name="revision_id">2741</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עם תוספות של הרופא מוורשה משה שטודנצדקי
+
+Publisher: Josef Schnazder</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2744</field>
+		<field name="revision_id">2744</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">(דפוס צילום של מהדורת אמסטרדם, תקט&quot;ז)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2748</field>
+		<field name="revision_id">2748</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת אמסטרדם תק&quot;ף נקראת &quot;קיצור עמודי הלשון&quot;, ושמואל בן עזריאל מולדר מופיע כמעבד הספר</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2751</field>
+		<field name="revision_id">2751</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">דפוס צילום</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2752</field>
+		<field name="revision_id">2752</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">דפוס H אריה ליב בן שנייאור פייבוש</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2760</field>
+		<field name="revision_id">2760</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת פראג תקס&quot;ט (-תקע&quot;א) כוללת את כל שירי תפארת, בארבעה כרכים.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2761</field>
+		<field name="revision_id">2761</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשני כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2762</field>
+		<field name="revision_id">2762</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשלושה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2765</field>
+		<field name="revision_id">2765</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת פראג תקס&quot;ט (-תקע&quot;א) כוללת את כל שירי תפארת, בארבעה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2766</field>
+		<field name="revision_id">2766</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשני כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2767</field>
+		<field name="revision_id">2767</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשלושה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2770</field>
+		<field name="revision_id">2770</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת פראג תקס&quot;ט (-תקע&quot;א) כוללת את כל שירי תפארת, בארבעה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2771</field>
+		<field name="revision_id">2771</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשני כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2772</field>
+		<field name="revision_id">2772</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשלושה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2775</field>
+		<field name="revision_id">2775</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורת פראג תקס&quot;ט (-תקע&quot;א) כוללת את כל שירי תפארת, בארבעה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2776</field>
+		<field name="revision_id">2776</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשני כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2777</field>
+		<field name="revision_id">2777</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">בשלושה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2780</field>
+		<field name="revision_id">2780</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">לפי וינוגרד:
+מהדורת פראג תקס&quot;ט (-תקע&quot;א) כוללת את כל שירי תפארת, בארבעה כרכים.</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2781</field>
+		<field name="revision_id">2781</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">ורשא 1840 - בשני כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2782</field>
+		<field name="revision_id">2782</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">למברג 1844 - בשלושה כרכים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2784</field>
+		<field name="revision_id">2784</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עם תת-כותרת בגרמנית ובצרפתית</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2788</field>
+		<field name="revision_id">2788</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">המגיה הוא לווינזון, שלמה שצירף שם הקדמה</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2789</field>
+		<field name="revision_id">2789</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">שינויים, שיפורים ותוספות רבות של שמואל דעטמאלד</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2790</field>
+		<field name="revision_id">2790</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עריכה מחדש מאת  וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2791</field>
+		<field name="revision_id">2791</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עריכה מחדש מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג. יצא יחד עם ספר נוסף של וואלף מאיר: שפתי ישנים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2792</field>
+		<field name="revision_id">2792</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה שניה ומתוקנת מאת  וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2793</field>
+		<field name="revision_id">2793</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה שלישית ומתוקנת מאת  וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2794</field>
+		<field name="revision_id">2794</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה רביעית ומתוקנת מאת  וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2795</field>
+		<field name="revision_id">2795</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מאת  וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2798</field>
+		<field name="revision_id">2798</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">המגיה הוא לווינזון, שלמה שצירף שם הקדמה</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2799</field>
+		<field name="revision_id">2799</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">שינויים, שיפורים ותוספות רבות של שמואל דעטמאלד</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2800</field>
+		<field name="revision_id">2800</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עריכה מחדש מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2801</field>
+		<field name="revision_id">2801</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עריכה מחדש מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג. יצא יחד עם ספר נוסף של וואלף מאיר: שפתי ישנים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2802</field>
+		<field name="revision_id">2802</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה שניה ומתוקנת מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2803</field>
+		<field name="revision_id">2803</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה שלישית ומתוקנת מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2804</field>
+		<field name="revision_id">2804</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה רביעית ומתוקנת מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2805</field>
+		<field name="revision_id">2805</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2808</field>
+		<field name="revision_id">2808</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">המגיה הוא לווינזון, שלמה שצירף שם הקדמה</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2809</field>
+		<field name="revision_id">2809</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">שינויים, שיפורים ותוספות רבות של שמואל דעטמאלד</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2810</field>
+		<field name="revision_id">2810</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עריכה מחדש מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2811</field>
+		<field name="revision_id">2811</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">עריכה מחדש מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג. יצא יחד עם ספר נוסף של וואלף מאיר: שפתי ישנים</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2812</field>
+		<field name="revision_id">2812</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה שניה ומתוקנת מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2813</field>
+		<field name="revision_id">2813</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה שלישית ומתוקנת מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2814</field>
+		<field name="revision_id">2814</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מהדורה רביעית ומתוקנת מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2815</field>
+		<field name="revision_id">2815</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">מאת וואלף מאיר, מורה לעברית ולתורה בביה&quot;ס היהודי-גרמני בפראג</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2817</field>
+		<field name="revision_id">2817</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">נדפס שנית (בהרבה תוספות ותיקונים ובאורים והרחבת הלשון בתקון ידי המחבר)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2818</field>
+		<field name="revision_id">2818</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">תוספות ותיקונים ובאורים והרחבת הלשון בתקון ידי המחבר</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2819</field>
+		<field name="revision_id">2819</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">תוספות ותיקונים ובאורים והרחבת הלשון בתקון ידי המחבר</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2820</field>
+		<field name="revision_id">2820</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">תוספות ותיקונים ובאורים והרחבת הלשון בתקון ידי המחבר</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2824</field>
+		<field name="revision_id">2824</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יחד עם הספר &quot;ספר שערי נעימה&quot; (על טעמי א'יוב, מ'שלי, ת'הלים) שכתב שלמה חלם (בערך 1715-1781), עם הערות של שלמה מדובנא</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2827</field>
+		<field name="revision_id">2827</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יחד עם הספר &quot;ספר שערי נעימה&quot; (על טעמי א'יוב, מ'שלי, ת'הלים) שכתב שלמה חלם (בערך 1715-1781), עם הערות של שלמה מדובנא וגם נוסף עליו ... &quot;יתרון לאדם&quot; מאת אד&quot;ם הכהן בן-חיים לעבענזאהן (לבנזון, אברהם דב)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2830</field>
+		<field name="revision_id">2830</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יחד עם הספר &quot;ספר שערי נעימה&quot; (על טעמי א'יוב, מ'שלי, ת'הלים) שכתב שלמה חלם (בערך 1715-1781), עם הערות של שלמה מדובנא וגם נוסף עליו ... &quot;יתרון לאדם&quot; מאת אד&quot;ם הכהן בן-חיים לעבענזאהן (בנזון, אברהם דב)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2831</field>
+		<field name="revision_id">2831</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יחד עם הספר &quot;ספר שערי נעימה&quot; (על טעמי א'יוב, מ'שלי, ת'הלים) שכתב שלמה חלם (בערך 1715-1781), עם הערות של שלמה מדובנא וגם נוסף עליו ... &quot;יתרון לאדם&quot; מאת אד&quot;ם הכהן בן-חיים לעבענזאהן (לבנזון, אברהם דב)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2832</field>
+		<field name="revision_id">2832</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יחד עם הספר &quot;ספר שערי נעימה&quot; (על טעמי א'יוב, מ'שלי, ת'הלים) שכתב שלמה חלם (בערך 1715-1781), עם הערות של שלמה מדובנא</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2833</field>
+		<field name="revision_id">2833</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_changes_value">יחד עם הספר &quot;ספר שערי נעימה&quot; (על טעמי א'יוב, מ'שלי, ת'הלים) שכתב שלמה חלם (בערך 1715-1781), עם הערות של שלמה מדובנא &quot;יתרון לאדם&quot; ו&quot;חקר לשון אדם&quot; ו&quot;שני לוחות העדות&quot; מאת אד&quot;ם הכהן בן-חיים לעבענזאהן (לבנזון, אברהם דב)</field>
+		<field name="field_edition_changes_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_translation_city">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_translation_city_tid" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_translation_city" engine="InnoDB" version="10" row_format="Dynamic" rows="8" avg_row_length="2048" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:28" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 189 (field_translation..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_translation_city">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2489</field>
+		<field name="revision_id">2489</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">273</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2490</field>
+		<field name="revision_id">2490</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">273</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2491</field>
+		<field name="revision_id">2491</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">276</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2492</field>
+		<field name="revision_id">2492</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">78</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2495</field>
+		<field name="revision_id">2495</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">14</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2496</field>
+		<field name="revision_id">2496</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">31</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2500</field>
+		<field name="revision_id">2500</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">41</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2506</field>
+		<field name="revision_id">2506</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_city_tid">273</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

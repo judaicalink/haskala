@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_original_publication_year">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_original_publication_year_value" type="varchar(255)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_original_publication_year_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_original_publication_year" engine="InnoDB" version="10" row_format="Dynamic" rows="11" avg_row_length="1489" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:22" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 102 (field_original..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_original_publication_year">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1958</field>
+		<field name="revision_id">1958</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1728</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1797</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1998</field>
+		<field name="revision_id">1998</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1806</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1789</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2072</field>
+		<field name="revision_id">2072</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1806</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">הטקסט נכתב במאה ה- 12, תקופת חייו של הרמב&quot;ם.</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">לפי וייזל, הטקסט שהוא תרגם  הודפס ב- Eichhorns Allgemeine Bibliothek der biblischen Litteratur. 2ten Bandes 4tes Stück, &quot;בחלק שלא יצא עדיין לאור&quot; (עמ' ח').</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2231</field>
+		<field name="revision_id">2231</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1788</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1781</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">תקנא</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_publication_year_value">1778</field>
+		<field name="field_original_publication_year_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

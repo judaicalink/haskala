@@ -1,0 +1,2946 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_preface_title">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_preface_title_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_preface_title_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_preface_title" engine="InnoDB" version="10" row_format="Dynamic" rows="242" avg_row_length="338" data_length="81920" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:05" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 124 (field_preface_title)" />
+	</table_structure>
+
+	<table_data name="field_data_field_preface_title">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5373</field>
+		<field name="revision_id">5373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5374</field>
+		<field name="revision_id">5374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5375</field>
+		<field name="revision_id">5375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5376</field>
+		<field name="revision_id">5376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5377</field>
+		<field name="revision_id">5377</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Preface</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5378</field>
+		<field name="revision_id">5378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Preface</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5379</field>
+		<field name="revision_id">5379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5380</field>
+		<field name="revision_id">5380</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5381</field>
+		<field name="revision_id">5381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5382</field>
+		<field name="revision_id">5382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5383</field>
+		<field name="revision_id">5383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede des Verfassers zur teutschen Ausgabe der Moseide,Vorrede nach dem Hebräischen</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5384</field>
+		<field name="revision_id">5384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorbericht</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5385</field>
+		<field name="revision_id">5385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5386</field>
+		<field name="revision_id">5386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5387</field>
+		<field name="revision_id">5387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorwort</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5388</field>
+		<field name="revision_id">5388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5389</field>
+		<field name="revision_id">5389</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5390</field>
+		<field name="revision_id">5390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5391</field>
+		<field name="revision_id">5391</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5392</field>
+		<field name="revision_id">5392</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede: בהקדמה מתאר בוק את מטרות הספר וקהל היעד שלו.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5393</field>
+		<field name="revision_id">5393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Statt einer Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5394</field>
+		<field name="revision_id">5394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Preface</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5395</field>
+		<field name="revision_id">5395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&lt;p&gt;Vorbericht&lt;/p&gt;
+</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5396</field>
+		<field name="revision_id">5396</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5397</field>
+		<field name="revision_id">5397</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחה / Eingang</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5398</field>
+		<field name="revision_id">5398</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5399</field>
+		<field name="revision_id">5399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorbericht des Herausgebers</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5400</field>
+		<field name="revision_id">5400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5401</field>
+		<field name="revision_id">5401</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5402</field>
+		<field name="revision_id">5402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5403</field>
+		<field name="revision_id">5403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Nachricht</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5404</field>
+		<field name="revision_id">5404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Moses Mendelsohn an Isak Tr.--n</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5405</field>
+		<field name="revision_id">5405</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorwort</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5406</field>
+		<field name="revision_id">5406</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorerinnerung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5407</field>
+		<field name="revision_id">5407</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5408</field>
+		<field name="revision_id">5408</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Werthester Leser</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5409</field>
+		<field name="revision_id">5409</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5410</field>
+		<field name="revision_id">5410</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5411</field>
+		<field name="revision_id">5411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorbericht</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5414</field>
+		<field name="revision_id">5414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דברי המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5417</field>
+		<field name="revision_id">5417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5418</field>
+		<field name="revision_id">5418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת אדר היקר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5419</field>
+		<field name="revision_id">5419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה קטנה מן המביא דברי אלה לבית הדפוס</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5421</field>
+		<field name="revision_id">5421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">ספורי ארץ הקדושה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5422</field>
+		<field name="revision_id">5422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot; עמ' [9-3]: בן-זאב מספר את קורות חייו בעיירה בפולין, הנישואין שלו בגיל שלוש עשרה, ועל המשיכה שלו בהסתר לספרים עבריים. הוא נדד מערבה בשל קשיים ביחסים עם אשתו וחותניו, ובשל קשיי פרנסה. כשהגיע לברלין נחשף לחוכמות והחל להוציא ספרים, ומדי פעם חזר לביתו, ולבסוף התגרש מאישתו, ועבר לווינה, שם הוציא לאור את מסלת הלמוד. הוא מספר שחלה אז מאוד בחולי המעיים, ואז נדר שאת ייתר שנותיו יבלה בהוצאת ספרים. אחר כך מתאר בן זאב את חשיבות ספרו העוסק בדקדוק עברי, שכן ישנם רק ספרים מעטים וישנים שעסקו בכך.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5423</field>
+		<field name="revision_id">5423</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot;, דפים [ג'-ד']: בהקדמה מסביר בן זאב את סיבת חיבור המילון הגרמני-עברי הזה: &quot;לא חברתי החבור הזה לבעלי לשון דוברי צחות וכותבי מליצה, כי המה ימצאו חלקם בחלק הראשון, המתחקה על שרשי לשון עברית, אפס להמון עם, שכותבים שטרי הדיוטות, וכוח להם למצוא מלות כדי ספקם...&quot; (דף [ג'])</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5424</field>
+		<field name="revision_id">5424</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5425</field>
+		<field name="revision_id">5425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5426</field>
+		<field name="revision_id">5426</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede der Herausgeber</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5427</field>
+		<field name="revision_id">5427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא/איינלייטונג</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5428</field>
+		<field name="revision_id">5428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5430</field>
+		<field name="revision_id">5430</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5431</field>
+		<field name="revision_id">5431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5432</field>
+		<field name="revision_id">5432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">קול תחת הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5433</field>
+		<field name="revision_id">5433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">נפתלי בראש משיב נפש לשון עבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5435</field>
+		<field name="revision_id">5435</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פארעראינרונג</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5436</field>
+		<field name="revision_id">5436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5437</field>
+		<field name="revision_id">5437</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מכתב המחבר,פתיחת המחבר וזה שמה מבוא הגן</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5438</field>
+		<field name="revision_id">5438</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחת המחבר השניה ויקרא את שמה כשם הפתיחה הראשונה מבוא הגן</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5439</field>
+		<field name="revision_id">5439</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המעתיק</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5440</field>
+		<field name="revision_id">5440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">[Widmung]</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5441</field>
+		<field name="revision_id">5441</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המפרש</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5442</field>
+		<field name="revision_id">5442</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פארעראיננערונג&quot;: המחבר טוען כי יש חשיבות להוצאת ספרי לימוד של כל עם עבור ילדיו, וכי עד עתה לא היה ספר מתאים עבור ילדי ישראל הרכים. הספר הזה העושה שימוש בתמונות כדי ללמוד קריאה, תואם לצרכי הילדים.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5443</field>
+		<field name="revision_id">5443</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5444</field>
+		<field name="revision_id">5444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אל עין הקורא</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5445</field>
+		<field name="revision_id">5445</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">איינלייטונג</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5447</field>
+		<field name="revision_id">5447</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">נאום בנימין המכונה וואלף ב&quot;ר שמשון איש הידנהיים: בהקדמה מציג הידנהיים ספר זה כספר המשך לחיבורו &quot;פסח&quot;, שבו עסק בהרחבה בפיוטים וניתח את המבנה שלהם (&quot;מחומר... הפועל.. והצורה... והתכלית...&quot;). בחיבורו זה הוא מתמקד &quot;הפועל, הפייטנים בעלי הלשון&quot;, כלומר, תיאור ביוגרפי היסטורי של כותבי הפיוטים.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5448</field>
+		<field name="revision_id">5448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דברי השירה הזאת</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5451</field>
+		<field name="revision_id">5451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מכתב תודה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5453</field>
+		<field name="revision_id">5453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר: המחבר מציג עצמו כצעיר, ומפנה ספרו לצעירים. הוא מבקש להביא מעט מחוכמת היוונים בפני אלה הצמאים לידע זה.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5454</field>
+		<field name="revision_id">5454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הצעה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5455</field>
+		<field name="revision_id">5455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5456</field>
+		<field name="revision_id">5456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פאררעדע דעס איבערזעצערס&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5457</field>
+		<field name="revision_id">5457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5458</field>
+		<field name="revision_id">5458</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא הספר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5459</field>
+		<field name="revision_id">5459</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">ההקדמה עוסקת בהצדקת הספר, וחשיבות העיסוק המוסרי בידידות, אהבה, נדיבות וכד' - והדיון בהם בספרות בשפה העברית.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5460</field>
+		<field name="revision_id">5460</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5461</field>
+		<field name="revision_id">5461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5463</field>
+		<field name="revision_id">5463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה: המחבר מספר על חיבתו הרבה למדעים מאז נעוריו, ובחירתו בשל כך במקצוע הרפואה. המחבר מספר כי הוא למד רפואה בברלין במהלך השלוש שנים האחרונות, וכי הוא קורא גרמנית, צרפתית ולטינית (עמ' [4]).סיפרו זה יצא במטרה להשכיל את היהודים במדעים הזנוחים.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5465</field>
+		<field name="revision_id">5465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה: בן-זאב מציין כי לצד סיפרו היסודי על השפה העברית  &quot;תלמוד לשון עברי&quot; שהוא כותב, הוציא ספר זה לטובת המתחילים. לוחות הפעלים נועדו לשימושו של מורה עם תלמידיו.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5466</field>
+		<field name="revision_id">5466</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פ'ארעראיננערונג</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5467</field>
+		<field name="revision_id">5467</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אליכם משכילי עם!</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5469</field>
+		<field name="revision_id">5469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">רמזי המליצות</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5470</field>
+		<field name="revision_id">5470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתשגן המשל</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5471</field>
+		<field name="revision_id">5471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5473</field>
+		<field name="revision_id">5473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5474</field>
+		<field name="revision_id">5474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה כללית</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5477</field>
+		<field name="revision_id">5477</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא הספר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5478</field>
+		<field name="revision_id">5478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מודעה למען משכילי העם ונדיבהם, אדברה נא דברי שלום ואמת</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5481</field>
+		<field name="revision_id">5481</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">לשיר אין כותרת</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5482</field>
+		<field name="revision_id">5482</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא הספר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5483</field>
+		<field name="revision_id">5483</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא הספר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5484</field>
+		<field name="revision_id">5484</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא הספר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5485</field>
+		<field name="revision_id">5485</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">את ההקדמה (דף ב') פותח המחבר בשיר קצר. הוא עוסק בבעיית הניקוד של שין בנקודה ימנית או שמאלית. טוען שהוא ממשיך את דרכו של הר' דוד קמחי: &quot;וכבר קדמוני הרבה חכמי מקרא והדקדוק וכללו שרשי המלות ההם השמאלית כגון כלל המתחיל ישראל השר [?] בשמחה ימים והעתקתי לקחןוראיתי שאינם מספיקים לכל הצורך לש&quot;הק הנמצאת בכ&quot;ד ספרים ועלה על לבי לחברם ע'ו שרשי הפעלים והשמות... כאשר עשה הר' דוד קמחי... ואני הוספתי נופך משלי כמעט בכל אות ואות וגם לא היה שום [?] מראה מקום...</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5486</field>
+		<field name="revision_id">5486</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתח דבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5487</field>
+		<field name="revision_id">5487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede und Einleitung</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5488</field>
+		<field name="revision_id">5488</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5489</field>
+		<field name="revision_id">5489</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה ומבוא הספר: המחבר מתאר את הסיבות שהביאוהו לכתיבת המקראה העברית - כדי להדריך בקריאה בעברית וליצור ספר שיכיל נושאים שונים וימנע צורך לקנייה מיותרת של ספרים. הוא מציין כי הוא חיבר את הספר ב-3 שפות, כדי שיוכלו התלמידים לתרגם משפה לשפה. במקום שירים וחידות שהופיעו בפרק החמישי, הוא כתב פרק על תולדות חכמי ישראל (מדובר  בראשי ההשכלה הגרמנית-יהודית, ט.ק.), כדי שהילדים ילכו בעקבותיהם. המחבר מציין כי בבית סיפרו ביקר יעקב ב&quot;י בברוינשוייג (הערר פרעזידענט יאקאבסזאהן), שחתם על ספריו ולקח מהם ללמד ילדים בוועסטפהאלן. הוא מודה לאיש זקן מן הקהילה המומחה בדקדוק עברי (שלא מצויין בשמו) שסייע לו בכתיבת המקראה העברית.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5490</field>
+		<field name="revision_id">5490</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דבר אל הקורא</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5491</field>
+		<field name="revision_id">5491</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת החכם בעל גבעת המורה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5492</field>
+		<field name="revision_id">5492</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה - הסכמות וחרמות הגאונים ה&quot;ה בספר הכוזרי הנדפס פה ברלין&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5493</field>
+		<field name="revision_id">5493</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המעתיק</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5494</field>
+		<field name="revision_id">5494</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המגיה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5495</field>
+		<field name="revision_id">5495</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">ואלה דברי הרב...</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5496</field>
+		<field name="revision_id">5496</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פארבעריכט</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5497</field>
+		<field name="revision_id">5497</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פארעראיננערונג&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5498</field>
+		<field name="revision_id">5498</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הפיוטים והפייטנים</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5499</field>
+		<field name="revision_id">5499</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">'אל כבוד הנגיד התורני השלם השר המפורסם והנסיב מוה' גבריאל פרענקל נר&quot;ו פרנס פרימוס בקהלת עדת ישראל הקדושה פראג והמדינה יע&quot;א': ההקדמה ממוענת אל גבריאל פרענקל פרנס קהילת פראג על ידי המתרגם. הוא טוען כי הוא נחשף בספרי רפואה ל&quot;מאורעות נוראות ואיומות... מבני אדם אשר נקברו חיים בהחשבם מתים?&quot;, עמ' [2]. הוא חושב שהיהודים לא יודעים על כך ולכן ממשיכים במנהג קבורת המתים שלהם. זו הסיבה שהחליט לתרגם לעברית את דברי הרופא הרץ ולשלוח לגבריאל בפראג 50, שיפיצם בקרב היהודים.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5500</field>
+		<field name="revision_id">5500</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה ומבוא הספר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5501</field>
+		<field name="revision_id">5501</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אמר המגיד</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5502</field>
+		<field name="revision_id">5502</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5503</field>
+		<field name="revision_id">5503</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5504</field>
+		<field name="revision_id">5504</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5505</field>
+		<field name="revision_id">5505</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה: המחבר עוסק בתועלת המוסרית של המשלים, ומסווג את המשל לסוגיו השונים. הוא מציין משלים תנכי&quot;ם, משלי ימה&quot;ב. הוא מספר על תהליך הכנת הספר: בחירת המשלים המובחרים ותרגומם לגרמנית. כיוון שהוצאת הספר יקרה, הוא מוציא רק חלק מן החומר שיש ברשותו, ואם יצלח המעשה בידו - יוציא בעתיד גם את החלק השני.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5507</field>
+		<field name="revision_id">5507</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה שלישית&quot;, עמ' [15-18]: על השירה והמליצה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5509</field>
+		<field name="revision_id">5509</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">(שיר)</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5510</field>
+		<field name="revision_id">5510</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;נאום&quot; (עמ' [1]): סטנוב מספר כי עוד בהיותו בארץ מולדתו הוא נתקל בספר &quot;נבואת הילד&quot; שיצא לאור עם ספר &quot;נגיד ומצוה&quot;, שבעבר היה לו ביאור שאבד. סטנוב מנסה לשחזר אותו, וטוען כי מדובר במשימה נכבדה בשל הצורך לשלוט בהיסטוריה של העולם העתיק, בשל צורך לשלוט בדברי הנביאים, חז&quot;ל מדרשים וכד', ובשל הצורך לשלוט בלשונות שונות: ארמית, תלמוד בבלי וכד'. וסיבה נוספת - יש כאן גילוי של סוד, וסכנה לחלוק על המחבר שעדיף לשמור עליו. כשהגיע לספרייה של דניאל יפה נתקל שוב בספר והחליט להוציאו עם ביאור, עם זהירות בגילוי הסודות, אך לטובת ישראל, כדי ש&quot;להבין דבר מתוך דבר לדעת את אשר יקרה אותם באחרית הימים&quot;.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5511</field>
+		<field name="revision_id">5511</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&lt;p&gt;ערקלעהרונג דער אבגעקירצטען ווערטער&lt;/p&gt;
+</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5512</field>
+		<field name="revision_id">5512</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">גנייגטע לעזריננען!</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5513</field>
+		<field name="revision_id">5513</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פאררעדע</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5514</field>
+		<field name="revision_id">5514</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פארעראיננערונג דעס פערלעגערס</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5515</field>
+		<field name="revision_id">5515</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אנקינדיגונג</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5516</field>
+		<field name="revision_id">5516</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה כוללת</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5517</field>
+		<field name="revision_id">5517</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5518</field>
+		<field name="revision_id">5518</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה לחלק בית מדות</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5519</field>
+		<field name="revision_id">5519</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">(ללא כותרת): עמ' [1]: סטנוב מתאר בהקדמה את הקושי בהוצאת ספרים, מציג רשימת חותמים ומציין כמה כסף שילם כל חותם, ואח&quot;כ מציג רשימת ספרי הוצאת חינוך נערים הניתנים להשגה: לידע ולהודיע למוכרי הספרים ולקוני הספרים רשימה מהספרים ומקחם הקצוב שת&quot;י (שתחת יד? ט.ק.) ר' איצק למכור ולהחליף עם מוכרי הספרים&quot; (עמ' 2, מספור שלי)</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5521</field>
+		<field name="revision_id">5521</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פתח הבית&quot;: הכותב דן באמת ושקר, ומזכיר את פיידון וסוקרטס
+</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5522</field>
+		<field name="revision_id">5522</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot;: המחבר מבחין בין אנשי מוסר לאנשים חסרי מוסר, ומעיד על עצמו כי הוא תמיד הלך בדרך האמת. הוא מציין ספרים נוספים שהוא הוציא.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5523</field>
+		<field name="revision_id">5523</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5524</field>
+		<field name="revision_id">5524</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה: המחבר מתאר את הספר כנועד להוראת הדקדוק של השפה העברית, שהוראתה כראוי הולכת ונעלמת. הוא טוען כנגד המלמדים כי הם לא מלמדים כראוי, כי בעלי הבתים דוחקים בהם להגיע ללימוד 'גפ&quot;ת ופוסקים'. ספר זה מבאר, לדבריו, בקלות ובנוחות את חוקי הדקדוק העברי.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5525</field>
+		<field name="revision_id">5525</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה: בהקדמה הוא מתאר את מטרת הספר - הוראת עברית למתקדמים. הוא מתאר את העבודה המשותפת עם בן-יעקב, מאיר.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5526</field>
+		<field name="revision_id">5526</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">התנצלת המעתיק לעין הקורא,פתיחת המעתיק</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5527</field>
+		<field name="revision_id">5527</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5528</field>
+		<field name="revision_id">5528</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5530</field>
+		<field name="revision_id">5530</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5532</field>
+		<field name="revision_id">5532</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5533</field>
+		<field name="revision_id">5533</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה &quot;אבן יקרה ילוטש במסור יפותח בחכמה אסף ל&quot;ב)</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5534</field>
+		<field name="revision_id">5534</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5535</field>
+		<field name="revision_id">5535</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המלקט והמחבר בלעגי שפה מדבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5536</field>
+		<field name="revision_id">5536</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה הכן בחוץ מלאכתך ועתדה בשדה לך אחר ובנית ביתך</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5537</field>
+		<field name="revision_id">5537</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;עת הזמיר&quot;: סטנוב מציג את הספר הזה כספר הראשון שיצא בבית הדפוס של &quot;חינוך נערים&quot; ומודה לדניאל יפה על המפעל הזה. הוא מציין כי לרגל פתיחת בית הדפוס הוטבעה מדליה: &quot;הטבעה מדלד&quot;אליע אחת חמשה אדומ' זהב משקלה, מצוירת מעשה חרש חכם עיתותי אותם, צורת יצחק וכפיו פרושות השמים בתפלת מנחת ערב, ותחת רגליו כמעשה לבנה הספר בלשון עברי וכתב אשורי ויעתר יצחק והמראה המראה איש תפלה מראהו, מעשה חושב מחשב דרכו לדמות הצורה למעשהו, והיתה זאת לזכרון לחסד ה' אשר עשו אלה שני צנתרות הזהב המריקים מעליהם זהב בתנופה להדפיס ספרים לבני עמם...&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5538</field>
+		<field name="revision_id">5538</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;המליץ בינותם&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5539</field>
+		<field name="revision_id">5539</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">המנצח בנגינות מזמור לדוד</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5541</field>
+		<field name="revision_id">5541</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מכתם לדוד</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5542</field>
+		<field name="revision_id">5542</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מכתב</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5544</field>
+		<field name="revision_id">5544</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5545</field>
+		<field name="revision_id">5545</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה ראשונה על משפט ההעתקה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5546</field>
+		<field name="revision_id">5546</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה שנייה על משפט הספר, ומי היה מחברו?</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5547</field>
+		<field name="revision_id">5547</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה שלישית מה משפט הפי' רוח חן, ומה הן תועליותיו?</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5548</field>
+		<field name="revision_id">5548</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot;, (עמ' [1-2]): המחבר טוען כי יש צורך לדבר בלשון הקודש, ורוב האנשים לא יודעים את דרכי המליצה, וסיפרו נועד לקהל הכללי ולמתחילים.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5550</field>
+		<field name="revision_id">5550</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">ללא כותרת: בפתח החלק הגרמני באותיות עבריות מתאר המחבר את הספר כמי שנכתב לילדיו ושימש את ידידיו, ולכן החליט לפרסמו.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5552</field>
+		<field name="revision_id">5552</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot;: מצהיר בה כי יש תועלת רבה בחוכמות, והם בבחינת סולם לאמת (דף ד').</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5554</field>
+		<field name="revision_id">5554</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא הספר (דפים ה'-ט'): מחבר מספר על הרקע התורני שלו, ועל כך שהחל מגיל 30 החל להתעניין ב&quot;חוכמות הלימודיות&quot;, נלכד בקיסמן ובמשך 10 שנים עסק בהן. הוא מציג את הרצון שלו להרחיב את הספרות העברית שבה חסרה התייחסות לחוכמות אלה. האלגברה היא בעיניו הבסיס לאסטרונומיה, למכניקה ולאופטיקה. הוא טוען שמחבר צריך לדעת למי הוא מפנה את סיפרו, והתחשב בקהל היעד שלו. הוא מתחשב בקהל היעד שלו ולכן הספר שלו מכיל את יסודות הלימוד. הוא מפנה את סיפרו ל&quot;היושבים באהלי תורה&quot; (דף ז'). המחבר אומר שהפך את תרגילי החשבון מימין לשמאל, דבר שיכול לעורר אי נוחות אצל המורגלים בקריאה בספרים לועזיים, אך זה דבר שניתן להתרגל לו. הוא מזהיר את קוראיו לא לשעות אחרי מי שמוציא דיבה רעה לחוכמות הלמודיות, כי בלעדיהן אי אפשר להבין סוגיות תלמודיות שונות  (ומביא דוגמה לכך מתוך מסכת שבת, דף ט').</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5555</field>
+		<field name="revision_id">5555</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתח שער הכרם עין גדי</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5556</field>
+		<field name="revision_id">5556</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5557</field>
+		<field name="revision_id">5557</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5558</field>
+		<field name="revision_id">5558</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פאהר רעהדן, לכו בנים שמעו לי</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5559</field>
+		<field name="revision_id">5559</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">ענטשולדיגונג דעס פערפאססערס</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5560</field>
+		<field name="revision_id">5560</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5561</field>
+		<field name="revision_id">5561</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתח האולם ומבוא הלשכה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5563</field>
+		<field name="revision_id">5563</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5564</field>
+		<field name="revision_id">5564</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פאררעדע</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5565</field>
+		<field name="revision_id">5565</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5566</field>
+		<field name="revision_id">5566</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מבוא</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5567</field>
+		<field name="revision_id">5567</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5568</field>
+		<field name="revision_id">5568</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">סלת מנחה והוא הקדמה כוללת לספר תרי עשר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5569</field>
+		<field name="revision_id">5569</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">סלת מנחה והוא הקדמה כוללת לספר תרי עשר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5570</field>
+		<field name="revision_id">5570</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה ראשונה, מתוכן הספר וידיעת עניני סגולותיו</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5571</field>
+		<field name="revision_id">5571</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה שניה, מידיעת הענינים הנופלים בזה הספר בפרט</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5572</field>
+		<field name="revision_id">5572</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה שלישית, ... נשוב עתה לחקור בידיעת הארצות והערים הנמצאים בספר הזה לדעת מקומות מושבותיהם בארצותם לגוייהם, וקצת מהקורות אשר קרו להאומות ההם בימים הקדמונים ותמורות העתים אשר השיגום, כפי שכתוב בתנך ובד&quot;ה לעמים וכו</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5573</field>
+		<field name="revision_id">5573</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מנחת מרחשת</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5574</field>
+		<field name="revision_id">5574</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot;: המחבר מתאר עצמו כמי שעסוק בלימוד תורה כשלושים שנים, ובשל כתיבת ספרו הוא הותקף. לטענתו, אין המשחק דבר טמא ורחוק מן התורה. הוא מספר גם על קריעת הספר בפומבי, ובא להצדיקו.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5575</field>
+		<field name="revision_id">5575</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מודעה רבה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5576</field>
+		<field name="revision_id">5576</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דברי המביאים לבית הדפוס העומדים על המשמרת לחברת חנוך נערים</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5577</field>
+		<field name="revision_id">5577</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5578</field>
+		<field name="revision_id">5578</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המביא לבית הדפוס</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5579</field>
+		<field name="revision_id">5579</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמות ומושכלות ראשונות מחכמת המדידה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5581</field>
+		<field name="revision_id">5581</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">למעלת כ&quot;ת אדוני חמי ה&quot;ה הרב המופלא והמופלג בתורה החסיד מהור&quot;ר י&quot;ט בנעט נר&quot;ו חד מהרבנים אנשי בה&quot;מ דק&quot;ק ברוינשווייג יע&quot;א אעלה את זכרונו הטוב בדבר קדשי תורתו אשר המציא וחידש בעומק חכמתו</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5582</field>
+		<field name="revision_id">5582</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5583</field>
+		<field name="revision_id">5583</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת והתנצלות כותב הבאור על ספר ויקרא</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5584</field>
+		<field name="revision_id">5584</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המבאר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5585</field>
+		<field name="revision_id">5585</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המתרגם</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5587</field>
+		<field name="revision_id">5587</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה: משה זאללשין מציג עצמו כתלמידו של המחבר, והוא משבח את מוריהו בשער הספר (&quot;...החריף המפורסם החקרן הגדול מו&quot;ה שמעון קרומנויא&quot;), וגם בהקדמה (&quot;עשה לי כל טוב בהיותו בק&quot;ק פראג ואפילו לעת צאת השאפות שאף רוח לא מנע ממני הטוב ולמד אתי ועם חבירו&quot; (דף ב'). זאללשין מקדיש למחבר שיר תודה, ומצרף את דיונו התלמודי של אופנהיים במנחות דף ע&quot;ב ע&quot;ב (&quot;להציג פה מה שאמר בשנה דאישתקד לפנינו&quot;, דף ב'; &quot;ולהיות כי רבים יחכמו מעט בזה ההקדמה שעשה על המ&quot;ס הנ&quot;ל אמרתי להעתיקו, דף ה'). אחריו (דף ו') מופיע שיר הלל מליצי לה' שאינו חתום (ככל הנראה, גם אותו כתב משה זאללשין).</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5588</field>
+		<field name="revision_id">5588</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הנץ החמה (דפים ו'-י'): המחבר מציג ידע באסטרונומיה, ומתאר את מערכת השמש שלנו. הוא תומך בתיאוריה הגיאוצנטרית, ויוצא כנגד התיאוריה ההליוצנטרית של קופרניקוס. מצד שני, תומך בידע עדכני לזמנו על מהירות האור (דף ז').</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5591</field>
+		<field name="revision_id">5591</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5592</field>
+		<field name="revision_id">5592</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5593</field>
+		<field name="revision_id">5593</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5594</field>
+		<field name="revision_id">5594</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתח התיבה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5596</field>
+		<field name="revision_id">5596</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמת ריע המחבר&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5597</field>
+		<field name="revision_id">5597</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פתיחת המחבר&quot;</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5599</field>
+		<field name="revision_id">5599</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אמר המחבר: אבן תבון מתאר את כוונתו לפרש את &quot;מורה נבוכים&quot; של הרמב&quot;ם.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5600</field>
+		<field name="revision_id">5600</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דיא ערשטה הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5601</field>
+		<field name="revision_id">5601</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דיא אנדרע הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5602</field>
+		<field name="revision_id">5602</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אגרת המודעא</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5603</field>
+		<field name="revision_id">5603</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5604</field>
+		<field name="revision_id">5604</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר ספר שאלות ותשובות בשמים ראש</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5605</field>
+		<field name="revision_id">5605</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5606</field>
+		<field name="revision_id">5606</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5610</field>
+		<field name="revision_id">5610</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5614</field>
+		<field name="revision_id">5614</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5615</field>
+		<field name="revision_id">5615</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorbericht:</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5616</field>
+		<field name="revision_id">5616</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמה&quot;, דף [ב']: המחבר כותב כי חיבר את הספר ל&quot;כל אשר נשאו ללמוד החכמה הזאת&quot;, שכן בלעדיה אי אפשר להבין כפי שצריך אל פירוש המקרא ודברי רז&quot;ל הבנויים עליהם.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5617</field>
+		<field name="revision_id">5617</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה - אליכם אישים אקרא וקולי אל בני אדם</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5618</field>
+		<field name="revision_id">5618</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פאררעדע</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5619</field>
+		<field name="revision_id">5619</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5620</field>
+		<field name="revision_id">5620</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5621</field>
+		<field name="revision_id">5621</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;הקדמת הרב מוהרי&quot;ל על דרך חדה&quot; (דף ל'): מרגליות חד חידה ופותר אותה. החידה עוסקת בעניין הלשוני והקושי בשימוש בעברית, וחותם באמירה: &quot;לכן טוב מכולם דרשות הגאונים הקדמונים השלמים והתמימים. והגיון לשונם הנאהבים והנעימים:&quot;.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5623</field>
+		<field name="revision_id">5623</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">[אין כותרת]</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5624</field>
+		<field name="revision_id">5624</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פאררעדע&quot;: המחבר מסביר מדוע כתב את סיפרו בגרמנית באותיות עבריות: רוב היהודים יכולים לקרוא גרמנית, ותרגום לעברית רק יקשה יותר, ומתאר את יתרונותיו של סיפרו לעומת ספרים אחרים.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5626</field>
+		<field name="revision_id">5626</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אל עין הקורא</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5627</field>
+		<field name="revision_id">5627</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5628</field>
+		<field name="revision_id">5628</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אן דען לעזער</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5629</field>
+		<field name="revision_id">5629</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">וזאת האגרת</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5630</field>
+		<field name="revision_id">5630</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5631</field>
+		<field name="revision_id">5631</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">התנצלות והקדמת המגיה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5632</field>
+		<field name="revision_id">5632</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דברי האדון הרופא החכם החוקר הטבעי המפואר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5633</field>
+		<field name="revision_id">5633</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מכתב מהאדון הרופא החוקר הפילוסוף הטבעי המפואר האפראטה ופראפעסאר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5634</field>
+		<field name="revision_id">5634</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">מליצת החכם השלם המליץ המפואר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5635</field>
+		<field name="revision_id">5635</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5636</field>
+		<field name="revision_id">5636</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה, עמ' [2-6]: וולף מדבר על הקשר בין החכמה ונפש, ועל חשיבות החכמה להתקרבות אל האל. הוא טוען כי חכמת הטבע קרובה לאדם מחכמות אחרת, נעימה ומושכת, ומצטט מן הרמב&quot;ם(?) ומספר האלים לחכם מקנדיאה כדי לתמוך בטענתו על חשיבות חכמת הטבע. אי לכך, יש חשיבות רבה לחנך את הנערים לחכמה זו. וולף מספר כי סיפרו של לינדא ראשית למודים - חלק א', זכה להצלחה, ולינדא הבטיח להוציא חלק נוסף, אך הוא לא הוציא את כתב היד שלו לאור. הוא מסר אותו ל&quot;שלום כהן מבערלין&quot; (הכהן, שלום, עמ' [5]) שפרסם חלקים מן הפרק הראשון בהמאסף תקס&quot;ט. פיליפסון, משה לקח על עצמו להביאו לדפוס ולהפיצו, וביקש מוולף, יוסף לערוך אותו, ולוודא שהוא עומד בסטנדרטים של מדע זמנו, וולף עשה זאת - הוא הוסיף הערות בהנדסה כדי להקל על הנערים המתחילים בלימוד זה, וגם הוסיף פיתוחים עדכניים של המדע. הוא אומר שאם הספר ימצא חן בעיני קוראיו, הוא יוציא ספר נוסף &quot;מלמודי הטבע בפרטיות הנמצאים&quot; )ראו הגדרות שהוא מציג בחלונית &quot;מבנה הספר&quot; בשדה &quot;מבוא&quot;).</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5637</field>
+		<field name="revision_id">5637</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">אל בחורי חמד! שטאטט דער פאררעדע!</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5638</field>
+		<field name="revision_id">5638</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">איינלייטונג</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5639</field>
+		<field name="revision_id">5639</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המפרש</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5640</field>
+		<field name="revision_id">5640</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;דברי המוציא את השיחה לאור&quot; (עמ' [1-3]): המחבר פונה אל &quot;אנשים חכמים ונבונים יודעי בינה&quot; (עמ' [1]) שאוהבים את השפה העברית. מטרתו לבאר את השפה העברית בשלושה תחומים: 1. שמושי בניני הפעלים, להם הקדיש את המאמר הראשון; 2. שמות הפעולה הנמצאים בספרי הקודש; 3. ביאור מילים ארמיות הנמצאות בספרי הקודש.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5641</field>
+		<field name="revision_id">5641</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">קורא נעים!</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5642</field>
+		<field name="revision_id">5642</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה לשיר ידידות</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5643</field>
+		<field name="revision_id">5643</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחת המשורר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5644</field>
+		<field name="revision_id">5644</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחת המשורר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5645</field>
+		<field name="revision_id">5645</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחת המשורר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5646</field>
+		<field name="revision_id">5646</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחת המשורר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5647</field>
+		<field name="revision_id">5647</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">דברי המחבר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5648</field>
+		<field name="revision_id">5648</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמת המבאר</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5649</field>
+		<field name="revision_id">5649</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5650</field>
+		<field name="revision_id">5650</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פתיחה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5651</field>
+		<field name="revision_id">5651</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">Vorrede</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5652</field>
+		<field name="revision_id">5652</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">פאררעדע</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5653</field>
+		<field name="revision_id">5653</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;מכתב לאיש בריתי, רעי כאח לי, יואל ברי&quot;ל בשלחי לו מחברת זו&quot; [עמ' 10-1, מספור שלי]: אייכל פונה לידידו ברי&quot;ל ומודה לו על ידידותו ועל כך שהראה לו את הדרך הנכונה. הוא מספר שהיה הולל ומועמד לגדול ללא השכלה, אך שינה את דרכו וזכה להגיע להשכלה.</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5654</field>
+		<field name="revision_id">5654</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פאררעדע צור ערשטען אויפלאגע&quot; (&quot;הקדמה למהדורה הראשונה,&quot; בגרמנית באותיות עבריות. ט.ק. הקדמה זו מופיעה לאחר עמוד השער המשותף לשלושת כרכי &quot;תורת לשון עברית&quot;, ולכן שייכת לשלושת הכרכים גם יחד): המחבר טוען כי ישנם ספרי דקדוק עבריים, אך רק מעטים הם ספרי לימוד המיועדים להוראת דקדוק, ובפרט כאלה המתאימים לבתי ספר יהודיים-גרמניים. הוא מפרט את הנושאים השונים של שלושת כרכי הספר, ומסיים בהבעת תיקווה שהספר ישיג את מטרתו ויביא להפצת השפה העברית הטובה בקרב הנוער. כהן חותם בשיר מפרי עטו הנקרא &quot;אלה לשון&quot; - שיר מליצי המאחל לשפה העברייה לפרוח ב&quot;גנת בית הספר את נטעת/ בעלי חנוך נערים רצונך יפיקו...&quot; עמ' [5].</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5655</field>
+		<field name="revision_id">5655</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פאררעדע צור צוויטן אויפלאגע&quot; (הקדמה למהדורה השניה), עמ' [6]. הקדמה זו מופיעה לאחר עמוד השער המשותף לשלושת כרכי &quot;תורת לשון עברית&quot;, ולכן שייכת לשלושת הכרכים גם  יחד): המחבר מספר כי המהדורה הראשונה זכתה לתשבוחות, ואזלה במהירות. הוא מספר כי שיפר במהדורה זו בעיקר את החלק הראשון של סיפרו, ואילו בשני החלקים האחרונים לא ערך שינויים רבים. הוא מתאר אף מחלוקת שיש לו עם סוחר ספרים, שהביאה לכך ששני החלקים לא היו זמינים לקהל זמן רב).</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5656</field>
+		<field name="revision_id">5656</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">&quot;פאררעדע צור ערשטען אויפלאגע&quot; (&quot;הקדמה למהדורה הראשונה,&quot; בגרמנית באותיות עבריות. ט.ק. הקדמה זו מופיעה לאחר עמוד השער המשותף לשלושת כרכי &quot;תורת לשון עברית&quot;, ולכן שייכת לשלושת הכרכים גם יחד): המחבר טוען כי ישנם ספרי דקדוק עבריים, אך רק מעטים הם ספרי לימוד המיועדים להוראת דקדוק, ובפרט כאלה המתאימים לבתי ספר יהודיים-גרמניים. הוא מפרט את הנושאים השונים של שלושת כרכי הספר, ומסיים בהבעת תיקווה שהספר ישיג אתמטרתו ויביא להפצת השפה העברית הטובה בקרב הנוער. כהן חותם בשיר מפרי עטו הנקרא &quot;אלה לשון&quot; - שיר מליצי המאחל לשפה העברייה לפרוח ב&quot;גנת בית הספר את נטעת/ בעלי חנוך נערים רצונך יפיקו...&quot; עמ' [5].</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5657</field>
+		<field name="revision_id">5657</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הקדמה</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">preface</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5658</field>
+		<field name="revision_id">5658</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_preface_title_value">הסכמות וחרמות הגואים ה&quot;ה בס' ויעתר יצחק</field>
+		<field name="field_preface_title_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

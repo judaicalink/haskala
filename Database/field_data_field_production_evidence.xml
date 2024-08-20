@@ -1,0 +1,1059 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_production_evidence">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_production_evidence_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_production_evidence_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_production_evidence" engine="InnoDB" version="10" row_format="Dynamic" rows="82" avg_row_length="999" data_length="81920" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:07" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 144 (field_production_evidence)" />
+	</table_structure>
+
+	<table_data name="field_data_field_production_evidence">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Ritter 1861, S. 74-88.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Bitte der Herausgeber des Hameassef um Stellungnahme zum Problem der frühen Beerdigung an Herz, in: Hammeassef, 3. Jg, S. 203</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Entgegnung auf:
+Kling, O.E. : Soll der Jude Soldat werden? unparteiisch beantwortet, samt einer authentischen Beilage von der Triester Judengemeinde, Wien 1788.
+Bendavid, Lazarus: Beweis, daß heutzutage in den K.K. Staaten die Juden zu Kriegsdiensten ebensowohl verpflichtet sind wie die Christen, Wien 1788.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">In der Vorrede Bezugnahme auf Gädickes &quot;Anecdoten von guten Juden&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לדברי וייזל בהקדמתו לנוסח הגרמני, הוא היה מודע תמיד כי דבריו עשויים לעורר עניין בקרב מלומדים לא יהודים, אך השפה הגרמנית לא היתה זמינה לו לכתיבה. הוא פנה אל פרופ' הופנגל לתרגום החיבור. הלא תרגם מיוזמתו חיבור שוייזל כתב ופרסם במאסף לאחר מות הנסיך לאופולד מבראונשוייג, ואף הוציא אותו לאור בתוך כתב העת שלו -
+Für Christenthum, Aufklärung und Menschenwohl
+הופנגל נענה לבקשתו - אם כי לא יכול היה לתרגם את כל היצירה - ונטל את תרגומו של החלק הראון. 
+מלומד נוצרי אחר, שפלדינג, נטל על עצמו את תרגומו של השיר השני. ו&quot;בחור צעיר&quot; נוסף התבקש לתרגם את השיר השלישי והרביעי, וכן את הקדמתו של וייזל למהדורה המקורית בעברית.
+לפי עדותו של וייזל, הוא חיבר את ההערות שנוספו לטקסט במיוחד עבור התרגום לגרמנית, ועשה זאת בגרמנית (מבקש מן הקוראים להתחשב בכך שאין הוא שולט כראוי בשפה זו).</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1982</field>
+		<field name="revision_id">1982</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">במבוא מנדלסון ציין כי העבודה על התרגום של ספר תהלים נמשכה כ-10 שנים.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1991</field>
+		<field name="revision_id">1991</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לקס מזכיר ששלח חלקים מהחיבור לחברים נוצרים שנתנו לו עוד הערות לפני הדפוס
+ס.ל.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Vorrede unterzeichnet mit &quot;Wien, im März 1793&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Vorrede pp.I-IV; אייכל, איצק: דבר אל המדברים . המאסף, ג', אלול תקמ&quot;ו, עמ' ר&quot;ה-ר&quot;י;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">&quot;Patrick Colquhoun's scathing comments about Jewish criminals in 1795 triggered Joshua van Oven's proposals to reform the system of welfare and education for the Jewish poor&quot;.
+David Cesarani, &quot;Jewish Emancipation: From Teleology to a Comparative Perspective: A Comment on Reinhard Rürup&quot;, ''Two Nations: British and German Jews in Comparative Perspective'', ed. Michael Brenner, Rainer Liedtke &amp; David Rechter, London, Tübingen 1999, pp. 63- 66 (here 64).</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">מנדלסון מספר בהקדמתו על מפגשי הבוקר שקיים עם בנו, עם חתנו ש[מעון פייט] ועם צעיר שלישי, ומהם צמח הספר הנוכחי.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">יש בספר עדות מאת דוד פרנקל על תהליך כתיבת הספר - על כוונתו לפרסמו לפני הבחינה השנתית בבית הספר שלכבודה פורסם הספר, ועל העובדה שקשיים וחוסר זמן פנוי מנעו זאת ממנו.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2029</field>
+		<field name="revision_id">2029</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Entstanden im November 1807, wie Widmung an Dalberg zeigt.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">הקדמת המחבר</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">שלמה דובנא מציין בהקדמתו כי היה עסוק בכתיבת תשובה לאגרת מאת ר' עמדן כאשר נודע לו על מותו. בשומעו על כך, &quot;נחם לבי בקרבי ויהי למים ומלאו מתני חלחלה. אמרתי תנחמני ארשי ארשת שפתי בל אמנע... לקונן עליו בקול נהי ויללה&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמה &quot;דברי המחבר&quot; מתאר פפנהיים את הסיבות שהביאו אותו לכתיבת הספר: מות אישתו בשעת לידה.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">&quot;המתנתי וישבתי פה ששה חדשים, עד הגיעו לדפוס בה, כי לא תוכל להכיל כל הספרים שיטענו על המכבש לגמרם, וידוע כמה קשה ויוקר ישיבת כרך הגדול הזה; ולא שמתי לבי גם לזאת, מאור עיני גם הם אין אתי, אך שמתי עיני ולבי על הסדר והמלאכה מאין הפוגות...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בסעיף &quot;אמר המתאמץ&quot; בסוף הספר (לפני רשימת החותמים), רומז לנדא על המלאכה שהיתה כרוכה בהבאת הספר לדפוס, ועל מגעיו עם אנשים שונים, כולל אמן אשר ביצע עבורו את הציורים אשר בספר (על כך ראו בהרחבה: קסטנברג-גלדשטיין, יהודים בארצות בוהמיה, עמ' 154 והלאה). כך הוא כותב: &quot;אודה ה' בכל לבי העזרני לגמר על ידי ספרי האלה במעשי הדפוס אשר יגעתי בידים רפות ובהוצאות כבירים להאיר עיני הקורא ולעשות רצון קונה באותיות נאות ובנייר יפה ובציורים מעשה ידי חרות נחושת הכל כפי ידי מגעת&quot;.
+
+יתר על כן, מדבריו בראשית הספר עולה כי הוא בילה רבות בספריה הממלכתית, לצידם של מלומדים נוצרים. (ראו חלון הבא, &quot;מגעים עם אישים שונים&quot;)</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמת המחבר ([ג'] דף) הוא רושם כך:
+&quot;... אחר אשר הקרה ה' לפני מקרה ... אברהם בן המדפיס המפורסם כה&quot;רר שלמה פרופס כ&quot;ץ זצ&quot;ל ובנו... וזה הביאני עד הלום לדרוך קסת הסופר במתני ולהביא האגרת מוסר הזאת תחת מכבש הדפוס שלו...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">שמעון בונדי בהקדמתו: &quot;אחי... מרדכי המבין ומדבר כמה לשונות הי' לי לעזר מאד במלאכה ההיא, כי דלה דלה לי בשקידה רבה מכמה ספרים ראשונים ואחרונים וכתב פי' המלה בלשון אשכנזית...&quot; הוא מתנצל מראש על טעויות אם תימצאנה, &quot;כי טרדות רבות בעניני מו&quot;מ הקיפוני ולא יכולתי מרוב התלאות לשום כל פעם ופעם עין פקיחא על מעשה ידי&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2089</field>
+		<field name="revision_id">2089</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">מנדלסון כותב כי הדפיס עתה את ההקדמה &quot;בדפוס קטן, כי אם למלאות רצון התלמידים, אשר שאלוני פעמים רבות על אודותיה, כי יחפצו לדעת הכללים והיסודות אשר עליהם נשענו המתרגם והמבאר&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2099</field>
+		<field name="revision_id">2099</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">התייחסות לויכוחים והאיומים שקדמו לכתיבת החיבור.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">&lt;p&gt;בעמודה 18, כשמציין כי ברור כי יבקרו אותו על ספר זה, הוא מוסיף: &quot;הנה כמעט אמרתי לקרוע כל המגלות סתרים שכתבתי בתער ... ולהעלותן על האח הבוער לפני... אמנם אחרי שובי נחמתי ואמרתי בער ולא ידע וכסיל לא יבין זאת גם יחד ואלף מיוצא בהן יאבדו, ודבר אחד מתורת אמת להועיל לי ולבני גילי (קטני הערך כמוני)...&quot; וכו'&lt;/p&gt;
+</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2119</field>
+		<field name="revision_id">2119</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">מתוך הקדמת המחבר (עמ' י/2): 
+&quot;ידעתי גם אני כי הוא [מטרותיו בספר] ענין עמוק מאוד וקשה לעמוד עליו. ואם גדולים חקרי לב אשר קדמוני לא שלחו יד במלאכה הזאת מה אני כי אבוא עד הלום. ואולם לא בעבור זה אהי נסוג אחור או אלט פני במסוה הבושה כי אם כך היו עושים כל בני אדם מעולם לא היה יוצא דבר חכמה מהם והיו בני האדם נמנעין מן הטוב שהשיגו ממעשי זולתם.  ולכן לא אחוש על כת הדוברים עתק ואשר כחם בפיהם לגנות ולהטיל דופי בדברי זולתם. אני אשא ואני אסבול ולא ארפה ממלאכתי. כי לבי יודע שכוונתי לטובה...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ייתכן כי תהליך כתיבת החיבור &lt;ins&gt;רב טוב לבית ישראל&lt;/ins&gt; היה שונה מכפי שמצטייר בספר עעצמו. לפי דובין, &lt;ins&gt;טרייסט וברלין&lt;/ins&gt;, עמ' 195, ייתכן כי הספר לא היה תגובה למכתב שהפנו יהודי טרייסט אל וייזל בעקבות סערת הרוחות שעורר חבורו &lt;ins&gt;דברי שלום ואמת&lt;/ins&gt;. במקום זה, וייזל,  
+&quot;[w]ithout his own direct contact with Triestine Jews and without their permission, ... publicly invoked their support: he cast his second pamphlet... as a response to their purported letter to him endorsing his first pamphlet. In a private letter to Trieste... Wessely begged their indulgence for taking this liberty.&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">כפי שמציין בן זאב בסוף הספר, כשמודה למאיר איגר: &quot;כי זה ארבעה שנים אשר חברתי הפירוש הזה בהיותי בין עשרים לאחד ועשרים שנה לימי חיי, והייתי תמיד מתעצל וטומן יד, ונסוגתי אחור מלהביאו בית הדפוס (לכמה טעמים כמוסים), ובהיותי אתו עמו במחיצתו, נודע לו ממני ומפרושי, וקריתי ושניתי ושלשתי עמו דברי הספר כי תאב מאד ללמדם, והצעתי לפניו הרבה מפרושי מצאו חן בעיניו, והעירני וזרז אותי מאד מאד, ולהביאו לבית הדפוס, ותמך את ידי בידו, ותושיע לי ימינו ועצתו עמדה לי...&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">עיבוד טקסטים של משה מנדלסון עבור קהל יהודי, בעברית.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המביא לדפוס מספר כיצד בהיותו &quot;מאוכלי לחם&quot; בביתו של דורמיצר, &quot;ראיתי חמדה גנוזה באוצרותיו ה&quot;ה כתובים על גליון משניות שלו בכ&quot;י ממש, ליבן ובירר כל המלות זרים אשר נמצאים בר&quot;ע מברטנורה ות&quot;יט בלשון צרפת ואיטליע ללשון אשכנזי. ואחרי רואי נשתוממתי ולגודל שמחתי אשר עלץ לבי הראתי העתקה הזאת לבעלי מדע ותושיה פה פראג, וכאשר מצאו צוף לחכם, דברי על לבי להיות מכהנים זריזין למצוה ולהיות להם לפה אצל אדוני הנגיד יחי' שיתן כח והרשאה, להעלות העתקה הזאת על מזבח הדפוס ולזכות הרבים... מרוב חכמתו וגודל ענותנותו לא אבה לשמוע בקולי, פן ואולי יאמרו הבוערים בעם אשר דרכם דרכם כסל למו אלה יאמרו מעשה ידיו הוא אך להתפאר, ואלה יאמרו אין די באר (אף שלא ידעו ולא יבינו מה טוב פעל מול ___ רעהו) ולא יאמרו שאין בלבו שום פניה אחרת כ&quot;א עשות טוב וכל כוונתו וכל חפצו לברר המלות על מכונם בבאר היטיב... נתן לי ההעתקה הזאת במתנה גמורה...</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בטון זועף, מצביע פרידריכספלד על הקושי הכרוך בהכנת הספר ובלבטים והספקות שהתלוו למלאכה - אותה הוא רואה כמשימת קודש שאיש מלבדו לא נטל על עצמו. &quot;ידעתי את כל העמל והיגיעה הדבוקה אליה ואפוכה [?] בכחי האצלח? אם אין? אמנם לא אכחש, היטב חרה לי על בני דורי אשר נמצאו בם אנשי חיל במליצת לשון עבר והמה היו כמחריש וכשוכחי טובה. על כן אגער נא כיום בכם כי נסכלתם וחטאתם לכבודכם כל הימים.  ואומר איסר אתכם בספרי זה וכל השגיאות הנמצאות בו, על ראשכם יחולו והיו לכם לחרפה וכלימת עולם, כי כל קורא יענה, למה לא קדמתם אתם אותי?...&quot; (עמ' [3])
+אמנם וייזל השאיר אחריו ספרים, ומהם יוכלו ללמוד הדורות הבאים על חכמתו ובינתו. אולם &quot;את לבבו הטהור ורוחו הנמנה&quot; - &quot;לא ידעם איש בלתי דורו הקרובים אתו והנצבים אצלו.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המחבר מספר בהקדמה על הקשיים והדחיות בכתיבת הספר (עמ' [3]).</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמתו מסביר המחבר מה הביא אותו לכתוב ספר זה. הוא טוען &quot;כי הסבה המניעה את האדם לעשות מדבריו חבור מפורסם והמקפת בכל המחברים כולם זולתי הוא חפץ המחבר לחלק שלל חכמתו ברבים...ולא כן אנכי... כל תמצית שהביאני לכנס בכת המחברים הוא מה שאמר החכם... דאגה בלב איש ישיחנה... שיפרסם ענינו לרבים אולי ימצא מי שיכלכל דעתו הנכאה ע&quot;י עצה טובה או ע&quot;י שיברר לו שאין ראוי לדאוג על נושא פלוני... [ואני] הייתי נבוך באיז' דבר זה לי ימים רבים ותגדל בו מבוכתי מיום ליום אבל לא ראיתי מן הנאות לעשות מן הספק חבור ולהציב אותו לבדו ערום מבלי לבוש... לזאת נתתי את לבי לדרוש ולתור אחר היתר הספק ביני לבין עצמי וכאשר מצאתי לי דרך מסכים במקצת להקל המצוק אשר הציקתני רוחי אז ירד לי שריר לעשות מן הענין ההוא כעין חבור...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Anlaß war das k.k. Patent vom 3.8.1797, die israelitische Nation in Böhmen betreffend.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ב הקדמה מספר המחבר על נסיונו לכתוב את הספר בעברית, ועל החלטתו להשתמש בגרמנית בשל הקשיים שמעוררת השפה העברית בתחום המינוח המדעי, והרצון להגדיל את קהל הקוראים של הספר (עמ' [8]).</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמה מספר בן-זאב כי כתב ספר זה תוך כדי כתיבת ספרו הגדול &lt;strong&gt;תלמוד לשון עברי&lt;/strong&gt;, לטובת התלמידים ולצרכי הוראתם על ידי מוריהם</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לפי יוזף מכמן בספרו
+
+Dutch Jewry
+דובנא מצא עותק נדיר ביותר של מחזה זה בספריית עץ חיים, בית מדרש פורטוגזי לרבנים, והדפיסו מחדש עם הקדמה משלו. (עמ' 164)</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">כפי שוייזל מציין, הוא היה מעדיף לא לעסוק בנושא שכר ועונש, אך מפני שביקשו ממנו &quot;לפשט עקמומיות שבלב מקצת בני אדם הדוברים תועה,  ולקבוע בם אמונת אבות בדרך נאה ונוחה...ויפן לבי להתבונן כפי כחו בדברים שכבר נאמרו בו, ולהוסיף דברים לחזק דברי רבותינו ז&quot;ל...&quot; (עמ' ה')</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המחבר בהקדמתו מבטא את לבטיו האם להרהר ולערער בספרו על דברי קדמונים, &quot;כי צעיר אני לימים בער ולא אדע דבר ואיך אתיצב מול גדולים אשר קטנם עבה ממתני&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמה כותב המחבר, כשהוא פונה אל הקוראים: &quot;דע, כי זה שלש שנים עברו מדי החלותי לחבר הספר הזה. וארבע מערכות הראשונות כתבתי עדן בארץ מולדתי בהיותי על שלחן גבר חכם בעוז פאר האנשים ה&quot;ה הקצין המפורסם הנגיד ר' זלמן ראטיבאר ללמוד עם בנו המופלג שי'. ושתי מערכות האחרונות עם השיר על הכבוד המדמה אשר העתקתי משיר האדון פאן האללער הבא בסוף הספר כתבתי פה פראג הבירה...&quot;
+
+ועוד הוא מוסר בהקדמה: &quot;לא למען רבת המחיר אשר תמצא חברתיהו [את הספר], כי גלוי וידוע לפני הרבה אנשים ממכירי אשר דברתי עמהם אודות הספר הזה כי הוצאות הדפוס רבה כמו רבה יען תרתי אחרי אותיות יותר יפות וניר לבן מאוד כאשר לפניך&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ראו הקדמת המתרגם</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">הספר הוא תוצר של שהות המחבר בארצות אפריקה. בסוף ההקדמה הוא כותב: &quot;הן כל המוצאות אשר השתרנו עלו על צוארי במשך מסעי הביאוני עד הלום שם ישבתי כמו ארבע שנים, ומקום היה לי להתערב בכל מיני אנשים גדולים וקטנים, ללמוד מעשיהם ולדעת את מוצאם ואת מובאם כמעט בכל דרכיהם&quot;. 
+עם זאת, הוא מדגיש כי אין לחשוש מעיוות הנתונים שהוא אסף על &quot;מושא מחקרו&quot;. דיווחו הוא, לפי עדותו, מדעי: &quot;ובכל זאת רק אשר חזיתי אותו אשמור לספר... ואל תשגיח לאומרים בלבבם כי כל עובר ארח ישפיל או ירים האמת כחפצו כל עוד שיתרחק מופת עדותו, כי יוכלו לחקור וימצאו כי כנים דברי&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמת המחבר</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לפי המביא לדפוס, &quot;זה הפירוש חיבר דודי הגאון [ישראל זמושץ] זה שלשים שנה להפצרת חכמי ברלין בעודנו בצל קורת הגביר המפורסם דון דניאל יפה... אשר לו ביחוד להחזיק טובה כי זה הנדיב נדיבות יעץ לרצון את הרב המפרש בהון עתק עבור לקרבו אל המלאכה בחיבור הפירוש הזה.... אך טרדת הזמן וימי הזוקן לא הספיקו ביד הרב המפרש להביאו לדפוס. ואחר פטירתו נפלו כתביו בידי זרים ובתוכם הפי' האהוב הזה... עד שקמתי אני בעז&quot;ה לחקור אחר אותן החמודות ... שנסתי את מתני... עזבתי את ביתי ואת מקומי נטשתי לא שלותי ולא שקטתי ואת עול ההדפסה עלי הכבדתי זהב לא חשבתי ועל יופי המלאכה וטוב ההגהה כפי האפשר שקדתי...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">סטנוב מציין בהקדמה את רצונו להוציא את ספר המדות של אריסטו במהדורה חדשה שכן הוא לא ניתן להשגה כמעט, ומתאר את הקשיים שניתקל בהם כדי להשיג את העותק שבו השתמש לצורך העבודה על המהדורה החדשה. לטענתו, התרגום של ר' יוסף ברבינו ש&quot;ט &quot;מלאה שיבושים ובלי הפסקים והנה עשיתי הפסקים וגם הוספתי גירסות חדשות מדעתי ואת הישנות לא הסירותי...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמה דף ג אומר: הספר הזה הוא &quot;מורה דרך&quot;. הוא מצא לנכון לקצר, כדי לאפשר את קנייתו ע&quot;י אנשים רבים יותר. &quot;אמרתי עת לקצר כעוללת הבציר וללקוט השושנים אשר שמה נתונים ומכל האוצר לא יעדר ולא יבצר אף אחת מהנה כנראה לאישר בינה וכל הלשונות הרחוקים הזרים הצגתי אתה בלשונות שגורים בכדי שכל נפש מישר אל יבין וישכיל איך דבריו לכלכל וימצא פתח עינים איך לעבוד לבורא ארץ ושמים ... ולמען המשיך את הלבבות אל זה הספר הצגתי הכל בדרך שאילת תלמוד ורב באמרי שפר זה שואל וזה משיב זה אומר וזה מקשיב ... בררתי הטוב והמעולה אשר יש בו הצטרכות גדול לכל באי עולם והחקירות הגדולות אשר אין בהם צורך כל כך השארתי וגם הנשאר הוא יקר מפז ומפנינים ומחרוץ והחלקתי את הספר למאמרים ובסוף הספר השלשה עשר עקרים וכל מאמר ומאמר נחלק לפרקים ואת הכל בדעת יחלצו הצדיקים בזכות התורה והמצות בית קדשינו ותפארתנו...</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בולט תפקידו של שבתי מיאנוב. מן ההסכמות (וכן מדבריו בסוף הספר) עולה כי הוא זה שיזם את העתקת תרגומו של מנדלסון מאותיות לועזיות לאותיות עבריות, וייתכן שהוא גם זה שיזם את הוספת פירוש ספורנו, ואת הצבתו של הטקסט בעברית לצד התרגום בגרמנית (כמובן, בדומה לדגם הביאור).</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהערותיו בראש הספר כותב המחבר:
+בהערה 4: &quot;אם כתבתי על איזה חכם טעות הוא או נעלם ממנו אל [..] תוכיחני. הלא ידוע כי אין אדם שליט ברוחו. ומה גם איש כמוני המטלטל... וצרות רבות סבבוני נלאתי ספרם והטרדה גברה עלי כי אנכי כתבתי אנכי הגהתי ובדד ישבתי...&quot;
+
+בהערה 6: &quot;דע! עד דף מ&quot;ד כתבתי באלטונא ושם היו ספרי' רבים בידי ... אבל משם ואילך פה כתבתי, יוכל להיות שכונתי לזולתי כי לפעמים לא הי' בידי אפי' המסכת ולא הייתי מופנה [?] מכל צד לילך תמיד להשאל, ומה גם הלא ידוע דרך המשאילים, שמדחים בלך ושוב&quot;.
+
+בהערה 7 מעריך בתלאות אשר היו לו בדרך להדפסת הספר, נסיון כושל להדפיס בהמבורג וכו' וכו'...</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">כדברי וייזל ב&quot;פתיחת המחבר&quot;, בהיותו נער צעיר ראה ספר תנ&quot;ך בלועזית ובו הספר &quot;חכמת שלמה&quot;. זמן קצר לאחר מכן אחי אביו יוסף וייזל מקופנהגן עודדו לתרגם את הספר ולפרשו. ספר זה השפיע על וייזל רבות - לפי עדותו רבים מספריו, כגון &quot;גן נעול&quot; ו&quot;יין לבנון&quot; נובעים מספר זה - אך שנים רבות עברו עד להדפסת התרגום והפירוש ל&quot;חכמת שלמה&quot;: &quot;זה לי עשרים וחמש שנים שהעתקתי את הספר הזה ופרשתיו בקצרה... ועתה כי בא מועד להפיץ מעיינות הספר הזה חוצה, כי רעים אהובים הפצירו בי להוציאו לאור ונתנו יד לעזרני, כבהלה נפשי בל ידעה מה לעשות... כי שמעה דבת רבים מסביב שדברו דופי על הספר הזה...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בהקדמה מספר המחבר על כך שהתעצל להוציא את ספרו. הוא מספר שביקר בשוק בפרנפורט ד'אודר וראה את כל החפצים והדברים החומריים שם, והגיע למסקנה שהוא חייב להשאיר אחריו את ספר זה.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">נראה כי הספר נכתב בשנת תקמ&quot;ד, אך המחבר חשש מפירסומו, ועל כן הוא ראה אור רק לאחר מותו ב- 1794. עם זאת, נראה כי הספר הספיק לעבור עד אז בין קוראים.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Yes</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2318</field>
+		<field name="revision_id">2318</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המביא לדפוס מתאר בהקדמתו את התהליכים שקדמו להחלטתו להוציא את הספר: &quot;לא בינת אדם לי כי הרימותי קולי ואנכי ערל שפתים יגע ורפה ידים ידי כבדה על אנחתי מבליגיתי עלי יגון ואנחה. כי לא באתי עד עתה אל המנוחה ואיך ואיככה יעלה ארוכה היושב בעמק הבכא... וכתרו את בנימין הרדיפוהו מנוחה, הדריכוהו דרך רחוקה בוקה ומבוקה ומבולקה... ואף גם זאת בהיותי בארץ מגורי רבים רודפי וצרי ויגורתי מפני האף והחימה אשר התגרו בי מלחמה כאיש מלחמות יעיר קנאה קנאים פגעו בי. בני עמי נחרו בי ונסתמו עיני ולבי מצרות השעבוד שעברו בי ובעו&quot;ה ... ראיתי רעה חולה הממלאים בתיהם כסף וזהב ורב פנינים והנם טמונים לעומת המסגרת עושר שמור במשמרת את כל משא' ישא רוח כי רוח עברה בו ואיננו ולא יכירנו עוד מקומו מקום אשר יהיה שמה הרוח. ואשתומם על המראה והייתי משתאה לדע' לדרוש' ולתור בחכמה על כל אשר נעשה וראיתי כי האלהים עשה גלגל שחוזר בעולם... כי אזכרה ימים מקדם בהיותי שליו בביתי והעושר והכבוד איתי ועת' נע ונד הייתי ועול' הפוך ראיתי וראיתי אחרי רואי שיש יתרון לחכמה. כי החכמה תחיה בעליה ואתנה את לבי לדעת חכמה וראיתי שאינה מתקימת אלא במי שממית עצמו עליה וישקוד על דלתותיה וישב בפתח עינים. מה יעשה אדם ללמוד תורה.. יגלה למקום תורה... גם אני בדרך נחני ה' בלשיחות... לק&quot;ק קאפניהאגן...&quot; וכאן מתאר את מפגשו עם וייזל (ראו ב&quot;אצבע&quot; הבאה, מגעים וכו')</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בין מניעיו לכתיבת הספר: 'כי כבר חלפו שנים ועוד היום מנעני אלהים מבנים ואמרתי פן אגוע ואל עמי אאסוף מבלתי תת שם ושארית בארץ זכרי יסוף. ואשא סביב עיני ואמשש את כל כלי נכאתי את אשר כבר לימים הכינותי והנה באמתחתי ביאור על פירוש הרב ר' אברהם בן עזרא...'</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">על מניעיו לכתיבת הספר.
+את דבריו - &quot;אבנים יקרות&quot; - על השגחה, יראה, תחית המתים, &quot;למען יהיו כאבני נזר משובצות זהב במלואותם הלבשתי אותם במשלים ומליצות ולפי שהדברים הנאמרים בדרך וויכוח שואל ומשיב יתבררו ויתלבנו ויוצרפו בשלימות שמתי אותם בפי שבטי ישורון ושמתי חכמי מצרים בדרך שואלים נגד האריות האלה ואגב זה נתגלגל בדעתי להעמיד כל ספור יוסף עם אחיו במחבר' הלציית להיו'  היה בדרך ויכוח כמו שדרשו חז&quot;ל...&quot;
+ועוד: לא התכונתי לפרסם את דבריי, אך &quot;הוכרחתי לבטל רצוני נגד רצון מי שחייבתני הדת למלאות רצונו כמו שהצעתי לפני הרבנים המורים בעלי ההסכמה ואני מעיד עלי היודע ועד שלולי שהוכרחתי בזה לא עלה ברעיוני להדפיסה...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המניע להדפסת הספר, ע&quot;פ דברי מינדן בהקדמתו: &quot;שמעתי את תלונות רבים מבני עמינו המלינים על מלמדי המקרא כי מכשילי' המה ילדי בני ישראל... ברצותם לבאר תורת משה... וספרי הנביאים בל&quot;א. ולא ידעו ולא יבינו דרכי לשון הקודש וצחות מליצותיה וגודל פארה על לשון העמים אשר אליה המה מעתיקים אמרת אלוה וחזון נביאיו. וישענו על משענת קנה בעל מלמד שיח ובאר משה ושאר המתרגמים. ומי לא ידע כי אלו המחברים תעו... במקומות הרבה...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לפי דברי אברניק בפנייתו אל דוד ורטהיימר, הוא קיבל עידוד רוחני לעיסוק בפרויקט מאיש זה. &quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">הרצון לכתוב ספר זה התעורר בעקבות עבודתו כמורה בבית הספר המלכותי ע&quot;ש ווילהלם בברסלאו, שם לימד במשך שנים רבות ספר זה לתלמידיו. לדעתו, &quot;עוד לא פורש הספר הזה באר היטיב, אף כי רבו כמו רבו מבאריו ומתרגמיו. שמתי עיני ולבי עליו, ואהגה בו ימים רבים לדעת ולהבין משליו ומליציו דבריו וחדותיו... גם חקרתי ודרשתי אחר כל הנמצא כתוב בספרי החכמים המבארים את השיר הסתום הזה, מחכמי ישראל ומחכמי יתר העמים, הגיתי בכל פעלם ולקטתי מדבריהם זעיר שם זעיר שם, בכל המקום אשר מצאתי דבריהם מיוסדים על אדני אמת וישר; וחפץ ה' בידי הצליח, כי מקץ שנתים ימים, ותשלם המלאכה&quot;.
+וולפסון מתפלמס עם מתרגמים ומבארים אחרים בתקופתו, אשר עסקו אף הם בספר זה: &quot;ואולם מאז בינותי בספרים ראיתי כי רבים עתה המבארים [שמותם בל אשא על שפתי] העוזבים ארחות יושר וילכו דרך עקלקלות, כי בכל עת אשר יפגעו במקרא סתום וחתום, בושו ויחפרו לתת תודה ולאמור: סתום הוא לא מצאנוהו! כי אם מחפיאים עליו דברים לא כן, ויאריכו בבאורים אשר מעולם לא עלו על לב המחבר, כאשר יאמר משל הקדמוני: מעיילא פילא בקופא דמחטי. ולו חכמו וישכילו, יבינו איככה נוכל לדעת כל המשלים החדות והמליצות, אשר היו בפי ההמון בימים ההם בהיות שפת העברי מתהלכת בארץ, ואשר אליהם רומזים ומורים המחחברים בספריהם בדברים מעטים, מבלי עמול לבארם, כי ידעו כל השומע אותם יבין... לא כן אנכי עמדי רק האמת חפצתי בטוחות, ואותה בקשתי בסתום, ולחוק בל יעבור שמתי לי מאמר חכמינו ז&quot;ל: אין המקרא יוצא מידי פשוטו... אם פגעתי במקרא, אשר בו עמלתי ויגעתי ימים רבים, והוא נעלם ונסתר ממני... אז הגדתי נגד תלמידי המקשיבים לקולי לאמור: ... לא אדע ולא אבין... כזאת הגדתי לפנים, וגם היום לא אכחד מעם הקורא את תרגומי, כי נמצאו בספר איוב שנים או שלשה מאמרים, אשר לא אוכל להבינם ולהעמידם על נכון; לשוא שקדתי ועמלתי בהם, לשוא שאלתי את פי המבארים והמתרגמים אשר קדמוני, כי אין בפיהם נכונה, אשר בה ישרה נפשי... ואני העירותי לבב הקורא עליהם&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המחברים מצביעים בהקדמה על הקושי בתרגום יצירות מורכבות מעין אלה. הם מתארים מה הנחה אותם בעבודתם. לדבריהם, &quot;ביראה ורעד גשנו למלאכת ההעתקה ההיא; וכמעט נסגנו אחור אחרי החלונו למשמש בה ידים, לולי שמנו בה' מבטחנו, כי הוא יורנו את הדרך הישר... וגם יד המפרשים הגדולים היתה אתנו, להורות לנו את הדרך נלך בה... אנחנו עשינו את שלנו ועמלנו בשקידה נמרצה לדרוש ולחפש מטמוני המפרשים ז&quot;ל, לשקול ולפלס בדעתנו את היותר קרוב אל הדעת, ולעיין היטב בכל אשר עלה על רוחנו לחדש מדעתנו ולבאר הכל...&quot; (הקדמה, ד/1)</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המחבר מתייחס אל תהליכי הכתיבה בהקדמה/הקדשה &quot;מנחת מרחשת&quot;: &quot;לולא התמהמהתי לבעבור נסות פעם אחר פעם את הסדר אשר ערכתי, ואחר רואי כי קרוב הוא הדרך אשר בחרתי להדריך בו את ילדי בניי ישראל ולהגיעם אל מחוז חפצם...&quot; הספר הוא תוצר של ניסיון בהוראה. כך כותב בעמ' השני להקדמה: &quot;לכן נתתי אל לבי לכתוב בספר סדר למוד החכמה הזאת אשר ניסיתי פעמים רבות. וה' הצליח את דרכי אשר הדרכתי בו תלמידים קטנים כבני שש שנים...&quot;
+בחלק של ההקדמה הנקרא &quot;מרצפת אבנים&quot; (תחת &quot;האבר הראשה&quot; (כך!) מוסיף המחבר כיצד עבר סדר לימוד לוח הבנינים מיד ליד: &quot;ועיקר סדר למוד הלוח הזה קבלתי ממורי הרבני מוהר&quot;ר איזק זלאטווי ז&quot;ל אשר הדריכני בדרך הזה בימי ילדותי. וכאשר הוריתי לתלמידים דרכי החכמה הזאת, נסיתי את הסדר הזה ובחנתיו כבחון את הזהב וצרפתיו כצרוף את הכסף. וככל אשר הורני הנסיון הוספתי בבאורו.&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Yes</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">שמעון וואלטש מתחבר לבדרך עקיפין לחוג התלמידים של רפאל הלוי מהנובר, ומציג עצמו כמי שמגשים תכנית שהגה אותו חכם. כפי שכתוב בהקדמה הראשונה, נאמר באחד מספריו &quot;שהיה בדעתו לפרש כל פרטי הרמב&quot;ם... ודעת רב הנ&quot;ל להדריך בדרך אמתי לכל המבקשים לשמוע ולהבין את תורת משה רבינו, ובדרך זה הלכתי, וזכות אבותי הקדושים היה אתי, להוציא מכח אל הפועל את מכשבתי, להראות דרך לנבוכים...&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2352</field>
+		<field name="revision_id">2352</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המתרגם מציין כי &quot;נשמטה בקשת הממין מתרגום ספר בחינות עולם להרב ר' ידעיה הפניני זצ&quot;ל, שהוצאתי לאור בשנה הקודמת, וגם בא לידי שיר אחר, נעים ויקר, מהמליץ הגדול הנזכר; ואמרתי: הן הואלתי לתרגם מכתמי האיש הנעלה הזה, אשר השאיר אחריו ברכה, ולא אגמור? - אל נא! לא טוב עמוד בחצי הדרך, אמלאה נא ואשלם את החסרון!... וגם בזה היתה עמי יד ידידי הנחמד, ר' דוד אטטענזאסער נר&quot;ו, לבאר את דברי המליץבטוב טעם ודעת, ובלשון קל ומובן לכל קורא&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המחבר מתאר על קשיו במבוא לספר &quot;פתיחה אור לפני הדורשין&quot;, דף [ג']</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בתחילת דבריו מציין המחבר כי יקצר &quot;מחמת הוצאת הדפוס ואין דרכי לבקש סיוע על פתחי נדיבים ולקבץ חתימות שיקנו ספר ע&quot;כ הדפסתי נייר לדוגמא על הוצאות שלי. וכשיהי' רוח הבריות נוחה ... אקוה בממילא ימצאו עוזרים ש... יסעייעוני שאוכל להדפיס יותר כפי שעלה בגורלי&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לפי הנאמר בעמוד השער, לפני חיבורו של שלמה בן משה מחלם &quot;החכמה הזאת&quot; של טעמי איוב משלי תהלים &quot;נסתרה זה כמה מאות שנה והמדקדקים שלפניו לא עמדו על סודה ועתה אחרי בלותה היתה לה עדנה&quot;. אלא שאותו מחבר, אשר &quot;הוציא אמ&quot;ת לאמתו&quot; לא הביא אותה אל הדפוס. למלאכה זו ניגש שלמה דובנא. הוא &quot;כותת רגליו ממדינה למדינה להדפיסה&quot;, השיג ככל הנראה מנויים מראש, &quot;הוסיף נופך משלו&quot; והביא את הספר לדפוס.
+
+לפי עדותו של המחבר עצמו (שלמה בן משה מחלם), עותק מספרו (כנראה בטרם נדפס) הגיע לידיו של דובנא. דובנא ביקש מהמחבר רשות להדפיסו, והדבר נעשה תוך שיתוף פעולה מצד המחבר. כך הוא כותב: &quot;להיות שעדיין לה היה מסודר כראוי פניתי עצמי לזה משך שבוע וסדרתיו באופן נאה והרבני מוהר&quot;ר שלמה הנ&quot;ל [דובנא] סייע לי בחיפוש מחופש מנוסחאות הרבה המדוייקות עד שע&quot;י כך יצא מנופה כסלת נקיה&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לפי דברי ברי&quot;ל בהקדמתו, ספר זה מתבסס על החומר שהכין עבור המורים בביה&quot;ס בברסלאו ללימוד השפה העברית (ויושמה בהצלחה) - לפי השיטה הנהוגה ללימוד שפות אחרות, בעיקר גרמנית.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בפנייתו אל &quot;אחי כמורי&quot; בראשית הספר, מתייחס יהודה ייטלש לכך שהספר ראה אור ביזמתו שלו, כדי לכבד את אחיו ברוך, אותו הוא מעריך יותר מכל. 
+מדבריו עולה כי קהל שומעים אשר הקשיבו להספד זה הפצירו בו להביאו אל הדפוס.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">לפי כותב ההקדמה, נ.ה.וייזל, המתרגם ישי בער &quot;שלח ההעתקה אל יד אחד מריעיו הנמצא פה, בעוד החכם הנבון המחבר זצ&quot;ל חי, לשאל את פיו, מה ישפוט עליה. ותשא חן בעיניו, ואלי אמר המחבר זצ&quot;ל כי ישרה נפשו בה, וטובה היא בעיניו. ועתה כי בא מועד שיקבענה בדפוס, בענותנותו של החכם המעתיק נר&quot;ו, בקש לשמוע גם משפט לבי על זה...&quot; (עמ' שני בהקדמה)</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המחבר מתאר בפרטים את תהליך העבודה שלו: את קורות רבי עקיבא המפוזרים במאמרי חז&quot;ל &quot;אספתים וקבצתים ולקחתים מכל המקומות אשר נפזרו שמה אחד אל אחד. והיו לאחדים בידי. אחר עשיתי כל זאת עלה הרעיון בלבי להרכיבם ולדבקם להיותם תואמים יחדו... תרתי בלבי לחבר ענין אל ענין, ומאמר הנאות אל מאמר, דבר דבר אל אפניו. אף הטבתי מעשי להעמיד לפני עין העיון את גופי המדברים להגשימם ולתת במו רוח חיים כאשר יתיצבו נגד עיניו...&quot; ועוד מוסיף: &quot;גם למודעה אני צריך אשר רעיונים רבים יולדו על ברכי, במו טחתי וגדרתי פרצת המאמרים הסותרים לעין המעיין כמוני&quot; (עמ' [4])</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">המפעל מציג עצמו כהמשך ותיקון לפרויקט קודם: &quot;מגישי מנחה&quot;:
+
+&quot;הנה זה ימים רבים נדפס באמשטרדם תנ&quot;ך בכרך קטן עם פירש&quot;י ותרגום אשכנזי, נודע בשם מגישי מנחה... ועתה התאספנו יחד לכבוד לאדינו ולכבוד תורתו לסקל המחברת הזאת ולנקות אותה ובמתכונתה נקריב מנחה חדשה לצון לבני ישראל&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">נראה כי היו לו כוונות לכתוב &quot;שיר שלום&quot; עוד מימים עברו, אולם תכניתו לא יצאה אל הפועל, בשל &quot;עצלות&quot;. כלשונו בפנייתו אל יעקב ששפורטס בתחילת הספר: &quot;השיר השלום אשר אמרתי לך, בשכבר ימים עברו, אל תחת השמש אביאהו, הנה הוא לפניך בזה. זאת דרך כל עצל...היום יחכה למחר ומחר למחרתו, ולולי בחטאה הגדולה הזאת גם אני מעורי נכשלתי, אז גם השיר הזה כבר הי' לעולמים.&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Yes</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Yes</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2441</field>
+		<field name="revision_id">2441</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">מספר המחבר בהקדמתו: &quot;בהיותי בק&quot;ק האמבורג הראיתי חיבורי שירי תהלה למביני מדע&quot; ובין היתר ל&quot;רב החריף המופלג בתורה מו' יאקב שווערזענץ... ולמען נסות אותי השיאני לחבר שיר מאות א' עד אות ל ובכל תיבה יהיה הלמ&quot;ד שורש כדמה לו כי לא אוכל לקרב אצבעותי במלאכה נפלאה ונוראה כזאת. אך היה כמצחק בעיני...וכתבתי על נכון והבאתי שיר הזה לשאר בשרי הרב הנ&quot;ל לקרוא כי מבין הוא והי' עומד ומשתאה ובשובי דרך ק&quot;ק ברלין&quot;. שם הראה שיר זה לרבנים שונים.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">פירדא כותב בפנייתו אל פרידלנדר: יראתי מלגשת אליו [אל הספר הזה] ולעיין בו כי אזהרתו בהקדמתו: 'והי' כל איש זר אשר לא נסה ללכת בעקבות הפילוסופים כי תכונת שכלו עודנה בסתר המדריגה, או אם לא טעם מעולם דבר החכמה והעיון אל יקרוב הלום לקרוא מאמרים רמים ועמוקים כאלו' היתה לי צוויו, אמנם חמדת דבריו הקדושים גוברת עלי עד ששניתי ושלשתי לקרוא ולעיין בו, יגעתי ומצאתי פעם לבאר דבריו, ופעם לשנותם, ואמרתי להציב לפני רום כבודו את דעתי הקרושה בזה, וידעתי גם ידעתי, שההעזה לעמוד נגד רבים מחכמי קדמונינו וזמנינו גדולה היא, רק לאהבת האמת, ועל אהבתו אותו אני בטחתי, אולי ימצא בהשגתי עשירי' שראוי לאומרו, יודה לי חסדו וטובו' ותהי' משכורתי שלמה, ובמטותא מני' דמי בכל מקום אשר טעיתי או לא הבנתי דבריו הנשגבים, יורה לי איזה הדרך ישכון אור, אלה דברי עבדו ואוהבו ה&quot;ק מאיר פירדא.&quot;</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">Kennecke (2001), S. 57</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">על הנסיבות שהביאו לכתיבת הדרשות כותב וולף כי לאחר השינוים שנעשו במבנה בית הכנסת, פנו אליו &quot;ראשי הקהילה&quot; וביקשו ממנו לשאת את הדרשות, מתוך כוונה לערוך שינויים גם בפולחן.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ראו הקדמות</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ראו פירוט בחלונית &quot;הקדמות&quot;.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ראו הרחבה בהקדמות המחבר</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">ראו פירוט בהקדמות המחבר</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">בן-זאב מציין בסוף ההקדמה שלו כי קיצר אותו בשל יוקר הוצאות הדפוס.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_production_evidence_value">על האופן שבו הגיע כתב היד של פרנקו מנדס לידי הידנהים, שהוציאו לאחר מות המחבר, מצוין בתחילת הספר:
+&quot;אמר וואלף היידנהיים. צדיק באמונתו יחי', כי זה חיים [דהיינו חיים בינגר, שמוזכר באותו עמוד] האיש המוכתר במעלות מעולות ומדות נכבדות שמר חסדו לדוד נאמנו ובכסף מלא לקח לו את המגילה הזאת מעזבון הרב המעתיק זצ&quot;ל וישלחה אלי לאמר: &quot;המגילה נתונה לך ומאומה לא תתן מחירה אך העלה אותה על מכבש הדפוס כי חפץ בה אהובי הרב זצ&quot;ל ואלה דברי דוד האחרונים טרם חלף הלך לו לארץ החיים, ואנכי לעשות רצונו חפצתי&quot; עכ&quot;ל. ונדיב נדיבות יעץ והוא על נדיבות יקום.</field>
+		<field name="field_production_evidence_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

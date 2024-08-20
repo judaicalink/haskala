@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_new_edition_type_else_note">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_new_edition_type_else_note_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_new_edition_type_else_note_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_new_edition_type_else_note" engine="InnoDB" version="10" row_format="Dynamic" rows="2" avg_row_length="8192" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:02" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 81 (field_new_edition_type_else_note)" />
+	</table_structure>
+
+	<table_data name="field_data_field_new_edition_type_else_note">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2082</field>
+		<field name="revision_id">2082</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_else_note_value">כפי שמציין יערי בדבריו על הספר, דובנא לקח את כתב ידו של חמו, המחבר, שהיה דק למדי, והוסיף עליו תוספות רבות, בין היתר כדי להפכו לספר הראוי לבוא בדפוס. הוא הוסיף תיאורים על ערים בהם לא ביקר המחבר המקורי (כגון ירושלים, חברון, שכם ודמשק (מאת הקראי שמואל בן דוד, שהיו ידועים לו מתוך ספרו של הביבליוגרף ג' וולף),ועל טבריה (מאת האנגלי פוקוק, מתוך ספר מסעותיו שנסע בארץ ישראל בשנת 1738 וספרו נדפס בשנת 1745). הוא הוסיף גם על ענייני מצרים, תולדות רודוס ותולדות איטליה - לפי יערי מתוך מגמה משכילית,על מנת להשכיל את העם. (ראו חלון קהל יעד).
+התוספות שדובנא הוסיף מסבירות את שינוי הכותרת: מ&quot;ספורי ארץ הגליל&quot; ל&quot;ספורי הארץ הקדושה&quot; או &quot;אהבת ציון&quot;.</field>
+		<field name="field_new_edition_type_else_note_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_else_note_value">טקסט זה הופיע לראשונה בתוך כתב העת המאסף.</field>
+		<field name="field_new_edition_type_else_note_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

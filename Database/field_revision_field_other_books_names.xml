@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_other_books_names">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_other_books_names_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_other_books_names_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_other_books_names" engine="InnoDB" version="10" row_format="Dynamic" rows="27" avg_row_length="606" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:22" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 111 (field_other_books..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_other_books_names">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">כרוך יחד עם דברי ריבות - חלק ב'</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם דברי ריבות - חלק א'</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">&lt;p&gt;יחד עם &quot;מבוא הלשון&quot; של הינדהים&lt;/p&gt;
+</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2144</field>
+		<field name="revision_id">2144</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">ככל הנראה, הספר נכרך במקור יחד עם ספר &quot;יונה&quot; עם תרגום ובאור מאת ברי&quot;ל</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2164</field>
+		<field name="revision_id">2164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">ספר כתר מלכות</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">הספר נכרך במקור יחד עם &quot;הפטרה לשחרית יום הכפורים&quot;, בתרגומו של דוד פרידלנדר.</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך במקור עם הספר &quot;תלמוד לשון עברי&quot; של בן-זאב</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך יחד עם &quot;עמודי הלשון&quot; של ברי&quot;ל</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך יחד עם &quot;דיא שטאלצע ושתי איין קאמיש שוישפיל אין ריימן אין איינם אויפ'צוגע פ'אן ג - ר&quot;, בספר שכותורתו &quot;לוסטשפיל צור אונטרהאלטונג ביים פורים-פ'עסטע&quot;, ערשטעס בענדכ'ן, ברעסלויא... תקנ&quot;ו</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">מנחה חדשה - חיבור זה אמור לשמש מבוא לפרויקט זה, כדברי המחבר בעמוד השער</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">יחד עם &quot;דרכי נעם&quot; של הינדהים</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">הספר כרוך יחד עם הספר &quot;פירוש על שיר השירים&quot; שמרגליות הביא לדפוס ופירש אותו</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">עם ספר הברית - חלק ב'</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">עם באור מלות ההגיון למנדלסון, מהדורת 1795 המבוארת על ידי סטנוב</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2290</field>
+		<field name="revision_id">2290</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">(חלק ראשון וחלק שני כרוכים יחד)</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2291</field>
+		<field name="revision_id">2291</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">(חלק ראשון וחלק שני כרוכים יחד)</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">חי בן מקיץ</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם &lt;strong&gt;ספר תפארת אדם&lt;/strong&gt;</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם &lt;strong&gt;ספר עמודי השמים&lt;/strong&gt;</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">הספר כרוך עם ספרו של מרגליות&quot;ספר אור עולם&quot;. תאריך ההוצאה הרשום עליו הוא בגימטריה: &quot;בו מחמדים פרי מגדים&quot;, דהיינו - 1777. חוקרים החליטו כי מדובר בטעות, שכן &quot;ספר אור עולם&quot; הכרוך איתו הוא משנת 1783.  לדעתי, ישנה אפשרות כי הספר יצא לאור קודם לכן, אך לא נשמר, ועם הוצאתו לאור של &quot;ספר אור עולם&quot; הוא החליט להוציאו שוב</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם &quot;ספר אגרת הקדש&quot;</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם קורות שנות קדם - מחברת ראשונה, ספר ראשון</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2451</field>
+		<field name="revision_id">2451</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם חלק א' של אותו ספר (שיוצא כאן במהדורה חוזרת)</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">שלושת כרכי &quot;תורת לשון עברית&quot; כרוכים יחד</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">שלושת כרכי &quot;תורת לשון עברית&quot; כרוכים יחד</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">שלושת הכרכים של &quot;תורת לשון עברית&quot; כרוכים יחד</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_other_books_names_value">נכרך עם ספר נוסף של בן-זאב ששמו: לוח הפעלים</field>
+		<field name="field_other_books_names_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

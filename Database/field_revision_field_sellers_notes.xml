@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_sellers_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_sellers_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_sellers_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_sellers_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="9" avg_row_length="1820" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:26" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 164 (field_sellers_notes)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_sellers_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1959</field>
+		<field name="revision_id">1959</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">בעמוד השער:
+
+Printed for and by the AUTHOR and sold by him at No. 40, Whitechapel Road</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">אין בספר רשימת מוכרים, אך ב
+Berlinische Monatschrift 
+(עמ' 102) ישנה רשימת
+Kollektöre
+בערים שונות ורבות ביבשת, המורכבת מיהודים ולא יהודים.</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">בשער הספר רשום:
+zu finden auf den juedischen Universitaeten zu Frankfurt am Main, Fuerth und Prag</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">סטנוב טוען כי הספר יצא במהדורה מוגבלת, ומעודד את הקונים לקנותו מהר פן יאזל:
+(מודעא) את הספר לא הדפיס השיר רק מתי מספר למען תתם תשורה לקרוביו מיודעיו ומעט מזער נשארו למכור, לכן אל יאמר הכילי הנבל אלכה היום ומחקר אקנה בזול פן בטרם ילך ואינם&quot; (מתחת להקדמה (עמ' [1]).</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">ראו כותרת הספר</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">משה ליסא: האג ורוטרדם.
+וואלף ברעטצפ'עלד - ב&quot;בערייט&quot;.</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">מכיוון שהעותק פגום, שמות המוכרים אינם מופיעים בשלמותם:
+
+&quot;פיורדא - הקצין ר' יוזל ווערטר...
+
+מעץ - התו' מה' מאיר שרלו...
+
+פ'&quot;פ' א&quot;מ הק' ר' אלי' ווערטהיי...
+
+לייבניק - ה' ר' הירש יפ...
+
+ניקלשבורג ה' ר' נתן ווערטהיי...
+
+ביירייט - התו' מהו' ווא... ברעצפ'עלד</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">יוזל מוהר, שהיה אחראי להוצאה לאור של הספר ולמכירתו, הזמין את המעוניינים לרכוש עותק לפנות אליו: &quot;הן אותם שבאו על החתום וקבלו כבר שלשה המחברות הראשונות, הן אותם שלא באו על החתום וקנו הראשונים בכספם, שברצונם לקבל גם את המחברת הרביעית הזאת, מידי יבקשוה. והגרים במקומות אחרות אשר יבקשו את הספר הזה ייטיב בעיניהם לכתוב אלי פאסט פ'רייא.&quot;
+
+מדברי וייזל בהקדמתו עולה כי אילולא נטל מוהר משימה זו, היא היתה אולי נופלת על כתפיו של המחבר עצמו. שכן וייזל מודה למממן הספר על שהשיג עבורו את עזרתו של מוהר, אשר &quot;קבל על עצמו להשגיח על הדבר להכין כל הצריך אל המלאכה, ולקחת תחת ידו הקונטרסים בצאתם מן הדפוס, ולהמציאם לידי החתומים עליו, כי לא אוכל לשאת את המשא הזה עלי&quot;. (עמ' [3])</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sellers_notes_value">בייא דעם היזיגן מוכר ספרים</field>
+		<field name="field_sellers_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

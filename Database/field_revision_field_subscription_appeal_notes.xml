@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_subscription_appeal_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_subscription_appeal_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_subscription_appeal_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_subscription_appeal_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="20" avg_row_length="819" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:27" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 176 (field..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_subscription_appeal_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">אך היתה פניה בתוך ה- 
+Berlinische Monatsschrift.
+
+ראו חלון &quot;קהל יעד&quot;, אצבע &quot;התייחסות לספר&quot;.
+שם מבקש עורך כתב העת ביסטר לעודד את קהל קוראיו לתמוך בפרויקט מבחינה כלכלית ולחתום על הספר (על חוברת אחת או על כל החוברות). 
+
+המחיר לכל חוברת: 
+16 Groschen Brandenburgisch
+
+כל החוברות:
+4 Thaler</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">לנדא מביע ביקורת על מוסד ההחתמה מראש, אם כי לדבריו, בסופו של דבר אף הוא נכנע למנהג זה. בסוף הספר, לפני רשימת &quot;שמות החתומים&quot;, הוא כותב תחת הכותרת &quot;אמר המתאמץ&quot;: על אף שהוצאת הספר היתה כרוכה בהוצאות רבות, &quot;לא אמצתי זרועי להשיג חתומים כי ידעתי רובם ככלם החותמים לקחת ספרים חדשים תמכו ידיהם לא מחמת חשקת הספר כי טרם גמר הדפוס לא ידעו מה ענינו. רק חתמו לכבוד השואל ויחשבה לו צדקה. לכן לבי לא נטה עם בעלי תחבולות האלה לדלק אל הערים ולהשפיל לפני נדיבים בעד החתימה על הספר במחיר מועט... אך כראות רבים מבני קהלתנו אלה שלשה ספרים נפתחים ויטב בעיניהם והפצירו בי לבשר בקהל רב. וחתימות ידם היו בראשונה וגם השאוני לשלח המבשר לעירות אחרים והנה עשיתי רצונם נגד רצוני ובלי נפש חפצה...&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2167</field>
+		<field name="revision_id">2167</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">ראו אצבע בחלון &quot;פרטי הכרך&quot;.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בסוף הקדמתו הקצרה מודיע סטנוב: &quot;לידע ולהודיע ששמות הנדיבים אשר באו על החתום ואשר עוד יבואו יודפסו לשם ולתפארת בסוף החלק השלישי אם יגזור הש&quot;ית בחיים&quot;.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בעמוד השער רשום:
+&quot;הקונים הנגשים לקנות יזכו במקחם כל חלק בסך א' ר&quot;ט ו&quot;ג&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2232</field>
+		<field name="revision_id">2232</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">זוהי מטרת הספר - גיוס מנויים</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">אך ראו הדברים בסוף עמוד השער.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בעמ' [11]:
+&quot;... ואליכם אישים אקרא... צאו נא לעזרת ה' בגבירי' ותני את ידכם עמדי לקחת את ערובת אלה הספרי' הנ&quot;ל כנ?? בוגין... ויאחזו שמותיכם בספרי זה בחלק הב' ממנו בעט ברזל ועופרת...&quot;
+בעמוד האחרון של הספר הוא משאיר מקום לרישום החותמים
+&quot;אלה איפה הם הנדיבים המתנדבים בעם לתת לכסף מוצא...</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">&quot;מקרא העדה&quot;, דפים [ח']+[1] עמ' אחרון:
+סטנוב משבח את הבאור למנדלסון ואת התועלת הרבה שלו לחינוך נערי בני ישראל, ופונה לקהל ישראל לרכוש אותו (בעמוד האחרון):
+&quot;ועתה אתם ברוכי ה' אחינו בית ישראל, בואו נא על החתום לקחת כל איש מכם ספר אחד במקח חמשה ר&quot;ט ומוכרי ספרי' אשר איבואו עה&quot;ח, לקנות הרבה ביחד וגם מאספי החתימות הם יקחו חלקם עשרה פרראצענט למאה, ושמות החתומים יודפסו בראש הספר למען יהי' להם זה למזכרת, לדורות עולם למשמרת, כי טובה עשו בישראל...&quot;.
+סטנוב פונה גם לקהל לחתום על הוצאת משניות מנוקדות, ושלשים מחברות עמנואל  (&quot;כל ספר בסך ג' רט לכשיפדו&quot;), וספר הכוזרי ראשון, וכן - ס' המורה.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בשער הספר נרשם:
+&quot;... ואף כי הוצאות הדפוס מרובות הן... ובכן כל איש ואיש אשר ידבנו לבו לקרבה אל המלאכה יתנן עדיהן. עדיו בחותמו זכין לו לכל א' מהן...&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">תחת הכותרת &quot;הסכמות&quot; פונים החותמים לבקשת תמיכה במחבר. בין היתר הם כותבים: &quot;ואיש איש מעדת ה' חלק כחלק יקח מספרי תורתו [של הורוויץ] ובמיטב נדבת לבו ישלם משכותרו לא פחות ממחיר זהב אחד לחלק אחד... וכל המוסיף למחבר ברכה יוסיפו לו שנות חיים...&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בסוף הספר ישנם פרטים על החתימה מראש:
+&quot;ווייל וויר נון מעהר דורך אונזרע סובשקריבנטן אין דען שטאנד גזעצט זינד קיינם פ'ארשוטעט צו בדירפ'ן; זא ענדרן וויר הירמיט, דען פונקט אין אונזרם הרויסגעגבנן פלאנע אב, ווארין עס הייסט, דאס מאן ביים עמפפ'אנג דעם ערשטן טיילס, אויך דען צווייטן פרענומערירן מיסע, אונד מאכן הירמיט בקאנט, דאס וויר פ'אר איצט, קיינע פרענומראציאן אננעהמן. דיא העררן אבנעמר צאהלן אלזא בלאס איהרן עמפפ'אנגנן טייל.&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">קדם לפרסום ספר זה חיבור קצר בשם &lt;ins&gt;ערוגת הבושם&lt;/ins&gt;, המיועד לקידום מכירתו של &lt;ins&gt;בשמים ראש&lt;/ins&gt;. ראו שם.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">אין פניה למכירת מנויים לספר הנוכחי, אך חיבור זה מיועד כולו לגייס מנויים לתרגום התורה לגרמנית.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2386</field>
+		<field name="revision_id">2386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">החיבור מוקדש להשגת מנויים מראש עבור ספרו &quot;בשמים ראש&quot;.
+כדברי ברלין בעמ' הראשון: &quot;אחר ששיערתי כמה ממון ישתקע בהוצאת הדפוס ראיתי כי לא אוכל לו&quot; ולכן החליט לפנות למממנים. 
+[ראו באצבע בחלון קהל יעד, למי הוא פונה.]
+בעמוד האחרון מציין למי לפנות כדי לחתום על הספר: &quot;אם יש את נפשם לשלוח לידי ממש, או איש אל קרובו ומיודעו בעיר הזאת והוא יגיענו אלי, ואם אין לאיש מודע פה, או במקומות הרחוקים שראוי לחוש על הוצאת מ&quot;פ, ישלחו החתימה ליד גיסי הרב מה&quot;רר מאיר הויזן יצ&quot;ו בלאטונא, או ליד חתן אחותי, רבני הנגיד הקצ' כמה&quot;רר משה מיר יצ&quot;ו בברעסלא, או ליד גיסי הגא&quot;בד מקליווא יצו, ומבלעדי קרואי שם אשר הודעתים פה.&quot;
+ברלין מציין תנאים למי שיביא לו מנויים נוספים: &quot;הנה כל אשר נדבו לבו להמציא לי חתומים נוסף על החן אשר אני נושא לו הנני נוקב שכרו בזה, בעד כל עשרה חתומים יקח ספר אחד ועשרה תחת המאה&quot;.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">היוצרים מסבירים את שיקוליהם: &quot;דער אנטראג וואר דאש ווערק אויף פרענומעראציאן הערוישצוגעבען, ווייל אבר דיזער וועג זייט אייניגן יאהרן פ'יל פ'אן זיינעם קרעדיט פ'רלאהרן האט, זא קעמט דער ערשטע באנד אויף קאסטן דער פ'ערפ'אסער הערוטיש, ווארויף מאן מיט פ'אלגענדן פרייזען סובשקריבירן קאן...&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">זוהי בעצם מודעה, הפונה לקהל לחתום על ספר שיצא בעתיד, תוך שהיא מציגה בפניו דוגמאות נבחרות לספר שעתיד לצאת.
+וכך מציין המחבר:
+&quot;... עוד אוכל תת מחברת כזאת לשואליה חינם אין כסף; כאשר כבר עשיתי, זה פעמים. (אף כי אין לערוך קטני ערך אלה אשר יצוא יצאו כבר מתחת ידינו, אל מחברתנו, אשר ידובר בה פה; כן מפאת החומר, וכן מפאת הצורה) אף שמעתי הפעם לקול יועצי שלום, אשר אמרו אלי: כי לא זו הדרך אשר תיטב גם בעיני העם, גם לי; לא נכון לשמש ע&quot;מ לקבל פרת, אך גם לא נכון לבזבז; וכדומה למועצות האהבה ורעות כאלה; לקולם שמעתי הפעם. אז אמרתי: כי תצא המחברת, על יד מספר אנשים יקירי לב ואוהבי דעת, אשר ייטב בעיניהם לקחת אותה בצאתה לאור, במחיר א' ר&quot;ט פריי&quot;סיש קוראינט; ושמותיהם הטובים היוצאים מבין אצבעותיהם, על פני ספר אשר יונח לפניהם, בפנותם אל הדבר (כמפורש לרגלי המודעת) על חפץ לבם יעידו... כל החפץ במודעת זאת, יחפוץ אותה, אם מידי, אם מידי רעי, בלא מחיר. ואשר לבו פונה לבוא על החתום, אליהם או אלי יפנה. ובמקומות אחרים, נודע המודעת על ידי מיודעי, ומיודעי על יד המודעת, להם פונים אשר את נפשם לחתום.&quot;(עמ' [7-5]).</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בספר ישנה מודעה מאת &quot;וואלפסזאהן&quot; ו&quot;יואל ברי&quot;ל&quot;, ובה בקשה להירשם לחוברות הבאות. &quot;אנחנו מבקשים מאת כל איש ואיש אשר ידננו לבו לקנות הספר הזה, שימהר ויודיע לנו את שמו, כדי שנוכל להדפיסו בתוך שמות החתומים במחברת השלישית אשר תצא לאור בימים לא כבירים.&quot;</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">בסוף הספר ישנה &quot;מודעה&quot; ובה נאמר, בין היתר: &quot;כל המתנדב לחתום עליו עוד, יש זמן עד פסח הבע&quot;ל&quot;.</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2466</field>
+		<field name="revision_id">2466</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_subscription_appeal_notes_value">המאסף</field>
+		<field name="field_subscription_appeal_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

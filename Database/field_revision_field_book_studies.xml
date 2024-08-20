@@ -1,0 +1,1222 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_book_studies">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_book_studies_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_book_studies_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_book_studies" engine="InnoDB" version="10" row_format="Dynamic" rows="91" avg_row_length="720" data_length="65536" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:15" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 23 (field_book_studies)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_book_studies">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Krochmalnik, Daniel: Scheintod und Emanzipation. Der Beerdigungsstreit in seinem historischen Kontext, in: Trumah, Bd. 6 (1997), S. 107–149; Davies, Martin: Identity or History, Detroit 1995, S. 200-205.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Balaban, Majer: Herz Homberg in Galizien, in: Jahrbuch für jüdische Geschichte und Literatur, Jg 19 (1916) Nr 1, S. 189-221.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1975</field>
+		<field name="revision_id">1975</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">על פי אנדראס:
+
+Leo Baeck Inst: Special Collection of articles from old, rare newspapers, periodicals and books (http://www.leobaeck.org/silber.HTM)</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1982</field>
+		<field name="revision_id">1982</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">AK: Meyer - 1965 - Nr. 298. SBBPK: 168366</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">לצרוס בן-דוד, משהו לאופיים של היהודים, ירושלים תשנ&quot;ד.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Kayserling, Meyer: Der Dichter Ephraim Kuh, ein Beitr. zur Geschichte der dt. Literatur, Berlin (Springer) 1864, 47 S.
+
+Seitz, Regina Maria: Verschwiegene Texte: Kritik an der Aufklärung bei Mendelssohn, Behr, Maimon und Kuh, Ann Arbor (Mich.) 1997, [Thesis (Ph.D.)--University of Virginia], 1997 (facsimile).
+
+Rhotert, Hans: Ephraim Moses Kuh, München (München, Phil. Diss. v. 21. Jan. 1927 [1928]) 1927, 82 S.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Jeremy Asher Dauber, Antonio's Devils, p. 175 ff</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Schulte 2002, 92-99.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">על ההקשר בו פורסם החיבור ועל התגובות שעוררו הצעותיו של ונאובן בקרב חברי הקהילה היהודית, ראו: 
+
+Todd Endelman, The Jews of Britain 1656 to 2000, Berkeley 2002, pp. 83 - 84
+
+Endelman, The Jews of Georgian England
+
+Ruderman, Jewish Enlightenment in an English Key</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Adresses, mémoires et pétitions des juifs. 1789-1794, Paris 1995.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Babinger, Franz:      Elkan Henle, 1761-1833. Ein Beitr. zu[!] Geschichte der Judenverselbständigung in Bayern, in: MGWJ,  Jg. 62.  [N.F. 26,1918].</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2064</field>
+		<field name="revision_id">2064</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Isaak Alexander, Schriften : ein Beitrag zur Frühaufklärung im deutschen Judentum / Anja Speicher (Hrsg.) Frankfurt am Main : Lang, 1998. [This book contains Alexander's printed works].</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2070</field>
+		<field name="revision_id">2070</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Wohlwill, Immanuel: Über den Zustand der Jacobsonsschule in Seesen während der letzten drei Jahre, in:AZJ, Jg. 1847, Heft 1, S. 13</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">הכהן 1994</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2082</field>
+		<field name="revision_id">2082</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">א' יערי, &quot;הערות ל'שתי איגרות מארץ ישראל' לגרשם שלום&quot;, תרביץ כ&quot;ו, עמ' 109 - 112.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2089</field>
+		<field name="revision_id">2089</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Werner Weinberg, &quot;Einleitung&quot;, in Moses Mendelssohn, Gesammelte Schriften, Jubilaeumsausgabe, 15, 1 [Der Pentateuch], pp. XI - CLIV</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2099</field>
+		<field name="revision_id">2099</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">סמט, ר' שאול ברלין:
+
+משה סמט, &quot;ר' שאול ברלין וכתביו&quot;, קרית ספר מ&quot;ג (תשכ&quot;ח), עמ' 429 - 441.
+
+
+סמט, בשמים ראש:
+
+משה סמט, &quot;'בשמים ראש' של ר' שאול ברלין, ביבליוגרפיה היסטוריוגרפיה ואידיאולוגיה, קרית ספר מ&quot;ח (תשל&quot;ג), עמ' 509 - 523
+
+
+פלאי, הריפורמה הדתית:
+
+משה פלאי, הריפורמה הדתית של הררב &quot;החרדי&quot; שאול ברלין, 
+HUCA 43, 1971, 
+עמ' א - כג.
+
+
+פיינר, מהפכת הנאורות, עמ' 307 - 318.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">&lt;p&gt;ש' אסף, קרית ספר, ב, תרפ&quot;ה, עמ' 298.&lt;/p&gt;
+</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">זהר, נעמי. תשס&quot;א. באור חדש: עיונים במחזה העברי המקראי בתקופת ההשכלה, רמת גן. (פרק ג' אף כולל מהדורה מוערת של המחזה).</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פלאי, משה. 1999. &quot;הפולמוס הדתי: דברי ריבות&quot;. בתוך: סוגות וסוגיות בסיפרות ההשכלה העברית: הז'אנר המשכילי ואביזרייהו. [תל אביב] : הקיבוץ המאוחד, 115-101.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פלאי, משה. 1999. &quot;הפולמוס הדתי: דברי ריבות&quot;. בתוך: סוגות וסוגיות בסיפרות ההשכלה העברית: הז'אנר המשכילי ואביזרייהו. [תל אביב] : הקיבוץ המאוחד, 115-101.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רשימה מפורטת (מעודכנת עד 1795) של ספרים המתייחסים לספר כתב יושר בתוך פלאי, כתב יושר, עמ' 125 - 127.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">על ההקשר הדאיסטי בו נכתב ותורגם הספר ראו:
+
+Ruderman, Jewish Enlightenment in an English Key, pp. 92 - 96.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">על פעילותו של המחבר: 
+
+Fishman, The Jews of Shklov</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פיינר, שמואל. תשנ&quot;ח. &quot;הדרקון הכרוך על הכוורת: י&quot;ל מרגליות והפרדוקס של ההשכלה המוקדמת.&quot; ציון סג', 74-39.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פיינר, שמואל. תשנ&quot;ח. 'הדרקון הכרוך על הכוורת: י&quot;ל מרגליות והפרדוקס של ההשכלה המוקדמת.' ציון סג', 74-39.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">M. Freudenthal, &quot;R. Wolf Dessau&quot;, in: Beiträge zur Geschichte der deutschen Juden. Festschrift zum siebzigsten Geburtstage Martin Philippsons (Leipzig 1916), pp. 184-212.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מהדורה מוקדמת יותר של שמונה פרקים: וינה 1798 (לפי וינוגרד: &quot;עם יידיש&quot;). 
+כותר: &quot;שמונה פרקים להרמב&quot;ם :אינס דייטשע איביערזעצט&quot;
+ספרייה לאומית: S 23 V 5107
+וכן &quot;שמונה פרקים להרמב&quot;ם :מיט דער דייטשען איבערסעצונג ...&quot;,בזל 1804 (&quot;נדפס עברית וגרמנית באותיות עבריות, זה למטה מזה&quot;): S 23 V 5099</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Harry Austryn Wolfson, &quot;Solomon Pappenheim on time and space and his relation to Locke and Kant&quot;, in: Jewish Studies in memory of Israel Abrahams, NY 1927, pp. 426-40.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מאמר על רפאל לוי:
+
+Steven and Henry Schwarzschild, &quot;Two Lives in the Jewish Frueaufklaerung: Raphael Levi Hannover and Moses Abraham Wolff&quot;, LBIYB XXIX (1984), 229-276.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2183</field>
+		<field name="revision_id">2183</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מאמר על רפאל לוי:
+
+Steven and Henry Schwarzschild, &quot;Two Lives in the Jewish Frueaufklaerung: Raphael Levi Hannover and Moses Abraham Wolff&quot;, LBIYB XXIX (1984), 229-276</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">דן מירון, &quot;על אהרן וולפסון ומחזהו 'קלות-דעת וצביעות' ('ר' חנוך ורב יוספכי')&quot;, בתוך: אהרן וולפסון, קלות דעת וצביעות, עם מבוא מאת דן מירון, ת&quot;א תשל&quot;ז.
+
+מחקריה של יוטה שטראוס - Jutta Strauss.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2192</field>
+		<field name="revision_id">2192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">schoeps, H. J. 1963 (1952). &quot;Gumpertz Levison-Leben und Werk: Eine Gelehrten Abenteurers des 18. Jahrhunderts&quot;. Studien zur unbekannten Religions- und Geistesgeschichte. Berlin; 
+Graupe, H. M. 1962. &quot;Mordechai Gumpel (Levison)&quot;. Bulletin des Leo Baeck Institut 5.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג',334, 337.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג', עמ' 334, 337.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג', עמ' 334, 337.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג', עמ' 337,334.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג', עמ' 334, 337.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2227</field>
+		<field name="revision_id">2227</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג', עמ' 337,334.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג',334, 337.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רקובר, נחום.1972. 'היסוד המשפטי של איסור ההדפסה ב&quot;הסכמות&quot; לספרים'. דברי הקונגרס העולמי החמישי למדעי היהדות, ג',334, 337.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">נעמי זהר, באור חדש, עיונים במחזה העברי המקראי בתקופת ההשכלה, רמת גן תשס&quot;א, עמ' 25 והלאה.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רוזנבלום, נח ח. 1989. &quot;משה מנדלסון-פראנקפורטר, מאחרוני המשכילים בגרמניה&quot;. בתוך: עיוני ספרות והגות: משילהי המאה השמונה עשרה עד ימינו. ירושלים: הוצאת ראובן מס, 66-52.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">אופק 1979; טורי, גדעון. תשנ&quot;ג. &quot;שימוש מושכל במשל משכילי: כריסטיאן פירכטגוט גלרט בספרות העברית&quot;. בתוך: נקודות מפנה בספרות העברית וזיקתן למגעים עם ספרויות אחרות. (עורכים) זיוה שמיר ואבנר הולצמן. תל אביב: מכון כץ, 86-75;  Rezler-Bersohn, Nehama.1980.“Isaac Satanow: An epistome of the Era.” Leo Baeck Institut Year Book 25, 81-100.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">אופק 1979; טורי, גדעון. תשנ&quot;ג. &quot;שימוש מושכל במשל משכילי: כריסטיאן פירכטגוט גלרט בספרות העברית&quot;. בתוך: נקודות מפנה בספרות העברית וזיקתן למגעים עם ספרויות אחרות. (עורכים) זיוה שמיר ואבנר הולצמן. תל אביב: מכון כץ, 86-75; Rezler-Bersohn, Nehama.1980.“Isaac Satanow: An epistome of the Era.” Leo Baeck Institut Year Book 25, 81-100;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2247</field>
+		<field name="revision_id">2247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">אופק 1979; טורי, גדעון. תשנ&quot;ג. &quot;שימוש מושכל במשל משכילי: כריסטיאן פירכטגוט גלרט בספרות העברית&quot;. בתוך: נקודות מפנה בספרות העברית וזיקתן למגעים עם ספרויות אחרות. (עורכים) זיוה שמיר ואבנר הולצמן. תל אביב: מכון כץ, 86-75; Rezler-Bersohn, Nehama.1980.“Isaac Satanow: An epistome of the Era.” Leo Baeck Institut Year Book 25, 81-100;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Edward Breuer, The Limits of the Enlightenment, Jews, Germans and the Enlightenment Study of Scripture, Cambridge Mass. 1996, pp. 112 – 115.
+David Sorkin, The Berlin Haskalah and German Religious Thought, London &amp; Portland, Or. 2001, pp. 45 - 48</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Schoeps, H. J. 1963 (1952). &quot;Gumpertz Levison-Leben und Werk: Eine Gelehrten Abenteurers des 18. Jahrhunderts&quot;. Studien zur unbekannten Religions- und Geistesgeschichte. Berlin; 
+Graupe, H. M. 1962. &quot;Mordechai Gumpel (Levison)&quot;. Bulletin des Leo Baeck Institut 5</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">שמואל ווינער, קהלת משה, עמ' 23, מס' 194.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פיינר, שמואל. תשנ&quot;ח. &quot;הדרקון הכרוך על הכוורת: י&quot;ל מרגליות והפרדוקס של ההשכלה המוקדמת.&quot; ציון סג', 74-39.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Irene E. Zwiep, &quot;Imagined Speech Communities: Western Ashkenazi Multilingualism as Reflected in Eighteenth-Century Grammars of Hebrew&quot;, in: Shlomo Berger et.al., Speaking Jewish - Jewish Speak, Multilingualism in Western Ashkenazic Culture, Leuven 2003, pp. 77 - 117.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2274</field>
+		<field name="revision_id">2274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מצויינים אצל Fishman 1987:
+
+Stanislavski, S. 1891.  &quot;A Biograficheskie Etudi&quot;. Voskhod
+12, 143-157, 176; פין, שמואל יוסף. 1915. קריה נאמנה. וילנה: יצחק פונק; צינברג, ישראל. 1943. די געשיכטע פון דער ליטעראטור ביי אידן (כרך 5); 324-320; מאהלר, רפאל. 1956. דברי ימי ישראל בדורות האחרונים 1. תל אביב, 4; דויד מגיד. 1891. תולדות משפחת גינצבורג. סט. פטסבורג, 28-27, 32, 56-54, 171-168;  שבד, אברהם חיים בן שמואל צבי. 1904. תולדות הימים : (ורשומות מפנקסים ישנים של)... חברא קדישא &quot;שבעה קרואים&quot;, ועל בית המדרש הגדול אשר בעיר מינסק משנת התקכ&quot;ג עד שנת התרס&quot;ד... וילנה ומינסק;  על אביו של ברוך שיק - יעקב שיק: מורה צדק, שקלוב 1783;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Kestenberg-Gladstein
+
+פיינר, מהפכת הנאורות, עמ' 388 והלאה</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רוזנבלום, נח ח. 1989. &quot;האנציקלופדיה העברית הראשונה, מחברה השתלשלותה&quot;. בתוך: עיוני ספרות והגות: משילהי המאה השמונה עשרה עד ימינו. ירושלים: הוצאת ראובן מס, 51-1.
+
+Robinso, Ira. 1989. &quot;Kabbala and Science in Sefer Ha-Berit: A Modernization Stragegy for Ortodox Jews&quot;. Modern Judaism 9, 275-288</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">בן-שמאי, ברכה. 2002. אידיאלים ומגמות של תנועת ההשכלה במאה ה-18 כפי שמשתקפים ב&quot;ספר החזיון&quot; של יצחק סאטנוב . עבודת גמר לתואר &quot;מוסמך&quot;. אוניברסיטת תל-אביב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Adam Shear, &quot;Judah Halevi's Sefer ha-Kuzari in Early Modern Ashkenaz and the Early Haskalah: A Case Study in the Transmission of Cultural Knowledge&quot;, in: Resianne Fontaine, Andrea Schatz, Irene Zwiep (eds.), Sepharad in Ashkenaz, Medieval Knowledge and Eighteenth-Century Enlightened Jewish Discourse, Amsterdam 2007, pp. 69-83.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">הספר מוזכר בספר:
+
+Fishman, Jews of Shklov</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2301</field>
+		<field name="revision_id">2301</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מלאכי, צבי. תשל&quot;ט. מחקרים על תולדות יהדות הולנד. (כרך שני).(עורך)יוסף מכמן. 'המשכיל הפילוסוף נ&quot;ה אולמאן וחישובי הקץ שלו'. ירושלים: המרכז לחקר יהדות הולנד, האוניברסיטה העברית בירושלים, 88-77.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רשימה מפורטת (מעודכנת עד 1975) של ספרים המתייחסים לספר כתב יושר בתוך פלאי, כתב יושר, עמ' 125 - 127.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Thomas Kollatz, Under the Cover of Tradition: Old and New Science in the Works of Aron Salomon Gumpertz, in: Schatz et. al. (eds.), Sepharad in Ashkenaz, 2007, pp. 147 ff.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">שמואל ורסס, &quot;הטפה משכילית במחלצות של פרוזה מחורזת – עיון ב'מגילת סדרים' מאת יהודה הורוויץ&quot;, בספרו: מגמות וצורות בספרות ההשכלה, י-ם 1990, עמ' 187 – 205.
+
+פיינר, מהפכת הנאורות, עמ' 382 - 385.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Sinkoff, Nancy Beth. 1996. Tradition and Transition: Mendel Lefin of Satanow and the Beginnings of the Jewish Enlightenment in Eastern Europe, 1749-1826. (Dissertation). Columbia University;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Fishman, The Jews of Shklov, p. 73 ff
+
+אברהם יערי, &quot;לתולדות הדרמה הישראלית: דרמה עברית מחיי יוסף ואחיו&quot;, במה 5-6 (1934), 28-34.
+
+ציפורה קגן, &quot;מקורות ומקוריות במחזה מלחמה בשלום לחיים אברהם כץ&quot;, במה 43 [96] (1969), 62-77, ו-44 [97] (1970), 70-78.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Irene Zwiep, &quot;Imagined Speech Communities...&quot;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Fishman, Jews of Shklov</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2346</field>
+		<field name="revision_id">2346</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">בתוך העותק שנבדק נמצא דף מודפס (במכונת כתיבה) מאת מאיר גילון, בו מציין כי חקר את הספר הנוכחי כחלק ממחקרו על תקופת &quot;טרום-ההשכלה&quot;. לפי גילון שם, הגיע למסקנה לגבי תאריך פרסום החיבור (צ&quot;ל כתיבת החיבור? על עמוד השער מופיע תאריך פרסום), עליו &quot;נחלקו דעות ראשי ההיסטוריונים (דינור, שלום)&quot; 
+
+יהודה פרידלנדר, במסתרי הסאטירה, י-ם תשמ&quot;ט (חלקים מן החיבור בצירוף הערות ומבוא).
+
+יהודה פרידלנדר, &quot;אב ותולדה - &quot;בין פולמוס לסאטירה&quot; : על &quot;נזר הדמע&quot; לר’ ישראל מזאמושץ&quot;, מגוון; מחקרים בספרות העברית ובגילוייה האמריקניים (תשמח) 323-346.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Werner Weinberg, &quot;Einleitung&quot;, in Moses Mendelssohn, Gesammelte Schriften, Jubilaeumsausgabe, 15, 1 [Der Pentateuch], pp. XI - CLIV</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">ש' פיינר, &quot;בין 'ענני הסכלות' ל'אור המושכלות' - יהודה הורוויץ משכיל מוקדם במאה הי&quot;ח&quot;, במעגלי חסידים, קובץ מאמרים מוקדש לזכרו של מרדכי וילנסקי, בעריכת ע' אטקס, ד' אסף, י' ברטל וא' ריינר, ירושלים תש&quot;ס, עמ' 111-160.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מצויינים אצל Fishman 1987:
+
+Stanislavski, S. 1891.  &quot;A Biograficheskie Etudi&quot;. Voskhod
+12, 143-157, 176; פין, שמואל יוסף. 1915. קריה נאמנה. וילנה: יצחק פונק; צינברג, ישראל. 1943. די געשיכטע פון דער ליטעראטור ביי אידן (כרך 5); 324-320; מאהלר, רפאל. 1956. דברי ימי ישראל בדורות האחרונים 1. תל אביב, 4; דויד מגיד. 1891. תולדות משפחת גינצבורג. סט. פטסבורג, 28-27, 32, 56-54, 171-168;  שבד, אברהם חיים בן שמואל צבי. 1904. תולדות הימים : (ורשומות מפנקסים ישנים של)... חברא קדישא &quot;שבעה קרואים&quot;, ועל בית המדרש הגדול אשר בעיר מינסק משנת התקכ&quot;ג עד שנת התרס&quot;ד... וילנה ומינסק;  על אביו של ברוך שיק - יעקב שיק: מורה צדק, שקלוב 1783;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">כרמלי-וינברגר, משה. 1966. ספר וסייף. ירושלים, ניו יורק: מכון סורא, 223-216.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2360</field>
+		<field name="revision_id">2360</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Zwiep, &quot;Imagined Speech Communities&quot;; A. Schatz, &quot;Vorgeschrieben und umgeschrieben: die neue heilige Sprache der juedischen Aufklaerer&quot;, in M. Brenner (ed.), Juedische Sprachen in deutscher Umwelt: Hebraeisch und Jiddisch von der Aufklaerung bis ins 20. Jahrhundert (Goettingen 2002), pp. 19-27.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">נעמי זהר, עוללות מבציר, השכלה-חסידות-מתנגדות ביצירות נשכחות, ירושלים תשמ&quot;ח</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Ruderman 1995</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">אלכסנדר גוטרמן, &quot;ספר רפואות לד&quot;ר מארקוזה והצעותיו לתיקונים בחיי היהודים&quot;, גלעד, ד-ה (תשל&quot;ט), עמ' 35 - 53.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Sinkoff, Nancy Beth. 1996. Tradition and Transition: Mendel Lefin of Satanow and the Beginnings of the Jewish Enlightenment in Eastern Europe, 1749-1826. (Dissertation). Columbia University.
+קלוזנר 1930</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">סמט, ר' שאול ברלין:
+
+משה סמט, &quot;ר' שאול ברלין וכתביו&quot;, קרית ספר  מ&quot;ג (תשכ&quot;ח), עמ' 429 - 441.
+
+
+פלאי, הריפורמה הדתית:
+
+משה פלאי, &quot;הריפורמה הדתית של הרב 'החרדי' שאול ברלין&quot;, בתוך:
+Hebrew Union College Annual, XLII (1971), pp. א - כג.
+
+Talya Fishman, ____</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פרטים אחדים על זולדין וספריו:
+
+D. Simonsen, &quot;Mendelssohniana - aus Daenemark&quot;, in: Beitraege zurr Geschichte der deutschen Juden. Festschrift zum siebzigsten Geburtstage Martin Philippsons, Leipzig 1916, pp. 213 - 224.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2369</field>
+		<field name="revision_id">2369</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פיינר, מהפכת הנאורות
+
+Zwiep, Imagined Speech Communities</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">משה סמט, &quot;הלנת המתים, לתולדות הפולמוס על קביעת זמן המוות&quot;, אסופות ג' (תשמ&quot;ט), עמ' תיג-תסה.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">Schwarzschild, Steven and Henry. 1984. &quot;Two Lives in the Jewish Frühaufklärung Raphael Levi Hannover and Moses Wolff&quot;. Leo Baeck Institute Year Book, p. 229-258.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">צויינים אצל Fishman 1987:
+
+Stanislavski, S. 1891.  &quot;A Biograficheskie Etudi&quot;. Voskhod
+12, 143-157, 176; פין, שמואל יוסף. 1915. קריה נאמנה. וילנה: יצחק פונק; צינברג, ישראל. 1943. די געשיכטע פון דער ליטעראטור ביי אידן (כרך 5); 324-320; מאהלר, רפאל. 1956. דברי ימי ישראל בדורות האחרונים 1. תל אביב, 4, 54-53; דויד מגיד. 1891. תולדות משפחת גינצבורג. סט. פטסבורג, 28-27, 32, 56-54, 171-168;  שבד, אברהם חיים בן שמואל צבי. 1904. תולדות הימים : (ורשומות מפנקסים ישנים של)... חברא קדישא &quot;שבעה קרואים&quot;, ועל בית המדרש הגדול אשר בעיר מינסק משנת התקכ&quot;ג עד שנת התרס&quot;ד... וילנה ומינסק;  על אביו של ברוך שיק - יעקב שיק: מורה צדק, שקלוב 1783;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2419</field>
+		<field name="revision_id">2419</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">מצויינים אצל Fishman 1987:
+
+Stanislavski, S. 1891.  &quot;A Biograficheskie Etudi&quot;. Voskhod 12, 143-157, 176; פין, שמואל יוסף. 1915. קריה נאמנה. וילנה: יצחק פונק; צינברג, ישראל. 1943. די געשיכטע פון דער ליטעראטור ביי אידן (כרך 5); 324-320; מאהלר, רפאל. 1956. דברי ימי ישראל בדורות האחרונים 1. תל אביב, 4; דויד מגיד. 1891. תולדות משפחת גינצבורג. סט. פטסבורג, 28-27, 32, 56-54, 171-168;  שבד, אברהם חיים בן שמואל צבי. 1904. תולדות הימים : (ורשומות מפנקסים ישנים של)... חברא קדישא &quot;שבעה קרואים&quot;, ועל בית המדרש הגדול אשר בעיר מינסק משנת התקכ&quot;ג עד שנת התרס&quot;ד... וילנה ומינסק;  על אביו של ברוך שיק - יעקב שיק: מורה צדק, שקלוב 1783;</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2429</field>
+		<field name="revision_id">2429</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">פיינר, יהודה הורוויץ</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">ריבקינד 1929, קנד'</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_studies_value">רפל, דב. 1986. 'החינוך היהודי בגרמניה במאה הי&quot;ט באספקלריה של ספרי הלימוד'. מתוך: ספר אביעד. (עורך) יצחק רפאל. ירושלים: מוסד הרב קוק, שה'-שטז'. 
+
+Irene E. Zwiep, &quot;Imagined Speech Communities: Western Ashkenazi Multilingualism as Reflected in Eighteenth-Century Grammars of Hebrew&quot;, in Shlomo Berger et al, eds., Speaking Jewish – Jewish Speak, Multilingualism in Western Ashkenazic Culture, Leuven 2003 (Studia Rosenthaliana 36), pp. 77 – 117, esp. 105 – 111.
+פאהן, ראובן. תרצ&quot;ז 1937. כתבי ראובן פאהן: חלק שני, פרקי השכלה. סטניסלבוב.</field>
+		<field name="field_book_studies_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

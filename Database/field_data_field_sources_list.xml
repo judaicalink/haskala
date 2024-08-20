@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_sources_list">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_sources_list_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_sources_list_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_sources_list" engine="InnoDB" version="10" row_format="Dynamic" rows="77" avg_row_length="638" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:09" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 167 (field_sources_list)" />
+	</table_structure>
+
+	<table_data name="field_data_field_sources_list">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Leibniz: Theodicee.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Herder, Johann Gottfried: Ideen zur Philosophie der Geschichte
+
+Michaelis, Johann David: Orientalische Bibliothek
+
+Dohm, Christian Wilhelm von, כריסטיאן וילהלם פון דוהם: Über die bürgerliche Verbesserung der Juden
+
+Brandes, Ernst: Ueber einige bisherige Folgen der FR</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Bruhier d’Ablaincourt, Jacques: Abhandlung von der Ungewißheit der Kennzeichen.
+
+Brinckmann, Johann Peter: Beweis der Möglichkeit, daß einige Leute ...
+
+המאסף</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1976</field>
+		<field name="revision_id">1976</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Mendelssohn, Moses, מנדלסון, משה: Jerusalem.
+
+Michaelis, Johann David: Mosaisches Recht.
+
+Mendelssohn, Moses, מנדלסון, משה: Phaedon.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1982</field>
+		<field name="revision_id">1982</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">תהילים</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Wette, Wilhelm Martin Leberecht de: Beiträge zur Einleitung in das Alte Testament
+
+Eichhorn, Johann Gottfried: Einleitung ins Alte Testament.
+
+Michaelis, Johann David: Mosaisches Recht.
+
+Hezel, Wilhelm Friedrich: Über die Quellen der Mosaischen Urgeschichte.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Abel, Caspar: Hebräische Altherthümer.
+
+Mendelssohn, Moses, מנדלסון, משה: Jerusalem.
+
+Surenhuys, Willem: Mischna sive Totius Hebræorum Juris ...
+
+Mendelssohn, Moses, מנדלסון, משה: Phaedon.
+
+Ventura, Mardechée: Prières journalières à l’usage des juifs portugais.
+
+Ugolino, Blasio: Thesaurus antiquitatum sacrarum ...</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1998</field>
+		<field name="revision_id">1998</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Gregoire, Henri: Observations nouvelles sur les juifs.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Josephus Flavius, יוסף בן מתתיהו: Bellum Judaicum.
+
+Jahn, Johann: Biblische Archäologie.
+
+Geronides, Josephus, יוסף בן גריון הכהן: יוסיפון בן גוריון.
+
+David Ganz, דוד גנז: צמח דוד.
+
+תלמוד</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2008</field>
+		<field name="revision_id">2008</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Herder, הרדר
+
+Michaelis, מיכאליס
+
+Friedlaender, David, פרידלנדר, דוד</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">David Friedländer: זענדשרייבן אן די דייטשי יידן.
+
+Flekels, Eleasar, פלקלס, אלעזר בן דוד: עולת צבור.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">He quote also:
+
+Apuleius, Lucius: Metamorphoses.
+
+Bayle, Pierre: Pensees diverses, Rotterdam 1619.
+
+Hume, David: Essays, London 1760.
+
+Lessing, Gotthold Ephraim: Theologischer nachlaß, Berlin 1784.
+
+Maimonides, Moses: More nevuchim.
+
+Mendelssohn, Moses: Jerusalem oder über religiöse Macht und Judenthum, Berlin 1783.
+
+Michaelis, Johannes David: Mosaisches Recht, Frankfurt/Main 1770-1803.
+
+Montesquieu: Espit de Loix, Genf 1788
+
+Priestley, Joseph: Letters to the jews, Birmingham 1786/87. [Priestley: Briefe an die Juden, um sie zu einer freundschaftlichen Untersuchung der Beweise für das Christenthum einzuladen, Frankfurt/Main 1787]
+
+Pufendorf, Samuel von: Le droit de la nature et des gens, Amsterdam 1706.
+
+Reimmann, Jacob Friedrich: Historia universalis atheismi et atheorum falso et merito suspectorum, Hamburg 1725.
+
+Sallust: Catilina.
+
+Spinoza, Baruch de: Tractatus theologico-politicus, Hamburg 1670.
+
+Toland, John, A collection of several pieces, London 1726.
+
+Trigland, Jacob: Diatribe de Secta Karacor, Hamburg/ Leipzig 1714.
+
+Pauw, Cornelius de: Recherches philosophiques sur les Égyptiens et les Chinois, Berlin 1773.
+
+Trigland, Jakob: Diatribe de Secta Karaeorum, Hamburg/Leipzig 1714.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">יעקב עמדן: לוח ארש.
+
+זלמן הענא: סדור בית תפילה.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Fabri, Johann Ernst: Handbuch der neuesten Geographie.
+
+Henke, D.: Museum für Religionswissenschaft.
+
+Olivier, Ludwig Heinrich Ferdinand: Versuch der Karakteristik einer ... Leselehrart.
+
+Schott, Bendict: Zaphnath-Paneach.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2050</field>
+		<field name="revision_id">2050</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Dohm, Christian Wilhelm von, כריסטיאן וילהלם פון דוהם: Über die bürgerliche Verbesserung der Juden.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2068</field>
+		<field name="revision_id">2068</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Leibniz, Gottfried Wilhelm von: Die Theodicee.
+
+Maimonides, Moses, משה בן מימון: מורה נבוכים.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2073</field>
+		<field name="revision_id">2073</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Gmelin, Christian Gottlieb: Abhandlung von den besonderen Rechten der Juden.
+
+Wolf, Johann Christoph: Bibliotheca Hebraea.
+
+Ludovici, Jacob Friedrich: Das sächsische Weichbild.
+
+Hosmann, Sigismund: Das schwer zu bekehrende Juden-Hertz.
+
+Wagenseil, Johann Christoph: Denunciatio christiana.
+
+Modena, Leone: Dissertation Historique touchant les Ceremonies.
+
+Boysen, Friedrich Eberhard: Eigene Lebensbeschreibung.
+
+Eisenmenger, Johann Andreas: Entdecktes Judenthum.
+
+Ayrer, Jacob: Historischer Processus Iuris.
+
+Schudt, Johann Jacob: Jüdische Merkwürdigkeiten.
+
+Brenz, Samuel Friedrich: Jüdischer abgestreiffter Schlangen-Balg.
+
+Meiners, Christoph: Lebensbeschreibungen berühmter Männer.
+
+Lang, Joachim Heinrich: Num Christianus juramento Judaei.
+
+Pefferkorn, Johann: Speculum adhortationis judaicae ad Christum.
+
+Buxtorf, Johannes: Synagoga Iudaica.
+
+Wülfer, Johann: Theriaca Judaica ad examen revocata.
+
+Dohm, Christian Wilhelm von: Über die bürgerliche Verbesserung der Juden / כריסטיאן וילהלם פון דוהם.
+
+תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">זלמן הענא: זלמן הענא.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">הרמב&quot;ם</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">ר' יחזקאל לנדא
+
+אריסטו
+
+היבנערס לעקסיקאן</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רבינו משה בן-מיימון, גרונד ארטיקל דעס יודנטוהמס 
+(בעמ' 53)</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">וייזל, נפתלי הרץ: לא ידוע.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">&lt;p&gt;המחבר מביא בדברי הקדמתו שיר קצר מאת נפתלי הירץ וייזל.&lt;/p&gt;
+</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רמב&quot;ם</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">וייזל, נפתלי הרץ: יין לבנון</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">יוזף השני, כתב הסובלנות.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רש&quot;י.
+
+רמב&quot;ם.
+
+בעלי התוספות.
+
+רמב&quot;ן.
+
+ר' יצחק אלפסי.
+
+רשב&quot;א.
+
+רא&quot;ש.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Fleury, Claude: Catechisme historique.
+
+Saadia Gaon, סעדיה בן יוסף, אלפיומי: ספר האמונות והדעות.
+
+Bachja ben Joseph ibn Pakuda, בחיי בן יוסף אבן פקודה: ספר חובות הלבבות.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Shaw, Thomas: Herrn Thomas Shaws Reisen.
+
+Mendelssohn, Moses, מנדלסון, משה: Phaedon.
+
+תלמוד
+
+תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">באור מלות ההגיון</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Herder, הרדר.
+
+Pappenheim, Salomon, פאפנהיים, שלמה: יריעת שלמה.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Herz, Marcus, הרץ, מרכוס: Über die frühe Beerdigung der Juden.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רמב&quot;ם
+
+Mendelssohn, Moses, מנדלסון, משה: Morgenstunden.
+
+יהודה הלוי: הכוזרי.
+
+חובת הלבבות.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Eichhorn, Johann Gottfried: Einleitung in die apokryphischen Schriften des alten Testaments.
+
+מאור עיניים.
+
+David Ganz, דוד גנז: צמח דוד.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רד&quot;ק
+
+רדי&quot;א
+
+אייכהארן (&quot;פראפעסאר&quot;): מבוא לתורה (?).</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">תענית, דף ז'</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Friedländer, David, פרידלענדר, דוד: Actenstücke.
+
+Niebuhr, Karsten: Beschreibung von Arabien.
+
+Friedländer, David, פרידלענדר, דוד: Der Prediger.
+
+Eckartshausen, Karl von: Die zehn Gebote des Herrn.
+
+Bendavid, Lazarus, בנדוד, לצרוס: Etwas zur Charackteristick der Juden.
+
+Moses Maimonides: Führer der Unschlüssigen.
+
+Euchel, Isaac, אייכל, יצחק: Gebete der hochdeutschen und polnischen Juden.
+
+Resewitz, Friedrich Gabriel: Gedanken ... zur Verbesserung der ... Erziehung.
+
+Büsching, Friedrich: Geschichte der jüdischen Religion.
+
+Niemeyer, August Hermann: Grundsätze der Erziehung und des Unterrichts.
+
+Euchel, Isaac, אייכל, יצחק: Ist nach dem jüdischen Gesetze das Übernachten.
+
+Mendelssohn, Moses, מנדלסון, משה: Jerusalem.
+
+Sulzer, Johann Georg: Kurzer Begriff aller Wissenschaften.
+
+Mendelssohn, Moses, מנדלסון, משה: Morgenstunden.
+
+Zarda, Adalbert Vincent, Patriotischer Wunsch für die Wiederbelebung.
+
+Mendelssohn, Moses, מנדלסון, משה: Phädon.
+
+Herz, Marcus, הרץ, מרכוס: Über die frühe Beerdigung der Juden.
+
+Zöllner, Johann Friedrich, Ueber Mendelssohn's Jerusalem.
+
+Friedländer, David, פרידלענדר, דוד: גבעטי דער יודן אויף דאס גאנצי יאהר.
+
+Hartwig Wessely, נפתלי הרץ וייזל: דברי שלום ואמת.
+
+תלמוד
+
+תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Maimonides, רמב&quot;ם: מלות ההגיון.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רד&quot;ק: ספר המכלול.
+
+שלמה זלמן הנאו: צהר התבה.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Wessely, Hartwig, וייזל, נפתלי הירץ: ספר המדות.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Kant, קאנט.
+
+Moses Mendelssohn, משה מנדלסון.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Moses Mendelssohn, משה מנדלסון: אור לנתיבה.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">מדרש. 
+
+David Ganz, דוד גנז: צמח דוד. 
+
+תלמוד.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Rochow, Friedrich Eberhard, פרידריך אבהרט רוכוב: Der Kinderfreund.
+
+גסנר: אמינטאס.
+
+בן-זאב, יהודה לייב : בית הספר??
+
+Mendelssohn, Moses,מנדלסון, משה: דאנקליק דער יודענשאפט צו בערלין 1767.
+
+ברכיה בן נטרונאי הנקדן, משלי שועלים.
+
+וויזל, נפתלי הרץ: שירי תפארת, שיר א'.
+
+Euchel, Isaac Abraham, אייכל, יצחק: תולדות רבנו משה בן מנחם.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">נפתלי הרץ וייזל
+
+Isaac Euchel, יצחק אייכל.
+
+Maimonides, רמב&quot;ם: שמונה פרקים.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2249</field>
+		<field name="revision_id">2249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">&lt;p&gt;רד&quot;ק&lt;/p&gt;
+</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2255</field>
+		<field name="revision_id">2255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">הרמב&quot;ם: דף ג'-ד'.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רש&quot;י
+
+רא&quot;בע</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">סעדיה גאון: האמונות והדעות
+
+חובת הלבבות
+
+Maimonides, Moses, משה בן מימון: מורה נבוכים
+
+ספר הכוזרי</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Herz, Marcus, הרץ, מרכוס: Versuch ueber den Geschmack.
+
+Herder, הרדר: Vom Geist der Hebräischen Poesie.
+
+Moses Mendelssohn, משה מנדלסון: אור לנתיבה.
+
+Euchel, Isaac, אייכל, יצחק: הקדמה לספר משלי.
+
+Moses Mendelssohn, משה מנדלסון: נתיבות השלום.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">מוזכרים למשל ספריו של נפתלי הירץ וייזל יין לבנון, ספר המדות, וכן מוזכר עלים לתרופה. עמ' כג א וב. גם מציין למשל במקום אחר: &quot;בארנוהו באורך ע&quot;פ הקדמו' רמ&quot;ד בפעדאן גם כתבנו מזה בת&quot;מ ל&quot;ד א ובהגה לקמן ס&quot;ד ב' ועי' מדרש הנעלם פ' תולדת קל&quot;ה רע&quot;ב ואין מן הצורך להאריך עוד בזה...&quot; עוד הוא מזכיר את דברי &quot;החכם הרופא מהו' מרדכי גומפל ז&quot;ל בהק' לס' יס&quot;הת&quot;, ש&quot;הלך בנתיבו&quot; של הרמב&quot;ם בנושא מסוים (עמ' לט/א)
+
+</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">נפתלי הרץ וייזל
+
+דון יצחק אברבנאל
+
+דברי אברבנל מובאים מתוך ציטוט בגרמנית, באותיות גותיות (חלק ב', עמ' נא/2).</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">זלמן הענא: [ספר דקדוק שלו - לא מצויין שמו]</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רמב&quot;ן: ??- דף ד'.
+
+הרמב&quot;ם: דף ג'-ד'.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Hartwig Wessely, נפתלי הרץ וייזל: דברי שלום ואמת.
+
+ספר הבהיר
+
+תלמוד
+
+תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">פפא בר שמואל
+
+אריסטו
+
+סוקרטס
+
+אפלטון
+
+פענעלאן
+
+אנקסגארס
+
+פעדאן
+
+קופרניקוס
+
+אבן תיבון
+
+רבב&quot;ח (רבה בר בר חנה)
+
+משה בן מימון, Maimonides, Moses: מורה נבוכים
+
+רמב&quot;ם: ספר המדע
+
+בחיי בן יוסף אבן פקודה, Bachja ben Joseph ibn Pakuda: ספר חובות הלבבות
+
+צענא
+
+רמב&quot;ם: שלש עשרה עיקרים</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Maimonides, Moses, משה בן מימון: מורה נבוכים.
+
+מסילת ישרים</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רמב&quot;ם
+
+יצחק הישראלי (מאה ה-14): יסוד עולם</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רמב&quot;ם
+
+Moses Mendelssohn, משה מנדלסון
+
+חובת הלבבות
+
+ברי&quot;ל, יואל: חרב לה'</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2379</field>
+		<field name="revision_id">2379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Alexander Pope, אלכסנדר פופ
+
+Shakespeare
+
+Milton, מילטון
+
+פינילון
+
+Ovid, אובידיוס</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2383</field>
+		<field name="revision_id">2383</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">דון יצחק אברבנאל
+
+רש&quot;י
+
+רא&quot;בע
+
+רמב&quot;ן
+
+רשב&quot;ם</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Moses Mendelssohn, משה מנדלסון: אור לנתיבה.
+
+אורי פייבש: מדרש מלים.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">חז&quot;ל
+
+האר&quot;י
+
+גמרא
+
+המאסף
+
+תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2395</field>
+		<field name="revision_id">2395</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Socrates, סוקרטס.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">יוסף בן מתתיהו, Josephus Flavius: דברי הימים
+
+רמב&quot;ם, Maimonides: מלות ההגיון
+
+ראב&quot;ד: ספר הקבלה
+
+תלמוד</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">שלמה דובנא
+
+נפתלי הרץ וייזל
+
+יצחק סטנוב
+
+יהודה הלוי
+
+משה חיים לוצאטו
+
+אפרים לוצטו
+
+דון יצחק אברבנאל
+
+שלמה פפנהיים
+
+שלמה פפנהיים, Salomon Pappenheim: אגדת ארבע כוסות</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Moses Mendelssohn, משה מנדלסון.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">א' הכהן: כהנת אברהם.
+
+תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">יצחק אברבנאל: פירוש התורה.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">חכמת שלמה.
+
+Moses Mendelssohn, משה מנדלסון: נתיבות השלום.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">בסעיף &quot;תמצית דברינו עד הנה&quot; שבא בעקבות הטקסט והבאור מוזכרים פילוסופים שונים: לייבניץ, דקארט, המטפיזיקה של וולף, &quot;החכמים Budeus und Lange&quot; - מתייחס לחילוקי דעות/השוואות ביניהם. גם חז&quot;ל מוזכרים. גם בהערותיו משווה המבאר, למשל, בין דעותיו של דקארט ואלה של לייבניץ (הערה בעמ' 39, למשל). בסעיף על שכר ועונש מתייחס פירדא אל הרמב&quot;ם/היד החזקה, מורה נבוכים והן אל בני תקופתו, אל &quot;מתרגמי תרי עשר הם המה מורי ילדי בני ישראל פה בהקדמתם סלת למנחה&quot;... גם בסעיף &quot;התרת השאלה מענין ההכנה&quot; (עמ' 66 - 67) מזכיר שמות של הוגים כגון Petrick ו- Richter ומפנה לדברים שהתפרסמו בתוך Sulamith בעניינם.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">Juda ben Bezalel, יהודה ליואי בן בצלאך: ספר גור אריה.
+
+Horwitz, Jesaja HaLevi ben Abraham, הורביץ, ישעיה בן אברהם: שני לוחות הברית.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">רמב&quot;ם
+
+חז&quot;ל</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">תנ&quot;ך</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_sources_list_value">שלמה זלמן האנויא: ?
+
+רד&quot;ק: ?
+
+מנדלסון, משה: מיינערס פהילוזופהישט אונד אללגמיינע שפראכלעהרע.</field>
+		<field name="field_sources_list_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

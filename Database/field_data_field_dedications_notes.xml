@@ -1,0 +1,810 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_dedications_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_dedications_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_dedications_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_dedications_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="58" avg_row_length="1129" data_length="65536" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:58" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 37 (field_dedications_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_dedications_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Ihro Excellenz dem Hochgebohrnen Freiherrn Herrn Peter Friedrich von Hohenthal [1735-1819], Kurfürstl. Sächsischen Hochbetrauten wirklichen Geheimen Rath, und Hochverordneten Evangelischen Direktorial-Gesandten bey der Reichsversammlung zu Regensburg.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Seiner hochgräflichen Excellenz dem Hochgebohrnen Herrn Carl George Heinrich Graf von Hoym. Königl. Preußischen wirklichen geheimen Staats-, Kriegs- und dirigirenden Minister, Chef Präsidenten beider Schlesischen Kriegs- und Domainen-Kammern, auch Ritter des großen schwarzen Adler-Ordens: Erbherrn, der Herrschaften Dyhrenfurth, Wahren, Simmel, Peterwitz, Gloschkau etc. etc. Meinem gnädigen und höchst gebiethenden Herrn!</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1978</field>
+		<field name="revision_id">1978</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Joseph Meyer Friedländer (1774-1846)</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1979</field>
+		<field name="revision_id">1979</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Ihrer Majestät dem Könige von Polen allerunterthänigst gewidmet vom Uebersetzer.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">An Demoiselle Rebecka Meyer Friedländer [1770-1838]</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Dem edeln und vortrefflichen Manne Herrn David Fränkel, Direktor der jüdischen Haupt- und Freyschule in Dessau.
+Diesem unermüdeten Beförderer des Guten und Nützlichen, Diesem allgemein geschätzten Schul- und Menschenfreunde, Zum Beweise seiner Hochachtung gewidmet.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">תואר השלושה:
+
+Deputati delle Publiche Pie Scuole Normali di questa Ebraica Universita di Trieste</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2003</field>
+		<field name="revision_id">2003</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Euchel, Isaac Abraham; Wolff, A. F.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">מטרת הספר היא להוקיר את זכרו של ר' יעקב עמדן, שהלך לעולמו.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2029</field>
+		<field name="revision_id">2029</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Karl Theodor von Dalberg (1744-1817), Fürst Primas des Rheinbundes</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2031</field>
+		<field name="revision_id">2031</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לשון עמוד ההקדשה:
+
+Dem Durchlauchtigsten Fürsten und Herrn, Herrn Leopold Friedrich Franz, regierenden Fürsten zu Anhalt-Dessau und nun auch zu Zerbst, unserm Durchlauchtigsten Fürsten Gnädigsten Fürsten und Herrn mit tiefster Unterthänigkeit gewidmet, verfertigt, und auch übersetzt von Höchstderoselben treugehorsamst ersterbenden Meyer Benjacauff. Zerbst. im Februar, 1798.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2043</field>
+		<field name="revision_id">2043</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Dr. Samuel Jacobi (1764 in Jareslow-1811 in Kopenhagen). Biographie S. 5-
+Studium in Breslau, Doktorgrad an der Universität Halle, Berlin.
+Vizepräsident der Königlich Medizinischen Gesellschaft in Kopenhagen.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Kaiser Jospeh II.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2060</field>
+		<field name="revision_id">2060</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Graf Maximilian Joseph von Monteglas gewidmet, bayerischer Außen- und Innenminister</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2061</field>
+		<field name="revision_id">2061</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">אחרי עמוד השער:
+Seiner königlichen Majestät Friedrich Wilhelm III. in tiefster Unterthänigkeit gewidmet von dem Verfasser.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2063</field>
+		<field name="revision_id">2063</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">פנייה אישית ל-Fürst-Primas der Rheinischen Konföderation</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2067</field>
+		<field name="revision_id">2067</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">הספר מוקדש ל-
+Brüdern 
+של המחבר, כלומר ליהודים</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">חיים בן ר' יוסף בר&quot;פ ז&quot;ל, Berlin</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">אף כי אין הקדשה, יש לציין כי מטרת הספר היא להוקיר את זכרו של ר' יעקב עמדן, שהלך לעולמו.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">ההקדשה לפון עשקלעס מופיעה אחרי עמוד השער של הספר ומוצרף לה הטקסט הבא, עמ' [2]:
+&quot;לא יערב לי להגיש החבור הזה לפני אדוני, לולא נועדתי בנפשי כי הענין בעצמו, מערכת השרשים בלשון, לא דבר ריק הוא... וידעתי כי אדני, השוקד על הטוב ועל המועיל בכל אשר ימצא, ישא לה פני', ובכבדו אדני אכבד, ברצותו במנחה הקטנה הזאת ההובאת לו. מאת המחבר בן זאב.
+
+אחרי ההקדמה, המבוא ולוח השרשים מופיע שער נוסף לחלק הראשון של הספר. לאחריו ישנה הקדשה הבאה לדוד ווערטהיימער, ממנה עולה כי הוא עודד את בן זאב להוציא לאור ספר דקדוק מקיף  (דף א'):
+&quot; ואם יצא כיום חבורי אוצר השרשים הזה לאור... הלא יכון לשים תודה לעיני בני עמי לאיש היקש אשר העיר אושר עורר אותי עליו... ומתוך שליבות הדברים אשר בינו וביני, שנה ושלש משאלות לבו, המצא חבור שלם במערכת השרשים, מחזה מול מחזה, עברית ואשכנזית ... כי חבור כזה יחזיק עוד אשיות השפה העברית... והיו הדברים האלה מחזיקים לבי ביתרון תשוקה לשנס מתני למהר ולקרבה אל המלאכה...&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">הינדא אשת ר' חיים ליב פרידלענדר -אמו;
+מרים אשת ר' דניאל יפה -חמותו.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2117</field>
+		<field name="revision_id">2117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">השיר נכתב &quot;לכבוד החתנים&quot;, כפי שרושם המחבר בסוף דברי הפתיחה וכפי שעולה מעמוד השער. מוזכרים גם שמות הורי הכלה (מהרם מארשן ובילה), ואבי החתן (יהושע פייבל).</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לשון כותרת החלק השני: &quot;שעיפי לילה ונלוה אליו הגיון לבב עברי מזכרת תודה ואהבה לכבוד ידידי חתני הנכבד היקר והנעלה הקצין הנגיד המפורסם מה&quot;ו אברהם נ&quot;י המכונה גאטטשטיין ליום הולדתו בשנת שבע וארבעים לשני חייו מאת חתנו הסר למשמעתו או&quot;הנ[_] חיים לעוונשטאם&quot;. חלקו הראשון של החלק השני מופנה אל חתנו.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">Dem Hochgelehrten Herrn Israel Jakobson, geheimen Finanzrathe und Präsidenten des königl. Westphälischen Konsitoriums mosaischer Konfession, dem das Gute so eifrig wollenden, als mit Kraft und Muth befördernden edlen Menschenfreunde.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">ישנה הקדשה הכתובה בכתב יד על גבי העותק המצוי בספרייה הלאומית: 
+&quot;תשורה קטנה לידידי הבחור אורי פייבש הירש בן החבר ר' יחיא אייכל שיחיו ליום הולדתו בשנת &lt;strong&gt;עתה קח&lt;/strong&gt; נא את
+מאת מאיר?? רפאל קלקר&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">פרידריכספלד כותב בהקדמה, כשהוא פונה לדוד פרידלענדר: &quot;זה הספר זכר צדיק קחה נא למנחה&quot;. (עמ' [3])</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמוד ההקדשה: 
+&quot;לכבוד איש יקר ונכבד שוע ונדיב לב הנגיד הקצין המפורסם מוהרר לימא רעננער נ&quot;י עם אשתו הגבירה היקרה אשת חיל ומשכלת מ' מיענדעל תי' בעיר המהללה האמבורג יע&quot;א/ רהש לבי הספר הזה&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">ההקדשה כוללת טקסט בן שני עמודים. היא פותחת במילים: 
+&quot;אל כבוד נגיד עם, איש תבונה, ירא אלהים, שומר אמונה, הנכבד היקר והנעלה פ&quot;ומ כהרר &lt;ins&gt;בער בן&lt;/ins&gt; הר&quot;ר &lt;ins&gt;קלמן&lt;/ins&gt; ז&quot;ל בדעסויא, יובל שי למנחת תודה עלי מזבח לבי ערוכה ושמורה מאת עבדו המתרגם&quot;. 
+
+המחבר עובר אחרי כן לגרמנית (באותיות עבריות) וכותב כי זה זמן רב ביקש הזדמנות כדי להודות לו בפומבי על תמיכתו ועל תמיכת משפחתו, בעיקר מצד אימו ז&quot;ל, לאחר שהגיע לדסאו בגיל 13 חסר כל (ייתכן כי רק בגיל 15 עזב את בית הוריו - כך לפי הביוגרפיה שלו אצל פיליפסון, &lt;ins&gt;ביוגרפיות&lt;/ins&gt;, חלק ב', עמ' 36). אני &quot;ווללטע מיך דא צו איינם ברויכבארן מענשן בילדן, מיינן גייסט דורך מאנניכפ'אלטיגעס וויסן בערייכערן אונד פ'ריכטע צו ברעכן פ'אם בוימע דעס ערקעננטניסעס דעס גוטז אונד וואהרן. וויא וועניג אבר ווירדע איך דיזן מיינן צוועק עררייכט האבן קעננן, וויא קיממערליך אונד פ'ערלאסן היר לעבן מיסן, ווען זיא, האך געעהרטעסטער! זיא אונד איהרע פ'ארטרעפ'פ'ליכע מוטטער - רוהע איהרער זעליגן אשע - זיך ניכט מיינער זא ליבעפ'אלל אנגענאממן אונד אונטר דען עדעלגעזיננטן דעסויערן דיא ערשטן געוועזן ווערן, דערן הילפ'רייכע האנד מיך צו אונטערשטיצן געזוכט העטטע.&quot; 
+
+הוא מודה להם על שנתנו בו אמון והפקידו בידיו את הדרכת וחינוך ילדיהם היקרים, והמליצו עליו למשרה לה הוא מקדיש כעת את מיטב מאמציו...</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לאחר עמוד השער, מוקדש עמוד שלם לטקסט הבא:
+&quot;לכבוד יקר אישים ואוהב חכמה הגביר הנעלה התורני הנדיב כהר&quot;ר שמעון מערגנטהיים נ&quot;י מתושבי עיר באן [בון] חבר תומך לחברת שוחרי הטוב והתושיה קרבן ראשית מנחה&quot;.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמ' השער ובדברי ההקדשה מקדיש המחבר את ספרו ל&quot;זאב וואלף... בן הנגיד והקצין כה&quot;רר יששכר בערמן פרידלענדר, ביום בואו בברית האלהים... תק&quot;מו</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בדף השני של הספר מופיעה ההקדשה הבאה:
+
+&quot;דעם אנדענקן מיינעס, מיר אונד דער וועלט דורך דען טאד צו פריה ענטריסנן, פריינדעס יוסף ב&quot;ר הירש בר&quot;נ גווידמט&quot;.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2186</field>
+		<field name="revision_id">2186</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">השיר מוקדש ל&quot;נפתלי הירץ מעדלסהיים נרו, בעיר שטראסבורג, על יום בשורה כאשר בשמחת לבו גלה את אזני&quot; - סיפר לוייזל על אודות הפטור שהוענק ליהודים ע&quot;י מלך צרפת.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2187</field>
+		<field name="revision_id">2187</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">וייזל מקדיש שיר לדוד פרידלנדער על תרגומו של ספר התפילות (&quot;תפילות ישראל&quot;). ראו שיר שהקדיש באותו תאריך לדניאל יפה.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">הספר מוקדש לאיש שנפטר, &quot;לכבוד נשמה גיסי... ידיד לבי&quot;.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2201</field>
+		<field name="revision_id">2201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמוד נפרד אחרי עמוד השער:
+&quot;לכבוד שאר בשרי הגביר הנעלה ומהולל יקר רוח ואיש תבונה מוה&quot;רר בער אורשל נר&quot;ו בנאנסי יובל למנחת תודה נגדה לכל עמו מאת אהרן בן-וואלף מהאללי&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2203</field>
+		<field name="revision_id">2203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמוד נפרד אחרי השער:
+&quot;לכבוד התורני המשכיל ... אחי הגדול מה&quot;רר אלחנן ברי&quot;ל יצ&quot;ו חבר לחברת שוחרי הטוב והתושיה&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2205</field>
+		<field name="revision_id">2205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">אחרי עמוד השער בא עמוד הקדשה: &quot;לכבוד הגביר המפואר מוהר&quot;ר איצק בן פ&quot;ו ר' דניאל יפה נר&quot;ו מנהיג חברת חנוך נערים וחבר מנהיג לחברת שוחרי טוב ותושיה&quot;. אחרי זה, שיר בן שני עמודים לכבודו, החתום ע&quot;י אהרן האללי [וולפסון] ויואל ברי&quot;ל.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לשון ההקדשה:
+Dem würdigen Oberältesten der jüdischen Gemeinde in Dessau Herrn Jakob Daniel aus Hochachtung gewidmet von dem Verfasser</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לאחר עמוד  השער רשום:
+
+Dem würdigen Herrn David Jakob Ries in Berlin aus Hochachtung gewidmet von dem Verfasser</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בישנטל מקדיש את הספר למחבר השיר</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לשון ההקדשה:
+
+Dem würdigen und berühmten Kenner der alten und neuern Literatur Herrn Director Doctor Bellermann in Berlin, dankbar und hochachtungsvoll gewidmet</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2250</field>
+		<field name="revision_id">2250</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לאחר עמ' השער ישנה הקדשה: &quot;מיינע ווירדיגן געננדין מאדאם בלימכה פרידלענדר גווידמט&quot;. ובעמ' לאחר מכן, ישנו דף הקדשה נוסף, וזו לשונו: 
+&quot;מאדאם! 
+זיא ערלויבן [או: ערלוימן], דאס איך דען נאמן איינר דער ווירדיגסטן איהרס גשלעכ'טס איינר איברזעצונג פ'ארזעצן דארף, וועלכ'ע אויס אכ'טונג פ'יר דיזס גשלעכ'ט איהר דאזיין ערהאלטן.  דען דיא בזאנדרע האכשעצונג דיא איך איהנן, געהרטסטע פ'רויא! שולדיג בין, אונגרעכ'נט, ווערדע איך אויך אים גאנצן איממר איין גשלעכ'ט צו שעצן וויסן, דאס עדלע פ'רויען, צערטליכ'ע גאטטינן, פ'רשטענדיגע מיטטר אונג קלוגע הויסווערטינען פ'ארצוצייגן האט; זא וויא וויר דאס בייאשפיל הירפ'אן אין איהנן זעהן.
+דיזע מיינע גאייסרטע וואהרע גזיננונג, ווירד זיא פ'רזיכ'רן דאס איך מיר יעדרצייט איינע עהרע דרויס מאכ'ן ווערדע, מיך נענן צו קעננן  ...
+מאדאם
+איהר ערגעבנר דיהנר
+יואל ברי&quot;ל&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2266</field>
+		<field name="revision_id">2266</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">ראו כותרת הספר</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">אחרי עמוד השער ישנה הקדשה בזו הלשון:
+&quot;לכבוד פאר הרוזנים וצבי השועים/ את חכמים יתהלך ועם נבונים חלקו/ רצוי לרוב אחיו ודורש טוב לעמו/ התורני המפואר והמרומם/ מוה&quot;רר/ דוד פרידלנדר / נ&quot;י/ מאת עבדו הסר למשמעתו/ יואל בריל&quot;.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לאחר עמוד השער רשום:
+&quot;אזכרת אהבה/ לכבוד/ התורני המשכיל היקר והשלם/ כה&quot;רר יצק אייכל/ חבר לחברת שוחרי הטוב והתושיה/ מאת/ אוהבו וריעו/ יואל ברי&quot;ל&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">אין הקדשה של ממש. אך בפתיחתו כותב וייזל כי מצא לחובה &quot;לחוק את שמו&quot; של דודו יוסף וייזל &quot;על דלתות המחברת הזאת לזכר עולם, לצדקה לכבוד ולברכה&quot;, על עידודו לתרגם את הספר.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמוד נפרד (על שני צדדיו) כתובה הקדשה:
+&quot;דעם העררן יואל לעווע פראפ'עססאר אונד ערשטן אבערלעהרער אן דער קעניגליכען ווילהעלמס-שולע צו פרעסלויא, אונד מיטדירעקטאר דערזעלבן זיינעם פ'ערעהרונגסווירדיגן פריינד אונד קאללעגען/
+צום עפ'פ'ענטליכן בעווייז דער וואהרען האכאכטונג אונד צום דענקמאל געגענזייטיגר פריינדאשפט [כך!] אונד ליבע געווידמעט פ'אן אהרן וואלפסזאהן&quot;.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">אין הקדשה בחלק זה של הספר, אך למעשה הפרויקט כולו - ספר מלכים - הוקדש לברי&quot;ל. ראו חלק א'.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">עמוד הקדשה ועמוד דברי ברכה לאותו דוד ורטהיימר:
+&quot;לכבוד הגביר הנכבד התורני המהולל מהו&quot;רר דוד ווערטהיימר נר&quot;ו מנחה היא שלוחה מאת עבדו הסר למשמעתו מאיר אברניק&quot;
+לפי פאהן, תקופת ההשכלה בוינה, א', עמ' 33, אוברניק הגיע לוינה בתור מורה, וכך נרשם ברשימת המשפחה של דוד וורטהיים משנת 1787.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2329</field>
+		<field name="revision_id">2329</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לשון ההקדשה:
+&quot;לכבוד איש יקר נכבד ונעלה ר' יוזפא דעטמאלד נר&quot;ו אני נושא את המנחה חלף חסדי ואמתו אשר גמל את הורי. שמואל דעטמאלד בהרבני מהור&quot;ר וולף זצ&quot;ל</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמוד אחרי ההקדמה:
+&quot;לרעים אהובים חכמים ונבונים וידועים הגביר ה&quot;רר דוד פרידלענדר נר&quot;ו והגביר הד&quot;ר [או: הר&quot;ר?] ליברמן שלעסינגר נר&quot;ו בבערלין מנחת תודה היא ומזכרת אהבה מאת המתרגם והמבאר&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2379</field>
+		<field name="revision_id">2379</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">&quot;אל הקורא המשכיל האהוב הנחמד והנעים מובלה תשר מאת המחבר&quot; עמ' [1]</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">כפי שמצוין בעמוד השער, החיבור מוקדש לזוג ביום נישואיהם.</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">עמוד הקדשה בא לאחר עמוד השער, וזו לשונה:
+&quot;זיינם פ'רעהרונגסוועהרטן לעהרר 
+דעם העררן אברהם דאנציגר
+מיטגליד דעם דירעקציאנס-קאללעגיומס דער
+צום בעסטן דער יידישן  יוגנד ערריכ'טעטן
+קעניגליכ'ן וויללהעלמס-שולע
+ווידמעט דיזעס לעהרבוך [אלס?] איין בווייס
+[זיינר?] אכטונג אונד דאנקבארקייט 
+דער פ'רפאסר&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">מאחורי עמוד השער ישנה הקדשה של הספר ליונה ייטלש, אביהם של המחבר ושל המביא לדפוס. יהודה, המביא לדפוס, הוא שמקדיש את הספר לאביהם. בין היתר הוא כותב:
+&quot;אבי! ראה פה אשכול אחד מאשכלי ההשכל/ בנך בכורך הובל שי לך מבנך הצעיר/ יהודה&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2413</field>
+		<field name="revision_id">2413</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">בעמ' [1] פונה המחבר אל ידידו החתן, ובשער הספר פונה במעין הקדשה ל&quot;קארל קעניגסבערג&quot; (אולי שם נוסף של יעקב קעניגסבערג?)</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">מאחורי עמוד השער כתובה הקדשה בשירה, הפותחת במילים אלה:
+
+
+&quot;אשא תשורתי אל קירות לבבי אל הדום רגלי הגביר המרומם תפארת חכמים והדרת נבונים כה&quot;רר 
+
+דוד פרידלענדר יצ&quot;ו.
+
+ידעתי כי רוחך בעים,
+
+כי קט &lt;strong&gt;רוחי&lt;/strong&gt; אף כי &lt;strong&gt;נכון&lt;/strong&gt;.
+
+אך כיובל הולך אל ים
+
+עדיך בא ולך יכון.
+
+קח, &lt;strong&gt;דוד&lt;/strong&gt;, מנחתי, ובמו יותן
+
+לב הנותן תשעה לא המתן.&quot;</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2450</field>
+		<field name="revision_id">2450</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_dedications_notes_value">לא מופיעים שמות פרטיים, רק רשומה הקדשה לכבוד:
+
+Herren Ephraim, und Izig, wohlvornehmen und geehrtesten Herren Parnasim und Aeltesten, wie auch samtlichen Vorstehern der ganzen Jüdischen Gemeine zu Berlin, meinen Hochgeschätzten Gönnern und Freunden...</field>
+		<field name="field_dedications_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

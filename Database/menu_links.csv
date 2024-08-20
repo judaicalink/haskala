@@ -1,0 +1,333 @@
+"menu_name",mlid,plid,"link_path","router_path","link_title","options","module",hidden,external,has_children,expanded,weight,depth,customized,p1,p2,p3,p4,p5,p6,p7,p8,p9,updated
+"management",1,0,"admin","admin","Administration","a:0:{}","system",0,0,1,0,9,1,0,1,0,0,0,0,0,0,0,0,0
+"user-menu",2,0,"user","user","User account","a:2:{s:5:\"alter\";b:1;s:10:\"identifier\";s:27:\"user-menu_user-account:user\";}","system",1,0,0,0,-10,1,1,2,0,0,0,0,0,0,0,0,0
+"navigation",3,0,"filter/tips","filter/tips","Compose tips","a:0:{}","system",1,0,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0
+"navigation",4,0,"node/%","node/%","","a:0:{}","system",0,0,0,0,0,1,0,4,0,0,0,0,0,0,0,0,0
+"navigation",5,0,"node/add","node/add","Add content","a:0:{}","system",0,0,1,0,0,1,0,5,0,0,0,0,0,0,0,0,0
+"management",6,1,"admin/appearance","admin/appearance","Appearance","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:33:\"Select and configure your themes.\";}}","system",0,0,0,0,-6,2,0,1,6,0,0,0,0,0,0,0,0
+"management",7,1,"admin/config","admin/config","Configuration","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:20:\"Administer settings.\";}}","system",0,0,1,0,0,2,0,1,7,0,0,0,0,0,0,0,0
+"user-menu",8,2,"user/register","user/register","Create new account","a:0:{}","system",-1,0,0,0,0,2,0,2,8,0,0,0,0,0,0,0,0
+"management",9,1,"admin/index","admin/index","Index","a:0:{}","system",-1,0,0,0,-18,2,0,1,9,0,0,0,0,0,0,0,0
+"user-menu",10,2,"user/login","user/login","Log in","a:0:{}","system",-1,0,0,0,0,2,0,2,10,0,0,0,0,0,0,0,0
+"user-menu",11,0,"user/logout","user/logout","Log out","a:0:{}","system",0,0,0,0,10,1,0,11,0,0,0,0,0,0,0,0,0
+"management",12,1,"admin/modules","admin/modules","Modules","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:26:\"Extend site functionality.\";}}","system",0,0,0,0,-2,2,0,1,12,0,0,0,0,0,0,0,0
+"navigation",13,0,"user/%","user/%","My account","a:0:{}","system",0,0,1,0,0,1,0,13,0,0,0,0,0,0,0,0,0
+"management",14,1,"admin/reports","admin/reports","Reports","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:34:\"View reports, updates, and errors.\";}}","system",0,0,1,0,5,2,0,1,14,0,0,0,0,0,0,0,0
+"user-menu",15,2,"user/password","user/password","Request new password","a:0:{}","system",-1,0,0,0,0,2,0,2,15,0,0,0,0,0,0,0,0
+"management",16,1,"admin/structure","admin/structure","Structure","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:45:\"Administer blocks, content types, menus, etc.\";}}","system",0,0,1,0,-8,2,0,1,16,0,0,0,0,0,0,0,0
+"management",17,1,"admin/tasks","admin/tasks","Tasks","a:0:{}","system",-1,0,0,0,-20,2,0,1,17,0,0,0,0,0,0,0,0
+"management",18,1,"admin/content","admin/content","Content","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:24:\"Find and manage content.\";}}","system",0,0,1,0,-10,2,0,1,18,0,0,0,0,0,0,0,0
+"management",19,1,"admin/people","admin/people","People","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:45:\"Manage user accounts, roles, and permissions.\";}}","system",0,0,0,0,-4,2,0,1,19,0,0,0,0,0,0,0,0
+"management",20,19,"admin/people/create","admin/people/create","Add user","a:0:{}","system",-1,0,0,0,0,3,0,1,19,20,0,0,0,0,0,0,0
+"management",21,7,"admin/config/administration","admin/config/administration","Administration","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:21:\"Administration tools.\";}}","system",0,0,1,0,0,3,0,1,7,21,0,0,0,0,0,0,0
+"management",22,16,"admin/structure/block","admin/structure/block","Blocks","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:79:\"Configure what block content appears in your site's sidebars and other regions.\";}}","system",0,0,1,0,0,3,0,1,16,22,0,0,0,0,0,0,0
+"navigation",23,13,"user/%/cancel","user/%/cancel","Cancel account","a:0:{}","system",0,0,1,0,0,2,0,13,23,0,0,0,0,0,0,0,0
+"management",24,18,"admin/content/node","admin/content/node","Content","a:0:{}","system",-1,0,0,0,-10,3,0,1,18,24,0,0,0,0,0,0,0
+"management",25,7,"admin/config/content","admin/config/content","Content authoring","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:53:\"Settings related to formatting and authoring content.\";}}","system",0,0,1,0,-15,3,0,1,7,25,0,0,0,0,0,0,0
+"management",26,16,"admin/structure/types","admin/structure/types","Content types","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:92:\"Manage content types, including default status, front page promotion, comment settings, etc.\";}}","system",0,0,1,0,0,3,0,1,16,26,0,0,0,0,0,0,0
+"navigation",27,4,"node/%/delete","node/%/delete","Delete","a:0:{}","system",-1,0,0,0,1,2,0,4,27,0,0,0,0,0,0,0,0
+"management",28,7,"admin/config/development","admin/config/development","Development","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:18:\"Development tools.\";}}","system",0,0,1,0,-10,3,0,1,7,28,0,0,0,0,0,0,0
+"navigation",29,13,"user/%/edit","user/%/edit","Edit","a:0:{}","system",-1,0,0,0,0,2,0,13,29,0,0,0,0,0,0,0,0
+"navigation",30,4,"node/%/edit","node/%/edit","Edit","a:0:{}","system",-1,0,0,0,0,2,0,4,30,0,0,0,0,0,0,0,0
+"management",31,6,"admin/appearance/list","admin/appearance/list","List","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:31:\"Select and configure your theme\";}}","system",-1,0,0,0,-1,3,0,1,6,31,0,0,0,0,0,0,0
+"management",32,12,"admin/modules/list","admin/modules/list","List","a:0:{}","system",-1,0,0,0,0,3,0,1,12,32,0,0,0,0,0,0,0
+"management",33,19,"admin/people/people","admin/people/people","List","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:50:\"Find and manage people interacting with your site.\";}}","system",-1,0,0,0,-10,3,0,1,19,33,0,0,0,0,0,0,0
+"management",34,7,"admin/config/media","admin/config/media","Media","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:12:\"Media tools.\";}}","system",0,0,1,0,-10,3,0,1,7,34,0,0,0,0,0,0,0
+"management",35,16,"admin/structure/menu","admin/structure/menu","Menus","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:86:\"Add new menus to your site, edit existing menus, and rename and reorganize menu links.\";}}","system",0,0,1,0,0,3,0,1,16,35,0,0,0,0,0,0,0
+"management",36,16,"admin/structure/pages","admin/structure/pages","Pages","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:84:\"Add, edit and remove overridden system pages and user defined pages from the system.\";}}","system",0,0,1,0,0,3,0,1,16,36,0,0,0,0,0,0,0
+"management",37,16,"admin/structure/panels","admin/structure/panels","Panels","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:49:\"Get a bird's eye view of items related to Panels.\";}}","system",0,0,0,0,0,3,0,1,16,37,0,0,0,0,0,0,0
+"management",38,7,"admin/config/people","admin/config/people","People","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:24:\"Configure user accounts.\";}}","system",0,0,1,0,-20,3,0,1,7,38,0,0,0,0,0,0,0
+"management",39,19,"admin/people/permissions","admin/people/permissions","Permissions","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:64:\"Determine access to features by selecting permissions for roles.\";}}","system",-1,0,0,0,0,3,0,1,19,39,0,0,0,0,0,0,0
+"management",40,14,"admin/reports/dblog","admin/reports/dblog","Recent log messages","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:43:\"View events that have recently been logged.\";}}","system",0,0,0,0,-1,3,0,1,14,40,0,0,0,0,0,0,0
+"management",41,7,"admin/config/regional","admin/config/regional","Regional and language","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:48:\"Regional settings, localization and translation.\";}}","system",0,0,1,0,-5,3,0,1,7,41,0,0,0,0,0,0,0
+"navigation",42,4,"node/%/revisions","node/%/revisions","Revisions","a:0:{}","system",-1,0,1,0,2,2,0,4,42,0,0,0,0,0,0,0,0
+"management",43,7,"admin/config/search","admin/config/search","Search and metadata","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:36:\"Local site search, metadata and SEO.\";}}","system",0,0,1,0,-10,3,0,1,7,43,0,0,0,0,0,0,0
+"management",44,6,"admin/appearance/settings","admin/appearance/settings","Settings","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:46:\"Configure default and theme specific settings.\";}}","system",-1,0,0,0,20,3,0,1,6,44,0,0,0,0,0,0,0
+"management",45,14,"admin/reports/status","admin/reports/status","Status report","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:74:\"Get a status report about your site's operation and any detected problems.\";}}","system",0,0,0,0,-60,3,0,1,14,45,0,0,0,0,0,0,0
+"management",46,7,"admin/config/system","admin/config/system","System","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:37:\"General system related configuration.\";}}","system",0,0,1,0,-20,3,0,1,7,46,0,0,0,0,0,0,0
+"management",47,14,"admin/reports/access-denied","admin/reports/access-denied","Top 'access denied' errors","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:35:\"View 'access denied' errors (403s).\";}}","system",0,0,0,0,0,3,0,1,14,47,0,0,0,0,0,0,0
+"management",48,14,"admin/reports/page-not-found","admin/reports/page-not-found","Top 'page not found' errors","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:36:\"View 'page not found' errors (404s).\";}}","system",0,0,0,0,0,3,0,1,14,48,0,0,0,0,0,0,0
+"management",49,12,"admin/modules/uninstall","admin/modules/uninstall","Uninstall","a:0:{}","system",-1,0,0,0,20,3,0,1,12,49,0,0,0,0,0,0,0
+"management",50,7,"admin/config/user-interface","admin/config/user-interface","User interface","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:38:\"Tools that enhance the user interface.\";}}","system",0,0,1,0,-15,3,0,1,7,50,0,0,0,0,0,0,0
+"navigation",51,4,"node/%/view","node/%/view","View","a:0:{}","system",-1,0,0,0,-10,2,0,4,51,0,0,0,0,0,0,0,0
+"navigation",52,13,"user/%/view","user/%/view","View","a:0:{}","system",-1,0,0,0,-10,2,0,13,52,0,0,0,0,0,0,0,0
+"management",53,7,"admin/config/services","admin/config/services","Web services","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:30:\"Tools related to web services.\";}}","system",0,0,1,0,0,3,0,1,7,53,0,0,0,0,0,0,0
+"management",54,7,"admin/config/workflow","admin/config/workflow","Workflow","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:43:\"Content workflow, editorial workflow tools.\";}}","system",0,0,0,0,5,3,0,1,7,54,0,0,0,0,0,0,0
+"management",55,38,"admin/config/people/accounts","admin/config/people/accounts","Account settings","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:109:\"Configure default behavior of users, including registration requirements, e-mails, fields, and user pictures.\";}}","system",0,0,0,0,-10,4,0,1,7,38,55,0,0,0,0,0,0
+"management",56,46,"admin/config/system/actions","admin/config/system/actions","Actions","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:41:\"Manage the actions defined for your site.\";}}","system",0,0,1,0,0,4,0,1,7,46,56,0,0,0,0,0,0
+"management",57,22,"admin/structure/block/add","admin/structure/block/add","Add block","a:0:{}","system",-1,0,0,0,0,4,0,1,16,22,57,0,0,0,0,0,0
+"management",58,26,"admin/structure/types/add","admin/structure/types/add","Add content type","a:0:{}","system",-1,0,0,0,0,4,0,1,16,26,58,0,0,0,0,0,0
+"management",59,36,"admin/structure/pages/add","admin/structure/pages/add","Add custom page","a:0:{}","system",-1,0,0,0,0,4,0,1,16,36,59,0,0,0,0,0,0
+"management",60,35,"admin/structure/menu/add","admin/structure/menu/add","Add menu","a:0:{}","system",-1,0,0,0,0,4,0,1,16,35,60,0,0,0,0,0,0
+"management",61,21,"admin/config/administration/admin_menu","admin/config/administration/admin_menu","Administration menu","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:36:\"Adjust administration menu settings.\";}}","system",0,0,0,0,0,4,0,1,7,21,61,0,0,0,0,0,0
+"management",62,44,"admin/appearance/settings/bartik","admin/appearance/settings/bartik","Bartik","a:0:{}","system",-1,0,0,0,0,4,0,1,6,44,62,0,0,0,0,0,0
+"management",63,44,"admin/appearance/settings/bootstrap","admin/appearance/settings/bootstrap","Bootstrap","a:0:{}","system",-1,0,0,0,0,4,0,1,6,44,63,0,0,0,0,0,0
+"management",64,43,"admin/config/search/clean-urls","admin/config/search/clean-urls","Clean URLs","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:43:\"Enable or disable clean URLs for your site.\";}}","system",0,0,0,0,5,4,0,1,7,43,64,0,0,0,0,0,0
+"management",65,46,"admin/config/system/cron","admin/config/system/cron","Cron","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:40:\"Manage automatic site maintenance tasks.\";}}","system",0,0,0,0,20,4,0,1,7,46,65,0,0,0,0,0,0
+"management",66,37,"admin/structure/panels/dashboard","admin/structure/panels/dashboard","Dashboard","a:0:{}","system",-1,0,0,0,-10,4,0,1,16,37,66,0,0,0,0,0,0
+"management",67,41,"admin/config/regional/date-time","admin/config/regional/date-time","Date and time","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:44:\"Configure display formats for date and time.\";}}","system",0,0,0,0,-15,4,0,1,7,41,67,0,0,0,0,0,0
+"management",68,14,"admin/reports/event/%","admin/reports/event/%","Details","a:0:{}","system",0,0,0,0,0,3,0,1,14,68,0,0,0,0,0,0,0
+"management",69,34,"admin/config/media/file-system","admin/config/media/file-system","File system","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:68:\"Tell Drupal where to store uploaded files and how they are accessed.\";}}","system",0,0,0,0,-10,4,0,1,7,34,69,0,0,0,0,0,0
+"management",70,44,"admin/appearance/settings/garland","admin/appearance/settings/garland","Garland","a:0:{}","system",-1,0,0,0,0,4,0,1,6,44,70,0,0,0,0,0,0
+"management",71,44,"admin/appearance/settings/global","admin/appearance/settings/global","Global settings","a:0:{}","system",-1,0,0,0,-1,4,0,1,6,44,71,0,0,0,0,0,0
+"management",72,44,"admin/appearance/settings/haskala_theme","admin/appearance/settings/haskala_theme","Haskala Bootstrap Sub-theme","a:0:{}","system",-1,0,0,0,0,4,0,1,6,44,72,0,0,0,0,0,0
+"management",73,38,"admin/config/people/ip-blocking","admin/config/people/ip-blocking","IP address blocking","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:28:\"Manage blocked IP addresses.\";}}","system",0,0,1,0,10,4,0,1,7,38,73,0,0,0,0,0,0
+"management",74,34,"admin/config/media/image-toolkit","admin/config/media/image-toolkit","Image toolkit","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:74:\"Choose which image toolkit to use if you have installed optional toolkits.\";}}","system",0,0,0,0,20,4,0,1,7,34,74,0,0,0,0,0,0
+"management",75,36,"admin/structure/pages/import","admin/structure/pages/import","Import page","a:0:{}","system",-1,0,0,0,0,4,0,1,16,36,75,0,0,0,0,0,0
+"management",77,32,"admin/modules/list/confirm","admin/modules/list/confirm","List","a:0:{}","system",-1,0,0,0,0,4,0,1,12,32,77,0,0,0,0,0,0
+"management",78,26,"admin/structure/types/list","admin/structure/types/list","List","a:0:{}","system",-1,0,0,0,-10,4,0,1,16,26,78,0,0,0,0,0,0
+"management",79,36,"admin/structure/pages/list","admin/structure/pages/list","List","a:0:{}","system",-1,0,0,0,-10,4,0,1,16,36,79,0,0,0,0,0,0
+"management",80,35,"admin/structure/menu/list","admin/structure/menu/list","List menus","a:0:{}","system",-1,0,0,0,-10,4,0,1,16,35,80,0,0,0,0,0,0
+"management",81,28,"admin/config/development/logging","admin/config/development/logging","Logging and errors","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:154:\"Settings for logging and alerts modules. Various modules can route Drupal's system events to different destinations, such as syslog, database, email, etc.\";}}","system",0,0,0,0,-15,4,0,1,7,28,81,0,0,0,0,0,0
+"management",82,28,"admin/config/development/maintenance","admin/config/development/maintenance","Maintenance mode","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:62:\"Take the site offline for maintenance or bring it back online.\";}}","system",0,0,0,0,-10,4,0,1,7,28,82,0,0,0,0,0,0
+"management",83,28,"admin/config/development/performance","admin/config/development/performance","Performance","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:101:\"Enable or disable page caching for anonymous users and set CSS and JS bandwidth optimization options.\";}}","system",0,0,0,0,-20,4,0,1,7,28,83,0,0,0,0,0,0
+"management",84,39,"admin/people/permissions/list","admin/people/permissions/list","Permissions","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:64:\"Determine access to features by selecting permissions for roles.\";}}","system",-1,0,0,0,-8,4,0,1,19,39,84,0,0,0,0,0,0
+"management",85,53,"admin/config/services/rss-publishing","admin/config/services/rss-publishing","RSS publishing","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:114:\"Configure the site description, the number of items per feed and whether feeds should be titles/teasers/full-text.\";}}","system",0,0,0,0,0,4,0,1,7,53,85,0,0,0,0,0,0
+"management",86,41,"admin/config/regional/settings","admin/config/regional/settings","Regional settings","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:54:\"Settings for the site's default time zone and country.\";}}","system",0,0,0,0,-20,4,0,1,7,41,86,0,0,0,0,0,0
+"management",87,39,"admin/people/permissions/roles","admin/people/permissions/roles","Roles","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:30:\"List, edit, or add user roles.\";}}","system",-1,0,1,0,-5,4,0,1,19,39,87,0,0,0,0,0,0
+"management",88,35,"admin/structure/menu/settings","admin/structure/menu/settings","Settings","a:0:{}","system",-1,0,0,0,5,4,0,1,16,35,88,0,0,0,0,0,0
+"management",89,37,"admin/structure/panels/settings","admin/structure/panels/settings","Settings","a:0:{}","system",-1,0,0,0,0,4,0,1,16,37,89,0,0,0,0,0,0
+"management",90,44,"admin/appearance/settings/seven","admin/appearance/settings/seven","Seven","a:0:{}","system",-1,0,0,0,0,4,0,1,6,44,90,0,0,0,0,0,0
+"management",91,46,"admin/config/system/site-information","admin/config/system/site-information","Site information","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:104:\"Change site name, e-mail address, slogan, default front page, and number of posts per page, error pages.\";}}","system",0,0,0,0,-20,4,0,1,7,46,91,0,0,0,0,0,0
+"management",92,44,"admin/appearance/settings/stark","admin/appearance/settings/stark","Stark","a:0:{}","system",-1,0,0,0,0,4,0,1,6,44,92,0,0,0,0,0,0
+"management",93,25,"admin/config/content/formats","admin/config/content/formats","Text formats","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:127:\"Configure how content input by users is filtered, including allowed HTML tags. Also allows enabling of module-provided filters.\";}}","system",0,0,1,0,0,4,0,1,7,25,93,0,0,0,0,0,0
+"management",94,49,"admin/modules/uninstall/confirm","admin/modules/uninstall/confirm","Uninstall","a:0:{}","system",-1,0,0,0,0,4,0,1,12,49,94,0,0,0,0,0,0
+"management",95,36,"admin/structure/pages/wizard","admin/structure/pages/wizard","Wizards","a:0:{}","system",-1,0,0,0,-5,4,0,1,16,36,95,0,0,0,0,0,0
+"navigation",96,29,"user/%/edit/account","user/%/edit/account","Account","a:0:{}","system",-1,0,0,0,0,3,0,13,29,96,0,0,0,0,0,0,0
+"management",97,93,"admin/config/content/formats/%","admin/config/content/formats/%","","a:0:{}","system",0,0,1,0,0,5,0,1,7,25,93,97,0,0,0,0,0
+"management",99,93,"admin/config/content/formats/add","admin/config/content/formats/add","Add text format","a:0:{}","system",-1,0,0,0,1,5,0,1,7,25,93,99,0,0,0,0,0
+"management",100,22,"admin/structure/block/list/bartik","admin/structure/block/list/bartik","Bartik","a:0:{}","system",-1,0,0,0,0,4,0,1,16,22,100,0,0,0,0,0,0
+"management",101,22,"admin/structure/block/list/bootstrap","admin/structure/block/list/bootstrap","Bootstrap","a:0:{}","system",-1,0,0,0,0,4,0,1,16,22,101,0,0,0,0,0,0
+"management",102,56,"admin/config/system/actions/configure","admin/config/system/actions/configure","Configure an advanced action","a:0:{}","system",-1,0,0,0,0,5,0,1,7,46,56,102,0,0,0,0,0
+"management",103,35,"admin/structure/menu/manage/%","admin/structure/menu/manage/%","Customize menu","a:0:{}","system",0,0,1,0,0,4,0,1,16,35,103,0,0,0,0,0,0
+"management",104,36,"admin/structure/pages/edit/%","admin/structure/pages/edit/%","Edit","a:0:{}","system",0,0,0,0,0,4,0,1,16,36,104,0,0,0,0,0,0
+"management",105,26,"admin/structure/types/manage/%","admin/structure/types/manage/%","Edit content type","a:0:{}","system",0,0,1,0,0,4,0,1,16,26,105,0,0,0,0,0,0
+"management",106,67,"admin/config/regional/date-time/formats","admin/config/regional/date-time/formats","Formats","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:51:\"Configure display format strings for date and time.\";}}","system",-1,0,1,0,-9,5,0,1,7,41,67,106,0,0,0,0,0
+"management",107,22,"admin/structure/block/list/garland","admin/structure/block/list/garland","Garland","a:0:{}","system",-1,0,0,0,0,4,0,1,16,22,107,0,0,0,0,0,0
+"management",108,89,"admin/structure/panels/settings/general","admin/structure/panels/settings/general","General","a:0:{}","system",-1,0,0,0,-10,5,0,1,16,37,89,108,0,0,0,0,0
+"management",109,22,"admin/structure/block/list/haskala_theme","admin/structure/block/list/haskala_theme","Haskala Bootstrap Sub-theme","a:0:{}","system",-1,0,0,0,-10,4,0,1,16,22,109,0,0,0,0,0,0
+"management",112,93,"admin/config/content/formats/list","admin/config/content/formats/list","List","a:0:{}","system",-1,0,0,0,0,5,0,1,7,25,93,112,0,0,0,0,0
+"management",113,56,"admin/config/system/actions/manage","admin/config/system/actions/manage","Manage actions","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:41:\"Manage the actions defined for your site.\";}}","system",-1,0,0,0,-2,5,0,1,7,46,56,113,0,0,0,0,0
+"management",114,89,"admin/structure/panels/settings/panel-page","admin/structure/panels/settings/panel-page","Panel pages","a:0:{}","system",-1,0,0,0,-10,5,0,1,16,37,89,114,0,0,0,0,0
+"management",115,55,"admin/config/people/accounts/settings","admin/config/people/accounts/settings","Settings","a:0:{}","system",-1,0,0,0,-10,5,0,1,7,38,55,115,0,0,0,0,0
+"management",116,22,"admin/structure/block/list/seven","admin/structure/block/list/seven","Seven","a:0:{}","system",-1,0,0,0,0,4,0,1,16,22,116,0,0,0,0,0,0
+"management",117,22,"admin/structure/block/list/stark","admin/structure/block/list/stark","Stark","a:0:{}","system",-1,0,0,0,0,4,0,1,16,22,117,0,0,0,0,0,0
+"management",118,67,"admin/config/regional/date-time/types","admin/config/regional/date-time/types","Types","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:44:\"Configure display formats for date and time.\";}}","system",-1,0,1,0,-10,5,0,1,7,41,67,118,0,0,0,0,0
+"navigation",119,42,"node/%/revisions/%/delete","node/%/revisions/%/delete","Delete earlier revision","a:0:{}","system",0,0,0,0,0,3,0,4,42,119,0,0,0,0,0,0,0
+"navigation",120,42,"node/%/revisions/%/revert","node/%/revisions/%/revert","Revert to earlier revision","a:0:{}","system",0,0,0,0,0,3,0,4,42,120,0,0,0,0,0,0,0
+"navigation",121,42,"node/%/revisions/%/view","node/%/revisions/%/view","Revisions","a:0:{}","system",0,0,0,0,0,3,0,4,42,121,0,0,0,0,0,0,0
+"management",122,101,"admin/structure/block/list/bootstrap/add","admin/structure/block/list/bootstrap/add","Add block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,101,122,0,0,0,0,0
+"management",123,107,"admin/structure/block/list/garland/add","admin/structure/block/list/garland/add","Add block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,107,123,0,0,0,0,0
+"management",125,116,"admin/structure/block/list/seven/add","admin/structure/block/list/seven/add","Add block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,116,125,0,0,0,0,0
+"management",126,117,"admin/structure/block/list/stark/add","admin/structure/block/list/stark/add","Add block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,117,126,0,0,0,0,0
+"management",127,118,"admin/config/regional/date-time/types/add","admin/config/regional/date-time/types/add","Add date type","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:18:\"Add new date type.\";}}","system",-1,0,0,0,-10,6,0,1,7,41,67,118,127,0,0,0,0
+"management",128,106,"admin/config/regional/date-time/formats/add","admin/config/regional/date-time/formats/add","Add format","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:43:\"Allow users to add additional date formats.\";}}","system",-1,0,0,0,-10,6,0,1,7,41,67,106,128,0,0,0,0
+"management",129,103,"admin/structure/menu/manage/%/add","admin/structure/menu/manage/%/add","Add link","a:0:{}","system",-1,0,0,0,0,5,0,1,16,35,103,129,0,0,0,0,0
+"management",130,22,"admin/structure/block/manage/%/%","admin/structure/block/manage/%/%","Configure block","a:0:{}","system",0,0,0,0,0,4,0,1,16,22,130,0,0,0,0,0,0
+"navigation",131,23,"user/%/cancel/confirm/%/%","user/%/cancel/confirm/%/%","Confirm account cancellation","a:0:{}","system",0,0,0,0,0,3,0,13,23,131,0,0,0,0,0,0,0
+"management",132,105,"admin/structure/types/manage/%/delete","admin/structure/types/manage/%/delete","Delete","a:0:{}","system",0,0,0,0,0,5,0,1,16,26,105,132,0,0,0,0,0
+"management",133,73,"admin/config/people/ip-blocking/delete/%","admin/config/people/ip-blocking/delete/%","Delete IP address","a:0:{}","system",0,0,0,0,0,5,0,1,7,38,73,133,0,0,0,0,0
+"management",134,56,"admin/config/system/actions/delete/%","admin/config/system/actions/delete/%","Delete action","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:17:\"Delete an action.\";}}","system",0,0,0,0,0,5,0,1,7,46,56,134,0,0,0,0,0
+"management",135,103,"admin/structure/menu/manage/%/delete","admin/structure/menu/manage/%/delete","Delete menu","a:0:{}","system",0,0,0,0,0,5,0,1,16,35,103,135,0,0,0,0,0
+"management",136,35,"admin/structure/menu/item/%/delete","admin/structure/menu/item/%/delete","Delete menu link","a:0:{}","system",0,0,0,0,0,4,0,1,16,35,136,0,0,0,0,0,0
+"management",137,87,"admin/people/permissions/roles/delete/%","admin/people/permissions/roles/delete/%","Delete role","a:0:{}","system",0,0,0,0,0,5,0,1,19,39,87,137,0,0,0,0,0
+"management",138,97,"admin/config/content/formats/%/disable","admin/config/content/formats/%/disable","Disable text format","a:0:{}","system",0,0,0,0,0,6,0,1,7,25,93,97,138,0,0,0,0
+"management",139,105,"admin/structure/types/manage/%/edit","admin/structure/types/manage/%/edit","Edit","a:0:{}","system",-1,0,0,0,0,5,0,1,16,26,105,139,0,0,0,0,0
+"management",140,36,"admin/structure/pages/%/operation/%","admin/structure/pages/%/operation/%","","a:0:{}","system",0,0,0,0,0,4,0,1,16,36,140,0,0,0,0,0,0
+"management",141,103,"admin/structure/menu/manage/%/edit","admin/structure/menu/manage/%/edit","Edit menu","a:0:{}","system",-1,0,0,0,0,5,0,1,16,35,103,141,0,0,0,0,0
+"management",142,35,"admin/structure/menu/item/%/edit","admin/structure/menu/item/%/edit","Edit menu link","a:0:{}","system",0,0,0,0,0,4,0,1,16,35,142,0,0,0,0,0,0
+"management",143,87,"admin/people/permissions/roles/edit/%","admin/people/permissions/roles/edit/%","Edit role","a:0:{}","system",0,0,0,0,0,5,0,1,19,39,87,143,0,0,0,0,0
+"management",144,103,"admin/structure/menu/manage/%/list","admin/structure/menu/manage/%/list","List links","a:0:{}","system",-1,0,0,0,-10,5,0,1,16,35,103,144,0,0,0,0,0
+"management",145,35,"admin/structure/menu/item/%/reset","admin/structure/menu/item/%/reset","Reset menu link","a:0:{}","system",0,0,0,0,0,4,0,1,16,35,145,0,0,0,0,0,0
+"management",146,130,"admin/structure/block/manage/%/%/configure","admin/structure/block/manage/%/%/configure","Configure block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,130,146,0,0,0,0,0
+"management",147,130,"admin/structure/block/manage/%/%/delete","admin/structure/block/manage/%/%/delete","Delete block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,130,147,0,0,0,0,0
+"management",148,106,"admin/config/regional/date-time/formats/%/delete","admin/config/regional/date-time/formats/%/delete","Delete date format","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:47:\"Allow users to delete a configured date format.\";}}","system",0,0,0,0,0,6,0,1,7,41,67,106,148,0,0,0,0
+"management",149,118,"admin/config/regional/date-time/types/%/delete","admin/config/regional/date-time/types/%/delete","Delete date type","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:45:\"Allow users to delete a configured date type.\";}}","system",0,0,0,0,0,6,0,1,7,41,67,118,149,0,0,0,0
+"management",150,106,"admin/config/regional/date-time/formats/%/edit","admin/config/regional/date-time/formats/%/edit","Edit date format","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:45:\"Allow users to edit a configured date format.\";}}","system",0,0,0,0,0,6,0,1,7,41,67,106,150,0,0,0,0
+"management",153,35,"admin/structure/menu/manage/main-menu","admin/structure/menu/manage/%","Main menu","a:0:{}","menu",0,0,0,0,0,4,0,1,16,35,153,0,0,0,0,0,0
+"management",154,35,"admin/structure/menu/manage/management","admin/structure/menu/manage/%","Management","a:0:{}","menu",0,0,0,0,0,4,0,1,16,35,154,0,0,0,0,0,0
+"management",155,35,"admin/structure/menu/manage/navigation","admin/structure/menu/manage/%","Navigation","a:0:{}","menu",0,0,0,0,0,4,0,1,16,35,155,0,0,0,0,0,0
+"management",156,35,"admin/structure/menu/manage/user-menu","admin/structure/menu/manage/%","User menu","a:0:{}","menu",0,0,0,0,0,4,0,1,16,35,156,0,0,0,0,0,0
+"management",157,1,"admin/help","admin/help","Help","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:48:\"Reference for usage, configuration, and modules.\";}}","system",0,0,0,0,9,2,0,1,157,0,0,0,0,0,0,0,0
+"navigation",158,0,"taxonomy/term/%","taxonomy/term/%","Taxonomy term","a:0:{}","system",0,0,0,0,0,1,0,158,0,0,0,0,0,0,0,0,0
+"management",159,16,"admin/structure/features","admin/structure/features","Features","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:16:\"Manage features.\";}}","system",0,0,0,0,0,3,0,1,16,159,0,0,0,0,0,0,0
+"navigation",160,13,"user/%/shortcuts","user/%/shortcuts","Shortcuts","a:0:{}","system",-1,0,0,0,0,2,0,13,160,0,0,0,0,0,0,0,0
+"management",161,16,"admin/structure/taxonomy","admin/structure/taxonomy","Taxonomy","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:67:\"Manage tagging, categorization, and classification of your content.\";}}","system",0,0,1,0,0,3,0,1,16,161,0,0,0,0,0,0,0
+"management",162,157,"admin/help/admin_menu","admin/help/admin_menu","admin_menu","a:0:{}","system",-1,0,0,0,0,3,0,1,157,162,0,0,0,0,0,0,0
+"management",163,157,"admin/help/block","admin/help/block","block","a:0:{}","system",-1,0,0,0,0,3,0,1,157,163,0,0,0,0,0,0,0
+"management",164,157,"admin/help/contextual","admin/help/contextual","contextual","a:0:{}","system",-1,0,0,0,0,3,0,1,157,164,0,0,0,0,0,0,0
+"management",165,157,"admin/help/dblog","admin/help/dblog","dblog","a:0:{}","system",-1,0,0,0,0,3,0,1,157,165,0,0,0,0,0,0,0
+"management",166,157,"admin/help/diff","admin/help/diff","diff","a:0:{}","system",-1,0,0,0,0,3,0,1,157,166,0,0,0,0,0,0,0
+"management",167,157,"admin/help/features","admin/help/features","features","a:0:{}","system",-1,0,0,0,0,3,0,1,157,167,0,0,0,0,0,0,0
+"management",168,157,"admin/help/field","admin/help/field","field","a:0:{}","system",-1,0,0,0,0,3,0,1,157,168,0,0,0,0,0,0,0
+"management",169,157,"admin/help/field_sql_storage","admin/help/field_sql_storage","field_sql_storage","a:0:{}","system",-1,0,0,0,0,3,0,1,157,169,0,0,0,0,0,0,0
+"management",170,157,"admin/help/file","admin/help/file","file","a:0:{}","system",-1,0,0,0,0,3,0,1,157,170,0,0,0,0,0,0,0
+"management",171,157,"admin/help/filter","admin/help/filter","filter","a:0:{}","system",-1,0,0,0,0,3,0,1,157,171,0,0,0,0,0,0,0
+"management",172,157,"admin/help/googleanalytics","admin/help/googleanalytics","googleanalytics","a:0:{}","system",-1,0,0,0,0,3,0,1,157,172,0,0,0,0,0,0,0
+"management",173,157,"admin/help/help","admin/help/help","help","a:0:{}","system",-1,0,0,0,0,3,0,1,157,173,0,0,0,0,0,0,0
+"management",174,157,"admin/help/image","admin/help/image","image","a:0:{}","system",-1,0,0,0,0,3,0,1,157,174,0,0,0,0,0,0,0
+"management",175,157,"admin/help/list","admin/help/list","list","a:0:{}","system",-1,0,0,0,0,3,0,1,157,175,0,0,0,0,0,0,0
+"management",176,157,"admin/help/menu","admin/help/menu","menu","a:0:{}","system",-1,0,0,0,0,3,0,1,157,176,0,0,0,0,0,0,0
+"management",177,157,"admin/help/node","admin/help/node","node","a:0:{}","system",-1,0,0,0,0,3,0,1,157,177,0,0,0,0,0,0,0
+"management",178,157,"admin/help/number","admin/help/number","number","a:0:{}","system",-1,0,0,0,0,3,0,1,157,178,0,0,0,0,0,0,0
+"management",179,157,"admin/help/options","admin/help/options","options","a:0:{}","system",-1,0,0,0,0,3,0,1,157,179,0,0,0,0,0,0,0
+"management",180,157,"admin/help/path","admin/help/path","path","a:0:{}","system",-1,0,0,0,0,3,0,1,157,180,0,0,0,0,0,0,0
+"management",181,157,"admin/help/shortcut","admin/help/shortcut","shortcut","a:0:{}","system",-1,0,0,0,0,3,0,1,157,181,0,0,0,0,0,0,0
+"management",182,157,"admin/help/strongarm","admin/help/strongarm","strongarm","a:0:{}","system",-1,0,0,0,0,3,0,1,157,182,0,0,0,0,0,0,0
+"management",183,157,"admin/help/system","admin/help/system","system","a:0:{}","system",-1,0,0,0,0,3,0,1,157,183,0,0,0,0,0,0,0
+"management",184,157,"admin/help/taxonomy","admin/help/taxonomy","taxonomy","a:0:{}","system",-1,0,0,0,0,3,0,1,157,184,0,0,0,0,0,0,0
+"management",185,157,"admin/help/text","admin/help/text","text","a:0:{}","system",-1,0,0,0,0,3,0,1,157,185,0,0,0,0,0,0,0
+"management",186,157,"admin/help/user","admin/help/user","user","a:0:{}","system",-1,0,0,0,0,3,0,1,157,186,0,0,0,0,0,0,0
+"navigation",187,158,"taxonomy/term/%/edit","taxonomy/term/%/edit","Edit","a:0:{}","system",-1,0,0,0,10,2,0,158,187,0,0,0,0,0,0,0,0
+"navigation",188,158,"taxonomy/term/%/view","taxonomy/term/%/view","View","a:0:{}","system",-1,0,0,0,0,2,0,158,188,0,0,0,0,0,0,0,0
+"management",189,161,"admin/structure/taxonomy/%","admin/structure/taxonomy/%","","a:0:{}","system",0,0,0,0,0,4,0,1,16,161,189,0,0,0,0,0,0
+"management",190,161,"admin/structure/taxonomy/add","admin/structure/taxonomy/add","Add vocabulary","a:0:{}","system",-1,0,0,0,0,4,0,1,16,161,190,0,0,0,0,0,0
+"navigation",191,42,"node/%/revisions/view","node/%/revisions/view","Compare revisions","a:0:{}","system",-1,0,0,0,0,3,0,4,42,191,0,0,0,0,0,0,0
+"management",192,159,"admin/structure/features/create","admin/structure/features/create","Create feature","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:21:\"Create a new feature.\";}}","system",-1,0,0,0,10,4,0,1,16,159,192,0,0,0,0,0,0
+"management",193,25,"admin/config/content/diff","admin/config/content/diff","Diff","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:14:\"Diff settings.\";}}","system",0,0,0,0,0,4,0,1,7,25,193,0,0,0,0,0,0
+"management",194,46,"admin/config/system/googleanalytics","admin/config/system/googleanalytics","Google Analytics","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:98:\"Configure tracking behavior to get insights into your website traffic and marketing effectiveness.\";}}","system",0,0,0,0,0,4,0,1,7,46,194,0,0,0,0,0,0
+"management",195,34,"admin/config/media/image-styles","admin/config/media/image-styles","Image styles","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:78:\"Configure styles that can be used for resizing or adjusting images on display.\";}}","system",0,0,1,0,0,4,0,1,7,34,195,0,0,0,0,0,0
+"management",196,161,"admin/structure/taxonomy/list","admin/structure/taxonomy/list","List","a:0:{}","system",-1,0,0,0,-10,4,0,1,16,161,196,0,0,0,0,0,0
+"navigation",197,42,"node/%/revisions/list","node/%/revisions/list","List revisions","a:0:{}","system",-1,0,0,0,0,3,0,4,42,197,0,0,0,0,0,0,0
+"management",198,159,"admin/structure/features/manage","admin/structure/features/manage","Manage","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:28:\"Enable and disable features.\";}}","system",-1,0,0,0,0,4,0,1,16,159,198,0,0,0,0,0,0
+"management",199,159,"admin/structure/features/settings","admin/structure/features/settings","Settings","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:42:\"Adjust settings for using features module.\";}}","system",-1,0,0,0,11,4,0,1,16,159,199,0,0,0,0,0,0
+"management",200,50,"admin/config/user-interface/shortcut","admin/config/user-interface/shortcut","Shortcuts","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:29:\"Add and modify shortcut sets.\";}}","system",0,0,1,0,0,4,0,1,7,50,200,0,0,0,0,0,0
+"management",201,28,"admin/config/development/strongarm","admin/config/development/strongarm","Strongarm","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:59:\"Manage Drupal variable settings that have been strongarmed.\";}}","system",0,0,0,0,0,4,0,1,7,28,201,0,0,0,0,0,0
+"management",202,43,"admin/config/search/path","admin/config/search/path","URL aliases","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:46:\"Change your site's URL paths by aliasing them.\";}}","system",0,0,1,0,-5,4,0,1,7,43,202,0,0,0,0,0,0
+"management",203,202,"admin/config/search/path/add","admin/config/search/path/add","Add alias","a:0:{}","system",-1,0,0,0,0,5,0,1,7,43,202,203,0,0,0,0,0
+"management",204,200,"admin/config/user-interface/shortcut/add-set","admin/config/user-interface/shortcut/add-set","Add shortcut set","a:0:{}","system",-1,0,0,0,0,5,0,1,7,50,200,204,0,0,0,0,0
+"management",205,195,"admin/config/media/image-styles/add","admin/config/media/image-styles/add","Add style","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:22:\"Add a new image style.\";}}","system",-1,0,0,0,2,5,0,1,7,34,195,205,0,0,0,0,0
+"management",206,189,"admin/structure/taxonomy/%/add","admin/structure/taxonomy/%/add","Add term","a:0:{}","system",-1,0,0,0,0,5,0,1,16,161,189,206,0,0,0,0,0
+"management",207,189,"admin/structure/taxonomy/%/edit","admin/structure/taxonomy/%/edit","Edit","a:0:{}","system",-1,0,0,0,-10,5,0,1,16,161,189,207,0,0,0,0,0
+"management",208,200,"admin/config/user-interface/shortcut/%","admin/config/user-interface/shortcut/%","Edit shortcuts","a:0:{}","system",0,0,1,0,0,5,0,1,7,50,200,208,0,0,0,0,0
+"management",209,193,"admin/config/content/diff/entities","admin/config/content/diff/entities","Entities","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:16:\"Entity settings.\";}}","system",-1,0,0,0,0,5,0,1,7,25,193,209,0,0,0,0,0
+"management",210,193,"admin/config/content/diff/fields","admin/config/content/diff/fields","Fields","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:36:\"Field support and settings overview.\";}}","system",-1,0,0,0,0,5,0,1,7,25,193,210,0,0,0,0,0
+"management",211,189,"admin/structure/taxonomy/%/list","admin/structure/taxonomy/%/list","List","a:0:{}","system",-1,0,0,0,-20,5,0,1,16,161,189,211,0,0,0,0,0
+"management",212,202,"admin/config/search/path/list","admin/config/search/path/list","List","a:0:{}","system",-1,0,0,0,-10,5,0,1,7,43,202,212,0,0,0,0,0
+"management",213,195,"admin/config/media/image-styles/list","admin/config/media/image-styles/list","List","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:42:\"List the current image styles on the site.\";}}","system",-1,0,0,0,1,5,0,1,7,34,195,213,0,0,0,0,0
+"management",214,193,"admin/config/content/diff/settings","admin/config/content/diff/settings","Settings","a:0:{}","system",-1,0,0,0,-10,5,0,1,7,25,193,214,0,0,0,0,0
+"navigation",215,191,"node/%/revisions/view/latest","node/%/revisions/view/latest","Show latest difference","a:0:{}","system",-1,0,0,0,0,4,0,4,42,191,215,0,0,0,0,0,0
+"management",216,159,"admin/structure/features/%/view","admin/structure/features/%/view","View","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:32:\"Display components of a feature.\";}}","system",-1,0,0,0,-10,4,0,1,16,159,216,0,0,0,0,0,0
+"management",217,159,"admin/structure/features/%/recreate","admin/structure/features/%/recreate","Recreate","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:29:\"Recreate an existing feature.\";}}","system",-1,0,0,0,11,4,0,1,16,159,217,0,0,0,0,0,0
+"management",218,159,"admin/structure/features/%/diff","admin/structure/features/%/diff","Review overrides","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:36:\"Compare default and current feature.\";}}","system",-1,0,0,0,0,4,0,1,16,159,218,0,0,0,0,0,0
+"management",219,208,"admin/config/user-interface/shortcut/%/add-link","admin/config/user-interface/shortcut/%/add-link","Add shortcut","a:0:{}","system",-1,0,0,0,0,6,0,1,7,50,200,208,219,0,0,0,0
+"management",220,202,"admin/config/search/path/delete/%","admin/config/search/path/delete/%","Delete alias","a:0:{}","system",0,0,0,0,0,5,0,1,7,43,202,220,0,0,0,0,0
+"management",221,208,"admin/config/user-interface/shortcut/%/delete","admin/config/user-interface/shortcut/%/delete","Delete shortcut set","a:0:{}","system",0,0,0,0,0,6,0,1,7,50,200,208,221,0,0,0,0
+"management",222,202,"admin/config/search/path/edit/%","admin/config/search/path/edit/%","Edit alias","a:0:{}","system",0,0,0,0,0,5,0,1,7,43,202,222,0,0,0,0,0
+"management",223,208,"admin/config/user-interface/shortcut/%/edit","admin/config/user-interface/shortcut/%/edit","Edit set name","a:0:{}","system",-1,0,0,0,10,6,0,1,7,50,200,208,223,0,0,0,0
+"management",224,200,"admin/config/user-interface/shortcut/link/%","admin/config/user-interface/shortcut/link/%","Edit shortcut","a:0:{}","system",0,0,1,0,0,5,0,1,7,50,200,224,0,0,0,0,0
+"management",225,195,"admin/config/media/image-styles/edit/%","admin/config/media/image-styles/edit/%","Edit style","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:25:\"Configure an image style.\";}}","system",0,0,1,0,0,5,0,1,7,34,195,225,0,0,0,0,0
+"management",226,210,"admin/config/content/diff/fields/%","admin/config/content/diff/fields/%","Global field settings","a:0:{}","system",-1,0,0,0,0,6,0,1,7,25,193,210,226,0,0,0,0
+"management",227,208,"admin/config/user-interface/shortcut/%/links","admin/config/user-interface/shortcut/%/links","List links","a:0:{}","system",-1,0,0,0,0,6,0,1,7,50,200,208,227,0,0,0,0
+"management",228,209,"admin/config/content/diff/entities/node","admin/config/content/diff/entities/node","Node","a:0:{}","system",-1,0,0,0,-10,6,0,1,7,25,193,209,228,0,0,0,0
+"management",229,195,"admin/config/media/image-styles/delete/%","admin/config/media/image-styles/delete/%","Delete style","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:22:\"Delete an image style.\";}}","system",0,0,0,0,0,5,0,1,7,34,195,229,0,0,0,0,0
+"management",230,195,"admin/config/media/image-styles/revert/%","admin/config/media/image-styles/revert/%","Revert style","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:22:\"Revert an image style.\";}}","system",0,0,0,0,0,5,0,1,7,34,195,230,0,0,0,0,0
+"management",231,224,"admin/config/user-interface/shortcut/link/%/delete","admin/config/user-interface/shortcut/link/%/delete","Delete shortcut","a:0:{}","system",0,0,0,0,0,6,0,1,7,50,200,224,231,0,0,0,0
+"management",232,225,"admin/config/media/image-styles/edit/%/add/%","admin/config/media/image-styles/edit/%/add/%","Add image effect","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:28:\"Add a new effect to a style.\";}}","system",0,0,0,0,0,6,0,1,7,34,195,225,232,0,0,0,0
+"management",233,225,"admin/config/media/image-styles/edit/%/effects/%","admin/config/media/image-styles/edit/%/effects/%","Edit image effect","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:39:\"Edit an existing effect within a style.\";}}","system",0,0,1,0,0,6,0,1,7,34,195,225,233,0,0,0,0
+"management",234,233,"admin/config/media/image-styles/edit/%/effects/%/delete","admin/config/media/image-styles/edit/%/effects/%/delete","Delete image effect","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:39:\"Delete an existing effect from a style.\";}}","system",0,0,0,0,0,7,0,1,7,34,195,225,233,234,0,0,0
+"shortcut-set-1",235,0,"node/add","node/add","Add content","a:0:{}","menu",0,0,0,0,-20,1,0,235,0,0,0,0,0,0,0,0,0
+"shortcut-set-1",236,0,"admin/content","admin/content","Find content","a:0:{}","menu",0,0,0,0,-19,1,0,236,0,0,0,0,0,0,0,0,0
+"user-menu",237,0,"admin/structure/taxonomy/series/add","admin/structure/taxonomy/%/add","Add a book series","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:63:\"user-menu_add-a-book-series:admin/structure/taxonomy/series/add\";}","menu",0,0,0,0,0,1,1,237,0,0,0,0,0,0,0,0,0
+"menu-top-menu",238,0,"search","search","search","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:27:\"menu-top-menu_search:search\";}","menu",0,0,0,0,0,1,1,238,0,0,0,0,0,0,0,0,0
+"menu-top-menu",239,0,"places","places","PLACES","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:27:\"menu-top-menu_places:places\";}","menu",0,0,0,0,0,1,1,239,0,0,0,0,0,0,0,0,0
+"user-menu",240,0,"node/add/book","node/add","Add a book","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:34:\"user-menu_add-a-book:node/add/book\";}","menu",0,0,0,0,0,1,1,240,0,0,0,0,0,0,0,0,0
+"user-menu",241,0,"node/add/person","node/add","Add a person","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:38:\"user-menu_add-a-person:node/add/person\";}","menu",0,0,0,0,0,1,1,241,0,0,0,0,0,0,0,0,0
+"user-menu",242,0,"user/login","user/login","LOGIN","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:26:\"user-menu_login:user/login\";}","menu",0,0,0,0,0,1,1,242,0,0,0,0,0,0,0,0,0
+"menu-top-menu",243,0,"people","people","PEOPLE","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:27:\"menu-top-menu_people:people\";}","menu",0,0,0,0,0,1,1,243,0,0,0,0,0,0,0,0,0
+"menu-top-menu",244,0,"digital-books","digital-books","DIGITAL BOOKS","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:41:\"menu-top-menu_digital-books:digital-books\";}","menu",0,0,0,0,0,1,1,244,0,0,0,0,0,0,0,0,0
+"menu-icons-menu",245,0,"books","books","Books","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:27:\"menu-icons-menu_books:books\";}","menu",0,0,0,0,0,1,1,245,0,0,0,0,0,0,0,0,0
+"menu-bottom-menu",246,0,"<front>","","Add a person","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:37:\"menu-bottom-menu_add-a-person:<front>\";}","menu",0,1,0,0,0,1,1,246,0,0,0,0,0,0,0,0,0
+"menu-bottom-menu",247,0,"<front>","","Add a book","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:35:\"menu-bottom-menu_add-a-book:<front>\";}","menu",0,1,0,0,0,1,1,247,0,0,0,0,0,0,0,0,0
+"menu-icons-menu",248,0,"digital-books","digital-books","Digital Books","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:43:\"menu-icons-menu_digital-books:digital-books\";}","menu",0,0,0,0,0,1,1,248,0,0,0,0,0,0,0,0,0
+"menu-icons-menu",249,0,"people","people","People","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:29:\"menu-icons-menu_people:people\";}","menu",0,0,0,0,0,1,1,249,0,0,0,0,0,0,0,0,0
+"menu-top-menu",250,0,"books","books","BOOKS","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:25:\"menu-top-menu_books:books\";}","menu",0,0,0,0,0,1,1,250,0,0,0,0,0,0,0,0,0
+"menu-icons-menu",251,0,"places","places","Places","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:29:\"menu-icons-menu_places:places\";}","menu",0,0,0,0,0,1,1,251,0,0,0,0,0,0,0,0,0
+"menu-bottom-menu",252,0,"<front>","","Add a book series","a:2:{s:10:\"attributes\";a:1:{s:5:\"title\";s:0:\"\";}s:10:\"identifier\";s:42:\"menu-bottom-menu_add-a-book-series:<front>\";}","menu",0,1,0,0,0,1,1,252,0,0,0,0,0,0,0,0,0
+"navigation",253,0,"search","search","Haskala","a:0:{}","system",1,0,0,0,0,1,0,253,0,0,0,0,0,0,0,0,0
+"navigation",254,5,"node/add/book","node/add/book","Book","a:0:{}","system",0,0,0,0,0,2,0,5,254,0,0,0,0,0,0,0,0
+"navigation",255,5,"node/add/edition","node/add/edition","Edition","a:0:{}","system",0,0,0,0,0,2,0,5,255,0,0,0,0,0,0,0,0
+"navigation",256,5,"node/add/mention","node/add/mention","Mention","a:0:{}","system",0,0,0,0,0,2,0,5,256,0,0,0,0,0,0,0,0
+"navigation",257,5,"node/add/page-element","node/add/page-element","Page Element","a:0:{}","system",0,0,0,0,0,2,0,5,257,0,0,0,0,0,0,0,0
+"navigation",258,5,"node/add/person","node/add/person","Person","a:0:{}","system",0,0,0,0,0,2,0,5,258,0,0,0,0,0,0,0,0
+"navigation",259,5,"node/add/production","node/add/production","Person Production Details","a:0:{}","system",0,0,0,0,0,2,0,5,259,0,0,0,0,0,0,0,0
+"navigation",260,5,"node/add/preface","node/add/preface","Preface","a:0:{}","system",0,0,0,0,0,2,0,5,260,0,0,0,0,0,0,0,0
+"navigation",261,5,"node/add/translation","node/add/translation","Translation","a:0:{}","system",0,0,0,0,0,2,0,5,261,0,0,0,0,0,0,0,0
+"management",262,157,"admin/help/ip_geoloc","admin/help/ip_geoloc","ip_geoloc","a:0:{}","system",-1,0,0,0,0,3,0,1,157,262,0,0,0,0,0,0,0
+"management",263,157,"admin/help/jquery_update","admin/help/jquery_update","jquery_update","a:0:{}","system",-1,0,0,0,0,3,0,1,157,263,0,0,0,0,0,0,0
+"management",264,157,"admin/help/metatag","admin/help/metatag","metatag","a:0:{}","system",-1,0,0,0,0,3,0,1,157,264,0,0,0,0,0,0,0
+"management",265,157,"admin/help/pathauto","admin/help/pathauto","pathauto","a:0:{}","system",-1,0,0,0,0,3,0,1,157,265,0,0,0,0,0,0,0
+"management",266,157,"admin/help/rdf","admin/help/rdf","rdf","a:0:{}","system",-1,0,0,0,0,3,0,1,157,266,0,0,0,0,0,0,0
+"management",267,157,"admin/help/search_api","admin/help/search_api","search_api","a:0:{}","system",-1,0,0,0,0,3,0,1,157,267,0,0,0,0,0,0,0
+"management",268,157,"admin/help/search_api_solr","admin/help/search_api_solr","search_api_solr","a:0:{}","system",-1,0,0,0,0,3,0,1,157,268,0,0,0,0,0,0,0
+"management",269,157,"admin/help/token","admin/help/token","token","a:0:{}","system",-1,0,0,0,0,3,0,1,157,269,0,0,0,0,0,0,0
+"management",270,157,"admin/help/xmlsitemap","admin/help/xmlsitemap","xmlsitemap","a:0:{}","system",-1,0,0,0,0,3,0,1,157,270,0,0,0,0,0,0,0
+"management",271,18,"admin/content/mentions","admin/content/mentions","Mentions","a:0:{}","system",-1,0,0,0,0,3,0,1,18,271,0,0,0,0,0,0,0
+"management",272,46,"admin/config/system/ip_geoloc","admin/config/system/ip_geoloc","IP Geolocation Views & Maps","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:65:\"Configure map markers and how geolocation information is updated.\";}}","system",0,0,0,0,0,4,0,1,7,46,272,0,0,0,0,0,0
+"management",273,53,"admin/config/services/logs-http-client","admin/config/services/logs-http-client","Logs HTTP Client","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:32:\"Administer Logs Client settings.\";}}","system",0,0,0,0,0,4,0,1,7,53,273,0,0,0,0,0,0
+"management",274,43,"admin/config/search/metatags","admin/config/search/metatags","Metatag","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:27:\"Configure Metatag defaults.\";}}","system",0,0,0,0,0,4,0,1,7,43,274,0,0,0,0,0,0
+"management",275,50,"admin/config/user-interface/modulefilter","admin/config/user-interface/modulefilter","Module filter","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:46:\"Configure how the modules page looks and acts.\";}}","system",0,0,0,0,0,4,0,1,7,50,275,0,0,0,0,0,0
+"management",276,43,"admin/config/search/search_api","admin/config/search/search_api","Search API","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:36:\"Create and configure search engines.\";}}","system",0,0,1,0,0,4,0,1,7,43,276,0,0,0,0,0,0
+"management",277,43,"admin/config/search/xmlsitemap","admin/config/search/xmlsitemap","XML sitemap","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:92:\"Configure your site's XML sitemaps to help search engines find and index pages on your site.\";}}","system",0,0,1,0,0,4,0,1,7,43,277,0,0,0,0,0,0
+"management",278,28,"admin/config/development/jquery_update","admin/config/development/jquery_update","jQuery update","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:83:\"Configure settings related to the jQuery upgrade, the library path and compression.\";}}","system",0,0,0,0,0,4,0,1,7,28,278,0,0,0,0,0,0
+"management",279,276,"admin/config/search/search_api/add_index","admin/config/search/search_api/add_index","Add index","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:26:\"Create a new search index.\";}}","system",-1,0,0,0,0,5,0,1,7,43,276,279,0,0,0,0,0
+"management",280,276,"admin/config/search/search_api/add_server","admin/config/search/search_api/add_server","Add server","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:27:\"Create a new search server.\";}}","system",-1,0,0,0,-1,5,0,1,7,43,276,280,0,0,0,0,0
+"management",281,274,"admin/config/search/metatags/settings","admin/config/search/metatags/settings","Advanced settings","a:0:{}","system",-1,0,0,0,30,5,0,1,7,43,274,281,0,0,0,0,0
+"management",282,274,"admin/config/search/metatags/bulk-revert","admin/config/search/metatags/bulk-revert","Bulk revert","a:0:{}","system",-1,0,0,0,40,5,0,1,7,43,274,282,0,0,0,0,0
+"management",283,202,"admin/config/search/path/update_bulk","admin/config/search/path/update_bulk","Bulk update","a:0:{}","system",-1,0,0,0,30,5,0,1,7,43,202,283,0,0,0,0,0
+"management",284,274,"admin/config/search/metatags/config","admin/config/search/metatags/config","Defaults","a:0:{}","system",-1,0,1,0,-10,5,0,1,7,43,274,284,0,0,0,0,0
+"management",285,202,"admin/config/search/path/delete_bulk","admin/config/search/path/delete_bulk","Delete aliases","a:0:{}","system",-1,0,0,0,40,5,0,1,7,43,202,285,0,0,0,0,0
+"management",286,277,"admin/config/search/xmlsitemap/list","admin/config/search/xmlsitemap/list","List","a:0:{}","system",-1,0,0,0,-10,5,0,1,7,43,277,286,0,0,0,0,0
+"management",287,276,"admin/config/search/search_api/overview","admin/config/search/search_api/overview","Overview","a:0:{}","system",-1,0,0,0,-10,5,0,1,7,43,276,287,0,0,0,0,0
+"management",288,202,"admin/config/search/path/patterns","admin/config/search/path/patterns","Patterns","a:0:{}","system",-1,0,0,0,10,5,0,1,7,43,202,288,0,0,0,0,0
+"management",289,277,"admin/config/search/xmlsitemap/rebuild","admin/config/search/xmlsitemap/rebuild","Rebuild links","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:21:\"Rebuild the site map.\";}}","system",-1,0,0,0,20,5,0,1,7,43,277,289,0,0,0,0,0
+"management",290,276,"admin/config/search/search_api/page","admin/config/search/search_api/page","Search pages","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:34:\"Create and configure search pages.\";}}","system",-1,0,1,0,0,5,0,1,7,43,276,290,0,0,0,0,0
+"management",291,202,"admin/config/search/path/settings","admin/config/search/path/settings","Settings","a:0:{}","system",-1,0,0,0,20,5,0,1,7,43,202,291,0,0,0,0,0
+"management",292,277,"admin/config/search/xmlsitemap/settings","admin/config/search/xmlsitemap/settings","Settings","a:0:{}","system",-1,0,1,0,10,5,0,1,7,43,277,292,0,0,0,0,0
+"management",293,277,"admin/config/search/xmlsitemap/add","admin/config/search/xmlsitemap/add","Add new XML sitemap","a:1:{s:5:\"modal\";b:1;}","system",-1,0,0,0,0,5,0,1,7,43,277,293,0,0,0,0,0
+"management",294,284,"admin/config/search/metatags/config/%","admin/config/search/metatags/config/%","","a:0:{}","system",0,0,1,0,0,6,0,1,7,43,274,284,294,0,0,0,0
+"management",295,284,"admin/config/search/metatags/config/add","admin/config/search/metatags/config/add","Add a Metatag default","a:0:{}","system",-1,0,0,0,0,6,0,1,7,43,274,284,295,0,0,0,0
+"management",296,290,"admin/config/search/search_api/page/add","admin/config/search/search_api/page/add","Add search page","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:22:\"Add a new search page.\";}}","system",-1,0,0,0,0,6,0,1,7,43,276,290,296,0,0,0,0
+"management",297,290,"admin/config/search/search_api/page/%","admin/config/search/search_api/page/%","Edit search page","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:34:\"Configure or delete a search page.\";}}","system",0,0,0,0,0,6,0,1,7,43,276,290,297,0,0,0,0
+"management",298,276,"admin/config/search/search_api/index/%","admin/config/search/search_api/index/%","View index","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:19:\"View index details.\";}}","system",0,0,0,0,0,5,0,1,7,43,276,298,0,0,0,0,0
+"management",299,276,"admin/config/search/search_api/server/%","admin/config/search/search_api/server/%","View server","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:20:\"View server details.\";}}","system",0,0,0,0,0,5,0,1,7,43,276,299,0,0,0,0,0
+"management",300,277,"admin/config/search/xmlsitemap/delete/%","admin/config/search/xmlsitemap/delete/%","Delete XML sitemap","a:0:{}","system",0,0,0,0,0,5,0,1,7,43,277,300,0,0,0,0,0
+"management",301,277,"admin/config/search/xmlsitemap/edit/%","admin/config/search/xmlsitemap/edit/%","Edit XML sitemap","a:0:{}","system",0,0,0,0,0,5,0,1,7,43,277,301,0,0,0,0,0
+"management",302,298,"admin/config/search/search_api/index/%/delete","admin/config/search/search_api/index/%/delete","Delete","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:13:\"Delete index.\";}}","system",-1,0,0,0,10,6,0,1,7,43,276,298,302,0,0,0,0
+"management",303,299,"admin/config/search/search_api/server/%/delete","admin/config/search/search_api/server/%/delete","Delete","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:14:\"Delete server.\";}}","system",-1,0,0,0,10,6,0,1,7,43,276,299,303,0,0,0,0
+"management",304,294,"admin/config/search/metatags/config/%/delete","admin/config/search/metatags/config/%/delete","Delete","a:0:{}","system",0,0,0,0,0,7,0,1,7,43,274,284,294,304,0,0,0
+"management",305,294,"admin/config/search/metatags/config/%/disable","admin/config/search/metatags/config/%/disable","Disable","a:0:{}","system",0,0,0,0,0,7,0,1,7,43,274,284,294,305,0,0,0
+"management",306,298,"admin/config/search/search_api/index/%/disable","admin/config/search/search_api/index/%/disable","Disable","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:14:\"Disable index.\";}}","system",-1,0,0,0,8,6,0,1,7,43,276,298,306,0,0,0,0
+"management",307,299,"admin/config/search/search_api/server/%/disable","admin/config/search/search_api/server/%/disable","Disable","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:14:\"Disable index.\";}}","system",-1,0,0,0,8,6,0,1,7,43,276,299,307,0,0,0,0
+"management",308,298,"admin/config/search/search_api/index/%/edit","admin/config/search/search_api/index/%/edit","Edit","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:20:\"Edit index settings.\";}}","system",-1,0,0,0,-6,6,0,1,7,43,276,298,308,0,0,0,0
+"management",309,299,"admin/config/search/search_api/server/%/edit","admin/config/search/search_api/server/%/edit","Edit","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:20:\"Edit server details.\";}}","system",-1,0,0,0,-1,6,0,1,7,43,276,299,309,0,0,0,0
+"management",310,294,"admin/config/search/metatags/config/%/edit","admin/config/search/metatags/config/%/edit","Edit","a:0:{}","system",-1,0,0,0,-10,7,0,1,7,43,274,284,294,310,0,0,0
+"management",311,297,"admin/config/search/search_api/page/%/edit","admin/config/search/search_api/page/%/edit","Edit search page","a:0:{}","system",-1,0,0,0,0,7,0,1,7,43,276,290,297,311,0,0,0
+"management",312,294,"admin/config/search/metatags/config/%/enable","admin/config/search/metatags/config/%/enable","Enable","a:0:{}","system",0,0,0,0,0,7,0,1,7,43,274,284,294,312,0,0,0
+"management",313,294,"admin/config/search/metatags/config/%/export","admin/config/search/metatags/config/%/export","Export","a:0:{}","system",-1,0,0,0,10,7,0,1,7,43,274,284,294,313,0,0,0
+"management",314,298,"admin/config/search/search_api/index/%/fields","admin/config/search/search_api/index/%/fields","Fields","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:22:\"Select indexed fields.\";}}","system",-1,0,0,0,-4,6,0,1,7,43,276,298,314,0,0,0,0
+"management",315,299,"admin/config/search/search_api/server/%/files","admin/config/search/search_api/server/%/files","Files","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:30:\"View Solr configuration files.\";}}","system",-1,0,0,0,-1,6,0,1,7,43,276,299,315,0,0,0,0
+"management",316,298,"admin/config/search/search_api/index/%/workflow","admin/config/search/search_api/index/%/workflow","Filters","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:23:\"Edit indexing workflow.\";}}","system",-1,0,0,0,-2,6,0,1,7,43,276,298,316,0,0,0,0
+"management",317,294,"admin/config/search/metatags/config/%/revert","admin/config/search/metatags/config/%/revert","Revert","a:0:{}","system",-1,0,0,0,0,7,0,1,7,43,274,284,294,317,0,0,0
+"management",318,298,"admin/config/search/search_api/index/%/view","admin/config/search/search_api/index/%/view","View","a:0:{}","system",-1,0,0,0,-10,6,0,1,7,43,276,298,318,0,0,0,0
+"management",319,299,"admin/config/search/search_api/server/%/view","admin/config/search/search_api/server/%/view","View","a:0:{}","system",-1,0,0,0,-10,6,0,1,7,43,276,299,319,0,0,0,0
+"management",320,292,"admin/config/search/xmlsitemap/settings/%/%","admin/config/search/xmlsitemap/settings/%/%","","a:0:{}","system",0,0,0,0,0,6,0,1,7,43,277,292,320,0,0,0,0
+"main-menu",321,0,"<front>","","Home","a:0:{}","menu",0,1,0,0,-50,1,0,321,0,0,0,0,0,0,0,0,0
+"management",322,100,"admin/structure/block/list/bartik/add","admin/structure/block/list/bartik/add","Add block","a:0:{}","system",-1,0,0,0,0,5,0,1,16,22,100,322,0,0,0,0,0
+"management",323,37,"admin/structure/panels/layouts","admin/structure/panels/layouts","Layouts","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:43:\"Add, edit or delete custom content layouts.\";}}","system",-1,0,0,0,0,4,0,1,16,37,323,0,0,0,0,0,0
+"management",324,323,"admin/structure/panels/layouts/add-flexible","admin/structure/panels/layouts/add-flexible","Add flexible layout","a:0:{}","system",-1,0,0,0,0,5,0,1,16,37,323,324,0,0,0,0,0
+"management",325,323,"admin/structure/panels/layouts/import","admin/structure/panels/layouts/import","Import","a:0:{}","system",-1,0,0,0,0,5,0,1,16,37,323,325,0,0,0,0,0
+"management",326,323,"admin/structure/panels/layouts/list","admin/structure/panels/layouts/list","List","a:0:{}","system",-1,0,0,0,-10,5,0,1,16,37,323,326,0,0,0,0,0
+"management",327,326,"admin/structure/panels/layouts/list/%/edit","admin/structure/panels/layouts/list/%/edit","Edit","a:0:{}","system",-1,0,0,0,-10,6,0,1,16,37,323,326,327,0,0,0,0
+"management",328,326,"admin/structure/panels/layouts/list/%/export","admin/structure/panels/layouts/list/%/export","Export","a:0:{}","system",-1,0,0,0,0,6,0,1,16,37,323,326,328,0,0,0,0
+"management",329,157,"admin/help/migrate_ui","admin/help/migrate_ui","migrate_ui","a:0:{}","system",-1,0,0,0,0,3,0,1,157,329,0,0,0,0,0,0,0
+"management",330,18,"admin/content/migrate","admin/content/migrate","Migrate","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:46:\"Manage importing of data into your Drupal site\";}}","system",0,0,0,0,0,3,0,1,18,330,0,0,0,0,0,0,0
+"management",331,330,"admin/content/migrate/configure","admin/content/migrate/configure","Configuration","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:28:\"Configure migration settings\";}}","system",-1,0,0,0,100,4,0,1,18,330,331,0,0,0,0,0,0
+"management",332,330,"admin/content/migrate/groups","admin/content/migrate/groups","Dashboard","a:0:{}","system",-1,0,1,0,-10,4,0,1,18,330,332,0,0,0,0,0,0
+"management",333,332,"admin/content/migrate/groups/%","admin/content/migrate/groups/%","","a:0:{}","system",0,0,1,0,0,5,0,1,18,330,332,333,0,0,0,0,0
+"management",334,333,"admin/content/migrate/groups/%/%","admin/content/migrate/groups/%/%","","a:0:{}","system",0,0,0,0,0,6,0,1,18,330,332,333,334,0,0,0,0
+"management",335,334,"admin/content/migrate/groups/%/%/edit","admin/content/migrate/groups/%/%/edit","Edit","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:23:\"Edit migration mappings\";}}","system",-1,0,0,0,0,7,0,1,18,330,332,333,334,335,0,0,0
+"management",336,334,"admin/content/migrate/groups/%/%/messages","admin/content/migrate/groups/%/%/messages","Messages","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:30:\"View messages from a migration\";}}","system",-1,0,0,0,0,7,0,1,18,330,332,333,334,336,0,0,0
+"management",337,334,"admin/content/migrate/groups/%/%/view","admin/content/migrate/groups/%/%/view","View","a:0:{}","system",-1,0,0,0,-10,7,0,1,18,330,332,333,334,337,0,0,0
+"management",338,157,"admin/help/ckeditor","admin/help/ckeditor","ckeditor","a:0:{}","system",-1,0,0,0,0,3,0,1,157,338,0,0,0,0,0,0,0
+"management",339,25,"admin/config/content/ckeditor","admin/config/content/ckeditor","CKEditor","a:1:{s:10:\"attributes\";a:1:{s:5:\"title\";s:31:\"Configure the rich text editor.\";}}","system",0,0,0,0,0,4,0,1,7,25,339,0,0,0,0,0,0

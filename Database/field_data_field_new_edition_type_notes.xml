@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_new_edition_type_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_new_edition_type_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_new_edition_type_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_new_edition_type_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="10" avg_row_length="1638" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:02" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 85 (field_new_edition_type_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_new_edition_type_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">הדפסה ראשונה של מכתבים ששלח משה מנדלסון לעורך, אביגדור לוי, בתוספת הערות.</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">הדפסת אגרותיו של מנדלסון אל אביגדור לוי (חלק ב') בתוספת הערות.</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">כפי שכותב המתרגם והעורך בהקדמתו: &quot;דאמיט דיזע מיינע איבערזעצונג ניכט נאך איממר אן פ'ילן ארטן דונקל בליייבן מעגע, פ'ערזאה איך דיאזעלבע מיט טהעאלאגיש- פ'הילאזאפ'הישן אנמערקונגן...&quot;</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">המביא לדפוס הדפיס כתב יד מאת דודו, ישראל זמושץ, כשלושים שנה לאחר כתיבתו. לדברי המביא לדפוס, להוציא שני יוצאים מן הכלל, לא התפתה לתקן דבר מנוסח כתב היד של הפרשן. 
+כמו כן, כלול גם הטקסט המקורי של הכוזרי.</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2302</field>
+		<field name="revision_id">2302</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">לתרגום הוסיף וייזל פירוש ארוך, &quot;רוח חן&quot;.
+וכן הוא הוסיף שלוש הקדמות, כולל דיון על זהות המחבר המקורי של הספר.</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">ראו אצבע בחלון קהל יעד ותרגום. כמו כן:
+וולפסון מציין בהקדמתו כי בביאור שלו לא נהג כמרבית קודמיו, דהיינו, לא התמקד ב&quot;ענייני דיקדוק  יבשים&quot;, שרק מגדילים את כמות הדפים בספר ומייקרים אותו, אך אין בהם כל תועלת.</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2327</field>
+		<field name="revision_id">2327</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">ראו חלון זה בספר מלכים א'.</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2335</field>
+		<field name="revision_id">2335</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">דברי באור קצרים</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">הספר &quot;הסתובב&quot; כנראה בקרב קהל מסוים. המחבר שלמה בן משה כותב בהסכמתו/הקדמתו כי בידי דובנא היה &quot;העתק  מספר שערי נעימה אשר חברתי בילדותי ... בא אלי ובקש מאתי שאתן לו רשות להדפיס המחברת הלז...&quot;</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_new_edition_type_notes_value">המתרגם מסביר בהקדמתו (עמ' [7]) כי דברי המבוא שהוא מביא &quot;אויס דען ריינען קוועללען יאקאב,ס קיזוועטער,ס אז&quot;ו שעפפ'טעט&quot;, וכי הוא &quot;אין איינעם פאפולערען געמיינניטציגען געוואנדע היעלטע, אונד דעם מלות ההגיון אנווענדבאר מאכטע&quot;.
+הוא גם מוביא הסבר על המושגים המופיעים בספר (כוח המחשבה, החושים, האנסטינקט, ועוד).</field>
+		<field name="field_new_edition_type_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_proofreaders_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_proofreaders_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_proofreaders_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_proofreaders_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="10" avg_row_length="1638" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:07" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 146 (field_proofreaders_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_proofreaders_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">בסוף הספר כתוב [חלק מן הטקסט אינו קריא או נמחק בעותק שלפניי]:
+&quot;על העוסק במלאכת הקודש באמונה הזעטצר הב[חור? ____] מאיר ז&quot;ל מק&quot;ק פ&quot;פ דאדר ממשפחות ___
+ועל הזעטצר הפועל במלאכת הקודש באמונה הב' שמו[אל] כהרר נפתלי הירץ יצ&quot;ו מיע___ץ.&quot;</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">יצחק בלינפנטי מוזכר בכותרת כמגיה.</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2182</field>
+		<field name="revision_id">2182</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">לפי דברי רפאל הלוי, הוא עצמו עשה הגהות לספר (ראו אצבע בלשון הוצאה/בית דפוס).</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">כך מציין אייכל ב&quot;דבר אל הקורא&quot;.</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">בסוף ספרו מציין וייזל כי הוא הגה את הספר, אך מתנצל על כי לא הכין לוח טעות כמקובל.</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">שמו של וואלף ווירמש, בנו של המחבר, מופיע בעמוד השער.</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">בעמ' האחרון: &quot;התנצלות המגיה - אמר המגיה כבר קדמוני הקודמים במליצתם בהתנצלות על דברי שגגתם אשר נמצא בספרים מכל מקומות מושבותם באמרם כמו שבזמני השעות לא יבצר מן הטובות הרעות כן כל מלאכה לא ישולל מן הטעות ובפרט במלאכת הדפוסים אשר שם נצבים וגם קמים צעירים לימים ויחנו באפס דמים ומחמת גודל המהירות בכדי לצאת מהרה לחירות יבואו לידי חסירות ויתירות ואף כי בכתב יושר דברי אמת נרשם תקנתא לא עבדי כי אם מעט מזעיר שם וגם זאת התנצלותי לצאת מידי חובתי ובשחק עדי אם שגיתי ומי האיש אשר במחזה יחזה איזה טעות בכ&quot;רך הנורא הזה בה' שמתי כסלי ומבטחי שלכף חובה לא ידון רוחי ויען כי קונטרסים שנים שכחה היו לתקנם יפה הצגתי לוח הטעות מנופה בי&quot;ג נפה.&quot;</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2294</field>
+		<field name="revision_id">2294</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">ראו חלון לעיל.</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">בעמוד האחרון של הספר: &quot;התנצלות המגיה&quot;. המגיה מדבר על הקושי בעבודתו, וכולל מעט מידע אישי.</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_proofreaders_notes_value">אחרי לוח טעות ארוכה יחסית, ישנה &quot;התנצלות המדפיס&quot;: &quot;בהיות שמחבר הספר הלזה אינו נכח אצלי, כי נשלחו מכתביו לידי ע&quot;י שליש, לא יכולתי לעמוד בכל מקום על ההגהה, ולזאת ישא נא הקורא בבקשי מאתו לתקן הגיאות על שולי הספר כאשר נרשמים בלוח הטעיות [כך] הזה.&quot;</field>
+		<field name="field_proofreaders_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,2012 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_book_structure_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_book_structure_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_book_structure_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_book_structure_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="153" avg_row_length="535" data_length="81920" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:15" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 22 (field_book..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_book_structure_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">Höhe und Breite konnten nicht ermittelt werden, da das Buch nur als Microfiche vorliegt.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">העבודה נעשה על עותק דיגיטלי, לכן חסרות מידות הספר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לספר שני שערים: שער ראשון בגרמנית, ולאחריו שער שני בעברית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">Am Ende des Buches gibt es den Plan:
+
+Das Examen, zu welchem ich die Freunde und Gönner unsrer Anstalt ehrerbietigst einlade, wird in folgender Ordnung Statt finden.
+
+Liste der Schüler:
+
+aus Breslau:
+Bie, Abraham; Sontheim, Hermann; Michelsohn, Hermann; Frankfurther, I.; Cohn, L.; Ostertag, H.; Pick, S.; Milch, L.; Pulvermacher, M.; Friedländer, I.; Fränkel, S.
+
+aus Kempen:
+Goldschmidt, B.; Türk, M.
+
+aus Lask:
+Goldblum, Nathan
+
+aus Posen:
+Scherk, Heinrich
+
+aus Rosenberg:
+Strasburger, S.
+
+aus Warschau:
+Flatau, I.
+
+aus Writzen:
+Zadik, I.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1995</field>
+		<field name="revision_id">1995</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">כיוון שהעותק הקיים בספרייה הלאומית הוא צילום ולא מקור, וכן - העמודים לא ממוספרים, אי אפשר לדעת מהם גדלי הספר. לגבי שער הספר - נדמה שהשער שמאלי, אך אין ודאות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">Seitenzahlen richtig: [4], XXIV, [15], 478, [5]</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">In der Vorrede sagt Beer, S. XXVII:
+&quot;so habe ich die in gedachter biblischen Archäologie des Hrn. Professor Jahn I. B. befindliche Kupfertafel, nebst dessen Erklärung und einer kleinen Einleitung von mir, dem Buche als Anhang beygefügt.&quot;
+Diese Kupfertafel ist nicht in dem geprüften Band enthalten.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">דוגמא למילים בלטינית שמופיעות בספר:
+per Sylogismum
+מילים בעברית:
+ציטוטים מן התלמוד...
+לעיתים, שילוב בין שתי השפות בתוך הטקסט הגרמני. למשל, בהמשך לציטוט מתוך פרקי אבות &quot;מצוה גוררת מצוה ועבירה גוררת עבירה
+i.e.
+praeceptum trahit praeceptum et transgressio trahit transgressionem, celebre Hebraeorum praeceptum, quo volunt, ut virtutes ex virtutibus, ita vitia ex vitiis nasci&quot;</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הופעת מילים בודדות בלטינית: ציטוט מתוך ספר דברים, בהקדשה, מובא בלטינית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אין איורים, אך ישנה מסגרת מקושטת בעמוד השער.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2028</field>
+		<field name="revision_id">2028</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">Angefügt sind der Prüfungsplan und die Namen der Schüler.
+&quot;Die Prüfung wird in folgender Odnung gehalten werden:
+Mittwoch, den 4. Mai ..., Donnerstag den 5. Mai....&quot;</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&lt;ins&gt;טקסט דו לשוני&lt;/ins&gt;:
+הטקסט בעברית הוא נאום מהתקופה, שתורגם על ידי בן דוד לגרמנית.
+
+&lt;ins&gt;טיפוגרפיה&lt;/ins&gt;: 
+הטקסט המקורי בעברית והתרגום לגרמנית הודפסו עמוד מול עמוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אין איורים, אך ישנה מסגרת מקושטת בעמוד השער.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בספר ארבעה חלקים: כוס התרעלה (דף א'); כוס התנחומים (דף ז'); כוח ביד ה' (דף יא'); כוח הישועות (דף יז'). כל אחד מארבעת החלקים מחולק לפרקים נוספים.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">יידיש: חלק ממכתביו של משה מנדלסון כתובים במה שנראה כגרמנית באותיות עבריות. עם זאת, משולבות גם מילים בעברית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">סוג האותיות: רוב הספר - רש&quot;י. האותיות המרובעות משמשות רק לכותרות, לרשימת מנויים ועוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מילה בודדת בלועזית באותיות גותיות על שער הספר - 
+Berlin</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לא מדובר בטקסט דו-לשוני עברית מול גרמנית, אבל הגרמנית היא דומיננטית מאוד. הערכים השונים מתורגמים מעברית לגרמנית, ובנוסף מופיע ניתוח דקדוקי של המילה העברית.
+הטיפוגרפיה רציפה - שתי עמודות של טקסט בכל עמוד.
+נתקלתי רק בשתי הערות שוליים בתחתית עמ' [12].</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטיפוגרפיה רציפה - שתי עמודות של טקסט בכל עמוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטיפוגרפיה רציפה - שתי עמודות של טקסט בכל עמוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2094</field>
+		<field name="revision_id">2094</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">חלק הארי של הטקסטים: בעברית.
+אך שיר אחד מופיע גם בתרגום לאיטלקית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2098</field>
+		<field name="revision_id">2098</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מבנה הספר לא ברור לפי העותק שנבדק. מספרי העמודים מתחילים רק בעמוד 17 [דומה כי חסרים עמודים 15-16]. הספר מתחיל בצד ימין עם העברית, עמ' 17 מתחיל מאמצע משפט בגרמנית, מצד שמאל. (בקטלוג הממוחשב צוין כי חסרים עמ' 1-16 &quot;בחלק הלועזי&quot;. כמו כן, יש מעין עמודי שער נוספים באמצע הספר:
+&quot;מזמור לתודה על יום הרנה והחדוה ביות בתוך חומותינו אדונינו... נאפאלעאן באנעפארט...&quot;
+
+&quot;Hymne/ Dank- Lob- und Freudengesang...&quot;
+
+אך לפי מספר העמודים נראה כי הכל הודפס יחד.
+
+הטקסט מופיע בשלוש שפות: המקור העברי ותרגומים לצרפתית וגרמנית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המילים המופיעות בלטינית - אף הן באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הפרק &quot;אמרי בינה&quot; (עמ' 154-104) הוא דו-לשוני, עברית-גרמנית, בטיפוגרפיה מקבילה</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מילים בודדות בגרמנית-גותית מופיעות בעמוד השער: מקום ההוצאה ושם בית הדפוס</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הספר מורכב משלושה חלקים שהופיעו יחד - יש להם עמוד שער משותף, הקדמה משותפת, תוכן עניינים משותף, אך &lt;ins&gt;מספור נפרד&lt;/ins&gt; (לחלק השני והשלישי יש מספור רצוף) - והם: גבעטי פ'ירס גאנצי יאהר; פרקי אבות/ שפריכי דער פעטר; פ'רשידני זעעגנשפריכי אונד גבעטי.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">את אורכו ורוחבו של הספר אי אפשר למדוד מעותק זה, שהוא עותק מצולם.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">כיוון העותק היחיד בהישג יד הוא צילום, אי אפשר למדוד את אורך ורוחב הספר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&lt;p&gt;אותיות בגרמנית גותית מופיעות על גבי השער: מקום ההוצאה ושם ההוצאה. שמו של המחבר מופיע בכתב יד על גבי שער הספר.&lt;/p&gt;
+</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2138</field>
+		<field name="revision_id">2138</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">כל השפות מופיעות באותיות עבריות!
+רק לעיתים מופיעות המילים בכתיבתן המקורית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2140</field>
+		<field name="revision_id">2140</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">את אורכו ורוחבו של הספר לא ניתן לרשום  כי יש בידי רק צילום, ולא ניתן להשיג את הספר בארץ</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">שפת ההקדמה וההערות: עברית.
+ריבוי השפות: מדובר במעין לקסיקון.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2150</field>
+		<field name="revision_id">2150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&lt;ins&gt;הופעת מילים בודדות בשפות&lt;/ins&gt;:
+הקדשת הספר למשפחת איציג היא בשפה האיטלקית, והיא כתובה כשירה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטקסט העברי והצרפתי - מופיעים במקביל.
+התרגום לגרמנית - אחרי הטקסטים הללו.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בספר תפילות שחוברו במיוחד לקראת חנוכת בית הכנסת החדש באמסטרדם, &quot;עדת ישרון&quot;, עם תרגום להולנדית בעמוד המקביל. פרקי התהילים הכלולים בספר אינם מתורגמים.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ישנם עיטורים בדף ה'. בדף ה' סודר הטקסט במבנה גיאומטרי שונה, בשילוב אותיות שם הספר
+
+
+בחלק קטן מדפי הספר מופיעים גם ביאורים  באות שונה בתחתית הספר או בטור מקביל (למשל, דף לח').</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בנוגע ל&lt;ins&gt;סוג האותיות&lt;/ins&gt;: הספר מודפס רובו ככולו באותיות רש&quot;י. ישנן מילים ספורות בסוגי האותיות האחרים שצוינו בשדה הרלבנטי. יוצא דופן השימוש באותיות בכתב יד (בעברית) לשם תרגום מונחים מעברית לגרמנית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">רוב הטקסט הינו בעברית ורק מכתבים אחדים מאת מנדלסון הינם ביידיש מערבית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2166</field>
+		<field name="revision_id">2166</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ישנה טעות במיספור הדפים: סא, סב, סב, סג. (דהיינו, המספר &quot;סב&quot; ניתן פעמים, לשני דפים שונים.)
+סוגי האותיות: רוב הספר מודפס באותיות מרובעות (מנוקדות ולא מנוקדות) ורק הערות השוליים באותיות רש&quot;י.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2168</field>
+		<field name="revision_id">2168</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בקביעת השפות איטלקית ולטינית אני נסמכת על 
+Bibliography of the Hebrew Book,
+
+ראו חלון &quot;חוקר ומקורותיו&quot;, סעיף &quot;הערות&quot;</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המילים הבודדות בשפות שונות (לטינית, ערבית, גרמנית, הולנדית) מופיעות בהקדמה לתרגום והבאור, בסקירה המדעית העוסקת בענייני הדג והקיקיון המופיעים בסיפור יונה. ברי&quot;ל מביא שם את שמות הדג והצמח בשפות שונות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ההקדמה של הספר נכתבה בעברית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2187</field>
+		<field name="revision_id">2187</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">יחד עם השיר שמוזכר בכותרת, ישנו שיר נוסף שכותרתו: &quot;לכבוד הגביר המהולל, איש משכיל ויודע דעת, ה&quot;ה ריעי ואהובי אלוף וקצין ומנהיג, מוכתר בנימוסיו כהרר איצק נרו, בן הגביר הנכבד ונשוא פנים פ&quot;ומ האלוף והקצין המפורסם כהרר דניאל יפה נרו, כצאת תרגום התפלה ממזבח הדפוס החדש, אשר הוסד בפקודת הקצין כהרר איצק הנ&quot;ל להוסיף תבואת חברת חנוך נערים, המצלחת תחת ידו ופקודתו, כתבתי הטורים האלה לזכרון חסדו וטובו עם בני אדם&quot;.
+שני השירים מודפסים על דף אחד. הדף מקופל ומתקבלים 4 עמודים, שרק שניים מהם מודפסים. השיר המוזכר בכותרת מופיע ראשון.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הערות השולים הינן למעשה הבהרה למילים שאולי הקורא היהודי הממוצע לא הבין. למשל: קאנפלעטירונג = ערפ'יללונג; מאמענט = אויגענבליק וכו'.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ייתכן כי (בעותק הספריה הלאומית לפחות) העמוד הראשון והשני של הספר התהפכו בכריכה. כך לפי סימנים שונים, במיוחד העובדה שבסוף העמוד הראשון בספר הנוכחי מצוין כי המילה הבאה בטקסט היא &quot;המשתכל&quot; - מילה המופיעה רק בעמוד השלישי. זאת ועוד, שם הספר (&quot;ספר לשון הזהב&quot;) ומתחתיו איור נמצא כעת אחרי העמוד הראשון, ולא בתחילת הטקסט.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2192</field>
+		<field name="revision_id">2192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המילים בלטינית מופיעות בכתיב עברי
+ישנה הערת שוליים אחת בעמ' א' של הספר, שבה מתייחס המחבר למטרות הספר ולסימנים בהם עשה שימוש במסגרתו</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אותיות בגרמנית גותית מופיעות על גבי השער: מקום ההוצאה ושם ההוצאה.
+שמו של המחבר מופיע בכתב יד על גבי שער הספר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2206</field>
+		<field name="revision_id">2206</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אותיות גותיות מופיעות רק בשער הספר.
+הספר ניתן בהדפסה של מיקרופילם, ולכן אי אפשר לדעת את מידותיו על פי עותק זה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&lt;ins&gt;בעניין השפה&lt;/ins&gt;: הטקסטים בעברית בתוך הספר מלווים באוצר מילים בסוף כל קטע וקטע, עם תרגום המילים מעברית לגרמנית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בפרק החמישי, הייחודי למקראה בעברית, ישנם קטעים רבים דו-לשוניים עברית לצד גרמנית באותיות עבריות</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בעניין הלשון: בתוספת שהוסיף בסוף הספר (&quot;פירוש מהמלות זרות&quot;), מציין סטנוב כי מצא לנכון &quot;להעתיק רובי המלות ללשון אשכנז ולטיין, למען יבין המעיין ולא יתעה&quot;.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בסוף הספר: &quot;פירוש מהמלות זרות&quot;. מילון הכולל הגדרת מילים מתוך הספר ואף לעיתים תרגום המילים לגרמנית (באותיות עבריות).</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2219</field>
+		<field name="revision_id">2219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">חלק מן המליצות מופיעות בטורים מקבילים.
+אותיות גותיות מופיעות רק בשער הספר:
+Berlin 1796. In der Orientalischen Buchdruckerei.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2221</field>
+		<field name="revision_id">2221</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המילים שמופיעות באנגלית הם דברי המוטו, המופיע בעמוד השער (מדברי פופ).
+המהדורה שנבדקה היא צילום, על כן אין פרטים על מידות הספר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גרמנית באותיות לטינית מופיעה בשם בית הדפוס שבשער הספר</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2223</field>
+		<field name="revision_id">2223</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גרמנית באותיות לטיניות מופיעה בשער בשמו של בית הדפוס</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2225</field>
+		<field name="revision_id">2225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גרמנית באותיות לטיניות מופיעה בשם בית הדפוס שבשער</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2227</field>
+		<field name="revision_id">2227</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גרמנית לטינית מופיעה בשער הספר בציון שם בית הדפוס</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2228</field>
+		<field name="revision_id">2228</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בשער הספר מופיע שם בית הדפוס גם בגרמנית באותיות לטיניות</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">שם בית הדפוס מופיע על שער הספר בגרמנית באותיות לטיניות</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2232</field>
+		<field name="revision_id">2232</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטקסט בעברית משתרע על פני 5 עמודים, ומופיע באותיות רש&quot;י. הטקסט בגרמנית באותיות עבריות, שחתום על ידי דוד פרידלנדר ומופיע לאחריו, הוא בן 2 עמודים ומופיע באותיות מרובעות ללא ניקוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&quot;הופעת מלים בודדות בשפות&quot;: נראה כי רק במקום אחד מצא לנכון המשורר לתת תרגום למונח בו השתמש במחזה. בהערת שולים למונח &quot;אש בליעל&quot; הוא כותב: &quot;אונטראירדישעס פייער...&quot; (עמ' פו/1)</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">רוב הספר כתוב רציף. בחלק האחרון מופיע מבנה עליון ותחתון.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2238</field>
+		<field name="revision_id">2238</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">נבדק צילום, על כן לא נרשם גודל.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&lt;ins&gt;סוגי האותיות&lt;/ins&gt;: 
+ההקדמה הודפסה באותיות מרובעות, השיר בסוף הספר - באותיות מרובעות מנוקדות. עיקר הטקסט באותיות רש&quot;י.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">החלק העליון של הטקסט בארמית, ומתחתיו ביאור של סטנוב לעברית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2251</field>
+		<field name="revision_id">2251</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">העותק עליו עבדתי הוא צילום, שניתן כשני גליונות גדולים של כ-70 על 50 ס&quot;מ. קשה לדעת אם אלה הגדלים האמיתיים, שכן מדובר בצילום.  אין שער לספר, ופרטי הדפסתו רשומים בתחתית הגליון הראשון - משם גם הוצאתי את כותרת הספר. סוגי הטיפוגרפיה שהגדרנו לא רלוונטיים כאן: מדובר בשורות של מילים בהטיות שונות, והערות שנכתבו במקומות שונים ביחס אליהן.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">יש קישוט בעמוד השער.
+
+לטינית: ישנו שער והמלצה בלטינית.
+בראשו כתוב:
+Q.D.B.V.A. Benevolo Lectori Salutem dicit plurimam M. Dav. Frid. Megerlin, Minister &amp; Rector Laubac</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2256</field>
+		<field name="revision_id">2256</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מדי פעם מוסיף מרגליות ביאורים בחלקו התחתון של העמוד, או במקביל לטקסט.
+
+ככל הנראה, הוסיף מרגליות מונחים בלטינית (ל&quot;ל), כשהוא דן בריטוריקה. לדוגמה: סינייפיקאנ&quot;צי, איניגמ&quot;ה (דף ו'); דימי&quot;נוציו (דף ח'); קמוני&quot;קאציו(דף ט') ועוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">טקסט בגרמנית-גותית: בעמוד השער בלבד, שם ההוצאה לאור</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הערות השוליים מופיעות בתחתית, בטור מקביל לגוף הטקסט</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2261</field>
+		<field name="revision_id">2261</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ראיתי את הספר בספריית מהלמן - ומכאן לקחתי את גדליו</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המילים בשפות זרות שמופיעות בספר - באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">דוגמא להוספת מילים בשפות אחרות (בביאור):
+עמ' ד/2:
+maitre valet
+עמ' /</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2272</field>
+		<field name="revision_id">2272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">באשר למספר העמודים, דומה כי המספר [19] המצוין בקטלוגים מתייחס ללוח הבנינים שאינו מופיע בעותק ששימש לעבודה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2274</field>
+		<field name="revision_id">2274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">דף ז' עד סוף הספר - לוח מונחים של תופעות ומחלות רפואיות, עברית מול לטינית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">העותק בידי הוא ממיקרופילם, ולכן אי אפשר לדעת גדלים.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">יש לזכור כי אורך ורוחב הספר שנמדדו הם במהדורה שיצאה כרוכה עם באור מלות ההגיון למנדלסון של שנת 1795, כלומר, זהו דפוס צילום ולא המקור</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מילה יחידה בגרמנית באותיות לטיניות מופיעה על שער הספרBerlin</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הספר מלווה בביאור נרחב של סטנוב
+
+שער הספר כתוב באותיות שחורות ואדומות לסירוגין</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2283</field>
+		<field name="revision_id">2283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">במקומות מסוימים, הפרשן מוסיף בסוגריים את תרגומם של מונחים מסוימים בגרמנית, באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">שם בית הדפוס מופיע בגרמנית על גבי השער</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2291</field>
+		<field name="revision_id">2291</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בסוף הספר 9 עמודי לוחות &quot;מוצא השרשים&quot;</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הנוסח שעבדתי עליו הוא נוסח מצולם, ולכן הגדלים הם על פי הקטלוג הממוחשב ולא נמדדו על ידי</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לספר שני עמודי שער. בעמוד השער השני רשום: &quot;ספר תהלים עם תרגום אשכנזי מהרב רבנו משה בן מנחם זצ&quot;ל ומבואר על ידי יואל ברי&quot;ל  חבר לחברת שוחרי הטוב והתושיה...&quot;
+
+מילים בודדות בשפות: מונחים מתחום הניתוח הספרותי מובאים לעיתים קרובות בגרמנית באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&lt;ins&gt;על שפת הספר&lt;/ins&gt;: השימוש בשפת יידיש עממית ובניב המקומי נעשה מתוך מחשבה תחילה ובהתאם לקהל היעד אליו פונה המחבר. הוא תואם את שאיפותיו 'לחנך את העם' 
+.(Volksaufklärung) 
+
+ראו: קסטנברג-גלדשטיין, יהודים בארצות בוהמיה, עמ' 162 - 163.
+
+
+מעניינת העובדה כי הספר כולל לפחות עמוד כמעט שלם הכתוב בגרמנית, באותיות גותיות (חלק ב', עמ' נא/2). קטע זה עוסק ביחס שמכתיבה התורה כלפי הלא יהודים, בעיקר בנוגע לנושא ההלוואה בריבית.
+
+הספר מורכב משני חלקים (עמ' שער אחד).</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2305</field>
+		<field name="revision_id">2305</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">יש עיטור גדול בעמ' [2]</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2307</field>
+		<field name="revision_id">2307</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הספר הוא טקסט דו-לשוני המחולק לחלק בגרמנית באותיות עבריות ולחלק בעברית, בעלי עמוד שער ומספור שונה</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בדף ג' ישנו עיטור גדול בצד הימני 
+
+השימוש בארמית בולט בשער הספר ובחלק מן ההסכמות</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">את אורך ורוחב הספר יש לבדוק בספרייה - בידי הצילום, ואין לסמוך על כך.
+
+מילה יחידה בגרמנית היא בעמוד השער - ציון מקום ההוצאה: 
+Berlin</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2316</field>
+		<field name="revision_id">2316</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ישנו עיטור סביב הטקסט בעמוד השער</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2319</field>
+		<field name="revision_id">2319</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">רוב הטקסט הוא ב&quot;יידיש&quot;/&quot;גרמנית באותיות עבריות&quot;, להוציא דברי תודה, אחת ההקדמות, ההסכמות.
+מיד לאחר עמוד השער, המחבר מוצא לנכון להסביר מדוע בחר דווקא בשפה זו, ולא בשפה נקייה ואלגנטית יותר כגון צרפתית, גרמנית או הולנדית. הוא מבקש את הבנת וסליחת המלומדים על בחירה זו, כשהוא פורס את נימוקיו בסעיף: &quot;ענטשולדיגונג דעס פערפאססערס&quot;. 
+ראו גם &quot;אצבע&quot; בחלון &quot;קהל יעד&quot;.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בסוף הספר (אחרי הופעת הסעיף &quot;מודעה&quot; ולפני החלק השייך ל&lt;strong&gt;רפואות העם&lt;/strong&gt;) מציין המחבר את סימני הפיסוק שהוא משתמש בהם, בלוויית הסבר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המחבר מסביר מדוע אין הערות שולים. כפי שכותב בהקדמתו: &quot;משכתי ידי מלהעיר בשולי היריעה על כל דבר ולהראות מקור מבועו במדרש ומפרשי' אחר שהיתה הכונה רק לתועלת עצמי ומעולם לא פנה לבי להעלותה לדפוס&quot;.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">תרגום המילים בעברית הינו לגרמנית ולא ליידיש. הספר תואר על ידי חוקרים קודמים (וביניהם שטיינשניידר) כדוגמא הראשונה להחדרת השימוש בגרמנית גבוהה לספרות היהודית.
+Werner Weinberg, &quot;A Word List for Teaching Eighteenth-Century Jews Some Fine Points of High German&quot;, LBIYB 29(1984), p. 278.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2333</field>
+		<field name="revision_id">2333</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">תרגום בגרמנית באותיות עבריות, באור בעברית, בו משולבים לעיתים לא רחוקות הסברים/תרגום מלים בגרמנית באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בעניין השפות: ההקדמות הארוכות לספר נכתבו בעברית. כן הפניה הישירה של המחברים לקורא, בסוף ההקדמה. לעומת זאת, הערה קצרה לקורא אחרי עמוד השער  של ספר יונה העדיף המחבר, למשל, לנסח בגרמנית באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">על שם הספר והשמות המשמשים לכינוי הפרקים והסעיפים כותב המחבר בהקדמה: הוא אשר &quot;ישמור את הדרך הזה אשר אנכי מורה וינצור ארחות חיים וחפץ ה' בידו יצלח להגיע אל מחוז חפצו, ועל כן קראתי את הספר הזה בשם &lt;strong&gt;מסלול&lt;/strong&gt;, להיותו דרך ישרה ואורח סלולה לפני כל איש, וכל הולך בו לא ייעף ולא ייגע ולא יכשל במרוצתו למצוא חפצו. וחלקתיו לארבע מסלות, וכל מסלה חלקתי לפרקים אותם קראתי בשם &lt;strong&gt;נתיבות&lt;/strong&gt;, וגם הפרקים חלקתי לסימנים קראתים &lt;strong&gt;שבילים&lt;/strong&gt;, ומספר הנתיבות אשר בארבע המסלות עולה ס&quot;ח כמספר העעולה מאותיות שמי&quot;. 
+המטפורה של מסלול ודרך נמצאת גם בחלק של ההקדמה שנקרא &quot;&lt;strong&gt;מרצפת אבנים&lt;/strong&gt;&quot;, המחולקת ל&quot;&lt;strong&gt;אבנים&lt;/strong&gt;&quot;: האבן הראשונה, השנית, וכו'.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ככל הנראה הטקסט הוא דו לשוני עברית ויידיש.  לא מצאתי בטקסט מילים האופייניות ליידיש ולא לגרמנית, אך הטקסט הלא-עברי גדוש במילים עבריות. האם זה יידיש-דוייטש? צריך לתת לבדיקה למומחה ליידיש.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גרמנית באותיות גותיות מופיעה רק בשער הספר. בעמוד האחרון הלא-ממוספר מופיע הטקסט הבא:  זעמטליכע עקסעמפלארע זיכר מיט דיזעם שטעמפעל פערזעהן, אונד ווירד פאר דען אנקויף זאלכער עקסעמפלארע, דיא דאמיט ניכט פערזעהן זינד, היאמיט געווארנט.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2342</field>
+		<field name="revision_id">2342</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גרמנית באותיות גותיות ולטיניות מופיעה רק בעמוד השער.
+בעמוד הראשון שאינו ממוספר &quot;תיקונים לחלק ראשון&quot;.
+בעמוד האחרון שאינו ממוספר מופיע הטקסט הבא:
+זעמטליכע עקסעמפלארע זינד מיט דיזעם שטעמפעל פערזעהן, אונד ווירד פאר דען אנקויף זאלכער עקסעמפלארע, דיא דאמיט ניכט פערזעהן זינד, היאמיט געווארנט.
+
+פרק א' של הספר הוא מעין &quot;מבוא&quot; המתאר את ההיסטוריה של האנושות, התפשטותה ואת המבנה החברתי שלה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מונחים מדעיים מוצגים בעברית, אך ככל הנראה כדי לסבר את האוזן, או שמא להשכלת הקורא, המונחים מוצגים בגרמנית ובלטינית (כך בהקדמה, למשל). למשל: כדור - שפערע - קוגל; שטח העגול, ארעא, איינהאלט; וכו'. המילים בשפות הלועזיות כתובות באותיות צו&quot;ר, בסוגריים.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2353</field>
+		<field name="revision_id">2353</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בלוח הפעלים יש תרגום של המילים ליידיש, באותיות צו&quot;ר</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בספר חלקים שלמים הכתובים ארמית - כשאיילה תוסיף את השדה &quot;טקסטים חלקיים בשפה&quot; - להוסף &quot;ארמית&quot;.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לאחר ההקדמה מציג המחבר 5 מושגי יסוד בגיאומטריה: נקודה, קו, וכד'. לאחריהם מופיעים מד' סעיפים (&quot;לימוד א&quot;, &quot;לימוד ב&quot; וכד', עמ' ד'-כד'). לאחריו 3 פרקים (&quot;פרק א&quot;, &quot;פרק ב&quot; ו&quot;פרק ג&quot; בעמ' כד'-כו') שבהם הסבר על חישובי לוח השנה באמצעות ההנדסה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לפי שמרוק, &quot;עזר ישראל&quot; הוא הספר המודפס הראשון ביידיש המדוברת באירופה המזרחית - בשונה מספרים קודמים, ששמרו על נוסח מאובן של ספרות היידיש הישנה. 
+מרקוזי טוען כי הוא נאלץ &quot;לקלקל&quot; את הגרמנית הצחה השגורה בפיו כדי להתאימה לשפת היהודים במזרח אירופה, ומזה הסיקו חוקרים כי הוא בא מפרוסיה לפולין. אך מסתבר כי הוא היה יליד סלונים, ולכן היידיש היתה שפת אמו. (שמרוק)</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">טיפוגרפיה: רציף - אך ישנם שני טורים בכל עמוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אותיות גותיות ולטינית רק בשער הספר - חתימת הצנזור ושם ומקום ההוצאה לאור</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">גודל העמודים אינו מדויק. בעותק שנבדק, הדפים מודבקים על דפים גדולים יותר והספר כרוך על פורמט גדול יותר. 
+הטקסט מודפס על דפים בצבע תכלת.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2371</field>
+		<field name="revision_id">2371</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בסוף הספר מודבקים שני דפים גדולים שעליהם של לוחות פעלים. ומופיעה בתחתית אחד מהם ההערה הבאה:
+&quot;והוא תרץ את גלגלתו (שופטים (ט) ואם הלמ&quot;ד מאותיות אחהע&quot;ר באה פתח לפניה הב&quot;מ ר' אבר אויב תלמידי בפפד&quot;א</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2372</field>
+		<field name="revision_id">2372</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בעמ' [2] הטקסט הכתוב מעוצב בצורת כוכב ועיגול סביבו
+
+בתחתית שער הספר מופיע תיאור הכותר בלטינית, ככל הנראה, מטעם בית הדפוס:
+compendium! Gramaticae novae Linguae Sanctae Prima ejusdem tradenes Principia Firmis Superstucta Fundamentis Auctore isaco Mose
+Berolini anno MDCCLXXIII</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מדף יח' ועד סוף הספר, הטיפוגרפיה היא מסורתית: טקסט מתוך קהלת וסביבו פרשנות, ובתחתית העמוד מופיע ביאור נוסף.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הספר בנוי משלושה חלקים:
+- תמיכתו של אברהם אש בהלנת מתים: הצגת טענותיו התומכות בהלנת מתים
+- כט'-נו': מכתב של יואל ברי&quot;ל (המקור בגרמנית?) ובתרגום לעברית של אברהם אש, התומך בהלנת מתים 
+- נז' - ס': מכתבו של משה מנדלסון במקור (בעברית, מ-1772) ובתרגום לגרמנית באותיות עבריות (משנת 1778, כפי שציין המחבר בתחתית עמ' נו') , התומך בהלנת מתים</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">המחבר מתאר את התיאוריה הגיאוצנטרית במרבית הספר, כדי להסביר את קביעת לוח השנה. בסעיף האחרון של הספר (צו') הוא מתאר את התיאוריה ההליוצנטרית החדשה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">7 העמודים האחרוני בספר
+&quot;Pulchritudo hominis&quot;  
+כוללים את המונחים הלטיניים באותיות לטיניות, שיש אליהם הפנייה בגוף הטקסט (שם הם מופיעים באותיות עבריות)</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2380</field>
+		<field name="revision_id">2380</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מילים בודדות בגרמנית בעמוד השער (שם ההוצאה ומקום ההוצאה)</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לא ברור מתוך העותק (המצולם) שנבדק האם שער הספר הוא ימני, שמאלי, או שמע דו-כיווני.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הערות השוליים לטקסט הן דבריו של יהודה ייטלש. עליהן הוא חותם &quot;המלה&quot;ד&quot;, ולעיתים מזכיר את &quot;אחי הרב החריף&quot;, דהיינו ברוך ייטלש.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2396</field>
+		<field name="revision_id">2396</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בספר ישנן טבלאות, לוחות ותרגילים
+
+צריך לבדוק בלאומית שוב שמדובר במבנה שערים דו-כיווני</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2397</field>
+		<field name="revision_id">2397</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בשער הספר מופיע שם ההוצאה בגרמנית-גותית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אחת המילים הבודדות בלועזית מופיעה בעמ' [8], כשהמחבר כותב על &quot;כתות סעק&quot;טן בל&quot;א, א' כת הפרושים  בל&quot;א פ'ארי&quot;זעער... הצדוקים בל&quot;א צאדי&quot;צעער... כת הנזירים... בל&quot;א עססע&quot;נעער&quot;.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מופיע עיטור גדול בתחתית עמ' [1], לאחר עמ' השער
+
+
+העותק של ספריית אוניברסיטת ת&quot;א חתוך חלקית בחלקו העליון. אני משערת שהוא מסתיים בדף מס' נד' = אבל יש לוודא זאת בעותק אחר
+
+רק שם מקום ההוצאה 
+Berlin
+מופיע על גבי השער באותיות גותיות</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2403</field>
+		<field name="revision_id">2403</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">העותק בספריה הלאומית פגום - הדפים חתוכים בצדדים.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2406</field>
+		<field name="revision_id">2406</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטקסט מסודר מימין לשמאל, אבל אין שער לעותק שבידי - פותח בטקסט &quot;קול קורא לאחינו בני ישראל&quot;</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2408</field>
+		<field name="revision_id">2408</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בקביעה כי אחת משפות הספר היא דנית נשענתי על הקיטלוג של המאגר:
+
+Bibliography of the Hebrew Book
+(ראו חלון &quot;הערות&quot;)</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2409</field>
+		<field name="revision_id">2409</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מן העותק המצולם שבלאומית אי אפשר לקבוע את גדליו של הספר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ההסכמות, ההערות וקטע סיום הספר בעברית. כמו כן, קטעי הטקסט בארמית משולבים במשפטים בעברית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ההקדמה הארוכה של המחבר (9-15) כתובה בגרמנית באותיות עבריות</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2423</field>
+		<field name="revision_id">2423</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">שם בית הדפוס מופיע בלטינית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2426</field>
+		<field name="revision_id">2426</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">&quot;שער הספר&quot; - העותק מורכב מדפים מצולמים ולא ברור כיצד הופיעו במקור.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2427</field>
+		<field name="revision_id">2427</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מדובר במודעה, ולא בטוח שזה יצא במקור בצורת ספר. כל הנתונים כאן מתייחסים לעותק היחיד המצוי בארץ, בספרייה הלאומית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2429</field>
+		<field name="revision_id">2429</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">עותק מצולם - אין אפשרות למדוד גודל.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">סוגי אותיות: הקטעים המעטים בהערות השוליים שמופיעים בגרמנית באותיות עבריות, מופיעים באותיות צו&quot;ר.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">שם ההוצאה ומקום ההוצאה נרשמו בגרמנית באותיות גותיות.
+רישום של הצנזורה בעמ' [4-5] מופיע בשפה הלטינית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2434</field>
+		<field name="revision_id">2434</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטקסט מופיע במקביל, עמוד מול עמוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2436</field>
+		<field name="revision_id">2436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ישנם שני עמודי שער עוקבים: בעברית ואחריו בגרמנית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2437</field>
+		<field name="revision_id">2437</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">אי אפשר לדעת האם החיבור הודפס מימין לשמאל או משמאל לימין. הדפים נכרכו מחדש (אולי במקור לא נכרכו כלל). אף צורף בעת הכריכה חיבור נוסף: &quot;תפלה בעד אדונינו המלך...&quot;</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2439</field>
+		<field name="revision_id">2439</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">ככל הנראה השער הוא ימני, אך העותק היחיד שקיים בארץ ונמצא בלאומית הוא דפוס צילום של הטקסט, ולכן אי אפשר לדעת בוודאות. כמו כן, אי אפשר למדוד רוחב ואורך של הטקסט בשל כך.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2443</field>
+		<field name="revision_id">2443</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מאחורי עמוד השער מופיעים כמה פסוקים מתוך תהלים, הן בעברית והן בגרמנית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2444</field>
+		<field name="revision_id">2444</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">עמוד השער אינו נפרד, ולאחרי הופעת שם הספר, מופיעים מייד מזמורי  תהלים</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2445</field>
+		<field name="revision_id">2445</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בספר ישנו שיר פטרויוטי בעברית ולאחריו תרגום לגרמנית באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2449</field>
+		<field name="revision_id">2449</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הטקסט העברי והגרמני - עמוד מול עמוד.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2450</field>
+		<field name="revision_id">2450</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מכיוון שמדובר בצילום של הספר המקורי, לא ניתן לקבוע בוודאות האם שער הספר ימני או שמאלי.
+כמו כן, ייתכן כי לספר יש יותר מאשר 8 העמודים שצולמו בעותק שנבדק.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2452</field>
+		<field name="revision_id">2452</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">עמוד מול עמוד, עברית וגרמנית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2454</field>
+		<field name="revision_id">2454</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">השימוש בגרמנית באותיות עבריות, ובאותיות צו&quot;ר, מופיע רק בעמוד האחרון של הספר, שהוא למעשה מודעה שבה בית הדפוס חינוך נערים מפרסם ומקדם את ספריו.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2458</field>
+		<field name="revision_id">2458</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">בתיאור של ה--
+Bibliography of the Hebrew Book
+
+(ראו חלון &quot;חוקר ומקורותיו&quot; בשדה &quot;הערות&quot;) רשום שישנו חלק בגרמנית, וההתייחסות שלהם היא לטופס שברוזנטליאנה. אני ראיתי רק עברית בטופס הנוכחי. אין בארץ עוד עותקים מלבד זה שבלאומית, ולכן עבדתי על טופס זה.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2461</field>
+		<field name="revision_id">2461</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">מדובר בעלון, ויש לנו רק צילום שלו. את הפרטים יש להשלים כשנבקר בספרייה בברלין.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2462</field>
+		<field name="revision_id">2462</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">הופעת מלים בודדות בגרמנית באותיות עבריות: למשל בעמ' 67, באחת התוספות של פירדא.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2467</field>
+		<field name="revision_id">2467</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">לספר ארבעה שערים, על פי הסדר הבא:
+עברית, פולנית, צרפתית וגרמנית.
+
+בכל מפתח מופיע הטקסט בארבע השפות, זה מול זה, למעלה ולמטה (בכל עמוד - בשתי שפות).</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">השיר מופיע במבנה של טקסט מקביל עברית מול גרמנית, ואילו התפילה במבנה של טקסט עליון בעברית וטקסט תחתון בגרמנית</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2469</field>
+		<field name="revision_id">2469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">את אורך הספר ורוחבו אי אפשר למדוד כי יש בידינו צילום בלבד</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">יש לציין כי למעט שמות של אנשים ומקומות, לא נמצאו בבדיקה כללית מילים בעברית.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2484</field>
+		<field name="revision_id">2484</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_structure_notes_value">תפלה בעברית ולאחריה תרגום לגרמנית באותיות עבריות.</field>
+		<field name="field_book_structure_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

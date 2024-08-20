@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="taxonomy_vocabulary">
+		<field field="vid" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="auto_increment" />
+		<field field="name" type="varchar(255)" null="NO" key="" default="" extra="" />
+		<field field="machine_name" type="varchar(255)" null="NO" key="UNI" default="" extra="" />
+		<field field="description" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="hierarchy" type="tinyint(3) unsigned" null="NO" key="" default="0" extra="" />
+		<field field="module" type="varchar(255)" null="NO" key="" default="" extra="" />
+		<field field="weight" type="int(11)" null="NO" key="MUL" default="0" extra="" />
+
+		<options name="taxonomy_vocabulary" engine="InnoDB" version="10" row_format="Dynamic" rows="19" avg_row_length="862" data_length="16384" max_data_length="0" index_length="32768" data_free="0" create_time="2024-07-08 12:43:34" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Stores vocabulary information." />
+	</table_structure>
+
+	<table_data name="taxonomy_vocabulary">
+
+	<row>
+		<field name="vid">1</field>
+		<field name="name">Cities</field>
+		<field name="machine_name">cities</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">2</field>
+		<field name="name">Language counts</field>
+		<field name="machine_name">language_counts</field>
+		<field name="description">E.g. Bilingual, Trilingual, Multilingual</field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">3</field>
+		<field name="name">Models</field>
+		<field name="machine_name">models</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">4</field>
+		<field name="name">Description of mentionee</field>
+		<field name="machine_name">description_of_mentionee</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">5</field>
+		<field name="name">Gender</field>
+		<field name="machine_name">gender</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">6</field>
+		<field name="name">Occupation</field>
+		<field name="machine_name">occupation</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">7</field>
+		<field name="name">Alignment of text</field>
+		<field name="machine_name">alignment</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">8</field>
+		<field name="name">Date format</field>
+		<field name="machine_name">date_format</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">9</field>
+		<field name="name">Type of edition</field>
+		<field name="machine_name">edition_type</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">10</field>
+		<field name="name">Fonts</field>
+		<field name="machine_name">fonts</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">11</field>
+		<field name="name">Languages</field>
+		<field name="machine_name">languages</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">12</field>
+		<field name="name">Location of footnotes</field>
+		<field name="machine_name">location_of_footnotes</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">13</field>
+		<field name="name">Type of original text</field>
+		<field name="machine_name">original_types</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">14</field>
+		<field name="name">publishers</field>
+		<field name="machine_name">publishers</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">15</field>
+		<field name="name">Religion</field>
+		<field name="machine_name">religion</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">16</field>
+		<field name="name">Series</field>
+		<field name="machine_name">series</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">17</field>
+		<field name="name">Target audience</field>
+		<field name="machine_name">target_audience</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">18</field>
+		<field name="name">Topics</field>
+		<field name="machine_name">topics</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	<row>
+		<field name="vid">19</field>
+		<field name="name">Typography</field>
+		<field name="machine_name">typography</field>
+		<field name="description"></field>
+		<field name="hierarchy">0</field>
+		<field name="module">taxonomy</field>
+		<field name="weight">0</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

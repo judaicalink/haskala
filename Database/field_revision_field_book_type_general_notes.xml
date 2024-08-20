@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_book_type_general_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_book_type_general_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_book_type_general_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_book_type_general_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="19" avg_row_length="862" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:15" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 24 (field_book_type..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_book_type_general_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1980</field>
+		<field name="revision_id">1980</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">Übersetzung einer Predigt auf Jiddisch</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1987</field>
+		<field name="revision_id">1987</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">זהו תרגום לגרמנית של ספר שיצא על ידי בישנטל ליפמן משה בעברית, כתודה של עם ישראל לנפוליון - על פי המצויין בהקדמת המתרגם בסוף הספר.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2044</field>
+		<field name="revision_id">2044</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">הערה בתחילת הספר, הכתובה בגרמנית וכן בגרמנית באותיות עבריות:
+
+Den eingang ausgenommen, gehört gegenwärtige Cantate fast ganz dem ungenannten Korahiten, der dieses schöne Epithalamium in sehr früher Zeit, wahrscheinlich zu den Zeiten Salomo's sang, und welches in die Psalmen (Ps. 45) aufgenommen ist. Die Hauptzüge dieses vortreflichen Gedichts sing geblieben. Hie und da ein kleiner Zusatz, dann und wann eine kleine Wiederholung; einige Veränderung die die Gelegenheit, oder die Sitten des Abendlands, durchaus erfordeten; und Abtheilungen, welche auch in dem Original vorhanden, nur nicht bestimmt angezeigt sind, ist alles was man sich erlaubt hat. Das Lob des Doppelpaars, ist aus einem andern hebräischen lyrischen Gedichte entlehnt, und also auch antic. Durch modernen Putz hat man die liebliche Einfalt nicht zerstören mögen.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2118</field>
+		<field name="revision_id">2118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">הטקסט מוצג כעיבוד של שני ספרים קודמים מאת מחברים לא יהודים: הצרפתי רסין והאיטלקי מטסטסיו. פרנקו מנדס בהקדמתו מציין פגמים בתוכן סיפוריהם (לא ייתכן כי מעשה מתואר התרחש בשבועות - &quot;לא הוכרח יהוידע לקרוא בבריתו לירושלים הבנויה חמשה ראשי האבות ... הלא שמה עלה עלו ג&quot;פ בשנה...&quot;; &quot;הגלו אזן עתליה בחלומותם למען סכל עצות יהוידע ויהושבעת וסודותם. פנו מקום לעבור לעתליה פנימה לעזרת ישראל הנקדשים בקדושתם אשר לא תבאנה בו נשים או טמאים בטומאתם...&quot;). כדבריו: &quot;תוכם אכלתי וזרקתי קליפתם&quot;. בניגוד לאותם מחברים, אשר בדו חלק מהסיפורים, הוא מדגיש את נאמנותו למקורות הקדומים: &quot;ללא סרתי מארח הנביאים ונביאותם. אחור לא נסוגתי מדרשות רז&quot;ל וקבלתם. לא אמרתי דבר שאינו בחק האפשרי כהמה בתנומותם&quot;.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">ככל הנראה ספר זה חובר על ידי סטנוב, למרות שהוא מציג אותו כספר מתורגם (כיוון שהדבר לא נבדק עדיין ואין מחקרים המצביעים על כך באופן ברור, לא ציינתי זאת בחלון &quot;סוג הטקסט&quot;).</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2127</field>
+		<field name="revision_id">2127</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">ספר זה מורכב רובו ככולו ממכתבים שכתבו רבני איטליה בעקבות פרשת &quot;דברי שלום ואמת&quot;, בתוספת הערותיו של וייזל.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">אף כי החיבור הוא של המחבר, כפי שהוא מציין בעמוד השער, הוא אסף חומרים מספרים שונים והוסיף משלו.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2142</field>
+		<field name="revision_id">2142</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">בחלקו הראשון של הספר, מתמצת ומתרגם פרידלענדר את דברי מנדלסון מתוך פעדאן. בחלקו השני, מביא את דבריו מתוך אגרת שכתב לצבי הירש ליבשיץ במסגרת התכתבותם, כתשובה לשאלה בדבר קשר הנפש עם הגוף.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">הספר כולל תפילות שחוברו במיוחד לכבוד חנוכת בית הכנסת החדש באמסטרדם, ולצדן תרגומן להולנדית. 
+כמו כן, הספר כולל פרקי תהילים.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">קיים דמיון ברור (ומוצהר ע&quot;י המחבר עצמו) בין ספרו לבין הספר &quot;כתר מלכות&quot; לשלמה בן גבירול. לדברי זהר, שערכה השוואה בין שני החיבורים, ישנו דמיון רב בסגנון ובמבנה, אך גל הבדלים המשקפים אימוץ של רעיונות התקופה ע&quot;י בוכנר. &quot;ביצירתו של בוכנר בולט קו ציורי בתיאורי הנוף האנושי, החי והצומח, דבר שאינו מצוי ביצירה של רשב&quot;ג. דרך פניתו של בוכנר אל האדם כבחיר היצורים קרובה ביותר אל תפיסתם האסתטית של בני דורו ומבטאת את השקפת עולמו האנתרופוצנטרית, החובקת את כל יצירתו ודוחקת את מקומה של השקפת העולם התיאוצנטרית המובהקת המצויה ביצירותיהם של משוררי ימי הביניים, וביצירתו של רשב&quot;ג בכלל זה.&quot; (זהר, עמ' 54).</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">זהו תעתיק של ספר בגרמנית.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2193</field>
+		<field name="revision_id">2193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">החיבור הוא מקורי - נכתב ע&quot;י וייזל, אך פורסם קודם לכן בתוך &quot;המאסף&quot;.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">החיבור הוא מקורי - נכתב ע&quot;י וייזל, אך פורסם קודם לכן בתוך &quot;המאסף&quot;.
+
+הוא גם כולל קטע מתורגם - כפי שמציין זאת בפרוש וייזל.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">הספר כולל חלקי טקסט שהופיעו בהמאסף - ראו חלון &quot;חוקר ומקורותיו&quot; שדה &quot;הערות&quot;.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">יש להוסיף מקורות טקסטואלים נוספים המצוטטים בספר.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2307</field>
+		<field name="revision_id">2307</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">טקסט דו-לשוני</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">בהקדמתו מביא המביא לדפוס מקורות רבים שמשמשים אותו להבהרת נושא השירה: מקורות יהודים/עבריים וגם כמה מקורות לועזיים.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">הספר נחשב לפלגיאט לסיפרו של לינדא, ברוך &lt;strong&gt;ראשית לימודים&lt;/strong&gt;. ב&lt;ins&gt;המאסף&lt;/ins&gt; תק&quot;ן (רפ&quot;ה-פר&quot;ז) הופיעה רשימה חתומה על ידי &quot;צ-בע&quot; (לא ברור מי זה) שמאשימה את אופנהיים בגניבה ספרותית, וגם בטפשות ובבערות. בסוף הרשימה צרפו &quot;המאספים&quot; הצהרת תמיכה בטענותיו של המאשים (&lt;ins&gt;המאסף&lt;/ins&gt; תק&quot;ן, רפח'). למעשה, אופנהיים העתיק רק קטעים בודדים מ&lt;strong&gt;ראשית לימודים&lt;/strong&gt;. יש הקבלה בין דפים ו'-ח' ב&lt;strong&gt;עמוד השחר&lt;/strong&gt; לבין דפים ב'-ה' ב&lt;strong&gt;ראשית לימודים&lt;/strong&gt;, וגם כאן דילג אופנהיים על הקטע בו תומך לינדא במודל ההליוצנטרי.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2487</field>
+		<field name="revision_id">2487</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_book_type_general_notes_value">לפי קלוזנר, מחזה זה הינו תרגום, פרפרזה ע&quot;פ ספרו של מטסטסיו: Betutia Liberata.</field>
+		<field name="field_book_type_general_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_contemporary_disputes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_contemporary_disputes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_contemporary_disputes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_contemporary_disputes" engine="InnoDB" version="10" row_format="Dynamic" rows="13" avg_row_length="1260" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:16" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 30 (field_contemporary..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_contemporary_disputes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">Kurzbesprechung: Jenaer Allgemeine Literaturzeitung, Januar 1811, S. 143</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">אייכל, איצק: דבר אל המדברים . המאסף, ג', אלול תקמ&quot;ו, עמ' ר&quot;ה-ר&quot;י</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">הספר עורר תגובות בקרב חברי הקהילה היהודי ת. התנגדו להצעות היהודים הספרדים, שהסתייגו מן הרעיון להיות קשורים לאשכנזים בעיני השלטונות, אך גם עניי האשכנזים, שהתנגדו להענקת כוח נוסף לעשירים על גורלם של העניים. 
+
+Endelman, The Jews of Britain</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">כפי שפיינר מציין (מהפכת הנאורות, 367), ייתכן מאד כי ספר זה העניק השראה לאהרן וולפסון לחבר את &quot;השיחה בארץ החיים&quot; האנטי-קלריקלי ואנטי-רבני, ולהציג דעות סותרות לאלה המופיעים בספרו של יוסף האפרתי.</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">בעקבות &lt;ins&gt;דברי שלום ואמת&lt;/ins&gt; קמה &quot;מלחמת תרבות&quot; בקרב יהדות אשכנז. פיינר, &lt;ins&gt;מהפכת הנאורות&lt;/ins&gt;, עמ' 113 והלאה; 165 והלאה.
+גם השלטונות נטלו חלק בויכוח סביב הספר. שר ההשכלה הפרוסי צדליץ התעניין בפרשה (פיינר, שם, עמ' 167). 
+בויכוחים סביב הספר היו מעורבים גם אינטלקטואלים לא יהודים. כך למשל אוגוסט קראנץ (פיינר, שם, עמ' 178 והלאה).</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">&lt;ins&gt;מאמר אמרה צרופה&lt;/ins&gt; עורר גל של התנגדות. על החיבורים שהתפרסמו בעקבותיו ראו: מכמן, &lt;ins&gt;יהדות הולנד&lt;/ins&gt;, עמ' 167, הערה 31.</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">התייחסות לספר וכן חלוקי דעות על דברים שנכתבו בו - בתוך ספרו של מאיר פירדא &lt;strong&gt;שלמות וצורת הנפש&lt;/strong&gt;. בסעיף על שכר ועונש בספרו כותב פירדא: &quot;כבר כתבו הראשוני' והאחרוני'? [כך!] הרבה מענין הנבואה ובפרט רבנו הגדול הרמ&quot;בם בספרו יד החזקה ובספרו מורה הנבוכים, &lt;ins&gt;גם ביארו הטיב ענין זה, מתרגמי תרי עשר הם המה מורי ילדי בני ישראל פה בהקדמתם סלת למנחה&lt;/ins&gt;, עד ששפת יתר בענין זה יהי' אך לגרעון, אמנם את זה ראיתי &lt;ins&gt;להוסיף על דבריהם&lt;/ins&gt;, שהאמנת השגחת ה' על ברואיו קודם להאמונת הנבואה וכבר הוכיח הרב בעל העקרים אמת ההשגחה, ואני אוסף על דבריו ולבארם יותר...&quot;
+ואח&quot;כ: &quot;והנה כבר כתבו הראשוני' והאחרוני' מענין הנבואה מפועלה תכליתה וצורתה, &lt;ins&gt;כל זה ביארו הטיב החכמי' הנ&quot;ל בהקדמתם הנ&quot;ל אמנם מה שאמרו מן חומר הנבואה אין דעתי נוחה&lt;/ins&gt; הימנו כי לדעתי לא שייך לומר חומר על דבר רוחני, אמנם בפועל הנבואה כולם שהודו במציאותה מסכימים שפועלה הוא השם יתעל' המשפיע שפע להנביא...</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">ראו פיינר, מהפכת הנאורות, עמ' 310 והלאה.
+
+לפי סמט, ר' שאול ברלין, &quot;הספר הוליד חמישה מכתבים כהגנה עליו. על שלושה מהם חתום ר&quot;ש 
+ברלין ועל שניים - עובדיה בן ברוך.&quot; (עמ' 432)
+
+כך: &lt;strong&gt;פסק דין&lt;/strong&gt; מכבוד אדונינו מורנו ורבנו הגאון המפורסם החכם הכולל מהו' צבי הירש נר&quot;ו, על דבר החרם על ספר &lt;ins&gt;&lt;strong&gt;מצפה יקתאל&lt;/strong&gt;&lt;/ins&gt;, י&quot;ב טבת תקנ&quot;א (חינוך נערים).</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2360</field>
+		<field name="revision_id">2360</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">החיבור &quot;קונטרס קורי עכביש&quot; בא &quot;להציל את נפשו [של הנאו] ממוקשי משיגיו אשר השיגו על ספר צוהר התיבה שחבר והיתה כל מגמתם לבטל את דבריו...&quot;</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">בספרו  &lt;ins&gt;עט סופר החדש&lt;/ins&gt; משנת 1829, מבקר המחבר צמח סגל לנדא איש וילנא את הספר &lt;ins&gt;צחות המליצה&lt;/ins&gt;. שני הספרים עוסקים אמנם בנושא דומה, ושניהם מכילים אגרות, אך לנדא מבקר את הסגנון הבארוקי של בוכנר, שהוא לדעתו סגנון ימי ביניים מיושן, שאינו תורם להחייאתה של השפה העברית כלשון הספרות בתקופת ההשכלה וגם לא כלשון מדוברת. זהר, עוללות מבציר, עמ' 26.</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">לפי סמט, ר' שאול ברלין, עמ' 431, מיד עם צאתו, עורר הספר חשש כי לא רק ההגהות, כי אם גם חלקי הטקסט הקדומים כביכול לא היו אלא מעשה ידיו של שאול ברלין. דברים שנאמרו בספר גבלו ממש באנטינומיה. ראשון יצא נגדו תלמיד חכם בשם וולף לנדסברגר, בקונטרס &lt;ins&gt;זאב יטרוף&lt;/ins&gt; (פרנקפורט דאודר, תקנ&quot;ג). אחריו יצא נגד הספר ר' מרדכי בנט (רב המדינה במורביה), ור' רפאל כהן וקרוביו פתחו במערכה נגד הספר ונגד המחבר.
+אביו ר' צבי הירש יצא להגנתו ודחה האשמות בנוגע למקוריות השו&quot;ת.</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">מיד עם צאתו גרם ספר זה לסערה ולקרע בין משכילי פראג לבין עורכי &quot;המאסף&quot;. קסטנברג-גלדשטיין, עמ' 134-135; פיינר, מהפכת הנאורות.</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_disputes_value">ספר זה עורר ויכוח בין העוסקים בתחיית הספרות העברית על איכויותיו ומעלותיו.</field>
+		<field name="field_contemporary_disputes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_epilogue_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_epilogue_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_epilogue_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_epilogue_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="51" avg_row_length="321" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:58" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 47 (field_epilogue_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_epilogue_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;Nachtrag an statt einer Vorrede&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">Nachschrift enthält Polemik gegen Friedländer, David: Aktenstücke.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסוף הספר יש תוספת של כ- 40 עמ':
+Anmerkungen und Zusaetze</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">Rede von Lehrer Herr Wolf: „Rede bey Eröffnung des am 23sten März 1803 in der jüdischen Schule stattgehabten öffentlichen Examens. Gesprochen von dem Lehrlinge L. Jacob aus Oranienbaum.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסוף הספר, לפני שמות החתומים, ישנה אחרית דבר מאת המביא לדפוס תחת הכותרת &quot;אמר המתאמץ&quot;.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמוד האחרון: &quot;אמר המחבר...&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בן-זאב חתם את הספר בשיר קצר לו קרא &quot;למבקרים ספרי&quot;:
+אם לשון מחרף תשכך,
+הרגיע! ובזה תשך רוחך,
+כי אין זאת הפרי הגרועה,
+אשר תמץ (תמוץ, ט.ק.) בה פי הצרעה</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2110</field>
+		<field name="revision_id">2110</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;על השגיונות&quot; (2 עמודים אחרונים): לוח הטעויות וההשמטות שבספר, ושיר בן 7 שורות על נושא זה.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;&quot;והאלקים בטובו יגלה את עינינו ונביט מתורתו נפלאות לרצון לפני חסדיו הגדולים עד עולם סלה.&quot; (עמ' אחרון, ללא מיספור)&lt;/p&gt;
+</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמ' האחרון של הספר מופיעה רשימת ההפטרות ולצידם מתרגמיהן</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בשלושת העמודים האחרונים מופיעה רשימת המתרגמים, ולאחריה &quot;לוח הטעות&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2149</field>
+		<field name="revision_id">2149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">המחבר מודיע כי בעתיד יטפל בהיבטים נוספים של הפיוטים  - איכות חיבוריהם, שינויים בפיוטים והלשון האופיינית לכל אחד מהם. הוא פונה לקוראיו ומבקש מהם להודיע לו אם הם מוצאים על שגיאות בטקסט, אם שכח להזכיר מי מבין מחברי הפיוטים וכד'.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;השמטה בסוף שער החכמה&quot; - דפים מה-דף אחרון בספר, מדגיש מרגליות את חשיבות התורה על פני הפילוסופיה.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אין אחרית דבר, אך יש בסוף הספר &quot;לוח שגיאות ותקונן&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2157</field>
+		<field name="revision_id">2157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">המחבר חותם את סיפרו בעמוד האחרון:
+&quot;דפסתי מועט דפסתי וגם בעשירת האיפה נאמר ריח ניחוח. ונגמר ביום שנכפל בו כי טוב ומצאתי מנוח. וברכתי על המוגמר ברוך נותן ליעף כח:&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">לאחר הטקסט של איוב והפירוש, ישנו טקסט בן 7 עמודים תחת הכותרת: &quot;כפות מנעול&quot;. שם במקש המחבר להאריך בדברים שלא יכול היה להאריך בתוך הביאור.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמ' האחרון בספר המחבר מסכם את הספר ואומר כי הוא מעדיף לא להאריך, ושוב מזכיר את קהל היעד של בני גילו הצעירים</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">שלוס אנמערקונג [Schlußanmerkung]</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסוף הספר, בעמ' צ'-צב' מופיע הנספח הבא:
+&quot;אנהאנג ברייטונג דעס ברלינר בלויאס&quot;.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2179</field>
+		<field name="revision_id">2179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמ' האחרון למטה הוסיף בן-זאב את המשפט הבא:
+&quot;תהלה לאל בורא עולם, שגמרתי משקל השמות כלם&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">המביא לדפוס חותם את סיפרו:
+&quot;ואין מכוונתנו עתה להאריך בביאור מספיק כל הענינים האלה כי לזה יצטרך ספר מיוחד, ודי לעת כזאת הודעתי נאמנה טבע השרשים והפארות, וישמע חכם ויוסיף לקח&quot; (עמ' אחרון, ללא מיספור).</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">עמוד אחרון</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמוד האחרון של הספר מופיע שיר המשבח אותו השיר מיוחס ל&quot;אחד השרים&quot;: 
+&quot;וכראות אחד השרים הנבואה וביאורה, אז עבר עליו רוח שירה, וישרורר שירת דודים בי&quot;א תנועות ערוכה ושמורה&quot;.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2250</field>
+		<field name="revision_id">2250</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסוף הספר, מיד לאחר &quot;חד גדיא&quot;, ישנו &quot;קונטרס שיח יצחק&quot; בן שני עמודים, הכולל גם &quot;נוסח שטר המכירה&quot;. קונטרס זה נכתב על-ידי יצחק סטנוב.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמוד האחרון מופיע הטקסט הבא:
+
+&quot;ויהי כאשר תמו ונשלמו דברי הספר נשאתי את ידי בתפלה לאל חיי ע&quot;ג ג' תנועת ויתד וג' תנועת ויתר. בדלת וכן בסוגר)
+
+יה דע יו-דעי-ך ה כו-ספים אליך:
+
+הט לב עו-בדי-ך לאור באור פניך:
+
+אף הושע בתו-כם גם לי אני עבדך:
+
+חזקני וה-אר עיני בתו-רתך:</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2262</field>
+		<field name="revision_id">2262</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בתחתית העמוד האחרון בספר מסכם סטנוב את הספר בברכה לקוראיו, ובברכה לו עצמו להמשך הוצאת ספריו</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אגרת קול הקורא.ראו פירוט באצבע תוכן עניינים.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">שיר מליצי קצר חותם את הספר</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">באחרית הדבר המופיעה בדף קלז', מסכם סטנוב כי תיקון המדות הוא דבר מורכב, ובספר זה מובא רק באופן חלקי. הוא שולח בקורת מרומזת על קהל יעדו, שלא מעוניין ב&quot;תבונה&quot;, וטוען כי לכן &quot;ורבים ממשכילי עמנו חוברי חבר מדאגה מדבר ההפסד. העתיקו חיבוריהם ללשונות העמים למען יצאו קונים בעמי הארצות&quot;. כלומר, מחברים מעדיפים שלא להשתמש בעברית, כדי שספריהם ימצאו קונים. סטנוב מתאר כאן את מצוקת ענף ההוצאה לאור העברית.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אמנם אין בספר &quot;אחרית דבר&quot;, אך ישנו שיר בסוף הספר, הנקרא &quot;מחברתי! מחברתי!&quot; 
+(במהדורות מאוחרות הופיע שיר זה בראשית הספר.)</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">סטנוב חותם את העמוד האחרון של הספר בתודה לה' שנתן לו אפשרות &quot;לאמר לרעיונים אשר רוקחו בסתר המחשב יהי' אור&quot;. הוא מספר כי עזב את ביתו ואת משפחתו ועבר לארץ נוכריה, וגם מאור עיניו השתבש בשל העבודה בדפוס: &quot;... ומאור עיני גם הם אין אתי כי ששו מיני מרוב עבודת המכתב, יומ [יום. ט.ק.] ולילה תכבד עלי העבודה, קדמתי בנשף והתמהמהתי בערב, ומעט קט שינה אני רואה בעיני...&quot;.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אין אחרית דבר לספר. עם זאת, בעמוד האחרון ישנה &quot;התנצלות המדפיס&quot;.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אין אחרית דבר, אך בסוף הספר ישנם דברי הודיה, בצורת אכרוסטיקון עם שמו של יואל ברי&quot;ל.
+כמו כן, יש גם &quot;תקוני הבאור&quot;, &quot;לוח טעות&quot;, ובנוסף, &quot;נאכטראג צום לוח הטעות&quot;, דהיינו, תוספת ללוח הטעות של הכרכים הקודמים.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בדף האחרון - צג' - מתאר מסכם המחבר את עבודתו</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בעמ' האחרון בספר כותב המחבר &quot;הערה&quot; קצרה המסכמת את התכנים של הספר, ולאחריה שיר קצר המשבח את כתיבת ספר החשבון בשפה העברית</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">(דף [1], אחרי מח'):
+המחבר פונה לקורא להשכיל וללמוד מספר זה, ומדווח לו על שני חיבורים נוספים שהוא עומד להוציא:
+&lt;strong&gt;האיר השחר&lt;/strong&gt; (על שיר השירים)
+&lt;strong&gt;מיישר הדרך&lt;/strong&gt;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;השמטה מן הפתיחה&quot;, דפים כז'-ל'+ [1]:
+
+פנייה לדרשנים</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אחרית הדבר מופיעה בלי כותרת, לאחר האגרת האחרונה. המחבר מספר שם כי כתב תחילה 120 אגרות, אך בעת שהותו בעיר המבורג מסרן לקריאה לדמות תורנית, ולא שם לב כי איש זה החזיר לו רק 80. (רק לאחר זמן מה חזרו אליו 40 האגרות החסרות, אשר נוספו במהדורות האחרות של הספר.)</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בשלושת העמודים הלא ממוספרים האחרונים בספר מופיע טקסט בשם &quot;ביאור השמות&quot;, ובו הגדרות בלשניות של &quot;שם נרדף&quot;, &quot;שם נבדל&quot; וכד'.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסוף הטקסט ישנם רק:
+
+&quot;סליק&quot; ומספר דפים של &quot;תקון הטעויות וקצת השמטות&quot; (בנוסף ל&quot;מפתחות&quot;).</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">באחרית הדבר בעמוד האחרון מתייחס סטנוב שוב (ראו חלון &quot;הקדמות&quot;) לשאלת מקורו של הספר, וקובע כי הפירושים שלו ושל הרשב&quot;ם התערבבו שכן הוא מצא עותק פגום של ספר המקור, ומזהיר את המקנטרים שלא לבוא בטענות:
+
+&quot;... שזה הביאור מיוחס להרשב&quot;ם ז&quot;ל, והנני מודיע בפעם הזאת שהביאור בכ&quot;י אשר ממנו העתקתי שלט בו הרקב, ויאכל חצי דפיו ולפעמים דפים שלימים, לכן ידע הקורא שרוב זה הפי' משלי הוא ומי חכם יכיר בלשון למי הדברי' שכ&quot;מ?? והכלל אם יראה הקורא דבר טוב יחשבו להרב ז&quot;ל, ואם משגה שתי?? תלין שמשונה, אך כסיל ומקנטר אל יריבו פן ישבעו מרורות ולא אליהם פי קראתי:&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסוף הספר מבקש המחבר שלא יאשימו אותו בכך שהוא מציג ידע שסותר את הידע המסורתי - מטרתו טובה, הוא מתכוון להוסיף ידע ולאפשר לתלמידים להבין ולהשכיל (דף לג').</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2400</field>
+		<field name="revision_id">2400</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">מופיע לסיום שיר מליצי , לא ברור אם הוא של המחבר אבן עזרא או של המביאים לדפוס</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;התנצלות המגיה&quot;, בעמ' האחרון.
+
+סטנוב טוען כי היתה פנייה אליו במכתב מטעם &quot;אצילי בני ישראל&quot; לשמר את כתב היד הנדיר של הרמח&quot;ל, אבל הטקסט היה הרוס למעשה, והוא מודה כי ערך אותו באופן מעמיק. ההפנייה כאן לרמח&quot;ל קשורה למהדורה הקודמת המתוארת אצל בן-מנחם, נפתלי (ראו כאן &quot;מקורות אשר שימשו לצורך השאלון&quot;)</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">'שו&quot;ת מטפחת ספרים&quot; (דפים כה'-עד עמוד אחרון בספר) - כאן מגן סטנוב על הקבלה, וטוען כי אין בה סתירה לתורה ולחוכמה:&quot;... סוף דבר כל חכם יבין מדעתו שבהיות דברי הס' הזהר כינים ואמיתיים בבחינת עצמם מעירים ומעוררים היראה והאהבה בלב הלומדים...&quot; (עמ' אחרון).</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;נאכריכט&quot; מטעם פיליפסון, משה חותמת את הספר, ובה הוא מתאר ספרים נוספים שיצאו בהוצאה שלו (ראו הרחבה בחלונית &quot;הוצאה/בית הדפוס&quot;).</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2423</field>
+		<field name="revision_id">2423</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">אמר הצעיר המחבר
+&quot;אחרי שיהיה הספר הקטן הזה בחזקת ידם יוכלו המלמדים ללמדם ספר לקח טוב שאדפיסהו עתה אי&quot;ה עם שבילי אמונה להעלותם ממדרגת הקטנים למדרגת הנערים ומשם למדרגת הבחורים ויהיו תקועים בלבם יסודי ושרשי אמונתנו עדי יהיו כלם מאמינים בני מאמינים אכי&quot;ר.&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">&quot;תודת המחבר לאהליו&quot;(בסוף הספר, בדפים לא ממוספרים [2-3]): טקסט מליצי המהלל את האל ואת התבונה.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2446</field>
+		<field name="revision_id">2446</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">מופיעים בגרמנית דברי ברכה החתומים על ידי המחבר, בעמוד האחרון של הספר</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2463</field>
+		<field name="revision_id">2463</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">דבר אל כבוד אדו&quot;מ&quot;ו הרב המ&quot;אה&quot;ג מו&quot;הר&quot;ר אפרים נ&quot;י.</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2469</field>
+		<field name="revision_id">2469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_epilogue_notes_value">בסיום השיר הדו-לשוני עברית וגרמנית מופיע עמוד נוסף של טקסט המודה למלכה, ונקרא
+&quot;Andere  der Judenschaft zu weis-Ruessen bey Uberreichung des Gesanges&quot;</field>
+		<field name="field_epilogue_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

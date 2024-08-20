@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_thanks_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_thanks_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_thanks_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_thanks_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="26" avg_row_length="1890" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:28" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 184 (field_thanks_notes)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_thanks_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בהקדמתו למהדורה הגרמנית מודה וייזל להופנגל ושפלדינג על מלאכת התרגום. גם מודה לביסטר, שעודד אותו ועזר לו לפרסם ספר זה, ואף המליץ עליו בחום בכתב העת שלו (בינואר1794, עמ' 93).</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בהקדמה כותב המחבר:
+
+...aus Erkenntlichkeit und Achtung für die lebhafte und innige Theilnahme an dem hoffentlich nicht zu verfehlenden Endzweck meiner uneigennützigen Absicht bey dieser Arbeit von Seiten eines meiner würdigsten Freunde und Gönner, des Kaufmanns Herrn Friedrich Salomon Stöltzner in Leipzig, welcher seiner Verdienste nach, weit mehr Lob würdig ist, als ich ihm beylegen kann, und welchem ich dieses schwache Werkzeug meiner noch ganz unvollständigen Arbeit, bis zu mehreren theoretischen Betrachtungen und Vervollkommnung meiner Ideen, als einen kleinen Beweis von meinem Dankgefühl widme, und mich selbst zu dessen fernern geneigtem Wohlwollen empfehle.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">לאחר ההקדמה, כותב אביגדור לוי &quot;התנצלות ושבח תודה&quot; וכותב: &quot;...לשלם אלף תודות... לר' שלמה ווידלש בעל המדות, ולזוגתו הינדל יאם אשת לפידות, שניהם כאחד טובים עושים ומעשים... יבורכו מהר ובעושר וכבוד ונכסים... להיות כי ארכו לי פה הימים, ובכולם הטיב לי הק' ר' פייבש האמבורג איש תמים ואומן מהיר לפני מלכים יתיצב בפתח חותמים...&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בסוף הספר, מודה בן זאב ל:
+* ר' נחמן עביד משרים בק&quot;ק פלאצק - אצלו למד, &quot;ומנעורי כאב גדלני&quot;.
+* אלכסנדר זיסל הלוי, חותנו, על ש&quot;האכילני ומכוסו שתיתי... למען הקל ראשי מכובד עול התלאות לבקש אחר מזון... לבלתי הצריך אותי לחיות נודד ללחן...&quot;
+* איסר בנה' סיני כ&quot;ץ נ&quot;י מק&quot;ק זאלשיץ, &quot;כי כאשר נכסוף נכסתי... על הספר הזה ולא מצאתיו, והוא שאל אותי הספר הזה בכתיבת ידו והרעני לפרש לו הדברים החמורים ואני באתי אחריו ומלאתי דבריו כיד אלוה הטובה עלי...&quot;
+* מאיר איגר מק&quot;ק גלויגא רבתי, אשר האיץ בו להביא את הספר לדפוס.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">המחבר מודה לאלה אשר קראו את תרגומו לצרפתית ולגרמנית.
+
+Je déclare… que des littérateurs distingués ont bien voulu corriger ces traductions avant qu'elles fussent livrées à l'impression: je leur offre publiquement mes sincères remercîmens [sic].</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">הספר פותח ב&quot;מכתב תודה אל  השר הנודע בשערים רוחו יקרה מעשיו בחכמה... דוד פרידלענדר בברלין&quot;.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">זו לשון הברכה (עמ' ב):
+&quot;לכבוד יקר רוח איש תבונות, חכם לב ומושלם בידיעות, תפארת בחורי ישראל... דוד בן כה' בענדיט ווינג יצ&quot;ו. אלף תודות אתן לך אדוני! על העמל והיגיעה אשר נטית שכמך לסבלם, למען הפיץ המחברת הזאת בישראל... וכל מגמתי בהוציאי המאמר הזה לאור, היא למען העמיד האמת על תלה, ולא לאהבת הבצע, ובכן תיקר נא תודתו זאת בעיניך, כי יקרא שמך על המחברת הזאת. וגם לי לכבוד גדול יהיה. נאם משה אוהבך לעולם.&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בסוף הספר ישנה רשימה של &quot;נדיבי העם שלומי אמוני חברת מרפא לנפש, המתנדבים בעם להיות לעזר ולהועיל ברפואת חיי הנפש המשכלת בעין חברת בקור חולים ... למנות רופא מומחא אשר רפוא ירפא עניי הדעת מוכי נגעי הנפש מעוני תחלואי השכל, הם עומדים על הפקודים לתת לכסף מוצא להדפיס ספרים יקרים חדשים עם ישנים והיה פריים למרפא ועליהם לתרופה להתיר פה של מעולה לדבר בדברים העומדים ברומו של עולם, הם על נדיבות יקומו לקבל כל איש מהם מהספרים הנדפסים בערך סך ידוע לשנה כקצוב איש על שמו. תהי משכורתם שלימה והיה מעשה הצדקה שלום&quot;.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בהקדמת המביא לדפוס:
+&quot;... ואבוא היום אל העיון עין החכמה בבית עקד הספרי' אשר לשר וגדול ליהודים הלא הוא מוה' דניאל יפה...&quot; עמ' [1]
+סטנוב לא מודה לו באופן מפורש, אך משבח ומהלל אותו.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2265</field>
+		<field name="revision_id">2265</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בסוף ההקדמה השניה, ובעמ' האחרון לספר</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בעמ' [13] הוא שולח את תודתו לדניאל יפה:
+&quot;נאום המחבר. שלום ידבר. לריע וחבר. תשואת חן חן לנגיד השועים. קצין עם הנדיב המפורסם כבוד כה' דניאל יפה חלפן מק&quot;ק ברלין אשר נתן לי חניה בביתו. וגם בניו חותניו עומדים לימין עזרי בהדפסת ספרי. הטיבה ה' לטובים יבלו ימיהם בטוב ובשותניהם בנעימים...&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2289</field>
+		<field name="revision_id">2289</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בעמ' ג' אחרי ההקדמה: &quot;ויהודא שנתעלה בכל יקר וגדולה לו נאה לברכו תחלה ולהפיל תחינה ותפלה לאל נורא עלילה שישמריהו מכל נגע ומחלה וינצריהו מכל מקרה ותקלה ויעלהו מעלה מעלה ה&quot;ה הרבני המופלא והמופלג שלשלת היוחסין הנגיד והטפסר הנדיב המפורסם מהורר יהודא הכהן מיערסלוב בן המנוח הגאון המפורסם מהורר יעקב זצ&quot;ל אב&quot;ד ור&quot;מ דק&quot;ק פלאצק. והוא אחד מן הכהנים הנקראים לו&quot;יים שהלוה לי לויית חן סך מסויים ובזה החל לי להועיל להוציא הספר הזה מכח אל הפועל במה אברכו הרי פירותיו מתוקים וצלו נאה כי עושר וכבוד אתו הון עתק וצדקה ורש לא שמע גערה וצעקה זאתי רב חסדא ורב חנן כשתילי זתים הסביב לשלחנו חתניו רבנן מעתה אין לי לברכו רק שיראה בני בנים שלשים וגם רבעים במועצת ודעת תורה ולא יעדי שלטון מבת הון [מבתיהון?] כל ימי חייהון אמן.&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בהקדמת המחבר</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">מאחורי עמוד השער מוקדש עמוד להבעת תודה:
+
+&quot;זכרון תודה לכבוד אדוני מורי כאבי נדיב ויקר רוח נודע בשערים שמו  כה&quot;רר אהרן יורש יצ&quot;ו ולכבוד זוגתו מורתי כאמי אשה חכמה מעשיה בשערים יהללו שמה מרת ריזל תחי' מאת בן משק ביתם יואל ברי&quot;ל&quot;.
+
+מיד לאחר מכן ישנו שיר בן כשלושה עמודים, המוקדש לאותו זוג. נאמר, בין היתר:
+&quot;קטן הייתי רך ועלם/ בן תשע.../צדקתכם אז עמדה לי/לקחתוני מבית אבי/הבאתוני חדריכם/...לחמכם אכלתי מימיכם שתיתי/ ... עוד נוח לא נחתם, עדי הדרך הבער/ במעגלי כל מדע יקר רוח ומבין/ בל אמעט מאישים, בל אבוש בשער/ בין חכמים כי-אלך חידותם להבין.&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">המחבר מודע לו על כך שיעץ לו ועזר לו להביא את ספרו לבית הדפוס (בעמוד האחרון לספר).</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בסוף ההקדמה הבעת תודה &quot;למטיבים ולישרים בלבותם&quot;: &quot;...אתן שבח ניבי במכתבי לתומכי סעדי נפשי ולבבי לבנות אולמות והיכלות בעזר אל עושה גדולות ה&quot;ה שלשה מטיבי סעדים מזקני הדור שררים נכבדים האחד גדול שמו בישראל! מהעניגס בערג יקרו בע&quot;מ ווינה השני ממחזיקי עץ החיים גדול אסנפר[?]! מפאפר בפראג העדינה והשלישי מאוהבי ר' ליפמן מאיי יקר ונכבד בברעסלא והמדינה...&quot; 
+כמו כן, בסוף הספר כתוב: &quot;... ואברך לבני מזימה שוחרי מוסר וחכמה מתנדבים הטובים. מאנשי כנסי' העדינה בפראג ובווינה לבו&quot;ב ופ&quot;ב ונ&quot;ש וברעסלא והמדינה. ומתוכם נשיא הקהת&quot;י ר' עוזר איש אפרתי...&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2328</field>
+		<field name="revision_id">2328</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">מודים לאיצק בן שמשון ווערטהיים על הציורים שחרת עבור כל ספר וספר.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בעמ' הראשון של הספר:
+&quot;זכרון תודה לאיש חיל שוחר טוב... יוסף הירצלס נ&quot;י... דרכיו ראיתי ואוהבהו מאוד... אוהב חכמה ורצוי לדורשיה' ועזר לכל עצור ועזוב ממנו... גם ממני (אשר זה כשתי שנים אנכי בביתו להיות אומן ומורה לנכדו היקר..) ואף עתה בהוציאי המחברת הזאת לטובת בני עמי ולא השיגה על ידי די הוצאות הדפוס, כי רבות הנה, תמך ידי ברוח נדיבה לעזרני על המלאכה...&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בדף ה' וגם בדף יח' שלוחה תודה לפרנס האג טוביה שנתן למחבר תלמידים בתלמוד תורה שהוא מלמדם ומסייע לו.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2345</field>
+		<field name="revision_id">2345</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">מודה ל&quot;אלוף התורני והרבני הראש והקצין... גביר ונדיב ... כממהו&quot;רר &lt;strong&gt;שמואל ברעסלויא&lt;/strong&gt; ... אשר הטה עלי חסדו ואמתו? להיות לי לעזרה גמורה בהוצאות הדפוס עד גמיר' ... ע&quot;ז הגבירה המושכלת ומלומדת הצנועה והחסודה א&quot;ח מרת &lt;strong&gt;הענדל&lt;/strong&gt;... ובפרט לבין פורת... הבחור המופלא... כהר&quot;ר &lt;strong&gt;ראובן&lt;/strong&gt; ול... &lt;strong&gt;נחום פיק&lt;/strong&gt; מברעסלויא, וזוגתו הצנועה המחכמת ומלומדת מ' &lt;strong&gt;חנלי&lt;/strong&gt;... ולאלוף הראש והקצין &lt;strong&gt;חיים בר&quot;ז&lt;/strong&gt;, חסד עשה עמדי, ימינו תמכני, נדיבתו הראני, כל הטובות לא ב__ ממני, ביתו פתוח לרווחה, אשר &lt;ins&gt;במשך זמן הדפוס זכיתי להיות חד מאכלי שלחנו&lt;/ins&gt;, עובד את ה' בין בגופו ובין בממנו, וסך? מסויים לדבר מצוה הלוה לי מהונו, ... ע&quot;ו הגבירה המחכמת ומלומדת הצנועה והחסודה א&quot;ח מרת &lt;strong&gt;רייצכה&lt;/strong&gt; תי', [מברך אותם]
+והפרט היוצא מן הכלל ה&quot;ה אהובי ידידי נאמני הבחור המושלם... ירא אלהים מנעוריו הקצין הנדיב כה&quot;רר &lt;strong&gt;ראובן בר&quot;ז&lt;/strong&gt; דרעזדען שי' אשר הטיב עמי בכל מה דאפשר..</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">ראו רשימת מממנים.</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2381</field>
+		<field name="revision_id">2381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">בהקדמה נרשם:
+&quot;כן נודדתי ממקומי ק&quot;ק נאנסיך... ובדרך הלוכי קרבתי לק&quot;ק האג... ושם עמדתי ט&quot;ז שנים רצופים לשרת בקדש בבית הגדול...בבית הגביר המנוח גדול ליהודים... הר&quot;ר טובי' בעז זצ&quot;ל... [עמ' 1, מיספור שלי]</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2428</field>
+		<field name="revision_id">2428</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">מאחורי עמוד השער, תחת הצנזורה:
+&quot;מנחת תודה אל כבוד אד&quot;מ ורבי בתור' ובחכמ' ה&quot;ה הרב הגדול חריף ובקי החכ' הכולל המפורסם מוה' ברוך נרו בעל המחבר ספר טעם המלך ולאשתו היקרה הגבירה והמהללה והמשכלת מ' פראדל תי' חלף הטוב אשר גומלים אתי מיום בואי פראג הבירה ועד עתה&quot;</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2456</field>
+		<field name="revision_id">2456</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">וייזל מברך את גומפרץ על שמצא לנכון לממן את הוצאת החלק הרביעי של &lt;ins&gt;שירי תפארת&lt;/ins&gt;, וגם מודה לו על שאיפשר ליוזל מוהר לעבוד בהוצאת הספר. &quot;גם בזה הטיב עמדי, בתתו לימיני את ידיד נפשי הקצין התורני המופלא הגביר הנכבד מוה&quot;רר וזל מוהר נר&quot;ו, אשר בטוב לבו קבל על עצמו להשגיח על הדבר להכין כל הצריך אל המלאכה, ולקחת תחת ידו הקונטרסים בצאתם מן הדפוס, ולהמציאם לידי החתומים עליו, כי לא אוכל לשאת את המשא הזה עלי, גם הוא ברוך יהיה, וזכות הרבים תלוי גם בו.&quot;
+
+וייזל מודה גם לנדבן נוסף, שהביע את רצונו לממן את הוצאת הספר: &quot;הרבני מוהר&quot;ר יעקב נר&quot;ו קאממר אגענט של הדוכוס [כך!] יר&quot;ה בברוינשווייג בן הקצין המפורסם פ&quot;ומ התורני מוהר&quot;ר ישראל ביא נר&quot;ו, גם הוא בהיותו פה בקיץ העבר, בא אלי מדעת עצמו, ודבר ברוח נדיבה, גם התנדב בטוב לבבו לתת לכספו מוצא להדפסת חלקי שירי תפארת הנשארים, ולולי קדמו הקצין מוהר&quot;ר ראובן... ככל אשר יצא מפיו היהה עושה...&quot; (עמ' [3-4])
+
+על התנהגות דומה מודה וייזל גם לשני אנשים נוספים תושבי קופנהגן, מאיר הויזן ומענדל ליידסדורף: &quot;האלופים הנכבדים והקצינים המפורסמים משכילים ויודעי דעת&quot; הללו, &quot;גם הם מדעת עצמם וברוח נדיבה קדמו פני, ובמכתבם שאלו ממני על דבר הכ&quot;י אשר עודם תחת ידי, מה שמותם, ואם רוצה אני להוציאם לאור... ורשמתי שמות הכ&quot;י הנ&quot;ל, ואמרתי מי יתן אם רק יודפסו בתחלה שלשה חלקי השירים וכרך שני מס' המדות, שיש חתומים עליהן, והשיבו טוב הדבר... אבל טרם בא מכתבים זה אלי, כבר נגמר הדבר...&quot; (עמ' [4])</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2457</field>
+		<field name="revision_id">2457</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">וייזל מודה לאנשים אלה &quot;לא לבד בעבור נדבת ידם לעזור את המלאכה בכספם... אבל נפשי קשורה בנפשם על כי מדעת עצמם עורררו את נפשי הנכאה, ואשר כבר נואשה מהשמיע עוד אמרים בקהל ה', כי אמרו לנפשי התעוררי התעוררי קומי ועשי חיל, ה' יהיה בעזרתך ויתן לך כח לעשות מלאכתך, ואנחנו נשא אתך במשא במסת ידינו לצורך ההוצאה.&quot; (עמ' [1])</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2466</field>
+		<field name="revision_id">2466</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_thanks_notes_value">איצק ב'ר דניאל יפה</field>
+		<field name="field_thanks_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

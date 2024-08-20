@@ -1,36 +1,48 @@
 from django.conf import settings
-from django.urls import include, path
+from django.urls import include, path, re_path
 from django.contrib import admin
+from django.conf.urls.static import static
 
-from wagtail.admin import urls as wagtailadmin_urls
 from wagtail import urls as wagtail_urls
+from wagtail.admin import urls as wagtailadmin_urls
+from django.views.generic import RedirectView
 from wagtail.documents import urls as wagtaildocs_urls
+#from wagtail.contrib.sitemaps.views import sitemap
+from .api import api_router
+from home.views import *
 
-from search import views as search_views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-urlpatterns = [
-    path("django-admin/", admin.site.urls),
-    path("admin/", include(wagtailadmin_urls)),
-    path("documents/", include(wagtaildocs_urls)),
-    path("search/", search_views.search, name="search"),
-    #path("places/", include("places.urls")),
-]
-
+#from search import views as search_views
 
 if settings.DEBUG:
-    from django.conf.urls.static import static
-    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+    from debug_toolbar.toolbar import debug_toolbar_urls
 
-    # Serve static and media files from development server
+    urlpatterns = debug_toolbar_urls()
     urlpatterns += staticfiles_urlpatterns()
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
+    urlpatterns = []
 
-urlpatterns = urlpatterns + [
-    # For anything not caught by a more specific rule above, hand over to
-    # Wagtail's page serving mechanism. This should be the last pattern in
-    # the list:
-    path("", include(wagtail_urls)),
-    # Alternatively, if you want Wagtail pages to be served from a subpath
-    # of your site, rather than the site root:
-    #    path("pages/", include(wagtail_urls)),
+urlpatterns += [
+    path('admin/', admin.site.urls),
+
+    path('dashboard/', include(wagtailadmin_urls)),
+    path('documents/', include(wagtaildocs_urls)),
+
+    re_path(r'^', include(wagtail_urls)),
+    path('api/v2/', api_router.urls),
+    #path(r'', include(allauth.urls)),
+    #re_path(r"^dashboard/", include(wagtailadmin_urls)),
+    #path("search/", search_views.search, name="search"),
+    re_path(r'^places/(?P<place_slug>[\w-]+)/$', place_view, name='place_view'),
+    re_path(r'^cities/(?P<place_slug>[\w-]+)/$', cities_view, name='cities_view'),
+    #re_path(r"^sitemap\.xml$", sitemap),
 ]
+
+urlpatterns += [
+    #path("robots.txt", robots_txt),
+    #path(".well-known/security.txt", security_txt),
+    path("favicon.ico", RedirectView.as_view(url="/static/img/favicon.ico")),
+]
+

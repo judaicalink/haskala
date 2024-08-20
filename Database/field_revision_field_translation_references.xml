@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_translation_references">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_translation_references_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_translation_references_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_translation_references" engine="InnoDB" version="10" row_format="Dynamic" rows="13" avg_row_length="1260" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:28" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 192 (field_translation..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_translation_references">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2492</field>
+		<field name="revision_id">2492</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">הספר תורגם לאיטלקית ע&quot;י אליהו מורפורגו זמן קצר לאחר פרסומו:
+Traduzione di Elia Morpurgo de' Discorsi ebraici di tolleranza e felicità diretti de Naftali Herz Weisel agli ebrei dimoranti ne' domini dell'Augustissimo Imperadore Giuseppe II, il Giusto.</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2495</field>
+		<field name="revision_id">2495</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">Instruction salutaire adressée aux communautés juives de l'Empire, par le célèbre Hartwic Weisly, juif de Berlin, traduite en françois en l'année 1782. Nouvelle édition augmentée de notes, d'une lettre à M. l'abbé Maury, député à l'Assemblée nationale, par l'éditeur [ : Isaac Berr], et de la réponse de M. l'abbé Maury, Paris.</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2496</field>
+		<field name="revision_id">2496</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">מהדורת ברין תקנ&quot;ח כוללת תרגום חלקי של הספר לגרמנית</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2497</field>
+		<field name="revision_id">2497</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">הספר תורגם ב- 1840: 
+Aus dem Leben Wessely's</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2498</field>
+		<field name="revision_id">2498</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">&lt;strong&gt;מודע לבני בינה&lt;/strong&gt; יצא במהדורה מיוחדת עם הולנדית במקום גרמנית. מהדורה זו כוללת (ככל הנראה) גם את החלק השני של הספר.</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2499</field>
+		<field name="revision_id">2499</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">הספר תורגם ליידיש (תחת הכותרת &quot;ספר גדולת דוד ומלוכת שאול&quot;), תוך שינוי אידיאולוגי עצום (ראו ורסס, המחזה מלוכת שאול)  וזכה למהדורות רבות הרבה יותר מאשר בעברית.
+
+לפי ורסס ושקד, במהדורות 1871 ו- 1885 חלו שינויי גרסה לשוניים רבים מאת המו&quot;ל.</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2500</field>
+		<field name="revision_id">2500</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">הספר תורגם לאנגלית במחצית השנייה של המאה ה- 19 על-ידי. הוא יצא תחת הכותרת:
+Romanelli's Travels in Marocco towards the End of the 18th Century, fifth edition with Preface, Notes and the Life of the Author. By S.M. Schiller-Szinessy, Hebrew and English.</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2501</field>
+		<field name="revision_id">2501</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">תרגום ליידיש: גדולת יוסף (זכה למהדורות רבות)</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2502</field>
+		<field name="revision_id">2502</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">שני השירים הראשונים תורגמו לגרמנית (1795) ע&quot;י שני פרופ' גרמניים (הופנאגל ושפאלדינד) (וייזל כתב לתרגום זה הערות בגרמנית).
+
+לפי קלויזנר, א', עמ' 139</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2503</field>
+		<field name="revision_id">2503</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">עוד שני שירים תרגם בנו הבחור של וייזל.
+
+לפי קלויזנר, א', עמ' 139</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2504</field>
+		<field name="revision_id">2504</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">מנחם עמנואל וייזל, בנו השני של וייזל, תירגם עוד שלשה שירים לגרמנית.
+
+לפי קלויזנר, א', עמ' 139</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2505</field>
+		<field name="revision_id">2505</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">חלק מן השירים תורגם ע&quot;י מ. בר לצרפתית.
+
+לפי קלויזנר, א', עמ' 139</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">translation</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2506</field>
+		<field name="revision_id">2506</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_translation_references_value">המהדורה כוללת לפי ה-IUL- עם תת-כותרת בגרמנית ובצרפתית. תרגום לגרמנית ותרגום לצרפתית</field>
+		<field name="field_translation_references_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

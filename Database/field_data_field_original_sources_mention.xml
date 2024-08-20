@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_original_sources_mention">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_original_sources_mention_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_original_sources_mention_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_original_sources_mention" engine="InnoDB" version="10" row_format="Dynamic" rows="0" avg_row_length="0" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:04" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 104 (field_original_sources_mention)" />
+	</table_structure>
+
+	<table_data name="field_data_field_original_sources_mention">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_original_sources_mention_value">Hame’assef, 7. Jg, 4. H., S.  (E. W. Sp.: Rezension in Sulamith, II, 1, pp. 124-132.)</field>
+		<field name="field_original_sources_mention_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

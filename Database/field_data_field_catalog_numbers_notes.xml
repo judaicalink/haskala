@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_catalog_numbers_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_catalog_numbers_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_catalog_numbers_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_catalog_numbers_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="26" avg_row_length="630" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:57" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 26 (field_catalog_numbers_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_catalog_numbers_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">ישנו גם עותק דיגיטלי באתר של הספרייה הלאומית.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2057</field>
+		<field name="revision_id">2057</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">מיקרופיש של העוק שנמצא ברוזנתליאנה באמסטרדם</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">במבוא למהדורה השניה (תק&quot;ס) כותב המחבר כי בכוונתו להוציא בקרוב חלק שני של דברי הימים - מן הגלות הראשונה ועד בכלל - לנערים גדולים יותר, ספר שככל הידוע לא יצא לאור.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">המחבר מספר בהקדמה כי בכוונתו להוציא 20 חלקים של ספר זה: &quot;...להוציא לאור בלה&quot;ק ובל&quot;א כתב אחד מאותן עשרים כתבים אשר תחת יד,... זה הכתב הראשון יהי' לדוגמא... ואמר לי לבי שכתבים אלו יהיו רצוין בעיני כל קרוא ורבים ישוטטו אחריהם לזאת אמרתי אחת דברתי ואקיימנה אחת לאחת למצוא חשבון. כל העשרים כתבים יצא באור נוגהן ויזרחו כשמש עלי ארץ&quot;
+דף [ד'].</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בבר אילן ראיתי חלק א' וב' בנפרד, וכרך משותף לשלושת החלקים. בלאומית יש שלושה כרכים נפרדים. כלומר, הספר יצא במקור בשלושה כרכים נפרדים.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בבר אילן ראיתי חלק א' וב' בנפרד, וכרך משותף לשלושת החלקים. בלאומית יש שלושה כרכים נפרדים. כלומר, הספר יצא במקור בשלושה כרכים נפרדים.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בבר אילן ראיתי חלק א' וב' בנפרד, וכרך משותף לשלושת החלקים. בלאומית יש שלושה כרכים נפרדים. כלומר, הספר יצא במקור בשלושה כרכים נפרדים.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בהקדמתו מביע שמעון בונדי את כוונתו להוציא חלק שני (שכנראה לא ראה אור): &quot;אם ישרת מחברתי בעיניכם גם זאת תודיעוני למען אוציא לנכון היום גם חלק השני המדבר ממלות יונית&quot;.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">Note to copy in British Library:
+
+האותיות כאן מתהפכות, איילה צריכה לטפל כאן בבעייה. הסיגנטורה שנרשמה היא זו המופיעה על גבי העותק שצולם בפרוייקט הג'יף הקודם. בנסיון לאתר ספר זה דרך הקטלוג הממוחשב שבאינטרנט לא הצלחתי להעלות דבר - ספר זה לא מופיע כקיים בקטלוג הספרייה הבריטית</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">חלק א' הינו הסידור בלה&quot;ק.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2155</field>
+		<field name="revision_id">2155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">המחבר התכוון להוציא חלק ב' לסיפרו, כפי שעולה מן ההסכמות שצורפו כאן, וכפי שציין בפתח ספרו &quot;ספר אור עולם&quot; (ראו &quot;ספר אור עולם&quot;, חלון &quot;הקדמות&quot;, הקדמה מס' 1).</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2167</field>
+		<field name="revision_id">2167</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">החיבור הנוכחי מכסה את האותיות א-ב.
+פפנהיים בהקדמתו מצהיר על כוונתו להוציא כרכים נוספים: &quot;לפי שהחבור כולו ספר גדול יכיל בערך שמונים באגן בדפוס, והוצאת הדפסתו עולה לסך מופלג, הוצאתי אמנם לאור הכרך הראשון הנוכחי על הוצאתי והיה לאות לבני ישראל לדעת ענין החבור, ועל שארי הכרכים אקח חתומים, ובמלאת לי ג' מאות חתומים אז אקרב אל המלאכה להדפיס גם הכרכים הנשארים שיהי' דמי ערך כל באגן א' גראשן&quot;. 
+על תכניות להמשך הדפסת הספר ראו הקדמה ליריעות שלמה חלק ב' (רדלהיים תקצ&quot;א), שם הועתקה הודעה על תכנית להדפסת חלק ב' של יריעות שלמה וחקש שלמה, שהתפרסמה תחילה כקונטרס רגל מבשר (תקס&quot;ח) ולאחר מכן במאסף מרחשון תק&quot;ט.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">על הדפסת חלקים אחרים של הספר ראו הקדמה ליריעות שלמה חלק ב' (רדלהיים תקצ&quot;א), שם הועתקה הודעה על תכנית להדפסת חלק ב' של יריעות שלמה וחקש שלמה, שהתפרסמה תחילה כקונטרס רגל מבשר (תקס&quot;ח) ולאחר מכן במאסף מרחשון תק&quot;ט. כמו כן, וולף היידנהיים, שהדפיס את חלק השני (רק בשנת 1831) מציין כי פפנהיים פעל לפרסום החלק השלישי עוד בטרם ראה אור החלק השני, וכי הוא מציין שם כי התכוון לפרסם גם חלק רביעי.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בהקדמתו לחלק השלישי של יריעות שלמה מפרט פפנהיים את מפעלו זה. הוא מציין כיצד חילק את החיבור ע&quot;פ נושאים, מסביר מדוע יוצא עתה חלק ג' מבלי שהתפרסם חלק ב', ומזכיר ספר שלא יצא בסופו של דבר לאור (ככל הנראה) - החלק הרביעי. הוא כותב (עמ' ד'/א וד'/ב): &quot;חלקתי...את חבורי... לד' חלקים: ובארתי בחלק הראשון שמות המתיחסות אל הזמן המקום והתנועה (פיזיק) והתחלתי בהם הדבור לפי שאין להם חלק בגוף הדברים ומהותם. בחלק השני דברתי על השמות המתיחסות אל החושים (אעסטהעטיק) בבחינת השגת האיכיות הגשמיות על ידיהם וכללנו בו הבאור על כח הדבור במה שהוא מתיחס אל חוש השמע. (חלק השני הזה הוא בכתיבת יד עם ספר השרשי' שחברתי, תחת יד החכם המדקדק הרב ר' וואלף היידנהיים שקיבל עליו בקורל ובמכתב להדפיס גם שניהם ברעדלהיים אשר כעת לא ידעתי אם כבר נדפסו או לא). בחלק השלישי שאני מניח פה לרגלי ההמון הנכבד, בו ידובר על השמות המתיחסות אל הפעולה והמלאכה (טעחנאלאגיע) שעל ידיהם אנו משיגים האיכיות הרוחניות של הנמצאים. ובחלק הרביעי אי&quot;ה נדבר על איכיות הרוחניות עצמן וכחות הנפשיות שאנו משיגין בעצמנו (פסיחאלאגיע).
+על הדפסת חלק ב' של הספר ראו הקדמה ליריעות שלמה חלק ב' (רדלהיים תקצ&quot;א), שם הועתקה הודעה על תכנית להדפסת חלק ב' של יריעות שלמה וחקש שלמה, שהתפרסמה תחילה כקונטרס רגל מבשר (תקס&quot;ח) ולאחר מכן במאסף מרחשון תק&quot;ט. כמו כן, וולף היידנהיים, שהדפיס את חלק השני (רק בשנת 1831) מציין כי פפנהיים פעל לפרסום החלק השלישי עוד בטרם ראה אור החלק השני, וכי הוא מציין שם כי התכוון לפרסם גם חלק רביעי.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">ככל הידוע, לא התפרסמו חלקים נוספים לספר זה.
+
+בעמ' [8] בהקדמה רשם המחבר:
+ויען כי יצאתי לדון בדבר חדש כי עדין לא נתפרסמו באומתנו ספרים כאלה, ומי יודע מה זה טוב לבני אדם... על כן אמרתי להדפיס רק חלק אחד לדוגמא בעלמא ואם ימצא חן בעיני אלהי' ואדם אדשנה חבוריי ואוסיפה כהנה וכהנה יתר החלקים...</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בהקדמתו מדבר פיליפסון על שלושה כרכים מתוכננים. בפועל יצאו ככל הנראה רק שניים.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">הספר יצא בשלוש גירסאות מקבילות: עברית (תקע&quot;ב), גרמנית (1811) וצרפתית (1811)</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">העותק שנבדק כרוך יחד עם חלק שני. אך לספר יש עמוד שער נפרד ובנוסף, ישנם רמזים לכך כהופיעו בנפרד. למשל: בחלק השני נאמר כי בחלק השלישי יופיעו שמות החותמים, אם יעלה בידו של סטנוב להדפיסו.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2269</field>
+		<field name="revision_id">2269</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">בקטלוג הממוחשב נרשם כי עותק זה פגום וחסר עמוד השער של כרך א'</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">חלק ראשון וחלק שני של ספר המדות כרוכים יחד</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2288</field>
+		<field name="revision_id">2288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">חלק ראשון וחלק שני של ספר המדות כרוכים יחד.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">העותק בספריית בר-אילן כולל:
+הקדמה: סלת למנחה
+יואל
+עובדיה
+יואל
+צפניה
+זכריה
+מלאכי</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">לשון השער הנוסף לספר (ייתכן כי השער כפי שמופיע בעותק שנבדק נוספה בהדפסות חוזרות): &quot;חמשה חמשי תורה עם תקון סופרים ותרגום אשכנזי ובאור, ערשטי אבליוורונג וועלכ'י ספר בראשית ענטהעלט. דיא צווייטי אבליוורונג זאלל אי&quot;ה באלד ערפאלגן, אונד ווירד ענטהאלטן ספר שמות, הקדמת החלק הראשון, הסכמת הגאון אב&quot;ד נ&quot;י וב&quot;ד הצדק, וויא אויך דא נאמע דר ביזהעריגן פרענומראנטן&quot;</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">שער הספר שכולל את שלושת הספרים הכרוכים יחד הוא:
+
+&lt;strong&gt;תורת לשון עברית קצרה ובאר היטב מחזקת כל דקדוק הקריאה והכתיבה ודרכי לשון כפי משפט ההגיון, מפי ספרים וסופרים הראשונים התיכונים, האחרונים, והכל על סדר נכון, איש איש על מקומו למושבותיו, ועל דרך היותר נקל ומובן לתועלת התלמידים בבתי הספר אדער קורצגעפאסטע אונד דייטליכע עברישע שפראכלעהרע צום גברויך יידיש-דייטשר שולן אין דרייא טהיילן צוויטע פרבעסערטע אונד פרמעהרטע אויפלאגע&lt;/strong&gt;
+
+מהקדמת המחבר למהדורה השניה, בעמ' [6], עולה כי במהדורה הראשונה יצאו כרכי הספר בנפרד.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">שער הספר שכולל את שלושת הספרים הכרוכים יחד הוא:
+
+&lt;strong&gt;תורת לשון עברית קצרה ובאר היטב מחזקת כל דקדוק הקריאה והכתיבה ודרכי לשון כפי משפט ההגיון, מפי ספרים וסופרים הראשונים התיכונים, האחרונים, והכל על סדר נכון, איש איש על מקומו למושבותיו, ועל דרך היותר נקל ומובן לתועלת התלמידים בבתי הספר אדער קורצגעפאסטע אונד דייטליכע עברישע שפראכלעהרע צום גברויך יידיש-דייטשר שולן אין דרייא טהיילן צוויטע פרבעסערטע אונד פרמעהרטע אויפלאגע&lt;/strong&gt;
+
+מהקדמת המחבר למהדורה השניה, בעמ' [6], עולה כי במהדורה הראשונה יצאו כרכי הספר בנפרד.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_catalog_numbers_notes_value">שער הספר שכולל את שלושת הספרים הכרוכים יחד הוא:
+
+&lt;strong&gt;תורת לשון עברית קצרה ובאר היטב מחזקת כל דקדוק הקריאה והכתיבה ודרכי לשון כפי משפט ההגיון, מפי ספרים וסופרים הראשונים התיכונים, האחרונים, והכל על סדר נכון, איש איש על מקומו למושבותיו, ועל דרך היותר נקל ומובן לתועלת התלמידים בבתי הספר אדער קורצגעפאסטע אונד דייטליכע עברישע שפראכלעהרע צום גברויך יידיש-דייטשר שולן אין דרייא טהיילן צוויטע פרבעסערטע אונד פרמעהרטע אויפלאגע&lt;/strong&gt;
+
+מהקדמת המחבר למהדורה השניה, בעמ' [6], עולה כי במהדורה הראשונה יצאו כרכי הספר בנפרד.</field>
+		<field name="field_catalog_numbers_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

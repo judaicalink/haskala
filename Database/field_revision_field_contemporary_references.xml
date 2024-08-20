@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_contemporary_references">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_contemporary_references_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_contemporary_references_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_contemporary_references" engine="InnoDB" version="10" row_format="Dynamic" rows="21" avg_row_length="780" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:16" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 31 (field_contemporary..." />
+	</table_structure>
+
+	<table_data name="field_revision_field_contemporary_references">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">NADB, 1793 , 3. Bd., 1. St. , S. 154-158.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">Rezension: Herz, über die frühe Beerdigung der Juden, in: ADB 1789 , 87. Bd., 1. St., S. 144-145</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">התייחסות לפרסום זה ובקשת תמיכה בפרויקט על יד ביסטר, בתוך כתב העת שערך:
+
+Berlinische Monatsschrift, Jan. 1794, pp. 93 ff, 
+ראו גם &quot;פנייה למכירת מנויים&quot; בחלון &quot;אישים המוזכרים בספר&quot;.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">אייכל, איצק: דבר אל המדברים . המאסף, ג', אלול תקמ&quot;ו, עמ' ר&quot;ה-ר&quot;י; Gebete der hochdeutschen und polnischen Juden, aus dem Hebräischen übersetzt und mit Anmerkungen begleitet von Isaak Abraham Euchel, in: ADB, 1788 , 81. Bd., 2.St., S. 708 - 709.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">התייחסות לספר מצד כ&quot;ע גרמני (ביקורת לא טובה, המצביעה על טעויות בדפוס, על כך שמה שנכתב ניתן היה לסכם בעמודים בודדים, תהייה על תועלתו של הספר):
+Jenaische Allgemeine Literatur-Zeigung (1804 or 1806?) 3. Jg, Bd. 3, No. 161, S. 63-64.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">Bendavid, Lazarus: Etwas zur Charakteristik der Juden; Rezension von Bk. [Gebhard, Johann Georg]: Weltweisheit, in: Neue allgemeine deutsche Bibliothek. 1793-1806. 5. Bd.,1. St., 1793, S. S. 365 - 368.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">Ueber Verbesserung der Erziehungs-Methode bey der jüdischen Jugend
+למוריץ שלזינגר.
+בנוסח שמופיע בספרה של לוהמן 
+Lerne Vernunft
+זה מופיע בעמוד286</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2125</field>
+		<field name="revision_id">2125</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">&lt;ins&gt;דברי שלום ואמת&lt;/ins&gt; זכה כמובן להתייחסות נרחבת. דוגמא אחת: ספרו של ר' שאול ברלין &lt;ins&gt;כתב יושר&lt;/ins&gt; נכתב בעקבותיו ומתייחס אליו בצורה נרחבת.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">סוג אחד של התייחסות לספר זה ולחלק הראשון של &lt;ins&gt;דברי שלום ואמת&lt;/ins&gt; ניתן למצוא בתגובות הרבנים מאיטליה כפי שאלה התפרסמו בחלק השלישי של הספר: &lt;ins&gt;עין משפט&lt;/ins&gt;.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">זכה לתשבוחות הביקורת הצרפתית הלא יהודית. 
+
+Schechter, Obstinate Hebrews, 216.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2207</field>
+		<field name="revision_id">2207</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">יואל ברי&quot;ל בספרו עמודי הלשון מציין את הספר מדרש מלים (עליו הסתמך) ותייחס אל מחברו כאל &quot;גשיקטן מדקדק ר' פייבש ספרי, לעהרער אין אונזרער שולע אונד פ'רפ'אסר דעם עברישן-דייטשן ווערטרבוכס &lt;strong&gt;מדרש מלים&lt;/strong&gt;. דער אויך וויללנס איזט דאס האנדבוך, צום נוצן דעריעניגן אונזרער מיטברידר, דיא דער דייטשן שפראכע אונקונדיג זינד אינם עברישע צו איברזעצן&quot;. עמ'
+VIII</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">התייחסות אל הספר גבעת המורה מופיעה בספר הברית, חלק א', של פנחס אליהו הורביץ, ברין תקנ&quot;ז, במאמר י', פרק טו', דף סב'. הורוויץ יוצא כנגד טענתו של מימון שהפילוסופיה הגיעה בתקופתם לדרגת שלמות. הוא טוען כי בכל דור ודור קמים פילוסופים כנגד התפיסות הפילוסופיות המקובלות ומציגים תפיסות חדשות, ונותן לדוגמא את הפילוסוף בן-זמנם עמנואל קאנט שיצא נגד קודמם.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">לדברי קלוזנר (היסטוריה, א, 187), &quot;האדוקים לא יכלו לסלוח&quot; לבן זאב על חיקויי התפילות ועל ההלצה.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">ספרו של משה קרנר, ספר כאור נגה...חמש מאות עשרים וארבע הערותיו על ספר הברית</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2336</field>
+		<field name="revision_id">2336</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">לפי פיליפסון, &lt;ins&gt;ביוגרפיות&lt;/ins&gt;, עמ' 85, הספר זכה לביקורת אוהדת. פילופסון מביא ציטוט ארוך של ביקורת חיובית אשר הופיעה בתוך 
+&quot;ein damals sehr hochstehendes kritisches Journal, die Leipziger Literatur-Zeitung&quot;.  
+זאת ועוד, בעמ' 164 הוא מביא ציטוט ממכתב בעברית שכתב פרופ' טיכסן לעורכי הספר.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">הספר והמאבק סביבו היו נושא לדיון במקומון הברלינאי
+Chronik von Berlin, 
+שפרסם איש האמנות והתיאטרון היינריך וילהלם זייפריד - 
+Seyfried
+פיינר, מהפכת הנאורות, עמ' 312.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2347</field>
+		<field name="revision_id">2347</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">מאיר אוברניק בדברי הקדמה ל&quot;חמשה חומשי תורה עם תקון סופרים...&quot;, וינה תקנ&quot;ד מציין כי הגה את הספרים &quot;ע&quot;פ תקון סופרים היקר הנדפס בחומשי רמ&quot;ד&quot;.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">בעקבות גל ההתקפות נגד שאול ברלין בעקבות פרסום הספר, יצא אביו, ר' צבי הירש, להגנתו, ופרסם: &lt;ins&gt;איש עניו, לא יפלו פניו...&lt;/ins&gt;, ברלין?, 1794?.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2441</field>
+		<field name="revision_id">2441</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">בוכנר מציין בהקדמתו תגובות למהדורות קודמות של ספרו: &quot;קצת אנשים בראותם איזה דבר נפלא ונורא ולבם צפון משכל ולא יכולו לעשות כמעשהו תבער אש הקנאה בהם צוף המליצה אצלם לשמצה יש אשר יאמרו לא לצורך הוא ויש אשר יאמרו על מיט מוטל לשום בזכונו איך אלה התיבות כתובים בתנ&quot;ך... וכל זה בא כי לא רגל על לשונם ספרי תנ&quot;ך ולא ידעו שורש המלה אף לא יבינו שמות מושתפים ושמות נרדפים...&quot;</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">לפי המוציאים לאור של הספר (וולפסון וברי&quot;ל), הכרך הראשון של שירי תפארת לא התקבל באותה התלהבות מצד הקהל היהודי כפי שהם ציפו. (כך בדבריהם בפתיחת הכרך השני.) לעומת זאת, לפי טענתם ההתקבלות בקרב לא יהודים היתה חיובית: &quot;רבים מגדולי ונכבדי העמים שמחו לקראתו ויתאמצו להגות בו תמיד&quot;.
+אכן, מלומד נוצרי (הופנגל) כתב ביקורת נלהבת על החיבור בכ&quot;ע שערך:
+Hufnagel: &quot;Für Christenthum, Aufklärung und Menschenwohl&quot;, Bd. II, Heft 4, 311 ff
+ראו גם דברי השבח מאת ביסטר בכ&quot;ע שלו (הירחון הברלינאי, ינואר 1793, עמ' 93 והלאה, לאחר פרסום תרגום החיבור לגרמנית.</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contemporary_references_value">&quot;ביקורת אוהדת: מ-ר [אהרן וולפסון], &quot;בשורת ספרים חדשים&quot;, המאסף, ז, ב (תקנ&quot;ה), עמ' קס-קעא&quot; [פיינר]</field>
+		<field name="field_contemporary_references_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

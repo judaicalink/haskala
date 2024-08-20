@@ -1,0 +1,5 @@
+uid,"name","pass","mail","theme","signature","signature_format",created,access,login,status,"timezone","language",picture,"init","data"
+0,"","","","","",NULL,0,0,0,0,NULL,"",0,"",NULL
+1,"admin","$S$Didh6vOEJnmt/IaO9wXDxR4JABEUrNKuXDnSpqyZOti7D..SeG/w","itamar@gizra.com","","",NULL,1428489870,1428920256,1428497282,1,"Europe/Berlin","",0,"itamar@gizra.com","b:0;"
+4,"rachel","$S$Dq8vNvCGauiubxJwgPREhUO2xhkJjK9QnTPVqGp9w.zBWaIbOZGg","r.heuberger@ub.uni-frankfurt.de","","","filtered_html",1428490426,0,0,1,"Europe/Berlin","",0,"ita.mar@gizra.com","a:5:{s:16:\"ckeditor_default\";s:1:\"t\";s:20:\"ckeditor_show_toggle\";s:1:\"t\";s:14:\"ckeditor_width\";s:4:\"100%\";s:13:\"ckeditor_lang\";s:2:\"en\";s:18:\"ckeditor_auto_lang\";s:1:\"t\";}"
+5,"itamar","$S$DRa1Q6TCU2uV6ftfKP26tW2t3SLjxNJJtBb9VJuSvKY6toDdXnKv","ita.ma.r@gizra.com","","","filtered_html",1428490466,1428497252,1428490859,1,"Europe/Berlin","",0,"ita.ma.r@gizra.com",NULL

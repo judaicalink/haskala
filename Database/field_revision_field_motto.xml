@@ -1,0 +1,523 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_motto">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_motto_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_motto_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_revision_field_motto" engine="InnoDB" version="10" row_format="Dynamic" rows="36" avg_row_length="455" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:20" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 77 (field_motto)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_motto">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Es wird eine Zeit kommen, da man in Europa nicht mehr fragen wird, wer Jude oder Christ sey; denn auch der Jude wird nach Europäischen Gesetzen leben und zum Besten des Staates beytragen. Nur eine barbarische Verfassung hat ihn daran hindern, oder seine Fähigkeit schädlich machen mögen.
+Herder.
+
+L'homme [lui-même] est une quantité indéterminable. Il est (si j'ose me servir de l'expression) une matiere ductile par la filiere de l'habitude. Il prend tous les plis, toutes les formes qu'on veut, sans se détruire; on donne par l'habitude à ses forces, à sa nature, à son être primitif une extension qui paraissait impossible d'abord; &amp; ce qui est plus singulier, aussi-tôt qu'il s'y est fait, il trouve que cela lui est tout naturel, que cela a existé de tout temps &amp; ne pouvait être autrement, que c'est son état physique. Il est tout à son aise dans cet état, où par une suite de siècles on l'a mis, &amp; l'ouvrage d'une longue succession de philosophes est oublié. Il ignore le bienfaiteur &amp; le bienfait, comme il ignore &amp; le Méchant &amp; le Mal qu'il lui a causé, &amp; qu'il croit bonnement être de sa nature.
+
+Dialogues sur le commerce des bleds [par l'abbé Galiani, revus par Grimm et Diderot] pag. 229.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1959</field>
+		<field name="revision_id">1959</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Who steals my purse, steals trash; 'tis something, nothing;/ Twas mine; 'tis his, and has been slave to thousands;/ But he that filches from me my good name,/ Robs me of that which not enriches him,/ And makes me poor indeed.
+Shakspeare [sic]</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">La superstition met le monde entier en flammes; la philosophie les eteint.
+Dictionnaire philosophique, par Voltaire. Article Superstition.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Veniam pro laude peto. Ovid.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">moresque hominum cultusque sonumque 
+Tristium. L. 3. Eleg. 8
+Cernimus, et qui sim, qui fuerimque</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1966</field>
+		<field name="revision_id">1966</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">- quid sit pulchrum, quid turpe, quid utile, quid non. Horat.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1978</field>
+		<field name="revision_id">1978</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Wir müssen da nicht weise seyn wolen, Wo wir nichts als Glücklich waren. Lessing.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1988</field>
+		<field name="revision_id">1988</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Johannes 5, 46, 47</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Der Aberglauben schlimmster ist, den seinen für den erträglichsten zu halten ...
+Nathan d. Weise A. 4. a. 4.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Vhoever [sic] thinks a faultless piece to see,/ Thinks what ne'er was, nor is, nor e'er shall be. / Pope. Essay on Critic</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2003</field>
+		<field name="revision_id">2003</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Ein unnützes Leben - ein früher Tod. Goethe.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">de mortuis nil nisi vere</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2011</field>
+		<field name="revision_id">2011</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">-- Occidit! occidit!
+Spes omnis et fortuna nostri Nominis! Horat.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Le Partage du brave homme est d’expliquer librement ses pensées. Celui qui n’ode regarder fixement les deux poles de la Vie humaine, la Religion et le Gouvernement, n’est qu’un lache.
+Voltaire.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">פתחו שערים ויבא גוי צדיק שמר אמנים
+Jesa: 26,2.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">La raison, le jugement viennent lentement: les préjugés accourent en foule, c’est d’eux qu’il faut préserver l’enfant. Roussau [Emile, Livre Troisième]</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Eh Joseph noch den Scepter führte,
+
+Was that Er - ? Er philosophirte.
+
+Und nun seit Er den Scepter führt,
+
+Wird was Er sonst philosophirt,
+
+Mit seltner Weisheit ausgeführt.
+
+Fühlts Völker! Jene güldne Zeit,
+
+Die Plato wünschte, zeigt sich heut.
+
+Den Scepter führt ein Weiser,
+
+Es philosophirt ein Kaiser.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">ישתה האדם בהסבו לחם עוני ומרורים ישתה וישכח רשו</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">סור מרע. ועשה טוב. בקש שלום ורדפהו.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">גם מזה ומזה אל תנח את ידך.
+(מאחורי עמ' השער)</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Erkenntniß, Vernunftgründe, Ueberzeugung, diese allein bringen Grundsätze hervor, die durch Ansehen und Beyspiel, in Sitten übergehen können. Und hier ist es, wo die Religion dem Staat zu Hülfe kommen, und die Kirche eine Stütze der bürgerlichen Glückseligkeit werden soll. Ihr kommt es zu, das Volk auf die nachdrücklichste Weise von der Wahrheit edler Grundsätze und Gesinnungen zu überführen; ihnen zu zeigen, daß die Pflichten gegen Menschen auch Pflichten gegen Gott seyn, die zu übertreten schon an und für sich höchstes Elend sey; daß dem Staate dienen, ein wahrer Gottesdienst, Recht und Gerechtigkeit der Befehl Gottes, und Wohlthun sein höchster [allerheiligster] Wille sey, und daß wahre Erkenntniß des Schöpfers keinen Menschenhaß in der Seele zurücklassen könne.
+Mendelssohn im Jerusalem. [Erster Abschnitt]</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Ein Heide kam zu Samay, und sprach zu ihm: „Bekehre mich zum Judenthum, doch so, daß ich das Gesetz lerne während der Zeit, als ich auf einem Fuße stehen kann.“ Jener stieß ihn von sich mit dem Maaßstabe, so er eben in der Hand hatte. Nun kam er zu Hillel, that die nämliche Zumuthung, und dieser sprach: „Was dir nicht gefällt, dieß thue einem andern nicht. Dieß ist das ganze Gesetz; das Uebrige nur Kommentar, - itzt gehe und lerne.“ 
+Talmud Trakt. Sabbath, Fol. 31.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;והיה אמונת עתיך חסן ישועות חכמת ודעת/ יראת-יי היא אוצרו&quot; (ישעיה ל&quot;ג)</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;ברצות ה' דרכי איש/ גם אויביו ישלים אתו. משלי טז' ז'&quot;
+
+Lorsque Dieu agrée la conduite de l'homme, il 
+réduit à la paix ses ennemis mêmes. 
+Proverbes, c. XVI, v. 7</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Wie Wasserleitung ist Königsherz
+יחל ישראל אל-יהוה כי-
+עם-יהוה החסד והרבה עמו פדות
+Psalm, 130. V. 7
+In der Hand des Ewigen;
+Er leitet nach Wohlgefallen es.
+Sprüche, Kap. 21. V. 1</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">כטל בוקר אשר יזל עלי שושנה
+יפתח חיקה יפיק ריחה ימלא מיש
+ואמרות בין בחיק עלם כמו תפעלנה
+הקיץ לבו הכין רוחו אהוב המישו
+המאסף</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">סוף דבר האלהים ירא
+חקתיו ומצותיו שמור
+לחכמה אחותי את אמור
+ומודע לבינה תקרא
+(קהלת יב', יד' משלי ז' ד)</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2221</field>
+		<field name="revision_id">2221</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">Vast chain of being! Wich from God began/ Natures AEthereal, human, angel, man,/ Beast, bird, fish, insect, what no eye can see/ No glass can reach; from infinite to thee,/ From thee to nothing. Pope Es. on man Epis. I.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2287</field>
+		<field name="revision_id">2287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;ש[י]מעו מוסר וחכמו/ ואל ת[י]פרעו (משלי ח' ל&quot;ג)</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;הלא-אזן מלין תבחן וחך אכל יטעם-לו&quot; איוב יב, יא</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2405</field>
+		<field name="revision_id">2405</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;בארח-צדקה חיים/ ודרך נתיבה אל-מות&quot; (משלי י&quot;ב א&quot;ח). 
+בעמוד השער</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">בעמ' [1]: יהוה בחכמה יסד ארץ בנן שמים בתבונה (משלי ג י&quot;ט)</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2424</field>
+		<field name="revision_id">2424</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;האומרים לרע טוב ולטוב רע שמים חשך לאור/  __ לחשך שמים מר למתוק ומתוק למר:/ _חכמים בעיניהם ונגד פניהם נבונים:/ _גברים לשתות יין ואנשי חיל למסך שכר:/ _יקי רשע עקב שחר וצדקת צדיקים יסירו ממנו&quot;
+ישעי' ק' ה' פ' כ', כ&quot;א, כ&quot;ב, כ&quot;ג</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2425</field>
+		<field name="revision_id">2425</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">כי כן רוח היא באנוש ונשמת שדי תבינם. ושרשות הגבראים איש על מקומו יכינם. וקשר זן אל זן ואיש לאיש יחדו המספרים כבוד אל ומעשי ידיו.</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;הם קנאוני בלא אל - כעסוני בהבליהם: - ואני אקניאם בלא עם - - - [דברים ק' ל&quot;ב פ' כ&quot;א]&quot;</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_motto_value">&quot;אשרי משכיל אל דל ביום רעה ימלטהו יי/ יי ישמרהו ויחיהו ואשר בארץ&quot;, תלים [!] מא</field>
+		<field name="field_motto_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

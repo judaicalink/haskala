@@ -1,0 +1,3891 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_edition_year">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_edition_year_value" type="varchar(255)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_edition_year_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_edition_year" engine="InnoDB" version="10" row_format="Dynamic" rows="321" avg_row_length="153" data_length="49152" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:58" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 44 (field_edition_year)" />
+	</table_structure>
+
+	<table_data name="field_data_field_edition_year">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2507</field>
+		<field name="revision_id">2507</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1788</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2508</field>
+		<field name="revision_id">2508</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1994</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2509</field>
+		<field name="revision_id">2509</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1799</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2510</field>
+		<field name="revision_id">2510</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1813</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2511</field>
+		<field name="revision_id">2511</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1815</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2512</field>
+		<field name="revision_id">2512</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1817</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2513</field>
+		<field name="revision_id">2513</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1808</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2514</field>
+		<field name="revision_id">2514</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ן</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2515</field>
+		<field name="revision_id">2515</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1800</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2516</field>
+		<field name="revision_id">2516</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1806</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2517</field>
+		<field name="revision_id">2517</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1814</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2518</field>
+		<field name="revision_id">2518</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1790</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2519</field>
+		<field name="revision_id">2519</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ה (1805)</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2520</field>
+		<field name="revision_id">2520</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1809</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2521</field>
+		<field name="revision_id">2521</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1817</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2522</field>
+		<field name="revision_id">2522</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1826</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2523</field>
+		<field name="revision_id">2523</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1834</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2524</field>
+		<field name="revision_id">2524</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1854</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2525</field>
+		<field name="revision_id">2525</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1860</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2526</field>
+		<field name="revision_id">2526</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1863</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2527</field>
+		<field name="revision_id">2527</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרכ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2528</field>
+		<field name="revision_id">2528</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1881</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2529</field>
+		<field name="revision_id">2529</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרנ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2530</field>
+		<field name="revision_id">2530</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1967</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2531</field>
+		<field name="revision_id">2531</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2532</field>
+		<field name="revision_id">2532</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2533</field>
+		<field name="revision_id">2533</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2534</field>
+		<field name="revision_id">2534</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2535</field>
+		<field name="revision_id">2535</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1816</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2536</field>
+		<field name="revision_id">2536</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1820</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2537</field>
+		<field name="revision_id">2537</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1825</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2538</field>
+		<field name="revision_id">2538</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1827</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2539</field>
+		<field name="revision_id">2539</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1836</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2540</field>
+		<field name="revision_id">2540</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1842</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2541</field>
+		<field name="revision_id">2541</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1849</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2542</field>
+		<field name="revision_id">2542</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1849</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2543</field>
+		<field name="revision_id">2543</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1851</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2544</field>
+		<field name="revision_id">2544</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1851</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2545</field>
+		<field name="revision_id">2545</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1865</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2546</field>
+		<field name="revision_id">2546</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרל&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2547</field>
+		<field name="revision_id">2547</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרל&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2548</field>
+		<field name="revision_id">2548</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1874</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2549</field>
+		<field name="revision_id">2549</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1883</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2550</field>
+		<field name="revision_id">2550</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1883</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2551</field>
+		<field name="revision_id">2551</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1898</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2552</field>
+		<field name="revision_id">2552</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2553</field>
+		<field name="revision_id">2553</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2554</field>
+		<field name="revision_id">2554</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2555</field>
+		<field name="revision_id">2555</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1816</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2556</field>
+		<field name="revision_id">2556</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1820</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2557</field>
+		<field name="revision_id">2557</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1827</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2558</field>
+		<field name="revision_id">2558</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1836</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2559</field>
+		<field name="revision_id">2559</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1842</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2560</field>
+		<field name="revision_id">2560</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1849</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2561</field>
+		<field name="revision_id">2561</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1851</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2562</field>
+		<field name="revision_id">2562</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1874</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2563</field>
+		<field name="revision_id">2563</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1883</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2564</field>
+		<field name="revision_id">2564</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2565</field>
+		<field name="revision_id">2565</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2566</field>
+		<field name="revision_id">2566</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ס</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2567</field>
+		<field name="revision_id">2567</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2568</field>
+		<field name="revision_id">2568</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2569</field>
+		<field name="revision_id">2569</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפ&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2570</field>
+		<field name="revision_id">2570</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2571</field>
+		<field name="revision_id">2571</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2572</field>
+		<field name="revision_id">2572</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2573</field>
+		<field name="revision_id">2573</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפ&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2574</field>
+		<field name="revision_id">2574</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2575</field>
+		<field name="revision_id">2575</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2576</field>
+		<field name="revision_id">2576</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפ&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2577</field>
+		<field name="revision_id">2577</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2578</field>
+		<field name="revision_id">2578</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2579</field>
+		<field name="revision_id">2579</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2580</field>
+		<field name="revision_id">2580</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ע</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2581</field>
+		<field name="revision_id">2581</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2582</field>
+		<field name="revision_id">2582</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2583</field>
+		<field name="revision_id">2583</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1795</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2584</field>
+		<field name="revision_id">2584</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2586</field>
+		<field name="revision_id">2586</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרכ&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2587</field>
+		<field name="revision_id">2587</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1796</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2588</field>
+		<field name="revision_id">2588</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1826</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2589</field>
+		<field name="revision_id">2589</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1837</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2590</field>
+		<field name="revision_id">2590</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1871</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2591</field>
+		<field name="revision_id">2591</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1874</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2592</field>
+		<field name="revision_id">2592</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1879</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2593</field>
+		<field name="revision_id">2593</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1883</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2594</field>
+		<field name="revision_id">2594</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1884</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2595</field>
+		<field name="revision_id">2595</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1908/9</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2596</field>
+		<field name="revision_id">2596</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1912</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2597</field>
+		<field name="revision_id">2597</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1925</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2598</field>
+		<field name="revision_id">2598</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2599</field>
+		<field name="revision_id">2599</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1771</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2600</field>
+		<field name="revision_id">2600</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2601</field>
+		<field name="revision_id">2601</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2602</field>
+		<field name="revision_id">2602</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקעג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2603</field>
+		<field name="revision_id">2603</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1808</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2604</field>
+		<field name="revision_id">2604</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2605</field>
+		<field name="revision_id">2605</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1823</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2606</field>
+		<field name="revision_id">2606</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1810</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2607</field>
+		<field name="revision_id">2607</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2608</field>
+		<field name="revision_id">2608</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1823</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2609</field>
+		<field name="revision_id">2609</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2610</field>
+		<field name="revision_id">2610</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1794</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2611</field>
+		<field name="revision_id">2611</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1820</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2612</field>
+		<field name="revision_id">2612</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1822</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2613</field>
+		<field name="revision_id">2613</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1825</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2614</field>
+		<field name="revision_id">2614</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1829</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2615</field>
+		<field name="revision_id">2615</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1871</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2616</field>
+		<field name="revision_id">2616</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1885</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2617</field>
+		<field name="revision_id">2617</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1906</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2618</field>
+		<field name="revision_id">2618</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2619</field>
+		<field name="revision_id">2619</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1834</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2620</field>
+		<field name="revision_id">2620</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2621</field>
+		<field name="revision_id">2621</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2622</field>
+		<field name="revision_id">2622</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תריד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2623</field>
+		<field name="revision_id">2623</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1886</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2624</field>
+		<field name="revision_id">2624</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרפו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2625</field>
+		<field name="revision_id">2625</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1799</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2626</field>
+		<field name="revision_id">2626</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1789</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2627</field>
+		<field name="revision_id">2627</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2628</field>
+		<field name="revision_id">2628</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2629</field>
+		<field name="revision_id">2629</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2630</field>
+		<field name="revision_id">2630</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2631</field>
+		<field name="revision_id">2631</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2632</field>
+		<field name="revision_id">2632</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2633</field>
+		<field name="revision_id">2633</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2634</field>
+		<field name="revision_id">2634</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1795</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2635</field>
+		<field name="revision_id">2635</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2636</field>
+		<field name="revision_id">2636</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2637</field>
+		<field name="revision_id">2637</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ס</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2638</field>
+		<field name="revision_id">2638</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2639</field>
+		<field name="revision_id">2639</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2640</field>
+		<field name="revision_id">2640</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2641</field>
+		<field name="revision_id">2641</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2642</field>
+		<field name="revision_id">2642</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2643</field>
+		<field name="revision_id">2643</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ע</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2644</field>
+		<field name="revision_id">2644</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ע</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2645</field>
+		<field name="revision_id">2645</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2646</field>
+		<field name="revision_id">2646</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2647</field>
+		<field name="revision_id">2647</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2648</field>
+		<field name="revision_id">2648</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2649</field>
+		<field name="revision_id">2649</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2650</field>
+		<field name="revision_id">2650</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2651</field>
+		<field name="revision_id">2651</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2652</field>
+		<field name="revision_id">2652</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2653</field>
+		<field name="revision_id">2653</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1851</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2654</field>
+		<field name="revision_id">2654</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2655</field>
+		<field name="revision_id">2655</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1995</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2656</field>
+		<field name="revision_id">2656</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2657</field>
+		<field name="revision_id">2657</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2658</field>
+		<field name="revision_id">2658</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1808</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2659</field>
+		<field name="revision_id">2659</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2660</field>
+		<field name="revision_id">2660</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תש&quot;ן</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2661</field>
+		<field name="revision_id">2661</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2662</field>
+		<field name="revision_id">2662</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2663</field>
+		<field name="revision_id">2663</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2664</field>
+		<field name="revision_id">2664</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1818</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2665</field>
+		<field name="revision_id">2665</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקע&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2666</field>
+		<field name="revision_id">2666</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2667</field>
+		<field name="revision_id">2667</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2668</field>
+		<field name="revision_id">2668</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1856</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2669</field>
+		<field name="revision_id">2669</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2670</field>
+		<field name="revision_id">2670</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תשס&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2671</field>
+		<field name="revision_id">2671</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1787</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2672</field>
+		<field name="revision_id">2672</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1803</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2673</field>
+		<field name="revision_id">2673</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1784</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2674</field>
+		<field name="revision_id">2674</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1815</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2675</field>
+		<field name="revision_id">2675</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תשמ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2676</field>
+		<field name="revision_id">2676</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2677</field>
+		<field name="revision_id">2677</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1800</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2678</field>
+		<field name="revision_id">2678</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1804</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2679</field>
+		<field name="revision_id">2679</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1808</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2680</field>
+		<field name="revision_id">2680</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1817</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2681</field>
+		<field name="revision_id">2681</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1819</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2682</field>
+		<field name="revision_id">2682</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1825</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2683</field>
+		<field name="revision_id">2683</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1863</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2684</field>
+		<field name="revision_id">2684</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2685</field>
+		<field name="revision_id">2685</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1796</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2686</field>
+		<field name="revision_id">2686</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1835</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2687</field>
+		<field name="revision_id">2687</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2688</field>
+		<field name="revision_id">2688</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2689</field>
+		<field name="revision_id">2689</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2690</field>
+		<field name="revision_id">2690</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2691</field>
+		<field name="revision_id">2691</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2692</field>
+		<field name="revision_id">2692</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2693</field>
+		<field name="revision_id">2693</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2694</field>
+		<field name="revision_id">2694</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2695</field>
+		<field name="revision_id">2695</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">(?) תקנ&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2696</field>
+		<field name="revision_id">2696</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקפ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2697</field>
+		<field name="revision_id">2697</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2698</field>
+		<field name="revision_id">2698</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2699</field>
+		<field name="revision_id">2699</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2700</field>
+		<field name="revision_id">2700</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תר&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2701</field>
+		<field name="revision_id">2701</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תר&quot;ז</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2702</field>
+		<field name="revision_id">2702</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תר&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2703</field>
+		<field name="revision_id">2703</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2704</field>
+		<field name="revision_id">2704</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2705</field>
+		<field name="revision_id">2705</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2706</field>
+		<field name="revision_id">2706</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2707</field>
+		<field name="revision_id">2707</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תר&quot;ך</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2708</field>
+		<field name="revision_id">2708</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרכ&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2709</field>
+		<field name="revision_id">2709</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרמ&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2710</field>
+		<field name="revision_id">2710</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תר&quot;ן</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2711</field>
+		<field name="revision_id">2711</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרנ&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2712</field>
+		<field name="revision_id">2712</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2713</field>
+		<field name="revision_id">2713</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1795</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2714</field>
+		<field name="revision_id">2714</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1802</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2715</field>
+		<field name="revision_id">2715</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1808/09</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2716</field>
+		<field name="revision_id">2716</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1817</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2717</field>
+		<field name="revision_id">2717</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1831/32</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2718</field>
+		<field name="revision_id">2718</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1836</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2719</field>
+		<field name="revision_id">2719</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1837</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2720</field>
+		<field name="revision_id">2720</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1846</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2721</field>
+		<field name="revision_id">2721</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1848</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2722</field>
+		<field name="revision_id">2722</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1860-62</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2723</field>
+		<field name="revision_id">2723</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1861</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2724</field>
+		<field name="revision_id">2724</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1861</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2725</field>
+		<field name="revision_id">2725</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1875</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2726</field>
+		<field name="revision_id">2726</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1915</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2727</field>
+		<field name="revision_id">2727</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1974</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2728</field>
+		<field name="revision_id">2728</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">2001-2006</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2729</field>
+		<field name="revision_id">2729</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1993</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2730</field>
+		<field name="revision_id">2730</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2731</field>
+		<field name="revision_id">2731</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ע</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2732</field>
+		<field name="revision_id">2732</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2733</field>
+		<field name="revision_id">2733</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1744</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2734</field>
+		<field name="revision_id">2734</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1796</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2735</field>
+		<field name="revision_id">2735</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1826</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2736</field>
+		<field name="revision_id">2736</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2737</field>
+		<field name="revision_id">2737</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1855</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2738</field>
+		<field name="revision_id">2738</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרכ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2739</field>
+		<field name="revision_id">2739</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1884</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2740</field>
+		<field name="revision_id">2740</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרמ&quot;ח</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2741</field>
+		<field name="revision_id">2741</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרי&quot;א</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2742</field>
+		<field name="revision_id">2742</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תשמ&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2743</field>
+		<field name="revision_id">2743</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1995</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2744</field>
+		<field name="revision_id">2744</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תשנ&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2745</field>
+		<field name="revision_id">2745</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1997</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2746</field>
+		<field name="revision_id">2746</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1993</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2747</field>
+		<field name="revision_id">2747</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2748</field>
+		<field name="revision_id">2748</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ף</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2749</field>
+		<field name="revision_id">2749</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ה</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2750</field>
+		<field name="revision_id">2750</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2751</field>
+		<field name="revision_id">2751</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תשנ&quot;ג</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2752</field>
+		<field name="revision_id">2752</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1791</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2753</field>
+		<field name="revision_id">2753</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנ&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2754</field>
+		<field name="revision_id">2754</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1821</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2755</field>
+		<field name="revision_id">2755</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1869</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2756</field>
+		<field name="revision_id">2756</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקמ&quot;ט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2757</field>
+		<field name="revision_id">2757</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1869</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2758</field>
+		<field name="revision_id">2758</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1811</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2759</field>
+		<field name="revision_id">2759</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1849</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2760</field>
+		<field name="revision_id">2760</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2761</field>
+		<field name="revision_id">2761</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1840</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2762</field>
+		<field name="revision_id">2762</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1844</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2763</field>
+		<field name="revision_id">2763</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1853</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2764</field>
+		<field name="revision_id">2764</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקנא</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2765</field>
+		<field name="revision_id">2765</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2766</field>
+		<field name="revision_id">2766</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1840</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2767</field>
+		<field name="revision_id">2767</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1844</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2768</field>
+		<field name="revision_id">2768</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1853</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2770</field>
+		<field name="revision_id">2770</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2771</field>
+		<field name="revision_id">2771</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1840</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2772</field>
+		<field name="revision_id">2772</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1844</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2773</field>
+		<field name="revision_id">2773</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1853</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2775</field>
+		<field name="revision_id">2775</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2776</field>
+		<field name="revision_id">2776</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1840</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2777</field>
+		<field name="revision_id">2777</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1844</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2778</field>
+		<field name="revision_id">2778</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1853</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2780</field>
+		<field name="revision_id">2780</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקסט</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2781</field>
+		<field name="revision_id">2781</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1840</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2782</field>
+		<field name="revision_id">2782</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1844</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2783</field>
+		<field name="revision_id">2783</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1853</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2784</field>
+		<field name="revision_id">2784</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1813</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2785</field>
+		<field name="revision_id">2785</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1812</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2786</field>
+		<field name="revision_id">2786</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1802</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2787</field>
+		<field name="revision_id">2787</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1807</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2788</field>
+		<field name="revision_id">2788</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1816</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2789</field>
+		<field name="revision_id">2789</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1825</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2790</field>
+		<field name="revision_id">2790</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1827</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2791</field>
+		<field name="revision_id">2791</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1828</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2792</field>
+		<field name="revision_id">2792</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1832</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2793</field>
+		<field name="revision_id">2793</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1838</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2794</field>
+		<field name="revision_id">2794</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1842</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2795</field>
+		<field name="revision_id">2795</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1850</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2796</field>
+		<field name="revision_id">2796</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1802</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2797</field>
+		<field name="revision_id">2797</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1807</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2798</field>
+		<field name="revision_id">2798</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1816</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2799</field>
+		<field name="revision_id">2799</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1825</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2800</field>
+		<field name="revision_id">2800</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1827</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2801</field>
+		<field name="revision_id">2801</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1828</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2802</field>
+		<field name="revision_id">2802</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1832</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2803</field>
+		<field name="revision_id">2803</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1838</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2804</field>
+		<field name="revision_id">2804</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1842</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2805</field>
+		<field name="revision_id">2805</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1850</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2806</field>
+		<field name="revision_id">2806</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1802</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2807</field>
+		<field name="revision_id">2807</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1807</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2808</field>
+		<field name="revision_id">2808</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1816</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2809</field>
+		<field name="revision_id">2809</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1825</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2810</field>
+		<field name="revision_id">2810</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1827</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2811</field>
+		<field name="revision_id">2811</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1828</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2812</field>
+		<field name="revision_id">2812</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1832</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2813</field>
+		<field name="revision_id">2813</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1838</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2814</field>
+		<field name="revision_id">2814</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1842</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2815</field>
+		<field name="revision_id">2815</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1850</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2816</field>
+		<field name="revision_id">2816</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1796</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2817</field>
+		<field name="revision_id">2817</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקס&quot;ו</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2818</field>
+		<field name="revision_id">2818</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;ע</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2819</field>
+		<field name="revision_id">2819</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1818</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2820</field>
+		<field name="revision_id">2820</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1827</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2821</field>
+		<field name="revision_id">2821</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תק&quot;צ</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2822</field>
+		<field name="revision_id">2822</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תקצ&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2823</field>
+		<field name="revision_id">2823</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תר&quot;כ</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2824</field>
+		<field name="revision_id">2824</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1866</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2825</field>
+		<field name="revision_id">2825</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">תרל&quot;ב</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2826</field>
+		<field name="revision_id">2826</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1874</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2827</field>
+		<field name="revision_id">2827</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1875, תרל&quot;ד</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2830</field>
+		<field name="revision_id">2830</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1879</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2831</field>
+		<field name="revision_id">2831</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1883</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2832</field>
+		<field name="revision_id">2832</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1890</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">edition</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2833</field>
+		<field name="revision_id">2833</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_edition_year_value">1912</field>
+		<field name="field_edition_year_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

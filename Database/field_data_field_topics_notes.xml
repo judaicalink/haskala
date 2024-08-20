@@ -1,0 +1,2544 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_topics_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_topics_notes_value" type="varchar(2047)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_topics_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_topics_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="187" avg_row_length="876" data_length="163840" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:11" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 187 (field_topics_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_topics_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1961</field>
+		<field name="revision_id">1961</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">עמ' 73: Supplement. מציין כי לדעתו כל העיסוק בשאלה שהציגה האקדמיה מיותר. &quot;למה צריך כל כך הרבה דיבורים כדי להוכיח שהיהודי הוא אדם, ושאין זה צודק להעניש אותו מאז לידתו על vices אמיתיים או suposees qu'on reproche a d'autre homes avec lesquels il n'a rien de commun que la croyance?</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1974</field>
+		<field name="revision_id">1974</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">Es handelt sich um eine Sammlung polemischer Witze und Anekdoten über Juden und über den Umgang mit Juden im Geschäft und Alltag. Teilweise werden die erwähnten Personen mit Namen erwähnt, teilweise nicht.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1981</field>
+		<field name="revision_id">1981</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמתו מתייחס וייזל לגבולות התבונה האנושית - אין ביכולתה להבדיל באופן מוחלט בין אמת ושקר (להוציא בתוחם המתמטיקה).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1993</field>
+		<field name="revision_id">1993</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בנושא של שימוש השפה העברית בתפילה היהודית. הגנתו על העברית איננה קיצונית, אך הוא מתנגד להצעה לבטל את השימוש בעברית ומדגיש כי לימוד השפה - תנאי לשימושה בתפילה - לא פוגעת במילוי חובותיהם של היהודים כלפי המדינה.
+המחבר מצהיר בפתיחת הספר כי כוונתו לסתור את טענותיו של מחבר ספר אחר שיצא בברלין:
+Ueber die, durch die neue Organisation der Judenschaften in den Preußischen Staaten nothwendig gewordene Umbildung
+לפי מ' בראן (בחיבור על אגודת הידידים בברסלאו, עמ' 17), מדובר בחיבור שפרסם דוד פרידלנדר בעקבות הצו משנת 1812 בו קרא לרפורמה קיצונית של הפולחן, כולל הזנחת העברית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1995</field>
+		<field name="revision_id">1995</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">שיר המפאר את הצלחתו של המלך פרידריך וילהלם בקרב, שחרור פוזן ודאנציג ועזרתו ליהודים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2000</field>
+		<field name="revision_id">2000</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לגבי נושא החינוך, הנושא בא לידי ביטוי כבדרך אגב (עד כמה שיכולתי להתרשם מעיון מהיר בספר). כך למשל באחת ההערות מציין פירת:
+Bei dieser Gelegenheit kann ich nicht unterlassen, zum Besten der Menschheit anzumerken, daß manche Eltern und Lehrer ihre Kinder und Untergebene durch Schläge züchtigen, welches sehr oft mehr um ihren Zorn auszulassen geschieht als um die GezÜchtigten zu bessern, welches diesen mehr schadet als nützet. Selbst die neueingeführte Strafe, z.B. an den Thüren lange stehen zu lassen, muß mit großer Bahutsamkeit, und nach dem Temperament des Kindes geschehen, weil es sich darüber oft so grämt, daß es in eine Krankheit verfallen kann.&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">מטרת הספר ללמד את הקוראים את כללי הקריאה (והכתיבה) ב&quot;יידיש-דויטש&quot;.
+על הקושי במלאכה הוא כותב בהקדמה:
+&quot;...ich zuvörderst freymüthig gestehen muß, daß es für die ersten Erfinder dieser Schreibart, ungeachtet sie meine Religionsverwandten waren, entweder zu gerigfügig schien, um die dazu erforderlichen Regeln fest zu setzen, weil sie nur für Juden schreiben wollten, welchen es gleichsam von der zarten Jugend an, durch oberflächliche und unzulängliche Anweisung von ihren Eltern oder Verwanden [sic] beygebracht wird, oder das Unternehmen vielleicht für zu schwer hielten, die Jüdischdeutsche Schreibart nach grammatikalischen Grundsätzen gehörig ans Licht zu bringen, indem diese Schreibart nicht reichhaltig genug ist, um jeden einzelnen Buchstaben im Alphabet den bestimmten und einfachen Namen beyzulegen, wie in andern Alphabeten der Fall ist. Die damalige Erfinder dieser Schreibart mussten daher die weitere Auskunft und Verdreitung derselben der Nachwelt überlassen.&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי הצהרתו של המחבר בפנייתו להוים בתחילת הספר, כוונתו היא:
+
+[eine] unparteyische und wahrhafte Schilderung des politischen und moralischen Zustandes meiner Glaubensgenossen, in den königl. Preussichen Staaten, eines gnädigen Blickes zu würdigen.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2018</field>
+		<field name="revision_id">2018</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל שלושה מכתבים, שניים מאת ונאובן ואחד מאת קולקוהון, בעניין הסדרה בחוק של התמיכה בעניי הקהילה היהודית. ונאובן כולל בטיעוניו, בין היתר, רעיונות שהושמעו בגרמניה בעניין &quot;תיקון&quot; היהודים (בעיקר ההיסטוריזציה של מצבם הירוד ושלילת הנימוק כי &quot;פגמיהם&quot; של היהודים נובעים מ&quot;טבעם&quot; או מחינוך לקוי). כפתרון לבעיית העוני הגוברת, הוא מציע הקמת מוסד לחינוך ילדי העניים משני המינים ומוסד לטיפול בחולים, בתמיכת הממשלה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2025</field>
+		<field name="revision_id">2025</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בתום שיר הקינה לזכרו של ר' יעקב עמדן, מקדיש שלמה דבנא כשני עמודים לדיון בענייני לשון ודקדוק. בין היתר, הוא מסתמך על דברי עמדן עצמו.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2027</field>
+		<field name="revision_id">2027</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר הוא ספר תודה לפרידריך וילהלם השלישי שחזר בשלום לביתו מן המלחמה (מופיע בשער הספר ובעמ' 8 בחלק שבעברית)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2041</field>
+		<field name="revision_id">2041</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הכותב משבח את עולמו של האל, ובמיוחד את התקופה והמקום שבו הוא חי וזכה ליחס חיובי מצד השלטונות</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2053</field>
+		<field name="revision_id">2053</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">פונה אל אחיו היהודים, לרגל צו מלכותי להקים קונסיסטוריה יהודית בווסטפלן.
+
+מבקש להבהיר את מהות הדבר, כדי להסיר דאגות מלבבותיהם. להסביר מה זה קונסיסטוריה.
+
+מדבר על הקשר בין הקמת מוסד זה לבין תיקונים/שינויים בדת.
+
+תומך במאבק נגד דעות קדומות בדת, נגד &quot;תוספות&quot;/המצאות daß sie eine Erfindung des Eigennutzes, des Priesterbetrugs, des bloßen Zufalls, des blinden Vorurtheils sind...
+
+חשוב להסיר דברים שאינם מאפשרים לקיים חובות אזרחיות.
+
+מבקר מצד אחד Aberglaube und dummheit, אך מצד שני מבקר לא פחות Unglauben und Spötterei. מדגיש חשיבות של הכרת תולדות העם היהודי, הדת היהודית וכו'.
+
+Und worin liegt in allen diesen, in der Verachtung der Religion, in den moralisch fehlerhaften Sitten der Grund? Gewiß in einer zwecklosen Erziehung, da unsre Genossen auf die Bildung des Herzens und Verstandes ihrer Kinder nicht achten; da sie einzig und allein für die mechanische Beobachtung der Zeremonialgesetze mit der ängstlichsten Sorgfalt wachen, ohne ihnen die eigentliche Bedeutung, den wahren Sinn und den Zweck dieser Zeremonien zu erklären;  etc. etc…
+
+Was Wunder daher, wenn unsre weibliche Jugend, die in Ansehung der Religion ganz vernachlässiget wird, statt an heiligen Ruh- und Festtagen sich in Gotteswort zu erbauen, der Sucht der Romane und andrer Sitten verderbender Bücher ohne die geringste Auswahl ergeben, und Alles mit heißer Begierde verschlingen, was nur ihre Sinnlichkeit reizen und ihre Einbildungskraft nähren kann. (p. 25)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">וייזל מנתח &lt;ins&gt;תכונות אנושיות&lt;/ins&gt;, את אופיים של בני אדם שונים, ומשווה מידות מבחינת ערכן &lt;ins&gt;המוסרי&lt;/ins&gt;. הוא מתבונן ב&quot;חדרי נפש האדם וכחותי' הרבים&quot; (עמ' 22), ומנתח &quot;מה הן המדות הפרטיות המיוחדות ביותר למושל באדם, ושהמלך צריך להתנהג בהן&quot; (שם).
+
+הוא משבח את המלך פרידריך השני על כך ששילב גבורה עם ידע, והדגיש את מאמציו של המלך לרכוש השכלה: הוא &quot;השתעשע להתהלך לרוח שכלו הטוב בגן החכמה, לאסוף פרי דברי תבונות&quot; (עמ' 18).
+וייזל עוסק גם בתכונות מלכי ישראל הראשונים ומה ציוה להם ה'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בתחילת החיבור מציג המחבר 5 שאלות שקשורות לשיפור מעמדם של היהודים במדינה, ומבקש לענות עליהן. השאלות: האם זה מתפקידה של המדינה לשפר את מצבם של היהודים, האם הדבר יועיל למדינה, באילו אמצעים ניתן לעשות זאת, האם יש להשתמש באמצעי כפייה, האם זכות האזרחות מגיעה רק לחלקו הנאור של העם היהודי.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">קורא &quot;להניח את החרבות&quot;. &quot;הזניחו ולא תעלו ולא תילחמו השיבוה אלי תערה... בכו עמי למיתתו ואל תחרישו והילילו ליום צרה ואל תדומו&quot;. &quot;נתיב עשה וגם דרך בים החכמה.&quot;
+בנוסף לשיר הקינה, ישנו בעקבותיו דיון על ענייני דיקדוק ומליצה, כולל נימוקים לבחירות שעשה בשימוש המילים. הוא סותר דברים של מדקדקים קודמים, כגון זלמן הענא וכותב: &quot;כל מקום שיצא ר' זלמן הנ&quot;ל או אחרים כמוהו לידון בדבר החדש ולחדש גזיקרו'....ובכח דקדוקם להסירן מגבירות, ולשום תחתיהן אחרות, אין לשמוע אליהם רק להשליכן על פני החוץ והיו לברו.&quot; לעומת זאת, משבח את דעותיו של ר' יעקב עמדן באותם נושאים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2076</field>
+		<field name="revision_id">2076</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">תנ&quot;ך - ספר איוב</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2077</field>
+		<field name="revision_id">2077</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המכתבים נותנים מבט על חייו הפרטיים של מנדלסון, דאגותיו לגבי ילדיו (בנושאי חינוך, נשואין), תחושותיו ועמדותיו בנוגע לויכוחים הנודעים שבהם היה מעורב עם הוגים ואנשי דת נוצרים ועל תחושותיו. הם עוסקים גם בחיבורים שמנדלסון כתב והויכוחים שהם עוררו.
+בין היתר, באגרות מנדלסון דן בסיבות שבעטיין נמנע מלבקש הסכמות הרבנים עבור &quot;נתיבות השלום&quot; (עמ' ה' והלאה)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2078</field>
+		<field name="revision_id">2078</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמה מתאר המחבר את סיפרו כעוסק ביצר הרע והמסית - בדמות געל בת מלך רעל, למול היצר הטוב וידיעת החכמה - בעלה ירובעל.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">נושא חשוב בספר: גורלם של עשרת השבטים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2080</field>
+		<field name="revision_id">2080</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">סטנוב מנתח דקדוק של מילים בעברית, ומציג סיפורים מוסריים שונים, למשל, סיפור על מלך הודו שהעדיף עובדי עבודה קשה על פני משורר שמפאר אותו (דף ג', ללא מיספור), וסיפור על כפרי ששמע פעם ראשונה בחייו עוגב, והחליט לחטוב עץ כדי לייצר לו כלי נגינה אבל לא הצליח לנגן היטב, אך גם לא הצליח יותר לעבוד בעבודות הכפר כמקודם (דף לד'-לה').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2081</field>
+		<field name="revision_id">2081</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לאגרון מטרה מוסרית חינוכית:
+&quot;למען חנוך לנער ע&quot;פ דרכו שיוכל לברר דבריו ומחשבותיו בכתב ולשון בסידר נכון.&quot;
+דף [ד'].
+אחר האגרת מופיעים טקסטים בגרמנית באותיות עבריות בלבד העוסקים במלאכת כתיבת מכתבים, הכנת דיו שחורה ואדומה, הנוצה (פעדר) הטובה לכתיבה, חשיבות דרך הישיבה (&quot;ערשטליך מוס דיא היה דעס שטוהלז מיש דער היה סעס שרייב טישז אין זאלכם ער האלטניזשטיהן...&quot;) (דף יח'), כללי הכתיבה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2083</field>
+		<field name="revision_id">2083</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לגבי אקולטורציה וחילון - ראו מבוא לספר (בחלון מבנה הספר בשדה &quot;מבוא&quot;). ראו עוד באצבע חלון &quot;קהל יעד&quot;.
+
+הספר כולל ערכים הסדורים אלפבייתית מא'-ל' של מילים בעברית, שלהם מובא פירוש בגרמנית, ולצידו דיון במבנה הדקדוקי של המלה ולעיתים הפנייה למקומות בהם היא מופיעה בכתבי הקודש.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2084</field>
+		<field name="revision_id">2084</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל ערכים הסדורים אלפבייתית מל'-ת' של מילים בעברית, שלהם מובא פירוש בגרמנית, ולצידו דיון במבנה הדקדוקי של המלה ולעיתים הפנייה למקומות בהם היא מופיעה בכתבי הקודש.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל ערכים הסדורים אלפבייתית מא'-ל' של מילים בגרמנית באותיות עבריות, שלהם מובא פירוש בעברית ומילים נרדפות בעברית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2091</field>
+		<field name="revision_id">2091</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בתפילה מופיעים גם קטעים מתוך ספר תהלים</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2094</field>
+		<field name="revision_id">2094</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">שירים שונים:
+&quot;החקים והמשפטים אשר יעשה אותם האדם וחי בהם&quot;
+&quot;על בחורי חמד לבושי מכלול העוזבים ארחות יושר&quot;
+&quot;קול חתן&quot;
+&quot;וקול כלה&quot;
+&quot;ביום הבכוררים, בהקריב ספר התורה מנחה חדשה לי&quot;י&quot;
+&quot;על הרופא הנופל שדוד ברשת האהבה&quot;
+וכו'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2097</field>
+		<field name="revision_id">2097</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">על הרב יחזקאל לנדאו אומר: &quot;אתה ידעת כי התורה והחכמה אשה אל אחותה משולבות יחד... ידעת כי אחיות תאומי בטן תורה, חכמה, דעת. יען מנפש אחת מקורם נובעת.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2106</field>
+		<field name="revision_id">2106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר משווה בין השפה העברית לשפות אחרות: צרפתית, איטלקית ואנגלית. לאורך הטקסט הוא דן בשמות עצם שונים בעברית, כלומר, זהו ספר העוסק במבנה הלקסיקאלי של העברית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בפרק הראשון כלול סעיף העוסק ב&quot;ששת ימי הבריאה&quot; (עמ' 20-22).
+
+בפרק השלישי העוסק בחכמי יוון, מובאים סיפוריהם של האישים הבאים:  טאלי, סולון, פיטאק, ביאס, חילא, קליבולו, אנחרזי, הירקליט, ענקסיגור, דימוקריט, סוקרט, פלטו, אנטיסטין, אריסטפו, אריסטוטליס, סינוקרט, דיוגינוס, קרטיס, פירו, ביאן, אפיקורוס, צינו</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2109</field>
+		<field name="revision_id">2109</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">על אסטרונומיה: בעמודות 39 והלאה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2113</field>
+		<field name="revision_id">2113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בשני עמודיו, החיבור מדגיש את פועלו של איצק בן דניאל יפה, את קשריו עם מלך ושרים והתועלת המופקת לעם כולו מכך, תרומתו להקמת בית חינוך נערים, וכו'. גם את פועלו של דוד פרידלענדר &quot;לעשות טובה לישראל&quot;. הפועלים מברכים את שניהם לכבוד השנה החדשה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2114</field>
+		<field name="revision_id">2114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר טוען בהקדמה כי סיפור בת-יפתח הוא סיפור נשכח, ומטרתו לגאול אותו משכחתו. לטענתו, מדובר בסיפור מוסרי, והוא בנה סביבו סיפור בדיוני והניח דברים בפי הדמויות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2115</field>
+		<field name="revision_id">2115</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בחלקו הראשון הספר עוסק בתיאור הזנים השונים של בני האדם במקומות שונים, מתוך גישה ארופצנטרית מובהקת, וניכרת השפעה של התפיסה הפוליגנטית. בעמוד שלאחר השער מתאר המחבר את פראי האדם באיזורים השונים ומפיק מכך לקח אמוני: &quot;עמוד והתבונן נפלאות אל. בראותינו אנשים היוצאים מגדר בני אדם... מי לא ידע כל אלה כי יד ה' עשתה זאת למען הרחיקם מעל גבולינו ולא תנוח שבט הרשע על גורל הצדיקים&quot;. בהמשך הוא מתאר בפרוטרוט את זני האדם במקומות השונים. לדוגמה, על תושבי מצריים הוא אומר כך:
+
+&quot;המצריים המה בטבעם, עצלנים ובעלי עצבו. וכל היום אינם עושים רק שותים (קאוע) וכאשר נביט אל כל המדינות אשר תחת השמש נמצא כי יושבי הגלילים הצפוניים שבארץ (מגאל) ופרס. ואנשי ארמניא. ותורקי. גרגשי. וכל מדינות אירופאי המה הלבנים והיפים שבכל הארץ:&quot; (דף ד').
+
+המחבר אימץ את תורת האלקימים וטוען כי: &quot;האלקים ברא את האדם ישר להיות בגן עדן אלקי' מקום ממוזג מקור וחום. מזון פירות היו מאריכין ימיו. ועליהו לתרופה. והוא בקש חשבנות רבים ונטרד ממקום קדוש וכאשר הפיץ ה' אותם על פני כל הארץ ובחרו להם כל א' אקלים א' ופרו ורבו שמה נשתנו בינהם במראה וקומה ומדות לפני טבע האקלים ולפי הנהגת המזון כי מצאו ראינו במדינה אחת אותן היושבים בכפרים המה גסים ועבים בטבעם וזיו פניהם משונה מאותן הדרים בעיר. ולפי שהתפזרו בארץ כל א' בחר לו מזון אחר ומנהג אחר. ואויר אחרת. לכן נשתנו זיו פני בניהם וקומתם כמ&quot;ש ר&quot;זל משנטרד אדם מג&quot;ע נתמעט קומתו ונשתנה זיו פניו ונחסר ממנו ששה דברים&quot; (דף י'). 
+עמוד אחד מוקדש ל&quot;ממשלת האדם על בעלי חיים&quot; - תיאור מקוצר של עולם החי, עם דגש על שליטת האדם בעולם זה, מתוך גישה תועלתנית (דף י'). 
+
+חלקו האחרון של הספר מביא תיאורים של ערים גדולות בעולם: מוסקבה, ריגא, פאריז, רומא, טוניס, אלסנדריה, מקסיקו, אמסטרדם ועוד. בעמוד שלאחר השער מתאר המחבר את פראי האדם באיזורים השונים ומפיק מכך לקח אמוני: &quot;עמוד והתבונן נפלאות אל. בראותינו אנשים היוצאים מגדר בני אדם... מי לא ידע כל אלה כי יד ה' עשתה זאת למען הרחיקם מעל גבולינו ולא תנוח שבט הרשע על גורל הצדיקים&quot;.
+
+לאורך הספר משתדל המחבר להראות כי הידע המוצג בו היה מוכר לרז&quot;ל. למשל, הוא כולל בין הערים הגדולות את &quot;קעלין&quot; שעל גדות הריין, ובהערת שוליים מביא את המקום בו היא מוזכרת בגמרא (דף יא').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2117</field>
+		<field name="revision_id">2117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">נושאים בהם נוגע: פעולת השכל, מלאכת השיר, החתן והכלה.
+
+לעיתים תכופות מופיעות מילים כגון: אור השמש, ניצוצות, אור; שכל (אני הוא &lt;strong&gt;השכל&lt;/strong&gt; [כך] המדבר; ילידי &lt;strong&gt;השכל&lt;/strong&gt; [כך] הפועל בחושים)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2121</field>
+		<field name="revision_id">2121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הטקסט עוסק בהפרדות של קהילת המבורג-אלטונה, בשל שינויים מדיניים-פוליטיים. שליט המבורג זוכה לברכות:
+&quot;והנה אדוננו מלכנו הצדקי הטיב עמכם אנשי האמבורג, מאוד מאוד, לכן משועבדים אלתם גם עתה לתת לו תודה, אף בסור ממשלתו מכם...&quot; (עמ' טז').
+
+וכן -
+
+&quot;הנה זה ארחת צדיק ודרך איש ישר, הוא אדוננו המלך פרידריך יר&quot;ה, כשמו כן הוא, אוהב שלום ורדף מישרים, ואחז דרכי אבותיו הרמים, שכלם היו יראי ה'... הוכרח מלכנו הצדקי להסיר קו השיוויו, ולהתקשר בקשר אמיץ עם הקיסר נפוליאן הגדול, זה גבור חיל, כי אף שהגדיל מאוד גבר ידו ועושה חיל מכל אשר לפניו , בכל זאת יותר מזה חכמתו עמדה לו, וחכם עיניו בראשו, ומכיר גם חכמת מלכנו, ישרו ותום לבבו...&quot; (עמ' יג').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2123</field>
+		<field name="revision_id">2123</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בספר מוצג ויכוח בין מלך &quot;ממלכי ארצות המערב עם שר צבאו והגמוניו ויהודי ויתר האנשים הלוים בזה הוויכוח, ...&quot; (דברי המעתיק, דף ד').
+סיפור המסגרת: רופא המלך היהודי מרגל עבורו ומסייע לו לנצח במלחמה. המלך מעריך אותו מאוד, אך ההגמון שלו טוען כי המלך צריך להעביר את היהודים על דתם, וכך יזכה להיות &quot;נגיד על עמים רבים ויכלת עמוד על ממלכתך לאורך ימים (דף ו'). מתפתח ביניהם ויכוח פילוסופי על מהות האמונה, והיהודי נקרא להשתתף בו.  הוויכוח עוסק בשאלת השילוש הקדוש, בין אמונה לידיעה, הישארות הנפש, שתיית דם כחלק מפולחן יהודי וכד'. בדיון יש התייחסות לענייני מדע (למשל, דף יב' - משקל סגולי וחשמל. חינוך מודרני וללימוד מדעים - דף מז' והלאה). המלך מסכם את הוויכוח שהחלטה שכל איש באמונתו יחיה (דף לט', מ'). מוצגת תוכנית ללימוד עברית  דרך תרגומים ומושמעת טענה כי הדבר מסייע לעיתים, כן יש גם הנחיות ללימוד ספרות יהודית מסורתית (דפים י'-יג'). עוד מושמעות דעות שר הצבא, מומר, ריע המלך. שר הצבא סבור כי סיבת השנאה ליהודים בשל כך שנמנעים מלהעסיק אותם במלאכות כגון, גננות, כלכלה והנדסה וכך הם רחקו ממלאכות אלה (&quot;על כן רחקו היהודים מלמדו אלה החכמות המביאות לידי מעשה במלאכת חרש וחושב... על כן צמחה השנאה ופרחה האיבה בינם ובין החכמה...&quot;, דף מג').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2124</field>
+		<field name="revision_id">2124</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר ממשיך את הסיפור המופיע בחלק הראשון. אשת המלך יולדת תאומים. התאומים בעלי סגולות מיוחדות כבר מלידתם: הראשון בהם ירא ה' ושמו &quot;יראיה&quot;, והשני - חכם ושמו &quot;תחכמוני&quot;. מגלי העתידות צופים שיהיו נתונים בוויכוח תמיד (יתווכחו, אך לא ילחמו). תחכמוני מתעניין בפילוסופיה, והולך את &quot;הפרסים ואל הישמעאלים המתבודדים פה&quot; (דף ד') כדי לשמוע על עניני אמונתם. הוא מנהל דיון עם אחיו על הדת היהודית, במהלכו הוא טוען כי הדת היהודית היא זו היסודית &quot;בני ישראל שהם בעלי הדת האלהיית... כי הם ראשית גוים בעלי דתות ושורש דבר נמצא בם...&quot; (דף ד'). הם משתפים בשיח את &quot;לוי&quot;  -- יהודי חכם ומתבודד. לוי מסביר להם את תורת האלוהות היהודית:מהות האל, האל כמהות הטוב, החכמה כשמש המפיצה אור, פעולות הטבע למול ניסים, חשיבות לימוד כתבי הקודש בעברית ולא מתרגומים שונים, והיותה של הדת היהודית שורש החוכמות. יראיה מקשה לגבי המצוות המעשיות וטיבן, ומקבל הסבר מלוי על תפקידן. האחים מחליטים להתגייר ועוברים ברית מילה (דף יז'). הדיון על מהות הדת היהודית ממשיך אח&quot;כ בין האחים לבין &quot;הרב&quot; - חכם יהודי שנמצא בקרבת מקום ונקרא אליהם. הם רואים שהוא מתנועע בתפילתו ותמהים על כך, ואילו הרב מסביר להם שכך מבטא הגוף את התפילה, ואין לבוז ליהודים על כך. אח&quot;כ הם עוסקים בשאלות של בריאת היקום, הבריאה כפי שמותארת במקרא הסותרת את ההגיון (יום א' - אור; יום ד'-בריאת המאורות, דפים כג'-כד'), התורה כמשל, אנטומיה של גוף האדם (מערכת העצבים והדם), החושים והתבונה, סדר לימוד האדם - קודם לימוד המדות, חכמת הטבע ולבסוף בתורת האל (למודיות, טבעיות, אלהיות (דף מו'), ומותר האדם מן הבהמה (הבדלים בין האדם לבע&quot;ח שמתבטאים בעיקר ביכולת הדיבור , דפים מט'-נ'), הטבע כמבטא את דרכי האלוהים, היריאה כקודמת לחכמה. הוא מונה ענפי מדע מודרני רבים (דף נט'), קבלה,  ויוצא כנגד אלה השונאים את החכמה. לבסוף &quot;סוגר&quot; המחבר את סיפור המסגרת: המלך זקן ונוטה למות וממנה את נאמניו למלוך אחריו - אך אין טעם לדעתו להעתיק את שאר הדברים, כי העיקר הוא הוויכוח העוסק ב&quot;המדרש לאלהים&quot; (עמוד אחרון).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2126</field>
+		<field name="revision_id">2126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">&quot;יהודי המזרח/יהודים ספרדים&quot;: וייזל משווה בין השכלתם ושליטתם בשפות לועזיות, לבין אלה של יהודי אשכנז (למשל, עמ' [4], [27]).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2129</field>
+		<field name="revision_id">2129</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בדרשה נישאים דברי שבח למלך פרידריך:
+&quot;אבל גדול מכולם שמו, זאת אמירה נעימה ...ראו מה פעל ועשה פרידריך, עת שמוהו הברקי' כמטרה לחציהם, וימררו ורובו אחור וקדם, הלא שמר את דרך ה', כאשר יאות למלך גדול, נשא על שכמו משאת המלחמה לבדו, ותמיד קל מהר חש לעזרתנו... (דף 11).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">זהו &lt;ins&gt;ספר מוסר&lt;/ins&gt; הנובע כביכול מתרבות המזרח, וליתר דיוק מכתביו של חכם הודי עתיק. למעשה הוא מציג את רעיונותיו &lt;ins&gt;הדאיסטים&lt;/ins&gt; של מחבר אנגלי בן תקופתו של ונאובן (ראו חלון &quot;תרגום&quot;). 
+
+לפי השערותיו של ונאובן בהקדמתו, ייתכן כי כל החכמה הזו לא נובעת אלא מן היהדות עצמה: &quot;כאשר חטא ישראל ונגלה מעל אדמתו... חכמת חכמיו ובינת נבוניו תסתר בגנזי אוצרותם ובחדרי משכיותם כל הגוים ללשונותם מילידי הר&quot;פה העתיקו מהם מלין ונקראו על שמם ומאלה נפוצו על פני כל הארץ בלשון אחרת ידברו ובלעגי שפה הלא נודע כי באו אל קרבנה מילדי העברים כאשר ישפוט הקורא בזה הספר אשר העתקתי...&quot;
+
+אחד הפרקים עוסק בהתנהגות ההולמת את &lt;ins&gt;הנשים&lt;/ins&gt;, וביחס ההולם של &lt;ins&gt;הבעל כלפי אשתו&lt;/ins&gt;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ראו אצבע &quot;קהל יעד&quot;.
+כמו כן: בהקדמתו לספר השלישי מבקש לוונשטם לפאר את השפה העברית &quot;היפה והברה&quot;, &quot;אם הלשונות&quot;. את הספר כתב &quot;למען יראו יביטו בוזי שמיך [ה'] כי אלמנת לשון עבר העניה הנתעבת עתה עוד רוח בה, עוד קמה היא וגם נצבה. ולמען הראות לעמך כי עוד לה הכח והגבורה להתיצב לפני מלכים לדבר לפני אלהים ואדם&quot;.
+הספר השלישי, הגיון לבב עברית, &quot;תהלת ה' ועזוזו מדברת/ תולדות אום עברית מספרת/ עד חרבן ציון היא אומרת/ ועל בניה מהר תפלל ושוררת...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המאמר של חביב עוסק בביאור משקל של השירים, הטורים, מבנה החרוז, סימני הניקוד וכד'. המאמר עזרי' (עזריה האדומי?? - צריך לבדוק), עוסק בהצדקת השירים העבריים, למרות שהם לא תמיד שומרים על מבנה קשיח של שיר, המקובל בספרות של עמים אחרים.יש לבדוק ולהשוות למהדורה מוקדמת יותר כדי לדעת עד כמה שינה הינדהים את מה שנמצא כאן. מצאתי רק שתי הערות שלו כ&quot;מגיה&quot; - בדף ו' ובדף האחרון של הספר שלא ממוספר. כמו כן, של צריך לבדוק שוב אם נכון רשמתי  ששירת ספרד היא אחד הנושאים של הספר = האם חביב נכלל תחת הגדרה של משוררי ספרד.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2141</field>
+		<field name="revision_id">2141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בנוסף לציון השרשים בשי&quot;ן שמאל הנמצאים בחמשה חומשי תורה, מביא המחבר את עיקרי הדקדוק בתמצית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2143</field>
+		<field name="revision_id">2143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">העורך והמביא לדפוס מתייחס רבות בהקדמתו לשיבושים שחלו בנוסח הטקסט של ברטנורה, בעיקר כתוצאה מכך שלא היה ברור מאיזו שפה נובעות מילים מסוימות: &quot;הלשונות נשתבשו עד מאד תחת ידי המדפיסים, וכאשר עיניכם תחזינה במישרים, ומרוב הימים והעיתים שונים נפלו בהם שנויים וחילופים רבים עד אין מספר. ולכן תמצא כשנים ושלשה מלות אשר אינם נעתקים על אשר נשתבשו כל כך עד אשר לא ידע החכם המעתיק לכוון המלה ההיא באיזה לשון הוא דובר. וכל מגמתו אך לפרש הדבר על בוריו ובראיות ברורות...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל הפטרות. כדי לרשום נושאים יש צורך לקרוא לעומק את הביאורים השונים שהוצמדו אליהם.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל הפטרות. כדי לרשום נושאים יש צורך לקרוא לעומק את הביאורים השונים שהוצמדו אליהם.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל הפטרות. כדי לרשום נושאים יש צורך לקרוא לעומק את הביאורים השונים שהוצמדו אליהם.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כולל הפטרות. כדי לרשום נושאים יש צורך לקרוא לעומק את הביאורים השונים שהוצמדו אליהם.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2149</field>
+		<field name="revision_id">2149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הינדהיים מציג דיון היסטורי בנוסח בקורת המקרא, במטרה לזהות את תקופת הפעילות של הפייטנים. כך למשל בערך &quot;ר' אלעזר הקליר&quot;, המחבר מתפלמס עם מי שסבור כי הקליר היה תנא, וטוען כי הוא &quot;... והקליר לא הי' לא תנא ולא אמורא ולא סבוראי ולא גאון&quot;. עמ' [3].</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2154</field>
+		<field name="revision_id">2154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בספר משתקף הרקע להקמת הקהילה החדשה באמסטרדם  (שנקראה &quot;עדת ישרון&quot;) בשנת 1797: המאבק בין קבוצה בתוך הקהילה היהודית לבין מנהיגי הקהילה, &quot;גבירים עשירים, שהיו בעלי שלטון אריסטוקראטי כמעט&quot; (מכמן, דוד פרידריכספלד, עמ' 152).  כך כתוב בתפילה בסיום, בעמוד [16]: &quot;כאשר תצילנו מיד שונאינו ומקנאינו אשר ירדפונו חינם עקב היתה רוח אחרת אתנו ואנחנו רמיה מאסנו ויושר אהבנו, והיה כי ישובו אל לבם וראו כי לא טובה עשו עמנו ובאו והתפללו אליך שא נא וסלח להם בשגם בשר המה. שגו וכשלו, פקח עיניהם והלכו באור פניך.&quot;
+הספר כולל מסר אוניברסלי של שלום בין העמים, על רקע הארועים בהולנד ובאירופה בכלל בשנות התשעים של המאה ה- 18. כך כתוב, שוב, לקראת סוף הספר: &quot;ברך את כל הארצות בשלום  והציל תציל את כל ילודי אשה מחרב נוקמת מחרב איש ברעהו, מחרב מלחמה. כי רבות צרות אנוש מאליהם, ואיש חסר לב ומשתגע יוסיף עוד נגעים על נגעיו. קרב נא את הימים אשר כל העמים יקראו בם בשם יי ונשאו שכם אחד לעבדו בלבב שלם...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2156</field>
+		<field name="revision_id">2156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הנושא של חידוש המליצה בשפה העברית הוא מרכזי עבור פרידריכספלד, גם בחיבור זה העוסק בוייזל. פרידריכספלד רואה בוייזל מעין &quot;גואל נאמן&quot; למליצה העברית. (עמ' יא)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2158</field>
+		<field name="revision_id">2158</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר בהקדמתו מבקר חלק מן הפרשנים הקודמים של ספר איוב, אשר הלכו בדרכים עקלקלות, &quot;להוציא הכתובים דברי אלהים חיים, ממשמעותם... הסבו עיניהם מדרך האמת&quot;. לעומתם מבקש הוא ללכת &quot;במישור ואראה על הכתובים כאשר המה אותם לפרש כפי משמעתם, לא אטה ימין ושמאל, ו&lt;ins&gt;לא ארצה לבאר בדרך דרוש רמז או סוד, כי אם בדרך פשוטו&lt;/ins&gt;, כי עודנו נעלם הוא מאנשי דורינו זה, ואחזיק בדברי חז&quot;ל, אין המקרא יוצא מידי פשוטו... ובכל מענה ומענה &lt;ins&gt;אבאר מלותיו ראשונה&lt;/ins&gt;. ולהרחבת ביאו' &lt;ins&gt;אבחר לשון העמים הידוע לנו&lt;/ins&gt;, ורחבת ידים עמנו, אין איש נעלם ממנו. ובתכלית המענה אעשה מסגרת טפח סביב, ואכלול אותו בכליל דבריו... ובכל מאמצי כחי אשוה את המשמעת עם הדרש שדרשו הם ז&quot;ל, שלא יסתרו זה את זה, וכל מה שלא אוכל אעזבנו על פשוטו...&quot;.
+באמצעות פרושו, מבקש המחבר, בין היתר, להנחיל את השפה העברית, ולשם כך הוא מביא לעיתים קרובות את פירוש המילים ה&quot;קשות&quot; בהן הוא משתמש, בגרמנית באותיות עבריות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2162</field>
+		<field name="revision_id">2162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהערותיו המפורטות לאחר השיר, מפנה המחבר אל מקור המלים ומסביר את מובנתם לקורא העברית. הוא מביא דוגמאות לשימוש שהוא עושה במלים, לעיתים קרובות מתוך ספרות קדומה יותר אך גם מתקופתו.
+התייחסות לאמצעי רפואה, עשבי מרפא: עמ' כ/א, כ/ב.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2165</field>
+		<field name="revision_id">2165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">מתייחס למוצאו ופועלו של בן סירא.
+כדברי בן זאב בהקדמה, הספר של בן סירא מדבר &quot;על כל המדות, הטובות והרעות, המהוללות והמגונות...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2167</field>
+		<field name="revision_id">2167</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">כפי שצוין בהקדמת המחבר, פפנהיים מבקש להבהיר ענייני לשון אשר לדעתו לא הובנו כראוי על ידי מתרגמי החומש ל'לשון אשכנז'. בחיבור זה מבקש הוא להראות את 'תפארת לשון עברי את גדלו ואת ידו החזקה בהנחת השרשים אשר יראה הרואה אותם מעטים בכמות ורבים באיכות... ויותר מה שהניעני, התרשלות המפרשים בבאור המלות המחברות (קאניונקציאנען) מעין מוצאם ומובאם מה ישמשו ואיך ישמשו וההבדלות שביניהם...'</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדשה לזאב וואלף (עמ' [1-2]), עוסק המחבר ביחסים בין אב לבן, וכן הוא עוסק בנושא חובות אב לבנו בהקדמה (עמ' [4]). בהקדמה ישנה גם התייחסות ליחסי מורים ותלמידים: ליחסי אב-מורה-בן: של דוד ועלי הכהן אל חפני ופנחס ואבשלום (עמ' [6-7]). המחבר מדבר בזכות החינוך למוסר באמצעות משלים, ולא באמצעות הפחדה (עמ' [7-8]). 
+
+משל המצפן (עמ' [68-71]) עושה שימוש בתכונות המצפן לתיאור המשיכה לתכונות מוסריות מול הדחייה מן התכונות לא-מוסריות, וגם - הצבעה על הכיוון המוסרי הנכון. בהקדמה מדקדק המחבר בידע המדעי, ומציג את התיאוריה המדעית הסותרת את זה המתוארת במשל  (עמ' [8-9]).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">כדברי פפנהיים בהקדמתו, חיבור זה &quot;מתעסק בהבדלת השמות הנרדפים המצויות בלשון הקדש&quot;.
+
+בהקדמה יש בין היתר עיסוק פילוסופי עם השפה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2177</field>
+		<field name="revision_id">2177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי תאורה של זהר, הספר עוסק בחלקו הראשון בבורא עולם (אחדותו, מציאותו, וכו'); בחלק השני עוסק בבריאה (פותח בתאור כדור הארץ וארבעת היסודות, וממשיך בגלגלים המקיפים את הארץ); החלק השלישי הוא תפילת האדם לבוראו, והוא מתאר את אפסותו ושחיתותו וכו'. (זהר, עמ' 57).
+בספרו מעודד בוכנר התבוננות עמוקה בטבע, השווה בערכה - כך לדעתו - לדרך הלימוד המעמיק בתורה, ולעיסוק המדעי. &quot;הטבע, התורה והמדע, מפרים את שכלו של האדם, מכוונים אותו להכיר דרך הטבע את מידותיו של הבורא, ודרכן הוא מגיע להכרת המידות של עצמו&quot;. (זהר, עמ' 72)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2178</field>
+		<field name="revision_id">2178</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר מבקר את אהרן וולפסון על הביאור שלו על ספר מלכים א' וב'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמתו מציין וולפסון כי בכוונתו &quot;דער נאציאן מיט לעבהאפ'טן פ'ארבען אנשויליך פ'ארצושטעללן, וועלכ'ע איבלע פ'אלגען, דער שטרענגע פ'אנאטיסמוס אונד דיא הייכ'לייא אונטר דעם דעק-מאנטעל דער רעליגיאן איינר זייטס, אונד דיא פ'אלשע אדר אונעכ'טע אויפ'קלעהרונג אונזרר יעציגען מאדישן יוגענד, נעבסט דער פ'עהלרהאפ'טן ערציהונג דער קינדר אנדרר זייטס, הערפ'ארברינגן קעננן&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">כפי שאומר דובנא בהקדמתו, הוא רואה בהדפסה המחודשת של הספר שתי &quot;תועלות&quot;: האחת קשורה לתחיית העברית, השניה היא טיפוח החוש המוסרי.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2186</field>
+		<field name="revision_id">2186</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">השיר מביע את שמחתו של וייזל על כי מלך צרפת &quot;נתן דת לכבוד ישראל, בל יתנו עוד מכס נפשם בעשר&quot;. &quot;כה דבר המלך כה חק על ספר/ אל יתן יעקב עוד מכס בשער/ כמכס שור או שה בא אל מטבח/ רב יתרון האדם על בהמות יער&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2187</field>
+		<field name="revision_id">2187</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">שיר אחד מוקדש לדוד פרידלנדער על תרגומו של ספר התפילות (&quot;תפילות ישראל&quot;).
+השיר מהלל את פעילותו של &quot;איצק בן דניאל יפה&quot; בבית הדפוס חנוך נערים, לרגל הוצאת תרגום ספר התפילות ע&quot;י פרידלנדר.
+השיר השני מוקדש לאיצק בן דניאל יפה, על פעילותו בבית הדפוס חנוך נערים, לרגל הוצאת התרגום הנ&quot;ל.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2188</field>
+		<field name="revision_id">2188</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">השיר משבח את &quot;לודוויג י&quot;ו יר&quot;ה&quot; מלך צרפת &quot;כאשר נתן דת וחוק בל יעבור, לפטור את היהודים ממס בזוי מאוד, שהטילו עליהם בדוררות קדמוניות, לשלם מכס נפשם בשער&quot;.
+
+שיר אחר מאת וייזל על אותו נושא:
+&quot;לכבוד איש מהולל בשערים&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2190</field>
+		<field name="revision_id">2190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי הצהרת המחבר בפתח דבריו, הוא בא להציג כאן כללי לשון, &quot;אשר לא ימצאון בכל ספרי הלשון הנודעים לי&quot; (עמ' 1/א). לקראת סוף הספר הקצר הזה, הוא מציין: &quot;ויתר כללי הלשון, ומשפטי הנקודות והתנועות, ו___ השמות והפעלים לכל פרטיהם ומחלקותם, הלה הם כתובים על ספרי הדקדוק המצויים ביד כל אדם, ואין צורך לכפול הדברים בלהג הרבה.&quot; (עמ' 16/א)
+כאן מוסיף המחבר הערה הנוגעת לחינוך הילדים: &quot;וראוי לתנוקת של בית רבן ללמוד הדרכים ההם בבית הספר, כי אם תחנך את הנער הקטן לאט ותרגילו יום יום ללכת בהם, ילמדם במעט עמל: ותינוק זך השכל בעוד שנתיים שנה ידע את כל הצריך מהם להבין במקרא, ובדברי רז&quot;ל ובפרושי המפרשים ז&quot;ל... הנסיון מעיד על זה שדרכי הלשון קלים על האדם בימי הילדות והבחרות, וכשחוק הוא לו ללמוד לשונות הרבה. לא כן בימי העמידה...&quot; (עמ' 16/א, 16/ב)
+ועוד מוסיף: &quot;ואחרי שזולת הדרכים ההם אי אפשר להבין את דברי אלהינו, ולדעת את הנרצה בהם על פי פשוטו, ואשר לא ידע פשוטו של המקרא שהוא הכוונה הראשונה, איך ישתכל אל הכוונה השניה שהיא מדרש חז&quot;ל...?&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2191</field>
+		<field name="revision_id">2191</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בסיבות שהביאו את המחבר  לנטוש את מנהג &quot;אחי האשכנזים במבטא לשון הקדש, וקבלי מנהג אחינו הספרדים&quot;. ישנו בספר דיון בלשני, על פונטיקה.
+יש לציין כי וייזל, &quot;רחובות&quot; (בתוך דברי שלום ואמת), עמ' 59ב- 60א טוען כי יש להעדיף את המבטא הספרדי על האשכנזי. כך לפי:
+A. Schatz, &quot;Returning to Sepharad...&quot;, p. 275</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2194</field>
+		<field name="revision_id">2194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">וייזל מבכה את חוסר הידע השורר בקרב היהודים ומדגיש את החשיבות של לימוד מקצועות שונים, וכאן במיוחד מדגיש את &lt;ins&gt;הגיאוגרפיה וההיסטוריה&lt;/ins&gt;, כמקצועות &quot;שהן צריכין והכרחים לנו גם להבנת דברי התורה והנביאים&quot;: &quot;לא לבד שחסרו החכמות הצריכות לבינת לב ולעומק הדעת, כמו המדידה והמספר והתכונה וחכמת הטבע ועל כלם חכמת הנפש, אב גם הידיעות שהן למטה מהן, והן אותן שאינן צריכין לבינה יתירה, ומצד אחר עולות על הראשונות בעבור תועלתם והשתמשות האדם בהן בכל רגע, כמו תכונת הארץ וגבולותיה שהיא הגיאגראפ'י, וספורי הדורות איך נשתלשלו הדברים דור אחר דור, שהיא ההיסטאריא&quot;. (עמ' ב')
+
+וייזל מהלל את התנ&quot;ך כספר ההיסטוריה הראשון והנאמן. הוא משווה את ספרי הנביאים לספרים שכתבו לא יהודים, ומדגיש את יתרונם כספרים המשקפים ביתר נאמנות את קורות העבר: &quot;הנביאים היו ברי לבב וידיהם אמונה, לא הוסיפו ולא גרעום על המאורע, ולא שנו בו דבר לא מאהבת אדם ולא משנאה לא מבצע או מפחד, &lt;ins&gt;כאשר יקרה במעשה הדיוטים&lt;/ins&gt;&quot;. (עמ' ג')
+
+וייזל קושר את החקירה בעניין תולדות היהודים וגורלם של עשרת השבטים עם האמונה בתורה ועם הוכחת צדקתה: &quot;ואם הם [חכמים לא יהודים] נותנים לב על הדבר הכלול במכתב הנ&quot;ל, ומשתוקקים לעמוד על ברור הדבר בכל פרטיו, כל שכן אנחנו בני ישראל שהדברים נוגעים לנו ולתורתינו...&quot; (עמ' ח') מבחינתו, הסיפור שהגיע לידיו על היהודים שנמסרו על-ידי שלמנאסר מלך אשור כ&quot;מנחה&quot; למלך תימן, והגיעו לאחר דורות רבים להודו, מוכיח את אמיתות התורה. &quot;ממעשים הנזכרים בד&quot;ה הזה, ראינו שנתקיימו יעודי השם שיעד עלינו בתורתו, כי אמר ... [כאן מביא וייזל פסוק מדברים ד' כ&quot;ט] כי ראינו שבעבור עבדו ישראל אלילים בשבתם על אדמתם, הפיץ ה' אותם בעמים, כי באו אל חלח וחבור ואל ערי מדי לתימן ולהודו, ומשם גם לארץ סינים... ובקשו לאחוז באמונת השם...&quot; (עמ' כב).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2195</field>
+		<field name="revision_id">2195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ברסלאו עוסק בספקנות דתית, לאור מראית עין של צדיק ורע לו, רשע וטוב לו, ומנסה לסתור את דברי &quot;מכחישי מציאת האל&quot; (עמ' ב/2).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2196</field>
+		<field name="revision_id">2196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">כדברי בן זאב בהקדמתו, כוונתו במבוא זה לספרי התנ&quot;ך היא לספק רקע לקורא בטרם ניגש אל קריאת ספרי התנ&quot;ך. בין היתר, הוא מבקש לקרב את הקורא אל &lt;ins&gt;ההקשר ההיסטורי&lt;/ins&gt; בו מארעו המאורעות המתוארים בספרי הנביאים והכתובים. אל הקורא הוא פונה ואומר: &quot;הנה לפניך עשרים וארבעה ספרי קדש, והם ממדרגו' שונות, מזמנים שונים, מענינים שונים וממחברים שונים...מהם מעשי האל חסדו וטובותיו ומהם נבואות... מהם שירים ותושבחות ומהם מליצות אנשי קדש...וביחוד הספרים הכוללים ספורים ומאורעות האומה, הנתלים בזמן ובמקום, וכ&quot;ש כשהמאורעות האלה מצטרפות על עניני שאר אומות... אשר לא היה עסק בעל הספר הכותב עתי עמו להרחיב בדברי מלכים אחרים. והקורא אם נעדרו ממנו השתלשלות הסבות והצטרפות הענינים בעזר ידיעת ספרים אחרים מיוחדים לזה, הוא מגשש כעור קיר בספרו אשר יקרא... אשר יעברו לפני הקורא גוים וממלכות, אשור, בבל... על בלי דעת גלגל הברים...&quot;
+
+בן זאב מצהיר כי לעיתים יסטה בפרשנותו מדעת &lt;ins&gt;התלמוד&lt;/ins&gt;. בין ה&quot;ענינים&quot; בהם דן בהקדמתו : &quot;התנצלות המחבר באשר יביאהו הכרח הענין לתפוס בדעה מתנגד לדעת התלמוד בדברי אגדה&quot;; &quot;ראיות חזקות מכל גדולי הגאונים הראשונים כי ררק בדברי הלכה אסור לנטות מן התלמוד אבל בדברי אגדה, הרשות נתונה לתפוס בדעת מתנג למאמרם במקום שא&quot;א לפרש דבריהם באופן מסכים אל מה שהתברר לאחרונים מן האמת&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בדפים לו' ועד סוף הספר כולל המביא לדפוס טקסט משלו : &quot;צורת הפעלים&quot;, בהם הוא דן בבניני פעלים, צורות הזמן שלו, פעלים יוצאים ועומדים וכד'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2206</field>
+		<field name="revision_id">2206</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בספר מוצגות מלים הכוללת שין עם נקודה ימנית או שמאלית, עם מראי מקום שלהם במקורות.
+בראש שני הדפים האחרונים רשום &quot;חידה&quot; (שהמחבר רושם שהיא של הרא&quot;בע - בכותרת סיפרו).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2208</field>
+		<field name="revision_id">2208</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">קורא לאל להעניק לשליט החדש
+dem Geiste der Vernunft und der Weisheit
+כדי שידע להעניק חסות לעניי עמו ויטפל בחלשים והנזקקים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">אחד הנושאים החשובים בספר הוא לימוד הקריאה. המחבר מבקש להרגיל את התלמיד בקריאת השפה העברית, אך לא פחות מכך בקריאת השפה הגרמנית באותיות עבריות. לטענתו, שליטה זו נדרשת וחשובה, במיוחד כדי שהתלמיד יוכל לקרוא באופן עצמאי את התורה בתרגומו של מנדלסון.
+
+מטרת החלק הראשון של &lt;ins&gt;מודע לבני בינה&lt;/ins&gt; מוגדרת כך על-ידי המחבר:
+Schnelles und richtiges Lesen, sowohl des Hebräischen als auch des Deutschen mit hebräischen Lettern
+
+וכן
+
+erste Unterrichte in der Geschichte und Religion des Judenthums.
+
+הספר כולל &lt;strong&gt;תפילות&lt;/strong&gt; אחדות בשתי השפות, זו מול זו. כמו כן, יותר משלושים עמודים הקדיש המחבר ל&lt;strong&gt;היסטוריה של עם ישראל&lt;/strong&gt;. זאת מוצגת בגרמנית באותיות עבריות, כחומר לתרגול הקריאה ב&quot;שפה&quot; זו.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בלשון המחבר בהקדמתו, 
+
+Die Tendenz dieses Theils ist von doppelter Art: Erstens, die Schüler in der hebräischen Sprache so weit zu bringen, daß sie etwas aus derselben in ihren Muttersprache übersetzen können. Zweitens, sie mit den gutten Sitten und religiös- moralischen Pflichten bekannt zu machen.
+
+פיליפסון מדגיש כי מטרתו בספר זה היא להקנות &lt;ins&gt;ידע סביל&lt;/ins&gt; של השפה העברית - יכולת הבנה, או בדבריו יכולת תרגום מאותה שפה,
+welches doch der Hauptzweck einer nicht lebendigen Sprache ist.
+
+בהתאם לכך, סיפורים קצרים (סיפורי התנ&quot;ך, ספורים מן המסורת היהודית) שפיליפסון מביא, מלווים בתרגומי מילים ומשפטים לגרמנית.
+
+על מנת לא להרתיע תלמידים מלימוד השפה, בכרך זה הוא נמנע מלהכביד עליו יתר על המידה בכללים וחוקים. אותם, הוא מציין, ירכז בחלק השלישי של הספר (שלא ראה אור מעולם).
+
+הספר כולל, בין היתר, לוחות להטיית פעלים.
+
+סיפורי התנ&quot;ך מובאים בקצרה (בעברית, עם תרגום מילים ומשפטים לגרמנית), ולאחר כל סיפור וסיפור ישנו &quot;מוסר השכל&quot;, הכתוב בגרמנית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">אישים מרכזיים בתרבות היהודית: בפרק החמישי מובאים טקסטים המתארים את תולדות חייהם ו/או טקסטים של משכילים גרמנים-יהודים: &lt;strong&gt;מנדלסון, משה; ר' יוסף האלטערן (תרגום לעברית של טקסט מאת מנדלסון); וויזל, נפתלי הרץ; פרידלענדר, דוד; הרץ, מרכוס; ריז, נתן; בן-זאב, יהודה לייב&lt;/strong&gt;; בלווית טקסטים שהם חיברו:
+פרידלנדר תרגם לעברית אידליה של גסנר  בשם &lt;strong&gt;אמינטאס חלק ג&lt;/strong&gt;', וגם &quot;מזכרות טובות על קברי קרובים ומודעים&quot;; יצחק אייכל תרגם לעברית &quot;על מצבת אבן העומדה על קבר הרופא ופראפעסער מרדכי בן הירץ הלוי&quot;; ונתן ריז תרם תרגומי שירים מתוך המקראה הגרמנית &lt;strong&gt;קינדערפריינדע&lt;/strong&gt;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2212</field>
+		<field name="revision_id">2212</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ויכוח סביב הספר מצפה יקתאל. מודעה זו באה בעקבות &quot;שמועות&quot; שעוברות &quot;בין אחינו בני ישראל, כי באו אגרות שונות ורצוף בתוכם כרוז מברלין, לק&quot;ק פ&quot;פ דאדר פראג האמבורג ברעסלויא ואמשטרדאם ועוד מקומות אחרים בלתי חתומים בשמות הכותבים לאמור: כי יצא הקצף מלפני כבוד אדוננו מ&quot;ו הגאון המפורסם ובית דינו הצדק, להחרים את ספר מצפה יקתאל אשר יצא מחדש בדפוס חנוך נערים&quot;. המחברים מגנים קריאות להחרים לא רק את הספר עצמו אלא גם את בית הדפוס, אשר בראשו הם עומדים.
+
+המחברים אף מצטטים את דברי &quot;הרב הגאון&quot;, שנאמרו כאשר נשאל בדבר ההאשמות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2218</field>
+		<field name="revision_id">2218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">השיר נכתב לנפוליון להלל את הצלתו מאויביו בפעם השלישית, בעזרת ה'</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2222</field>
+		<field name="revision_id">2222</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">במבוא מתאר הידנהים את דרך תירגומו</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2229</field>
+		<field name="revision_id">2229</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הקדמתו של הידנהים הסוקרת את הפייטנים לאורך הדורות היא בעצם סקירה היסטורית</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2234</field>
+		<field name="revision_id">2234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">אחד הנושאים המרכזיים במחזה הוא עירעור על האינטרפרטציה המסורתית של העימות בין שאול ודוד. האפרתי מציג תוך כדי כך עמידה מרדנית של שאול כלפי ההשגחה העליונה.
+
+על נושא הפוליטיקה: לדברי בן-ישי, ספר שירים, עמ' 61, הספר &quot;ספוג דעות ליברליות ברוח דורו, ומקטרג על המושלים&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2235</field>
+		<field name="revision_id">2235</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ראו דברי ההקדמה בחלון &quot;הקדמות&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2237</field>
+		<field name="revision_id">2237</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר עונה אחת לאחת לטענות שהועלו כנגד משלי אסף על ידי מבקר ב&lt;strong&gt;המאסף&lt;/strong&gt;. הוא מבאר את המשלים, וגם תוקף את המבקרים שמוצגים כדור הצעיר, חסר הידיעה ומחרחר הריב של המשכילים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">וייזל מביא רשימה ארוכה של מפרשים שפירשו לאורך מאות שנים את מסכת אבות. מה אני יכול להוסיף, שואל. חכמי העבר &quot;לא סגרו השער בפני הבאים אחריהם, אבל מקום הניחו לזולתם לבקש ולמצוא עוד דברי חפץ, ויהי מה! אדברה גם אני על פי הדרכים אשר חדשנו בהוראת השרשים והבדליהן, ואשקה את נחלת אבותינו במים הנוזלים מן לבנון&quot;. וייזל מפרט במה נבדל פרושו ומציין: &quot;שמתי לבי להבין כפי כחי הכונה העקרית שבכל מאמר ומאמר, על פי תנאים שאזכור...להבין המליצה...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2240</field>
+		<field name="revision_id">2240</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">השיר מהלל את הקמת חבורת משכילים.
+מדברי השיר: &quot;...מה נהדר/ שבת ריעים אוהבי חכמה יחד!/ מתוקה חברתם גם נעמה/ איש את אחיו יעזורו, ישחקו לפחד!// הלא בישרת לבב יתנו ידים/ הפיק בינות, למד זה את זה דעת/ זה יורה דיעה, זה יבין שמועה/ ובמוסר השכל דופי רוחם נושעת/...&quot;
+ועוד: &quot;יואל שדי לכונן מפעל רוחנו/ לחזק עמודי החברה חצבנו לנצח:/ ונהי מוצאים חן ושלום בעיני משכילים,/ אז לא נירא מלעג השאננים ועזי מצח!// אך טוב נרדפה, אך קרבת אלהים,/ זאת אל שואל, זאת יהי לנו לעינים!/ ללמד תועי רוח בינה, ונמהרי לב/ השכל וידוע ומלאה הארץ דעה כמים!...//</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2242</field>
+		<field name="revision_id">2242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">על היהודים שמצא במסעו כתב: &quot;העדר הספרים והשמועות מטביע לבותם בבץ הסכלות והפתיות, ומשקיפים כפלאות כל חדשות ונצורות לא ידעום. ראמות להם חכמות ואולתם שמחה באמרם כי רבים חללים הפילה החכמה במהמורות המינות והכפירה. נהרת החכמה לא הופיעה ולא הגיעה אליהם עד הנה לבער שגיאות המוסר והבלי הנעורים. מסוה אמונה נבערת מדעת מסלף לבותם ומעור עיניהם.&quot; (עמ' ז)
+דוגמא לאמונות הטפלות שאותן הוא מבקר קשורה למנהגים שראה במו עיניו מיד לאחר הלידה: &quot;וימהרו ויתלו מגילות רשומות בשני משולשים משולבים הנקראים מגן דוד, בפסוקים ובשמות מלאכים לשמור היולדה מלילית [וכו']... זה דרכם כסל למו באמרם כי זה חלק וגורל לעזאזל וזובחים את זבחיהם לשעירים להחזיק במנהג אולתם כאמור.&quot; (עמ' יג)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2254</field>
+		<field name="revision_id">2254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי פיינר, מהפכת הנאורות, עמ' 73-74 
+הספר מטפל בשיטתיות בסוגיית המסורה ונוסח המקרא המטוהר והמדויק של התורה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2256</field>
+		<field name="revision_id">2256</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הטקסט עוסק בסוגי כתיבה וניסוח שונים = ריטוריקה, למשל, הוא קובע כי הדובר צריך להציג תחילה הקדמה, כדי ששומעיו ידעו על מה בכוונתו לדבר:
+&quot;... הקדמה והוא שצריך המליץ להקדים לשומעיו הנושא... שאם יתחיל פתאום לספר ענינים. ולא יגלה מיד הנושא. אשר עליו תסוב מלתו. יקוץ השומע בדבריו...&quot; (דף ו').
+בהמשך הוא מציג דיון בלשני-אטימולוגי בשפה העברית, תוך הצגת דוגמאות על פי סדר אלפבייתי של האות הראשונה במילה. כך הוא עוסק במושג &quot;העתק&quot;, שמשמעו ההתפתחות האטימולוגית של מילים בעברית, ומדגים מילים המוצגות על פי סדר הא&quot;ב. לדוגמה, &quot;ילקוט&quot; מקורו בפועל &quot;לקט&quot; (דף יט'); &quot;בקעה&quot; מקורה מן הפועל &quot;בקע&quot;, שכן היא בקע בין שני הרים (דף כב') ועוד. בהמשך הוא מציג מקור אטימולוגי של מילים מוסכמות בעברית, ומצביע על מקורותיהם עקב השתגרותם בלשון העמים או בקרב ההמונים (דף כד'), גאח&quot;כ הוא מציג הבדלי משמעות בין מילים דומות, על פי סדר אלפבייתי, ומדגים גם את תופעת חילופי אותיות, אותיות שנוטות לפול, אותיות הנוספות (כגון, בסמיכות), ועוד עוסק בעניין עירוב סדר וטעמי מסורה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הטקסט עוסק בהתעברות והולדת ילדים ובקשר שלה לעולם החומר, כגון, אכילה, וגם לעולם הרוחני של הקבלה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2259</field>
+		<field name="revision_id">2259</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">כתב ההגנה שכתב המחבר (ראו כאן חלון &quot;חוקר ומקורותיו&quot; בסעיף &quot;הערות&quot;), מתאר את הסיבות שהביאו את המחבר לתרגם את הספר מעברית להולנדית (דפים ה'-ו').
+
+תוך כדי כך שוטח המחבר את תפיסתו המשכילית. הוא מגן על הספר &quot;אור לעת ערב&quot;, הספר שהוא מכחיש כי תרגמו, ועל התכנים הגלומים בו:
+
+&quot;ואם ישאל אויבי ויאמר הוא כתב נגד סדר הלמוד שלנו. כן הוא. עדיין אני האיש אשר יוכל להראות בראיה ברורה כי לא טוב הדבר בסדר הזה. וכבר צוחו על זה גדולי ישראל...אבל אגיד לך את הרשום בכתב אמת שכל חפצי בסדר הלמוד הנקשר בהצלחה אנושית. הנתלית בעיון  ובמעשה. ראשון מקרא ומשנה וגמרא... כפי קוצר השגתי אבל על פי דקדוק הלשון ולהבין צחות מליצת המקרא ומשלי הנבואה וכל השייך לחכמת הלשון... וגם אוהב אני את הפילוסופיא האלוהיית והידיעות השייכים לה ומוסריה אשר עליה יסד רב סעדיה הגאון ואחריו החזיק הרב החסיד רבינו בחיי. והנשר הגדול הרמב&quot;ם, א&quot;ע כוזרי הראשון רבינו יהודה הלוי. הרלב&quot;ג. הרד&quot;ק רבי יוסף קנדי. ר' יוסף אלבו בספר העקרים. אברבנאל, וכן רבים ושלמים... (דף ח'-ט').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2260</field>
+		<field name="revision_id">2260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר הוא מעין לקסיקון של המדעים המודרניים וכולל תיאור של הדיסציפלינות השונות, של ניסויים שונים, ושכל כלים המשמשים את המדע. יש שילוב של תורות עתיקות של ארסיטו ואפלטון, ושימוש במידע לצורך מסורתי, כמו למשל, הסבר על קישור בין מכות מצריים לבין תופעת הגאות הקשורה בירח (דף יא'). דיון מפורט מוקדש לתורת האור, בלוויית איור של הקמרה אוסקורה (דף כא').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר מציג דיאלוג בין &quot;ידעיה&quot; איש התבונה ו&quot;נועם&quot; איש האמונה הקבלי, הנקלע לספק: &quot;בעת ההיא נודע ביהודה. שני שרי צבאות לתורה ולתעודה. אנשי שם בעלי מדה. יודעי דעת ומביני מדע. והמה ידעיה רבה תבונות. ונועם איש אמונות. ויהי ידעיה איש חיל ונבון דבר יודע מבין בכל ובר חכמת בינה. כי כשמו כן הוא. ונועם איש אמונות. חוקר נעלמות וצפונות. הכי קראו שמו נועם יען כלתה נפשו לחזורת בנועם ה' ולבקר בהיכלי הקבלה. כל יקר וסגולה. ויואל לבוא אל הפרדס פנימה... (עמ' [2]). לאורך הטקסט דיון בנושאים שונים: חומר וצורה, אמונות קבליות, מדעים. מונחים קבליים כגון, צמצום ואצילות מופיעים, ונקשרים לתיאוריות מודרניות כגון, התיאוריה הניוטוניאנית של האור(ראו למשל, דף ה'. דף זה צולם על ידי דיגיטלית).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2264</field>
+		<field name="revision_id">2264</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הפרשן משלב ערכים משכיליים בפרשנות.לדוגמה, בביאור של פס' ג'-ו' בפרק ב':&quot;ויש בכח האדם לגלות הסתום בחדרי תימן אם יפרוש כנפיו שמה ור&quot;ל שיהיה זריז בעיונו וכן יש בכחו להבין תעלומת חכמת בני קדם אם יהלוך שם בעיונו... אם יעלה בעיונו לעיין במהלכי השמים גם שם ימצא מרכבת חכמתו ר&quot;ל שגם בגלגלי השמים יש כוח בחכמה להשגם וכן יוכל לבנות חדרי חכמה ועליות בבטן הארת והתהומות אם יוריד עיונו שמה. הנה החכמות עוזרות זו את זו ואחר שהשיג הדברים הטבעיים והלמודים אשר בשפל מצבו יעלה על ידם לרום שמים אחר שהשיג האמת בדברים השפלים יותר ממה שהשיג בתחלה אח&quot;כ ישוב ויעלה השמים להשיג שם יותר מבתחילה עד שיסקל ויסיר מכשולי העיון... וכן מעלה עיונו מן דברים השפלים אל העליונים ומוריד מן העליונים אל השפלים עד שיהיו בידו כל גלילות ארץ מדעים אצלו כאילו אספם בחפניו בכחו ובתקפו ... כל כל ירגיל עצמו בעלות העיון ברד' ברצוא ושוב על שתהיה דעת כוללת תכונת כל הברואים וטבעיהם ויבחין ההבדל שבין מיני הנבראים וישיג צורת המיניות ומשם יעלה להשגי באלקית שהיא תכלית החכמה&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2265</field>
+		<field name="revision_id">2265</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">יש איזכור של אריסטו, אפלטון, סוקרטס ופיידון</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2266</field>
+		<field name="revision_id">2266</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמתו הארוכה כותב שלמה דובנא: &quot;נצטערתי על אשר נשכח מאתנו תורת כתיבת ספרי הנביאים והכתובים כדינם וכהלכתם על הקלף הכשר ובדיו הכשר ובקולמוס... לא נשאר בידינו רק כתיבת ספר התורה ומגלת אסתר כמשפטן בעבור ההכרח&quot; לקרוא אותם בציבור. 
+
+עושה סקירה של הספרים, המודפסים והלא מודפסים, ספריהם של מחברים אשר &quot;הביאו בתוך ספריהם קצת מסורות גדולות וקטנות&quot; כדי &quot;להסיר כל בדילי שבושיהן.
+
+מבקר תשומת הלב המועטה שניתנה לנביאים וכתובים, ומתייחס ל&quot;קדושת דברי הדפוס&quot;, לויכוח על קדושת הספרים המודפסים.
+
+מזכיר את פועלו (שטרם השלים) בהוצאת ספרי התורה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בפתח הרשימה המילונית שמספק בסוף הספר, כותב המחבר: &quot;הידוע שהוכרחתי להמציא מלות בדרך שמות מושאלים, כי לא מצאתי דרך לבוא אל נכון זולת זה. צער לי מאד על כלילת היופי לשון הקודש, אשר לחוף עניות ישכון! ומי יתר בלשוני מלין להשיב לשאלי דבר: איך! ולמה! העתקת כן? דעו! שלא באתי בזה להורות ולחבר מלות, לפני אנשי מדע בשיר המעלות, זולת להאזין דברי החבור לתועלת.&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2271</field>
+		<field name="revision_id">2271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הפרשן משלב ידע מתחומים שונים ורבים בביאור. למשל, על כלי נגינה, על היסטוריה, על שפות. מצטט ממקורות לועזיים שונים, כגון:
+Tables chronologiques par L.M. Chaudon et F.A. Delandine. (p. מח)
+מלחמות היהודים:
+Joseph jud. Krieg.
+Allg. Weltg.
+Funke's Real-Schul-Lexikon</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בין ההנושאים שהספר מטפל בהם (כפי שאלה מופיעים במפתח): &quot;ויכוח הנביא עם הפילוסופים&quot;, &quot;אמתת הנבואה והנסים&quot;.
+בעקבות דברים מתוך חובת הלבבות ומורה נבוכים כותב המחבר בהקדמה: &quot;לא יתכן האמונה בשלמות מבלי חקירה בעיון השכל&quot;. נושא מרכזי בספר הוא: &quot;דע מה שתשיב לאפיקורס&quot; (מתוך אבות). &quot;לדעתי מאמר זה יורה לנו, מלבד מצות השקידה בלמוד מצד אמונה, גם יתחייב לדעת לבררה בחקירה, עד שלא יהא פתחון פה לאפיקורס לטעון עליו... אין כוונתו בלמוד להשיב לאפיקורס בפועל, רק יתחייב בלמוד אמונתו עם החקירה, למען ידע אמתתה.&quot;
+ראו גם: חלון ב&quot;קהל יעד&quot; - על חיבורו כמשעענת נגד אפיקורסות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2275</field>
+		<field name="revision_id">2275</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ביקורת נגד המאספים של שנות התשעים, וליתר דיוק וולפסון וברי&quot;ל. וולפסון האשים את ייטלש מעל דפי המאסף בבגידה בהשכלה. כתגובה פרסם ייטלש ספר זה, בו טען כי אין להכיר בראשי תנועת ההשכלה כממשיכיה הלגיטימיים של התנועה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2278</field>
+		<field name="revision_id">2278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">סטנוב מציג בספר זה את ספריו השונים. הוא מציג את כתביו כעונים על הצורך לספרי לימוד המתעמקים בתחומים השונים. הוא מציג הגדרות לקסיקליות של מילים עבריות, וגם עוסק בפרשנות להגדה של פסח.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2282</field>
+		<field name="revision_id">2282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בביאור כולל סטנוב ידע בנושאי מדע שונים:
+חשמל - דף מד' (צד ימין)
+גורמי מחלות - דף מח' (צד ימין)
+ואקום=ריק - דף נג' (צד שמאל)
+הזדווגות, דבורים והפריית צמחים - דף נט' (צד ימין)
+כח המשיכה של גופים שמיימיים - דף ס' (צד ימין)
+תנועת כדור הארץ - דף סב' (צד שמאל); דף עב' (צד ימין)
+פריזמה - דף  עה' (צד ימין)
+מחזור הדם - דף עה' (צד שמאל)
+חוכמות שונות - דף צ' (צד ימין)
+תנועת האור - דף קב' (צד שמאל)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2284</field>
+		<field name="revision_id">2284</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בדקדוק, כדברי המחבר - בסוגיה מאד ספציפית ומצומצמת: &quot;לבאר מעשה תהלוכת הלשון באותיותיו ובתנועותיו בש[_] נעים גם נחים דגשים ורפים ומלעיל ומלרע ומתנין וטעמו...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">סטנוב מציג את השפה העברית באופן הבא: &quot;כי היא היתה אם כל הלשונות... וממנה נפלגו הלשונות למדבריהם... בה דבר ה' ויקרא ארץ ושמים ויעמודו... בה דבר הראשון באדם, בה נתן ה' את התורה לעמו..&quot; (דף פח')</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">רבות מן המילים שסטנוב מנתח קשורות בפולחן דתי ובמנהגים דתים ומוסריים יהודים: תפילין, מזבח, המשיח וכד'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2293</field>
+		<field name="revision_id">2293</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בוכנר מבכה את היחס לעברית בתקופתו. בהקדמתו כותב: &quot;על לשון עבר משפט מליצה כלכלתי כי להתאפק לא יכולתי בראותי עתה המינים... דרשו לשונות זרים ולשון עבר... הוא כמים קרים ישומו לשמה כמי נמרים&quot;, באמרם כי לא ניתן להתבטא בשפה זו. 
+עוד מציין בוכנר בהקדמתו :
+&quot;והבאתי כמה חקירות מטבעי בעה&quot;ח ומחקירות ד' יסודות ומראשית היות ותולדות אבנים טובות וסגולתן &quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">מגמה של הנחלת השפה הגרמנית הגבוהה: הספר כולל מעין מילון קצר, עם הסבר של כמה מילים בגרמנית, לתועלת הקוראים אשר קרוב לוודאי לא פגשו בהן מעולם או לא נוהגים להשתמש בהן.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2296</field>
+		<field name="revision_id">2296</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">גם בחלק זה של הספר ישנו מעין מילון, לבירור המילים בגרמנית אשר לדעת העורך לא יהיו מובנים לרוב הקרואים היהודים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">גם בחלק הזה של הספר ישנו מעין מילון, לבירור המילים בגרמנית אשר לדעת העורך לא יהיו מובנים לרוב הקרואים היהודים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2298</field>
+		<field name="revision_id">2298</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">להבדיל מן החלקים הקודמים של הספר, אין בחלק זה מילון של מילים בגרמנית, אשר לדעת העורך היו עשויות להתגלות כקשות להבנה עבור הקורא היהודי.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמות ביקש ברי&quot;ל (בין היתר) &quot;לתור ולחקור אחר הדרך שהלך [מנדלסון] בתרגומו&quot;. הוא גם עוסק ב&quot;דיבור המליצה&quot;, נושא שלפי טענתו לא טופל בספרות הקיימת &quot;בספרינו&quot;.
+
+&lt;strong&gt;צריך להוסיף&lt;/strong&gt;: פסיכולוגיה: בהקדמה הראשונה הוא מתייחס ל&quot;כמה וכמה חוקים שונים כידוע לכל מבין בחכמת (פסיכאלאגיא) שהיא חכמת דרכי הנפש...&quot; (עמ' ג/1)
+
+ב&quot;הקדמה השניה&quot;, הספר עוסק ב&quot;תולדות השיר והזמר בארצות העבר&quot;, ב&quot;תולדות מלאכת הניגון&quot;...</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בנושאי לשון ופרשנות מסתמך הרבה על וייזל, מזכיר את כתביו בתדירות ומתייחס אליו כאל &quot;ידידי הרב החכם המליץ&quot;. התייעץ איתו בעניין הספר בעת כתיבתו, וקיבל ממנו תשובה ארוכה, אותה הוא מפרסם בספר זה (עמ' כט/ב - ל/ב).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי קסטנברג-גלדשטיין, אחת ממגמותיו של לנדא היא להראות, היכן שניתן:
+
+daß die humanen und moralischen Tendenzen des 18. Jahrhunderts schon im biblischen und gewiß im talmudischen Judentum lebendig waren.
+לשם כך, הוא מסתמך, בין היתר, על וייזל (כך בעמ' נא/2 - נב/1).
+
+
+זאת ועוד, לנדא משתדל גם:
+
+Seine Leser von der in der traditionellen Gesellschaft legitimen Auffassung der Nichtjuden als anderen und minderwertigen Menschen abzubringen und ihnen statt dessen die Auffassung vom Christen als ''Nebenmenschen'' einzuflößen.
+(חלק ב', עמ' נא/2).
+לצד ערכים חדשים מתקופת הנאורות, מדגיש לנדא ללא הרף את נאמנותו לתורה וחוזר שוב ושוב על החשיבות שבקיום המצוות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ראו &quot;תוכן ענינים&quot; בחלון &quot;מבנה הספר&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בשער הספר מוזכרים:
+
+- היש&quot;ר מקנדיאה
+
+- נפתלי הירץ וייזל
+
+- ספר חכמת שלמה</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2313</field>
+		<field name="revision_id">2313</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">חיבור קצר זה עוסק בכמה שאלות סביב &quot;חד גדיא&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2314</field>
+		<field name="revision_id">2314</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">באמצעות הסאטירה, המחבר שאול ברלין נלחם נגד היהדות הרבנית, שהוא יצא מתוכה. הספר נכתב כהגנה על &lt;ins&gt;דברי שלום ואמת&lt;/ins&gt; של נפתלי הרץ וייזל.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המביא לדפוס כותב בהקדמתו:
+&quot;והנה תוכן ותכלית הספר הזה הוא ללמד דרכי המליצה וחוקתיה&quot;. בהקדמה הוא מבקש &quot;לסדר מיני השירים ולבאר משפטן בקצרה... שיר ספורי או הגדיי (דיא עפישע פאעזיא)... שיר וכוחיי (דיא דראמאטישע פאעזיא)... כל אחד מהסוגים הנזכרים כולל מינים שונים&quot; וכו'</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2320</field>
+		<field name="revision_id">2320</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">חלק אחד של הספר מוקדש לפרשנות על פרושו של אבן עזרא לחמש מגילות. חלק אחר הוא 'מאמר המדע'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2321</field>
+		<field name="revision_id">2321</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בספר מתייחס הורוויץ ליריבות הסוררת בין מחנות שונים בקרב היהודים ותקוותו לשלום ביניהם: &quot;או תשמח נפשי ורוחי ינחת! אם כל ישראל ישבו במתוקה אחת בשובה ונחת בלי כלי' ושחת...&quot;. 
+הספר מציג נציגים משלושה זרמים בקרב היהודים בתקופתו - יהודי למדני, קבלי, ומשכיל. כפי שפיינר מדגיש (מהפכת הנאורות, עמ' 384) על אף הצהרתו כי בכוונתו להציע פשרה בין הזרם הלמדני והקבלי, התיצב הורוויץ לצד הלמדנים ונגד המגמות המיסטיות. אך הדמות האידיאלית בספרו היא זו של ה&quot;חוקר&quot;. עם זאת, הורוויץ מזהיר מפני סכנת הכפירה, אליה מובילה לעיתים החשיפה למדע ולפילוסופיה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">אסטרונומיה - עמ' טו'-טז' - מסביר את תורת קופרניקוס</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2324</field>
+		<field name="revision_id">2324</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בעקבות עיון מעמיק יותר בספר ניתן יהיה להוסיף נושאים נוספים.
+על אמנות: פישמן מדגיש את התמודדותו של המחבר - דרשן במזרח אירופה - עם עיסוקו בבלטריסטיקה. לפי פישמן, בהקדמתו מתנצל כץ על עיסוק זה, ומצטט מן המקרא, הרפואה והרמב&quot;ם כדי לטעון כי עיסוק מוגזם בנושאים אינטלקטואליים מוביל לדיכאון, וכי פנייה לנושאים קלים יותר תורמת לאיזון הנפשי.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2325</field>
+		<field name="revision_id">2325</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לקראת סוף הספר מופיעה כותרת:
+&quot;באור המלים אשר באו בלשון ארמי בספרי תנ&quot;כ למען לא יחסר הקורא בספר הזה דבר ולא תהיה מלה בכ&quot;ד ספרים שלא ימצא באורה בספר הזה&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2326</field>
+		<field name="revision_id">2326</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">כוונתו של וולפסון היתה ליצור בסיס ללימוד ההיסטוריה של עם ישראל. על כן הביע את רצונו לפרסם לאחר מכן את ספרי עזרא ונחמיה, שממשיכים את רצף הארועים המתוארים ב'מלכים'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2337</field>
+		<field name="revision_id">2337</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">מטרה עיקרית של לימוד לשון הקודש, על-פי המחבר, היא התמצאות והבנה נאותה של המקרא.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2339</field>
+		<field name="revision_id">2339</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בשחמט.
+בחרתי בפטריוטיזם, אם כי אין כאן פניה לשלטון מסויים, אלא תמיכה בהיררכיה האופיינית למונרכיה</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2340</field>
+		<field name="revision_id">2340</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר מציג מתודה חינוכית מודרנית שאותה שאב מן הספרדים, לדבריו (דף ג'-ח'):
+
+&quot;...הרב רודה והתלמידי' ילילי יליל וגנוחי כסופר. לכמה שנים הולכימ [ם?] הבנים לבתי רבנים רקנים ובני חפר. ובלי מדע תפלת ערב ובוקר ראש וצפר: כצפור וכאוב מצפצפים בקולי קולות. בבית כנסיות ובתי מדרשות במקהלות. כשיוצא מזן קטנות ובא לזמן גדלות. וגדול העון מנשוא פנים. האבות נזיקים במעט מנים. ונגזל שנתם של הבנים. ונסרחה חכמתם באין מבינים. סדר הלימוד לבנים קטנים. בדבר דבר על אופנים. על כן בדברי אמת כתב יושר. אתן לחכם ידעיה דבר פשר. בינת אדם בלב נער לקשר. ולעת מצוא שעת הכושר. הזמן יגיד הזה או זה יכשיר ומקרוב יבוא חדושי הנער כנשר:... ואותו לימוד ע&quot;פ סדר ספרדים אשר ראיתי ומצאתי ע&quot;ה שאהבה נפשי. גלל כן אל יעלה על לב שאני מתכבד בקלול חברן... רק ינהג בכבדות ויצאלה [?] חמיר על עצמו והילדים אשר סוככים תחת כנפיו .... כיון שהגיע תינוק לחינוך חייב האב או האם להוליכו לבית הספר בדברי כות ולפעמים שהילדים ממאמנים לילך לבית הספר מפני היראה והאב או האם יש להם געגועים על הילד מחמת בכיות הלז. אבל יש תבלין טובים לזה. המלמד צריך לילך לבית הילד יזה ימם זה אחר זה ולקרב אצלו בדברים עריבים ובדרונות מתוקים ויגד לילד אם אתה בא לביתי אזי אתן לך דורון טובים מאלה כי גם יש ילדים הרבה בביתי ושם ישחקו יחדיו כאוות נפשם ובודאי יתרצה הילד לילך לבית הפסר בשמחה. וכשבא הילד לבית המלמד מקרבו בדברי רבות. ול ידבר שום דבר מהלימוד. והמלמד ימנע מלהכות שום ילד לפני זה הילד. ולישב אותו אצל ילדים המשחקים אתו. וליתן לו מתנה אחת אפים ולאחר שעברו איזה ימים. ישב התנוק אצל אחר המכיר האותיות באלף בית. ויתן המלמד לכל חד אות אחת ודובר על לוח קטן. והמלמד אומר להם הא לך אות א'. ולשני אומר היא לך אות בית. ואומר להם. כשאקרא לכם לבוא אלי צריכים אתם להכיר שני אותיות האלה. ואם עדיין אינן מכירים צריך לאומר להם. אין אני נותן לכם כלום עד בואכם אלי ומכירין. ובודאי יתנו על לוח לבם להיות יודעים. וצריך כל עת להראות להם האותיות בתפלה בקומתן ובקטנותם כמו כן הנקודת עד שיהיו שגורי' בפיהם...&quot;
+
+בהמשך מדגיש המחבר את חשיבות לימוד בסיס השפה ולימוד חומש תחילה, לפני הגעה לתלמוד,  ומציג את כללי הדקדוק העברי בקצרה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2341</field>
+		<field name="revision_id">2341</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר מכיל תקציר של סיפורי התנ&quot;כ, למן בריאת העולם ועד למות יהושע. הוא מכוון לחינוך אמוני-מוסרי, ופונה ישירות לקוראיו. למשל, הלקח המוסרי מסיפור קין והבל:
+פסוקים כ'- כה' דף ו' (פסיק-נקודה=מסמן להלן מעבר מפסוק אחד לשני): &quot;האזינו נא מאוד ובינו כי אם אחד לכך האדם ואם אחת; ועתה אחים יחדיו כלמו אשר באהבת אחים איש ברעהו ידבקו; אוי לאשר ישנא את האדם ואשר ירע לו הלא את אחיו ירע וישנא; אוי לאשר תדע עינו באדם ויקנאנו הלא כן עשה קין ומה היה אחריתו ומי יאמר אהיה תחתיו; אהבו בני אדם כלם כי אחיכם המה גמלו להם טוב ולא רע ומצאתם חין בעיני יי האוהב את האדם; השמרו לכם מכל חטא קטן וגדול כי און ימשך עון וחוטא אחד יוליד רשע הרבה&quot;. מסיפור המילה של אברהם ובני ביתו הוא למד על אהבתו הרבה של אברהם לה' (דף יח').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2342</field>
+		<field name="revision_id">2342</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר פותח את פרק ב' בסיפור יציאת מצריים, ומסתיים בתקופת בית שני. המוקד: נביאים, אך גם מופיעים סיפורים נוספים כגון, ממגילת אסתר.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2343</field>
+		<field name="revision_id">2343</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמתו מציין המחבר כי קרא את הספר מצפה יקותיאל (שנגדו הוא יוצא) - ספר &quot;עב מאד&quot;  - &quot;ומצאתי אותו רזה ודל תואר מאד ואין בכל דבריו&quot; חידושים של טעם, &quot;רק גבובי דברים&quot;. הוא מבקר את מחבר מצפה יקותיאל על כי &quot;לפעמים ידבר על הפשט הפשוט לתינוקת דף שלם&quot;, ולפעמים משנה את טעמם של דברי האחרונים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2344</field>
+		<field name="revision_id">2344</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">אחד הנושאים המרכזיים בספר: עשרת השבטים. בראש הספר מופיע &quot;מעשה רב מן אהרן לוי ספרדי&quot; (הופיע גם במהדורה בסוף המאה ה-17). זהו ספורו של אנוס שנוסע באמריקה מארץ לארץ, ומעלה השערות על הקשר האפשרי בין האינדיאנים לעבריים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2346</field>
+		<field name="revision_id">2346</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">אחד מנושאי הספר: חסידות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2353</field>
+		<field name="revision_id">2353</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר עוסק בחשיבות החכמה:
+
+&quot;יבינו המביני' וילמדו התלמידים להיות כי כל מה שברא הקב&quot;ה בעצמו לכבודו ברא: אף כי האדם מחבר ברואי' התחתונים: ולדעת חז&quot;ל האדם הוא מבחר ממלאכי' אין טוב שתהי עבודת ה' בלב האדם מצות אנשים מלומדה. אך טוב לו שיבין יחוד הבורא בשכלו: וכיתברר לו משכלו אהבת האל יותר ממ&quot;ש:&quot; (עמ' [4]).
+
+&quot;... שהנה בוודאי כל חכמות היו לפנים בישראל וכאשר רבו הצרות ונתמעטו הלבבות כתב ברבינו הקדוש סדרי המשנה שהוא פי' המצות המעשיות ולא חש לכתבו על ספר האמונות הראויות נראה מזה שהידיעה המעשיות יותר הכרחית והשלישית שמצינו בחיפוש שיותר נערכים בעיני ההמון המשתדלים במעשי' והמשתדלים בלמוד העיונית... שבעלי העיון יותר קרובים ואהובים למעלה מבעלי המעשים ע&quot;כ דברי מהר&quot;ש ולפי דעתי שניהם כא' טובים ...&quot; (עמ' [24-23]).
+
+בפתח החלק העוסק בדקדוק עברי מוצגת ההצדקה הבאה:
+
+&quot;אחרי אשר ראיתי כי חלק הדקדוק הוא חלק גדול מחלקי התורה היא המיישרת הקריאה הנכונה בתורתינו הנעימה היא המלמד' לאדם דעת לתת לפשעים ערמה ולנער דעת ומזימה היא המבארת כל פסוקי המקר' בשרשיה ושימושיה נקודה וטעמה כי גם כל כדורש עמוק מדבריהם ז&quot;ל במדרשי אגדה מה שדרשו מפסוקי המקרא הם מבוארים על ידה היא התיר כל קושי' ... על מציאות התרוה שבעל פה היא מאירת עינים בכל מפרשי התורה כר&quot;שי ואבן ערא ורד&quot;ק והמזרחי לכן בקשתי למצוא דבר חפץ להפיק רצון תלמיד בזמן קצר כאמרם ז&quot;ל לעולם ישנה אדם לתלמידו בדרך קצרה ויגעתי ומצאתי דרך סלולה חלק מעט הכמות ורב האיכות כולל כמעט כל כללי ספרי הדקדוק המחוברים בו... ועל ידי זה נקל להם ללמוד ולהגיע אל תכלית החכמה הזאת בשנים ושלשה חדשים בכל הספרים לכך ראיתי לסדר פה הידיעות בתחילה:&quot; (עמ' [39-40]). בהמשך הוא מציג ידע על דקדוק עברי: אותיות, ניקוד, תנועות, בנינים, גזרות, פעלים. ארבעת העמודים האחרונים של הספר כוללים לוח פעלים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר &quot;הציע דת רציונליסטית כתשובה לאתגר הרדיקליזם המיסטי והפילוסופי של זמנו, וחותם תרבות הנאורות של המאה ה-18 היה טבוע בו&quot; (פיינר, מהפכת הנאורות, 45).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר עוסק באמונות מיסטיות וקבליות, וטוען: &quot; ... ואל יקשה בעיניך שמחז&quot;ל בפי' במה א סה מענין הקמיעות... בעניני הרפואות ידענו בנסיון ברור שבזה פועלי דמיון האדם, אם יש בנפשו דמיון חזק על איזה דבר שיהי' וחושב שיועילנו תתחזק בזה כחו...&quot; (דף י').
+
+המחבר אינו מבטל את החשיבות של האמונות המיסטיות עבור ההמון, אבל גישתו היא גישה רציונליסטית, והוא מרבה להשתמש במינוחים הלקוחים מן התפיסה האריסטוטלית-רמבמי&quot;ת.
+
+חורין מזכיר את הקיסר פרנץ יוזף ואת מונסקייה הצרפתי (דף טז'). הוא מתייחס למנדלסון ולסיפרו פיידון (דף ג'), בתופעת הרעם ובגרמי שמיים (דף ו'), כוח הכבידה (דף יב'), תנועת כדור הארץ (דף טו'), קופרניקוס ותנועת גרמי שמים (דף כ'), מבנה ארץ ישראל +תרשימים (דף סט'), דיון ברעם ובמחזור המים בטבע(דף ע' = המיספור נשמט בדף זה, וגם בדף עא'), כמו גם תיאור כדור פורח (דף עא').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2358</field>
+		<field name="revision_id">2358</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בדף [ד'] הוא מביא ידע מדעי מתחומים שונים: בע&quot;ח (תיאור חכמת הביבר ועוד), מגנט, רפואה, חומרים כימיים וכד'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2359</field>
+		<field name="revision_id">2359</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לכל אורך הספר, המחבר מדגיש את כוחו השכלי של האדם. מתייחס לדברים ש&quot;מטעים את השכל&quot; (למשל כוח הדמיון). הוא מבקש לסתור את טענותיהם של אלה המתנגדים למי שמבקש לחקור את טעמי המצוות: &quot;כמו זר נחשב בעיניהם היאך יוכל להשיג שכל אנושי כוונת הבורא... ואביא ראי' לסקול דבריהם... הטעם היא עיקר המצוה...&quot;. &quot;התורה נתנה לאדם במה שהוא אדם היינו הכח השכלי שבו&quot;.
+המחבר רואה בדאגה את התפלגות העם ל&quot;כתות&quot; (העוסקים בקבלה ותורת הסוד, העוסקים בפילוסופיה, ה&quot;מחזיקים בתורה&quot;) ומבקש לפייס ביניהן. טוען: &quot;כל הג' כתות נצרכים מאוד... צריכים להתלמד זה מזה&quot;. הוא מוחה על ש&quot;הוציאו מילין על אנשים יראים ומשכילים לחשבם כאפקורסים...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בוכנר מדווח באגרותיו על התרחשויות ואירועים שהשפיעו על קהילות יהודיות (כגון השריפה עיר ברודי).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2362</field>
+		<field name="revision_id">2362</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי צינברג, ניכרות בו השפעות מודרניות. &quot;הוא מדבר על אחוות האנושות כולה ברוח ההשכלה האירופית&quot;.
+בהקדמתו כותב הורביץ: &quot;ועתה דעו שאידי הגלות וערפלי הדלות המה המקדרים בענני הסכלות על מאורי אור המושכלות ותהי' האמת נעדרת וצל החושך על אור האמת גוברת ולולי הקים לנו ה' מושעים בכל דור ודור... להעביר מסך מעינים החלושים... רצוני בזה שחכמת האדם תעי&quot;ר את פנימיותו להוציא את חכמתו מכח הצפון אל גבול המעשה כן אנכי עומד היום על העי&quot;ון והמעשה במה שראיתי שההצלחה האנושי' נתלית בהם</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">פרק כו' הוקדש לרפואת נשים, ופרק כז' לרפואת ילדים</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">פלאי, הריפורמה הדתית, עמ' טז, רואה בספר &quot;כחלק ממעשה ההשכלה של ר' שאול ברלין - וכחלק בלתי נפרד מן המאבק של המשכילים האחרים לחידוש פני היהדות&quot;.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2368</field>
+		<field name="revision_id">2368</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">עמ' 23 - שואל הרב את התלמיד, לאחר שהוכיח (לטענתו) את מציאות האל:
+&quot;התוכל להוכיח לי בראיות שכליות שתורת מ ר ע&quot;ה ושאר כתבי הקודש שהמה אלהיות?&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2370</field>
+		<field name="revision_id">2370</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">דקדוק, טעמים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2371</field>
+		<field name="revision_id">2371</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בהצגת המבנים הלשוניים של העברית: תנועות, יחיד ורבים, ובעיקר - בניני הפעלים. בתחתית העמודים באור שבו הרחבה לדיון בפלפולים ומחלוקות (ראו הקדמת המחבר).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמה  סטנוב מדמה את ה' לשמש, ומציג את התיאוריה החומרית של האור על פי ניוטון (דף ג' - בטעות מופיע פה הסימן ו').
+בביאור של דף סד' הוא מתייחס לאסף בן ברכיה, שלו ייחס סטנוב של משלי אסף, וטוען כי הוא חי בתקופת גלות בבל ולא מימי דוד המלך. בדומה לספרים נוספים של סטנוב, הביאורים עשירים בידע מדעי באסטרונומיה (למשל, דף צה'; מחזור הדם, דף קיד'; קלימוגרפיה (הסבר לתופעת הרוח כתוצאה מזרם חם - דף קכז'); בע&quot;ח - קרוקודיל (דף קלח').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2374</field>
+		<field name="revision_id">2374</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בעמ' יב' מוזכרים אריסטו, סוקרטס (&quot;כאשר סיפר לנו סענופען&quot;). הרופא הנטר (הונטר) מלונדון מוזכר כמה פעמים במבוא (ראו פירוט הנושאים במבוא).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2375</field>
+		<field name="revision_id">2375</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר מציג את חשיבות הידיעה המדעית כדרך להשגת האמונה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2381</field>
+		<field name="revision_id">2381</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">החלק הראשון של הספר עוסק בהצדקת קבלת החיסון נגד אבעבועות. החלק השני הוא פלפול ופרשנות בנוסח מסורתי.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2382</field>
+		<field name="revision_id">2382</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בדמויות ודימויים מן המיתולוגיה היוונית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">לפי המחבר, שיטת לימוד העברית שהוא מציע משמשת &quot;ניכ'ט נור די שפראכע... זאנדרן, עס דיהנט אויך צוגלייך צום מיטטל דיא פ'רשטאנדע קרעפ'טע דעם שילרע צו ענטוויקלן...&quot; (הקדמה, עמ' [1]).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2386</field>
+		<field name="revision_id">2386</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ברלין מביא דוגמא מתוך ספרו בשמים ראש, כדי להמחיש את תועלתו של הספר עצמו והגהותיו.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2387</field>
+		<field name="revision_id">2387</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">מזכיר אישים יהודים: הרמב&quot;ם, הרמב&quot;ן, אברבנאל, יהודה הלוי (ואת שם סיפרו הכוזרי), הרלב&quot;ג [דף א'], וחוקרים לא-יהודים: ניוטון, אפלטון, דמוקרטוס, אפיקורוס, גאסאנדוס, אריסטו, קופרניקוס, טיכו ברהה  ועוד (דף ו' למשל).
+עוסק בהרחבה בפיסיקה (אטומים, חשמל, מגנט), כימיה, אלכימיה, אופטיקה.
+מזכיר מכשירים מדעיים כגון, משאבת אויר, ברומטר, מקרוסקופ, טלסקופ, קמרה אובסקורה (דף כו')
+
+תומך בתפיסות מדעיות כגון של ניוטון, אך כנגד הדאיזם, ומתגונן נגד תוקפי היהדות והיהודים הטוענים שאין להם מדע וחוכמה. מטרתו להראות שאין ניגוד בין הידע היהודי למדעים, ויש חשיבות עליונה לחקר ה'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2388</field>
+		<field name="revision_id">2388</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בחישובי קיצין - צריך להוסיף את הנושא הזה</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בדקדוק עברי. המחבר טוען בחלק א' שהשפה העברית נעלה על כל השפות, וחשוב ללמוד את הדקדוק שלה:
+&quot;...שפה ברורה, העולה היא למעלה, על לשונות הגוים... לכן נכון וראוי לכל אשר תורת אלהיו בלבו, לדרוש וללמוד חכמת הדקדוק, כי בלעדיה לא ישכיל פשוטי דברי התורה, גם לא יבין אמרי מצפוני'... (דף ב'). הספר עוסק בקריאה הנכונה, ובהבדלים בין קריאה ספרדית ואשכנזית.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2391</field>
+		<field name="revision_id">2391</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הניתוח של וורמס נשען על מושגים מעולם הספרות. בעמ' ב/א הוא כותב: &quot;להיות זכרון האנושי חלוש בטבע... לכן שפטו בשכליהם למצוא לו עזר בדברים מעטי הכמות כוללים ענינים רבים בלתי מתנגדים ובלתי מכחישים זה את זה ומהם נולד המליצה אם במלות מפורדות כאשר הם השמות המושאלים והמשותפי' ואם במאמרים או להיותם מורכבים ממלות ומשמות ההם או בצורות ... ומהם המשל והחידה והדרוש ודומיהן מדרכי המליצה...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2393</field>
+		<field name="revision_id">2393</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הטקסט מביא פסוקים משיר השירים ומפרש אותם. בחלק מן הפסוקים עושה מרגליות שימוש בידע מדעי מודרני, שמופיע גם בספרו &quot;ספר אור עולם&quot;. למשל, בדף לח' הוא מציין את תכונת ההתפשטות, ואף מלווה אותה באיור ממחיש.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2394</field>
+		<field name="revision_id">2394</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בטקסט מופיעים סעיפי תקנון החברים בחבורת מצדיקי הרבים, וקובעים כי הספרים ידפסו בדפוס חינוך נערים, כמה צריך לשלם כל חבר בחבורה,  וכד'.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2396</field>
+		<field name="revision_id">2396</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">על הקושי לכתוב בעברית מדבר המחבר בהקדמה.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2399</field>
+		<field name="revision_id">2399</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">[יש להוסיף הגדרה כגון &quot;השכלה&quot; (או שמא &quot;לימוד&quot; כדי למנוע דו משמעות), כדי לציין עיסוק בשאיפה להרחבת הידע וכד'.] 
+
+נושא המעסיק את המחבר הוא עניין הלימוד והרחבת הידע. כך הוא כותב בהקדמה, בהתייחסו למקרה של רבי עקיבא: &quot;ממנו יראה ויבין המבין לקחת לקח ומשל אשר איננו זקן האנוש מהיות לאיש, ועיר פרא אדם יולד כאשר יחרוץ ויעיר מתרדמת העצלות...&quot; [עמ' 6]</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2401</field>
+		<field name="revision_id">2401</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בהיסטוריה של אירפה משנת 1741  ועד שנת תקס&quot;א</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2404</field>
+		<field name="revision_id">2404</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">נושא שמעסיק את המחבר בספר זה הוא &lt;ins&gt;המליצה בלשון העברית&lt;/ins&gt;.  בין היתר, הוא מבקר את היעלמותה של המליצה מן העם ושיבוש השפה העברית, הרווח לדבריו בימיו. הוא מבקר מגמות נפוצות בנוגע לשימוש השפה העברית.  בפנייתו אל יעקב ששפורטס בתחילת הספר כותב: &quot;כמוכם ידעתי גם אני, מה רבו היום עלגי לשון ואין בינה המתפרצים לעלות הרי השיר והמליצה ואיש איש מתנשא לאמור אני אמלוך בראש ההר הטוב הזה ולנו בגבעה או ברמה... אמנם שבתי ואראה איכה אלה המליצים לצים והשרים שורים יתעו את רוח בנינו... טועים ללמד לבני יהודה לשון ומליצה גם עקבותיה ושביליה להם לא נודעו, חוקות הדקדוק לא ידעו, לשון למודים לא שמעו, ואופני מליצה העברי' לא ראו, על כן אור לא נגע להם ובשפתם אופל ולא סדרים. הוי הקוטפים אנה ואנה מקראי הכתובים ויחברו אותם בחזקה ויאמרו לדבק טוב הוא, והי' כל הנשאר בציון והנותר בירושלים, לא ישמע ולא יבין כי ידברו אליהם. כל עוד נרבה לכתוב מקראי הכתובים, כן ירבה וכן יפרוץ תהלתינו ושפתינו אתנו מי אדון לנו...&quot; &lt;ins&gt;בלשון פולמוסית&lt;/ins&gt; אומר: &quot;אל תאמינו לאלה המתעים, כי גם המה תעו. נחלת המליצה רבה וגדולה ואין ערך אל הודה ויפיה... &lt;ins&gt;לכו בקשו ודרשו נא מעל ספרי תנ&quot;ך מערכת המלים ומענה לשון&lt;/ins&gt;, התבוננו נא איך העתיקו המה הקדושים אשרר בארץ מחשבת לבבם ויתנו להן תבנית...&quot;
+
+שיר זה של פרידריכספלד עוסק בענייני &lt;ins&gt;פוליטיקה&lt;/ins&gt;. לאחר תיאור רעות המלחמה והכמיהה לשלום, באים דברי תהילה ושמחה על השלום שבא לארץ. בשיר הוא מביע הזדהות עם משאלותיו של העם ההולנדי לחדש את פעולת הסחר הימי שלו (בעקבות המלחמה נגד אנגליה וספרד (לצד צרפת)). &quot;ועתה חזק ואמץ עם נאמן/ שלח אניותיך קדמה וימה/... שוב בטח, והתענג על רוב שלום.&quot; (בית כג)
+המחבר &lt;ins&gt;משבח את נפוליאון, ומהלל את צרפת על השוויון שהעניקה ליהודים&lt;/ins&gt;: &quot;בשורך היהודים האומללים/ הן אז גם את בריתך יעקב זכרת/ ותאמרי: אל לכם פחים חחים/ אמנם שבו אתנו שבת אחים.&quot; (בית יד)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2410</field>
+		<field name="revision_id">2410</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר עוסק בהיסטוריה של רוסיה, ומתאר את הקיסר פיטר אלעקסיעוויטש, ואת יקתרינה הגדולה את המלחמות שניהלו. הוא מציין את הבערות הגדולה ברוסיה, ואת היחס השלילי לעם היהודי, ואת השינוי שחל בעמי אירופה ביחס לחכמה, ואת התפתחות היחס השלילי למלחמות. הוא מספר כי העם הרוסי התקדם מאוד והוא מדביק את הפער עם הגרמנים והפולנים, ויוצא נגד המבזים את הרוסים, אך טוען כי יחסו ליהודים עוד גרוע. לכן הוא פרסם ספר ברוסית שמטרתו להיות מליץ יושר ליהודים. המחבר מזכיר את הקיסר אלכסנדר הראשון, ואת משה מנדלסון  וסיפרו &lt;strong&gt;ירושלים&lt;/strong&gt; (עמ' טז'), אוגוסט פאניאטאווסקי מלך פולין. הוא פונה לתושבי רוסיה בבקשה ללכת בעקבות עמי אירופה האחרים ולקבל את היהודים. אל היהודים הוא פונה בקריאה להבחין כי מדובר בתקופה חדשה, שבה הם יזכו לתמיכת השלטונות. בעמודים האחרונים מובאת אלגוריה &quot;מאמר שנאת הדתות, ואמת ושלום&quot; (עמ' כט'-לא'), המתארת את נצחון האמת והשלום על שנאת הדתות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ישנם שירי אהבה/התאהבות מובהקים ואפילו שירי חשק (ראו  &quot;על הרופא נופל ברשת האהבה&quot; ולמולו &quot;על התלאה אשר מצא החשק להלחם בו&quot; (הדף מסומן ט', אבל מופיע לפני יד'). שיר על רופא אליל ורופא המסתמך על הטבע מופיע בדפים המסומנים כב'-כג'.
+
+ההערות של סטנוב על השירים כוללת במקרה אחד התייחסות לאסטרונומיה (ראו דף כה').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2412</field>
+		<field name="revision_id">2412</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">צעיר המשוררים הקמים (ע&quot;פ סיפור המסגרת - ראו אצבע &quot;מודלים&quot;) לברך את הזוג אומר כדברים הבאים, כנגד שניים מן המשוררים שנשאו דברים לפניו: &quot;מדוע שבחתם את הכלה בטוב תארה ויפי' ועזבתם טוב לבבה וכשרון מעשי'. ואם אמנם היופי שבח לאשה הנה הוא כאין וכאפס נגד המדות החמודות. וכבר אמר המלך החכם בספר משליו שקר החן והבל היופי אשה יראת ה' היא תתהלל...&quot; (עמ' ג) לאחר מכן נשאו חרוזים עם פסוקים מתוך &quot;אשת חיל&quot;, ובשבח האישה המשכלת.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2413</field>
+		<field name="revision_id">2413</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">במחזה האלגורי יש עימות בין החכמה לבין הקנאה והסכלות שרוצים להזיק לה, ולבסוף החכמה מגרשת אותם מביתה. המחבר מאחל לזוג הנישא שיגרשו מביתם את המדות הרעות: &quot;והכוונה בזה הסיפור בנשואין הזווג השלם הזאת בי בם תמצאנה מדות הגונות אשר בו, הם אשר גרשו מביתם הסכלות והבלי העולם קנאה ויגון...&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר כתוב ארמית ולכן התקשתי לקרוא אותו ולעמוד על נושאים נוספים שמופיעים בו. בהערות השוליים שהוסיף סטנוב בעברית יש שימוש בחומרים דומים לאלה שעשה בספריו האחרים, ואף מצטט ב&quot;משלי אסף&quot;: &quot;ראשית מחקר פליאה&quot;(דף כד'), ומשתמש בדוגמה של הפריזמה: &quot;טבעת הספי' שמן חסד עד מלכות רומזים לשבתעת הגוונים בסידרם הנראה בכלי הזכוכית המוכן לכך פרי&quot;זמה בלע&quot;ז והוא מתחיל באודם ומסיים בתכלת כאמור.&quot; (דף כד').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2416</field>
+		<field name="revision_id">2416</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">ספר עוסק בהיסטוריה של אירופה משנת 
+1741-1810 - תיאור מדינות פרוסיה, פולין, צרפת ועוד - שליטיהן והמלחמות שניהלו. יש דגש על מצבם של היהודים במסגרת אירועים אלה, כגון, הגיוס הכפוי לצבא באוסטריה בתקמ&quot;ח (דף ל'-לא'), הוא כולל צווים ומכתבים הנוגעים לענייני היהודים.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2417</field>
+		<field name="revision_id">2417</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">סיפור אימוצה של הזאבה את ראמוס ורמולוס מלווה באמירה הבאה: &quot;...כן ירבו לספר נפלאות והבלים כדרך כל כותבי קורות הימים ההם...&quot; (עמ' 33)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר מתאר את מלוכת טארקוויניאוס, ועד ויתורו של צינצינאטוס על השלטון</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2424</field>
+		<field name="revision_id">2424</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הספר הקצר נוקט עמדה בפולמוס על מבטא עברי שהתנהל בקהילת אמסטרדם. המחבר מגן על מחבר הספר אמרה צרופה. עברנו על הספר &quot;מבלי מצוא בו שום עוול או שום ניצוץ מינות ח&quot;ו&quot;. &quot;בחור חמד יודע מבין ומשכיל הוא, ירא אלהים וסור מרע, בר אירין ובר אובהן, זהיר במצות קלות כבחמורות, ולא הלך בעצת רשעים ובדרך חטאים לא עמד, מה לו ולהאיש אשר עלה שמו על שפת המח&quot;בלים האלה... אולי חשבו זאת החמורים הללו בעבור שהמחבר עוסק בחכמות ותשבורת והמדידה אשר כל יודעיהן כפעם בפעם יאמרו פלוס או מינוס???... מדוע לא ילכו על ארבע כשאר בהמות יער או על גחון כנחשים השרפים?&quot; דומה כי &lt;ins&gt;המבקרים גינו את הלימוד מתוך אברבנאל וחובת הלבבות, והמחבר מתקומם נגד זה&lt;/ins&gt;. &quot;מי שמע כזאת החוצפה לקרוא למוד אברבנאל בשם מעשה מינות... אכן בוודאי לא למוד האברבנאל, ולא מבטא לה&quot;ק, לא קנאת ה' צבאות, ולא חפץ האמת עוררם משנתם, אבל היטב חרה להם כי למד הבחור ספר חובת הלבבות בפני כל, ועל ידי זה כל איש יוכל להבין כי האנשים החטאים האלה אינם עושים כחובתם ועושים מלאכת ה' רמיה, לשונם חלקלקות ודברי חנופה ידברו והמה רכיל יהלוכו... נמשלו כבהמות נדמו. ע&quot;כ חרה להם כי העיר ה' את רוח איש ישר ללמד לעם דעה להבין ולהשכיל&quot;.
+
+להגנת המבטא הספרדי מביא אסמכתאות רבניות.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2431</field>
+		<field name="revision_id">2431</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בדיאלוג דימיוני, שנת תק&quot;ס היוצאת מספרת את קורות &quot;אנשי הכת&quot; (הפרנקיסטים) ל&quot;אחותה&quot; שנת תקס&quot;א. באמצעות סטירה אנטי-פרנקיסטית זו יוצא המחבר במאבק נגד קבוצת &quot;מאמינים&quot; פרנקיסטים, שיצאו בחלקם מתוך שורות ההשכלה.
+
+חינוך: בהערתו הראשונה כותב המחבר: &quot;הרבה יש לדבר על רוע ענין חינוך הבנים בזמננו... בכל העמל וסיגיעה אשר טרחו כותבי ספריה לכתוב בענין הזה, ... עוד הרעו לעשות... גם המורה או המלמד, אין העון תלוי בו, כי אם האשמה על האבות...&quot; (עמ' 2-3). הוא מגנה את השימוש הבלתי אחראי במונח &quot;אאופקלרונג&quot; (עמ' 3)</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הרב דוד קמחי ויואל ברי&quot;ל משמשות כדמויות בספר</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2433</field>
+		<field name="revision_id">2433</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">וייזל מתאר בלשון מליצית את העושר והצלחה של מלך קריסטיאנוס ורעייתו, ואת תמיכתו הרבה בו.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2434</field>
+		<field name="revision_id">2434</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">המחבר חותם: &quot;וכשבתכם שקט בביתכם ורענן בהיכלכם, נא זכרו אהבכם בכל לב/ ה&quot;ק צבי הירש בן כ&quot;ה משה גלאגוי&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2435</field>
+		<field name="revision_id">2435</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">שיר שבח למלך לואיס נפולאון, אשר בא למשול על (הולנד). בין היתר כתוב:
+
+&quot;שלום, שלוה, והשקט בימיו יפרחו
+
+חסן, תושיה, ואמץ יצמחו
+
+עין העם לחסדו וכחמתו מיחת
+
+כנפוליאון בצרפת ינהל עמו בצדק
+
+כן לואיס בארצנו יעקור כל חדק
+
+ישים משפט לקו וצדקה למשקלת.&quot;
+
+
+ואח&quot;כ:
+
+&quot;אחי ורעי! כבוד ועז לאל הבו
+
+דרכי טובו ממנו מאד נשגבו
+
+דבר בקדשו: יהי נפוליאון! ויהי
+
+אנא אלי! עדי נצח תושיעהו
+
+יחי לעולם! מכל צרה תצילהו
+
+בימיו תכונן ציון וסר כל נהי!
+
+
+שארית ישראל! האזינו ושמעו 
+
+עינכם מדמעה וקולכם מבכי מגעו/מנעו
+
+כמוצא מים אשר מימיו לא יכזבו
+
+כן לואיס בצחצחות נפשכם ישביע
+
+מעטה תהלה עליכם יפרוש ויציע
+
+תחת רוח בהה, לא תתעצבו.&quot;</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2436</field>
+		<field name="revision_id">2436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">תפילה ליום הכיפורים שלום המלך וילהלם, רעייתו ובני משפחתו</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2440</field>
+		<field name="revision_id">2440</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">דניאל איציג מוצג כאיש נדיב ותורם, מקים בית הספר חינוך נערים, ומי שמימן יותר מחמישים חתונות ליתומים ויתומות</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2448</field>
+		<field name="revision_id">2448</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">תפילה וברכה לרגל לידת בת למלך.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2455</field>
+		<field name="revision_id">2455</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">וייזל מציע בספר זה (ובספרים אחרים בסדרה) פרשנות לסיפור המכות במצרים שאיננה תואמת לפרשנות המקובלת: &quot;נשיר על המשפטים שבהן שפט השם ב&quot;ה את פרעה ומצרים, ולפי שיש לנו בהן &lt;ins&gt;דרך חדשה, נתיב לא ידעו המפרשים ז&quot;ל&lt;/ins&gt; ... והנה נטיתי מדבריהם ז&quot;ל הן במספר המכות והן במחלקותיהן, ותחת שהם מונים עשר אני מונה שתים עשרה, ותחת שהם מחלקים אותן על פי סימנו של ר' יהודה לשלשה סדרים [דהיינו, דצ&quot;ך עד&quot;ש באח&quot;ב], אני מחלק אותן לאררבעה סדרים שווים.&quot; (הקדמה, עמ' [1-2])</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2458</field>
+		<field name="revision_id">2458</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">התפילה נועדה לטקס חנוכת בית הכנסת  של חברת אחים בברסלוי, והיא מחולקת ל-7 הקפות. ישנן הנחיות לטקסט שנאמר על ידי &quot;המשורר&quot; ועל ידי &quot;הקהל&quot;. במהלכה מופיעה תודה לשליט פרידריך וילהלם.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2459</field>
+		<field name="revision_id">2459</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">שיר ותפילה לכבוד המלך לואיס נפוליאון.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בוק, מנהל בית הספר, מודה ליאקובסון על נדבתו לבית הספר. הדוברת בשיר היא השפה העברית, שחוזרת לחיות בנפשות הילדים העניים, תלמידי בית הספר.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2465</field>
+		<field name="revision_id">2465</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">הנושא המרכזי של החיבור: הויכוח על הלנת המתים.
+ברי&quot;ל מבקר את אלה אשר נוהגים בקלות הדעת ומוותרים על מסורת האבות בלי מחשבה. אך יחד עם זאת, הוא טוען, יש גבול לכל דבר, גם לטוב של אלה אשר מכבדים את מסורת אבותיהם. אסור להם להתעלם מן הסכנות האורבות, מוטב שיפקחו את עיניהם ויטו את אזניהם לשמוע את טענותיהם של אלה שיוצאים נגד אמונתם. האיש המאמין בעל התבונה מקשיב לכל, מתבונן בכל, ואחר כך מחליט על פי תבונתו ודתו כיצד לנהוג.</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2468</field>
+		<field name="revision_id">2468</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">שיר תודה למושל פרדיננד קורפירסט ווירצבורג</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">יש התייחסות ל-13 עיקרי הדת</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">בהקדמתו מדבר המחבר על מעלותיהן של תקופות קודמות בהיסטוריה היהודית. אמנם סבלו אז היהודים, אך מצד שני ניכרו האחדות ושותפות הגורל בקרבם. היהודים היו מחוברים בקשר ההדוק של הדת, מוכנים לחיות ולמות אחד בשביל כולם וכולם בשביל אחד. &quot;אבר ווא איזט נון דיא טרויריגע אונד צוגלייך זא זעליגע צייט הין? דאס אונצערטרענליך געגלויבטע באנד שיינט זיינער אויפ'לעזונג נאהע, שאן פ'ערקעננעט דער ברודער דען ברודער, הערץ אונד מיינונג זינד געטהיילט&quot;.
+המחבר מבקר שתי עמדות רווחות בקרב היהודים: מצד אחד - אמונות תפלות ודעות קדומות; מצד שני - ספקנות ולעג לדת היהודית וזלזול ב&quot;לעהרן&quot; וב&quot;זיטטענלעהרע&quot; שהיא מכילה.
+מהי מקור הצרה, שואל המחבר בהקדמתו. &quot;גוויס אין איינער צוועקלאזן ערציהונג, דא אונזרע נאציאן אויף די בילדונג דעס הערצענס אונד פ'רשטאנדעס איהרר קינדר ניכ'ט אכ'טן&quot;. דואגים אך ורק לפן המכני והטקסי, מבלי להבהיר את המשמעות והמטרה של אותם טקסים.
+לפי דברי המחבר בהקדמתו, הספר מתייחס גם לתוצאות הבלתי רציות של ה&quot;פ'אנאטיסמוס&quot; כפי שאלה באות לידי ביטוי בארועים כגון המהפכות בארה&quot;ב ובצרפת (ראו ציטוט באצבע קהל יעד). כמו כן, הספר תורם ידיעות גם בתחום אחר: &quot;איינטהיילונג אללער לעבענדיגן געשעפפ'ע אין פ'רשידנע רייכ'ע אונד קלאססן, נאטורגעשיכ'טע אונד לעהרע</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">במבוא לספר עוסק המחבר בפילוסופיה של הלשון (ראו בחלונית &quot;מבנה הספר&quot;).</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_topics_notes_value">במבוא לספר עוסק המחבר בפילוסופיה של הלשון - הקשר בין הגדרת העולם בשפה ובין החברה האנושית (קיצור של הדברים שנאמרו במבוא לתורת לשון עברית - חלק א').</field>
+		<field name="field_topics_notes_format" xsi:nil="true" />
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

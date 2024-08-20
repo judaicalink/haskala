@@ -1,0 +1,2630 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_contents_table_notes">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_contents_table_notes_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_contents_table_notes_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_contents_table_notes" engine="InnoDB" version="10" row_format="Dynamic" rows="93" avg_row_length="1057" data_length="98304" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:42:57" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 32 (field_contents_table_notes)" />
+	</table_structure>
+
+	<table_data name="field_data_field_contents_table_notes">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1958</field>
+		<field name="revision_id">1958</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Vorrede I-XVI
+
+Einleitung 3-32
+
+1. Buch: Von der Bewegung der Körper überhaupt
+
+1. Kapitel: Von des Gesetzen der Bewegung 33-58
+
+2. Kapitel: Andere Beweise für die Gesetze der Bewegung 59-140
+
+3. Kapitel: Von den Centripedalkräften 140-168
+
+4. Kapitel: Ueber den Widerstand der Flüssigkeiten 169-190
+
+Anmerkungen 191-224</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1963</field>
+		<field name="revision_id">1963</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">I. Ueber die Beschränkung der Einbildungskraft durch sich selbst   
+S. 1
+
+II. Wechselseitiger Einfluß der Ausbildun des Schönheitssinnes und der Geselligkeit auf einander   S. 24
+
+III. Ueber Realismus und Idealismus   S. 49
+
+IV. Ueber Geld und Geldeswerth   
+S. 80
+
+V. Leo und Isabelle   S. 105
+
+VI. Ueber den Unterricht der Juden   S. 117
+
+VII. Ueber die Würde des Menschen   S. 134
+
+VIII. Ueber die Erregungstheorie   
+S. 172</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1964</field>
+		<field name="revision_id">1964</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">לפני ההקדמה מופיעה פתיחה מליצית שבה המחבר מתאר עצמו כחולם ומשורר על איש פטריוט בשם &quot;פלוא&quot;. לאחריה מופיעה הקדמת המחבר שכתובה כמליצה: המחבר מקונן על מצב העברית הירוד, ובוחר לרומם אותה ולהשתמש בה כקינה למות פרידריך וילהלם. אח&quot;כ מופיע מחזה שבו מתואר פלוא הפטריוט מהלל ומשבח את המלך פרידריך וילהלם,  כמצביא מלחמה מחונן וכמלך רחום, וכך למנוע מן המוות, המופיע כדמות במחזה, לקחת אותו. בסופו של דבר המלך מת, ופלוא מספיד אותו מרה. לסיום הספר מופיעה חידה: &quot;שלא להוציא הנייר חלק, אמרתי אציגה נא עמך חדה אחת...&quot;, עמ' [31-34].</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1969</field>
+		<field name="revision_id">1969</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">I. Eintheilung der schönen Künste S. 1
+
+II. Über die Künste des raumes überhaupt   S. 37
+
+III. Über die Dichtkunst   S. 85
+
+IV. Über die Tonkunst   S. 161
+
+V. Über die Tanzkunst    S. 228.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Erster Abschnitt. Von den Menschen, seiner Natur und Bestimmung. S. 1-17.
+
+Zweyter Abschnitt. Von der Erkenntniß Gottes aus den erschaffenen Dingen, und was wir durch die Vernunft von Gott wissen können. S. 18-42.
+
+Dritter Abschnitt. Erkenntniß von Gott, seinen Eigenschaften und seinem Willen durch die Offenbarung oder durch die Belehrungen der heiligen Schrift. S. 43-51.
+
+Vierter Abschnitt. Von den zehn Gebothen. S. 52-93.
+
+Fünfter Abschnitt. Von den Pflichten, welche uns die Erkennntnis von Gott und seinem Willen auferlegt. S. 93-115.
+
+Sechster Abschnitt. Von dem, was der Mensch gegen sich selbst zu beobachten schuldig ist. S. 115-140.
+
+Siebenter Abschnitt. Von der Abhängigkeit der Menschen von einander, und der daraus entstehenden Pflichten. S. 141-155.
+
+Achter Abschnitt. Von den engern Verhältnissen und Verbindungen des Menschen und den daraus entstehenden Pflichten. S. 155-169.
+
+Neunter Abschnitt. Von den Pflichten des Menschen als Bürger. S. 169-182.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1976</field>
+		<field name="revision_id">1976</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Nur für den Prediger.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1979</field>
+		<field name="revision_id">1979</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Inhalt:
+
+Vorrede
+
+Religion
+
+Gesetzgebung
+
+Erziehung
+
+Die Gesetze
+
+Die Obrigkeit
+
+Abgabe
+
+Die Sprache
+
+Die Tracht</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Gebet beym Hereintreten in die Synagoge   S. 3
+
+Lob Gottes vor und nach dem Gebete			4
+
+Benedeyung beym Händewaschen			5
+
+Benedeyung nach Verrichtung der Nothdurft
+
+Benedeyung vor dem Studiren
+
+Morgenbenedeyungen	8
+
+Gesänge und Psalmen	18
+
+Sabaths und Festtagsgesänge				25
+
+Gesänge für alle Tage	42
+
+Gebete			58
+
+Buß- und Festtagsgebete  90
+
+Gebete am Montage und Donnerstage			94
+
+Schlußgebete		115
+
+Morgengebete für den Sabath				129
+
+Das Mussaphgebet	167
+
+Neumondstage-gebete	179
+
+Festtagsgebete		194
+
+Mussaphgebet für die Festtage				208
+
+Mussaphgebet für den Neujahrestag			223
+
+Versöhnungstagesgebete				237
+
+Mussaphgebet für den Versöhnungstag	249
+
+Beschlußgebet für den Versöhnungstag	253
+
+Gesang nach dem Gebete, Jegdal			257
+
+Annim Zemiroth	259
+
+Alltägliche Vespergebete				267
+
+Vespergebet für den Sabath				273
+
+Gesänge beym Eingang des Sabath			292
+
+Abendgebet		305
+
+Abendgebet beym Ausgang des Sabath			319
+
+Seegensformeln beym Genusse der Dinge			336
+
+Gebet nach der Mahlzeit				339
+
+Fortsetzung der Segensformeln				348
+
+Nachtgebet vor dem Schlafengehn			351
+
+Massecheth Aboth erster Abschnitt			359
+
+-	zweiter	365
+
+-	dritter	374
+
+-	vierter	385
+
+-	fünfter	394
+
+-	sechster 405
+
+Anmerkungen zu den Gebeten				417
+
+Erläuterungen zur Massechet Aboth			459</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1998</field>
+		<field name="revision_id">1998</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Vorwort	1
+
+Decret Sr. Majestät des Kaisers der Franzosen, vom 30sten May 1806, die Versammlung der jüdischen deputireten betreffend	3
+
+Ueber die endliche Regeneration der Juden, von Justin-Lamoureux	5 
+
+Circular des Ministers des Innern an die Deputirten der Juden	18
+
+Untersuchung des Zustandes der Juden, von den Zeiten Mosis bis jetzt	19
+
+Die Juden in Frankreich seit dem siebzehnten Jahrhundert	49
+
+Portugisische Juden	51
+
+Lothringische Juden	52
+
+Die Juden zu Metz	56
+
+Elsasser Juden	65
+
+Von dem Gesetz der Juden	69
+
+Von der ersten Sitzung der jüdischen Deputirten	77
+
+Fragen der Versammlung der Deputiretn der jüdischen Nation vorgelegt, durch die 
+von Sr. Majestät dem Kaiser und König zu diesen Verhandlungen ernannten Commissarien	95</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Einleitung
+
+
+§. 1. Von der Rückkehr der Juden aus der babylonischen Gefangenschaft bis zur Einweihung des zweyten Tempels.	S. 1
+
+§. 2. Von der Einweihung des Tempels bis zu zweyten Regierungsjahr des Darius Kodomanus 	S. 13
+
+§. 3. Von dem Einfalls Alexanders des Großen in das persische Reich bis zum Tode des Ptolomäus Evergetes	S. 26
+
+§. 4. Vom Regierungsantritte des Ptolomäus Philopator bis zu jener des Antiochus Epiphanes	S. 38
+
+§. 5. Vom Regierungsantritte des Antiochus Epiphanes bis zum Mathathias des Hasmonäers	S. 41
+
+§. 6. Jehuda Machabäus	S. 54
+
+§. 7. Jonathan	S. 68
+
+§. 8. Simon	S. 84
+
+§. 9. Hyrkan	S. 89
+
+§. 10. Aristobulus	S. 100
+
+§. 11. Alexander Janäus 	S. 103
+
+§. 12. Alexandra	S. 114
+
+§. 13. Aristobulus der Zweyte	S. 117
+
+§. 14. Hyrkan der Zweyte	S. 123
+
+§. 15. Antigonus	S. 138
+
+§. 16. Herodes	S. 144
+
+§. 17. Archelaus	S. 176
+
+§. 18. Judäa eine römische Provinz	S. 185
+
+§. 19. Agrippa	S. 192
+
+§. 20. Judäa abermals eine römische Provinz	S. 205
+
+§. 21. Judäischer Krieg	S. 224
+
+§. 22. Fortsetzung	S. 239
+
+§. 23. Fortsetzung	S. 250
+
+§. 24. Fortsetzung	S. 257
+
+§. 25. Belagerung, Eroberung und Zerstörung Jerusalems	S. 265
+
+§. 26. Die Juden in Antiochien	S. 290
+
+§. 27. Zerstörung der übrigen festen Plätze in Judäa	S. 293
+
+§. 28. Die Juden in Egypten	S. 196
+
+§. 29. Barchocheba	S. 299
+
+§. 30. Anhang von Jüdischen Münzen	S. 306.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2002</field>
+		<field name="revision_id">2002</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">תוכן עניינים בסוף הספר</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Inhaltsverzeichnis nur für die 318 Gedichte:
+
+1. An die Kritiker. 
+
+2. An meine Lieder. 
+
+3. Au eben dieselben, 
+
+4. An die Thoren, 
+
+5. Auf einen Prahler. 
+
+6. Erdengötter.
+
+7. Der Polnische Jude der ein Christ ward. 
+
+8. Der Algierische Stundenrufer.
+
+9. Eine Entschuldigung Amors. 
+
+10. Das feindselige Weib.
+
+11. Das gute Volk.
+
+12. Der Mann von Geburt. 
+
+13. Das Opfer.
+
+14. Auf den Stax. 
+
+15. Ich und Ralph. 
+
+16. An Nerans Braut. 
+
+17. An die Freundschaft. 
+
+18. Der seltne Schaz.
+
+19. An einen schlechten Arzt, der schlechte Gedichte machte.
+
+20. Gebet eines Advokaten. 
+
+21. Gallomanie.
+
+22. Veits Jahreszeiten der Ehe, 
+
+23. An das schöne Geschlecht. 
+
+24. An die Musen.
+
+25. Die Münze des Fürsten. 
+
+26. Das Gewissen.
+
+27. Die Ehehälfte.
+
+22. Die Besserung.
+
+29. Des Narcissus Grabschrift. 
+
+30. Die Wittwentrauer.
+
+31. An Thestilis.
+
+32. Die natürliche Maske. 
+
+33. Der Antiquarius.
+
+34. An Kleant. 
+
+35. Modeliebe.
+
+36. Der Miethzettel.
+
+37. Leichenpredigt eines Grafen. 
+
+38, Dank für ein Bubenstük. 
+
+39. Auf den Tabak.
+
+40. Auf eben denselben. 
+
+41. An einen Feldherrn. 
+
+42. An Cynthien.
+
+43. Die Freuden des Lehens. 
+
+44. Das Balsamiren.
+
+45. Passerilla.
+
+46. Amor zur älternden Lais. 
+
+47. Lottchen.
+
+48. Die Götter dieser Welt, 
+
+49. An Isabellen.
+
+50. An den Pravus.
+
+51.. Das immerwährende Karneval. 
+
+52. An den Anselm.
+
+53. Die Narren eines gewissen Fürsten. 
+
+54. Bestimmung mancher Weiber.
+
+55. Das menschliche Leben. 
+
+56. Herrengunst.
+
+57. Der Verlust auf Einer Seite.
+
+58. Hippokrene, auf deutsch Rossbach. 
+
+59. Der ächte Adel.
+
+60. l'Esprit createur.
+
+61. Verehrung gegen die Alten.
+
+62. Auf einen milzsüchtigen Satiriker.
+
+63. Der väterliche Rath.
+
+64. Der Gelehrte zum Säufer. N. d. Hebr.
+
+65. Bild der Grossen.
+
+66. Der Reiche und Diogenes. 
+
+67. Der Alte.
+
+68. Der gefangene Held.
+
+69. Rath für spröde Mädchen. 
+
+70. Vermögen.
+
+71. Kopernikus ein Thaumaturge. 
+
+72. Die fiegende Thräne.
+
+73. Blumenstrauss.
+
+74. An Philis , als sie sich von einem Zigeuner wahrsagen liess.
+
+75. Das Horn des Ueberflusses. 
+
+76. Die wunderliche Lais.
+
+77. Schneider Schnips als Autor. 
+
+78. An den Avitus.
+
+79. Dalosus.
+
+80. An Thonen als sie jagte.
+
+81. Der Priester Tartiiff in Venedig. 
+
+82. Die undankbare Gottheit.
+
+83. Der Kuss Sacharissens. 
+
+84. Ein böser Schwur.
+
+85. Ein Rath an Jünglinge.
+
+86. Der Apfel fällt nicht weit vom Stämme. 
+
+87. Gebet eines Hofmanns.
+
+88, Die gefundene Glükseligkeit. 
+
+89. Semper idem.
+
+90.. Ehestandsgespräch. 
+
+91. Der Stein der Weisen. 
+
+92. Naide und ihre Freundinnen. 
+
+93. An die Vernunft.
+
+94. Der Sorglose.
+
+95. Die Sonne des weisen Bild.
+
+96. Der Genius der Paruaner. 
+
+97. An den Paris.
+
+98. Der böse Zeitvertreib. 
+
+99. Aret.
+
+100. Der Zöllner in E. und der reisende Jude. 
+
+101. Das Schiksal.
+
+102. Reliquien. 
+
+103. Hörner.
+
+104. An Amaliens Augen. 
+
+105. Der sterbende Pyrrho. 
+
+106. Richter Pfiff.
+
+107. An * * *. N. d. Hebr. 
+
+108. Leukonoe.
+
+109. Gebet eines Soldaten. 
+
+110. An einen Kleidernarrn, 
+
+111. Auf den Veit.
+
+112. Die Unterstützung in der Noth. 
+
+113. An Y ... s Mätresse.
+
+114. Rochus auf seine Frau. 
+
+115. An den Philen.
+
+116. Der geistreiche Hilarius. 
+
+117. Gleichheit mit der Eva.
+
+118. Auf den wappenstolzen Fatill. 
+
+119. Klage über Hymen.
+
+120. Auf die hässliche Trulla. 
+
+121. Marktschreier.
+
+122. An einen frühzeitigen Ehemann. 
+
+123. Vertrauen auf Gott.
+
+124. Auf den eiteln Adelbert. 
+
+125. Alte Münze.
+
+126. Lob des Geizes. 
+
+127. An den dunkeln Oront. 
+
+129, Glycerens Tod. 
+
+129. Alidors Religion. 
+
+130. Elmirens Liebster.
+
+131. Veits Vorsicht. 
+
+132. Mahlzeiten.
+
+133. Auf den Rath einer gewissen Stadt. 
+
+134. Auf einen heuchlerischen Abt. 
+
+135. Waldemars Braut.
+
+136. Ablancourts Grabschrift. 
+
+137. Der Weise. An den Irin. 
+
+138. Der entlar[v]te Ausschreiber. 
+
+139. Auf ein altes Brautpaar. 
+
+140. Der treue Freund.
+
+141. Gebrauch der Verstellungskunst. 
+
+142. Koridon und Lais.
+
+143. Auf die schöne und tugendhafte Seraphine. 
+
+144. Mathilde.
+
+145. Auf den Hofmann Servilius. 
+
+146. An einen jungen Edelmann. 
+
+147. Auf den Dichter I, N. Götz. 
+
+148. Vom Homer.
+
+149. An einen Kritikaster. 
+
+150. Theone.
+
+151. An den Philet.
+
+152. Allgemeine Schönheit. 
+
+153. Der Zufriedene.
+
+154. Die glükliche Verbindung.
+
+155. Der mit Steinschmerzen behaftete Minister. 
+
+156. Duns und Dik. N. d. Französischen.
+
+157. Die Kränkung. 
+
+158. An den Valler. 
+
+159. Gross und klein. 
+
+160. An Alexander.
+
+161. Tempus eda rerum: 
+
+162. Die Bettschwester.
+
+163. Der Uebersezer der alten Poeten. 
+
+164. Die Britten.
+
+165. An Eleonoren, die einen Sohn gebar.
+
+166. Der Cyniker und Autigoneus. 
+
+167. An die Konstantia.
+
+168. Das fromme Mädchen.
+
+169. Der Apfel weit vom Stamme. 
+
+170. A1exis und Naide.
+
+171. Adelrich und Adelheid. 
+
+172. All Euphemien.
+
+173. An Doris.
+
+174. Als die spröde Chloe verliebt ward. 
+
+175. An Magdalis.
+
+176. Iris und Hylas.
+
+177 Minerva und Amor.
+
+178. Die erhörte Bitte.
+
+179. An die Rosalia.
+
+180. Der eifersüchtige Liebhaber. 
+
+181. Auf den Besucht der Phyllis. 
+
+182. Amynt von Dorinetten.
+
+183. Unbeständigkeit des Glüks und der Liebe. 
+
+184. Lethe.
+
+185. An den Charlottenbrunnen. 
+
+186. Die unwillkommenen Erstlinge.
+
+187. An Friedrich II. N. d. Leuthnersiege. 
+
+188. An einen gewissen Künstler. 
+
+189. An eine Mätresse.
+
+190. Entschuldigung des Epigrammisten.
+
+191. An P * * *
+
+192. Entschuldigung für Dorinden. 
+
+193. Nivula.
+
+194. Die wahrredenden Lügner. 
+
+195. Gutes und Böses.
+
+196. Das Bild des Schmarozers. 
+
+197. Hören und Reden.
+
+198. Aeusserliches und innerliches. N. d. Hebr. 
+
+199. Der verstellte Guttesläugner.
+
+2oo. Die ungedultige Hoffnung.
+
+201. An ein witziges Kind.
+
+202. Nothwendige Thorheit. 
+
+203. Amor und Minerva. 
+
+204. Für jeden Abend. 
+
+205. Fortunens Gaben. 
+
+206. An die alte Adelheide. 
+
+207. Die Moral des Buhlers. 
+
+208. Loh des Kadmus.
+
+209. Dauk für ein Paar Filetmanschetten. 
+
+210. An Lucinden.
+
+211. Auf den Kuss der Phyllis. 
+
+212. Daphne.
+
+213. An Hilarien. 
+
+214. An Theonen.
+
+215. An einen falschen Freund.
+
+216. Die beiden Freunde, Arist und Kleophon. 
+
+217. An Klimene, welche sich puzte, als sie in die Kirche gehen wollte.
+
+218. Der angehende Jüngling. 
+
+219. Nanette an die Vögel. 
+
+220. Die Vorfielttige.
+
+221. Senecio und Pulcheria. 
+
+222. An Lisetten.
+
+223. Lied eines Arabers. 
+
+224. Mann und Frau. 
+
+225. Von Amorn.
+
+226. Der Traum.
+
+227. Eifersucht. N. d. Englischen.
+
+228. An die Freude.
+
+229. Der Geburtstag. 
+
+230. Das Spiel.
+
+231. Zueignungsschriften. 
+
+232. Ueber ein Spital. 
+
+233. Amors Flucht.
+
+234. An einen Bräutigam.
+
+235. Processe.
+
+236. An die alten Römer. 
+
+237. Sprachen des Hofmanns. 
+
+238. Freundschaft.
+
+239: Das gefährliche Wörtchen. 
+
+240. Der fröhliche Harpax.
+
+241. Ein Räthsel mit der Auflösung. 
+
+242. Betrachtung über den Mond. 
+
+243. An mein Mädchen.
+
+244. Der besste Stand.
+
+245. An Chloen. Als sie meine Blumen besah. 
+
+246. Susanna.
+
+247. Die Freundschaft der Grossen. 
+
+248. Weltordnung.
+
+249. Pan.
+
+250. An Amorn. 
+
+251. An. Chloen. 
+
+252. Aegle.
+
+253. Des Harpax lezter Wille. 
+
+254. Nachtgedanken.
+
+255. An die Schönen. 
+
+256. Weiser Gebrauch. 
+
+257. Hymens und Kupidens Heirath. 
+
+258. Wünsche eines Ehemanns. 
+
+259. Auf Dorimenen.
+
+260. Alles ist eitel. 
+
+261. An den Maulwurf. 
+
+262. Der Lohn.
+
+263. Auf einen Staatsminister. 
+
+264. Erwartung der Zeit. 
+
+265. An Nerinen.
+
+266. Auf des Severus Arzt. 
+
+267. Hylars Vertheidigung. 
+
+268. Malpurius.
+
+269. Der Vielleser.
+
+270. Auf einen Bankrutier. 
+
+271. An Mendax.
+
+272. Die kenntlichen Gemählde. 
+
+273. Sturm der Grösse.
+
+274. Der Weise.
+
+275. Der unglükliche Neid. 
+
+276. Auf den Veit.
+
+277. An Serenen.
+
+278. Der Epigrammist.
+
+279. Die Guianischen Indianer.
+
+280. Der unbezahlte Menschenfreund. 
+
+281. An einen Schweizer.
+
+282. Kuh an feine Geliebte. 
+
+283. Auf Tralles.
+
+284. Mittel einen Schwäzer los zu werden. 
+
+285. Die geborgten Rosen.
+
+286. An einen Duns. 
+
+287. Die Scheinheilige. 
+
+288. Auf einen Lügner. 
+
+289. An Ihn und Sie.
+
+290. An einen Schüler der Naturlehre. 
+
+291. An einen Weltweisen.
+
+292. Apolls Thränen.
+
+293. Die Liebende an ihren Geliebten. 
+
+294. An feine Landsleute.
+
+295. Das Loos der Menge. 
+
+296. Das Feigenblatt.
+
+297. Die Leiden der Ungedultigen. 
+
+298. Der Säufer zur Weinbeere.
+
+299. Gespräch zwischen einem Europäer und einem Beduinen.
+
+300. Formosa.
+
+301. An die Mädchen. 
+
+302. Cornutus.
+
+303. Auf eine Dame.
+
+304. Der sterbende Westinier. A. d. Engl.
+
+305. Ermunterung zur Freude.
+
+306. Alexis, 
+
+307. Lalage. 
+
+308. Klage über eine Spröde. 
+
+309. Projekt.
+
+310. Das sich gleich liebende Ehepaar. 
+
+311. An die, welche Ehrenstellen suchen. 
+
+312. Klage eines Alten. A. d. Hebr.
+
+313. Der begüterte Hofmann und der Hanswurst.
+
+314. Anakreons Taube. 
+
+315. An alte Dichter.
+
+316. Die Honigfliege und Brummfliege. Eine Fabel für den Zoilus.
+
+317. An den Leser. 
+
+318. An die Kritiker.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2017</field>
+		<field name="revision_id">2017</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">-הוראת הא&quot;ב הלטיני והגרמני
+-תרגיל קריאה
+- א&quot;ב עברי
+-תפילת &quot;שמע ישראל&quot;
+-13 עיקרי האמונה של הרמב&quot;ם
+-משלים של ברכיה הנקדן
+-סיפורי מוסר מן התלמוד
+-שירים גרמניים
+-תפילות
+-אמרות ופתגמים מן התלמוד
+-סיפורי מוסר ואמרות</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2022</field>
+		<field name="revision_id">2022</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Einleitung
+
+Erstes Buch. Von der Religion
+
+Erstes Kapitel. Von dem Zwecke aller Religionen.
+
+Zweites Kapitel. Von der mannigfaltigen Form und dem Umfange der Religion.
+
+Drittes Kapitel. Eigenheit einer jeden Religion in Beziehung der Gesellschaft.
+
+Viertes Kapitel. Von dem Zwecke der Offenbarung.
+
+Fünftes Kapitel. Vom religiösen Glauben.
+
+Sechstes Kapitel. Von der Gradation im Glauben.
+
+Siebentes Kapitel. Nähere Entwickelung der Bestandtheile der geoffenbarten Religion, Antinomie ihrer verschiedenen Anhänger, nähere Bestimmung der geoffenbarten Lehre.
+
+Achtes Kapitel. Vom constituirten Glauben.
+
+Neuntes Kapitel. Uebergang der Theokratie in Hierarchie.
+
+Zehntes Kapitel. Constitution der Religion durch Hierokratie oder Liturgie.
+
+
+Zweites Buch. Vom Judenthume.
+
+Erstes Kapitel. Vom Zwecke des Judenthums.
+
+Zweites Kapitel. Vom Wesen des Judenthums.
+
+Drittes Kapitel. Entwickelung einiger Begriffe, die das Wesen des Judenthums näher bestimmen helfen, und Fortschritte desselben.
+
+Viertes Kapitel. Näherer Blick ins Wesen des Judenthums. Theses, die die Form desselben betreffen.
+
+Fünftes Kapitel. Verfall des Judenthums. Entwickelung des darin entstandenen Sektionsgeistes. Zweck der mündlichen Tradition und Ursprung des Talmudismus.
+
+Sechstes Kapitel. Darstellung der neuern Meinungen vom Wesen des Judenthums. Maimonides, Spinosa und Mendelsohn.
+
+Siebentes Kapitel. Näherer Darstellung des eigentlichen Judenthums. Ueber Dogmen und Kirchenmacht im Judenthume.
+
+
+Drittes Buch. Von der Läuterung des Judenthums.
+
+Erstes Kapitel. Von dem Zwecke der Religion für den gebildeten Menschen.
+
+Zweites Kapitel. Ueber die Vortheile und Nachtheile einer Constitution der Religion.
+
+Drittes Kapitel. Was die Religion der gebildeten Gesellschaft aufopfern muß.
+
+Viertes Kapitel. Ueber die Reformation als positiv und negativ betrachtet.
+
+Fünftes Kapitel. Von der Reformation im Judenthume. Von welcher Gattung die seyn muß.
+
+Sechstes Kapitel. Bestimmung der positiven Reformation im Judenthume.
+
+Siebentes Kapitel. Organe des Judenthums.
+Nachschrift.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2026</field>
+		<field name="revision_id">2026</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Enthält:
+
+Ausführliche Darstellung der inneren Einrichtung der Schule, S. 14-32.
+
+Beispiel des Hebräischunterrichts an der Schule S. 33-44
+
+S. 45-49: Tabellarische Ordnung der sämmtlichen Gegenstände in den 1.-5. Klassen.
+
+Personal und Schüler der Schule, S. 50-53.
+
+Über die Arbeit der Schule, S. 54-94
+
+Rede von Lehrer Herr Wolf: „Rede bey Eröffnung des am 23sten März 1803 in der jüdischen Schule stattgehabten öffentlichen Examens. Gesprochen von dem Lehrlinge L. Jacob aus Oranienbaum. S. 95-100.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2029</field>
+		<field name="revision_id">2029</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">1. Idee über den Zweck der Regierung überhaupt
+
+2. Vom Ursprunge der Regierung
+
+3. Erste Entwickelungsstufe der Regierung
+
+4. Zweite Entwickelungsstufe der Regierung
+
+5. Dritte Entwickelungsstufe der Regierung
+
+6. Über Italiens und Deutschlands erlittenes Schicksal
+
+7. Deutschlands Aussichten
+
+8. Über Preussens Schicksal
+
+9. Russlands Verhältniss zur zeitigen Entwickelungsstufe der Regierung
+
+10. Von den Verhältnissen Englands zur zeitigen Entwickelungsstufe der Regierung
+
+11. Andeutung über das künftige Schicksal europäischer Staaten</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Kein Inhaltsverzeichnis im Buch.
+
+
+I. Bittschrift der Juden zu Lüneville und Sarguemines, an die Nationalversammlung
+
+II. Schreiben der Deputirten der portugisischen Judenschaft zu Bourdeaux an den Herrn Gregor, Pfarrer zu Embermenil und Deputirter von Nancy.
+
+III. Addreße der Juden zu Paris an die Nationalversammlung
+
+IV. Addresse, die der Nationalversammlung von den vereinigten Deputirten der Judenschaft zu Metz, den dreien Bisthümern zu Elsaß und Lothringen am 31. August 1789 überreicht worden ist.
+
+V. Besondere Bittschrift der Deputirten der Metzer Judenschaft an die Nationalversammlung
+
+VI. Memoire für die Judengemeinde zu Metz ins besondere. Verfaßt von Isaac Ber-Bing, Mitglied dieser Gemeinde.
+
+VII. Zusatz zu der Adresse, die der Nationalversammlung von den Juden zu Lüneville und Sarguemines überreicht worden.
+
+VIII. Vortrag des Herrn Grafen Stanilaus von Clermont-Tonnere, über die Verfolgung welche die Juden im Elsaß bedroht.
+
+IX. Vorstellung zum Besten der Juden von Herrn Gregor, Pfarrer zu Embermenil, Deputirter von Nancy; nebst vorangeschickten historischen Nachrichten, sowohl von den Verfolgungen, die sie in verschiedenen Oetrern und vorzüglich im Elsassischen ausgestanden, als von ihrer Vorlassung bei der Nationalversammlung.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2054</field>
+		<field name="revision_id">2054</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">§1 Veranlassung und Zweck der Gesellschaft
+
+§2 Anzahl  und Eigenschaft der Mitglieder
+
+§3 Personen im Golde der Gesellschaf
+
+§4 Direction und Ausschuß
+
+§5 Functionen und Pflichten der Direction und des Ausschusses im allgemeinen
+
+§6 Specielle Functionen und Pflichten der Directions-Mitglieder
+
+§7 Functionen und Pflichten der beyden Aerzte
+
+§8 Pflichten der einzelnen Mitglieder
+
+§9 Von den Beyträgen
+
+§10 Von der Verwaltung des Cassen-Bestandes
+
+§11 Von den Mitteln, die Dauer der Gesellschaft zu sichern</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2070</field>
+		<field name="revision_id">2070</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Die 13 Glaubensartikel des Maimonides	1
+
+Denksprüche der Väter	12
+
+Geschichte der Hebräischen Sprache	33
+
+Rede bei der feyerlichen Einweihung der Wilhelms-Schule zu Breßlau, gehalten von Elkan	50
+
+Jüdische Dichtungen und Fabeln	60
+
+Moralische Lehren und Erzählungen aus dem Talmud	67
+
+Mosis Geburt und seine wunderbare Errettung (Mosaide II. Gesang)	85
+
+Nachahmungswürdiges Muster des Auslandes für das Inland. Aus den Jahrbüchern der preußischen Monarchie; November 1802 [Jaconsohns Plan zur Errichtung einer jüdischen Knabenschule]	101
+
+Geschichte der Juden von der Erschaffung der Welt bis auf die Zerstörung Jerusalems [XXXVIII Kapitel]	111</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2073</field>
+		<field name="revision_id">2073</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Vorrede   S. 3-20
+
+Etwas zur Geschichte des Juden-Eides S. 21-129
+
+Actum Hannover, auf Königl. Churfürstl. Justitz-Canzlei, den 27. August 1792, Verbesserung des Judeneids betreffend   S. 130-144.
+
+Nachtrag   S. 145
+
+Actum Hannover, auf Königl. Churfürstl. Justitz-Canzlei, am 30sten May, 1796, Ad acta die Verbesserung des Judeneids betreffend   S, 146-150
+
+Zweiter Nachtrag   S. 151-188
+
+Über den Judeneid   S. 188-264</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2079</field>
+		<field name="revision_id">2079</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">לספר בשלמותו אין תוכן עניינים. לשני חלקים בו (אגרת ארחות עולם חלק ראשון וחלק שני) יש תוכן עניינים, לכל חלק בנפרד.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2085</field>
+		<field name="revision_id">2085</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">המשפט החותם את הספר:
+&quot;ותהי השלמתו ח&quot;י אלול תקס&quot;ד יום לדתי לפני מלאת לי ארבעים שנה&quot;</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">לכל אחד משני חלקי הספר (באור מלות ההגיון ומאמר תחית המתים) ישנו &quot;זכרון שערי הספר ועניני השערים&quot; משלו (ללא מספרי עמודים).</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2107</field>
+		<field name="revision_id">2107</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">(תיאור שלי:)
+הספר מחולק ל-7 חלקים:
+
+-ערסטער אבשניט (עמ' 7-21. לימוד יסודות הקריאה בעברית - אותיות, ניקוד, צלילים, תרגילי קריאה).
+
+-צווייטער אבשניט (עמ' 14-30. ידע כללי).
+
+-דריטטער אבשניט (דפים 31-34. היסטוריה תנכי&quot;ת).
+
+-פירטער אבשניט (דפים 35-41. אמרות מוסר ומשלי מוסר).
+
+-קורצע אנווייזונג צום יידיש דייטש לעזען (דפים 51-52. יסודות הגרמנית באותיות עבריות).
+
+-גרונד ארטיקל דעס יודנטוהמס נאך רבינו משה בן-מיימון (דפים 52-53? (עמ' 53 חסר בעותק שבידי. ט.ק.)
+
+-דפים 54-60: שירים, משלים, סיפורים קצרים ותפילות בגרמנית באותיות עבריות.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2108</field>
+		<field name="revision_id">2108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בעמ' 6-5 (מיספור שלי) בהקדמת המחבר מתוארים חלקיו של הספר.
+
+
+(תיאור שלי) הספר מחולק ל-6 פרקים:
+
+1. שירים (עמ' 9-70)
+
+2. דברי חכמים: פתגמי התלמודים 
+(עמ' 71-73)
+
+3. חכמי יון (עמ' 74-103 - עוד על כך באצבע חלונית &quot;נושאים&quot;)
+
+4. אמרי בינה (עמ' 104-154)
+
+5. דעת ומזמה (עמ' 155-156. פתגמים עם מוסר השכל)
+
+6. מכתמים (עמ' 157-160)</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2128</field>
+		<field name="revision_id">2128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בסוף הספר ישנו &quot;מפתח&quot; המפרט את תוכנם של כ' הפרקים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בין ראשי הפרקים (יש גם תת-פרקים):
+
+מחובת איש לעצמו; הנהגת האדם במדותיו; מחובת אשה בתולה ובעולה; מחובת הקרובים; מחובת אדם לחבירו הנפרד ממנו; מחובת איש לההמון.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2131</field>
+		<field name="revision_id">2131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">מעין תוכן עניינים, תחת הכותרות:
+&quot;לוח הרשום עליו השמות הנרדפים הבאים בספר הזה&quot;, &quot;לוח המקראות המתבארים לפי הנחת שרשיהן למען ירוץ הקורא בו&quot; (עם המיקום בתוך הספר)</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2134</field>
+		<field name="revision_id">2134</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">&lt;p class=&quot;rteleft&quot; dir=&quot;rtl&quot;&gt;הספר כולל את התרגום לגרמנית באותיות עבריות של אייכל של משלי א' וב', ולאחריו מופיע פרק שנקרא &quot;אייניגע מאראלישע ערצעלהלונגן&quot;, הכולל סיפורים מן התלמוד (ככל הנראה)&lt;/p&gt;
+</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Inhalt
+
+1. Hauptstück: Von der Religion
+
+2. Hauptstück: Glaubenslehren
+
+3. Hauptstück: Sittenlehren
+
+4. Hauptstück: Ceremoniallehren
+
+5. Hauptstück: Eintheilung der Religionsgesetze nach den Pflichten, die sie dem Menschen überhaupt, und nach dem Verhältniße seines Standes insbesondere auflegt
+
+I. Abtheilung: Pflichten gegen Gott
+
+II. Abtheilung: Pflichten gegen sich selbst
+
+III. Abtheilung: Pflichten gegen den Nebenmenschen</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2136</field>
+		<field name="revision_id">2136</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">1. Hauptstück: Geschichte der jüdischen Nazion von der Schöpfung bis nach Zerstörung des zweyten Tempels.
+
+I. Abtheilung: Von der Schöpfung bis nach Zerstörung des ersten Tempels.
+
+II. Abtheilung: Von der Rückkehr aus der babylonischen Gefangenschaft bis nach Zerstörung des zweyten Tempels.
+
+2. Hauptstück: Von den Büchern, welche die jüdische Religionsgeschichte enthalten.
+
+I. Abtheilung: Von den Büchern der Bibel
+
+II. Abtheilung: Vom Talmud
+
+3. Hauptstück: Verzeichniß der bey den heutigen Juden üblichen Glaubens- Sitten- und Ceremoniallehren, nebst ihren Zwecken und Gründen, wie solche aus den mosaischen Büchern erklärt werden. Nach den Grundsätzen des Maymonides.
+
+Anhang für Lehrer: Ueber das Verfahren beim Unterrichte überhaupt, und bey den in diesem Buche abgehandelten Gegenständen insbesondere</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2145</field>
+		<field name="revision_id">2145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בשער הכרך מופיע רשימת ההפטרות:
+
+25 הפטרות:
+
+מסדר בראשית 12
+
+לימים טובים בחודש תשרי 8
+
+לב' שבתות שביניהם 2
+
+לב' שבתות דחנוכה 2
+
+לתענית צבור 1</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2146</field>
+		<field name="revision_id">2146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בעמוד השער:
+
+17 הפטרות:
+
+לפרשיות מסדר שמות 11
+
+לארבע הפרשיות 4
+
+לשבת ור&quot;ח ומחר חודש 2</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2147</field>
+		<field name="revision_id">2147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בשער הכרך.
+
+16 הפטרות:
+
+לכל הפרשיות מסדר ויקרא  10
+
+לשבת הגדול        1
+
+לימים טובים בחודש ניסן    5</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2148</field>
+		<field name="revision_id">2148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בשער הכרך.
+
+20 הפטרות:
+
+לכל הפרשיות מסדר במדבר 10
+
+לי&quot;ט של שבעות 2
+
+לסדר דברים עד נצבים 7
+
+לתשעה באב 1 
+
+
+בסוף הספר עוד 7 עמודים של &quot;ברכת הפטרה: שאומרים קודם ההפטרה&quot;</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2159</field>
+		<field name="revision_id">2159</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">דפים ט'-יח' כוללים שאלות ותשובות בנושא במשולשים.
+דפים יח'-כה' עוסקים בטריגונומטריה . 
+בדפים כה'-כח' מופיעים הסברים על השרטוטים שבסוף הספר.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">המחזה מחולק לחמישה חלקים, ועוסק בדמות בשם &quot;ילדות&quot; הנקרעת בין משיכתה לידידתה &quot;סכלות&quot; לבין אהבתה לאמה &quot;צדקה&quot; ולריעותיה &quot;דעת&quot; ו&quot;חוכמה&quot;. בסוף המחזה בוחרת &quot;ילדות&quot; בדרך המוסרית, ולכן משתנה שמה ל&quot;בחרות&quot;.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2172</field>
+		<field name="revision_id">2172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בתחילת הספר ישנו &quot;לוח בתבות המתבארות בזה החלק ע&quot;פ סדר אלפ&quot;א בית&quot;א למצוא הקורא מבוקשו&quot;, עם פירוט המילה והעמוד בו נמצא.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2173</field>
+		<field name="revision_id">2173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">אחרי ההקדמה ישנו &quot;לוח התבות המתבארות בזה החלק ע&quot;פ סדר אלפ&quot;א בית&quot;א למצוא הקורא את מבוקשו&quot;, עם פירוט המילים והעמודים בהם הן מופיעות.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2174</field>
+		<field name="revision_id">2174</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">Inhalt
+
+
+Einleitung
+
+Zustand der Israeliten in vorigen Zeiten   3
+
+Kontrast dieses Zustandes unter der Regierung Franz II.   10
+
+
+Religion
+
+Zum Rabbiner darf nur ein Innländer gewählt werden   14
+
+Welcher Werth ist izt auf Gelehrsamkeit von dem größten Theile der Israeliten gelegt wurden   15
+
+Uiber ausländische, besonders pohlnische Rabbiner   17
+
+Wie diese Ausländer bei den hierländischen Israeliten sich geltend gemacht   24
+
+Wir haben hierlands tüchtige Subjekte zu diesem Amte   28
+
+Dem Rabbiner soll standesmäßiger Gehalt verabreicht werden   31
+
+Rabbiner sollen sich philosophische Wissenschaften eigen machen   34
+
+Philosophische Wissenschaften sind der Religion zuträglich   38
+
+Gegenstände der Philosophie   43
+
+Gegenstände der Theologie   49
+
+Zustand der Theologie überhaupt, und der homiletischen insbesondere bei der israelitischen Nazion   60
+
+Aufmunterung zum bessern Predigen   66
+
+Einwurf dagegen, und dessen Beantwortung   68
+
+Bild eines guten Seelenhirten  73
+
+Einige allerhöchste Verordnungen in Bezug auf die Prediger   81
+
+Der Rabbi als Talmudlehrer   89
+
+Uiber gewöhnliche pohlnische Talmudlehrer 94
+
+Schulsinger müssen aus den sie anstellenden Ortschaften seyn   100
+
+Unschicklichkeit des sogenannten pohlnischen Gesangs   101
+
+Aufmunterung zur Beherzigung des Gottesdienstes der italienischen, portugiesischen und orientalischen Israeliten   104
+
+Das Geschäft des Vorbetens sollte dem Rabbiner obliegen   108
+
+Definizion des Gebets nach Friedländer   111
+
+Dieselbe nach Euchel   118
+
+Heruntreisende Prediger u. Schullehrer sind als Landstreicher anzusehen   128
+
+Begräbnißstätten sind außer den Wohnorten anzulegen; dann einige höchste Verordnungen in Ansehung der Beerdigung der Todten bei den Israeliten   129
+
+Aufmunterung die Todten nicht so eilends zu begraben, von Isaak Euchel   133
+
+Einwurf wider dieselbe, und Beantwortung dieses Einwurfs   143
+
+Todtscheinende sind wirklich erwacht   146
+
+Trüglichkeit der bei den Israeliten gewöhnlichen Lichtflammen- oder Pflaumfederprobe   153
+
+Beweggründe zur Abschaffung der frühen Beerdigung   159
+
+Schilderung eines Lebendigbegrabenen, von Markus Herz   162
+
+
+
+Unterricht   170
+
+Viele Leute mißkennen die deutsche Schuleinrichtung   171
+
+Hartwig Wessely wird wegen Anrühmung der Normalschulen verketzert   177
+
+Einwurf, daß den Staat die Einrichtung der israelitischen Schulen nichts angehe, und dessen Beantwortung   181
+
+Wir müssen besondere Religionsschulen haben, und darum sind uns die deutschen Schulen lästig   190
+
+Zustand des gegenwärtigen Religionsunterrichts bei den Israeliten, und Vorbereitung zu demselben   192
+
+Zum jüdischen Religionsunterricht existirt kein besonderes Schulzimmer   202
+
+Skizze einer sogenannten jüdischen Schule   203
+
+Gegenstände, die daselbst gelehret werden   205
+
+Erziehung des weiblichen Geschlechts  213
+
+Privatunterricht   215
+
+Spätere höchste Verordnungen in Ansehung des Religionsunterrichts   220
+
+Der Religionsunterricht, wie er izt ertheilt wird, ist unzweckmäßig   225
+
+Was eigentlich in Religionsschulen gelehrt werden sollte   228
+
+Von diesen Gegenständen wird in den israelitischen Religionsschulen nichts gelehrt   233
+
+Die dießfällige Pflicht, aus jüdischen Schriftstellern erwiesen   234
+
+Grundsätze der israelitischen Religion nach Maymonides nebst einigen Auszügen aus seinem More Nebuchim   240
+
+Kombinirung der deutschen und israelitischen Religionsschulen   254
+
+Nothwendig zu verfassende Bücher   256
+
+Uibersetzung der heiligen Schrift in reindeutsche Sprache nach dem texte der Masora   268
+
+Unzweckmäßigkeit die heilige Schrift, wie bis izt, erst in hebräischer, dann deutscher Sprache zu lehren   270
+
+Die Moral ist auf die heilige Schrift anzuwenden, und daraus Beispiele anzuführen   277
+
+So wie auch aus dem Talmude   281
+
+Zu verfassendes Methodenbuch   282
+
+Einwurf, daß viele izt bestehende Schullehrer brodlos werden müßten, und Widerlegung desselben   284
+
+Einwurf, daß wenig Lehrer zu bekommen seyn würden, und Widerlegung desselben   286
+
+Einwurf wegen der Kosten der neu anzulegenden kombinirten Schulen, und dessen Beantwortung   291
+
+Beschluß   295</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2175</field>
+		<field name="revision_id">2175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">תוכן העניינים מורכב מרשימת חומרים והפנייה אל מספר העמודים בהם הם מופיעים, עמ' [17-18].
+
+הספר מחולק לשני פרקים (שכל אחד מהם מחולק לפרקי משנה):
+
+עמ'    - א'-עו': על המלחים (&quot;פאן זאלצן&quot;)
+
+עמ'   - עז'-פט': על חומרי האדמה (&quot;פאן ערדן&quot;)</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מציג לוחות של בניני פעלים, גזרות, זמנים, משקלים, הטיות, כינויי שם, שמות המספרים,  ובעמוד האחרון שלו לוח טעויות.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2211</field>
+		<field name="revision_id">2211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">תוכן העניינים מתואר באופן מפורט בעמ' 9-16. 
+תיאור שלי:
+
+עמ' א'-ט': יסודות השפה העברית
+ערסטע אבטהיילונג (עמ' כ'-נז'. תרגול בכתיב עברי).
+לעזעאיבונגען (עמ' נח'-סז'. אימרות מן התלמוד ומכתבי הקודש וממקורות אחרים, מסודרות בסדר אלפבייתי, וסיפורים קצרים מתורגמים מגרמנית לעברית).
+צווייטע אבטהיילוגנג (עמ' עא'-פז'. לימוד לשון עברית, ותרגילי קריאה באמצעות סיפורים קצרים).
+דריטטע אבטהיילונג (עמ' פח'-קמח' . יסודות הגיאורפיה וגיאוגרפיה של אירופה, היסטוריה, טבע, חלוקת הזמנים והאדם).
+פירטע אבטהיילונג (עמ' קמט'-. יסודות האמונה היהודית, היסטוריה תנכי&quot;ת, אמרות מוסר, חובות האדם).
+פינפטע אבטהיילונג (עמ' רכז'-רפב'.
+המחבר מציין כי פרק זה שונה מזה המצוי בגירסאות הגרמנית והצרפתית של הספר. הוא כולל התייחסות לאישים מרכזיים בתרבות היהודית - מובאים טקסטים המתארים את תולדות חייהם ו/או טקסטים של משכילים גרמנים-יהודים: מנדלסון, משה; ר' יוסף האלטערן (תרגום לעברית של טקסט מאת מנדלסון); וויזל, נפתלי הרץ; פרידלענדר, דוד; הרץ, מרכוס; ריז, נתן; בן-זאב, יהודה לייב; בלווית טקסטים שהם חיברו:
+פרידלנדר תרגם לעברית אידליה של גסנר  בשם אמינטאס חלק ג', וגם &quot;מזכרות טובות על קברי קרובים ומודעים&quot;; יצחק אייכל תרגם לעברית &quot;על מצבת אבן העומדה על קבר הרופא ופראפעסער מרדכי בן הירץ הלוי&quot;; ונתן ריז תרם תרגומי שירים מתוך המקראה הגרמנית קינדערפריינדע).</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">אין תוכן ענינים, אך בסוף החלק השלישי ישנו מעין סיכום: &quot;כללי פרקי המורה&quot;, המכסה את שלושת הכרכים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מחולק לשלושה חלקים, כמצויין בעמ'
+:I
+
+חלק ראשון:&quot;הצלת אברם באור כשדים...&quot;
+
+חלק שני: &quot;מזמורים חדשים מקורות חיי דוד&quot;
+
+חלק שלישי: מעשה נבות היזרעאל...&quot;
+
+שמות שלושת החלקים מופיעים במקביל גם בגרמנית</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2239</field>
+		<field name="revision_id">2239</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">&quot;מפתח ראשון&quot; - בתחילת הספר.
+פרוט הנושאים הנדונים ומס' העמודים.
+
+&quot;מפתח שני&quot; - בסוף הספר.
+&quot;למצוא רוב הפסוקים הבאים בספר זה מספרי הקדש, ונתפרשו ע&quot;פ הוראות השרשים והבדליהן&quot;. כולל רשימת פסוקים לפי ספרי התנ&quot;ך (ובנוסף מאמרי תלמוד ורז&quot;ל) ומס' העמ' בהם מופיעים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2241</field>
+		<field name="revision_id">2241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מורכב מ:
+
+1. הקדמת המחבר -[10] עמ'
+
+2. לוח תרגומי מונחים, עברית - גרמנית באותיות עבריות -[6] עמ'
+
+3. שרטוט של כדור הארץ
+
+4. מבוא - 4 עמ' - אוסף מונחים והסברים בגיאוגרפיה
+
+5. עמ' 5-175 - טקסט ספרותי על מסע קולומבוס
+
+6. עמ' אחרון (לא ממוספר) - לוח הטעות</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2243</field>
+		<field name="revision_id">2243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">&quot;לוח המשלים מחלק ראשון&quot; מופיע בעמ' [5], וכולל 20 משלים. המשלים מופיעים זה מול זה בעברית ובגרמנית באותיות עבריות.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2248</field>
+		<field name="revision_id">2248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">מופיעות חמש נבואות</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2258</field>
+		<field name="revision_id">2258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מורכב מחמישה מכתבים, שכל מכתב מכונה &quot;פרק&quot;. הפרק השישי חסר (מופיע במהדורת תקנ&quot;ג של סטנוב, ראו אצבע חלון &quot;מהדורות&quot;)</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2262</field>
+		<field name="revision_id">2262</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר בנוי משלוש הקדמות מרכזיות (ראו בחלונית &quot;הקדמות&quot;), ולאחריו תרגום וביאור ספר איוב. בעמ' [1-2] מופיעה רשימת חותמים, ובעמ' [2-3] מופיעה רשימת ספריו של סטנוב בלווית מחיריהם.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2270</field>
+		<field name="revision_id">2270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">מאחורי עמ' השער: &quot;מפתח למצוא עניני החבור&quot; עם דף ועמוד</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2273</field>
+		<field name="revision_id">2273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">תוכן העניינים מופיע בעמוד השער (חלוקת הספר ל&quot;נתיבות&quot;, מעין פרקים). 
+כמו כן, מאחורי עמוד השער ישנו &quot;מפתח למצוא דברי חפץ&quot; - תוכן עניינים מפורט המסודרר ע&quot;פ נושאים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מורכב מכא' מאמרים, המחולקים לפרקים</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2279</field>
+		<field name="revision_id">2279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר בנוי מתשעה פרקים</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2280</field>
+		<field name="revision_id">2280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר פותח ב:
+&quot;מלאכת השיר&quot;: הסבר על דרכי משל ומליצה שונים (דפים [ב'-יא']+ עמוד נוסף. הדפים ממוספרים רק באופן חלקי). 
+אח&quot;כ מופיעים שמונה שערים.
+שער ראשון: דפים א'-יא': יאיר המדברי פוגש בשמעיה הנחלמי. הדיאלוג ביניהם נסוב על עניני חוכמה, כסילות, תפיסה מדינית, חוכמה יוונית וידיעת הטבע (דף ז'-ח').
+שער שני: דפים יא'-יט': דיון על השיר
+שער שלישי: דפים יט'-לא': דיון על משלים כולל הצגת משלי שועלים .
+שער רביעי: דפים לא'- מט':דיון בחלומות ובפתרונם, ברפואה, הגעה לירח שיש עליו חיים(לז'), אופטיקה,  דיון באסטרונומיה כולל איורים (ראו עוד על כך בשדה איורים בחלון זה), משאבת האויר(דף מא').
+שער חמישי: דפים מט'-נז': דיון בצדק, מוסר ומלחמה.
+שער שישי:דפים נז'-ס': חידות ועורמה.
+שער שביעי: דפים ס'-סד': דיון בעיניני אמונה.
+שער שמיני: דפים סד'-סה': סיומת הסיפור.
+ביאור הלוח דפים סה'-סח': דיון בדקדוק ובלשון עברית (כולל לוח פעלים בדף סה').
+אגרת קול קורא: [3] עמודים:  סטנוב מציג את ספר החזיון כחלק א' אליו יצטרף חלק ב': ספר הנפש או ספר המדות, ועל עוד ספרים שברשותו.
+שיר של וייזל: [2] עמודים.
+4 עמודי איורים.
+
+כל אחד מן השערים מסתיים בשיר</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2285</field>
+		<field name="revision_id">2285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מורכב מ&quot;הקדמה&quot; שבא מופיע סיפור המסגרת (דפים ב'-ו'), ומ-13 שערים, כשכל שער עוסק בהיבט אחר של הנפש.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2286</field>
+		<field name="revision_id">2286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">ראו הערה לעניין &quot;מבוא&quot;</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2299</field>
+		<field name="revision_id">2299</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">יש &quot;מפתחות הענינים&quot; לשלוש ההקדמות, וכן מפתח לוחות התמונות לאיורים המצורפים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2304</field>
+		<field name="revision_id">2304</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">מייד לאחר הקדמת המחבר מופיע סדר עשרת הפרקים של הספר (מעוטרים בחרוזים):
+
+- לבאר ולהגות משפט האותיות
+
+- לבאר ולסדר משפט התנועות
+
+- לבאר משפטי השו&quot;א נעים ונחים
+
+-לבאר ולדבר משפט הדגושים
+
+- לבאר ולהצדיק משפט הפעלים
+
+-לבאר ללמד משפט הכנוים
+
+-לבאר ולספר משפט השמות
+
+- לבאר ולדבר משפט המלות
+
+-לבאר משפט מעליל ומלרע
+
+-לבאר ולהורות משפט הטעמים</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2307</field>
+		<field name="revision_id">2307</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בעמ' [2] בפתח החלק בגרמנית באותיות עבריות, ובעמ' [1] בפתח החלק בעברית
+
+הספר מחולק ל-8 פרקים, ול-60 סעיפים</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2309</field>
+		<field name="revision_id">2309</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מורכב מיב' שערים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2311</field>
+		<field name="revision_id">2311</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הנושאים שיופיעו בספר מצויינים בדף ה':
+
+ישנם חמישה חלקים (=מאמרים):
+
+מאמר א': דף בתשבורת (חשבון)
+
+מאמר ב': תנועת הכוכבים
+
+מאמר ג': שמש ולבנה וליקויים
+
+מאמר ד': הלכות העיבור
+
+מאמר ה': עריכת לוחות העיבור</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2312</field>
+		<field name="revision_id">2312</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר נפתח בהסכמה של צבי הירש, ואח&quot;כ מופיע הסעיף &quot;מפתח לביאורי השמות&quot; = אינדקס של מונחים עם הפנייה למקומות הימצאם בספר (דפים ב'-ג'). לאחריו מופיע &quot;מפתח לביאורי שעורי התורה וענינים זולתם הנמצאים בספרי קודש&quot; = אינדקס של דיונים תלמודיים ואחרים שנזכרים בספר, עם הפנייה אליהם (דפים ג'-ד'). לאחריו מופיעה רשימת החותמים מראש (דף ד'), לאחריה &quot;מנחת תודה&quot; (תודות לבנימין ולביאה האלברשטאט, דף ד'), ולבסוף &quot;מבוא הספר (דפים ה'-ט')=הקדמת המחבר.
+הספר כולל שבעה פרקים העוסקים ב:
+א)אריתמטיקה; ב) אריתמטיקה כללית=אלגברה (דף י').
+פרק ראשון (דפים ט'-כה'): &quot;אריתמטיקה=&quot;חשבון כללי&quot;: חיבור, חיסור, כפל, חילוק.
+פרק שני (דפים כה'-מא'): משוואות.
+פרק שלישי (דפים מא'-מז'): שברים.
+פרק רביעי (דפים מז'-סט'): חזקות ושורשים.
+פרק חמישי (דפים סט'-ק'): יסודות הגיאומטריה (&quot;גם הרבה ענינים הבאים בתלמוד ומפורשיו, יביא בכור החשבון, להורות כי דברי חכ&quot;זל כנים ואמיתים&quot;, דף סט').
+פרק שישי (דפים ק'-קטז'): נפחי גופים, תנועה של גופים, לוחות מגבילים
+פרק שביעי (דפים קטז'-קכח' [1 עמ']: משוואות עם חזקות ושורשים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2317</field>
+		<field name="revision_id">2317</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">מאחורי עמוד השער: 
+&quot;מפתח למודי הספר&quot;.
+מצוין הנושא בו עוסק כל &quot;לימוד&quot; (=פרק), אך ללא ציון מס' עמ'.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2322</field>
+		<field name="revision_id">2322</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">&quot;מפתח אגרות החכמה בחלק ראשון הזה&quot;
+(עמ' 4, מספור שלי)</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2338</field>
+		<field name="revision_id">2338</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">חלק א' - עמ' 14-62: עוסק באותיות, תנועות, דגשים, שוואים ועוד.
+
+חלק ב' - עמ' 63-85: עוסק בחלקי דיבור
+
+חלק ג' - עמ' 86-132: עוסק בפעלים, שמות, יחסות ונטיות
+
+אחר כן מופיע פרק נוסף: לוח כינויי הפועלים
+בספר מופיעות טבלאות רבות</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2339</field>
+		<field name="revision_id">2339</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בעמ' [21-22] מתוארים 6 הסעיפים הבאים:
+
+א. מעלות המשחק
+
+ב. שמות המשחק
+
+ג. ההיסטוריה של המחשק
+
+ד. חלקי המשחק
+
+ה.כללי המשחק
+
+ו. לוח המשחק (האיור המופיע באותו העמוד.
+
+
+החלק האחרון של הספר, כנראה סעיף ה' של כללי המשחק, מופיע ביידיש באותיות צו&quot;ר.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הרכב הספר:
+
+1. הקדמה של משה זאללשין, תלמידו של אופנהיים, הכוללת דברי תשבוחות למוריהו, שיר הלל מליצי, וטקס תלמודי שרשם מפי המורה (מנחות דף ע&quot;ב ע&quot;ב, דפים ב'-ה').
+
+2. טקסט מליצי ללא חתימה (כנראה גם של משה זאללשין)
+
+3. &quot;הנץ החמה&quot; (דפים ו'י') - הקדמה של אופנהיים על עניני אסטרונומיה. הוא יוצא כנגד התיאורה ההליוצנטרית וכנגד קופרניקוס, אך מקבל את התיאוריה המודרנית של מהירות האור (דף ז').
+
+4. 13 עיקרים של רבב&quot;ח המובאים בארמית
+
+5. פרשנות של אופנהיים על 13 היסודות הללו (דפים י' -מח' [1])
+
+6. דברי סיום מטעם המחבר (דף אחרון למטה).</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2355</field>
+		<field name="revision_id">2355</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בסוף הספר (ללא מספרי עמודים - רק פירוט של תוכן כל פרק ותת פרק).</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2357</field>
+		<field name="revision_id">2357</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מחולק לשלושה חלקים:
+
+1.
+&quot;ראש אמנה&quot;, דפים א'-מה'. בעמ' [6-9] = &quot;שער העין&quot; מוצג פירוט של החלק הראשון &quot;ראש אמנה&quot;, העוסק בפרשנות רחבה לשיר המוצג בדף ח' ב-13 &quot;חרוזים&quot; (&quot;חרוזים&quot; משמע - סעיפים שונים), העוסקים במגוון שאלות של אמונה, אמונה טפלה, אור לגויים, גאולה, חישובי קץ ועוד. בסופו, בדף מה', מופיעות 3 חידות עם פתרונן.
+
+2.
+&quot;נשמה חיה&quot;, דפים מז'-נה', דיון בסדר זרעים, מסכת ברכות.
+
+3.
+&quot;דירת אהרן&quot;, דפים נה'-עא', דיון הלכתי, ובראשו מבוא מטעם המחבר
+תוכן העניינים של החלק השני והשלישי מופיע בדף מו', תחת השם &quot;שער ציון&quot;.
+ראו גם תיאור הספר בסעיף &quot;מבוא&quot; לעיל.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2361</field>
+		<field name="revision_id">2361</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">תוכן העניינים מופיע בסוף, תחת הכותרת &quot;פתח עינים&quot;. רשומים בו מספר האגרת, נושא האגרת, והעמ' בו היא מופיעה.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2363</field>
+		<field name="revision_id">2363</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר מורכב מ-11 פרקים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2365</field>
+		<field name="revision_id">2365</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בסוף הספר, לפני ההמלצות, מופיע &quot;מפתח הפרקים&quot;</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בסוף הספר ישנם &quot;מפתחות לשאלות ותשובות בשמים ראש לסדר הטורים&quot;.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2376</field>
+		<field name="revision_id">2376</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בעמ' [3] מופיע תוכן הענינים של נושאי הספר, המסודרים בסדר אלפבייתי: &quot;מפתחות הסימנים למצוא דברי חפץ&quot;.
+
+הספר מורכב באופן הבא:
+
+-(דפים א' וב'): מבוא - 10 עיקרים מתוך הגיאומטריה והמתמטיקה.
+
+- (דפים ב'- צו'): תיאור האסטרונומיה ההליוצנטרית-תלמאית.
+
+-(דפים לב'-לג'): תיאור התיאורה הגיאוצנטרית-קופרניקאית, תוך שיבוח יתרונותיה.
+
+- (דפים לג'-לח' + [1]):טבלאות - לוחות שנה, לוחות המתארים את תנועות השמש והירח, וזוויותיהם ביחס לכדור הארץ, לוח המזלות וכד'.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בתחתית עמ' [4] מתאר המחבר את הנושאים בהם יעסוק בסיפרו</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2380</field>
+		<field name="revision_id">2380</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בדף ג' מתוארים עשרת הפרקים של הספר, המוקדשים לנושאים שונים: אותיות, תנועות, שוא, דגש, נגינות (מלרע ומלעיל), פעלים, שמות, כינויים, מלות (מלות יחס) ובחינה (הטיות שונות, סמיכות וכד').</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2390</field>
+		<field name="revision_id">2390</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר בנוי מ-יג' פרקים</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2397</field>
+		<field name="revision_id">2397</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר כולל ששה פרקים</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2402</field>
+		<field name="revision_id">2402</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">מאחורי עמוד השער בגרמנית:
+
+Inhalt:
+
+1) Die Beschreibung der theils gedruckten, und theils im Manuscript befindlichen Werke, des verewigten H. Wessely.
+
+2) Gedanken über Wessely's Moseide, von Dr. W Fr. Hufnagel (: im 2ten Bande IV Heft VII Abtheilung für Aufklärung und Menschenwohl Pag. 311:)
+
+3) Eine hebräische Trauer-Rede, mit allgemeinen Beifall am Begräbnis-Tage, bey dem Sarge des Verewigten, auf dem Portugiesischen Gottesacker in Altona, gehalten am 3ten Märtz Ao. 1805, durch Abraham Meldola, Notarius in Hamburg.
+
+4) Dessen Grabschrift verfertiget durch Denselben.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2408</field>
+		<field name="revision_id">2408</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הטקסט מיועד להקראה בבית הכנסת, ומוצגים תפקידי החזן והקהל. החלק  הראשון הוא &quot;שיר למעלות&quot; ומצויין &quot;תהלים כא כג עכ&quot;. לאחריו מופיעה תפילה, ולבסוף ברכה.
+
+החלקים בשפות השונות נראים מקבילים, אך יש לבדוק זאת שוב.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2418</field>
+		<field name="revision_id">2418</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בסוף הספר מופיעים ברצף 2 הקטעים הבאים:
+
+עמ' 75-76: &quot;תהלה למאיר&quot; - דברי שבח ותודות לאל.
+
+עמ'  [1-4]: &quot;אנקינדיגונג&quot; - טקסט דומה, אך לא זהה, להקדמה המופיעה בראש המחברת הראשונה</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">אחרי הקדמת המחבר הראשונה מופיע תיאור עשרת השערים שבספר ונושאיהם.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בדף [א'], מובא תוכן העניינים.
+הספר נחלק לחמישה פרקים
+חלק א' - (דפים א'-ט'): &quot;מאיכות הגשמים בכלל&quot;: מסה של החומר המוצק ומבנה החלקיקי של החומר
+חלק ב' - (דפים ט'-טו'): &quot;מהרכבת הגשמים בכלל&quot;: ריאקציות כימיות בין חומרים
+חלק ג' - (דפים טו'- כו'):&quot;מהתנועה בכלל&quot;: כוחות התאוצה של עצמים
+חלק ד' - (דפים כז'-סט'): &quot;מכובד הגשמים והתפעלויות שלו&quot;: כוח הכבידה
+חלק ה' - (דפים סט'-פה'):&quot;מסגולות הגופים נוזלים&quot;: תכונות הנוזלים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2432</field>
+		<field name="revision_id">2432</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">ראו הקדמת המחבר</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">לאחר ההקדמה מופיעות 54 שאלות ותשובות ממוספרות</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2471</field>
+		<field name="revision_id">2471</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">ישנו תוכן עניינים בחלק הגרמני בלבד.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2473</field>
+		<field name="revision_id">2473</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בעמ' נד' מציין אייכל כי הדברים הבאים הם תרגום מתוך החלק השני של ספרו של מנדלסון &quot;ירושלים&quot;. בעמ' צח' הוא מציין את סוף התרגום. בעמ' קכג'-קכה' מוצגת רשימת כתביו של מנדלסון.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בהקדמת המחבר (למהדורה הראשונה) המופיעה לאחר שער שלושת הכרכים, מתאר המחבר את מבנה שלושת כרכי הספר: 
+חלק א' - עוסק באותיות, תנועות, שוא, דגשים ופעלים; חלק ב' - מוקדש למילים, אותיות השימוש, דרכי הלשון; חלק ג' - נגינה, הוראתה ושמושה. הוא אף מצרף כאן את תוכן העניינים של שני הספרים הראשונים, עמ' [7-9].
+
+&lt;strong&gt;תורת לשון עברית - חלק א&lt;/strong&gt;' עוסק בחוקי הניקוד, סוגי שמות העצם, ובניני פעלים. בסופו מופיעים 13 דפי טבלאות.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בהקדמת המחבר (למהדורה הראשונה)המופיעה לאחר שער שלושת הכרכים, מתאר המחבר את מבנה שלושת כרכי הספר:
+חלק א' - עוסק באותיות, תנועות, שוא, דגשים ופעלים; חלק ב' - מוקדש למילים, אותיות השימוש, דרכי הלשון; חלק ג' - נגינה, הוראתה ושמושה. הוא אף מצרף כאן את תוכן העניינים של שני הספרים הראשונים, עמ' [7-9].
+
+&lt;strong&gt;תורת לשון עברית - חלק ב&lt;/strong&gt;' עוסק במיליות, דרכי הלשון (ה' הידיעה, סמיכות וכד'), בכינויי השם ובצורות הזמנים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">הספר עוסק בתנועות וטעמים.</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2478</field>
+		<field name="revision_id">2478</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_contents_table_notes_value">בהקדמה מתאר המחבר את ששת החלקים של סיפרו. תיאור שלי:
+(כל אחד מששת החלקים מתחלק גם הוא לפרקים לפי הנושאים השונים):
+חלק א' - &quot;מבוא-איינלייטונג&quot;: תיאור אותיות, תנועות וטעמים (עמ' א'-לא'). 
+חלק ב' - שם העצם: חלקי המשפט, מין דקדוקי, שמות המספר, גזרות שם העצם (עמ' לב'-צד'). 
+חלק ג' - הפועל: סוגי הפועל, בניינים, גזרות הפועל (עמ' צה'-קכח').
+חלק ד' - מיליות: מילות יחס, מילות חיבור וכד' (עמ' קכט'-קלד').
+חלק ה' - שימושי הדקדוק לצורך בניית משפטים (עמ' קלה'-רב').
+לאחר 5 החלקים מופיע סעיף בשם &quot;ניתוח המלות&quot; שכולל ניתוח אטימולוגי של מילים עבריות שונות (דפים רג'-רד'), ושני סעיפים של &quot;תיקון והשמטה&quot;(דפים רד'-רה') ו&quot;תיקוני הטעות&quot; (דף רו').</field>
+		<field name="field_contents_table_notes_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

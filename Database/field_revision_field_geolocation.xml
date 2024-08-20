@@ -1,0 +1,3027 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_revision_field_geolocation">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_geolocation_lat" type="double" null="NO" key="MUL" default="0" extra="" />
+		<field field="field_geolocation_lng" type="double" null="NO" key="MUL" default="0" extra="" />
+		<field field="field_geolocation_lat_sin" type="double" null="NO" key="" default="0" extra="" />
+		<field field="field_geolocation_lat_cos" type="double" null="NO" key="" default="0" extra="" />
+		<field field="field_geolocation_lng_rad" type="double" null="NO" key="" default="0" extra="" />
+
+		<options name="field_revision_field_geolocation" engine="InnoDB" version="10" row_format="Dynamic" rows="199" avg_row_length="246" data_length="49152" max_data_length="0" index_length="131072" data_free="0" create_time="2024-07-08 12:43:18" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Revision archive storage for field 2 (field_geolocation)" />
+	</table_structure>
+
+	<table_data name="field_revision_field_geolocation">
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1</field>
+		<field name="revision_id">1</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.55</field>
+		<field name="field_geolocation_lng">9.93333</field>
+		<field name="field_geolocation_lat_sin">0.80437563527008</field>
+		<field name="field_geolocation_lat_cos">0.59412106290204</field>
+		<field name="field_geolocation_lng_rad">0.17336931418713</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2</field>
+		<field name="revision_id">2</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.62805</field>
+		<field name="field_geolocation_lng">11.41582</field>
+		<field name="field_geolocation_lat_sin">0.80518421791964</field>
+		<field name="field_geolocation_lat_cos">0.59302476779064</field>
+		<field name="field_geolocation_lng_rad">0.19924364581502</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">3</field>
+		<field name="revision_id">3</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.37403</field>
+		<field name="field_geolocation_lng">4.88969</field>
+		<field name="field_geolocation_lat_sin">0.79201300635672</field>
+		<field name="field_geolocation_lat_cos">0.61050421600656</field>
+		<field name="field_geolocation_lng_rad">0.085341189901842</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">4</field>
+		<field name="revision_id">4</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.85637</field>
+		<field name="field_geolocation_lng">13.68965</field>
+		<field name="field_geolocation_lat_sin">0.8075409842233</field>
+		<field name="field_geolocation_lat_cos">0.58981146038345</field>
+		<field name="field_geolocation_lng_rad">0.23892946594564</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">5</field>
+		<field name="revision_id">5</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.30107</field>
+		<field name="field_geolocation_lng">8.5102</field>
+		<field name="field_geolocation_lat_sin">0.76941148391641</field>
+		<field name="field_geolocation_lat_cos">0.63875344884983</field>
+		<field name="field_geolocation_lng_rad">0.14853101000322</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">6</field>
+		<field name="revision_id">6</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.33333</field>
+		<field name="field_geolocation_lng">21.75</field>
+		<field name="field_geolocation_lat_sin">0.72336892246227</field>
+		<field name="field_geolocation_lat_cos">0.69046173102915</field>
+		<field name="field_geolocation_lng_rad">0.37960911230877</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">8</field>
+		<field name="revision_id">8</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.36733</field>
+		<field name="field_geolocation_lng">10.89213</field>
+		<field name="field_geolocation_lat_sin">0.74741939884762</field>
+		<field name="field_geolocation_lat_cos">0.66435249847221</field>
+		<field name="field_geolocation_lng_rad">0.19010353105525</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">9</field>
+		<field name="revision_id">9</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.8934</field>
+		<field name="field_geolocation_lng">10.89115</field>
+		<field name="field_geolocation_lat_sin">0.76484719812802</field>
+		<field name="field_geolocation_lat_cos">0.64421173810768</field>
+		<field name="field_geolocation_lng_rad">0.19008642682858</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">10</field>
+		<field name="revision_id">10</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">41.38879</field>
+		<field name="field_geolocation_lng">2.15899</field>
+		<field name="field_geolocation_lat_sin">0.66116509237946</field>
+		<field name="field_geolocation_lat_cos">0.75024044187104</field>
+		<field name="field_geolocation_lng_rad">0.037681484017632</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">11</field>
+		<field name="revision_id">11</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.55773</field>
+		<field name="field_geolocation_lng">7.59361</field>
+		<field name="field_geolocation_lat_sin">0.73795767266777</field>
+		<field name="field_geolocation_lat_cos">0.67484699995686</field>
+		<field name="field_geolocation_lng_rad">0.13253349661237</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">12</field>
+		<field name="revision_id">12</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.94782</field>
+		<field name="field_geolocation_lng">11.57893</field>
+		<field name="field_geolocation_lat_sin">0.76545873061593</field>
+		<field name="field_geolocation_lat_cos">0.64348498950935</field>
+		<field name="field_geolocation_lng_rad">0.20209045235795</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">14</field>
+		<field name="revision_id">14</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.52437</field>
+		<field name="field_geolocation_lng">13.41053</field>
+		<field name="field_geolocation_lat_sin">0.79361219712099</field>
+		<field name="field_geolocation_lat_cos">0.60842393163057</field>
+		<field name="field_geolocation_lng_rad">0.23405790293748</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">15</field>
+		<field name="revision_id">15</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.94761</field>
+		<field name="field_geolocation_lng">7.40645</field>
+		<field name="field_geolocation_lat_sin">0.73072979167524</field>
+		<field name="field_geolocation_lat_cos">0.68266680859572</field>
+		<field name="field_geolocation_lng_rad">0.12926693838433</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">16</field>
+		<field name="revision_id">16</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.79464</field>
+		<field name="field_geolocation_lng">11.7401</field>
+		<field name="field_geolocation_lat_sin">0.78579903784911</field>
+		<field name="field_geolocation_lat_cos">0.6184819092871</field>
+		<field name="field_geolocation_lng_rad">0.20490339951339</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">20</field>
+		<field name="revision_id">20</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.03333</field>
+		<field name="field_geolocation_lng">8.53333</field>
+		<field name="field_geolocation_lat_sin">0.78836876176631</field>
+		<field name="field_geolocation_lat_cos">0.61520297095435</field>
+		<field name="field_geolocation_lng_rad">0.14893470465921</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">22</field>
+		<field name="revision_id">22</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.44026</field>
+		<field name="field_geolocation_lng">10.57202</field>
+		<field name="field_geolocation_lat_sin">0.78195866064678</field>
+		<field name="field_geolocation_lat_cos">0.62333029209199</field>
+		<field name="field_geolocation_lng_rad">0.18451655758669</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">24</field>
+		<field name="revision_id">24</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.73438</field>
+		<field name="field_geolocation_lng">7.09549</field>
+		<field name="field_geolocation_lat_sin">0.77422012690895</field>
+		<field name="field_geolocation_lat_cos">0.63291642030294</field>
+		<field name="field_geolocation_lng_rad">0.12383966254233</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">25</field>
+		<field name="revision_id">25</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">44.58639</field>
+		<field name="field_geolocation_lng">5.13444</field>
+		<field name="field_geolocation_lat_sin">0.70198389901077</field>
+		<field name="field_geolocation_lat_cos">0.71219281485398</field>
+		<field name="field_geolocation_lng_rad">0.089612883246098</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">26</field>
+		<field name="revision_id">26</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.33333</field>
+		<field name="field_geolocation_lng">13.2</field>
+		<field name="field_geolocation_lat_sin">0.79157913550729</field>
+		<field name="field_geolocation_lat_cos">0.61106666758181</field>
+		<field name="field_geolocation_lng_rad">0.23038346126325</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">27</field>
+		<field name="revision_id">27</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.26471</field>
+		<field name="field_geolocation_lng">10.52333</field>
+		<field name="field_geolocation_lat_sin">0.79084672708222</field>
+		<field name="field_geolocation_lat_cos">0.61201425985294</field>
+		<field name="field_geolocation_lng_rad">0.18366675677389</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">28</field>
+		<field name="revision_id">28</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.1</field>
+		<field name="field_geolocation_lng">17.03333</field>
+		<field name="field_geolocation_lat_sin">0.77824314852602</field>
+		<field name="field_geolocation_lat_cos">0.62796305764934</field>
+		<field name="field_geolocation_lng_rad">0.29728769107873</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">29</field>
+		<field name="revision_id">29</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.09755</field>
+		<field name="field_geolocation_lng">23.68775</field>
+		<field name="field_geolocation_lat_sin">0.78905781693004</field>
+		<field name="field_geolocation_lat_cos">0.61431894121995</field>
+		<field name="field_geolocation_lng_rad">0.41342922988929</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">31</field>
+		<field name="revision_id">31</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.19522</field>
+		<field name="field_geolocation_lng">16.60796</field>
+		<field name="field_geolocation_lat_sin">0.75694054026778</field>
+		<field name="field_geolocation_lat_cos">0.65348375534448</field>
+		<field name="field_geolocation_lng_rad">0.28986358403952</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">32</field>
+		<field name="revision_id">32</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.08791</field>
+		<field name="field_geolocation_lng">25.15027</field>
+		<field name="field_geolocation_lat_sin">0.76702978225375</field>
+		<field name="field_geolocation_lat_cos">0.64161149704144</field>
+		<field name="field_geolocation_lng_rad">0.43895501926555</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">33</field>
+		<field name="revision_id">33</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">40.6501</field>
+		<field name="field_geolocation_lng">-73.94958</field>
+		<field name="field_geolocation_lat_sin">0.6514378827825</field>
+		<field name="field_geolocation_lat_cos">0.75870197368654</field>
+		<field name="field_geolocation_lng_rad">-1.2906636514669</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">34</field>
+		<field name="revision_id">34</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.12426</field>
+		<field name="field_geolocation_lng">8.59804</field>
+		<field name="field_geolocation_lat_sin">0.75613062971424</field>
+		<field name="field_geolocation_lat_cos">0.6544207139203</field>
+		<field name="field_geolocation_lng_rad">0.15006410721817</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">35</field>
+		<field name="revision_id">35</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.1</field>
+		<field name="field_geolocation_lng">11.9</field>
+		<field name="field_geolocation_lat_sin">0.75585346916764</field>
+		<field name="field_geolocation_lat_cos">0.65474081371734</field>
+		<field name="field_geolocation_lng_rad">0.20769418098733</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">37</field>
+		<field name="revision_id">37</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">30.08521</field>
+		<field name="field_geolocation_lng">-97.84028</field>
+		<field name="field_geolocation_lat_sin">0.5012873952866</field>
+		<field name="field_geolocation_lat_cos">0.86528084881544</field>
+		<field name="field_geolocation_lng_rad">-1.7076350270732</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">38</field>
+		<field name="revision_id">38</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.49801</field>
+		<field name="field_geolocation_lng">19.03991</field>
+		<field name="field_geolocation_lat_sin">0.73725387173114</field>
+		<field name="field_geolocation_lat_cos">0.67561581436305</field>
+		<field name="field_geolocation_lng_rad">0.33230911878339</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">40</field>
+		<field name="revision_id">40</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.14093</field>
+		<field name="field_geolocation_lng">11.25205</field>
+		<field name="field_geolocation_lat_sin">0.7676231840802</field>
+		<field name="field_geolocation_lat_cos">0.64090143334414</field>
+		<field name="field_geolocation_lng_rad">0.19638532009903</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">41</field>
+		<field name="revision_id">41</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.2</field>
+		<field name="field_geolocation_lng">0.11667</field>
+		<field name="field_geolocation_lat_sin">0.79015501237569</field>
+		<field name="field_geolocation_lat_cos">0.61290705365298</field>
+		<field name="field_geolocation_lng_rad">0.0020362756383018</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">42</field>
+		<field name="revision_id">42</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">45.13336</field>
+		<field name="field_geolocation_lng">8.45714</field>
+		<field name="field_geolocation_lat_sin">0.70875070559677</field>
+		<field name="field_geolocation_lat_cos">0.70545902596542</field>
+		<field name="field_geolocation_lng_rad">0.14760493830211</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">43</field>
+		<field name="revision_id">43</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.62264</field>
+		<field name="field_geolocation_lng">10.08047</field>
+		<field name="field_geolocation_lat_sin">0.79465455854382</field>
+		<field name="field_geolocation_lat_cos">0.60706188530127</field>
+		<field name="field_geolocation_lng_rad">0.17593739164851</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">44</field>
+		<field name="revision_id">44</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.47796</field>
+		<field name="field_geolocation_lng">2.32815</field>
+		<field name="field_geolocation_lat_sin">0.74870077495351</field>
+		<field name="field_geolocation_lat_cos">0.66290810040609</field>
+		<field name="field_geolocation_lng_rad">0.040633882980306</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">47</field>
+		<field name="revision_id">47</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.85212</field>
+		<field name="field_geolocation_lng">9.52965</field>
+		<field name="field_geolocation_lat_sin">0.72959103468592</field>
+		<field name="field_geolocation_lat_cos">0.68388370510338</field>
+		<field name="field_geolocation_lng_rad">0.16632376906268</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">49</field>
+		<field name="revision_id">49</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">55.67594</field>
+		<field name="field_geolocation_lng">12.56553</field>
+		<field name="field_geolocation_lat_sin">0.82586158230396</field>
+		<field name="field_geolocation_lat_cos">0.56387289957437</field>
+		<field name="field_geolocation_lng_rad">0.21930987075812</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">50</field>
+		<field name="revision_id">50</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">33.5102</field>
+		<field name="field_geolocation_lng">36.29128</field>
+		<field name="field_geolocation_lat_sin">0.55208542790762</field>
+		<field name="field_geolocation_lat_cos">0.83378755105366</field>
+		<field name="field_geolocation_lng_rad">0.63340232576317</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">51</field>
+		<field name="revision_id">51</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.13803</field>
+		<field name="field_geolocation_lng">-99.47484</field>
+		<field name="field_geolocation_lat_sin">0.72101119749487</field>
+		<field name="field_geolocation_lat_cos">0.69292341069343</field>
+		<field name="field_geolocation_lng_rad">-1.7361634808946</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">53</field>
+		<field name="revision_id">53</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">-31.34395</field>
+		<field name="field_geolocation_lng">26.55501</field>
+		<field name="field_geolocation_lat_sin">-0.52017439059276</field>
+		<field name="field_geolocation_lat_cos">0.85406007011887</field>
+		<field name="field_geolocation_lng_rad">0.46347235740002</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">54</field>
+		<field name="revision_id">54</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.83864</field>
+		<field name="field_geolocation_lng">12.24555</field>
+		<field name="field_geolocation_lat_sin">0.78627376610411</field>
+		<field name="field_geolocation_lat_cos">0.61787827663421</field>
+		<field name="field_geolocation_lng_rad">0.21372516621759</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">55</field>
+		<field name="revision_id">55</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.93855</field>
+		<field name="field_geolocation_lng">8.87318</field>
+		<field name="field_geolocation_lat_sin">0.78735000061906</field>
+		<field name="field_geolocation_lat_cos">0.61650626641192</field>
+		<field name="field_geolocation_lng_rad">0.15486620612211</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">56</field>
+		<field name="revision_id">56</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.58052</field>
+		<field name="field_geolocation_lng">15.99016</field>
+		<field name="field_geolocation_lat_sin">0.78348222791534</field>
+		<field name="field_geolocation_lat_cos">0.62141419241985</field>
+		<field name="field_geolocation_lng_rad">0.2790809399207</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">60</field>
+		<field name="revision_id">60</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.05</field>
+		<field name="field_geolocation_lng">13.75</field>
+		<field name="field_geolocation_lat_sin">0.77769485111573</field>
+		<field name="field_geolocation_lat_cos">0.62864196371869</field>
+		<field name="field_geolocation_lng_rad">0.23998277214922</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">61</field>
+		<field name="revision_id">61</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.53935</field>
+		<field name="field_geolocation_lng">6.66945</field>
+		<field name="field_geolocation_lat_sin">0.7830355072474</field>
+		<field name="field_geolocation_lat_cos">0.62197700471143</field>
+		<field name="field_geolocation_lng_rad">0.11640386179714</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">63</field>
+		<field name="revision_id">63</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.41694</field>
+		<field name="field_geolocation_lng">25.73432</field>
+		<field name="field_geolocation_lat_sin">0.77070166909233</field>
+		<field name="field_geolocation_lat_cos">0.63719615289038</field>
+		<field name="field_geolocation_lng_rad">0.44914861476183</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">64</field>
+		<field name="revision_id">64</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.43247</field>
+		<field name="field_geolocation_lng">6.76516</field>
+		<field name="field_geolocation_lat_sin">0.78187390471707</field>
+		<field name="field_geolocation_lat_cos">0.62343660232816</field>
+		<field name="field_geolocation_lng_rad">0.11807431642422</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">66</field>
+		<field name="revision_id">66</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.90265</field>
+		<field name="field_geolocation_lng">20.37329</field>
+		<field name="field_geolocation_lat_sin">0.74200684823452</field>
+		<field name="field_geolocation_lat_cos">0.67039230095003</field>
+		<field name="field_geolocation_lng_rad">0.35558098996364</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">67</field>
+		<field name="revision_id">67</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.84565</field>
+		<field name="field_geolocation_lng">16.52327</field>
+		<field name="field_geolocation_lat_sin">0.74133954964463</field>
+		<field name="field_geolocation_lat_cos">0.67113014545072</field>
+		<field name="field_geolocation_lng_rad">0.288385464696</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">68</field>
+		<field name="revision_id">68</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">38.15977</field>
+		<field name="field_geolocation_lng">-87.44835</field>
+		<field name="field_geolocation_lat_sin">0.61785645672129</field>
+		<field name="field_geolocation_lat_cos">0.78629091237773</field>
+		<field name="field_geolocation_lng_rad">-1.5262616329364</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">69</field>
+		<field name="revision_id">69</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.45657</field>
+		<field name="field_geolocation_lng">7.01228</field>
+		<field name="field_geolocation_lat_sin">0.78213606815833</field>
+		<field name="field_geolocation_lat_cos">0.62310767198441</field>
+		<field name="field_geolocation_lng_rad">0.12238737407175</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">70</field>
+		<field name="revision_id">70</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.4</field>
+		<field name="field_geolocation_lng">13.33333</field>
+		<field name="field_geolocation_lat_sin">0.80281747519111</field>
+		<field name="field_geolocation_lat_cos">0.59622487496562</field>
+		<field name="field_geolocation_lng_rad">0.23271050875494</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">72</field>
+		<field name="revision_id">72</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.11035</field>
+		<field name="field_geolocation_lng">8.67185</field>
+		<field name="field_geolocation_lat_sin">0.76728101177123</field>
+		<field name="field_geolocation_lat_cos">0.64131103918093</field>
+		<field name="field_geolocation_lng_rad">0.15135233473907</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">74</field>
+		<field name="revision_id">74</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.4167</field>
+		<field name="field_geolocation_lng">9.93333</field>
+		<field name="field_geolocation_lat_sin">0.78170228139605</field>
+		<field name="field_geolocation_lat_cos">0.62365178045141</field>
+		<field name="field_geolocation_lng_rad">0.17336931418713</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">75</field>
+		<field name="revision_id">75</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.44205</field>
+		<field name="field_geolocation_lng">8.57696</field>
+		<field name="field_geolocation_lat_sin">0.75974871313498</field>
+		<field name="field_geolocation_lat_cos">0.65021680452733</field>
+		<field name="field_geolocation_lng_rad">0.14969619181185</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">76</field>
+		<field name="revision_id">76</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.47055</field>
+		<field name="field_geolocation_lng">10.99713</field>
+		<field name="field_geolocation_lat_sin">0.76007204921763</field>
+		<field name="field_geolocation_lat_cos">0.64983881078165</field>
+		<field name="field_geolocation_lng_rad">0.19193612676984</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">78</field>
+		<field name="revision_id">78</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">45.93432</field>
+		<field name="field_geolocation_lng">13.61834</field>
+		<field name="field_geolocation_lat_sin">0.71854301858426</field>
+		<field name="field_geolocation_lat_cos">0.69548251627472</field>
+		<field name="field_geolocation_lng_rad">0.23768487165604</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">79</field>
+		<field name="revision_id">79</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">37.48333</field>
+		<field name="field_geolocation_lng">45.7</field>
+		<field name="field_geolocation_lat_sin">0.60853057995879</field>
+		<field name="field_geolocation_lat_cos">0.79353042364803</field>
+		<field name="field_geolocation_lng_rad">0.79761546816141</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">80</field>
+		<field name="revision_id">80</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.53443</field>
+		<field name="field_geolocation_lng">9.93228</field>
+		<field name="field_geolocation_lat_sin">0.78298209507124</field>
+		<field name="field_geolocation_lat_cos">0.6220442418332</field>
+		<field name="field_geolocation_lng_rad">0.17335098822998</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">81</field>
+		<field name="revision_id">81</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">54.09311</field>
+		<field name="field_geolocation_lng">13.38786</field>
+		<field name="field_geolocation_lat_sin">0.80997112144526</field>
+		<field name="field_geolocation_lat_cos">0.58646976258346</field>
+		<field name="field_geolocation_lng_rad">0.23366223679605</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">83</field>
+		<field name="revision_id">83</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.9353</field>
+		<field name="field_geolocation_lng">28.6434</field>
+		<field name="field_geolocation_lat_sin">0.80835273512447</field>
+		<field name="field_geolocation_lat_cos">0.58869844200302</field>
+		<field name="field_geolocation_lng_rad">0.49992163896574</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">84</field>
+		<field name="revision_id">84</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.05183</field>
+		<field name="field_geolocation_lng">6.05814</field>
+		<field name="field_geolocation_lat_sin">0.78856736103915</field>
+		<field name="field_geolocation_lat_cos">0.61494838572335</field>
+		<field name="field_geolocation_lng_rad">0.10573448954677</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">85</field>
+		<field name="revision_id">85</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.8883</field>
+		<field name="field_geolocation_lng">11.0572</field>
+		<field name="field_geolocation_lat_sin">0.78680900465578</field>
+		<field name="field_geolocation_lat_cos">0.61719655717817</field>
+		<field name="field_geolocation_lng_rad">0.19298454605152</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">86</field>
+		<field name="revision_id">86</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.73385</field>
+		<field name="field_geolocation_lng">4.23454</field>
+		<field name="field_geolocation_lat_sin">0.77421427224385</field>
+		<field name="field_geolocation_lat_cos">0.63292358200175</field>
+		<field name="field_geolocation_lng_rad">0.073906665307401</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">88</field>
+		<field name="revision_id">88</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.57532</field>
+		<field name="field_geolocation_lng">10.01534</field>
+		<field name="field_geolocation_lat_sin">0.80463810913346</field>
+		<field name="field_geolocation_lat_cos">0.59376553733787</field>
+		<field name="field_geolocation_lng_rad">0.17480065870669</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">89</field>
+		<field name="revision_id">89</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.68033</field>
+		<field name="field_geolocation_lng">7.82089</field>
+		<field name="field_geolocation_lat_sin">0.78456355026688</field>
+		<field name="field_geolocation_lat_cos">0.62004841391026</field>
+		<field name="field_geolocation_lng_rad">0.1365002809363</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">90</field>
+		<field name="revision_id">90</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.13155</field>
+		<field name="field_geolocation_lng">8.92082</field>
+		<field name="field_geolocation_lat_sin">0.7675182506129</field>
+		<field name="field_geolocation_lat_cos">0.64102709379254</field>
+		<field name="field_geolocation_lng_rad">0.15569768097776</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">91</field>
+		<field name="revision_id">91</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.37052</field>
+		<field name="field_geolocation_lng">9.73322</field>
+		<field name="field_geolocation_lat_sin">0.79197560473715</field>
+		<field name="field_geolocation_lat_cos">0.61055273441467</field>
+		<field name="field_geolocation_lng_rad">0.16987673582096</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">93</field>
+		<field name="revision_id">93</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.35149</field>
+		<field name="field_geolocation_lng">8.96317</field>
+		<field name="field_geolocation_lat_sin">0.74723570329353</field>
+		<field name="field_geolocation_lat_cos">0.66455910476302</field>
+		<field name="field_geolocation_lng_rad">0.15643682791598</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">94</field>
+		<field name="revision_id">94</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.7618</field>
+		<field name="field_geolocation_lng">9.70803</field>
+		<field name="field_geolocation_lat_sin">0.76336552208705</field>
+		<field name="field_geolocation_lat_cos">0.64596677909066</field>
+		<field name="field_geolocation_lng_rad">0.16943708738239</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">95</field>
+		<field name="revision_id">95</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.15077</field>
+		<field name="field_geolocation_lng">9.95112</field>
+		<field name="field_geolocation_lat_sin">0.78962809534193</field>
+		<field name="field_geolocation_lat_cos">0.61358574873173</field>
+		<field name="field_geolocation_lng_rad">0.17367980826106</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">96</field>
+		<field name="revision_id">96</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.4</field>
+		<field name="field_geolocation_lng">11.8167</field>
+		<field name="field_geolocation_lat_sin">0.77051324277579</field>
+		<field name="field_geolocation_lat_cos">0.63742398974869</field>
+		<field name="field_geolocation_lng_rad">0.20624032172041</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">97</field>
+		<field name="revision_id">97</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.36714</field>
+		<field name="field_geolocation_lng">9.70692</field>
+		<field name="field_geolocation_lat_sin">0.73570876743076</field>
+		<field name="field_geolocation_lat_cos">0.67729802120301</field>
+		<field name="field_geolocation_lng_rad">0.16941771422769</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">99</field>
+		<field name="revision_id">99</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.16374</field>
+		<field name="field_geolocation_lng">26.58394</field>
+		<field name="field_geolocation_lat_sin">0.75658138268589</field>
+		<field name="field_geolocation_lat_cos">0.65389954226403</field>
+		<field name="field_geolocation_lng_rad">0.46397728115262</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">101</field>
+		<field name="revision_id">101</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47</field>
+		<field name="field_geolocation_lng">20</field>
+		<field name="field_geolocation_lat_sin">0.73135370161917</field>
+		<field name="field_geolocation_lat_cos">0.6819983600625</field>
+		<field name="field_geolocation_lng_rad">0.34906585039887</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">102</field>
+		<field name="revision_id">102</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.85691</field>
+		<field name="field_geolocation_lng">-97.06456</field>
+		<field name="field_geolocation_lat_sin">0.7755718801008</field>
+		<field name="field_geolocation_lat_cos">0.63125926432561</field>
+		<field name="field_geolocation_lng_rad">-1.6940961589996</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">103</field>
+		<field name="revision_id">103</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.9326</field>
+		<field name="field_geolocation_lng">11.58678</field>
+		<field name="field_geolocation_lat_sin">0.7764051216713</field>
+		<field name="field_geolocation_lat_cos">0.63023415255171</field>
+		<field name="field_geolocation_lng_rad">0.20222746070423</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">105</field>
+		<field name="revision_id">105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">31.75</field>
+		<field name="field_geolocation_lng">35</field>
+		<field name="field_geolocation_lat_sin">0.52621392365187</field>
+		<field name="field_geolocation_lat_cos">0.85035222499556</field>
+		<field name="field_geolocation_lng_rad">0.61086523819802</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">106</field>
+		<field name="revision_id">106</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.68307</field>
+		<field name="field_geolocation_lng">12.29992</field>
+		<field name="field_geolocation_lat_sin">0.78459320133833</field>
+		<field name="field_geolocation_lat_cos">0.62001089378629</field>
+		<field name="field_geolocation_lng_rad">0.2146741017319</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">108</field>
+		<field name="revision_id">108</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.13707</field>
+		<field name="field_geolocation_lng">21.23589</field>
+		<field name="field_geolocation_lat_sin">0.78948135821602</field>
+		<field name="field_geolocation_lat_cos">0.61377453924824</field>
+		<field name="field_geolocation_lng_rad">0.37063620009134</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">110</field>
+		<field name="revision_id">110</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.0083</field>
+		<field name="field_geolocation_lng">8.39786</field>
+		<field name="field_geolocation_lat_sin">0.7548046105418</field>
+		<field name="field_geolocation_lat_cos">0.65594969312047</field>
+		<field name="field_geolocation_lng_rad">0.14657030712153</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">111</field>
+		<field name="revision_id">111</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.31667</field>
+		<field name="field_geolocation_lng">9.5</field>
+		<field name="field_geolocation_lat_sin">0.78061228639555</field>
+		<field name="field_geolocation_lat_cos">0.6250155664688</field>
+		<field name="field_geolocation_lng_rad">0.16580627893946</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">112</field>
+		<field name="revision_id">112</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.36432</field>
+		<field name="field_geolocation_lng">6.41858</field>
+		<field name="field_geolocation_lat_sin">0.78113181019774</field>
+		<field name="field_geolocation_lat_cos">0.62436615466985</field>
+		<field name="field_geolocation_lng_rad">0.11202535430266</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">113</field>
+		<field name="revision_id">113</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.96729</field>
+		<field name="field_geolocation_lng">7.93702</field>
+		<field name="field_geolocation_lat_sin">0.76567735265744</field>
+		<field name="field_geolocation_lat_cos">0.64322483753933</field>
+		<field name="field_geolocation_lng_rad">0.13852713179664</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">114</field>
+		<field name="revision_id">114</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">54.32133</field>
+		<field name="field_geolocation_lng">10.13489</field>
+		<field name="field_geolocation_lat_sin">0.81230071059362</field>
+		<field name="field_geolocation_lat_cos">0.58323884950259</field>
+		<field name="field_geolocation_lng_rad">0.17688719982745</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">115</field>
+		<field name="revision_id">115</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.3567</field>
+		<field name="field_geolocation_lng">7.59317</field>
+		<field name="field_geolocation_lat_sin">0.77003130391194</field>
+		<field name="field_geolocation_lat_cos">0.63800610576677</field>
+		<field name="field_geolocation_lng_rad">0.13252581716366</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">116</field>
+		<field name="revision_id">116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.02814</field>
+		<field name="field_geolocation_lng">15.20057</field>
+		<field name="field_geolocation_lat_sin">0.76636004662735</field>
+		<field name="field_geolocation_lat_cos">0.64241130044025</field>
+		<field name="field_geolocation_lng_rad">0.26529999467987</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">117</field>
+		<field name="revision_id">117</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">-43.68833</field>
+		<field name="field_geolocation_lng">171.73011</field>
+		<field name="field_geolocation_lat_sin">-0.69073514285395</field>
+		<field name="field_geolocation_lat_cos">0.72310784978904</field>
+		<field name="field_geolocation_lng_rad">2.997255844312</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">118</field>
+		<field name="revision_id">118</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.76356</field>
+		<field name="field_geolocation_lng">18.12263</field>
+		<field name="field_geolocation_lat_sin">0.74037723355271</field>
+		<field name="field_geolocation_lat_cos">0.67219160366434</field>
+		<field name="field_geolocation_lng_rad">0.3162995626207</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">120</field>
+		<field name="revision_id">120</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">-23.30939</field>
+		<field name="field_geolocation_lng">29.21553</field>
+		<field name="field_geolocation_lat_sin">-0.39569601813679</field>
+		<field name="field_geolocation_lat_cos">0.91838154447413</field>
+		<field name="field_geolocation_lng_rad">0.50990719121518</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">121</field>
+		<field name="revision_id">121</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">54.70649</field>
+		<field name="field_geolocation_lng">20.51095</field>
+		<field name="field_geolocation_lat_sin">0.8162030398571</field>
+		<field name="field_geolocation_lat_cos">0.57776517524685</field>
+		<field name="field_geolocation_lng_rad">0.35798361021193</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">126</field>
+		<field name="revision_id">126</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.75185</field>
+		<field name="field_geolocation_lng">11.97093</field>
+		<field name="field_geolocation_lat_sin">0.78533692014279</field>
+		<field name="field_geolocation_lat_cos">0.61906859220981</field>
+		<field name="field_geolocation_lng_rad">0.20893214302576</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">127</field>
+		<field name="revision_id">127</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.06143</field>
+		<field name="field_geolocation_lng">19.93658</field>
+		<field name="field_geolocation_lat_sin">0.76673317113392</field>
+		<field name="field_geolocation_lat_cos">0.64196592143425</field>
+		<field name="field_geolocation_lng_rad">0.34795896258725</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">128</field>
+		<field name="revision_id">128</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.21466</field>
+		<field name="field_geolocation_lng">7.46724</field>
+		<field name="field_geolocation_lat_sin">0.77949826557159</field>
+		<field name="field_geolocation_lat_cos">0.62640438533816</field>
+		<field name="field_geolocation_lng_rad">0.13032792403662</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">131</field>
+		<field name="revision_id">131</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">55.375</field>
+		<field name="field_geolocation_lng">13.08333</field>
+		<field name="field_geolocation_lat_sin">0.82288852161083</field>
+		<field name="field_geolocation_lat_cos">0.56820285198258</field>
+		<field name="field_geolocation_lng_rad">0.22834718562495</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">133</field>
+		<field name="revision_id">133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">-25.95</field>
+		<field name="field_geolocation_lng">29.18333</field>
+		<field name="field_geolocation_lat_sin">-0.43758663419902</field>
+		<field name="field_geolocation_lat_cos">0.89917625500809</field>
+		<field name="field_geolocation_lng_rad">0.50934519519604</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">135</field>
+		<field name="revision_id">135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.53587</field>
+		<field name="field_geolocation_lng">12.15227</field>
+		<field name="field_geolocation_lat_sin">0.74937040700769</field>
+		<field name="field_geolocation_lat_cos">0.66215103496191</field>
+		<field name="field_geolocation_lng_rad">0.21209712309133</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">137</field>
+		<field name="revision_id">137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.15833</field>
+		<field name="field_geolocation_lng">4.49306</field>
+		<field name="field_geolocation_lat_sin">0.78970904920017</field>
+		<field name="field_geolocation_lat_cos">0.61348155441819</field>
+		<field name="field_geolocation_lng_rad">0.078418690489656</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">139</field>
+		<field name="revision_id">139</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.34198</field>
+		<field name="field_geolocation_lng">12.37498</field>
+		<field name="field_geolocation_lat_sin">0.78088830637093</field>
+		<field name="field_geolocation_lat_cos">0.62467067561487</field>
+		<field name="field_geolocation_lng_rad">0.21598414586845</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">140</field>
+		<field name="revision_id">140</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.16667</field>
+		<field name="field_geolocation_lng">7.66667</field>
+		<field name="field_geolocation_lat_sin">0.75661482090758</field>
+		<field name="field_geolocation_lat_cos">0.653860851239</field>
+		<field name="field_geolocation_lng_rad">0.13380863416387</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">141</field>
+		<field name="revision_id">141</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.02786</field>
+		<field name="field_geolocation_lng">8.89901</field>
+		<field name="field_geolocation_lat_sin">0.7883100250474</field>
+		<field name="field_geolocation_lat_cos">0.61527823333007</field>
+		<field name="field_geolocation_lng_rad">0.1553170246679</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">143</field>
+		<field name="revision_id">143</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">1.57556</field>
+		<field name="field_geolocation_lng">11.91863</field>
+		<field name="field_geolocation_lat_sin">0.027495244035843</field>
+		<field name="field_geolocation_lat_cos">0.99962193431087</field>
+		<field name="field_geolocation_lng_rad">0.20801933582697</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">145</field>
+		<field name="revision_id">145</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.63297</field>
+		<field name="field_geolocation_lng">3.05858</field>
+		<field name="field_geolocation_lat_sin">0.77309869172868</field>
+		<field name="field_geolocation_lat_cos">0.63428575015319</field>
+		<field name="field_geolocation_lng_rad">0.053382291435648</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">146</field>
+		<field name="revision_id">146</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.07397</field>
+		<field name="field_geolocation_lng">11.62695</field>
+		<field name="field_geolocation_lat_sin">0.72023601849857</field>
+		<field name="field_geolocation_lat_cos">0.69372910970878</field>
+		<field name="field_geolocation_lng_rad">0.20292855946475</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">147</field>
+		<field name="revision_id">147</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">43.54264</field>
+		<field name="field_geolocation_lng">10.31601</field>
+		<field name="field_geolocation_lat_sin">0.68889421471768</field>
+		<field name="field_geolocation_lat_cos">0.72486189093406</field>
+		<field name="field_geolocation_lng_rad">0.18004834016866</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">148</field>
+		<field name="revision_id">148</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.50853</field>
+		<field name="field_geolocation_lng">-0.12574</field>
+		<field name="field_geolocation_lat_sin">0.78270082603245</field>
+		<field name="field_geolocation_lat_cos">0.62239811770933</field>
+		<field name="field_geolocation_lng_rad">-0.0021945770014577</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">149</field>
+		<field name="revision_id">149</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.86893</field>
+		<field name="field_geolocation_lng">10.68729</field>
+		<field name="field_geolocation_lat_sin">0.80767025936777</field>
+		<field name="field_geolocation_lat_cos">0.58963442244564</field>
+		<field name="field_geolocation_lng_rad">0.18652839861546</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">150</field>
+		<field name="revision_id">150</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.6</field>
+		<field name="field_geolocation_lng">6.5</field>
+		<field name="field_geolocation_lat_sin">0.75011106963046</field>
+		<field name="field_geolocation_lat_cos">0.66131186532365</field>
+		<field name="field_geolocation_lng_rad">0.11344640137963</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">152</field>
+		<field name="revision_id">152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.12773</field>
+		<field name="field_geolocation_lng">11.62916</field>
+		<field name="field_geolocation_lat_sin">0.78938129403622</field>
+		<field name="field_geolocation_lat_cos">0.61390322741106</field>
+		<field name="field_geolocation_lng_rad">0.20296713124122</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">154</field>
+		<field name="revision_id">154</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.00098</field>
+		<field name="field_geolocation_lng">8.26882</field>
+		<field name="field_geolocation_lat_sin">0.7660554373919</field>
+		<field name="field_geolocation_lat_cos">0.64277450699472</field>
+		<field name="field_geolocation_lng_rad">0.14431813425476</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">155</field>
+		<field name="revision_id">155</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.49671</field>
+		<field name="field_geolocation_lng">8.47955</field>
+		<field name="field_geolocation_lat_sin">0.76036867217419</field>
+		<field name="field_geolocation_lat_cos">0.64949171078318</field>
+		<field name="field_geolocation_lng_rad">0.14799606658749</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">156</field>
+		<field name="revision_id">156</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">22.28259</field>
+		<field name="field_geolocation_lng">-84.28173</field>
+		<field name="field_geolocation_lat_sin">0.37917500610388</field>
+		<field name="field_geolocation_lat_cos">0.92532497791107</field>
+		<field name="field_geolocation_lng_rad">-1.4709936877769</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">157</field>
+		<field name="revision_id">157</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.85</field>
+		<field name="field_geolocation_lng">13.6</field>
+		<field name="field_geolocation_lat_sin">0.79705722692159</field>
+		<field name="field_geolocation_lat_cos">0.60390378125333</field>
+		<field name="field_geolocation_lng_rad">0.23736477827123</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">161</field>
+		<field name="revision_id">161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.11911</field>
+		<field name="field_geolocation_lng">6.17269</field>
+		<field name="field_geolocation_lat_sin">0.75607180440967</field>
+		<field name="field_geolocation_lat_cos">0.65448867566728</field>
+		<field name="field_geolocation_lng_rad">0.10773376420493</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">162</field>
+		<field name="revision_id">162</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.07315</field>
+		<field name="field_geolocation_lng">28.01338</field>
+		<field name="field_geolocation_lat_sin">0.75554656095195</field>
+		<field name="field_geolocation_lat_cos">0.65509495054815</field>
+		<field name="field_geolocation_lng_rad">0.48892571561233</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">164</field>
+		<field name="revision_id">164</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.36858</field>
+		<field name="field_geolocation_lng">23.74338</field>
+		<field name="field_geolocation_lat_sin">0.80249039523627</field>
+		<field name="field_geolocation_lat_cos">0.59666503630892</field>
+		<field name="field_geolocation_lng_rad">0.41440015655217</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">165</field>
+		<field name="revision_id">165</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.9</field>
+		<field name="field_geolocation_lng">27.56667</field>
+		<field name="field_geolocation_lat_sin">0.80798988389803</field>
+		<field name="field_geolocation_lat_cos">0.58919635735334</field>
+		<field name="field_geolocation_lng_rad">0.48112915531075</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">168</field>
+		<field name="revision_id">168</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">39.91389</field>
+		<field name="field_geolocation_lng">-97.5381</field>
+		<field name="field_geolocation_lat_sin">0.64163559367611</field>
+		<field name="field_geolocation_lat_cos">0.76700962505559</field>
+		<field name="field_geolocation_lng_rad">-1.7023609911395</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">169</field>
+		<field name="revision_id">169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.13743</field>
+		<field name="field_geolocation_lng">11.57549</field>
+		<field name="field_geolocation_lat_sin">0.74474766684907</field>
+		<field name="field_geolocation_lat_cos">0.66734617158028</field>
+		<field name="field_geolocation_lng_rad">0.20203041303168</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">170</field>
+		<field name="revision_id">170</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.29583</field>
+		<field name="field_geolocation_lng">5.1625</field>
+		<field name="field_geolocation_lat_sin">0.79117902379347</field>
+		<field name="field_geolocation_lat_cos">0.61158462399672</field>
+		<field name="field_geolocation_lng_rad">0.090102622634207</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">171</field>
+		<field name="revision_id">171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.4167</field>
+		<field name="field_geolocation_lng">16.16289</field>
+		<field name="field_geolocation_lat_sin">0.77069900000456</field>
+		<field name="field_geolocation_lat_cos">0.63719938119239</field>
+		<field name="field_geolocation_lng_rad">0.28209564713767</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">172</field>
+		<field name="revision_id">172</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.69278</field>
+		<field name="field_geolocation_lng">6.18361</field>
+		<field name="field_geolocation_lat_sin">0.75118095889929</field>
+		<field name="field_geolocation_lat_cos">0.66009633159649</field>
+		<field name="field_geolocation_lng_rad">0.10792435415925</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">173</field>
+		<field name="revision_id">173</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">31.42215</field>
+		<field name="field_geolocation_lng">34.58858</field>
+		<field name="field_geolocation_lat_sin">0.52133956746851</field>
+		<field name="field_geolocation_lat_cos">0.85334931616059</field>
+		<field name="field_geolocation_lng_rad">0.60368460458946</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">175</field>
+		<field name="revision_id">175</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.68333</field>
+		<field name="field_geolocation_lng">10.93333</field>
+		<field name="field_geolocation_lat_sin">0.77365589710035</field>
+		<field name="field_geolocation_lat_cos">0.63360599182919</field>
+		<field name="field_geolocation_lng_rad">0.19082260670707</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">176</field>
+		<field name="revision_id">176</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.3613</field>
+		<field name="field_geolocation_lng">13.07292</field>
+		<field name="field_geolocation_lat_sin">0.80241457651734</field>
+		<field name="field_geolocation_lat_cos">0.59676699589748</field>
+		<field name="field_geolocation_lng_rad">0.22816549684982</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">177</field>
+		<field name="revision_id">177</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.4336</field>
+		<field name="field_geolocation_lng">7.47057</field>
+		<field name="field_geolocation_lat_sin">0.77088691521531</field>
+		<field name="field_geolocation_lat_cos">0.6369720276039</field>
+		<field name="field_geolocation_lng_rad">0.13038604350071</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">179</field>
+		<field name="revision_id">179</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">43.00035</field>
+		<field name="field_geolocation_lng">-75.4999</field>
+		<field name="field_geolocation_lat_sin">0.68200282763531</field>
+		<field name="field_geolocation_lat_cos">0.73134953551462</field>
+		<field name="field_geolocation_lng_rad">-1.3177218399265</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">184</field>
+		<field name="revision_id">184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.43022</field>
+		<field name="field_geolocation_lng">20.71652</field>
+		<field name="field_geolocation_lat_sin">0.7926113471862</field>
+		<field name="field_geolocation_lat_cos">0.60972719499107</field>
+		<field name="field_geolocation_lng_rad">0.36157148355526</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">185</field>
+		<field name="revision_id">185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.45421</field>
+		<field name="field_geolocation_lng">11.0775</field>
+		<field name="field_geolocation_lat_sin">0.75988669286043</field>
+		<field name="field_geolocation_lat_cos">0.65005554686784</field>
+		<field name="field_geolocation_lng_rad">0.19333884788967</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">186</field>
+		<field name="revision_id">186</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.56405</field>
+		<field name="field_geolocation_lng">8.46115</field>
+		<field name="field_geolocation_lat_sin">0.73803210704744</field>
+		<field name="field_geolocation_lat_cos">0.67476559557161</field>
+		<field name="field_geolocation_lng_rad">0.14767492600512</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">187</field>
+		<field name="revision_id">187</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.10061</field>
+		<field name="field_geolocation_lng">8.76647</field>
+		<field name="field_geolocation_lat_sin">0.76717198097074</field>
+		<field name="field_geolocation_lat_cos">0.64144146390254</field>
+		<field name="field_geolocation_lng_rad">0.15300376527731</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">189</field>
+		<field name="revision_id">189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.80058</field>
+		<field name="field_geolocation_lng">21.42538</field>
+		<field name="field_geolocation_lat_sin">0.77495088664001</field>
+		<field name="field_geolocation_lat_cos">0.63202145793942</field>
+		<field name="field_geolocation_lng_rad">0.37394342449094</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">190</field>
+		<field name="revision_id">190</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">-19.53583</field>
+		<field name="field_geolocation_lng">34.63667</field>
+		<field name="field_geolocation_lat_sin">-0.33439627616842</field>
+		<field name="field_geolocation_lat_cos">0.94243256017855</field>
+		<field name="field_geolocation_lng_rad">0.60452393342674</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">192</field>
+		<field name="revision_id">192</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.8534</field>
+		<field name="field_geolocation_lng">2.3486</field>
+		<field name="field_geolocation_lat_sin">0.75302848443074</field>
+		<field name="field_geolocation_lat_cos">0.65798791906534</field>
+		<field name="field_geolocation_lng_rad">0.040990802812339</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">193</field>
+		<field name="revision_id">193</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">38.65</field>
+		<field name="field_geolocation_lng">41.6</field>
+		<field name="field_geolocation_lat_sin">0.62456136433787</field>
+		<field name="field_geolocation_lat_cos">0.78097573725207</field>
+		<field name="field_geolocation_lng_rad">0.72605696882964</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">194</field>
+		<field name="revision_id">194</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.68333</field>
+		<field name="field_geolocation_lng">12.41667</field>
+		<field name="field_geolocation_lat_sin">0.76248011626943</field>
+		<field name="field_geolocation_lat_cos">0.64701164772649</field>
+		<field name="field_geolocation_lng_rad">0.2167117736336</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">195</field>
+		<field name="revision_id">195</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.52052</field>
+		<field name="field_geolocation_lng">20.52649</field>
+		<field name="field_geolocation_lat_sin">0.77185233994418</field>
+		<field name="field_geolocation_lat_cos">0.6358018286563</field>
+		<field name="field_geolocation_lng_rad">0.35825483437769</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">196</field>
+		<field name="revision_id">196</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.05534</field>
+		<field name="field_geolocation_lng">22.63017</field>
+		<field name="field_geolocation_lat_sin">0.7777534375349</field>
+		<field name="field_geolocation_lat_cos">0.62856947937571</field>
+		<field name="field_geolocation_lng_rad">0.39497097678605</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">197</field>
+		<field name="revision_id">197</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.41667</field>
+		<field name="field_geolocation_lng">13.31667</field>
+		<field name="field_geolocation_lat_sin">0.73629399057908</field>
+		<field name="field_geolocation_lat_cos">0.67666177624951</field>
+		<field name="field_geolocation_lng_rad">0.23241973690155</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">198</field>
+		<field name="revision_id">198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.42497</field>
+		<field name="field_geolocation_lng">13.17675</field>
+		<field name="field_geolocation_lat_sin">0.75955484829687</field>
+		<field name="field_geolocation_lat_cos">0.65044325842361</field>
+		<field name="field_geolocation_lng_rad">0.22997767221216</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">199</field>
+		<field name="revision_id">199</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.487</field>
+		<field name="field_geolocation_lng">15.71881</field>
+		<field name="field_geolocation_lat_sin">0.76025859094038</field>
+		<field name="field_geolocation_lat_cos">0.64962056225257</field>
+		<field name="field_geolocation_lng_rad">0.27434498899541</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">201</field>
+		<field name="revision_id">201</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.4069</field>
+		<field name="field_geolocation_lng">16.92993</field>
+		<field name="field_geolocation_lat_sin">0.79236311599976</field>
+		<field name="field_geolocation_lat_cos">0.61004974584303</field>
+		<field name="field_geolocation_lng_rad">0.29548302063216</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">202</field>
+		<field name="revision_id">202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.39886</field>
+		<field name="field_geolocation_lng">13.06566</field>
+		<field name="field_geolocation_lat_sin">0.79227750329046</field>
+		<field name="field_geolocation_lat_cos">0.61016092777221</field>
+		<field name="field_geolocation_lng_rad">0.22803878594612</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">203</field>
+		<field name="revision_id">203</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.7043</field>
+		<field name="field_geolocation_lng">13.48269</field>
+		<field name="field_geolocation_lat_sin">0.75131366395711</field>
+		<field name="field_geolocation_lat_cos">0.65994528436177</field>
+		<field name="field_geolocation_lng_rad">0.23531733252571</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">204</field>
+		<field name="revision_id">204</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.08804</field>
+		<field name="field_geolocation_lng">14.42076</field>
+		<field name="field_geolocation_lat_sin">0.76703123802209</field>
+		<field name="field_geolocation_lat_cos">0.64160975670442</field>
+		<field name="field_geolocation_lng_rad">0.2516897426399</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">205</field>
+		<field name="revision_id">205</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.31625</field>
+		<field name="field_geolocation_lng">13.86261</field>
+		<field name="field_geolocation_lat_sin">0.8019451080506</field>
+		<field name="field_geolocation_lat_cos">0.59739772653879</field>
+		<field name="field_geolocation_lng_rad">0.24194818741989</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">208</field>
+		<field name="revision_id">208</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.08789</field>
+		<field name="field_geolocation_lng">19.87384</field>
+		<field name="field_geolocation_lat_sin">0.7781104052661</field>
+		<field name="field_geolocation_lat_cos">0.62812753260514</field>
+		<field name="field_geolocation_lng_rad">0.34686394301455</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">211</field>
+		<field name="revision_id">211</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.36769</field>
+		<field name="field_geolocation_lng">17.91499</field>
+		<field name="field_geolocation_lat_sin">0.7589042047135</field>
+		<field name="field_geolocation_lat_cos">0.65120227891813</field>
+		<field name="field_geolocation_lng_rad">0.31267556096186</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">212</field>
+		<field name="revision_id">212</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">11.72833</field>
+		<field name="field_geolocation_lng">42.67889</field>
+		<field name="field_geolocation_lat_sin">0.20327144900668</field>
+		<field name="field_geolocation_lat_cos">0.97912242238584</field>
+		<field name="field_geolocation_lng_rad">0.74488715159648</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">213</field>
+		<field name="revision_id">213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.01681</field>
+		<field name="field_geolocation_lng">12.09536</field>
+		<field name="field_geolocation_lat_sin">0.75490202879652</field>
+		<field name="field_geolocation_lat_cos">0.65583757662922</field>
+		<field name="field_geolocation_lng_rad">0.21110385621402</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">214</field>
+		<field name="revision_id">214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">44.74009</field>
+		<field name="field_geolocation_lng">7.97615</field>
+		<field name="field_geolocation_lat_sin">0.7038918787515</field>
+		<field name="field_geolocation_lat_cos">0.71030713288526</field>
+		<field name="field_geolocation_lng_rad">0.13921007913295</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">215</field>
+		<field name="revision_id">215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.73193</field>
+		<field name="field_geolocation_lng">9.91478</field>
+		<field name="field_geolocation_lat_sin">0.76302865660425</field>
+		<field name="field_geolocation_lat_cos">0.64636465652193</field>
+		<field name="field_geolocation_lng_rad">0.17304555561088</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">217</field>
+		<field name="revision_id">217</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">56.97778</field>
+		<field name="field_geolocation_lng">24.12167</field>
+		<field name="field_geolocation_lat_sin">0.83845928724294</field>
+		<field name="field_geolocation_lat_cos">0.5449642406948</field>
+		<field name="field_geolocation_lng_rad">0.42100256257954</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">218</field>
+		<field name="revision_id">218</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.12542</field>
+		<field name="field_geolocation_lng">8.6089</field>
+		<field name="field_geolocation_lat_sin">0.76744966357568</field>
+		<field name="field_geolocation_lat_cos">0.64110920589052</field>
+		<field name="field_geolocation_lng_rad">0.15025364997494</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">219</field>
+		<field name="revision_id">219</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.29311</field>
+		<field name="field_geolocation_lng">0.11561</field>
+		<field name="field_geolocation_lat_sin">0.7228840598717</field>
+		<field name="field_geolocation_lat_cos">0.69096934518356</field>
+		<field name="field_geolocation_lng_rad">0.0020177751482306</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">220</field>
+		<field name="revision_id">220</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.11125</field>
+		<field name="field_geolocation_lng">9.41082</field>
+		<field name="field_geolocation_lat_sin">0.79980253530671</field>
+		<field name="field_geolocation_lat_cos">0.60026319603733</field>
+		<field name="field_geolocation_lng_rad">0.16424979431253</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">221</field>
+		<field name="revision_id">221</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.9225</field>
+		<field name="field_geolocation_lng">4.47917</field>
+		<field name="field_geolocation_lat_sin">0.78717727069902</field>
+		<field name="field_geolocation_lat_cos">0.61672679891087</field>
+		<field name="field_geolocation_lng_rad">0.078176264256554</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">225</field>
+		<field name="revision_id">225</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.67745</field>
+		<field name="field_geolocation_lng">11.56795</field>
+		<field name="field_geolocation_lat_sin">0.78453238224307</field>
+		<field name="field_geolocation_lat_cos">0.6200878495923</field>
+		<field name="field_geolocation_lng_rad">0.20189881520608</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">231</field>
+		<field name="revision_id">231</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.62937</field>
+		<field name="field_geolocation_lng">11.41316</field>
+		<field name="field_geolocation_lat_sin">0.80519788001582</field>
+		<field name="field_geolocation_lat_cos">0.59300621752055</field>
+		<field name="field_geolocation_lng_rad">0.19919722005692</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">233</field>
+		<field name="revision_id">233</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.89095</field>
+		<field name="field_geolocation_lng">10.17847</field>
+		<field name="field_geolocation_lat_sin">0.78683754991115</field>
+		<field name="field_geolocation_lat_cos">0.61716016563759</field>
+		<field name="field_geolocation_lng_rad">0.17764781431547</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">234</field>
+		<field name="revision_id">234</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.52517</field>
+		<field name="field_geolocation_lng">14.00164</field>
+		<field name="field_geolocation_lat_sin">0.78288155161761</field>
+		<field name="field_geolocation_lat_cos">0.62217077730862</field>
+		<field name="field_geolocation_lng_rad">0.24437471867894</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">236</field>
+		<field name="revision_id">236</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.87481</field>
+		<field name="field_geolocation_lng">8.02431</field>
+		<field name="field_geolocation_lat_sin">0.7757690564402</field>
+		<field name="field_geolocation_lat_cos">0.63101693405953</field>
+		<field name="field_geolocation_lng_rad">0.14005062970071</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">238</field>
+		<field name="revision_id">238</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.0869</field>
+		<field name="field_geolocation_lng">25.3163</field>
+		<field name="field_geolocation_lat_sin">0.79954735862763</field>
+		<field name="field_geolocation_lat_cos">0.6006030480372</field>
+		<field name="field_geolocation_lng_rad">0.44185278942264</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">240</field>
+		<field name="revision_id">240</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">46.93833</field>
+		<field name="field_geolocation_lng">12.89778</field>
+		<field name="field_geolocation_lat_sin">0.73061921290012</field>
+		<field name="field_geolocation_lat_cos">0.68278515342764</field>
+		<field name="field_geolocation_lng_rad">0.22510872719787</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">241</field>
+		<field name="revision_id">241</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.28195</field>
+		<field name="field_geolocation_lng">14.9663</field>
+		<field name="field_geolocation_lat_sin">0.80158733345725</field>
+		<field name="field_geolocation_lat_cos">0.59787770224428</field>
+		<field name="field_geolocation_lng_rad">0.26121121184123</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">242</field>
+		<field name="revision_id">242</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">-23.2879</field>
+		<field name="field_geolocation_lng">29.2649</field>
+		<field name="field_geolocation_lat_sin">-0.39535153179231</field>
+		<field name="field_geolocation_lat_cos">0.91852989407502</field>
+		<field name="field_geolocation_lng_rad">0.51076886026689</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">243</field>
+		<field name="revision_id">243</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">59.5</field>
+		<field name="field_geolocation_lng">18</field>
+		<field name="field_geolocation_lat_sin">0.86162916044153</field>
+		<field name="field_geolocation_lat_cos">0.5075383629607</field>
+		<field name="field_geolocation_lng_rad">0.31415926535898</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">244</field>
+		<field name="revision_id">244</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">54.30911</field>
+		<field name="field_geolocation_lng">13.0818</field>
+		<field name="field_geolocation_lat_sin">0.81217629938417</field>
+		<field name="field_geolocation_lat_cos">0.5834120831099</field>
+		<field name="field_geolocation_lng_rad">0.22832048208739</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">245</field>
+		<field name="revision_id">245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.58392</field>
+		<field name="field_geolocation_lng">7.74553</field>
+		<field name="field_geolocation_lat_sin">0.74992544361561</field>
+		<field name="field_geolocation_lat_cos">0.66152235715653</field>
+		<field name="field_geolocation_lng_rad">0.135185000812</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">247</field>
+		<field name="revision_id">247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.77667</field>
+		<field name="field_geolocation_lng">9.1775</field>
+		<field name="field_geolocation_lat_sin">0.75214663785302</field>
+		<field name="field_geolocation_lat_cos">0.6589957778062</field>
+		<field name="field_geolocation_lng_rad">0.16017759210178</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">248</field>
+		<field name="revision_id">248</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.17218</field>
+		<field name="field_geolocation_lng">27.12516</field>
+		<field name="field_geolocation_lat_sin">0.7679726273934</field>
+		<field name="field_geolocation_lat_cos">0.64048266453861</field>
+		<field name="field_geolocation_lng_rad">0.47342335213027</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">249</field>
+		<field name="revision_id">249</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.29882</field>
+		<field name="field_geolocation_lng">7.05696</field>
+		<field name="field_geolocation_lat_sin">0.75812090614512</field>
+		<field name="field_geolocation_lat_cos">0.6521140173817</field>
+		<field name="field_geolocation_lng_rad">0.12316718718154</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">252</field>
+		<field name="revision_id">252</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">27.14057</field>
+		<field name="field_geolocation_lng">74.12707</field>
+		<field name="field_geolocation_lat_sin">0.4561751349326</field>
+		<field name="field_geolocation_lat_cos">0.88989001919857</field>
+		<field name="field_geolocation_lng_rad">1.2937614363563</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">253</field>
+		<field name="revision_id">253</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.70003</field>
+		<field name="field_geolocation_lng">-105.38386</field>
+		<field name="field_geolocation_lat_sin">0.79547379814957</field>
+		<field name="field_geolocation_lat_cos">0.60598798375669</field>
+		<field name="field_geolocation_lng_rad">-1.8392953354608</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">254</field>
+		<field name="revision_id">254</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">32.08088</field>
+		<field name="field_geolocation_lng">34.78057</field>
+		<field name="field_geolocation_lat_sin">0.53111585945978</field>
+		<field name="field_geolocation_lat_cos">0.84729920561175</field>
+		<field name="field_geolocation_lng_rad">0.60703546222036</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">255</field>
+		<field name="revision_id">255</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">53.93171</field>
+		<field name="field_geolocation_lng">11.71365</field>
+		<field name="field_geolocation_lat_sin">0.80831584727097</field>
+		<field name="field_geolocation_lat_cos">0.58874909006351</field>
+		<field name="field_geolocation_lng_rad">0.20444175992623</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">256</field>
+		<field name="revision_id">256</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.07667</field>
+		<field name="field_geolocation_lng">4.29861</field>
+		<field name="field_geolocation_lat_sin">0.78883389151419</field>
+		<field name="field_geolocation_lat_cos">0.6146064526171</field>
+		<field name="field_geolocation_lng_rad">0.075024897759153</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">258</field>
+		<field name="revision_id">258</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">45.05</field>
+		<field name="field_geolocation_lng">7.66667</field>
+		<field name="field_geolocation_lat_sin">0.70772357893668</field>
+		<field name="field_geolocation_lat_cos">0.70648944494384</field>
+		<field name="field_geolocation_lng_rad">0.13380863416387</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">260</field>
+		<field name="revision_id">260</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.98333</field>
+		<field name="field_geolocation_lng">9.91667</field>
+		<field name="field_geolocation_lat_sin">0.77696283007332</field>
+		<field name="field_geolocation_lat_cos">0.62954647221984</field>
+		<field name="field_geolocation_lng_rad">0.17307854233375</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">261</field>
+		<field name="revision_id">261</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">45.6433</field>
+		<field name="field_geolocation_lng">13.7903</field>
+		<field name="field_geolocation_lat_sin">0.7150012304296</field>
+		<field name="field_geolocation_lat_cos">0.69912319406822</field>
+		<field name="field_geolocation_lng_rad">0.24068613983777</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">266</field>
+		<field name="revision_id">266</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.52266</field>
+		<field name="field_geolocation_lng">9.05222</field>
+		<field name="field_geolocation_lat_sin">0.74921772287743</field>
+		<field name="field_geolocation_lat_cos">0.66232379069935</field>
+		<field name="field_geolocation_lng_rad">0.15799104361488</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">268</field>
+		<field name="revision_id">268</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">45.07049</field>
+		<field name="field_geolocation_lng">7.68682</field>
+		<field name="field_geolocation_lat_sin">0.7079761869924</field>
+		<field name="field_geolocation_lat_cos">0.70623630510736</field>
+		<field name="field_geolocation_lng_rad">0.13416031800815</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">269</field>
+		<field name="revision_id">269</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.59628</field>
+		<field name="field_geolocation_lng">15.32825</field>
+		<field name="field_geolocation_lat_sin">0.7384115591453</field>
+		<field name="field_geolocation_lat_cos">0.67435033129717</field>
+		<field name="field_geolocation_lng_rad">0.26752843106882</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">270</field>
+		<field name="revision_id">270</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">51.63465</field>
+		<field name="field_geolocation_lng">22.49859</field>
+		<field name="field_geolocation_lat_sin">0.78406895720352</field>
+		<field name="field_geolocation_lat_cos">0.62067372294127</field>
+		<field name="field_geolocation_lng_rad">0.39267447255627</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">271</field>
+		<field name="revision_id">271</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.09083</field>
+		<field name="field_geolocation_lng">5.12222</field>
+		<field name="field_geolocation_lat_sin">0.78898576041447</field>
+		<field name="field_geolocation_lat_cos">0.61441148252877</field>
+		<field name="field_geolocation_lng_rad">0.089399604011504</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">272</field>
+		<field name="revision_id">272</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">45.43713</field>
+		<field name="field_geolocation_lng">12.33265</field>
+		<field name="field_geolocation_lat_sin">0.71248092024102</field>
+		<field name="field_geolocation_lat_cos">0.70169148369672</field>
+		<field name="field_geolocation_lng_rad">0.21524534799608</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">273</field>
+		<field name="revision_id">273</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.20849</field>
+		<field name="field_geolocation_lng">16.37208</field>
+		<field name="field_geolocation_lat_sin">0.74557475724899</field>
+		<field name="field_geolocation_lat_cos">0.66642199945163</field>
+		<field name="field_geolocation_lng_rad">0.28574670139991</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">274</field>
+		<field name="revision_id">274</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">54.68916</field>
+		<field name="field_geolocation_lng">25.2798</field>
+		<field name="field_geolocation_lat_sin">0.81602824845751</field>
+		<field name="field_geolocation_lat_cos">0.57801202212356</field>
+		<field name="field_geolocation_lng_rad">0.44121574424566</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">276</field>
+		<field name="revision_id">276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.22977</field>
+		<field name="field_geolocation_lng">21.01178</field>
+		<field name="field_geolocation_lat_sin">0.7904733627193</field>
+		<field name="field_geolocation_lat_cos">0.61249641862728</field>
+		<field name="field_geolocation_lng_rad">0.36672474270469</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">278</field>
+		<field name="revision_id">278</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.47866</field>
+		<field name="field_geolocation_lng">9.89977</field>
+		<field name="field_geolocation_lat_sin">0.76016402381898</field>
+		<field name="field_geolocation_lat_cos">0.64973121896007</field>
+		<field name="field_geolocation_lng_rad">0.17278358169016</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">279</field>
+		<field name="revision_id">279</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.2082</field>
+		<field name="field_geolocation_lng">16.37169</field>
+		<field name="field_geolocation_lat_sin">0.74557138417459</field>
+		<field name="field_geolocation_lat_cos">0.66642577313605</field>
+		<field name="field_geolocation_lng_rad">0.28573989461583</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">280</field>
+		<field name="revision_id">280</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.43964</field>
+		<field name="field_geolocation_lng">17.77264</field>
+		<field name="field_geolocation_lat_sin">0.79271158173095</field>
+		<field name="field_geolocation_lat_cos">0.60959687350708</field>
+		<field name="field_geolocation_lng_rad">0.31019108477164</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">282</field>
+		<field name="revision_id">282</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.63278</field>
+		<field name="field_geolocation_lng">8.35916</field>
+		<field name="field_geolocation_lat_sin">0.76190898454666</field>
+		<field name="field_geolocation_lat_cos">0.64768410453483</field>
+		<field name="field_geolocation_lng_rad">0.14589486470101</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">283</field>
+		<field name="revision_id">283</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">52.72091</field>
+		<field name="field_geolocation_lng">14.13425</field>
+		<field name="field_geolocation_lat_sin">0.79569458234124</field>
+		<field name="field_geolocation_lat_cos">0.60569805318558</field>
+		<field name="field_geolocation_lng_rad">0.24668919980001</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">284</field>
+		<field name="revision_id">284</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.79391</field>
+		<field name="field_geolocation_lng">9.95121</field>
+		<field name="field_geolocation_lat_sin">0.76372741826665</field>
+		<field name="field_geolocation_lat_cos">0.64553886837879</field>
+		<field name="field_geolocation_lng_rad">0.17368137905738</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">285</field>
+		<field name="revision_id">285</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.72314</field>
+		<field name="field_geolocation_lng">23.25196</field>
+		<field name="field_geolocation_lat_sin">0.77409594962819</field>
+		<field name="field_geolocation_lat_cos">0.63306829076272</field>
+		<field name="field_geolocation_lng_rad">0.40582325954202</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">286</field>
+		<field name="revision_id">286</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">48.69235</field>
+		<field name="field_geolocation_lng">8.06301</field>
+		<field name="field_geolocation_lat_sin">0.75117600491075</field>
+		<field name="field_geolocation_lat_cos">0.66010196912774</field>
+		<field name="field_geolocation_lng_rad">0.14072607212123</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">287</field>
+		<field name="revision_id">287</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">50.05825</field>
+		<field name="field_geolocation_lng">23.9726</field>
+		<field name="field_geolocation_lat_sin">0.76669753990054</field>
+		<field name="field_geolocation_lat_cos">0.64200847526373</field>
+		<field name="field_geolocation_lng_rad">0.41840080026359</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">288</field>
+		<field name="revision_id">288</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">49.80597</field>
+		<field name="field_geolocation_lng">24.89436</field>
+		<field name="field_geolocation_lat_sin">0.76386327869846</field>
+		<field name="field_geolocation_lat_cos">0.64537809960986</field>
+		<field name="field_geolocation_lng_rad">0.43448854717678</field>
+	</row>
+
+	<row>
+		<field name="entity_type">taxonomy_term</field>
+		<field name="bundle">cities</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">291</field>
+		<field name="revision_id">291</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_geolocation_lat">47.38283</field>
+		<field name="field_geolocation_lng">8.53071</field>
+		<field name="field_geolocation_lat_sin">0.73589421259606</field>
+		<field name="field_geolocation_lat_cos">0.67709652773266</field>
+		<field name="field_geolocation_lng_rad">0.14888897703281</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

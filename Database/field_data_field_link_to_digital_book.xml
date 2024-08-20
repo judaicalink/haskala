@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_link_to_digital_book">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_link_to_digital_book_url" type="varchar(2048)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_link_to_digital_book_title" type="varchar(255)" null="YES" key="" default="<null>" extra="" />
+		<field field="field_link_to_digital_book_attributes" type="mediumtext" null="YES" key="" default="<null>" extra="" />
+
+		<options name="field_data_field_link_to_digital_book" engine="InnoDB" version="10" row_format="Dynamic" rows="69" avg_row_length="237" data_length="16384" max_data_length="0" index_length="98304" data_free="0" create_time="2024-07-08 12:43:01" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 72 (field_link_to_digital_book)" />
+	</table_structure>
+
+	<table_data name="field_data_field_link_to_digital_book">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1952</field>
+		<field name="revision_id">1952</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10039703-9</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1953</field>
+		<field name="revision_id">1953</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/resolve/display/bsb10570202.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1954</field>
+		<field name="revision_id">1954</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180012126007</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1962</field>
+		<field name="revision_id">1962</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180011459005</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1975</field>
+		<field name="revision_id">1975</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180010629003</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1982</field>
+		<field name="revision_id">1982</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://db.saur.de/DLO/saveUrl.jsf?type=fullcitation&amp;value=4310</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1999</field>
+		<field name="revision_id">1999</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180013698004</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2001</field>
+		<field name="revision_id">2001</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/freimann/urn/urn:nbn:de:hebis:30:1-117517</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://db.saur.de/DLO/saveUrl.jsf?type=fullcitation&amp;value=42f7</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2009</field>
+		<field name="revision_id">2009</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/freimann/content/titleinfo/674220</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2010</field>
+		<field name="revision_id">2010</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180013792001</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2012</field>
+		<field name="revision_id">2012</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180011664008</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2016</field>
+		<field name="revision_id">2016</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180011239003</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2020</field>
+		<field name="revision_id">2020</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/resolve/display/bsb10477114.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2023</field>
+		<field name="revision_id">2023</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://daten.digitale-sammlungen.de/~db/bsb00003672/images/index.html?id=00003672&amp;fip=85.250.69.179&amp;no=30&amp;seite=1</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2033</field>
+		<field name="revision_id">2033</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://babel.hathitrust.org/cgi/pt?id=hvd.hw5nsi;view=1up;seq=9</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2034</field>
+		<field name="revision_id">2034</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://babel.hathitrust.org/cgi/pt?id=hvd.hw5nsj;view=1up;seq=7</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2047</field>
+		<field name="revision_id">2047</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://resolver.sub.uni-goettingen.de/purl?PPN312359306</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2048</field>
+		<field name="revision_id">2048</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://resolver.sub.uni-goettingen.de/purl?PPN31235939X</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2049</field>
+		<field name="revision_id">2049</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180010667005</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2052</field>
+		<field name="revision_id">2052</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://judaica-frankfurt.de/urn/urn:nbn:de:hebis:30-180011987001</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2056</field>
+		<field name="revision_id">2056</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://digital.slub-dresden.de/werkansicht/dlf/16103/1/cache.off</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2057</field>
+		<field name="revision_id">2057</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/resolve/display/bsb10915444.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2059</field>
+		<field name="revision_id">2059</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb11009429-1</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2061</field>
+		<field name="revision_id">2061</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/freimann/content/titleinfo/284</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2062</field>
+		<field name="revision_id">2062</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180012065009</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2066</field>
+		<field name="revision_id">2066</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb10042571-6</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2073</field>
+		<field name="revision_id">2073</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180011244006</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2075</field>
+		<field name="revision_id">2075</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/22495</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2086</field>
+		<field name="revision_id">2086</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://babel.hathitrust.org/cgi/pt?id=nnc1.50217803;page=root;view=image;size=100;seq=6</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2105</field>
+		<field name="revision_id">2105</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/resolve/display/bsb10240857.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2130</field>
+		<field name="revision_id">2130</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/19699?</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2133</field>
+		<field name="revision_id">2133</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/id/4690770</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2135</field>
+		<field name="revision_id">2135</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/freimann/content/titleinfo/417828</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2137</field>
+		<field name="revision_id">2137</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://web.nli.org.il/sites/nli/Hebrew/library/Pages/BookReader.aspx?pid=404249</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2138</field>
+		<field name="revision_id">2138</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1785725</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2152</field>
+		<field name="revision_id">2152</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10621076_00002.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2161</field>
+		<field name="revision_id">2161</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/urn/urn:nbn:de:hebis:30:2-1144</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2169</field>
+		<field name="revision_id">2169</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/23700</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2181</field>
+		<field name="revision_id">2181</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1735452</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2184</field>
+		<field name="revision_id">2184</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1755077</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2185</field>
+		<field name="revision_id">2185</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/resolve/display/bsb10995025.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2189</field>
+		<field name="revision_id">2189</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1728910</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2198</field>
+		<field name="revision_id">2198</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/judaicaffm/content/pageview/4690821</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2209</field>
+		<field name="revision_id">2209</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/freimann/content/titleinfo/1072257</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2210</field>
+		<field name="revision_id">2210</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/freimann/content/titleinfo/1073081</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2213</field>
+		<field name="revision_id">2213</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/23744</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2214</field>
+		<field name="revision_id">2214</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/23744</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2215</field>
+		<field name="revision_id">2215</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/23744</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2224</field>
+		<field name="revision_id">2224</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1714824</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2226</field>
+		<field name="revision_id">2226</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1715067</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2261</field>
+		<field name="revision_id">2261</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/44611</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2267</field>
+		<field name="revision_id">2267</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/24780</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2300</field>
+		<field name="revision_id">2300</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/5814</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2303</field>
+		<field name="revision_id">2303</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/urn/urn:nbn:de:hebis:30:2-1490</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2356</field>
+		<field name="revision_id">2356</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/7310</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2364</field>
+		<field name="revision_id">2364</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1737888</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2367</field>
+		<field name="revision_id">2367</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/21528</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2369</field>
+		<field name="revision_id">2369</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://reader.digitale-sammlungen.de/resolve/display/bsb10240808.html</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2378</field>
+		<field name="revision_id">2378</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/7310</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2384</field>
+		<field name="revision_id">2384</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1735452</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2436</field>
+		<field name="revision_id">2436</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://digital.slub-dresden.de/werkansicht/dlf/58056/1/cache.off</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2464</field>
+		<field name="revision_id">2464</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/urn/urn:nbn:de:hebis:30-180012002002</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2469</field>
+		<field name="revision_id">2469</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://gdz.sub.uni-goettingen.de/dms/load/img/?PPN=PPN659119145&amp;IDDOC=753523</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2470</field>
+		<field name="revision_id">2470</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://www.hebrewbooks.org/35793</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2472</field>
+		<field name="revision_id">2472</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1735312</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2474</field>
+		<field name="revision_id">2474</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1720884</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2475</field>
+		<field name="revision_id">2475</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1721028</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2476</field>
+		<field name="revision_id">2476</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_link_to_digital_book_url">http://sammlungen.ub.uni-frankfurt.de/jd/content/titleinfo/1721126</field>
+		<field name="field_link_to_digital_book_title" xsi:nil="true" />
+		<field name="field_link_to_digital_book_attributes">a:0:{}</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

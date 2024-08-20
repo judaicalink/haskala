@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_presented_new_edition_refe">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_presented_new_edition_refe_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_presented_new_edition_refe_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_presented_new_edition_refe" engine="InnoDB" version="10" row_format="Dynamic" rows="9" avg_row_length="1820" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:06" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 130 (field_presented_new_edition..." />
+	</table_structure>
+
+	<table_data name="field_data_field_presented_new_edition_refe">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2202</field>
+		<field name="revision_id">2202</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">לפי ורסס תש&quot;ן; ופלאי 1988, מדובר בספר שכתב סטנוב עצמו</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2245</field>
+		<field name="revision_id">2245</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">בהסכמה הרשומה בראש הספר מצויין כי יצחק סטנוב הציג את כתב היד כספר ישן שהוא מצא אותו, אבל לדעת המסכימים יתכן שהוא עצמו כתב זאת. בהקדמה לספר מספר יוסף לוצטו כי סטנוב מצא את הספר בספרייה, וכי הוא פרסם אותו בלוויית הביאור שלו: &quot;... ראו ראינו מעשה אצבעותיך ספר אסף וביאורו אשר כוננת, מושב אלוהים ישבת בבית עקד הספרים ושם מצאתיו...&quot;. בפרק א' פס' א' של הספר הוא מציין את המקור המדוייק: &quot;בן ברכיהו מן המשוררים אשר בלוים&quot;. ראו גם ורסס תש&quot;ן,  170; פלאי 1988, 84.</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2246</field>
+		<field name="revision_id">2246</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">בהסכמה הרשומה בראש הספר מצויין כי יצחק סטנוב הציג את כתב היד כספר ישן שהוא מצא אותו, אבל לדעת המסכימים יתכן שהוא עצמו כתב זאת. בהקדמה לספר מספר יוסף לוצטו כי סטנוב מצא את הספר בספרייה, וכי הוא פרסם אותו בלוויית הביאור שלו: &quot;... ראו ראינו מעשה אצבעותיך ספר אסף וביאורו אשר כוננת, מושב אלוהים ישבת בבית עקד הספרים ושם מצאתיו...&quot;. בפרק א' פס' א' של הספר הוא מציין את המקור המדוייק: &quot;בן ברכיהו מן המשוררים אשר בלוים&quot;. ראו גם ורסס תש&quot;ן (תשכ&quot;ג), 170; פלאי 1988, 84</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2247</field>
+		<field name="revision_id">2247</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">בהסכמה הרשומה בראש הספר מצויין כי יצחק סטנוב הציג את כתב היד כספר ישן שהוא מצא אותו, אבל לדעת המסכימים יתכן שהוא עצמו כתב זאת. בהקדמה לספר מספר יוסף לוצטו כי סטנוב מצא את הספר בספרייה, וכי הוא פרסם אותו בלוויית הביאור שלו: &quot;... ראו ראינו מעשה אצבעותיך ספר אסף וביאורו אשר כוננת, מושב אלוהים ישבת בבית עקד הספרים ושם מצאתיו...&quot;. בפרק א' פס' א' של הספר הוא מציין את המקור המדוייק: &quot;בן ברכיהו מן המשוררים אשר בלוים&quot;. ראו גם ורסס תש&quot;ן (תשכ&quot;ג), 170; פלאי 1988, 84</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2263</field>
+		<field name="revision_id">2263</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">פלאי 1988 
+
+מדובר בספר שסטנוב כתב, ושהוא מציג אותו כספר ישן שהוא מוציא אותו לאור מחדש</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2366</field>
+		<field name="revision_id">2366</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">סמט, ר' שאול ברלין, עמ' 430, מסביר: &quot;בספר זה 392 תשובות של ראשונים, &lt;ins&gt;הרא&quot;ש וחכמי זמנו&lt;/ins&gt;. בשער נאמר כי תשובות אלה נאספו, הוגהו והוכנו לדפוס ע&quot;י &lt;ins&gt;ר' יצחק די-מולינא&lt;/ins&gt;, חכם ספרדי כמעט לא נודע מתקופתו של ר&quot;י קארו, ובעל פלוגתא חריף ביותר שלו. ר&quot;ש [שאול ברלין] טען כי העתיק את כה&quot;י באיטליה. על שתי שכבות הטכסט שמצא, היינו התשובות הקדומות מזה והגהות די-מולינא מזה, הוסיף ר&quot;ש רובד משלו - הערות וחידושים בשם &quot;כסא דהרסנא&quot;... עד מהרה התגלה כי &quot;עוד לא בא כבושם הזה&quot; בספרות ההלכה. דברי הרא&quot;ש ויתר הראשונים היו מלאים קולות מקולות שונות ומשונות, שאחדות מהן גבלו ממש באנטינומיה... נתעורר החשש שלא רק ההגהות, אלא גם חלקי הטכסט הקדומים, אינם אלא בדויים בידי ר&quot;ש עצמו...&quot;</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2373</field>
+		<field name="revision_id">2373</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">סטנוב עצמו רומז באחרית דבר (ראו חלון &quot;מבנה הספר&quot;) לכך שהפירוש הוא למעשה שלו.</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2411</field>
+		<field name="revision_id">2411</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">ראו אצל בן-מנחם, נפתלי. תשכ&quot;ט. 'קול שחל, שירי אפרים לוצאטו, אזמיר [ברלין] תק&quot;ן'. קרית ספר, 562-561. לטענתו, סטנוב מצא כתב יד ישן וחשב שהוא &lt;strong&gt;אלה בני הנעורים&lt;/strong&gt; של הרמח&quot;ל (משה חיים לוצאטו), אך למעשה מדובר במקור עלום אחר.
+
+ישנן שתי מהדורות שונות. על המהדורה המוקדמת יותר רשום שנת &lt;strong&gt;שירו&lt;/strong&gt; (תקט&quot;ז), וזו טעות, ואי אפשר לדעת מתי יצא לאור. המהדורה הבאה היא מתק&quot;ן, ובה תיקן סטנוב את שגיאתו ולא ייחס את הספר עוד לרמח&quot;ל, אלא לאפרים לוצטו, וגם הוסיף לו שיר שבו משבח הרמח&quot;ל את ידידו אפרים לוצטו על שיריו.</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2414</field>
+		<field name="revision_id">2414</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_presented_new_edition_refe_value">ראו חלון &quot;אישים מוזכרים&quot; באצבע סעיף &quot;הסכמות&quot;</field>
+		<field name="field_presented_new_edition_refe_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 11.4.2-MariaDB)
+- Database: haskala_edit
+- Generation Time Time: 2024-07-12 18:41:25 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="haskala_edit">
+
+	<table_structure name="field_data_field_mentions_in_reviews">
+		<field field="entity_type" type="varchar(128)" null="NO" key="PRI" default="" extra="" />
+		<field field="bundle" type="varchar(128)" null="NO" key="MUL" default="" extra="" />
+		<field field="deleted" type="tinyint(4)" null="NO" key="PRI" default="0" extra="" />
+		<field field="entity_id" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="revision_id" type="int(10) unsigned" null="YES" key="MUL" default="<null>" extra="" />
+		<field field="language" type="varchar(32)" null="NO" key="PRI" default="" extra="" />
+		<field field="delta" type="int(10) unsigned" null="NO" key="PRI" default="<null>" extra="" />
+		<field field="field_mentions_in_reviews_value" type="longtext" null="YES" key="" default="<null>" extra="" />
+		<field field="field_mentions_in_reviews_format" type="varchar(255)" null="YES" key="MUL" default="<null>" extra="" />
+
+		<options name="field_data_field_mentions_in_reviews" engine="InnoDB" version="10" row_format="Dynamic" rows="24" avg_row_length="682" data_length="16384" max_data_length="0" index_length="114688" data_free="0" create_time="2024-07-08 12:43:02" update_time="<null>" collation="utf8mb3_general_ci" create_options="" comment="Data storage for field 76 (field_mentions_in_reviews)" />
+	</table_structure>
+
+	<table_data name="field_data_field_mentions_in_reviews">
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1956</field>
+		<field name="revision_id">1956</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Biographie des Herrn Marcus Herz. — In: Sulamith, Jg 3 (1811) Nr 2, S. 77-97, hier S. 90-91.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1960</field>
+		<field name="revision_id">1960</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Hirschel, Moses: Apologie der Menschenrechte. Oder philosophischkritische Beleuchtung der Schrift: über die füsische und moralische Verfassung der heutigen Juden, in: Neue allgemeine deutsche Bibliothek, 1796, 21. Bd., 2.St. , S. 338-339</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1971</field>
+		<field name="revision_id">1971</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Bne-Zion, ein religiös-moralisches Lehrbuch für die Jugend Israelitischer Religion, in: Sulamith, Jg 4 (1812) Nr 1, S. 182-184; Anonym: [Naftali Herz Hombergs Bene Zion], in: Sulamith, Jg 3 (1810) Nr 1, S. 412.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1994</field>
+		<field name="revision_id">1994</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Bendavid, Lazarus, Etwas zur Charakteristik der Juden, in: Neue allgemeine deutsche Bibliothek,1794, 10.Bd., 1.St., S. 206.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">1997</field>
+		<field name="revision_id">1997</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Der Sammler, III, 1, S. 56 und der Sammler, III, 2, S. 15f</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2004</field>
+		<field name="revision_id">2004</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Martialis, Marcus Valerius: Gedichte von Ephraim Moses Kuh, einem jüdischen Gelehrten zu Breslau, in: DM, 1786, 2.Bd., S. 193-213.
+
+Kuh, Ephraim Moses, hinterlassene Gedichte, 1s und 2s Bändchen, in: NADB, 1793, 1.Bd.,2.St., S. 425-430.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2011</field>
+		<field name="revision_id">2011</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Jeitteles, Ignaz:  Eine biographische Skizze des Herrn Jonas Jeitteles, der Heilkunde Doktors..., in: Sulamith, II,1, S. 1-26.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2013</field>
+		<field name="revision_id">2013</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Laas, Andreas Gottfried (1753-1810): Hirschel, Moses, Kampf der jüdischen Hierarchie mit der Vernunft, in: Allgemeine deutsche Bibliothek 1790 , vol. 91, 579-580.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2042</field>
+		<field name="revision_id">2042</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Auszug aus der Rede des Herrn P. Beer, in Sulamit, 1812, S. 157-166. Auszüge von S. 11-20, 20-21, 22-23.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2046</field>
+		<field name="revision_id">2046</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">No</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2074</field>
+		<field name="revision_id">2074</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Sulamith, 1807, p. 141
+(כרך שני, חוב' מס' 1)
+
+ברשימה של צבי הירש בוק על בית הספר שהקים בברלין, הוא מציין כי &lt;strong&gt;אבטליון&lt;/strong&gt; משמש אותו להוראת תלמידים המתחילים בלימוד העברית.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2100</field>
+		<field name="revision_id">2100</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Rezension von ש: Sulamith, 3. Jg, 2. H (1811), S. 117-135, 194-210. 256-274.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2116</field>
+		<field name="revision_id">2116</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Yes</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2171</field>
+		<field name="revision_id">2171</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">המאסף, תקמ&quot;ו, עמ' קעב-קעו [צ&quot;ל: קנו-קס].  (על פי Bibliography of the Hebrew Book)</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2230</field>
+		<field name="revision_id">2230</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">המאסף תקס&quot;ט, סד'
+
+שלום הכהן מציין שברצונו להוציא חלק ב' של סיפרו מטעי קדם, ופונה לקהל החותמים על המאסף להירתם לכך</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2276</field>
+		<field name="revision_id">2276</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">המאסף תקס&quot;ט, קלו'-קמא'</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2292</field>
+		<field name="revision_id">2292</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">המאסף תקמ&quot;ה, עמ' ק&quot;ט ע&quot;א (רשום בעמוד האחרון של הספר)</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2295</field>
+		<field name="revision_id">2295</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">לפי פיינר, מהפכת הנאורות, עמ' 260: אייכל פירסם ב&quot;המאסף&quot; שני עמודים לדוגמה מן הספר, המליץ עליו בפני הקוראים והעמיד לרשות החותמים את סוכני &quot;המאסף&quot; בערים שונות.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2297</field>
+		<field name="revision_id">2297</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Yes</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2354</field>
+		<field name="revision_id">2354</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">המאסף תק&quot;ן, רפה'-רפז'</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2385</field>
+		<field name="revision_id">2385</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">קסטנברג-גלדשטיין, עמ' 134, מצטטת מתוך תגובת &quot;המאסף&quot; להספד זה.</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2421</field>
+		<field name="revision_id">2421</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">המאסף:
+תקמ&quot;ח, טו'-טז' (כולל תיאור העלויות שלו)
+תקמ&quot;ט, כד'-לב'
+תקמ&quot;ט, צג'-צה'</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2422</field>
+		<field name="revision_id">2422</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">בהאמסף תק&quot;ע, פא'-פה' -&quot;בשורת ספרים חדשים&quot; על ספר זה, של משה בן-אורי (פיליפזון).</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	<row>
+		<field name="entity_type">node</field>
+		<field name="bundle">book</field>
+		<field name="deleted">0</field>
+		<field name="entity_id">2453</field>
+		<field name="revision_id">2453</field>
+		<field name="language">und</field>
+		<field name="delta">0</field>
+		<field name="field_mentions_in_reviews_value">Yes</field>
+		<field name="field_mentions_in_reviews_format">filtered_html</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>
