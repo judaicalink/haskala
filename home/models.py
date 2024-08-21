@@ -138,7 +138,7 @@ class Edition(models.Model):
 
     # Edition changes, nut the usual created and updated at
     changes = models.CharField(max_length=255)
-    changes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    changes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Edition city
     # TODO: link to the city
@@ -146,7 +146,7 @@ class Edition(models.Model):
 
     # Edition references
     references = models.CharField(max_length=255)
-    references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Edition year
     year = models.CharField(max_length=255)
@@ -160,6 +160,22 @@ class Edition(models.Model):
         return self.name
 
 
+# Translation type
+class Translation_Type(models.Model):
+    """
+    Model for the translation types
+    """
+    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    name = models.CharField(max_length=255, unique=True)
+
+    class Meta:
+        verbose_name_plural = "Translation Types"
+
+    def __str__(self):
+        return self.name
+
+
+
 class Translation(models.Model):
     """
     Model for the Translations
@@ -170,6 +186,24 @@ class Translation(models.Model):
     # Language
     # TODO: add multiple languages
     language = models.CharField(max_length=255)  # Can have multiple languages over delta
+
+    # City
+    # TODO: link to the id of the city
+    city = models.IntegerField()  # links to tid of the city
+
+    # References
+    references = models.CharField(max_length=255)
+    references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Year
+    year = models.CharField(max_length=255)
+    year_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Translator
+    # TODO: link to the id of the person
+    translator = models.IntegerField()  # links to tid of the person
+
+
 
 
 class Mention(models.Model):
@@ -207,6 +241,15 @@ class Production(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255)
     # Belongs to book
+
+    # Producer
+    # TODO: link to the id of the person
+    producer = models.IntegerField()  # links to tid of the person
+
+    # Role
+    # TODO: link to the id of the role, can have multiple roles
+    role = models.IntegerField()  # links to tid of the role
+
 
 
 class Book(models.Model):
@@ -283,15 +326,15 @@ class Book(models.Model):
 
     # Contemporary disputes
     contemporary_disputes = models.CharField(max_length=255)
-    contemporary_disputes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    contemporary_disputes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Contemporary references
     contemporary_references = models.CharField(max_length=255)
-    contemporary_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    contemporary_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Contents table notes
     contents_table_notes = models.CharField(max_length=255)
-    contents_table_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    contents_table_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Contradict new edition
     contradict_new_edition = models.IntegerField(default=1)
@@ -301,14 +344,14 @@ class Book(models.Model):
 
     # Copy of book used
     copy_of_book_used = models.CharField(max_length=255)
-    copy_of_book_used_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    copy_of_book_used_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Dedications
     dedications = models.CharField(max_length=255)
 
     # Dedications notes
     dedications_notes = models.CharField(max_length=255)
-    dedications_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    dedications_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Diagrams book pages
     diagrams_book_pages = models.CharField(max_length=255)
@@ -316,18 +359,18 @@ class Book(models.Model):
 
     # Diagrams notes
     diagrams_notes = models.CharField(max_length=255)
-    diagrams_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    diagrams_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Editions notes
     editions_notes = models.CharField(max_length=255)
-    editions_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    editions_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Epilogue
     epilogue = models.IntegerField(default=0)
 
     # Epilogue notes
     epilogue_notes = models.CharField(max_length=255)
-    epilogue_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    epilogue_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Examined volume number
     examined_volume_number = models.IntegerField(default=1)
@@ -348,7 +391,7 @@ class Book(models.Model):
 
     # Founders notes
     founders_notes = models.CharField(max_length=255)
-    founders_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    founders_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Frankfurt Library ID
     frankfurt_library_id = models.CharField(max_length=255)
@@ -408,7 +451,7 @@ class Book(models.Model):
 
     # Later references
     later_references = models.CharField(max_length=255)
-    later_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    later_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Link to digital book
     digital_book_url = models.CharField(max_length=255)
@@ -424,15 +467,15 @@ class Book(models.Model):
 
     # Mention general notes
     mention_general_notes = models.CharField(max_length=255)
-    mention_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    mention_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Mentions in reviews
     mentions_in_reviews = models.CharField(max_length=255)
-    mentions_in_reviews_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    mentions_in_reviews_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Motto
     motto = models.CharField(max_length=255)
-    motto_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    motto_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Name in book
     name_in_book = models.CharField(max_length=255)
@@ -444,31 +487,31 @@ class Book(models.Model):
 
     # New edition general notes
     new_edition_general_notes = models.CharField(max_length=255)
-    new_edition_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New edition type else note
     new_edition_type_else_note = models.CharField(max_length=255)
-    new_edition_type_else_note_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_type_else_note_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New edition type else ref
     new_edition_type_else_ref = models.CharField(max_length=255)
-    new_edition_type_else_ref_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_type_else_ref_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New edition type elsewhere
     new_edition_type_elsewhere = models.CharField(max_length=255)
-    new_edition_type_elsewhere_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_type_elsewhere_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New edition type in text
     new_edition_type_in_text = models.CharField(max_length=255)
-    new_edition_type_in_text_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_type_in_text_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New edition type notes
     new_edition_type_notes = models.CharField(max_length=255)
-    new_edition_type_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_type_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New edition type reference
     new_edition_type_reference = models.CharField(max_length=255)
-    new_edition_type_reference_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    new_edition_type_reference_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # New York Library ID
     new_york_library_id = models.CharField(max_length=255)
@@ -513,7 +556,7 @@ class Book(models.Model):
 
     # Original author else refer
     original_author_else_refer = models.CharField(max_length=255)
-    original_author_else_refer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    original_author_else_refer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Original author elsewhere
     original_author_elsewhere = models.CharField(max_length=255)
@@ -537,7 +580,7 @@ class Book(models.Model):
 
     # Original sources mention
     original_sources_mention = models.CharField(max_length=255)
-    original_sources_mention_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    original_sources_mention_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Original text author
     # TODO: link to the tid of the original text author
@@ -553,7 +596,7 @@ class Book(models.Model):
 
     # Original title else refer
     original_title_else_refer = models.CharField(max_length=255)
-    original_title_else_refer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    original_title_else_refer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Original title elsewhere
     original_title_elsewhere = models.CharField(max_length=255)
@@ -565,7 +608,7 @@ class Book(models.Model):
 
     # Other books names
     other_books_names = models.CharField(max_length=255)
-    other_books_names_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    other_books_names_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Other libraries
     other_libraries = models.CharField(max_length=255)
@@ -573,7 +616,7 @@ class Book(models.Model):
 
     # Other volumes
     other_volumes = models.CharField(max_length=255)
-    other_volumes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    other_volumes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Pages number
     pages_number = models.CharField(max_length=255)
@@ -581,7 +624,7 @@ class Book(models.Model):
 
     # Partial publication
     partial_publication = models.CharField
-    partial_publication_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    partial_publication_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Person name appear
     person_name_appear = models.IntegerField() # does not link to a person
@@ -591,18 +634,262 @@ class Book(models.Model):
 
     # Personal address notes
     personal_address_notes = models.CharField(max_length=255)
-    personal_address_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    personal_address_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Planned volumes
     planned_volumes = models.CharField(max_length=255)
-    planned_volumes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='filtered_html')
+    planned_volumes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Preface
-
+    preface = models.IntegerField() # Boolean?
 
     # Preface notes
+    preface_notes = models.CharField(max_length=255)
+    preface_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Preface number
+    preface_number = models.CharField(max_length=255)
+    preface_number_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Preface title
+    preface_title = models.CharField(max_length=255)
+    preface_title_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Preface writer
+    # TODO: link to the id of the person
+    preface_writer = models.IntegerField() # links to tid of the person
+
+    # Presented as original
+    presented_as_original = models.IntegerField()
+
+    # Presented as translation
+    presented_as_translation = models.IntegerField()
+
+    # Presented new edition
+    presented_new_edition = models.IntegerField()
+
+    # Presented new edition note
+    presented_new_edition_note = models.CharField(max_length=255)
+    presented_new_edition_note_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Presented new edition refe
+    presented_new_edition_refe = models.CharField(max_length=255)
+    presented_new_edition_refe_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Presented original referen
+    presented_original_referen = models.CharField(max_length=255)
+    presented_original_referen_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Presented as translatio notes
+    presented_as_translatio_notes = models.CharField(max_length=255)
+    presented_as_translatio_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Presented as translation refe
+    presented_as_translation_refe = models.CharField(max_length=255)
+    presented_as_translation_refe_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Preservation references
+    preservation_references = models.CharField(max_length=255)
+    preservation_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Price (Char)
+    price = models.CharField(max_length=255)
+    price_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Printed originally
+    printed_originally = models.IntegerField()
+
+    # Printers (Int)
+    printers = models.IntegerField()
+
+    # Printers notes
+    printers_notes = models.CharField(max_length=255)
+    printers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Printing press notes
+    printing_press_notes = models.CharField(max_length=255)
+    printing_press_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Printing press references
+    printing_press_references = models.CharField(max_length=255)
+    printing_press_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Production evidence
+    production_evidence = models.CharField(max_length=255)
+    production_evidence_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Proofreaders
+    proofreaders = models.IntegerField()
+
+    # Proofreaders notes
+    proofreaders_notes = models.CharField(max_length=255)
+    proofreaders_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Publication place
+    # TODO: link to the tid of the publication place
+    publication_place = models.IntegerField()
+
+    # Publication place other
+    # TODO: link to the tid of the publication place
+    publication_place_other = models.IntegerField()
+
+    # Year in book
+    year_in_book = models.CharField(max_length=255)
+    year_in_book_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Year in other
+    year_in_other = models.CharField(max_length=255)
+
+    # Publisher name
+    # TODO: link to the tid of the publisher
+    publisher_name = models.IntegerField()
+
+    # Rabbinical approbation notes
+    rabbinical_approbation_notes = models.CharField(max_length=255)
+    rabbinical_approbation_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Rabbinical approbations
+    rabbinical_approbations = models.IntegerField()
+
+    # Recommendations
+    recommendations = models.IntegerField()
+
+    # Recommendations notes
+    recommendations_notes = models.CharField(max_length=255)
+    recommendations_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # References for editions
+    references_for_editions = models.CharField(max_length=255)
+    references_for_editions_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # References notes
+    references_notes = models.CharField(max_length=255)
+    references_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
 
+    # Secondary sources
+    secondary_sources = models.CharField(max_length=255)
+    secondary_sources_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Secondary textual models
+    # TODO: link to the tid of the secondary textual models
+    secondary_textual_models = models.IntegerField()
+
+    # Sellers
+    sellers = models.IntegerField()
+
+    # Sellers notes
+    sellers_notes = models.CharField(max_length=255)
+    sellers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Series part
+    series_part = models.IntegerField()
+
+    # Sources exist  (Int)
+    sources_exist = models.IntegerField()
+
+    # Sources list
+    sources_list = models.CharField(max_length=255)
+    sources_list_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Sources not mentioned (Int)
+    sources_not_mentioned = models.IntegerField()
+
+    # Sources not mentioned list
+    sources_not_mentioned_list = models.CharField(max_length=255)
+    sources_not_mentioned_list_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Sources not mentioned ref
+    sources_not_mentioned_ref = models.CharField(max_length=255)
+    sources_not_mentioned_ref_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Sources references
+    sources_references = models.CharField(max_length=255)
+    sources_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Structure preface notes
+    structure_preface_notes = models.CharField(max_length=255)
+    structure_preface_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Subscribers
+    subscribers = models.IntegerField()
+
+    # Subscribers notes
+    subscribers_notes = models.CharField(max_length=255)
+    subscribers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Subscription appeal (Int)
+    subscription_appeal = models.IntegerField()
+
+    # Subscription appeal notes
+    subscription_appeal_notes = models.CharField(max_length=255)
+    subscription_appeal_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Table of content (Int)
+    table_of_content = models.IntegerField()
+
+    # Target audience
+    # TODO: link to the tid of the target audience
+    target_audience = models.IntegerField()
+
+    # Target audience notes
+    target_audience_notes = models.CharField(max_length=255)
+    target_audience_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Tel Aviv Library ID
+    tel_aviv_library_id = models.CharField(max_length=255)
+    tel_aviv_library_id_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Textual model notes
+    textual_model_notes = models.CharField(max_length=255)
+    textual_model_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Thanks (Int)
+    thanks = models.IntegerField()
+
+    # Thanks notes
+    thanks_notes = models.CharField(max_length=255)
+    thanks_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Title in Latin characters
+    title_in_latin_characters = models.CharField(max_length=255)
+    title_in_latin_characters_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Topic
+    # TODO: link to the tid of the topic
+    topic = models.IntegerField()
+
+    # Topics notes
+    topics_notes = models.CharField(max_length=255)
+    topics_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Total number of editions
+    total_number_of_editions = models.CharField(max_length=255)
+    total_number_of_editions_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Translation notes
+    translation_notes = models.CharField(max_length=255)
+    translation_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Translation type
+    # links to translation type
+    translation_type = models.IntegerField()
+
+    # Typography
+    # TODO: link to the tid of the typography
+    typography = models.IntegerField()
+
+    # VIAF ID
+    VIAF_ID = models.CharField(max_length=255)
+    VIAF_ID_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Volumes notes
+    volumes_notes = models.CharField(max_length=255)
+    volumes_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+    # Volumes published number
+    volumes_published_number = models.CharField(max_length=255)
+    volumes_published_number_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
 
     # Methods
     def __str__(self):
@@ -802,6 +1089,12 @@ class Person(models.Model):
 
     # Place of death
     place_of_death = models.IntegerField()
+
+    # Pseudonym
+    pseudonym = models.CharField(max_length=255)
+    pseudonym_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL')
+
+
 
     def __str__(self):
         return self.name
