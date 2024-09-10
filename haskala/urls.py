@@ -9,7 +9,7 @@ from django.views.generic import RedirectView
 from wagtail.documents import urls as wagtaildocs_urls
 #from wagtail.contrib.sitemaps.views import sitemap
 from .api import api_router
-from home.views import *
+from home.views import book_detail_view
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
@@ -30,19 +30,31 @@ urlpatterns += [
     path('dashboard/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
 
-    re_path(r'^', include(wagtail_urls)),
-    path('api/v2/', api_router.urls),
+    path('books/books-detail-page/', include(wagtail_urls)),
+
+    # Book detail page
+    path('books/<title>/', book_detail_view, name='book-detail'),
+
+
+    path('', include(wagtail_urls)),
+
+
+    #path('api/v2/', api_router.urls),
     #path(r'', include(allauth.urls)),
     #re_path(r"^dashboard/", include(wagtailadmin_urls)),
     #path("search/", search_views.search, name="search"),
-    re_path(r'^places/(?P<place_slug>[\w-]+)/$', place_view, name='place_view'),
-    re_path(r'^cities/(?P<place_slug>[\w-]+)/$', cities_view, name='cities_view'),
+
+    #re_path(r'^places/(?P<place_slug>[\w-]+)/$', place_view, name='place_view'),
+    #re_path(r'^cities/(?P<place_slug>[\w-]+)/$', cities_view, name='cities_view'),
     #re_path(r"^sitemap\.xml$", sitemap),
 ]
 
+# TODO: reenable
+
+"""
 urlpatterns += [
     #path("robots.txt", robots_txt),
     #path(".well-known/security.txt", security_txt),
     path("favicon.ico", RedirectView.as_view(url="/static/img/favicon.ico")),
 ]
-
+"""

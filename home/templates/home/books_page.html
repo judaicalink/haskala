@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+
+    {{ page.context.books }}
+
+    <div class="container">
+        <div class="row">
+            <section class="books-filter">
+                <nav class="eng">
+                    <ul class="list-inline">
+                        {% for letter in page.alphabet %}
+                        <li class="list-inline-item"><a href="/places/{{ letter }}">{{ letter }}</a></li>
+                            {% if not forloop.last %}.{% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <nav class="he">
+                    <ul class="list-inline rtl">
+                        {% for hebrew_letter in page.hebrew_alphabet %}
+                        <li class="list-inline-item"><a href="/places/{{ hebrew_letter | escape }}">{{ hebrew_letter }}</a></li>
+                            {% if not forloop.last %}.{% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <section class="terms-list">
+                    <div class="letter-wrapper">
+                        {%  for letter, books in page.context.books.items %}
+                            <div class="letter en"><span>{{ letter }}</span></div>
+                            <div class="terms-by-letter">
+                                {% for book in books %}
+                                    <div class="terms-title">
+                                        <a href="{%  url 'book-detail' book %}" target="_self">{{ book }}</a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+            <div class="col-6">
+                 <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

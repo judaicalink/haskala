@@ -19,6 +19,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
+LANGUAGE_CODE = 'en-us'
 
 # Application definition
 
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "wagtail.api.v2",
     "leaflet",
+    "wagtailmarkdown",
 ]
 
 MIDDLEWARE = [
@@ -244,3 +246,16 @@ LEAFLET_CONFIG = {
 CSP_DEFAULT_SRC = ("'self'",)
 CSP_SCRIPT_SRC = ("'self'", "'nonce-{{ nonce }}'")
 CSP_STYLE_SRC = ("'self'", "'nonce-{{ nonce }}'")
+
+
+WAGTAILMARKDOWN = {
+    "autodownload_fontawesome": True,
+    "allowed_tags": [],  # optional. a list of HTML tags. e.g. ['div', 'p', 'a']
+    "allowed_styles": [],  # optional. a list of styles
+    "allowed_attributes": {},  # optional. a dict with HTML tag as key and a list of attributes as value
+    "allowed_settings_mode": "extend",  # optional. Possible values: "extend" or "override". Defaults to "extend".
+    "extensions": [],  # optional. a list of python-markdown supported extensions
+    "extension_configs": {},  # optional. a dictionary with the extension name as key, and its configuration as value
+    "extensions_settings_mode": "extend",  # optional. Possible values: "extend" or "override". Defaults to "extend".
+    "tab_length": 4,  # optional. Sets the length of tabs used by python-markdown to render the output. This is the number of spaces used to replace with a tab character. Defaults to 4.
+}
