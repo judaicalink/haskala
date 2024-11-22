@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8001:8000"
+  redis:
+    image: "redis:latest"
+  postgres:
+    image: "postges:latest"
+    ports:
+      - "5434:5432"
+  jena-fuseki:
+    image: "stain/jena-fuseki"
+    ports:
+      - "3030:3030"
