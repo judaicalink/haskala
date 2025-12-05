@@ -1,0 +1,287 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <http://d-nb.info/standards/elemen1tset/gnd#> .
+@prefix hs: <http://data.haskala-library.net/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://data.judaicalink.org/data/haskala/Aaron_JosephPhilipp-אהרן_יוסף> gndo:gender "World history" ;
+    gndo:occupation "403.0" ;
+    hs:hasGermanName "David, Joseph Nathan" ;
+    hs:hasHebrewName "Berend, S. L." ;
+    hs:hasVIAFID "285191198" ;
+    owl:sameAs <http://viaf.org/viaf/285191198> ;
+    skos:prefLabel "Aaron, Joseph Philipp" ;
+    foaf:name "Aaron, Joseph Philipp" .
+
+<http://data.judaicalink.org/data/haskala/AbrahamIsaak> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "David, Meyer Michel (Kammeragent)" ;
+    hs:hasHebrewName "ברלין, שאול" ;
+    hs:hasVIAFID "313276383" ;
+    owl:sameAs <http://viaf.org/viaf/313276383> ;
+    skos:prefLabel "Abraham Isaak" ;
+    foaf:name "Abraham Isaak" .
+
+<http://data.judaicalink.org/data/haskala/AbrahamJoelEmanuel> gndo:gender "World history" ;
+    gndo:occupation "404.0" ;
+    hs:hasGermanName "David, Meyer Michel (Kammeragent)" ;
+    hs:hasHebrewName "ברלין, שאול" ;
+    hs:hasVIAFID "313276383" ;
+    owl:sameAs <http://viaf.org/viaf/313276383> ;
+    skos:prefLabel "Abraham Joel Emanuel" ;
+    foaf:name "Abraham Joel Emanuel" .
+
+<http://data.judaicalink.org/data/haskala/AbrahamMoses> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Elia b. Daniel (Jaffe)" ;
+    hs:hasHebrewName "בלוך (הרופא), מרדכי אליעזר" ;
+    hs:hasVIAFID "262375366" ;
+    owl:sameAs <http://viaf.org/viaf/262375366> ;
+    skos:prefLabel "Abraham Moses" ;
+    foaf:name "Abraham Moses" .
+
+<http://data.judaicalink.org/data/haskala/Abrahamsen_MosesLevin> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Euchel, Demoiselle" ;
+    hs:hasHebrewName "ברסלאו, מנדל" ;
+    hs:hasVIAFID "309666223" ;
+    owl:sameAs <http://viaf.org/viaf/309666223> ;
+    skos:prefLabel "Abrahamsen, Moses Levin" ;
+    foaf:name "Abrahamsen, Moses Levin" .
+
+<http://data.judaicalink.org/data/haskala/Ackord_Elias-אקורד_אליהו> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Fränkel" ;
+    hs:hasHebrewName "קארלוטא ארנשטאיין" ;
+    hs:hasVIAFID "312080288" ;
+    owl:sameAs <http://viaf.org/viaf/312080288> ;
+    skos:prefLabel "Ackord, Elias" ;
+    foaf:name "Ackord, Elias" .
+
+<http://data.judaicalink.org/data/haskala/AdolphiPastor> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Friedländer, Adelaide" ;
+    hs:hasHebrewName "קאהן, נתן" ;
+    hs:hasVIAFID "80588251" ;
+    owl:sameAs <http://viaf.org/viaf/80588251> ;
+    skos:prefLabel "Adolphi (Pastor)" ;
+    foaf:name "Adolphi (Pastor)" .
+
+<http://data.judaicalink.org/data/haskala/Alexander_Abraham> gndo:gender "World history" ;
+    gndo:occupation "405.0" ;
+    hs:hasGermanName "Friedländer, Adelaide" ;
+    hs:hasHebrewName "קאהן, נתן" ;
+    hs:hasVIAFID "80588251" ;
+    owl:sameAs <http://viaf.org/viaf/80588251> ;
+    skos:prefLabel "Alexander, Abraham" ;
+    foaf:name "Alexander, Abraham" .
+
+<http://data.judaicalink.org/data/haskala/Alexander_Isaak-אלכסנדר_יצחק> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Friedländer, Goldea" ;
+    hs:hasHebrewName "דוד יעקב ריז" ;
+    hs:hasVIAFID "306575321" ;
+    owl:sameAs <http://viaf.org/viaf/306575321> ;
+    skos:prefLabel "Alexander, Isaak" ;
+    foaf:name "Alexander, Isaak" .
+
+<http://data.judaicalink.org/data/haskala/Alexander_Levy> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Friedländer, Hinde" ;
+    hs:hasHebrewName "דוד, מאיר מיכל" ;
+    hs:hasVIAFID "203419643" ;
+    owl:sameAs <http://viaf.org/viaf/203419643> ;
+    skos:prefLabel "Alexander, Levy" ;
+    foaf:name "Alexander, Levy" .
+
+<http://data.judaicalink.org/data/haskala/Alexander_Levy-אלכסנדר_לוי> gndo:gender "World history" ;
+    gndo:occupation "405.0" ;
+    hs:hasGermanName "Friedländer, Hinde" ;
+    hs:hasHebrewName "דוד, מאיר מיכל" ;
+    hs:hasVIAFID "203419643" ;
+    owl:sameAs <http://viaf.org/viaf/203419643> ;
+    skos:prefLabel "Alexander, Levy" ;
+    foaf:name "Alexander, Levy" .
+
+<http://data.judaicalink.org/data/haskala/Anonym> gndo:gender "World history" ;
+    gndo:occupation "403.0" ;
+    hs:hasGermanName "Friedländer, Hinde" ;
+    hs:hasHebrewName "דוד, מאיר מיכל" ;
+    hs:hasVIAFID "203419643" ;
+    owl:sameAs <http://viaf.org/viaf/203419643> ;
+    skos:prefLabel "Anonym" ;
+    foaf:name "Anonym" .
+
+<http://data.judaicalink.org/data/haskala/Anonymous> gndo:gender "World history" ;
+    gndo:occupation "405.0" ;
+    hs:hasGermanName "Friedländer, Rebekka Wulff" ;
+    hs:hasHebrewName "Diehl" ;
+    hs:hasVIAFID "313386658" ;
+    owl:sameAs <http://viaf.org/viaf/313386658> ;
+    skos:prefLabel "Anonymous" ;
+    foaf:name "Anonymous" .
+
+<http://data.judaicalink.org/data/haskala/ArnsteinFreiherrvon_NathanAdam> gndo:gender "World history" ;
+    gndo:occupation "403.0" ;
+    hs:hasGermanName "Friedländer, Salomon" ;
+    hs:hasHebrewName "Dohm" ;
+    hs:hasVIAFID "311974400" ;
+    owl:sameAs <http://viaf.org/viaf/311974400> ;
+    skos:prefLabel "Arnstein (Freiherr von), Nathan Adam" ;
+    foaf:name "Arnstein (Freiherr von), Nathan Adam" .
+
+<http://data.judaicalink.org/data/haskala/Arnstein_BenedictDavid-ארנשטיין_בנדיקטדוד> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Friedländer, Wolf Bernhard" ;
+    hs:hasHebrewName "יפה, אליה בר\"ד (בנו של יפה, דניאל)" ;
+    hs:hasVIAFID "61582931" ;
+    owl:sameAs <http://viaf.org/viaf/61582931> ;
+    skos:prefLabel "Arnstein, Benedict David" ;
+    foaf:name "Arnstein, Benedict David" .
+
+<http://data.judaicalink.org/data/haskala/Arnstein_Benedikt> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Friedrichsfeld, David" ;
+    hs:hasHebrewName "רב אפרים" ;
+    hs:hasVIAFID "313406542" ;
+    owl:sameAs <http://viaf.org/viaf/313406542> ;
+    skos:prefLabel "Arnstein, Benedikt" ;
+    foaf:name "Arnstein, Benedikt" .
+
+<http://data.judaicalink.org/data/haskala/Arnstein_Josef> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Gesellschaft der Freunde" ;
+    hs:hasHebrewName "בערנהארד, עדלער פאן עסקעלעס" ;
+    hs:hasVIAFID "283084577" ;
+    owl:sameAs <http://viaf.org/viaf/283084577> ;
+    skos:prefLabel "Arnstein, Josef" ;
+    foaf:name "Arnstein, Josef" .
+
+<http://data.judaicalink.org/data/haskala/Arnstein_Meier> gndo:gender "World history" ;
+    gndo:occupation "406.0" ;
+    hs:hasGermanName "Gesellschaft der Freunde" ;
+    hs:hasHebrewName "בערנהארד, עדלער פאן עסקעלעס" ;
+    hs:hasVIAFID "283084577" ;
+    owl:sameAs <http://viaf.org/viaf/283084577> ;
+    skos:prefLabel "Arnstein, Meier" ;
+    foaf:name "Arnstein, Meier" .
+
+<http://data.judaicalink.org/data/haskala/Arnstein_NathanAdamFreiherrvonArnstein> gndo:gender "World history" ;
+    gndo:occupation "403.0" ;
+    hs:hasGermanName "Gesellschaft der Freunde" ;
+    hs:hasHebrewName "בערנהארד, עדלער פאן עסקעלעס" ;
+    hs:hasVIAFID "283084577" ;
+    owl:sameAs <http://viaf.org/viaf/283084577> ;
+    skos:prefLabel "Arnstein, Nathan Adam (Freiherr von Arnstein)" ;
+    foaf:name "Arnstein, Nathan Adam (Freiherr von Arnstein)" .
+
+<http://data.judaicalink.org/data/haskala/Arnstein_WolfI> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Gesellschaft der hebräischen Litteraturfreunde" ;
+    hs:hasHebrewName "אשקלות, בער" ;
+    hs:hasVIAFID "298632884" ;
+    owl:sameAs <http://viaf.org/viaf/298632884> ;
+    skos:prefLabel "Arnstein, Wolf I." ;
+    foaf:name "Arnstein, Wolf I." .
+
+<http://data.judaicalink.org/data/haskala/Asch_Abraham-אש_אברהם> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Giuseppe Lazzaro Morpurgo" ;
+    hs:hasHebrewName "אייכל, יצחק" ;
+    hs:hasVIAFID "20765287" ;
+    owl:sameAs <http://viaf.org/viaf/20765287> ;
+    skos:prefLabel "Asch, Abraham" ;
+    foaf:name "Asch, Abraham" .
+
+<http://data.judaicalink.org/data/haskala/Ascher_Judas-אשר_יהודה> gndo:gender "World history" ;
+    gndo:occupation "403.0" ;
+    hs:hasGermanName "Giuseppe Lazzaro Morpurgo" ;
+    hs:hasHebrewName "אייכל, יצחק" ;
+    hs:hasVIAFID "20765287" ;
+    owl:sameAs <http://viaf.org/viaf/20765287> ;
+    skos:prefLabel "Ascher, Judas" ;
+    foaf:name "Ascher, Judas" .
+
+<http://data.judaicalink.org/data/haskala/Ascher_Saul-אשר_שאול> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Hirsch, Jakob" ;
+    hs:hasHebrewName "פרידלנדר, מאיר" ;
+    hs:hasVIAFID "311406418" ;
+    owl:sameAs <http://viaf.org/viaf/311406418> ;
+    skos:prefLabel "Ascher, Saul" ;
+    foaf:name "Ascher, Saul" .
+
+<http://data.judaicalink.org/data/haskala/Bamberger_Wolff> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Hönig, Aaron" ;
+    hs:hasHebrewName "Friedländer, Rebekka Meyer" ;
+    hs:hasVIAFID "285089587" ;
+    owl:sameAs <http://viaf.org/viaf/285089587> ;
+    skos:prefLabel "Bamberger, Wolff" ;
+    foaf:name "Bamberger, Wolff" .
+
+<http://data.judaicalink.org/data/haskala/Baras_Simon-ברז_שמעון> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Hoym, Karl Heinrich Graf von (Graf, Minister)" ;
+    hs:hasHebrewName "פרידלנדר, זנוויל שמואל" ;
+    hs:hasVIAFID "312107424" ;
+    owl:sameAs <http://viaf.org/viaf/312107424> ;
+    skos:prefLabel "Baras, Simon" ;
+    foaf:name "Baras, Simon" .
+
+<http://data.judaicalink.org/data/haskala/Bartenstein_Joseph> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Isaia Norsa" ;
+    hs:hasHebrewName "פרידלענדר, וואלף" ;
+    hs:hasVIAFID "15622638" ;
+    owl:sameAs <http://viaf.org/viaf/15622638> ;
+    skos:prefLabel "Bartenstein, Joseph" ;
+    foaf:name "Bartenstein, Joseph" .
+
+<http://data.judaicalink.org/data/haskala/BaruchSchickofShklov-שיק_ברוךמשקלוב> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Jacobson, Israel" ;
+    hs:hasHebrewName "גאנס, אברהם" ;
+    hs:hasVIAFID "313283967" ;
+    owl:sameAs <http://viaf.org/viaf/313283967> ;
+    skos:prefLabel "Baruch Schick of Shklov" ;
+    foaf:name "Baruch Schick of Shklov" .
+
+<http://data.judaicalink.org/data/haskala/Drmedאיסטרייכער> gndo:birthDate "06/09/1729" ;
+    gndo:deathDate "04/01/1786" ;
+    gndo:gender "Male" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Boas, Simon" ;
+    hs:hasHebrewName "אהרן דוב בער" ;
+    hs:hasVIAFID "313022131" ;
+    owl:sameAs <http://viaf.org/viaf/313022131> ;
+    skos:prefLabel "(Dr. med.) איסטרייכער" ;
+    foaf:name "(Dr. med.) איסטרייכער" .
+
+<http://data.judaicalink.org/data/haskala/Drmedווארבורג> gndo:gender "World history" ;
+    gndo:occupation "403.0" ;
+    hs:hasGermanName "Boas, Simon" ;
+    hs:hasHebrewName "אהרן דוב בער" ;
+    hs:hasVIAFID "313022131" ;
+    owl:sameAs <http://viaf.org/viaf/313022131> ;
+    skos:prefLabel "(Dr. med.) ווארבורג" ;
+    foaf:name "(Dr. med.) ווארבורג" .
+
+<http://data.judaicalink.org/data/haskala/Drבריינערסדארף> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "Borchard, Jacob Isaac" ;
+    hs:hasHebrewName "Bellerman" ;
+    hs:hasVIAFID "311094757" ;
+    owl:sameAs <http://viaf.org/viaf/311094757> ;
+    skos:prefLabel "(Dr.) בריינערסדארף" ;
+    foaf:name "(Dr.) בריינערסדארף" .
+
+<http://data.judaicalink.org/data/haskala/Feder-Guttmann_Tuvia-פדר_טוביה> gndo:gender "World history" ;
+    gndo:occupation "402.0" ;
+    hs:hasGermanName "David Jakob Ries" ;
+    hs:hasHebrewName "בער בן קלמן" ;
+    hs:hasVIAFID "80439207" ;
+    owl:sameAs <http://viaf.org/viaf/80439207> ;
+    skos:prefLabel "(Feder)" ;
+    foaf:name "(Feder)" .
+

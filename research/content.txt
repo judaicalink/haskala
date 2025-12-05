@@ -1,0 +1,4 @@
+<p>This database contains 525 books in German and Hebrew identified by leading scholars as Haskala literature. The database is hosted and run by the Judaica Division of the Frankfurt University Library.</p>
+<p>Contact: (E-Mail: digitalisierung@ub.uni-frankfurt.de / r.heuberger@ub.uni-frankfurt.de / u.simeon@ub.uni-frankfurt.de )	Please share any further information.</p>
+<p>The detailed bio-bibliographical information, presented here for the first	time, was collected as result of a collaborative research, headed by Profs.	Shmuel Feiner, Bar Ilan University; Zohar Shavit, Tel Aviv University and	Christoph Schulte, Universität Potsdam within a joint German-Israeli Research	Project in 2004-2010.</p>
+<p>Please note: for every book title only those fields containing information	are presented.</p>
