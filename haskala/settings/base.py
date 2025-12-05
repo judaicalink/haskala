@@ -98,10 +98,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "haskala",
-        "USER": "postgres",
+        "USER": "haskala",
         "PASSWORD": "haskala",
         "HOST": "localhost",  # Docker container postgres-haskala
-        "PORT": "5434",
+        "PORT": "5432",
     },
 }
 
