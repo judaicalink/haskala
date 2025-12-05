@@ -1,5 +1,5 @@
 # Use an official Python runtime based on Debian 10 "buster" as a parent image.
-FROM python:3.11.9-slim-bookworm
+FROM python:3.14-rc-bookworm
 
 # Add user that will be used in the container.
 RUN useradd wagtail
@@ -16,9 +16,12 @@ ENV PYTHONUNBUFFERED=1 \
 
 # Install system packages required by Wagtail and Django.
 RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-recommends \
+    gnupg2 \
+    ca-certificates \
     build-essential \
     libpq-dev \
-    libmariadbclient-dev \
+    libmariadb-dev-compat \
+    libmariadb-dev \
     libjpeg62-turbo-dev \
     zlib1g-dev \
     libwebp-dev \
