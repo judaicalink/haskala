@@ -25,10 +25,18 @@ RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-r
     libjpeg62-turbo-dev \
     zlib1g-dev \
     libwebp-dev \
+    cron \
+    nodejs \
+    npm \
  && rm -rf /var/lib/apt/lists/*
 
 # Install the application server.
 RUN pip install "gunicorn==20.0.4"
+
+# Create cronjob
+RUN echo "0 0 * * * /usr/local/bin/python /app/manage.py export_rdf" > /etc/cron.d/export_rdf \
+ && chmod 0644 /etc/cron.d/export_rdf \
+ && crontab /etc/cron.d/export_rdf
 
 # Install the project requirements.
 COPY requirements.txt /
@@ -45,11 +53,30 @@ RUN chown haskala:haskala /app
 # Copy the source code of the project into the container.
 COPY --chown=haskala:haskala . .
 
+# Import the initial data required by Wagtail.
+RUN psql -U haskala -d haskala < haskala_dump.sql
+
 # Use user "wagtail" to run the build commands below and the server itself.
 USER haskala
 
+RUN npm install
+
+RUN npm run copy:icons
+RUN npm run build:css
+RUN npm run build:js
+
 # Collect static files.
 RUN python manage.py collectstatic --noinput --clear
+
+# Migrate database
+RUN python manage.py makemigrations
+RUN python manage.py migrate --noinput
+
+# TODO: load initial data
+# RUN python manage.py loaddata initial_data.json
+
+# Create a superuser account with default credentials.
+RUN python manage.py createsuperuser --noinput --username admin --email info@haskala-library.net --password admin
 
 # Runtime command that executes when "docker run" is called, it does the
 # following:
