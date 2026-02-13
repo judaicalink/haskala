@@ -22,7 +22,7 @@ requests==2.32.4
 six==1.16.0
 soupsieve==2.5
 SPARQLWrapper==2.0.0
-sqlparse==0.5.0
+sqlparse==0.5.4
 urllib3>=2.2.2
 wagtail>=6.1
 webencodings==0.5.1
