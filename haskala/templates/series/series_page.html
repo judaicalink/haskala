@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load utils %}
+
+{% block title %}Series{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <h1 class="h2 mb-4">Series</h1>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="terms-list">
+            {% if series_by_letter %}
+                {% for letter, series_list in series_by_letter.items %}
+                    <div class="letter-group mb-4" id="letter-{{ letter }}">
+                        <h3>{{ letter }}</h3>
+                        <ul class="list-unstyled">
+                            {% for s in series_list %}
+                                {% if series.slug %}
+                                    <li>
+                                        <a href="{% url 'series-detail' s.slug %}">
+                                            {{ s.name }}
+                                        </a>
+                                    </li>
+                                {% else %}
+                                    <li>
+                                        {{ s.name }}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No series found.</p>
+            {% endif %}
+        </section>
+    </div>
+{% endblock %}

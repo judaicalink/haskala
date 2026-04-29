@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ occupation.name }} | Occupations{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+    <h1 class="h2 mb-4">{{ occupation.name }}</h1>
+
+    {% if persons_with_occupation %}
+        <section class="mb-4">
+            <h2 class="h5">Persons with this occupation</h2>
+            <ul class="list-unstyled">
+                {% for person in persons_with_occupation %}
+                    <li>
+                        <a href="{% url 'person-detail' person.pk %}" class="link-primary">
+                            {{ person }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    {% else %}
+        <p class="text-muted">No persons linked to this occupation yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

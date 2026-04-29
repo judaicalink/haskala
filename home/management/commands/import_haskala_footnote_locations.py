@@ -8,9 +8,9 @@ from home.models import FootnoteLocation
 
 def parse_int(value):
     """
-    Helper, analog zu den anderen Importern:
-    - behandelt '402.0' etc. korrekt
-    - gibt None zurück, wenn leer oder ungültig
+    Helper, analogous to the other importers:
+    - handles '402.0' etc. correctly
+    - returns None if empty or invalid
     """
     if value is None:
         return None
@@ -24,21 +24,21 @@ def parse_int(value):
 
 
 class Command(BaseCommand):
-    help = "Importiert FootnoteLocation-Einträge aus einer CSV (location_of_footnotes)."
+    help = "Import FootnoteLocation entries from a CSV (location_of_footnotes)."
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--file",
             required=True,
-            help="Pfad zur CSV-Datei (z. B. research/export/location_of_footnotes.csv)",
+            help="Path to the CSV file (e.g. research/export/location_of_footnotes.csv)",
         )
 
     def handle(self, *args, **options):
         csv_path = Path(options["file"])
         if not csv_path.exists():
-            raise CommandError(f"Datei nicht gefunden: {csv_path}")
+            raise CommandError(f"File not found: {csv_path}")
 
-        self.stdout.write(f"Lese FootnoteLocation-CSV: {csv_path}")
+        self.stdout.write(f"Reading FootnoteLocation CSV: {csv_path}")
 
         created_count = 0
         updated_count = 0
@@ -46,31 +46,31 @@ class Command(BaseCommand):
         with csv_path.open(newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                # Versuche, die relevanten Spalten zu lesen
-                # Passe diese ggf. an deine CSV an:
+                # Try to read the relevant columns
+                # Adjust these to your CSV if necessary:
                 # - 'tid'   -> Drupal TID
-                # - 'name'  -> Klartext-Bezeichnung
+                # - 'name'  -> plain-text label
                 raw_tid = row.get("tid")
                 name = (row.get("name") or "").strip()
 
-                # Wenn name leer ist, überspringen wir den Datensatz
+                # If name is empty, skip the record
                 if not name:
                     self.stdout.write(
                         self.style.WARNING(
-                            f"Überspringe Zeile ohne Name (tid={raw_tid!r})"
+                            f"Skipping row without name (tid={raw_tid!r})"
                         )
                     )
                     continue
 
                 legacy_tid = parse_int(raw_tid)
 
-                # Wir versuchen, primär nach legacy_tid zu matchen, wenn vorhanden.
-                # Fallback: nach name.
+                # Match primarily by legacy_tid if present.
+                # Fallback: match by name.
                 lookup = {}
                 if legacy_tid is not None:
                     lookup["legacy_tid"] = legacy_tid
                 else:
-                    # Kein TID -> wir matchen über den Namen
+                    # No TID -> match by name
                     lookup["name"] = name
 
                 obj, created = FootnoteLocation.objects.update_or_create(
@@ -88,7 +88,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"FootnoteLocation-Import abgeschlossen. "
-                f"{created_count} erstellt, {updated_count} aktualisiert."
+                f"FootnoteLocation import finished. "
+                f"{created_count} created, {updated_count} updated."
             )
         )

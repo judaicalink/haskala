@@ -1,0 +1,238 @@
+{# home/person_detail_page.html #}
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+{% load utils %}
+
+{% block meta %}
+    <meta name="description" content="{{ person.description|truncatechars:160 }}">
+    <meta property="og:title" content="{{ person.name }}">
+    <meta property="og:description" content="{{ person.description|truncatechars:160 }}">
+{% endblock %}
+
+
+{% block title %}
+    {{ person.pref_label|default:person.german_name|default:person.hebrew_name|default:"Person detail" }}
+{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+
+        <header class="mb-4">
+            <h1>
+                {{ person.pref_label|default:person.german_name|default:person.hebrew_name|default:person.pk }}
+            </h1>
+
+            {# alternative Namensformen #}
+            <div class="mb-2">
+                {% if person.german_name %}
+                    <p class="mb-0"><strong>German name:</strong> {{ person.german_name }}</p>
+                {% endif %}
+                {% if person.hebrew_name %}
+                    <p class="mb-0"><strong>Hebrew name:</strong> {{ person.hebrew_name }}</p>
+                {% endif %}
+                {% if person.pseudonym %}
+                    <p class="mb-0"><strong>Pseudonym:</strong> {{ person.pseudonym }}</p>
+                {% endif %}
+            </div>
+
+            {# Geschlecht, Berufe #}
+            <div class="mb-2">
+                {% if person.gender %}
+                    <p class="mb-0"><strong>Gender:</strong> {{ person.gender }}</p>
+                {% endif %}
+
+                {% if person.occupations.all %}
+                    <p class="mb-0">
+                        <strong>Occupation(s):</strong>
+                        {% for occ in person.occupations.all %}
+                            <a href="{% url 'occupation-detail' occ.name|slugify %}">
+                                {{ occ.name }}
+                            </a>{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                            <span class="text-muted">Unknown</span>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+
+            </div>
+
+            {# Lebensdaten #}
+            <div class="mb-2">
+                {% if person.date_of_birth or person.place_of_birth %}
+                    <p class="mb-0">
+                        <strong>Born:</strong>
+                        {% if person.date_of_birth %}{{ person.date_of_birth }}{% endif %}
+                        {% if person.place_of_birth %}
+                            {% if person.date_of_birth %}, {% endif %}
+                            <a href="{% url 'place-detail' person.place_of_birth.name|slugify %}" class="link-primary">
+                                {{ person.place_of_birth.name }}
+                            </a>
+                        {% endif %}
+                    </p>
+                {% endif %}
+
+                {% if person.date_of_death or person.place_of_death %}
+                    <p class="mb-0">
+                        <strong>Died:</strong>
+                        {% if person.date_of_death %}{{ person.date_of_death }}{% endif %}
+                        {% if person.place_of_death %}
+                            {% if person.date_of_death %}, {% endif %}
+                            <a href="{% url 'place-detail' person.place_of_death.name|slugify %}" class="link-primary">
+                                {{ person.place_of_death.name }}
+                            </a>
+                        {% endif %}
+                    </p>
+                {% endif %}
+            </div>
+
+            {# VIAF-Link #}
+            {% if person.viaf_id %}
+                <p class="mt-3">
+                    <strong>VIAF:</strong>
+                    <a href="https://viaf.org/viaf/{{ person.viaf_id }}/" target="_blank" rel="noopener"
+                       class="link-secondary">
+                        {{ person.viaf_id }}
+                    </a>
+                </p>
+            {% endif %}
+        </header>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                {# Optionaler Wagtail-Body, wenn die Seite als Wagtail-Page gerendert wird #}
+                {% if page.body %}
+                    <section class="mb-4">
+                        {{ page.body|richtext }}
+                    </section>
+                {% endif %}
+
+                {# Bücher der Person, nach Rolle gruppiert (BookAuthor.role) #}
+                {% if person_books_by_role %}
+                    <section class="mb-4">
+                        <h2 class="h5">Books by / related to this person</h2>
+
+                        {% for role_label, books in person_books_by_role.items %}
+                            <h3 class="h6 mt-3">{{ role_label }}</h3>
+                            <ul class="list-unstyled">
+                                {% for book in books %}
+                                    <li>
+                                        <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                            {{ book.name|default:"[untitled]" }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endfor %}
+                    </section>
+                {% elif person.books.all %}
+                    {# Fallback: simple Liste, falls kein Through-Eintrag vorhanden ist #}
+                    <section class="mb-4">
+                        <h2 class="h5">Books by / related to this person</h2>
+                        <ul class="list-unstyled">
+                            {% for book in person.books.all %}
+                                <li>
+                                    <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                        {{ book.name|default:"[untitled]" }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endif %}
+            </div>
+
+            {# Additional information nur einblenden, wenn es wirklich Inhalte gibt #}
+            {% if has_additional_info %}
+                <div class="col-md-4">
+                    <aside class="mb-4">
+                        <h2 class="h5">Additional information</h2>
+
+                        {# Rollen-Übersicht #}
+                        {% if person_books_by_role %}
+                            <div class="mb-3">
+                                <h3 class="h6">Roles in publications</h3>
+                                <ul class="list-unstyled small">
+                                    {% for role_label, books in person_books_by_role.items %}
+                                        <li>
+                                            {{ role_label }} ({{ books|length }} book{% if books|length != 1 %}
+                                            s{% endif %})
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+
+                        {# Prefaces #}
+                        {% if prefaces_by_person %}
+                            <div class="mb-3">
+                                <h3 class="h6">Prefaces written</h3>
+                                <ul class="list-unstyled small">
+                                    {% for preface in prefaces_by_person %}
+                                        <li>
+                                            {% if preface.book %}
+                                                <a href="{% url 'book-detail' preface.book.name %}">
+                                                    {{ preface.book.name|default:"[untitled book]" }}
+                                                </a>
+                                            {% else %}
+                                                {{ preface.title|default:"[untitled preface]" }}
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+
+                        {# Productions #}
+                        {% if productions_by_person %}
+                            <div class="mb-3">
+                                <h3 class="h6">Productions</h3>
+                                <ul class="list-unstyled small">
+                                    {% for prod in productions_by_person %}
+                                        <li>
+                                            {% if prod.book %}
+                                                <a href="{% url 'book-detail' prod.book.name %}">
+                                                    {{ prod.book.name|default:"[untitled book]" }}
+                                                </a>
+                                            {% else %}
+                                                {{ prod.title|default:"[untitled production]" }}
+                                            {% endif %}
+                                            {% if prod.role %}
+                                                – {{ prod.role.name }}
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+
+                        {# Mentions #}
+                        {% if mentions_of_person %}
+                            <div class="mb-3">
+                                <h3 class="h6">Mentions</h3>
+                                <ul class="list-unstyled small">
+                                    {% for m in mentions_of_person %}
+                                        <li>
+                                            {% if m.mentionee_description %}
+                                                {{ m.mentionee_description.name }}
+                                            {% else %}
+                                                Mention
+                                            {% endif %}
+                                            {% if m.mentionee_city %}
+                                                in
+                                                <a href="{% url 'place-detail' m.mentionee_city.name|slugify %}">
+                                                    {{ m.mentionee_city.name }}
+                                                </a>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+                    </aside>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

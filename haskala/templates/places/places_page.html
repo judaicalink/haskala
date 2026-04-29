@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load leaflet_tags %}
+
+{% block title %}places{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <h1>Places</h1>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="places-list">
+            {% if cities_by_letter %}
+                {% for letter, names in cities_by_letter.items %}
+                    <div class="people-group mb-4" id="letter-{{ letter }}">
+                        <h2>{{ letter }}</h2>
+                        <ul class="list-unstyled">
+                            {% for city in names %}
+                                <li>
+                                    <a href="/places/{{ city|lower }}">
+                                        {{ city }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No places found.</p>
+            {% endif %}
+        </section>
+
+        <section class="map-section my-5">
+            <h2>Map of Places</h2>
+            {% leaflet_map map %}
+
+        </section>
+    </div>
+{% endblock %}
+

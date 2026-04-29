@@ -1,20 +1,20 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
-from core.models import Book, Person, Translation, Preface, Production, Mention  # anpassen
+from core.models import Book, Person, Translation, Preface, Production, Mention  # adjust
 
 
 class Command(BaseCommand):
-    help = "Verknüpft Books/Translations/Prefaces/Productions/Mentions mit Personen anhand der Drupal-nid-Felder."
+    help = "Link Books/Translations/Prefaces/Productions/Mentions to persons via the Drupal nid fields."
 
     @transaction.atomic
     def handle(self, *args, **options):
-        # Personen-Mapping: legacy_nid -> Person
+        # Person mapping: legacy_nid -> Person
         persons_by_legacy_nid = {
             p.legacy_nid: p
             for p in Person.objects.all().only("id", "legacy_nid")
         }
-        self.stdout.write(f"{len(persons_by_legacy_nid)} Personen im Mapping.")
+        self.stdout.write(f"{len(persons_by_legacy_nid)} persons in mapping.")
 
         # --- Books: original_text_author & old_text_author ---
         linked_original = linked_old = missing_original = missing_old = 0
@@ -40,13 +40,13 @@ class Command(BaseCommand):
                 else:
                     missing_old += 1
 
-            # Änderungen speichern, wenn es welche gab
+            # Save changes if there were any
             book.save()
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Books: {linked_original} original_author, {linked_old} old_author verknüpft; "
-                f"{missing_original} / {missing_old} ohne passende Person."
+                f"Books: {linked_original} original_author, {linked_old} old_author linked; "
+                f"{missing_original} / {missing_old} without matching person."
             )
         )
 
@@ -66,8 +66,8 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Translations: {linked_translator} translator verknüpft, "
-                f"{missing_translator} ohne passende Person."
+                f"Translations: {linked_translator} translator linked, "
+                f"{missing_translator} without matching person."
             )
         )
 
@@ -87,8 +87,8 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Prefaces: {linked_writer} writer verknüpft, "
-                f"{missing_writer} ohne passende Person."
+                f"Prefaces: {linked_writer} writer linked, "
+                f"{missing_writer} without matching person."
             )
         )
 
@@ -108,8 +108,8 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Productions: {linked_producer} producer verknüpft, "
-                f"{missing_producer} ohne passende Person."
+                f"Productions: {linked_producer} producer linked, "
+                f"{missing_producer} without matching person."
             )
         )
 
@@ -129,7 +129,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Mentions: {linked_mentionee} mentionee verknüpft, "
-                f"{missing_mentionee} ohne passende Person."
+                f"Mentions: {linked_mentionee} mentionee linked, "
+                f"{missing_mentionee} without matching person."
             )
         )

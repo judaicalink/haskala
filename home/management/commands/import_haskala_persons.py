@@ -11,7 +11,7 @@ from home.models import (
 
 def parse_tid(value):
     """
-    Wandelt TID-Werte wie '402', '402.0', ' 402 ', '' in int oder None um.
+    Converts TID values like '402', '402.0', ' 402 ', '' to int or None.
     """
     if value is None:
         return None
@@ -22,7 +22,7 @@ def parse_tid(value):
         return None
 
     try:
-        # Float-Fixes: '402.0' → 402
+        # Float fixes: '402.0' -> 402
         return int(float(v))
     except ValueError:
         return None
@@ -30,14 +30,14 @@ def parse_tid(value):
 
 
 class Command(BaseCommand):
-    help = "Importiert Personen aus einer CSV (Export aus Drupal via Jupyter)"
+    help = "Import persons from a CSV (export from Drupal via Jupyter)"
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--file",
             type=str,
             required=True,
-            help="Pfad zur Personen-CSV",
+            help="Path to the persons CSV",
         )
 
     def handle(self, *args, **options):
@@ -45,7 +45,7 @@ class Command(BaseCommand):
         csv_file = options["file"]
 
         if not os.path.exists(csv_file):
-            raise CommandError(f"CSV nicht gefunden: {csv_file}")
+            raise CommandError(f"CSV not found: {csv_file}")
 
         created = 0
         updated = 0
@@ -54,7 +54,7 @@ class Command(BaseCommand):
             reader = csv.DictReader(f)
 
             for row in reader:
-                # Pflichtfelder
+                # Required fields
                 nid = row.get("nid")
                 vid = row.get("vid")
 
@@ -64,7 +64,7 @@ class Command(BaseCommand):
                 legacy_nid = int(nid)
                 legacy_vid = int(vid) if vid else None
 
-                # Namensfelder (variieren je nach Export)
+                # Name fields (vary by export)
                 title = (row.get("title") or "").strip()
                 pref_label = (row.get("pref_label") or title).strip()
                 german_name = (row.get("german_name") or "").strip()
@@ -98,7 +98,7 @@ class Command(BaseCommand):
                     except City.DoesNotExist:
                         pass
 
-                # Person erstellen/aktualisieren
+                # Create/update person
                 person, flag = Person.objects.update_or_create(
                     legacy_nid=legacy_nid,
                     defaults={
@@ -139,5 +139,5 @@ class Command(BaseCommand):
                             pass
 
         self.stdout.write(self.style.SUCCESS(
-            f"Personen importiert: {created} neu, {updated} aktualisiert."
+            f"Persons imported: {created} new, {updated} updated."
         ))

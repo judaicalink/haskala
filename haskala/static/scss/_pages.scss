@@ -1,0 +1,67 @@
+// scss/_pages.scss
+
+// Startseite
+.front {
+  text-align: center;
+
+  .bread-crumbs { display: none; }
+
+  .main-content {
+    font-weight: 700;
+    letter-spacing: .6px;
+    margin-bottom: 36px;
+    margin-left: 1px;
+  }
+
+  .tags-cloud-wrapper {
+    margin-top: 45px;
+    margin-bottom: 51px;
+
+    h3 {
+      color: $haskala-blue;
+      font-family: $headings-font-family;
+      font-weight: 700;
+      margin: 0 4px 0 0;
+      letter-spacing: .9px;
+
+      &:before,
+      &:after {
+        content: '';
+        display: inline-block;
+        border-bottom: 1px solid $haskala-blue;
+        width: 38%;
+        padding-top: 12px;
+
+        @media (max-width: 850px) {
+          display: none;
+        }
+      }
+
+      &:before { float: left; }
+      &:after  { float: right; }
+    }
+
+    .tags-cloud {
+      padding-top: 6px;
+      max-width: 815px;
+      margin: 0 auto;
+
+      a {
+        display: inline-block;
+        background-color: $haskala-blue;
+        border-radius: 10.5px;
+        padding: 0 18px;
+        margin: 5px 8px 0 0;
+        height: 20px;
+        line-height: 21px;
+        color: #fff;
+        font-size: 11px;
+        white-space: nowrap;
+
+        &:hover {
+          background-color: $haskala-gold;
+        }
+      }
+    }
+  }
+}

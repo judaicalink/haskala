@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Publishers{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <h1 class="h2 mb-4">Publishers</h1>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="terms-list">
+            {% if  publishers_by_letter %}
+                {% for letter, pubs in publishers_by_letter.items %}
+                    <div class="letter-group mb-4" id="letter-{{ letter }}">
+                        <h3>{{ letter }}</h3>
+                        <ul class="list-unstyled">
+                            {% for pub in pubs %}
+                                {% if pub.slug %}
+                                    <li>
+                                        <a href="{% url 'publisher-detail' pub.slug %}">
+                                            {{ pub.name }}
+                                        </a>
+                                    </li>
+                                {% else %}
+                                    <li>
+                                    {{ pub.name }}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No publishers found.</p>
+            {% endif %}
+        </section>
+    </div>
+{% endblock %}

@@ -9,12 +9,24 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import json
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import environ
+from django.utils.translation import gettext_lazy as _
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
+
+
+# Environment variables
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
+
+SECRET_KEY = env("SECRET_KEY", default="")
+DEBUG = env.bool("DEBUG", default=False)
+
+#ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1'])
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -51,6 +63,11 @@ INSTALLED_APPS = [
     "wagtail.api.v2",
     "leaflet",
     "wagtailmarkdown",
+    "cookiebanner",
+    "django.contrib.sitemaps",
+    "rest_framework",
+    "django_filters",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -63,6 +80,8 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "django.middleware.cache.UpdateCacheMiddleware",
+    "django.middleware.cache.FetchFromCacheMiddleware",
 ]
 
 ROOT_URLCONF = "haskala.urls"
@@ -97,13 +116,15 @@ DATABASES = {
     },
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "haskala",
-        "USER": "haskala",
-        "PASSWORD": "haskala",
-        "HOST": "localhost",  # Docker container postgres-haskala
-        "PORT": "5432",
+        "NAME": env("DATABASE_NAME", default=""),
+        "USER": env("DATABASE_USER", default=""),
+        "PASSWORD": env("DATABASE_PASSWORD", default=""),
+        "HOST": env("DATABASE_HOST", default="localhost"),
+        "PORT": env("DATABASE_PORT", default=""),
     },
 }
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -241,6 +262,7 @@ LEAFLET_CONFIG = {
     'MAX_ZOOM': 18,
     'TILES': 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',  # OSM tiles
     'ATTRIBUTION_PREFIX': 'Powered by Django-Leaflet',
+    'CDN': 'False',
 }
 
 CSP_DEFAULT_SRC = ("'self'",)
@@ -259,3 +281,79 @@ WAGTAILMARKDOWN = {
     "extensions_settings_mode": "extend",  # optional. Possible values: "extend" or "override". Defaults to "extend".
     "tab_length": 4,  # optional. Sets the length of tabs used by python-markdown to render the output. This is the number of spaces used to replace with a tab character. Defaults to 4.
 }
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+        "rest_framework.filters.SearchFilter",
+        "rest_framework.filters.OrderingFilter",
+    ],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 25,
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Library of the Haskala API",
+    "DESCRIPTION": "Read-only REST API for the Library of the Haskala database.",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+}
+
+COOKIEBANNER = {
+    "title": _("Cookie settings"),
+    "header_text": _("We are using cookies on this website. A few are essential, others are not."),
+    "footer_text": _("Please accept our cookies"),
+    "footer_links": [
+        {"title": _("Imprint"), "href": "/imprint"},
+        {"title": _("Privacy"), "href": "/privacy"},
+    ],
+    "groups": [
+        {
+            "id": "essential",
+            "name": _("Essential"),
+            "description": _("Essential cookies allow this page to work."),
+            "cookies": [
+                {
+                    "pattern": "cookiebanner",
+                    "description": _("Meta cookie for the cookies that are set."),
+                },
+                {
+                    "pattern": "csrftoken",
+                    "description": _("This cookie prevents Cross-Site-Request-Forgery attacks."),
+                },
+                {
+                    "pattern": "sessionid",
+                    "description": _("This cookie is necessary to allow logging in, for example."),
+                },
+            ],
+        },
+        {
+            "id": "analytics",
+            "name": _("Analytics"),
+            "optional": True,
+            "cookies": [
+                {
+                    "pattern": "_pk_.*",
+                    "description": _("Matomo cookie for website analysis."),
+                },
+            ],
+        },
+    ],
+}
+
+
+MATOMO_URL = env("MATOMO_URL", default="")
+MATOMO_SITE_IDS = json.loads(os.environ.get("MATOMO_SITE_IDS", "{}"))
+USE_X_FORWARDED_HOST = True
+
+# Mail
+EMAIL_BACKEND = env("EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend")
+EMAIL_HOST = env("EMAIL_HOST", default="smtp.example.com")
+EMAIL_PORT = env("EMAIL_PORT", default=465)
+EMAIL_USE_TLS = env("EMAIL_USE_TLS", default=True, cast=bool)
+EMAIL_HOST_USER = env("EMAIL_HOST_USER", default="")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="")
+
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="")
+SERVER_EMAIL = env("SERVER_EMAIL", default="")

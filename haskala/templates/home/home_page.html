@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+{% load topic_tags %}
+
+{% block title %}The Library of the Haskala{% endblock %}
+
+{% block content %}
+  <section class="homepage-intro mb-3">
+      {% if page.body %}
+        <div class="intro lead">
+          {{ page.body|richtext }}
+        </div>
+      {% endif %}
+  </section>
+
+  <section class="homepage-search">
+      <form action="{% url 'search' %}" method="get"
+            id="search-api-page-search-form-haskala"
+            class="search-hero form-inline">
+
+          <div class="search-hero-inner mb-3">
+
+              <div class="input-group">
+                  <input type="text"
+                         name="q"
+                         id="id_q"
+                         class="form-control form-control-lg rounded-start-5"
+                         placeholder="Search the Library of the Haskala">
+                  <button type="submit" class="btn btn-primary btn-lg rounded-end-5 text-white">
+                      <i class="bi bi-search"></i>
+                  </button>
+              </div>
+          </div>
+      </form>
+  </section>
+
+  {% topic_tagcloud %}
+
+{% endblock %}

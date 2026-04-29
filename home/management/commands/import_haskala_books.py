@@ -31,7 +31,7 @@ def parse_int(value):
     if val == "":
         return None
     try:
-        # viele TIDs kamen als '402.0' etc.
+        # many TIDs came in as '402.0' etc.
         return int(float(val))
     except ValueError:
         return None
@@ -62,15 +62,15 @@ def parse_timestamp(value):
     except ValueError:
         return None
 
-    # aktuelle Zeitzone von Django verwenden (Europe/Berlin bei dir)
+    # use Django's current timezone (Europe/Berlin in this project)
     tz = timezone.get_current_timezone()
     return datetime.fromtimestamp(ts, tz=tz)
 
 
 def parse_tid_list(value):
     """
-    Falls später mehrere TIDs (z.B. '12|34') kommen, sind wir vorbereitet.
-    Im Moment erwarten wir meist einen einzelnen Wert.
+    Prepared for the case multiple TIDs arrive later (e.g. '12|34').
+    Currently we usually expect a single value.
     """
     if value is None:
         return []
@@ -87,26 +87,26 @@ def parse_tid_list(value):
 
 
 class Command(BaseCommand):
-    help = "Importiert Haskala-Bücher aus der CSV-Datei books_for_django.csv"
+    help = "Import Haskala books from the CSV file books_for_django.csv"
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--file",
             required=True,
-            help="Pfad zur CSV-Datei (books_for_django.csv)",
+            help="Path to the CSV file (books_for_django.csv)",
         )
 
     def handle(self, *args, **options):
         csv_path = Path(options["file"])
         if not csv_path.exists():
-            raise CommandError(f"Datei nicht gefunden: {csv_path}")
+            raise CommandError(f"File not found: {csv_path}")
 
-        self.stdout.write(f"Lese Datei: {csv_path}")
+        self.stdout.write(f"Reading file: {csv_path}")
 
         created_count = 0
         updated_count = 0
 
-        # vorbereiten: einfache Felder im Book-Modell (ohne FK/M2M)
+        # prepare: simple fields on the Book model (without FK/M2M)
         simple_fields = {
             f.name: f
             for f in Book._meta.get_fields()
@@ -116,7 +116,7 @@ class Command(BaseCommand):
             and not isinstance(f, dj_models.ForeignKey)
         }
 
-        # Felder, die wir für Legacy-Metadaten und interne Dinge manuell setzen
+        # fields we set manually for legacy metadata and internal things
         exclude_auto = {
             "uuid",
             "created_at",
@@ -132,7 +132,7 @@ class Command(BaseCommand):
         for name in exclude_auto:
             simple_fields.pop(name, None)
 
-        # Mapping von CSV-Spaltennamen auf Book-Feldnamen (wenn unterschiedlich)
+        # Mapping from CSV column names to Book field names (where they differ)
         rename_map = {
             "title": "name",
             "book_availability_notes": "availability_notes",
@@ -154,7 +154,7 @@ class Command(BaseCommand):
             "publication_year_in_other_format": "year_in_other_format",
         }
 
-        # alle relevanten *_tid Spalten, die wir speziell behandeln
+        # all relevant *_tid columns we handle specially
         fk_tid_fields = {
             "alignment_tid": (Alignment, "alignment"),
             "languages_number_tid": (LanguageCount, "languages_number"),
@@ -192,7 +192,7 @@ class Command(BaseCommand):
 
                     if legacy_nid is None:
                         self.stdout.write(
-                            self.style.WARNING("Zeile ohne gültige nid – übersprungen.")
+                            self.style.WARNING("Row without valid nid - skipped.")
                         )
                         continue
 
@@ -204,32 +204,32 @@ class Command(BaseCommand):
                     defaults["legacy_status"] = parse_bool(row.get("status"))
                     defaults["legacy_created"] = parse_timestamp(row.get("created"))
                     defaults["legacy_changed"] = parse_timestamp(row.get("changed"))
-                    # legacy_language: wir haben diese Info nicht direkt → leer lassen
+                    # legacy_language: this info is not directly available -> leave empty
                     defaults["legacy_language"] = ""
-                    # Drupal-Spalte book_not_available (0/1) → Boolean-Feld not_available
-                    # Drupal-Spalte book_not_available (0/1) → Boolean-Feld not_available
+                    # Drupal column book_not_available (0/1) -> boolean field not_available
+                    # Drupal column book_not_available (0/1) -> boolean field not_available
                     raw_not_avail = row.get("book_not_available")
                     if raw_not_avail is not None and str(raw_not_avail).strip() != "":
-                        # explizit 0/1 o.ä. gesetzt → parse_bool
+                        # explicitly set 0/1 etc. -> parse_bool
                         defaults["not_available"] = parse_bool(raw_not_avail)
-                    # sonst: Feld gar nicht in defaults setzen → Django nimmt den Model-Default (False)
+                    # otherwise: do not set field in defaults -> Django uses the model default (False)
 
-                    # --- Bundle & Name ---
+                    # --- Bundle & name ---
                     defaults["bundle"] = row.get("type", "book") or "book"
 
-                    # title → name
+                    # title -> name
                     title_val = row.get("title", "").strip()
                     if title_val:
                         defaults["name"] = title_val
 
-                    # --- einfache Felder mit gleichem Namen ---
+                    # --- simple fields with the same name ---
                     for csv_col, value in row.items():
                         if csv_col in simple_fields:
                             field = simple_fields[csv_col]
                             cleaned = self._cast_value(field, value)
                             defaults[csv_col] = cleaned
 
-                    # --- Felder mit anderem Namen (rename_map) ---
+                    # --- fields with a different name (rename_map) ---
                     for csv_col, model_field_name in rename_map.items():
                         if csv_col not in row:
                             continue
@@ -251,13 +251,13 @@ class Command(BaseCommand):
                         except model_cls.DoesNotExist:
                             self.stdout.write(
                                 self.style.WARNING(
-                                    f"{model_cls.__name__} mit legacy_tid={tid} nicht gefunden "
-                                    f"(Spalte {csv_col})"
+                                    f"{model_cls.__name__} with legacy_tid={tid} not found "
+                                    f"(column {csv_col})"
                                 )
                             )
                             defaults[field_name] = None
 
-                    # Jetzt Book updaten/erstellen (ohne M2M)
+                    # Now update/create Book (without M2M)
                     book, created = Book.objects.update_or_create(
                         legacy_nid=legacy_nid,
                         defaults=defaults,
@@ -269,7 +269,7 @@ class Command(BaseCommand):
                         updated_count += 1
 
                     # --- M2M via *_tid ---
-                    # wir sammeln jeweils alle Objekte pro Feld und setzen sie komplett
+                    # collect all objects per field and set them completely
                     for csv_col, (model_cls, field_name) in m2m_tid_fields.items():
                         tids = parse_tid_list(row.get(csv_col))
                         objs = []
@@ -280,8 +280,8 @@ class Command(BaseCommand):
                             except model_cls.DoesNotExist:
                                 self.stdout.write(
                                     self.style.WARNING(
-                                        f"{model_cls.__name__} (M2M) mit legacy_tid={tid} nicht gefunden "
-                                        f"(Spalte {csv_col})"
+                                        f"{model_cls.__name__} (M2M) with legacy_tid={tid} not found "
+                                        f"(column {csv_col})"
                                     )
                                 )
                         if objs:
@@ -291,16 +291,16 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Buch-Import abgeschlossen. {created_count} erstellt, {updated_count} aktualisiert."
+                f"Book import finished. {created_count} created, {updated_count} updated."
             )
         )
 
-    # ---- Hilfsmethode zur Typkonvertierung ----
+    # ---- Helper method for type conversion ----
     def _cast_value(self, field, raw):
         if raw is None:
             return None
         val = str(raw)
-        # leere Strings → None für Nicht-Char-Felder
+        # empty strings -> None for non-char fields
         if isinstance(field, (dj_models.CharField, dj_models.TextField)):
             return val
         if val.strip() == "":
@@ -316,8 +316,8 @@ class Command(BaseCommand):
             except ValueError:
                 return None
         if isinstance(field, dj_models.DateTimeField):
-            # sollte hier nur selten vorkommen; sonst wie bei legacy_created
+            # should rarely occur here; otherwise as with legacy_created
             return parse_timestamp(val)
 
-        # default: String
+        # default: string
         return val

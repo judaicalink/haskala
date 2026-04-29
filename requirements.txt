@@ -6,6 +6,8 @@ charset-normalizer==3.3.2
 defusedxml==0.7.1
 Django>=5.0
 djangorestframework
+django-filter
+drf-spectacular
 draftjs-exporter==2.1.7
 et-xmlfile==1.1.0
 filetype==1.2.0

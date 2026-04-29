@@ -8,7 +8,7 @@ from home.models import Alignment, OriginalType, TextualModel
 
 def parse_int(value, default=None):
     """
-    Hilfsfunktion: wandelt Strings wie '', 'nan' etc. robust in int oder default.
+    Helper: robustly converts strings like '', 'nan' etc. to int or default.
     """
     if value is None:
         return default
@@ -27,24 +27,24 @@ def parse_int(value, default=None):
 
 
 class Command(BaseCommand):
-    help = "Importiert Alignment, OriginalType und TextualModel aus den Taxonomie-Exports."
+    help = "Import Alignment, OriginalType and TextualModel from the taxonomy exports."
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--base-dir",
             required=True,
-            help="Basisverzeichnis der Export-CSV-Dateien (z. B. research/export)",
+            help="Base directory of the export CSV files (e.g. research/export)",
         )
 
-    # ---------- Hilfsfunktion für einfache Vokabulare ----------
+    # ---------- Helper for simple vocabularies ----------
 
     def import_simple_vocab(self, path: Path, model, label: str):
         """
-        Erwartetes CSV-Schema: tid, vid, name, description
-        -> model muss Felder name und legacy_tid haben.
+        Expected CSV schema: tid, vid, name, description
+        -> model must have fields name and legacy_tid.
         """
         if not path.exists():
-            self.stdout.write(f"Überspringe {label}: {path.name} nicht gefunden.")
+            self.stdout.write(f"Skipping {label}: {path.name} not found.")
             return
 
         created = 0
@@ -57,7 +57,7 @@ class Command(BaseCommand):
                 name = (row.get("name") or "").strip()
 
                 if tid is None or not name:
-                    # Leere oder kaputte Zeilen überspringen
+                    # Skip empty or broken rows
                     continue
 
                 obj, is_created = model.objects.update_or_create(
@@ -72,7 +72,7 @@ class Command(BaseCommand):
                     updated += 1
 
         self.stdout.write(
-            f"{label}: {created} erstellt, {updated} aktualisiert."
+            f"{label}: {created} created, {updated} updated."
         )
 
     # ---------- Handle ----------
@@ -80,9 +80,9 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         base_dir = Path(options["base_dir"]).expanduser().resolve()
         if not base_dir.exists():
-            raise CommandError(f"Basisverzeichnis existiert nicht: {base_dir}")
+            raise CommandError(f"Base directory does not exist: {base_dir}")
 
-        self.stdout.write(f"Nutze Basisverzeichnis: {base_dir}")
+        self.stdout.write(f"Using base directory: {base_dir}")
 
         # Alignment (taxonomy_alignment.csv)
         alignment_csv = base_dir / "taxonomy_alignment.csv"
@@ -96,4 +96,4 @@ class Command(BaseCommand):
         textual_models_csv = base_dir / "taxonomy_textual_models.csv"
         self.import_simple_vocab(textual_models_csv, TextualModel, "TextualModel")
 
-        self.stdout.write(self.style.SUCCESS("Import der Text-Vokabulare abgeschlossen."))
+        self.stdout.write(self.style.SUCCESS("Text vocabularies import finished."))

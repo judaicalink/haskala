@@ -8,13 +8,13 @@ from home.models import City, Geolocation
 
 
 class Command(BaseCommand):
-    help = "Importiert Cities + Geolocation aus der exportierten CSV"
+    help = "Import cities + geolocation from the exported CSV"
 
     def add_arguments(self, parser):
         parser.add_argument(
             "csv_path",
             type=str,
-            help="Pfad zur cities_with_geolocation.csv",
+            help="Path to cities_with_geolocation.csv",
         )
 
     @transaction.atomic
@@ -22,7 +22,7 @@ class Command(BaseCommand):
         csv_path = Path(options["csv_path"])
 
         if not csv_path.exists():
-            self.stderr.write(self.style.ERROR(f"Datei nicht gefunden: {csv_path}"))
+            self.stderr.write(self.style.ERROR(f"File not found: {csv_path}"))
             return
 
         created_cities = 0
@@ -36,7 +36,7 @@ class Command(BaseCommand):
                 if not name:
                     continue
 
-                # City anlegen (oder wiederverwenden, falls Name schon existiert)
+                # Create city (or reuse if name already exists)
                 city, city_created = City.objects.get_or_create(
                     name=name,
                 )
@@ -44,7 +44,7 @@ class Command(BaseCommand):
                 if city_created:
                     created_cities += 1
 
-                # Geolocation nur anlegen, wenn lat/lng gesetzt sind
+                # Only create geolocation if lat/lng are set
                 lat = row.get("field_geolocation_lat")
                 lng = row.get("field_geolocation_lng")
 
@@ -63,5 +63,5 @@ class Command(BaseCommand):
                         created_geos += 1
 
         self.stdout.write(self.style.SUCCESS(
-            f"Fertig. Cities neu: {created_cities}, Geolocations neu: {created_geos}"
+            f"Done. New cities: {created_cities}, new geolocations: {created_geos}"
         ))

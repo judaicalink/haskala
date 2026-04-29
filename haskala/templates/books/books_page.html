@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block title %}Persons{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <h1>Books</h1>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <!-- Bücherliste, nach Buchstaben gruppiert -->
+        <section class="books-list">
+            {% if books_by_letter %}
+                {% for letter, books in books_by_letter.items %}
+                    <div class="books-group mb-4" id="letter-{{ letter }}">
+                        <h1>{{ letter }}</h1>
+                        <ul class="list-unstyled">
+                            {% for book in books %}
+                                <li>
+                                    <a href="{% url 'book-detail' book.name %}">
+                                        {{ book.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No books found.</p>
+            {% endif %}
+        </section>
+    </div>
+{% endblock %}

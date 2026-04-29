@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ topic.name }} | Topics{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+    <h1 class="h2 mb-4">{{ topic.name }}</h1>
+
+    {% if books_with_topic %}
+        <section class="mb-4">
+            <h2 class="h5">Books with this topic</h2>
+            <ul class="list-unstyled">
+                {% for book in books_with_topic %}
+                    <li>
+                        <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                            {{ book.name|default:"[untitled]" }}
+                        </a>
+                        {% if book.gregorian_year %}
+                            ({{ book.gregorian_year }})
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    {% else %}
+        <p class="text-muted">No books for this topic yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

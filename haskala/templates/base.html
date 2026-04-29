@@ -1,64 +1,125 @@
 {% load static wagtailcore_tags wagtailuserbar %}
 {% load leaflet_tags %}
+{% load cache %}
+{% load matomo %}
+{% load cookiebanner %}
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-        <title>
-            {% block title %}
-            {% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}
-            {% endblock %}
-            {% block title_suffix %}
+<head>
+    <meta charset="utf-8"/>
+    {# --- TITLE --- #}
+    <title>
+        {% block title %}
+            {% if page %}
+                {% if page.seo_title %}
+                    {{ page.seo_title }}
+                {% else %}
+                    {{ page.title }}
+                {% endif %}
+            {% else %}
+                {# Fallback für klassische Django-Views ohne page #}
+                Haskala
+            {% endif %}
+        {% endblock %}
+        {% block title_suffix %}
             {% wagtail_site as current_site %}
-            {% if current_site and current_site.site_name %}- {{ current_site.site_name }}{% endif %}
-            {% endblock %}
-        </title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+            {% if current_site and current_site.site_name %}
+                – {{ current_site.site_name }}
+            {% endif %}
+        {% endblock %}
+    </title>
 
-        {# Force all links in the live preview panel to be opened in a new tab #}
-        {% if request.in_preview_panel %}
+    {# --- META DESCRIPTION (SEO) --- #}
+    <meta name="description" content="
+
+            {% if page and page.search_description %}{{ page.search_description }}{% else %}Digitale Sammlung, Personen, Orte, Bücher und jüdische Geschichte in der Haskala-Plattform.{% endif %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    {# --- CANONICAL URL --- #}
+    {% if request %}
+        <link rel="canonical" href="{{ request.build_absolute_uri }}"/>
+    {% endif %}
+
+    {# --- OPEN GRAPH (Facebook, LinkedIn, WhatsApp, Telegram) --- #}
+    {# OpenGraph #}
+    {% if page %}
+        <meta property="og:title" content="{{ page.seo_title|default:page.title }}">
+        <meta property="og:description"
+              content="{{ page.search_description|default:'Digitale Sammlung der jüdischen Aufklärung.' }}">
+    {% else %}
+        <meta property="og:title" content="Haskala">
+        <meta property="og:description" content="Digitale Sammlung der jüdischen Aufklärung.">
+    {% endif %}
+    <meta property="og:type" content="website">
+    {% if request %}
+        <meta property="og:url" content="{{ request.build_absolute_uri }}">{% endif %}
+    <meta property="og:image" content="{% static 'images/og-default.jpg' %}">
+
+    {# --- FAVICONS --- #}
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+    {# --- GENERATOR TAG (optional) --- #}
+    <meta name="generator" content="Wagtail CMS">
+
+    {# For Preview Panel #}
+    {% if request.in_preview_panel %}
         <base target="_blank">
-        {% endif %}
+    {% endif %}
 
-        {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/overrides.css' %}">
+    {# CSS #}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/haskala.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
 
-        {% leaflet_js %}
-        {% leaflet_css %}
 
-        {% block extra_css %}
+    {% leaflet_js %}
+    {% leaflet_css %}
+
+    {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
-        {% endblock %}
+    {% endblock %}
 
-        {% block header_js %}
-            {# Override this template to add extra JavaScrr´ipt #}
-        {% endblock %}
-    </head>
+    {% block header_js %}
+        {# Override this template to add extra JavaScript #}
+    {% endblock %}
+</head>
 
-    <body class="{% block body_class %}{% endblock %}">
-    <div class="wrapper">
-        {% wagtailuserbar %}
+<body class="{% block body_class %}{% endblock %}">
+{% cookiebanner_modal 'vanilla' %}
+<div class="wrapper">
+    {% wagtailuserbar %}
 
+    {% cache 3600 main_menu %}
         {% include 'partials/mainmenu.html' %}
+    {% endcache %}
 
-        {% include 'partials/breadcrumbs.html' %}
+    {# Breadcumbs deactivated for now #}
+    {# include 'partials/breadcrumbs.html' #}
 
-        {% block content %}{% endblock %}
+    {% block content %}{% endblock %}
 
+    {% cache 3600 footer_menu %}
         {% include 'partials/footermenu.html' %}
-    </div>
+    {% endcache %}
 
-        {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/bootstrap.bundle.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/haskala.js' %}"></script>
+    <button id="scrollTopBtn" aria-label="Scroll to top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-        {% block extra_js %}
-        {# Override this in templates to add extra javascript #}
-        {% endblock %}
-    </body>
+</div>
+
+{# Global javascript #}
+
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+{% block extra_js %}
+    {# Override this in templates to add extra javascript #}
+{% endblock %}
+
+{% cookie_accepted 'analytics' as cookie_analytics %}
+{% if cookie_analytics %}
+    {% matomo_tracker %}
+{% endif %}
+</body>
 </html>

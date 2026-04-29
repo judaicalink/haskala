@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block title %}{{ page.title }} – Thank you{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <h1 class="mb-3">{{ page.title }}</h1>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags|default:'info' }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="mb-3 text-success fw-semibold">
+                        {{ page.thank_you_text|richtext }}
+                    </div>
+                    <a href="{% pageurl page.get_parent %}" class="btn btn-outline-primary">
+                        Back to index
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

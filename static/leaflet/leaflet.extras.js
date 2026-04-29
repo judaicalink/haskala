@@ -18,7 +18,7 @@ L.Control.ResetView = L.Control.extend({
         L.Util.setOptions(this, options);
 
         const titleElement = document.getElementById("Control-ResetView-TITLE");
-        const iconElement = document.getElementById("Control-ResetView-TITLE");
+        const iconElement = document.getElementById("Control-ResetView-ICON");
 
         if (!!titleElement) {
             L.Control.ResetView.TITLE = JSON.parse(titleElement.textContent);
@@ -254,20 +254,15 @@ L.Map.djangoMap = function (id, options) {
 
 
     function triggerEvent(target, type, data) {
-        if (typeof window.CustomEvent == 'function') {
-            var evt = new CustomEvent(type, {detail: data});
-            target.dispatchEvent(evt);
-        }
-        else if (window.jQuery) {
-            var evt = jQuery.Event(type);
-            evt.detail = data;
-            jQuery(target).trigger(evt);
-        }
+        const evt = new CustomEvent(type, {detail: data});
+        target.dispatchEvent(evt);
     }
 };
 
-const imgPathElement = document.getElementById("force-img-path");
+{
+  const imgPathElement = document.getElementById("force-img-path");
 
-if (!!imgPathElement) {
+  if (!!imgPathElement) {
     L.Icon.Default.imagePath = JSON.parse(imgPathElement.textContent);
+  }
 }

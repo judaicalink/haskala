@@ -1,0 +1,28 @@
+{
+  "name": "haskala",
+  "version": "1.0.0",
+  "description": "The Library of the [Haskala](https://www.haskala-library.net/) is a database for the Haskala.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass haskala/static/scss/haskala.scss haskala/static/css/haskala.css --style=compressed --load-path=node_modules",
+    "build:js": "esbuild haskala/static/js/app-entry.js --bundle --minify --outfile=haskala/static/js/app.js",
+    "copy:icons": "cp node_modules/bootstrap-icons/font/bootstrap-icons.json haskala/static/js/ && cp node_modules/bootstrap-icons/font/fonts/* haskala/static/fonts/"
+  },
+  "keywords": [
+    "haskala",
+    "library",
+    "database",
+    "jewish enlightenment"
+  ],
+  "author": "Benjamin Schnabel",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "esbuild": "^0.27.1",
+    "sass": "^1.95.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  }
+}

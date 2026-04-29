@@ -8,7 +8,7 @@ from home.models import Alignment
 
 def parse_int(value):
     """
-    Wandelt '402.0' -> 402, leere Strings -> None.
+    Converts '402.0' -> 402, empty strings -> None.
     """
     if value is None:
         return None
@@ -22,21 +22,21 @@ def parse_int(value):
 
 
 class Command(BaseCommand):
-    help = "Importiert Alignment-Taxonomie aus taxonomy_alignment.csv"
+    help = "Import Alignment taxonomy from taxonomy_alignment.csv"
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--file",
             required=True,
-            help="Pfad zur CSV-Datei (z. B. research/export/taxonomy_alignment.csv)",
+            help="Path to the CSV file (e.g. research/export/taxonomy_alignment.csv)",
         )
 
     def handle(self, *args, **options):
         csv_path = Path(options["file"])
         if not csv_path.exists():
-            raise CommandError(f"Datei nicht gefunden: {csv_path}")
+            raise CommandError(f"File not found: {csv_path}")
 
-        self.stdout.write(f"Lese Alignment-CSV: {csv_path}")
+        self.stdout.write(f"Reading Alignment CSV: {csv_path}")
 
         created_count = 0
         updated_count = 0
@@ -50,7 +50,7 @@ class Command(BaseCommand):
                 if not name:
                     self.stdout.write(
                         self.style.WARNING(
-                            f"Überspringe Zeile ohne Name (tid={raw_tid!r})"
+                            f"Skipping row without name (tid={raw_tid!r})"
                         )
                     )
                     continue
@@ -78,7 +78,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Alignment-Import abgeschlossen. "
-                f"{created_count} erstellt, {updated_count} aktualisiert."
+                f"Alignment import finished. "
+                f"{created_count} created, {updated_count} updated."
             )
         )

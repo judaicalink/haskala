@@ -1,0 +1,271 @@
+// =====================================
+// MAIN MENU (Top Navigation)
+// =====================================
+
+.wrapper {
+  header {
+    // Links im Header
+    a {
+      color: $haskala-brown;
+      display: inline-block;
+      padding: 0;
+      white-space: nowrap;
+
+      &.active,
+      &:hover {
+        color: $haskala-blue;
+      }
+    }
+
+    // obere Hauptnavigation
+    .top-navigation {
+      margin-bottom: 16px;
+      font-family: $headings-font-family;
+
+      li {
+        display: inline-block;
+        margin-left: 11px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        vertical-align: middle;
+
+        &:before {
+          content: '.';
+          margin-right: 16px;
+        }
+
+        &.first:before {
+          content: none;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &.last {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    // Site-Name bleibt wie gehabt (nur zur Sicherheit)
+    .site-name {
+      font-family: $headings-font-family;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6px;
+      margin-left: 5px;
+      letter-spacing: 11.3px;
+
+      a,
+      a:hover {
+        color: $haskala-brown;
+      }
+
+      span {
+        font-size: 35px;
+        display: block;
+        text-transform: none;
+        letter-spacing: 11.2px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 35px;
+
+        span {
+          font-size: 15px;
+          letter-spacing: 9.5px;
+        }
+      }
+    }
+
+    hr {
+      width: 17%;
+      height: 4px;
+      background-color: $haskala-brown;
+      margin: 0 auto 32px;
+      border: 0;
+    }
+  }
+
+  // generische Nav-Bar-Items
+  .nav-bar li {
+    display: inline-block;
+  }
+}
+// =====================================
+// FOOTER (Bottom Menu / Icons-Nav + Login)
+// =====================================
+
+.wrapper {
+  footer {
+    overflow: hidden;
+    clear: both;
+    margin-top: 23px;
+
+    // „Icons“-Navigation (Books / Digital Books / Persons / Places)
+    .icons-nav {
+      font-family: $headings-font-family;
+      border-bottom: 1px solid lighten($haskala-brown, 15%);
+      padding-bottom: 34px;
+
+      li {
+        width: 165px;
+        padding-right: 27px;
+        background: url('../images/bullet.png') no-repeat right 10px top 48px;
+        text-transform: uppercase;
+
+        @media (max-width: 750px) {
+          width: 45%;
+          background: none;
+          padding: 0;
+          margin-bottom: 30px;
+        }
+
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+
+        &.active a {
+          color: $haskala-blue;
+        }
+
+        &.last {
+          padding-right: 0;
+          background: none;
+        }
+
+        a {
+          display: inline;
+          color: $haskala-brown;
+          letter-spacing: -0.2px;
+          padding: 0;
+          margin-right: 2px;
+          text-transform: uppercase;
+
+          &:before {
+            content: '';
+            display: block;
+            background: url('../images/sprites.png') no-repeat;
+            height: 50px;
+            margin: 0 auto;
+          }
+
+          &:hover {
+            color: $haskala-blue;
+            background-color: transparent;
+          }
+        }
+
+        // Icon 1: Books
+        &.first a:before {
+          background-position: 0 0;
+          width: 28px;
+        }
+
+        &.first a.active:before,
+        &.first a:hover:before {
+          background-position: 0 -50px;
+        }
+
+        // Icon 2: Digital Books
+        &:nth-child(2) a:before {
+          background-position: -50px 0;
+          width: 28px;
+        }
+
+        &:nth-child(2) a.active:before,
+        &:nth-child(2) a:hover:before {
+          background-position: -50px -50px;
+        }
+
+        // Icon 3: Persons
+        &:nth-child(3) a:before {
+          background-position: -100px 0;
+          width: 36px;
+        }
+
+        &:nth-child(3) a.active:before,
+        &:nth-child(3) a:hover:before {
+          background-position: -100px -50px;
+        }
+
+        // Icon 4: Places (last)
+        &.last a:before {
+          background-position: -150px 0;
+          width: 23px;
+        }
+
+        &.last a.active:before,
+        &.last a:hover:before {
+          background-position: -150px -50px;
+        }
+      }
+    }
+
+    // LOGIN-Bereich rechts unten
+    .login-area {
+      display: inline-block;
+      margin-right: 1px;
+      margin-top: 20px;
+
+      ul {
+        padding-top: 5px;
+        letter-spacing: -0.7px;
+        display: inline-block;
+
+        &:before,
+        &:after {
+          padding: 0;
+          content: '+';
+          font-size: 12px;
+          font-weight: 700;
+          color: $haskala-blue;
+          display: inline-block;
+        }
+      }
+
+      li {
+        padding: 0 18px 0 0;
+        display: inline-block;
+
+        &:after {
+          content: '.';
+          font-weight: 700;
+          vertical-align: bottom;
+          padding-left: 22px;
+          color: $haskala-blue;
+        }
+
+        &.last:after {
+          content: '';
+          padding-left: 0;
+        }
+
+        &.first {
+          padding-left: 18px;
+        }
+
+        &.last {
+          padding-right: 18px;
+        }
+
+        &.login {
+          text-transform: uppercase;
+
+          &.first {
+            padding-left: 11px;
+          }
+        }
+      }
+
+      a {
+        color: $haskala-blue;
+        font: 14px $headings-font-family;
+        padding: 0;
+        display: inline;
+      }
+    }
+  }
+}

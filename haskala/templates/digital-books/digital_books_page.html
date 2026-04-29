@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block title %}Digital Books{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <h1>Digital Books</h1>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="books">
+            {% if books_by_letter %}
+                {% for letter, books in books_by_letter.items %}
+                    <div class="books-group mb-4" id="letter-{{ letter }}">
+                        <div class="letter en">
+                            <h1 class="display-4">{{ letter }}</h1>
+                        </div>
+                        <div class="terms-by-letter">
+                            {% for book in books %}
+                                <div class="terms-title">
+                                    {# Link zur Book-Detailseite #}
+                                    <a href="{% url 'book-detail' book.name %}">
+                                        {{ book.name }}
+                                    </a>
+                                    {# optional: direkter Link zur digitalen Ressource #}
+                                    {% if book.digital_book_url %}
+                                        &nbsp;–&nbsp;
+                                        <a href="{{ book.digital_book_url }}" target="_blank" rel="noopener"
+                                           class="link-secondary">
+                                            Open digital copy
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No digital books found.</p>
+            {% endif %}
+        </section>
+    </div>
+
+{% endblock %}

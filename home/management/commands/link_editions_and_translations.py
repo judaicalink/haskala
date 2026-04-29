@@ -1,11 +1,11 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
-from core.models import Book, Edition, Translation  # Pfade an dein Projekt anpassen
+from core.models import Book, Edition, Translation  # adjust paths to your project
 
 
 class Command(BaseCommand):
-    help = "Verknüpft Editionen und Übersetzungen mit Büchern anhand der Drupal-nid (book_target_id)."
+    help = "Link editions and translations to books via the Drupal nid (book_target_id)."
 
     @transaction.atomic
     def handle(self, *args, **options):
@@ -14,7 +14,7 @@ class Command(BaseCommand):
             b.legacy_nid: b
             for b in Book.objects.all().only("id", "legacy_nid")
         }
-        self.stdout.write(f"{len(book_by_legacy_nid)} Books im Mapping.")
+        self.stdout.write(f"{len(book_by_legacy_nid)} books in mapping.")
 
         # --- Editions ---
         editions = Edition.objects.all()
@@ -30,7 +30,7 @@ class Command(BaseCommand):
                 missing_book_for_edition += 1
                 continue
 
-            # nur setzen, wenn noch nicht gesetzt oder abweichend
+            # only set if not yet set or if different
             if ed.book_id != book.id:
                 ed.book = book
                 ed.save(update_fields=["book"])
@@ -38,8 +38,8 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Editionen: {linked_editions} verknüpft, "
-                f"{missing_book_for_edition} ohne passenden Book."
+                f"Editions: {linked_editions} linked, "
+                f"{missing_book_for_edition} without matching book."
             )
         )
 
@@ -64,7 +64,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Translations: {linked_translations} verknüpft, "
-                f"{missing_book_for_translation} ohne passenden Book."
+                f"Translations: {linked_translations} linked, "
+                f"{missing_book_for_translation} without matching book."
             )
         )

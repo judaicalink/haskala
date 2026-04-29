@@ -1,19 +1,21 @@
 import secrets
-
 import uuid as uuid
-from django.db import models
-from SPARQLWrapper import SPARQLWrapper, JSON
 from collections import defaultdict
 
+from SPARQLWrapper import SPARQLWrapper, JSON
+from django.contrib import messages
+from django.db import models
 from django.template.defaultfilters import slugify
+from django.template.response import TemplateResponse
+from django.utils.decorators import method_decorator
+from django.utils.translation import gettext_lazy as _
+from django.views.decorators.cache import cache_page
 from modelcluster.fields import ParentalKey
-from wagtail.admin.forms.models import WagtailAdminModelForm
+from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, FieldRowPanel
 from wagtail.contrib.forms.models import AbstractFormField, AbstractEmailForm
 from wagtail.contrib.forms.panels import FormSubmissionsPanel
-
-from wagtail.models import Page
 from wagtail.fields import RichTextField
-from wagtail.admin.panels import FieldPanel, InlinePanel, MultiFieldPanel, FieldRowPanel
+from wagtail.models import Page
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
 
@@ -30,6 +32,7 @@ BUNDLE_CHOICES = (
 
 FORMAT_CHOICES = (
     ('', 'None'),
+    ('NULL', 'Unknown'),
     ('text', 'Text'),
     ('filtered_html', 'Filtered HTML'),
     ('full_html', 'Full HTML'),
@@ -91,6 +94,28 @@ def get_people_names(self):
         return None
 
 
+def group_names_by_first_letter(names):
+    grouped_names = defaultdict(list)
+
+    for name in names:
+        first_letter = name[0].upper()
+        grouped_names[first_letter].append(name)
+
+    return dict(grouped_names)
+
+
+class LegacyImportedModel(models.Model):
+    legacy_nid = models.IntegerField(null=True, blank=True, db_index=True)
+    legacy_vid = models.IntegerField(null=True, blank=True)
+    legacy_language = models.CharField(max_length=12, blank=True)
+    legacy_status = models.BooleanField(default=True, blank=True)
+    legacy_created = models.DateTimeField(null=True, blank=True)
+    legacy_changed = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        abstract = True
+
+
 # Language model
 @register_snippet
 class Language(models.Model):
@@ -100,9 +125,11 @@ class Language(models.Model):
     For the languages of the books, not the pages.
     """
     id = models.AutoField(primary_key=True)
-    # Todo: add uuid
+    uuid = models.UUIDField(default=uuid.uuid4, editable=False, auto_created=True, unique=True)
+
     name = models.CharField(max_length=255, unique=True)
-    language_code = models.CharField(max_length=255, unique=True)
+    language_code = models.CharField(max_length=50, blank=True, null=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Languages"
@@ -111,14 +138,223 @@ class Language(models.Model):
         return self.name
 
 
+# Alignment of text (vid = 7)
 @register_snippet
-class City(models.Model):
+class Alignment(models.Model):
+    """
+    Alignment of text (Drupal vocabulary: 'Alignment of text', vid = 7)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Alignments"
+
+    def __str__(self):
+        return self.name
+
+
+# Fonts (vid = 10)
+@register_snippet
+class Font(models.Model):
+    """
+    Fonts used in the publications (Drupal vocabulary: 'Fonts', vid = 10)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Fonts"
+
+    def __str__(self):
+        return self.name
+
+
+# Publishers (vid = 14)
+@register_snippet
+class Publisher(models.Model):
+    """
+    Publishers (Drupal vocabulary: 'Publishers', vid = 14)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        if self.name and not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
+
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("slug"),
+        FieldPanel("legacy_tid"),
+    ]
+
+
+    class Meta:
+        verbose_name_plural = "Publishers"
+
+    def __str__(self):
+        return self.name
+
+
+# Series (vid = 16)
+@register_snippet
+class Series(models.Model):
+    """
+    Series titles (Drupal vocabulary: 'Series', vid = 16)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("slug"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    def save(self, *args, **kwargs):
+        if self.name and not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
+
+
+    class Meta:
+        verbose_name_plural = "Series"
+
+    def __str__(self):
+        return self.name
+
+
+# Target audience (vid = 17)
+@register_snippet
+class TargetAudience(models.Model):
+    """
+    Target audience (Drupal vocabulary: 'Target audience', vid = 17)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Target audiences"
+
+    def __str__(self):
+        return self.name
+
+
+# Typography (vid = 19)
+@register_snippet
+class Typography(models.Model):
+    """
+    Typography (Drupal vocabulary: 'Typography', vid = 19)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Typographies"
+
+    def __str__(self):
+        return self.name
+
+
+# Date format (vid = 8)
+@register_snippet
+class DateFormat(models.Model):
+    """
+    Format of dates (Drupal vocabulary: 'Date format', vid = 8)
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Date formats"
+
+    def __str__(self):
+        return self.name
+
+
+# Textual models (vid = 3: 'Models')
+@register_snippet
+class TextualModel(models.Model):
+    """
+    Textual models (Drupal vocabulary: 'Models', vid = 3)
+    Used e.g. for main/secondary textual models of a book.
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Textual models"
+
+    def __str__(self):
+        return self.name
+
+
+# Language counts (vid = 2: 'Language counts')
+@register_snippet
+class LanguageCount(models.Model):
+    """
+    Language count categories (Drupal vocabulary: 'Language counts', vid = 2)
+    E.g. 'monolingual', 'bilingual', 'multilingual'.
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Language counts"
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class City(LegacyImportedModel):
     """
     Model for the cities
     """
     # id = models.AutoField(primary_key=True)
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, auto_created=True, unique=True)
     name = models.CharField(max_length=255)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Cities"
@@ -149,62 +385,66 @@ class Geolocation(models.Model):
 
 
 @register_snippet
-class Person(models.Model):
+class Gender(models.Model):
+    name = models.CharField(max_length=255)
+    legacy_tid = models.IntegerField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class Occupation(models.Model):
+    name = models.CharField(max_length=255)
+    legacy_tid = models.IntegerField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class Person(LegacyImportedModel):
     """
     Model for the person.
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
-    def __int__(self, name, pref_label):
-        self.name = name
-        self.pref_label = pref_label
-
-    # name = models.CharField(max_length=255, blank=True)
-    # pref_label = models.CharField(max_length=255, blank=True)
-    gender = models.CharField(max_length=255, blank=True)
-
-    # German name
+    pref_label = models.CharField(max_length=255, blank=True)
     german_name = models.CharField(max_length=255, blank=True)
-    german_name_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
-
-    # Hebrew name
     hebrew_name = models.CharField(max_length=255, blank=True)
-    hebrew_name_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
-    # Occupation
-    # TODO: link to the tid of the occupation, can have multiple occupations
-    occupation = models.IntegerField(null=True, blank=True)  # links to tid of the occupation
+    gender = models.ForeignKey(Gender, null=True, blank=True, on_delete=models.SET_NULL)
+    occupations = models.ManyToManyField(Occupation, blank=True)
 
-    # VIAF ID
-    VIAF_ID = models.CharField(max_length=255, blank=True)
-    VIAF_ID_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
+    viaf_id = models.CharField(max_length=255, blank=True)
 
-    # Same as
-    # same_as = models.CharField(max_length=255, blank=True)
-
-    # Date of birth
     date_of_birth = models.CharField(max_length=255, blank=True)
-
-    # Date of death
     date_of_death = models.CharField(max_length=255, blank=True)
 
-    # Place of birth
-    # TODO: link to the tid of the place of birth, links to city
-    place_of_birth = models.IntegerField(null=True, blank=True)
+    place_of_birth = models.ForeignKey("City", null=True, blank=True, on_delete=models.SET_NULL,
+                                       related_name="born_here")
+    place_of_death = models.ForeignKey("City", null=True, blank=True, on_delete=models.SET_NULL,
+                                       related_name="died_here")
 
-    # Place of death
-    place_of_death = models.IntegerField(null=True, blank=True)
-
-    # Pseudonym
     pseudonym = models.CharField(max_length=255, blank=True)
-    pseudonym_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
+
+    search_fields = [
+        index.SearchField('pref_label', partial_match=True),
+        index.SearchField('german_name', partial_match=True),
+        index.SearchField('hebrew_name', partial_match=True),
+    ]
+
+    class Meta:
+        verbose_name = "Person"
+        verbose_name_plural = "Persons"
+        ordering = ("pref_label",)
 
     def __str__(self):
-        return self.german_name
+        return self.pref_label or self.german_name or self.hebrew_name or str(self.pk)
 
 
 @register_snippet
-class Edition(models.Model):
+class Edition(LegacyImportedModel):
     """
     Model for the editions.
     """
@@ -215,14 +455,14 @@ class Edition(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     # Belongs to book
+    book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="editions")
 
     # Edition changes, nut the usual created and updated at
     changes = models.CharField(max_length=255, blank=True, null=True)
     changes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Edition city
-    # TODO: link to the city
-    city = models.IntegerField(blank=True, null=True)  # links to tid of the city
+    city = models.ForeignKey(City, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Edition references
     references = models.CharField(max_length=255, blank=True, null=True)
@@ -256,20 +496,23 @@ class TranslationType(models.Model):
 
 
 @register_snippet
-class Translation(models.Model):
+class Translation(LegacyImportedModel):
     """
     Model for the Translations
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+
     # Belongs to book
+    book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="translations")
+
+    # Translator
+    translator = models.ForeignKey(Person, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Language
-    # TODO: add multiple languages
-    language = models.CharField(max_length=255, blank=True, null=True)  # Can have multiple languages over delta
+    language = models.ForeignKey(Language, null=True, blank=True, on_delete=models.SET_NULL)
 
     # City
-    # TODO: link to the id of the city
-    city = models.IntegerField(blank=True, null=True)  # links to tid of the city
+    city = models.ForeignKey(City, null=True, blank=True, on_delete=models.SET_NULL)
 
     # References
     references = models.CharField(max_length=255, blank=True, null=True)
@@ -279,40 +522,33 @@ class Translation(models.Model):
     year = models.CharField(max_length=255, blank=True)
     year_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
-    # Translator
-    # TODO: link to the id of the person
-    translator = models.IntegerField(blank=True, null=True)  # links to tid of the person
-
 
 @register_snippet
-class Mention(models.Model):
+class Mention(LegacyImportedModel):
     """
     Model for Mentions
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    # Belongs to book
+    # Belongs to book, but not found in tables
 
     # Mentionee
-    # TODO: link to the id of the person
-    mentionee = models.IntegerField(null=True)  # links to tid of the person
+    mentionee = models.ForeignKey(Person, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Mentionee city
-    # TODO: link to the id of the city
-    mentionee_city = models.IntegerField(null=True)  # links to tid of the city
+    mentionee_city = models.ForeignKey(City, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Mentionee description
-    # TODO: link to the id of the description
-    mentionee_description = models.IntegerField  # links to tid of the description
+    mentionee_description = models.ForeignKey("MentionDescription", null=True, blank=True, on_delete=models.SET_NULL)
 
 
 @register_snippet
-class Preface(models.Model):
+class Preface(LegacyImportedModel):
     """
     Model for the Prefaces
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     # Belongs to book
-    # book = models.ForeignKey('Book', on_delete=models.CASCADE)
+    book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True, blank=True, related_name="prefaces")
 
     # Notes
     notes = models.CharField(max_length=255, blank=True, null=True)
@@ -327,7 +563,7 @@ class Preface(models.Model):
     title_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Writer
-    writer = models.IntegerField(blank=True, null=True)  # links to tid of the person
+    writer = models.ForeignKey(Person, null=True, blank=True, on_delete=models.SET_NULL)
     writer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     class Meta:
@@ -335,62 +571,135 @@ class Preface(models.Model):
 
 
 @register_snippet
-class Production(models.Model):
+class Production(LegacyImportedModel):
     """
     Model for the Production
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255, blank=True, null=True)
     # Belongs to book
+    book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="productions", null=True, blank=True)
 
     # Producer
-    # TODO: link to the id of the person
-    producer = models.IntegerField(blank=True, null=True)  # links to tid of the person
+    producer = models.ForeignKey(Person, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Role
-    # TODO: link to the id of the role, can have multiple roles
-    role = models.IntegerField(blank=True, null=True)  # links to tid of the role
+    role = models.ForeignKey("ProductionRole", null=True, blank=True, on_delete=models.SET_NULL)
 
 
 @register_snippet
-class Book(models.Model):
+class Topic(models.Model):
+    name = models.CharField(max_length=255)
+    legacy_tid = models.IntegerField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+class BookAuthor(models.Model):
+    book = models.ForeignKey("Book", on_delete=models.CASCADE)
+    person = models.ForeignKey("Person", on_delete=models.CASCADE)
+    role = models.CharField(max_length=50, choices=[
+        ("old_text_author", "Old text author"),
+        ("original_text_author", "Original text author"),
+        ("producer", "Producer"),
+    ])
+
+
+@register_snippet
+class MentionDescription(models.Model):
+    name = models.CharField(max_length=255)
+    legacy_tid = models.IntegerField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class ProductionRole(models.Model):
+    name = models.CharField(max_length=255)
+    legacy_tid = models.IntegerField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class FootnoteLocation(models.Model):
+    """
+    Location of footnotes (e.g. bottom of page, end of chapter, end of book).
+    Drupal: dedicated vocabulary for 'location_of_footnotes' (tid).
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Footnote locations"
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class OriginalType(models.Model):
+    """
+    Original type (Drupal vocabulary for 'original_type', e.g. original work,
+    translation, adaptation etc.; cf. migrate_map_haskalaoriginaltypetermsmigrate).
+    """
+    name = models.CharField(max_length=255, unique=True)
+    legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("legacy_tid"),
+    ]
+
+    class Meta:
+        verbose_name_plural = "Original types"
+
+    def __str__(self):
+        return self.name
+
+
+@register_snippet
+class Book(LegacyImportedModel):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255, blank=True)
+    name = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, default=1)
-
     bundle = models.CharField(max_length=255, choices=BUNDLE_CHOICES)
 
-    # entity_id = models.CharField(max_length=255, blank=True)
-    # revision_id = models.CharField(max_length=255, blank=True)
-
-    language = models.CharField(max_length=255, blank=True)
-    # field_book_target_id = models.CharField(max_length=255, blank=True)
+    # Authors
+    authors = models.ManyToManyField(Person, through="BookAuthor", related_name="books")
 
     # Alignment
-    alignment = models.CharField(max_length=255, blank=True)  # tid
+    alignment = models.ForeignKey(Alignment, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Availability
-    availability_notes = models.CharField(max_length=255, blank=True)
-    availability_notes_format = models.CharField(max_length=255, blank=True)
-    not_available = models.BooleanField()
+    availability_notes = models.TextField(blank=True, null=True)
+    availability_notes_format = models.TextField(blank=True, null=True)
+    not_available = models.BooleanField(default=False, null=True, blank=True)
 
     # Notes
-    structure_notes = models.CharField(max_length=255, blank=True)
+    structure_notes = models.TextField(blank=True, null=True)
     structure_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Studies
-    studies = models.CharField(max_length=255, blank=True)
+    studies = models.TextField(blank=True, null=True)
     studies_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Type general
-    type_general_notes = models.CharField(max_length=255, blank=True)
+    type_general_notes = models.TextField(blank=True, null=True)
     type_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Bans
-    bans = models.CharField(max_length=255, blank=True)
+    bans = models.TextField(blank=True, null=True)
     bans_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Bar Ilan Library ID
@@ -399,10 +708,12 @@ class Book(models.Model):
 
     # Berlin Library ID
     berlin_library_id = models.CharField(max_length=255, blank=True)
-    bar_ilan_library_id_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
+    berlin_library_id_format = models.CharField(
+        max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True
+    )
 
     # Bibliographical citations
-    bibliographical_citations = models.CharField(max_length=255, blank=True)
+    bibliographical_citations = models.TextField(blank=True, null=True)
     bibliographical_citations_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # British Library ID
@@ -410,67 +721,67 @@ class Book(models.Model):
     british_library_id_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Catalog numbers
-    catalog_numbers_notes = models.CharField(max_length=255, blank=True)
+    catalog_numbers_notes = models.TextField(blank=True, null=True)
     catalog_numbers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Censorship
-    censorship = models.CharField(max_length=255, blank=True)
+    censorship = models.TextField(blank=True, null=True)
     censorship_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Contacts official agents
-    contacts_official_agents = models.CharField(max_length=255, blank=True)
+    contacts_official_agents = models.TextField(blank=True, null=True)
     contacts_official_agents_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Contacts other people
-    contacts_other_people = models.CharField(max_length=255, blank=True)
+    contacts_other_people = models.TextField(blank=True, null=True)
     contacts_other_people_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, blank=True, null=True)
 
     # Contemporary disputes
-    contemporary_disputes = models.CharField(max_length=255, blank=True)
+    contemporary_disputes = models.TextField(blank=True, null=True)
     contemporary_disputes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                     null=True)
 
     # Contemporary references
-    contemporary_references = models.CharField(max_length=255, blank=True)
+    contemporary_references = models.TextField(blank=True, null=True)
     contemporary_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                       blank=True, null=True)
 
     # Contents table notes
-    contents_table_notes = models.CharField(max_length=255, blank=True)
+    contents_table_notes = models.TextField(blank=True, null=True)
     contents_table_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                    null=True)
 
     # Contradict new edition
-    contradict_new_edition = models.IntegerField(default=1)
+    contradict_new_edition = models.IntegerField(default=1, null=True, blank=True)
 
     # Contradict original
-    contradict_original = models.IntegerField(default=1)
+    contradict_original = models.IntegerField(default=1, null=True, blank=True)
 
     # Copy of book used
-    copy_of_book_used = models.CharField(max_length=255, blank=True)
+    copy_of_book_used = models.TextField(blank=True, null=True)
     copy_of_book_used_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                 null=True)
 
     # Dedications
-    dedications = models.CharField(max_length=255, blank=True)
+    dedications = models.TextField(blank=True, null=True)
 
     # Dedications notes
-    dedications_notes = models.CharField(max_length=255, blank=True)
+    dedications_notes = models.TextField(blank=True, null=True)
     dedications_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                 null=True)
 
     # Diagrams book pages
-    diagrams_book_pages = models.CharField(max_length=255, blank=True)
+    diagrams_book_pages = models.TextField(blank=True, null=True)
     diagrams_book_pages_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                   null=True)
 
     # Diagrams notes
-    diagrams_notes = models.CharField(max_length=255, blank=True)
+    diagrams_notes = models.TextField(blank=True, null=True)
     diagrams_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                              null=True)
 
     # Editions notes
-    editions_notes = models.CharField(max_length=255, blank=True)
+    editions_notes = models.TextField(blank=True, null=True)
     editions_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                              null=True)
 
@@ -478,7 +789,7 @@ class Book(models.Model):
     epilogue = models.IntegerField(default=0, blank=True, null=True)
 
     # Epilogue notes
-    epilogue_notes = models.CharField(max_length=255, blank=True)
+    epilogue_notes = models.TextField(blank=True, null=True)
     epilogue_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                              null=True)
 
@@ -492,15 +803,15 @@ class Book(models.Model):
     expanded_in_translation = models.IntegerField(default=1, blank=True, null=True)
 
     # Fonts
-    # TODO: link to tid of the fonts
-    fonts = models.IntegerField(blank=True, null=True)
+    fonts = models.ManyToManyField(Font, blank=True)
 
     # Format of publication date
-    # TODO: link to tid of the format of publication date
-    format_of_publication_date = models.IntegerField(blank=True, null=True)
+    format_of_publication_date = models.ForeignKey(
+        DateFormat, null=True, blank=True, on_delete=models.SET_NULL
+    )
 
     # Founders notes
-    founders_notes = models.CharField(max_length=255, blank=True)
+    founders_notes = models.TextField(blank=True, null=True)
     founders_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                              null=True)
 
@@ -510,7 +821,7 @@ class Book(models.Model):
                                                    null=True)
 
     # Full title
-    full_title = models.CharField(max_length=255, blank=True)
+    full_title = models.TextField(blank=True, null=True)
     full_title_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Founders
@@ -547,28 +858,28 @@ class Book(models.Model):
     illustrations_diagrams = models.IntegerField(default=0, blank=True, null=True)
 
     # Jewish sources quotes
-    jewish_sources_quotes = models.CharField(max_length=255, blank=True)
+    jewish_sources_quotes = models.TextField(blank=True, null=True)
     jewish_sources_quotes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                     null=True)
 
     # Language
-    # TODO: add multiple languages
-    language = models.IntegerField(blank=True, null=True)  # Can have multiple languages over delta
+    languages = models.ManyToManyField(Language, blank=True, related_name="books")
 
     # Languages of footnotes
-    # TODO: add multiple languages
-    languages_of_footnotes = models.IntegerField(blank=True, null=True)  # Can have multiple languages over delta
+    footnote_languages = models.ManyToManyField(Language, blank=True, related_name="footnote_books")
 
-    # Languages number
-    languages_number = models.IntegerField(blank=True, null=True)  # Can have multiple languages over delta
+    # Languages numbers (mono-, bi-, multi-)
+    languages_number = models.ForeignKey(
+        LanguageCount, null=True, blank=True, on_delete=models.SET_NULL
+    )
 
     # Last known edition
-    last_known_edition = models.CharField(max_length=255, blank=True)
+    last_known_edition = models.TextField(blank=True, null=True)
     last_known_edition_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                  null=True)
 
     # Later references
-    later_references = models.CharField(max_length=255, blank=True)
+    later_references = models.TextField(blank=True, null=True)
     later_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                null=True)
 
@@ -578,68 +889,66 @@ class Book(models.Model):
                                                null=True)
 
     # Location of footnotes
-    # TODO: link to the tid
-    location_of_footnotes = models.IntegerField(blank=True, null=True)  # links to tid
+    location_of_footnotes = models.ForeignKey(FootnoteLocation, null=True, blank=True, on_delete=models.SET_NULL,
+                                              related_name="books")
 
     # Main textual models
-    # TODO: link to the tid
-    main_textual_models = models.IntegerField(blank=True, null=True)  # links to tid
+    main_textual_models = models.ManyToManyField(TextualModel, blank=True, related_name="books_as_main_model")
 
     # Mention general notes
-    mention_general_notes = models.CharField(max_length=255, blank=True)
+    mention_general_notes = models.TextField(blank=True, null=True)
     mention_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                     null=True)
 
     # Mentions in reviews
-    mentions_in_reviews = models.CharField(max_length=255, blank=True)
+    mentions_in_reviews = models.TextField(blank=True, null=True)
     mentions_in_reviews_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                   null=True)
 
     # Motto
-    motto = models.CharField(max_length=255, blank=True)
+    motto = models.TextField(blank=True, null=True)
     motto_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Name in book
-    name_in_book = models.CharField(max_length=255, blank=True)
+    name_in_book = models.TextField(blank=True, null=True)
     name_in_book_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                            null=True)
 
     # Name of series
-    # TODO: link to the tid
-    name_of_series = models.IntegerField(blank=True, null=True)  # links to tid
+    series = models.ForeignKey(Series, null=True, blank=True, on_delete=models.SET_NULL, related_name="books")
 
     # New edition general notes
-    new_edition_general_notes = models.CharField(max_length=255, blank=True)
+    new_edition_general_notes = models.TextField(blank=True, null=True)
     new_edition_general_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # New edition type else note
-    new_edition_type_else_note = models.CharField(max_length=255, blank=True)
+    new_edition_type_else_note = models.TextField(blank=True, null=True)
     new_edition_type_else_note_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # New edition type else ref
-    new_edition_type_else_ref = models.CharField(max_length=255, blank=True)
+    new_edition_type_else_ref = models.TextField(blank=True, null=True)
     new_edition_type_else_ref_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # New edition type elsewhere
-    new_edition_type_elsewhere = models.CharField(max_length=255, blank=True)
+    new_edition_type_elsewhere = models.TextField(blank=True, null=True)
     new_edition_type_elsewhere_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # New edition type in text
-    new_edition_type_in_text = models.CharField(max_length=255, blank=True)
+    new_edition_type_in_text = models.TextField(blank=True, null=True)
     new_edition_type_in_text_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                        blank=True, null=True)
 
     # New edition type notes
-    new_edition_type_notes = models.CharField(max_length=255, blank=True)
+    new_edition_type_notes = models.TextField(blank=True, null=True)
     new_edition_type_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                      null=True)
 
     # New edition type reference
-    new_edition_type_reference = models.CharField(max_length=255, blank=True)
+    new_edition_type_reference = models.TextField(blank=True, null=True)
     new_edition_type_reference_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
@@ -649,66 +958,65 @@ class Book(models.Model):
                                                   null=True)
 
     # Non jewish sources quotes
-    non_jewish_sources_quotes = models.CharField(max_length=255, blank=True)
+    non_jewish_sources_quotes = models.TextField(blank=True, null=True)
     non_jewish_sources_quotes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # Occasional words languages
-    # TODO: link to the tid
-    occasional_words_languages = models.IntegerField(blank=True, null=True)
+    occasional_words_languages = models.ManyToManyField(
+        Language,
+        blank=True,
+        related_name="books_with_occasional_words",
+    )
 
     # Old author addition names
-    old_author_addition_names = models.CharField(max_length=255, blank=True)
+    old_author_addition_names = models.TextField(blank=True, null=True)
     old_author_addition_names_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # Old author names other sor
-    # Was empty
-    old_author_names_other_sor = models.CharField(max_length=255, blank=True)
+    old_author_names_other_sor = models.TextField(blank=True, null=True)
     old_author_names_other_sor_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Old name in book
-    old_name_in_book = models.CharField(max_length=255, blank=True)
+    old_name_in_book = models.TextField(blank=True, null=True)
     old_name_in_book_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                null=True)
 
     # Old text
-    old_text = models.CharField(max_length=255, blank=True)
+    old_text = models.TextField(blank=True, null=True)
     old_text_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
-    # Old text author
-    # TODO: link to the tid of author
-    old_text_author = models.IntegerField(blank=True, null=True)
-
     # Old text author in book
-    old_text_author_in_book = models.CharField(max_length=255, blank=True)
+    old_text_author_in_book = models.TextField(blank=True, null=True)
     old_text_author_in_book_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                       blank=True, null=True)
 
     # Original author
-    original_author = models.CharField(max_length=255, blank=True)
+    original_author = models.TextField(blank=True, null=True)
     original_author_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                               null=True)
 
     # Original author else refer
-    original_author_else_refer = models.CharField(max_length=255, blank=True)
+    original_author_else_refer = models.TextField(blank=True, null=True)
     original_author_else_refer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Original author elsewhere
-    original_author_elsewhere = models.CharField(max_length=255, blank=True)
+    original_author_elsewhere = models.TextField(blank=True, null=True)
     original_author_elsewhere_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # Original author other name
-    original_author_other_name = models.CharField(max_length=255, blank=True)
+    original_author_other_name = models.TextField(blank=True, null=True)
     original_author_other_name_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Original language
-    # TODO: link to the tid of the original language
-    original_language = models.IntegerField(blank=True, null=True)
+    original_language = models.ForeignKey(
+        Language, null=True, blank=True, on_delete=models.SET_NULL, related_name="original_language_books"
+    )
 
     # Original publication year
     original_publication_year = models.CharField(max_length=255, blank=True)
@@ -716,54 +1024,51 @@ class Book(models.Model):
                                                         blank=True, null=True)
 
     # Original Publisher
-    # TODO: link to the tid of the original publisher
-    original_publisher = models.IntegerField(blank=True, null=True)
+    original_publisher = models.ForeignKey(
+        Publisher, null=True, blank=True, on_delete=models.SET_NULL, related_name="original_publications"
+    )
 
     # Original sources mention
-    original_sources_mention = models.CharField(max_length=255, blank=True)
+    original_sources_mention = models.TextField(blank=True, null=True)
     original_sources_mention_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                        blank=True, null=True)
 
-    # Original text author
-    # TODO: link to the tid of the original text author
-    original_text_author = models.IntegerField(blank=True, null=True)
-
     # Original text name
-    original_text_name = models.CharField(max_length=255, blank=True)
+    original_text_name = models.TextField(blank=True, null=True)
     original_text_name_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                  null=True)
 
     # Original title
-    original_title = models.CharField(max_length=255, blank=True)
+    original_title = models.TextField(blank=True, null=True)
     original_title_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                              null=True)
 
     # Original title else refer
-    original_title_else_refer = models.CharField(max_length=255, blank=True)
+    original_title_else_refer = models.TextField(blank=True, null=True)
     original_title_else_refer_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # Original title elsewhere
-    original_title_elsewhere = models.CharField(max_length=255, blank=True)
+    original_title_elsewhere = models.TextField(blank=True, null=True)
     original_title_elsewhere_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                        blank=True, null=True)
 
     # Original type
-    # TODO: link to the tid of the original type
-    original_type = models.IntegerField(blank=True, null=True)
+    original_type = models.ForeignKey(OriginalType, null=True, blank=True, on_delete=models.SET_NULL,
+                                      related_name="books")
 
     # Other books names
-    other_books_names = models.CharField(max_length=255, blank=True)
+    other_books_names = models.TextField(blank=True, null=True)
     other_books_names_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                 null=True)
 
     # Other libraries
-    other_libraries = models.CharField(max_length=255, blank=True)
+    other_libraries = models.TextField(blank=True, null=True)
     other_libraries_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                               null=True)
 
     # Other volumes
-    other_volumes = models.CharField(max_length=255, blank=True)
+    other_volumes = models.TextField(blank=True, null=True)
     other_volumes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                             null=True)
 
@@ -773,33 +1078,28 @@ class Book(models.Model):
                                            null=True)
 
     # Partial publication
-    partial_publication = models.CharField
+    partial_publication = models.TextField(blank=True, null=True)
     partial_publication_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                   null=True)
 
     # Person name appear
-    person_name_appear = models.IntegerField(blank=True, null=True)  # does not link to a person
+    person_name_appear = models.IntegerField(blank=True, null=True)
 
     # Personal address
-    personal_address = models.IntegerField(blank=True, null=True)
+    personal_address = models.TextField(blank=True, null=True)
 
     # Personal address notes
-    personal_address_notes = models.CharField(max_length=255, blank=True)
+    personal_address_notes = models.TextField(blank=True, null=True)
     personal_address_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                      null=True)
 
     # Planned volumes
-    planned_volumes = models.CharField(max_length=255, blank=True)
+    planned_volumes = models.TextField(blank=True, null=True)
     planned_volumes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                               null=True)
 
     # Preface
     preface = models.IntegerField(blank=True, null=True)  # Boolean? (Preface Yes/No)
-
-    # Structure preface notes
-    structure_preface_notes = models.CharField(max_length=255, blank=True)
-    structure_preface_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
-                                                      blank=True, null=True)
 
     # Presented as original
     presented_as_original = models.IntegerField(blank=True, null=True)
@@ -811,62 +1111,62 @@ class Book(models.Model):
     presented_new_edition = models.IntegerField(blank=True, null=True)
 
     # Presented new edition note
-    presented_new_edition_note = models.CharField(max_length=255, blank=True)
+    presented_new_edition_note = models.TextField(blank=True, null=True)
     presented_new_edition_note_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Presented new edition refe
-    presented_new_edition_refe = models.CharField(max_length=255, blank=True)
+    presented_new_edition_refe = models.TextField(blank=True, null=True)
     presented_new_edition_refe_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Presented original referen
-    presented_original_referen = models.CharField(max_length=255, blank=True)
+    presented_original_referen = models.TextField(blank=True, null=True)
     presented_original_referen_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Presented as translatio notes
-    presented_as_translatio_notes = models.CharField(max_length=255, blank=True)
+    presented_as_translatio_notes = models.TextField(blank=True, null=True)
     presented_as_translatio_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                             blank=True, null=True)
 
     # Presented as translation refe
-    presented_as_translation_refe = models.CharField(max_length=255, blank=True)
+    presented_as_translation_refe = models.TextField(blank=True, null=True)
     presented_as_translation_refe_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                             blank=True, null=True)
 
     # Preservation references
-    preservation_references = models.CharField(max_length=255, blank=True)
+    preservation_references = models.TextField(blank=True, null=True)
     preservation_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                       blank=True, null=True)
 
     # Price (Char)
-    price = models.CharField(max_length=255, blank=True)
+    price = models.TextField(blank=True, null=True)
     price_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Printed originally
     printed_originally = models.IntegerField(blank=True, null=True)
 
-    # Printers (Int)
-    printers = models.IntegerField(blank=True, null=True)
+    # Printers
+    printers = models.TextField(blank=True, null=True)
 
     # Printers notes
-    printers_notes = models.CharField(max_length=255, blank=True)
+    printers_notes = models.TextField(blank=True, null=True)
     printers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                              null=True)
 
     # Printing press notes
-    printing_press_notes = models.CharField(max_length=255, blank=True)
+    printing_press_notes = models.TextField(blank=True, null=True)
     printing_press_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                    null=True)
 
     # Printing press references
-    printing_press_references = models.CharField(max_length=255, blank=True)
+    printing_press_references = models.TextField(blank=True, null=True)
     printing_press_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # Production evidence
-    production_evidence = models.CharField(max_length=255, blank=True)
+    production_evidence = models.TextField(blank=True, null=True)
     production_evidence_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                   null=True)
 
@@ -874,17 +1174,19 @@ class Book(models.Model):
     proofreaders = models.IntegerField(blank=True, null=True)
 
     # Proofreaders notes
-    proofreaders_notes = models.CharField(max_length=255, blank=True)
+    proofreaders_notes = models.TextField(blank=True, null=True)
     proofreaders_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                  null=True)
 
     # Publication place
-    # TODO: link to the tid of the publication place
-    publication_place = models.IntegerField(blank=True, null=True)
+    publication_place = models.ForeignKey(
+        City, null=True, blank=True, on_delete=models.SET_NULL, related_name="publication_place_books"
+    )
 
     # Publication place other
-    # TODO: link to the tid of the publication place
-    publication_place_other = models.IntegerField(blank=True, null=True)
+    publication_place_other = models.ForeignKey(
+        City, null=True, blank=True, on_delete=models.SET_NULL, related_name="other_publication_place_books"
+    )
 
     # Year in book
     year_in_book = models.CharField(max_length=255, blank=True)
@@ -895,11 +1197,12 @@ class Book(models.Model):
     year_in_other = models.CharField(max_length=255, blank=True)
 
     # Publisher name
-    # TODO: link to the tid of the publisher
-    publisher_name = models.IntegerField(blank=True, null=True)
+    publisher = models.ForeignKey(
+        Publisher, null=True, blank=True, on_delete=models.SET_NULL, related_name="publications"
+    )
 
     # Rabbinical approbation notes
-    rabbinical_approbation_notes = models.CharField(max_length=255, blank=True)
+    rabbinical_approbation_notes = models.TextField(blank=True, null=True)
     rabbinical_approbation_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                            blank=True, null=True)
 
@@ -910,45 +1213,46 @@ class Book(models.Model):
     recommendations = models.IntegerField(blank=True, null=True)
 
     # Recommendations notes
-    recommendations_notes = models.CharField(max_length=255, blank=True)
+    recommendations_notes = models.TextField(blank=True, null=True)
     recommendations_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                     null=True)
 
     # References for editions
-    references_for_editions = models.CharField(max_length=255, blank=True)
+    references_for_editions = models.TextField(blank=True, null=True)
     references_for_editions_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                       blank=True, null=True)
 
     # References notes
-    references_notes = models.CharField(max_length=255, blank=True)
+    references_notes = models.TextField(blank=True, null=True)
     references_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                null=True)
 
     # Secondary sources
-    secondary_sources = models.CharField(max_length=255, blank=True)
+    secondary_sources = models.TextField(blank=True, null=True)
     secondary_sources_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                 null=True)
 
     # Secondary textual models
-    # TODO: link to the tid of the secondary textual models
-    secondary_textual_models = models.IntegerField(blank=True, null=True)
+    secondary_textual_models = models.ManyToManyField(
+        TextualModel, blank=True, related_name="books_as_secondary_model"
+    )
 
     # Sellers
     sellers = models.IntegerField(blank=True, null=True)
 
     # Sellers notes
-    sellers_notes = models.CharField(max_length=255, blank=True)
+    sellers_notes = models.TextField(blank=True, null=True)
     sellers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                             null=True)
 
     # Series part
-    series_part = models.IntegerField(blank=True, null=True)
+    series_part = models.TextField(blank=True, null=True)
 
-    # Sources exist  (Int)
-    sources_exist = models.IntegerField(blank=True, null=True)
+    # Sources exist
+    sources_exist = models.TextField(blank=True, null=True)
 
     # Sources list
-    sources_list = models.CharField(max_length=255, blank=True)
+    sources_list = models.TextField(blank=True, null=True)
     sources_list_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                            null=True)
 
@@ -956,38 +1260,38 @@ class Book(models.Model):
     sources_not_mentioned = models.IntegerField(blank=True, null=True)
 
     # Sources not mentioned list
-    sources_not_mentioned_list = models.CharField(max_length=255, blank=True)
+    sources_not_mentioned_list = models.TextField(blank=True, null=True)
     sources_not_mentioned_list_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                          blank=True, null=True)
 
     # Sources not mentioned ref
-    sources_not_mentioned_ref = models.CharField(max_length=255, blank=True)
+    sources_not_mentioned_ref = models.TextField(blank=True, null=True)
     sources_not_mentioned_ref_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
     # Sources references
-    sources_references = models.CharField(max_length=255, blank=True)
+    sources_references = models.TextField(blank=True, null=True)
     sources_references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                  null=True)
 
     # Structure preface notes
-    structure_preface_notes = models.CharField(max_length=255, blank=True)
+    structure_preface_notes = models.TextField(blank=True, null=True)
     structure_preface_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                       blank=True, null=True)
 
     # Subscribers
-    subscribers = models.IntegerField(blank=True, null=True)
+    subscribers = models.TextField(blank=True, null=True)
 
     # Subscribers notes
-    subscribers_notes = models.CharField(max_length=255, blank=True)
+    subscribers_notes = models.TextField(blank=True, null=True)
     subscribers_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                 null=True)
 
-    # Subscription appeal (Int)
-    subscription_appeal = models.IntegerField(blank=True, null=True)
+    # Subscription appeal
+    subscription_appeal = models.TextField(blank=True, null=True)
 
     # Subscription appeal notes
-    subscription_appeal_notes = models.CharField(max_length=255, blank=True)
+    subscription_appeal_notes = models.TextField(blank=True, null=True)
     subscription_appeal_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
@@ -995,11 +1299,10 @@ class Book(models.Model):
     table_of_content = models.IntegerField(blank=True, null=True)
 
     # Target audience
-    # TODO: link to the tid of the target audience
-    target_audience = models.IntegerField(blank=True, null=True)
+    target_audience = models.ManyToManyField(TargetAudience, blank=True)
 
     # Target audience notes
-    target_audience_notes = models.CharField(max_length=255, blank=True)
+    target_audience_notes = models.TextField(blank=True, null=True)
     target_audience_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                     null=True)
 
@@ -1009,83 +1312,98 @@ class Book(models.Model):
                                                   null=True)
 
     # Textual model notes
-    textual_model_notes = models.CharField(max_length=255, blank=True)
+    textual_model_notes = models.TextField(blank=True, null=True)
     textual_model_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                   null=True)
 
     # Thanks (Int)
-    thanks = models.IntegerField(blank=True, null=True)
+    thanks = models.TextField(blank=True, null=True)
 
     # Thanks notes
-    thanks_notes = models.CharField(max_length=255, blank=True)
+    thanks_notes = models.TextField(blank=True, null=True)
     thanks_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                            null=True)
 
     # Title in Latin characters
-    title_in_latin_characters = models.CharField(max_length=255, blank=True)
+    title_in_latin_characters = models.TextField(blank=True, null=True)
     title_in_latin_characters_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                         blank=True, null=True)
 
+    # Translation type
+    translation_type = models.ForeignKey(TranslationType, null=True, blank=True, on_delete=models.SET_NULL)
+
     # Topic
-    # TODO: link to the tid of the topic
-    topic = models.IntegerField(blank=True, null=True)
+    topic = models.ForeignKey(Topic, null=True, blank=True, on_delete=models.SET_NULL)
 
     # Topics notes
-    topics_notes = models.CharField(max_length=255, blank=True)
+    topics_notes = models.TextField(blank=True, null=True)
     topics_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                            null=True)
 
     # Total number of editions
-    total_number_of_editions = models.CharField(max_length=255, blank=True)
+    total_number_of_editions = models.TextField(blank=True, null=True)
     total_number_of_editions_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                        blank=True, null=True)
 
     # Translation notes
-    translation_notes = models.CharField(max_length=255, blank=True)
+    translation_notes = models.TextField(blank=True, null=True)
     translation_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                                 null=True)
 
-    # Translation type
-    # links to translation type
-    translation_type = models.IntegerField(blank=True, null=True)
-
     # Typography
-    # TODO: link to the tid of the typography
-    typography = models.IntegerField(blank=True, null=True)
+    typography = models.ManyToManyField(Typography, blank=True)
 
     # Volumes notes
-    volumes_notes = models.CharField(max_length=255, blank=True)
+    volumes_notes = models.TextField(blank=True, null=True)
     volumes_notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
                                             null=True)
 
     # Volumes published number
-    volumes_published_number = models.CharField(max_length=255, blank=True)
+    volumes_published_number = models.TextField(blank=True, null=True)
     volumes_published_number_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL',
                                                        blank=True, null=True)
 
-    # Methods
+    # Original publication place
+    original_publication_place = models.ForeignKey(
+        City,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="original_publication_place_books",
+    )
+
+    # Year in other (format for publication_year_in_other)
+    year_in_other_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True,
+                                            null=True)
+
+    # Width
+    width = models.CharField(max_length=255, blank=True)
+    width_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
+
+    #  Titel & Attribute of Digital links
+    digital_book_title = models.TextField(blank=True, null=True)
+    digital_book_attributes = models.TextField(blank=True, null=True)
+
+    search_fields = [
+        index.SearchField("name", partial_match=True),
+        index.SearchField("authors", partial_match=True),
+    ]
+
+    class Meta:
+        verbose_name = "Book"
+        verbose_name_plural = "Books"
+        ordering = ["name"]  # default ordering in the snippet listing
+
     def __str__(self):
-        return self.name
+        return self.name or f"Book {self.pk}"
 
-    def get_revision(self):
-        # How do the revisions work?
-        # id -> revision_id
-        # revision contain the old data (can be skipped)
-        pass
+    def author_names(self):
+        """
+        Comma-separated list of authors for admin list views.
+        """
+        return ", ".join(str(a) for a in self.authors.all())
 
-    def load_myself(self):
-        pass
-
-    def fetch_from_rdf(self):
-        pass
-
-    def dump_to_rdf(self):
-        try:
-
-            return True
-        except Exception as e:
-            print(e)
-            return None
+    author_names.short_description = _("Authors")
 
 
 class HomePage(Page):
@@ -1097,8 +1415,6 @@ class HomePage(Page):
     # Database fields
     body = RichTextField(blank=True)
 
-    # TODO add the tag cloud dynamically
-
     # Search index configuration
     search_fields = Page.search_fields + [
         index.SearchField('title'),
@@ -1118,33 +1434,9 @@ class HomePage(Page):
     # Parent page / subpage type rules
     # parent_page_types = ['HomePage']
 
-
-class AboutPage(Page):
-    """
-    About page.
-    """
-
-    body = RichTextField(blank=True)
-
-    # Search index configuration
-    search_fields = Page.search_fields + [
-        index.SearchField('title'),
-        index.SearchField('body'),
-    ]
-
-    # Editor panels configuration
-
-    content_panels = Page.content_panels + [
-        FieldPanel('body'),
-    ]
-
-    promote_panels = [
-        MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    ]
-
-    # Parent page / subpage type rules
-    # parent_page_types = ['HomePage']
-    subpage_types = []
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class ContactFormField(AbstractFormField):
@@ -1158,8 +1450,8 @@ class ContactFormField(AbstractFormField):
 class ContactPage(AbstractEmailForm):
     """
     Page for the contact form.
+    The form fields are defined in the wagtail dashboard.
     """
-    # TODO: add the contact form
 
     body = RichTextField(blank=True)
     thank_you_text = RichTextField(blank=True)
@@ -1169,8 +1461,6 @@ class ContactPage(AbstractEmailForm):
         index.SearchField('title'),
         index.SearchField('body'),
     ]
-
-    # Editor panels configuration
 
     content_panels = AbstractEmailForm.content_panels + [
         FormSubmissionsPanel(),
@@ -1186,132 +1476,81 @@ class ContactPage(AbstractEmailForm):
         ], "Email"),
     ]
 
-    #promote_panels = [
-    #    MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    #]
+    template = "contact/contact_page.html"
+    landing_page_template = "contact/contact_page_landing.html"
 
-    # Parent page / subpage type rules
-    # parent_page_types = ['HomePage']
-    #subpage_types = []
+    def serve(self, request, *args, **kwargs):
+        """
+        Handle form display + submission with success/error messages.
+        """
+        if request.method == "POST":
+            form = self.get_form(request.POST, request.FILES)
 
+            if form.is_valid():
+                try:
+                    # Standard handling from AbstractEmailForm:
+                    # - send email
+                    # - save submission
+                    self.process_form(form)
+                except Exception:
+                    messages.error(
+                        request,
+                        "There was an error sending your message. "
+                        "Please try again later."
+                    )
+                    # Re-render form with error message
+                    context = self.get_context(request)
+                    context["form"] = form
+                    return TemplateResponse(
+                        request,
+                        self.get_template(request),
+                        context,
+                    )
 
-class ImprintPage(Page):
-    """
-    Page for the imprint.
-    """
+                # Success
+                messages.success(
+                    request,
+                    "Thank you, your message has been sent successfully."
+                )
 
-    body = RichTextField(blank=True)
+                # Render landing page (thank-you page)
+                context = self.get_landing_page_context(request, form=form)
+                return TemplateResponse(
+                    request,
+                    self.get_landing_page_template(request),
+                    context,
+                )
 
-    # Search index configuration
-    search_fields = Page.search_fields + [
-        index.SearchField('title'),
-        index.SearchField('body'),
-    ]
+            else:
+                # Form validation failed
+                messages.error(
+                    request,
+                    "Please correct the errors below."
+                )
+                context = self.get_context(request)
+                context["form"] = form
+                return TemplateResponse(
+                    request,
+                    self.get_template(request),
+                    context,
+                )
 
-    # Editor panels configuration
-
-    content_panels = Page.content_panels + [
-        FieldPanel('body'),
-    ]
-
-    promote_panels = [
-        MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    ]
-
-    # Parent page / subpage type rules
-    # parent_page_types = ['HomePage']
-    subpage_types = []
-
-
-class DocumentationsPage(Page):
-    """
-    Page for the documentations.
-    """
-
-    body = RichTextField(blank=True)
-
-    # Search index configuration
-    search_fields = Page.search_fields + [
-        index.SearchField('title'),
-        index.SearchField('body'),
-    ]
-
-    # Editor panels configuration
-
-    content_panels = Page.content_panels + [
-        FieldPanel('body'),
-    ]
-
-    promote_panels = [
-        MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    ]
-
-    # Parent page / subpage type rules
-    # parent_page_types = ['HomePage']
-    subpage_types = []
-
-
-class PrivacyPolicyPage(Page):
-    """
-    Page for the privacy policy.
-    """
-
-    body = RichTextField(blank=True)
-
-    # Search index configuration
-    search_fields = Page.search_fields + [
-        index.SearchField('title'),
-        index.SearchField('body'),
-    ]
-
-    # Editor panels configuration
-
-    content_panels = Page.content_panels + [
-        FieldPanel('body'),
-    ]
-
-    promote_panels = [
-        MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    ]
-
-    # Parent page / subpage type rules
-    # parent_page_types = ['HomePage']
-    subpage_types = []
-
-
-class TermsAndConditionsPage(Page):
-    """
-    Page for the terms and conditions.
-    """
-
-    body = RichTextField(blank=True)
-
-    # Search index configuration
-    search_fields = Page.search_fields + [
-        index.SearchField('title'),
-        index.SearchField('body'),
-    ]
-
-    # Editor panels configuration
-
-    content_panels = Page.content_panels + [
-        FieldPanel('body'),
-    ]
-
-    promote_panels = [
-        MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    ]
-
-    # Parent page / subpage type rules
-    # parent_page_types = ['HomePage']
-    subpage_types = []
+        # GET: show empty form
+        form = self.get_form()
+        context = self.get_context(request)
+        context["form"] = form
+        return TemplateResponse(
+            request,
+            self.get_template(request),
+            context,
+        )
 
 
 class BookDetailPage(Page):
     """
     Page for the detail of a book.
     """
-
+    book = models.ForeignKey(Book, on_delete=models.PROTECT, related_name="detail_pages")
     body = RichTextField(blank=True)
 
     # Search index configuration
@@ -1321,9 +1560,9 @@ class BookDetailPage(Page):
     ]
 
     # Editor panels configuration
-
     content_panels = Page.content_panels + [
         FieldPanel('body'),
+        FieldPanel('book'),
     ]
 
     promote_panels = [
@@ -1336,6 +1575,7 @@ class BookDetailPage(Page):
 
     template = "home/book_detail_page.html"
 
+    @method_decorator(cache_page(60 * 60))
     # Render method for the detail page
     def serve(self, request):
         # Get context and render the page with the book details
@@ -1343,16 +1583,13 @@ class BookDetailPage(Page):
         return self.render(request, context)
 
     def get_context(self, request):
-        print("BookDetailPage", request)
-        # Fetch the detail of a book from the model.
         context = super().get_context(request)
-        context['book'] = Book.objects.get(id=self.id)  # TODO: get the book by id from the url parameter
+        context['book'] = self.book
         return context
 
     def save(self, *args, **kwargs):
-        # Automatically generate a slug based on the book title
-        if not self.slug:
-            self.slug = slugify(self.book_title)
+        if not self.slug and self.book:
+            self.slug = slugify(self.book.name or self.book.full_title or self.book.pk)
         super().save(*args, **kwargs)
 
     def route(self, request, path_components):
@@ -1395,22 +1632,15 @@ class BooksPage(Page):
     # parent_page_types = ['HomePage']
     subpage_types = ['BookDetailPage']
 
-    # get all the books
-    books = Book.objects.all()
-    print(books)
-    print(sort_and_group_by_name(books))
-
-    context = {
-        'books': sort_and_group_by_name(books),
-    }
-
     def get_context(self, request):
         # Fetch a list of all the books from the model.
         context = super().get_context(request)
         context['books'] = Book.objects.all()
         return context
 
-
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class DigitalBooksPage(Page):
@@ -1444,22 +1674,27 @@ class DigitalBooksPage(Page):
         context = super().get_context(request)
 
         # Filter the books by the digital book URL
-        books_with_urls = Book.objects.filter(digital_book_url__isnull=False).exclude(digital_book_url='').filter(digital_book_url__regex=r'^https?://').all()
+        books_with_urls = Book.objects.filter(digital_book_url__isnull=False).exclude(digital_book_url='').filter(
+            digital_book_url__regex=r'^https?://').all()
 
-        context = {
+        context.update({
             'books': sort_and_group_by_name(books_with_urls),
-        }
+        })
 
         print("Context:", context)
         return context
+
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class DigitalBookDetailPage(Page):
     """
     Page for the detail of a digital book.
     """
-
     body = RichTextField(blank=True)
+    book = models.ForeignKey(Book, on_delete=models.PROTECT, related_name="digital_detail_pages")
 
     # Search index configuration
     search_fields = Page.search_fields + [
@@ -1471,6 +1706,7 @@ class DigitalBookDetailPage(Page):
 
     content_panels = Page.content_panels + [
         FieldPanel('body'),
+        FieldPanel('book'),
     ]
 
     promote_panels = [
@@ -1482,32 +1718,21 @@ class DigitalBookDetailPage(Page):
     subpage_types = []
 
     def get_context(self, request):
-        # Fetch the detail of a digital book from the model.
         context = super().get_context(request)
-        context['digital_book'] = Book.objects.get(id=self.id)
+        context['digital_book'] = self.book
         return context
+
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class PlacesPage(Page):
-    def group_names_by_first_letter(names):
-        grouped_names = defaultdict(list)
-
-        for name in names:
-            first_letter = name[0].upper()
-            grouped_names[first_letter].append(name)
-
-        return dict(grouped_names)
-
+    """
+    Page for the places overview.
+    """
     body = RichTextField(blank=True)
     nonce = secrets.token_hex(16)
-
-    # For testing
-    # Todo: Get the cities
-    # cities = City.objects.all()
-    # print(cities)
-    cities_list = ["Amsterdam", "Hamburg", "Berlin", "Frankfurt", "Munich", "Vienna", "Prague", "Budapest",
-                   "Bratislava"]
-    cities_array = group_names_by_first_letter(cities_list)
 
     content_panels = Page.content_panels + [
         FieldPanel('body'),
@@ -1515,14 +1740,23 @@ class PlacesPage(Page):
 
     alphabet = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     hebrew_alphabet = list('אבגדהוזחטיכלמנסעפצקרשת')
-    context = {
-        'alphabet': alphabet,
-        'hebrew_alphabet': hebrew_alphabet,
-        'nonce': nonce,
-        'cities': cities_array,
-    }
 
     template = "home/places_page.html"
+
+    def get_context(self, request):
+        context = super().get_context(request)
+        cities_array = group_names_by_first_letter(City.objects.all())
+        context.update({
+            'alphabet': self.alphabet,
+            'hebrew_alphabet': self.hebrew_alphabet,
+            'nonce': self.nonce,
+            'cities': cities_array,
+        })
+        return context
+
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class CitiesPage(Page):
@@ -1558,6 +1792,10 @@ class CitiesPage(Page):
         context['cities'] = City.objects.all()
         return context
 
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
+
 
 class CityDetailPage(Page):
     """
@@ -1565,6 +1803,7 @@ class CityDetailPage(Page):
     """
 
     body = RichTextField(blank=True)
+    city = models.ForeignKey(City, on_delete=models.PROTECT, related_name="detail_pages")
 
     # Search index configuration
     search_fields = Page.search_fields + [
@@ -1573,9 +1812,9 @@ class CityDetailPage(Page):
     ]
 
     # Editor panels configuration
-
     content_panels = Page.content_panels + [
         FieldPanel('body'),
+        FieldPanel('city'),
     ]
 
     promote_panels = [
@@ -1587,10 +1826,13 @@ class CityDetailPage(Page):
     subpage_types = []
 
     def get_context(self, request):
-        # Fetch the detail of a city from the model.
         context = super().get_context(request)
-        context['city'] = City.objects.get(id=self.id)
+        context['city'] = self.city
         return context
+
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class PersonsPage(Page):
@@ -1598,21 +1840,6 @@ class PersonsPage(Page):
     Page for the persons overview.
     """
     # add the people names to the page
-
-    # TODO: refactor this. The result should be a list of names from the function.
-    """
-    people = get_people_names(None)
-    # print("People: ", people)
-    people_names = []
-
-    if people is not None:
-        for result in people["results"]["bindings"]:
-            people_names.append(result["name"]["value"])
-    else:
-        people_names.append("No people found")
-    """
-    # print(people_names)
-
     body = RichTextField(blank=True)
 
     # Search index configuration
@@ -1622,7 +1849,6 @@ class PersonsPage(Page):
     ]
 
     # Editor panels configuration
-
     content_panels = Page.content_panels + [
         FieldPanel('body'),
     ]
@@ -1638,11 +1864,13 @@ class PersonsPage(Page):
     def get_context(self, request):
         # Fetch a list of all the persons from the model.
         context = super().get_context(request)
-        context['persons'] = Person.objects.all()
-
-        # context['people'] = get_people_names(None) # see above
+        context['persons'] = Person.objects.all().order_by('pref_label', 'german_name', 'hebrew_name')
 
         return context
+
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
 class PersonDetailPage(Page):
@@ -1652,6 +1880,7 @@ class PersonDetailPage(Page):
     # Database fields
 
     body = RichTextField(blank=True)
+    person = models.ForeignKey(Person, on_delete=models.PROTECT, related_name="detail_pages")
 
     # Search index configuration
     search_fields = Page.search_fields + [
@@ -1662,6 +1891,7 @@ class PersonDetailPage(Page):
     # Editor panels configuration
     content_panels = Page.content_panels + [
         FieldPanel('body'),
+        FieldPanel('person'),
     ]
 
     promote_panels = [
@@ -1673,39 +1903,44 @@ class PersonDetailPage(Page):
     subpage_types = []
 
     def get_context(self, request):
-        # Fetch the detail of a person from the model.
         context = super().get_context(request)
-        context['person'] = Person.objects.get(id=self.id)
+        context['person'] = self.person
         return context
 
     def __str__(self):
         return self.title
 
-
-# TODO: remove when not needed anymore
-# @register_snippet
-class MyCustomModel(models.Model):
-    title = models.CharField(max_length=255, blank=True)
-    description = models.TextField()
-
-    panels = [
-        FieldPanel('description'),
-    ]
-
-    def __str__(self):
-        return self.title
+    @method_decorator(cache_page(60 * 60))  # 1 hour
+    def serve(self, request, *args, **kwargs):
+        return super().serve(request, *args, **kwargs)
 
 
-class MyCustomPage(Page):
-    # You can add any fields that relate to the page itself here
-    introduction = models.CharField(max_length=255, blank=True)
+class StaticPage(Page):
+    body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
-        FieldPanel('introduction'),
+        FieldPanel("body"),
     ]
 
-    def get_context(self, request):
-        # Update context to include snippet data
-        context = super().get_context(request)
-        context['my_custom_data'] = MyCustomModel.objects.all()
-        return context
+
+from django.utils.text import slugify
+
+def generate_unique_slug(instance, value, slug_field_name="slug"):
+    """
+    Generates a unique slug for instance, based on value (e.g. name).
+    """
+    ModelClass = instance.__class__
+
+    base = slugify(value or "")
+    if not base:
+        # Fallback if name is empty or only special characters
+        base = f"{ModelClass.__name__.lower()}-{instance.pk or ''}".strip("-")
+
+    slug = base
+    i = 2
+    # Check for collisions and append -2, -3, ... if necessary
+    while ModelClass.objects.filter(**{slug_field_name: slug}).exclude(pk=instance.pk).exists():
+        slug = f"{base}-{i}"
+        i += 1
+
+    return slug
