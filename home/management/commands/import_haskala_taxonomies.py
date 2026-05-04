@@ -22,7 +22,6 @@ from home.models import (
     FootnoteLocation,
     OriginalType,
     MentionDescription,
-    ProductionRole,
 )
 
 
@@ -202,7 +201,9 @@ class Command(BaseCommand):
             (FootnoteLocation, "taxonomy_footnote_locations.csv"),
             (OriginalType, "taxonomy_original_type.csv"),
             (MentionDescription, "taxonomy_description_of_mentionee.csv"),
-            (ProductionRole, "taxonomy_production_role.csv"),
+            # ProductionRole has no dedicated Drupal vocabulary; the
+            # role TIDs live in the Occupation vocabulary (vid=6) and are
+            # seeded on demand by the relations importer.
         ]
 
         for Model, filename in vocab_files:
