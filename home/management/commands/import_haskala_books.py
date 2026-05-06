@@ -13,7 +13,6 @@ from home.models import (
     Language,
     LanguageCount,
     FootnoteLocation,
-    TextualModel,
     TargetAudience,
     Typography,
     City,
@@ -152,6 +151,8 @@ class Command(BaseCommand):
             "publication_year_in_book_format": "year_in_book_format",
             "publication_year_in_other": "year_in_other",
             "publication_year_in_other_format": "year_in_other_format",
+            "textual_models_notes": "textual_model_notes",
+            "textual_models_notes_format": "textual_model_notes_format",
         }
 
         # all relevant *_tid columns we handle specially
@@ -170,13 +171,15 @@ class Command(BaseCommand):
             "topic_tid": (Topic, "topic"),
         }
 
+        # main_textual_models and secondary_textual_models are multi-valued in
+        # Drupal but the per-book CSV only carries the first delta. They are
+        # imported authoritatively from the dedicated relation tables by
+        # import_haskala_relations; do not touch them here.
         m2m_tid_fields = {
             "fonts_tid": (Font, "fonts"),
             "language_tid": (Language, "languages"),
             "language_of_footnotes_tid": (Language, "footnote_languages"),
             "occasional_words_languages_tid": (Language, "occasional_words_languages"),
-            "main_textual_models_tid": (TextualModel, "main_textual_models"),
-            "secondary_textual_models_tid": (TextualModel, "secondary_textual_models"),
             "target_audience_tid": (TargetAudience, "target_audience"),
             "typography_tid": (Typography, "typography"),
         }
