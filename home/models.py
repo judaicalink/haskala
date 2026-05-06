@@ -609,6 +609,14 @@ class BookAuthor(models.Model):
         ("producer", "Producer"),
     ])
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["book", "person", "role"],
+                name="unique_book_author_role",
+            ),
+        ]
+
 
 @register_snippet
 class MentionDescription(models.Model):
