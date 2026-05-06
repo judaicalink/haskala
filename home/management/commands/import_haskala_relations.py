@@ -14,6 +14,13 @@ Multi-value Book taxonomy links (one row per assignment):
     research/export/main_textual_models.csv
     research/export/secondary_textual_models.csv
 
+Book.authors (BookAuthor through table) is materialized from three sources:
+    - books_for_django.csv columns old_text_author_target_id and
+      original_text_author_target_id (one Person per role per book)
+    - the producer FK on already-imported Production rows
+The role values match BookAuthor.role choices: old_text_author,
+original_text_author, producer.
+
 For Mention, Preface and Production the link to the parent Book is not in the
 per-node CSV but in Drupal's multi-value table:
     Database/field_data_field_book.csv
@@ -33,6 +40,7 @@ from django.utils import timezone
 
 from home.models import (
     Book,
+    BookAuthor,
     City,
     Edition,
     Language,
@@ -490,6 +498,79 @@ class Command(BaseCommand):
                 msg += f" Unknown TIDs skipped: {sorted(unknown_tids)}."
             self.stdout.write(self.style.SUCCESS(msg))
 
+    def import_book_authors(self, export_dir: Path):
+        """
+        Materialize Book.authors (through BookAuthor) from:
+        - books_for_django.csv columns old_text_author_target_id and
+          original_text_author_target_id;
+        - existing Production rows (book + producer) for the producer role.
+
+        BookAuthor has no DB-level uniqueness, so we wipe and rebuild to keep
+        the import idempotent.
+        """
+        books = self._book_by_nid()
+        persons = self._person_by_nid()
+
+        seen: set[tuple] = set()
+        rows: list[BookAuthor] = []
+        unknown_persons = 0
+
+        # 1) Text-author roles from the books CSV
+        path = export_dir / "books_for_django.csv"
+        if path.exists():
+            csv_role_columns = [
+                ("old_text_author_target_id", "old_text_author"),
+                ("original_text_author_target_id", "original_text_author"),
+            ]
+            with path.open(newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    book = books.get(parse_int(row.get("nid")))
+                    if book is None:
+                        continue
+                    for col, role in csv_role_columns:
+                        pid = parse_int(row.get(col))
+                        if pid is None:
+                            continue
+                        person = persons.get(pid)
+                        if person is None:
+                            unknown_persons += 1
+                            continue
+                        key = (book.uuid, person.uuid, role)
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        rows.append(BookAuthor(
+                            book_id=book.uuid, person_id=person.uuid, role=role,
+                        ))
+        else:
+            self.stdout.write(self.style.WARNING(
+                f"Skipping text-author roles: {path} not found."
+            ))
+
+        # 2) Producer role from already-imported Production rows
+        producer_pairs = Production.objects.filter(
+            book__isnull=False, producer__isnull=False,
+        ).values_list("book_id", "producer_id")
+        for book_id, person_id in producer_pairs:
+            key = (book_id, person_id, "producer")
+            if key in seen:
+                continue
+            seen.add(key)
+            rows.append(BookAuthor(
+                book_id=book_id, person_id=person_id, role="producer",
+            ))
+
+        BookAuthor.objects.all().delete()
+        BookAuthor.objects.bulk_create(rows)
+
+        per_role = {}
+        for r in rows:
+            per_role[r.role] = per_role.get(r.role, 0) + 1
+        self.stdout.write(self.style.SUCCESS(
+            f"BookAuthor: {len(rows)} rows ({per_role}); "
+            f"{unknown_persons} CSV target_ids without matching Person."
+        ))
+
     # -- entry point ---------------------------------------------------------
 
     @transaction.atomic
@@ -513,5 +594,6 @@ class Command(BaseCommand):
         self.import_prefaces(export_dir, book_backlink)
         self.import_productions(export_dir, book_backlink)
         self.import_textual_model_links(export_dir)
+        self.import_book_authors(export_dir)
 
         self.stdout.write(self.style.SUCCESS("Relation import finished."))
