@@ -674,23 +674,6 @@ def series_detail_view(request, series_slug):
     }
     return render(request, "series/series_detail_page.html", context)
 
-all_fields = [f.name for f in Book._meta.get_fields() if f.concrete]
-used_in_template = {
-    "name", "full_title", "title_in_latin_characters",
-    "authors", "publication_place", "gregorian_year", "year_in_book",
-    "publisher", "original_publisher", "languages", "pages_number",
-    "digital_book_url", "topic", "series",
-    "location_of_footnotes", "table_of_content",
-    "target_audience", "structure_notes", "type_general_notes",
-    "studies", "bibliographical_citations",
-}
-
-missing = sorted(
-    f for f in all_fields
-    if not f.endswith("_format") and f not in used_in_template
-)
-print(f"Missing: {missing}")
-
 
 @api_view(["GET"])
 def search_api_view(request):
