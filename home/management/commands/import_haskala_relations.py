@@ -10,6 +10,10 @@ Source files (one CSV per node type):
     research/export/prefaces_for_django.csv
     research/export/productions_for_django.csv
 
+Multi-value Book taxonomy links (one row per assignment):
+    research/export/main_textual_models.csv
+    research/export/secondary_textual_models.csv
+
 For Mention, Preface and Production the link to the parent Book is not in the
 per-node CSV but in Drupal's multi-value table:
     Database/field_data_field_book.csv
@@ -39,6 +43,7 @@ from home.models import (
     Preface,
     Production,
     ProductionRole,
+    TextualModel,
     Translation,
 )
 
@@ -427,6 +432,64 @@ class Command(BaseCommand):
         )
         return role
 
+    def import_textual_model_links(self, export_dir: Path):
+        """
+        Populate the Book.main_textual_models and Book.secondary_textual_models
+        ManyToMany relations from Drupal's multi-value tables. The per-book CSV
+        only carries a single TID per field (the first delta), so we treat the
+        relation tables as authoritative and overwrite the M2M sets here.
+        """
+        sources = [
+            ("main", "main_textual_models.csv", "main_textual_models"),
+            ("secondary", "secondary_textual_models.csv", "secondary_textual_models"),
+        ]
+
+        books = self._book_by_nid()
+        models_by_tid = {
+            t.legacy_tid: t
+            for t in TextualModel.objects.exclude(legacy_tid__isnull=True)
+        }
+
+        for label, filename, m2m_attr in sources:
+            path = export_dir / filename
+            if not path.exists():
+                self.stdout.write(self.style.WARNING(
+                    f"Skipping {label} textual models: {path} not found."
+                ))
+                continue
+
+            grouped: dict[int, list[TextualModel]] = {}
+            unknown_tids = set()
+            with path.open(newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    nid = parse_int(row.get("nid"))
+                    tid = parse_int(row.get("tid"))
+                    if nid is None or tid is None:
+                        continue
+                    tm = models_by_tid.get(tid)
+                    if tm is None:
+                        unknown_tids.add(tid)
+                        continue
+                    grouped.setdefault(nid, []).append(tm)
+
+            updated = without_book = total_links = 0
+            for nid, tms in grouped.items():
+                book = books.get(nid)
+                if book is None:
+                    without_book += 1
+                    continue
+                getattr(book, m2m_attr).set(tms)
+                updated += 1
+                total_links += len(tms)
+
+            msg = (
+                f"{label.capitalize()} textual models: {updated} books linked, "
+                f"{total_links} M2M rows, {without_book} without book."
+            )
+            if unknown_tids:
+                msg += f" Unknown TIDs skipped: {sorted(unknown_tids)}."
+            self.stdout.write(self.style.SUCCESS(msg))
+
     # -- entry point ---------------------------------------------------------
 
     @transaction.atomic
@@ -449,5 +512,6 @@ class Command(BaseCommand):
         self.import_mentions(export_dir)
         self.import_prefaces(export_dir, book_backlink)
         self.import_productions(export_dir, book_backlink)
+        self.import_textual_model_links(export_dir)
 
         self.stdout.write(self.style.SUCCESS("Relation import finished."))
