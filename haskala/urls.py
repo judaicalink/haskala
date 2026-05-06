@@ -117,7 +117,7 @@ urlpatterns += [
     ),
 
     # REST API (DRF router)
-    path("api/", include(api_router.urls)),
+    path("api/", api_router.urls),
 
     # Wagtail
     path('', include(wagtail_urls)),
