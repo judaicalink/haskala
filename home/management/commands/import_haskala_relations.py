@@ -16,7 +16,7 @@ per-node CSV but in Drupal's multi-value table:
 
 ProductionRole values are not their own Drupal vocabulary; the role TIDs live
 in the Occupation vocabulary. This command seeds ProductionRole rows on the
-fly. TranslationType is also seeded with the single value "translation".
+fly from the matching Occupation name.
 """
 
 import csv
@@ -40,7 +40,6 @@ from home.models import (
     Production,
     ProductionRole,
     Translation,
-    TranslationType,
 )
 
 
@@ -221,9 +220,6 @@ class Command(BaseCommand):
             self.stdout.write(self.style.WARNING(f"Skipping translations: {path} not found."))
             return
 
-        # Drupal only ever uses one type ("translation"); seed it.
-        TranslationType.objects.get_or_create(name="translation")
-
         books = self._book_by_nid()
         persons = self._person_by_nid()
         cities = self._city_by_tid()
@@ -247,6 +243,7 @@ class Command(BaseCommand):
                     "legacy_status": parse_bool(row.get("status")),
                     "legacy_created": parse_timestamp(row.get("created")),
                     "legacy_changed": parse_timestamp(row.get("changed")),
+                    "title": clean(row.get("title")),
                     "book": book,
                     "translator": persons.get(parse_int(row.get("translator_target_id"))),
                     "city": cities.get(parse_int(row.get("translation_city_tid"))),
@@ -254,8 +251,6 @@ class Command(BaseCommand):
                     "references_format": clean(row.get("translation_references_format")) or "NULL",
                     "year": clean(row.get("translation_year")),
                     "year_format": clean(row.get("translation_year_format")) or "NULL",
-                    # Note: `title` from CSV is not stored - the Translation
-                    # model has no title field yet.
                 }
                 _, created_flag = Translation.objects.update_or_create(
                     legacy_nid=legacy_nid, defaults=defaults
@@ -388,6 +383,8 @@ class Command(BaseCommand):
                     "legacy_created": parse_timestamp(row.get("created")),
                     "legacy_changed": parse_timestamp(row.get("changed")),
                     "title": clean(row.get("title")) or None,
+                    "name_in_book": clean(row.get("name_in_book")),
+                    "person_name_appear": clean(row.get("person_name_appear")),
                     "book": book,
                     "producer": persons.get(parse_int(row.get("producer_target_id"))),
                     "role": role,

@@ -449,7 +449,7 @@ class Edition(LegacyImportedModel):
     Model for the editions.
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255, unique=True, blank=True, null=True)
+    name = models.CharField(max_length=255, blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -502,6 +502,8 @@ class Translation(LegacyImportedModel):
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
+    title = models.CharField(max_length=255, blank=True)
+
     # Belongs to book
     book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="translations")
 
@@ -515,7 +517,7 @@ class Translation(LegacyImportedModel):
     city = models.ForeignKey(City, null=True, blank=True, on_delete=models.SET_NULL)
 
     # References
-    references = models.CharField(max_length=255, blank=True, null=True)
+    references = models.TextField(blank=True, null=True)
     references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Year
@@ -551,7 +553,7 @@ class Preface(LegacyImportedModel):
     book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True, blank=True, related_name="prefaces")
 
     # Notes
-    notes = models.CharField(max_length=255, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
     notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Number
@@ -559,7 +561,7 @@ class Preface(LegacyImportedModel):
     number_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Title
-    title = models.CharField(max_length=255, blank=True, null=True)
+    title = models.TextField(blank=True, null=True)
     title_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Writer
@@ -577,6 +579,8 @@ class Production(LegacyImportedModel):
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255, blank=True, null=True)
+    name_in_book = models.CharField(max_length=255, blank=True)
+    person_name_appear = models.CharField(max_length=255, blank=True)
     # Belongs to book
     book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="productions", null=True, blank=True)
 
@@ -666,7 +670,6 @@ class OriginalType(models.Model):
         return self.name
 
 
-@register_snippet
 class Book(LegacyImportedModel):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.TextField(blank=True, null=True)
