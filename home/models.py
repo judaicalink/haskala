@@ -531,7 +531,13 @@ class Mention(LegacyImportedModel):
     Model for Mentions
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    # Belongs to book, but not found in tables
+    book = models.ForeignKey(
+        "Book",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="mentions",
+    )
 
     # Mentionee
     mentionee = models.ForeignKey(Person, null=True, blank=True, on_delete=models.SET_NULL)

@@ -277,16 +277,17 @@ class Command(BaseCommand):
             f"Translation: {created} created, {updated} updated, {missing_book} skipped (book missing)."
         ))
 
-    def import_mentions(self, export_dir: Path):
+    def import_mentions(self, export_dir: Path, book_backlink: dict[int, int]):
         path = export_dir / "mentions_for_django.csv"
         if not path.exists():
             self.stdout.write(self.style.WARNING(f"Skipping mentions: {path} not found."))
             return
 
+        books = self._book_by_nid()
         persons = self._person_by_nid()
         cities = self._city_by_tid()
         descriptions = self._mention_description_by_tid()
-        created = updated = 0
+        created = updated = without_book = 0
 
         with path.open(newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
@@ -295,11 +296,17 @@ class Command(BaseCommand):
                 if legacy_nid is None:
                     continue
 
+                book_nid = book_backlink.get(legacy_nid)
+                book = books.get(book_nid) if book_nid else None
+                if book is None:
+                    without_book += 1
+
                 defaults = {
                     "legacy_vid": parse_int(row.get("vid")),
                     "legacy_status": parse_bool(row.get("status")),
                     "legacy_created": parse_timestamp(row.get("created")),
                     "legacy_changed": parse_timestamp(row.get("changed")),
+                    "book": book,
                     "mentionee": persons.get(parse_int(row.get("mentionee_target_id"))),
                     "mentionee_city": cities.get(parse_int(row.get("mentionee_city_tid"))),
                     "mentionee_description": descriptions.get(
@@ -315,7 +322,7 @@ class Command(BaseCommand):
                     updated += 1
 
         self.stdout.write(self.style.SUCCESS(
-            f"Mention: {created} created, {updated} updated."
+            f"Mention: {created} created, {updated} updated, {without_book} without book link."
         ))
 
     def import_prefaces(self, export_dir: Path, book_backlink: dict[int, int]):
@@ -590,7 +597,7 @@ class Command(BaseCommand):
         # then mentions/prefaces/productions which use book_backlink.
         self.import_editions(export_dir)
         self.import_translations(export_dir)
-        self.import_mentions(export_dir)
+        self.import_mentions(export_dir, book_backlink)
         self.import_prefaces(export_dir, book_backlink)
         self.import_productions(export_dir, book_backlink)
         self.import_textual_model_links(export_dir)
