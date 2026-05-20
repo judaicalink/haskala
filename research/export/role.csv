@@ -1,0 +1,5 @@
+rid,name,weight
+3,administrator,10
+1,anonymous user,0
+2,authenticated user,1
+4,manager,2

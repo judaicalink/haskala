@@ -1,0 +1,215 @@
+rid,permission,module
+1,access content,node
+1,access search_api_page,search_api_page
+1,use text format filtered_html,filter
+2,access content,node
+2,access search_api_page,search_api_page
+2,use text format filtered_html,filter
+3,access administration menu,admin_menu
+3,access administration pages,system
+3,access all views,views
+3,access content,node
+3,access content overview,node
+3,access contextual links,contextual
+3,access haskala search_api_page,search_api_page
+3,access search_api_page,search_api_page
+3,access site in maintenance mode,system
+3,access site reports,system
+3,access user profiles,user
+3,administer actions,system
+3,administer advanced pane settings,panels
+3,administer blocks,block
+3,administer ckeditor,ckeditor
+3,administer content types,node
+3,administer features,features
+3,administer fieldgroups,field_group
+3,administer filters,filter
+3,administer google analytics,googleanalytics
+3,administer image styles,image
+3,administer logs http client,logs_http
+3,administer menu,menu
+3,administer meta tags,metatag
+3,administer module filter,module_filter
+3,administer modules,system
+3,administer nodes,node
+3,administer page manager,page_manager
+3,administer pane access,panels
+3,administer panels layouts,panels
+3,administer panels styles,panels
+3,administer pathauto,pathauto
+3,administer permissions,user
+3,administer search_api,search_api
+3,administer shortcuts,shortcut
+3,administer site configuration,system
+3,administer software updates,system
+3,administer taxonomy,taxonomy
+3,administer themes,system
+3,administer url aliases,path
+3,administer users,user
+3,administer views,views
+3,administer xmlsitemap,xmlsitemap
+3,advanced migration information,migrate
+3,block IP addresses,system
+3,bypass node access,node
+3,cancel account,user
+3,change layouts in place editing,panels
+3,change own username,user
+3,create book content,node
+3,create edition content,node
+3,create mention content,node
+3,create page_element content,node
+3,create person content,node
+3,create preface content,node
+3,create production content,node
+3,create translation content,node
+3,create url aliases,path
+3,customize ckeditor,ckeditor
+3,customize shortcut links,shortcut
+3,delete any book content,node
+3,delete any edition content,node
+3,delete any mention content,node
+3,delete any page_element content,node
+3,delete any person content,node
+3,delete any preface content,node
+3,delete any production content,node
+3,delete any translation content,node
+3,delete own book content,node
+3,delete own edition content,node
+3,delete own mention content,node
+3,delete own page_element content,node
+3,delete own person content,node
+3,delete own preface content,node
+3,delete own production content,node
+3,delete own translation content,node
+3,delete revisions,node
+3,delete terms in 1,taxonomy
+3,delete terms in 10,taxonomy
+3,delete terms in 11,taxonomy
+3,delete terms in 12,taxonomy
+3,delete terms in 13,taxonomy
+3,delete terms in 14,taxonomy
+3,delete terms in 15,taxonomy
+3,delete terms in 16,taxonomy
+3,delete terms in 17,taxonomy
+3,delete terms in 18,taxonomy
+3,delete terms in 19,taxonomy
+3,delete terms in 2,taxonomy
+3,delete terms in 3,taxonomy
+3,delete terms in 4,taxonomy
+3,delete terms in 5,taxonomy
+3,delete terms in 6,taxonomy
+3,delete terms in 7,taxonomy
+3,delete terms in 8,taxonomy
+3,delete terms in 9,taxonomy
+3,display drupal links,admin_menu
+3,edit any book content,node
+3,edit any edition content,node
+3,edit any mention content,node
+3,edit any page_element content,node
+3,edit any person content,node
+3,edit any preface content,node
+3,edit any production content,node
+3,edit any translation content,node
+3,edit meta tags,metatag
+3,edit own book content,node
+3,edit own edition content,node
+3,edit own mention content,node
+3,edit own page_element content,node
+3,edit own person content,node
+3,edit own preface content,node
+3,edit own production content,node
+3,edit own translation content,node
+3,edit terms in 1,taxonomy
+3,edit terms in 10,taxonomy
+3,edit terms in 11,taxonomy
+3,edit terms in 12,taxonomy
+3,edit terms in 13,taxonomy
+3,edit terms in 14,taxonomy
+3,edit terms in 15,taxonomy
+3,edit terms in 16,taxonomy
+3,edit terms in 17,taxonomy
+3,edit terms in 18,taxonomy
+3,edit terms in 19,taxonomy
+3,edit terms in 2,taxonomy
+3,edit terms in 3,taxonomy
+3,edit terms in 4,taxonomy
+3,edit terms in 5,taxonomy
+3,edit terms in 6,taxonomy
+3,edit terms in 7,taxonomy
+3,edit terms in 8,taxonomy
+3,edit terms in 9,taxonomy
+3,flush caches,admin_menu
+3,generate features,features
+3,manage features,features
+3,migration information,migrate
+3,notify of path changes,pathauto
+3,opt-in or out of tracking,googleanalytics
+3,rename features,features
+3,revert revisions,node
+3,select account cancellation method,user
+3,switch shortcut sets,shortcut
+3,use ctools import,ctools
+3,use ipe with page manager,panels
+3,use page manager,page_manager
+3,use panels caching features,panels
+3,use panels dashboard,panels
+3,use panels in place editing,panels
+3,use panels locks,panels
+3,use PHP for tracking visibility,googleanalytics
+3,use text format filtered_html,filter
+3,use text format full_html,filter
+3,view own unpublished content,node
+3,view pane admin links,panels
+3,view revisions,node
+3,view the administration theme,system
+4,access content,node
+4,access content overview,node
+4,access contextual links,contextual
+4,administer google analytics,googleanalytics
+4,administer nodes,node
+4,create book content,node
+4,create edition content,node
+4,create mention content,node
+4,create page_element content,node
+4,create person content,node
+4,create preface content,node
+4,create production content,node
+4,create translation content,node
+4,delete any book content,node
+4,delete any edition content,node
+4,delete any mention content,node
+4,delete any page_element content,node
+4,delete any person content,node
+4,delete any preface content,node
+4,delete any production content,node
+4,delete any translation content,node
+4,delete own book content,node
+4,delete own edition content,node
+4,delete own mention content,node
+4,delete own page_element content,node
+4,delete own person content,node
+4,delete own preface content,node
+4,delete own production content,node
+4,delete own translation content,node
+4,delete revisions,node
+4,edit any book content,node
+4,edit any edition content,node
+4,edit any mention content,node
+4,edit any page_element content,node
+4,edit any person content,node
+4,edit any preface content,node
+4,edit any production content,node
+4,edit any translation content,node
+4,edit own book content,node
+4,edit own edition content,node
+4,edit own mention content,node
+4,edit own page_element content,node
+4,edit own person content,node
+4,edit own preface content,node
+4,edit own production content,node
+4,edit own translation content,node
+4,revert revisions,node
+4,use text format full_html,filter
+4,view own unpublished content,node
+4,view revisions,node
+4,view the administration theme,system

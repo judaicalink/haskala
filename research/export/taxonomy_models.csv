@@ -1,0 +1,72 @@
+tid,vid,name,description,weight,format
+367,3,Aggadah/Midrash,,0,filtered_html
+321,3,Allegory,,0,filtered_html
+361,3,Aphorisms,,0,filtered_html
+344,3,Autobiography,,0,filtered_html
+320,3,Belles-lettres,,0,filtered_html
+324,3,Bi'ur,,0,filtered_html
+325,3,Biblical adaptation,,0,filtered_html
+352,3,Biblical epic poetry,,0,filtered_html
+326,3,Biblical history,,0,filtered_html
+327,3,Biblical stories,,0,filtered_html
+345,3,Biography,,0,filtered_html
+328,3,Blessings,,0,filtered_html
+329,3,Book review,,0,filtered_html
+330,3,Catechisms,,0,filtered_html
+348,3,Comedy,,0,filtered_html
+368,3,Commentary,,0,filtered_html
+381,3,Concise phrasing,,0,filtered_html
+331,3,Dialogue,,0,filtered_html
+339,3,Dictionary,,0,filtered_html
+353,3,Elegies,,0,filtered_html
+340,3,Encyclopedia,,0,filtered_html
+362,3,Epigrams,,0,filtered_html
+332,3,Epistolary literature,,0,filtered_html
+333,3,Epistolary literature (fictional),,0,filtered_html
+334,3,Epistolary literature (real),,0,filtered_html
+378,3,Essay,,0,filtered_html
+382,3,Frequent use of numbers,,0,filtered_html
+335,3,Guidebook,,0,filtered_html
+371,3,Haggadah,,0,filtered_html
+369,3,Halachic literature,,0,filtered_html
+388,3,Hornbook,,0,filtered_html
+336,3,Informative text,,0,filtered_html
+337,3,Lecture,,0,filtered_html
+338,3,Lexicon,,0,filtered_html
+370,3,Liturgy,,0,filtered_html
+341,3,Manifesto,,0,filtered_html
+357,3,Meliza,,0,filtered_html
+346,3,Memoirs,,0,filtered_html
+342,3,Moral literature,,0,filtered_html
+322,3,Novel,,0,filtered_html
+358,3,Other poetry,,0,filtered_html
+323,3,Parable,,0,filtered_html
+343,3,Personal writing,,0,filtered_html
+354,3,Piyyut,,0,filtered_html
+347,3,Play,,0,filtered_html
+351,3,Poems,,0,filtered_html
+355,3,Poems for special occasions,,0,filtered_html
+359,3,Polemics,,0,filtered_html
+372,3,Prayers,,0,filtered_html
+383,3,Professional phrasing,,0,filtered_html
+356,3,Prose poems,,0,filtered_html
+363,3,Proverbs,,0,filtered_html
+360,3,Proverbs and sayings,,0,filtered_html
+365,3,Pseudo-commentary,,0,filtered_html
+349,3,Purim spiel,,0,filtered_html
+389,3,Reader,,0,filtered_html
+366,3,Religious literature,,0,filtered_html
+375,3,Report,,0,filtered_html
+376,3,Riddles,,0,filtered_html
+350,3,Satire,,0,filtered_html
+364,3,Sayings,,0,filtered_html
+384,3,Scientific instruments mentioned,,0,filtered_html
+377,3,Scientific literature,,0,filtered_html
+380,3,Scientific text model,,0,filtered_html
+373,3,Selichot,,0,filtered_html
+385,3,Speech,,0,filtered_html
+386,3,Story,,0,filtered_html
+374,3,Tchines,,0,filtered_html
+387,3,Textbook,,0,filtered_html
+390,3,Travel literature,,0,filtered_html
+379,3,Treatise,,0,filtered_html
