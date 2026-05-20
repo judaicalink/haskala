@@ -3,7 +3,7 @@ import json
 import secrets
 from collections import defaultdict
 
-from django.db.models import Q
+from django.db.models import Prefetch, Q
 from django.http import Http404, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
@@ -18,11 +18,60 @@ from .serializers import BookSerializer, PersonSerializer, CitySerializer
 
 @cache_page(60 * 60)  # cache for 15 minutes
 def book_detail_view(request, title):
-    # Fetch the book page using the title (slug)
-    book = get_object_or_404(Book, name=title)
+    from .book_detail import visible_sections
 
-    # You can pass additional context here if needed
-    return render(request, 'books/book_detail_page.html', {'book': book})
+    book = get_object_or_404(
+        Book.objects.select_related(
+            "publisher", "original_publisher",
+            "publication_place", "publication_place_other",
+            "original_publication_place",
+            "topic", "series", "alignment", "original_type",
+            "location_of_footnotes", "format_of_publication_date",
+            "languages_number", "original_language",
+            "translation_type",
+        ).prefetch_related(
+            Prefetch(
+                "bookauthor_set",
+                queryset=BookAuthor.objects.select_related("person"),
+            ),
+            Prefetch(
+                "editions",
+                queryset=Edition.objects.select_related("city").order_by("year"),
+            ),
+            Prefetch(
+                "translations",
+                queryset=Translation.objects.select_related("translator", "city", "language"),
+            ),
+            Prefetch(
+                "prefaces",
+                queryset=Preface.objects.select_related("writer").order_by("number"),
+            ),
+            Prefetch(
+                "productions",
+                queryset=Production.objects.select_related("producer", "role"),
+            ),
+            Prefetch(
+                "mentions",
+                queryset=Mention.objects.select_related(
+                    "mentionee", "mentionee_city", "mentionee_description",
+                ),
+            ),
+            "main_textual_models",
+            "secondary_textual_models",
+            "languages",
+            "footnote_languages",
+            "occasional_words_languages",
+            "fonts",
+            "typography",
+            "target_audience",
+        ),
+        name=title,
+    )
+
+    return render(request, "books/book_detail_page.html", {
+        "book": book,
+        "visible_sections": visible_sections(book),
+    })
 
 
 @cache_page(60 * 60)
