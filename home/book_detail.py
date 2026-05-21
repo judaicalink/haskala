@@ -97,8 +97,7 @@ def _editions_has_data(b: Book) -> bool:
             b.new_edition_type_in_text, b.new_edition_type_elsewhere,
             b.new_edition_type_reference, b.new_edition_type_else_ref,
             b.new_edition_type_notes, b.new_edition_type_else_note,
-            b.expanded_in_edition, b.contradict_new_edition,
-            b.copy_of_book_used, b.examined_volume_number,
+            b.copy_of_book_used,
             b.other_volumes, b.volumes_notes,
             b.volumes_published_number, b.planned_volumes,
         )
@@ -110,7 +109,6 @@ def _translations_has_data(b: Book) -> bool:
         b.translations.exists()
         or _any(
             b.translation_notes, b.translation_type_id,
-            b.expanded_in_translation,
             b.presented_as_translation, b.presented_as_translation_refe,
             b.presented_as_translatio_notes,
         )

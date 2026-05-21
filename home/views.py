@@ -11,15 +11,14 @@ from django.views.decorators.cache import cache_page
 from requests import Response
 from rest_framework.decorators import api_view
 
+from .book_detail import visible_sections
 from .models import Book, Person, Geolocation, City, Edition, Translation, Mention, Language, Occupation, Topic, \
     Publisher, BookAuthor, Preface, Production, Series
 from .serializers import BookSerializer, PersonSerializer, CitySerializer
 
 
-@cache_page(60 * 60)  # cache for 15 minutes
+@cache_page(60 * 60)  # cache for 1 hour
 def book_detail_view(request, title):
-    from .book_detail import visible_sections
-
     book = get_object_or_404(
         Book.objects.select_related(
             "publisher", "original_publisher",
