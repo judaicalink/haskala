@@ -53,6 +53,19 @@ class BookCiteBibtexTest(TestCase):
         self.assertIn("Sample Verlag", body)
         self.assertIn("Berlin", body)
 
+    def test_bibtex_has_no_template_comment_leak(self):
+        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.name]))
+        body = resp.content.decode()
+        # Encoding explanation must be stripped by Django's template engine.
+        self.assertNotIn("plain-text BibTeX", body)
+        self.assertNotIn("Django template delimiters", body)
+        # The output must start with the @book header (after optional
+        # whitespace.
+        self.assertTrue(
+            body.lstrip().startswith("@book{"),
+            f"BibTeX output should start with @book{{; got: {body[:80]!r}",
+        )
+
     def test_bibtex_escapes_special_chars(self):
         nasty = Book.objects.create(
             name="Nasty Book",
