@@ -5,6 +5,7 @@ once and pass it to both the TOC and the content templates.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from typing import Callable
 
@@ -204,9 +205,6 @@ SECTIONS: list[Section] = [
 def visible_sections(book: Book) -> list[Section]:
     """Return SECTIONS in order, filtered to those with data for this book."""
     return [s for s in SECTIONS if s.has_data(book)]
-
-
-import re
 
 
 def citation_key(book: Book) -> str:

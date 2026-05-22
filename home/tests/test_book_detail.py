@@ -25,6 +25,9 @@ class BookDetailViewSmokeTest(TestCase):
         self.assertEqual(resp.status_code, 404)
 
 
+@override_settings(
+    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
+)
 class BookCiteBibtexTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -49,3 +52,15 @@ class BookCiteBibtexTest(TestCase):
         self.assertIn("1797", body)
         self.assertIn("Sample Verlag", body)
         self.assertIn("Berlin", body)
+
+    def test_bibtex_escapes_special_chars(self):
+        nasty = Book.objects.create(
+            name="Nasty Book",
+            full_title="A {weird} title with } a brace",
+            gregorian_year="1800",
+        )
+        resp = Client().get(reverse("book-cite-bibtex", args=[nasty.name]))
+        body = resp.content.decode()
+        # The brace in the title must be escaped, not leak through as raw.
+        self.assertNotIn("title with } a brace", body)  # raw form must not appear
+        self.assertIn("title with \\} a brace", body)   # escaped form must appear
