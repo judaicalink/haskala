@@ -11,7 +11,7 @@ from django.views.decorators.cache import cache_page
 from requests import Response
 from rest_framework.decorators import api_view
 
-from .book_detail import visible_sections
+from .book_detail import visible_sections, citation_key
 from .models import Book, Person, Geolocation, City, Edition, Translation, Mention, Language, Occupation, Topic, \
     Publisher, BookAuthor, Preface, Production, Series
 from .serializers import BookSerializer, PersonSerializer, CitySerializer
@@ -858,3 +858,21 @@ def search_api_view(request):
             "places": CitySerializer(places, many=True).data,
         },
     })
+
+
+def book_cite_bibtex(request, title):
+    book = get_object_or_404(Book, name=title)
+    authors = [
+        ba.person.pref_label or str(ba.person)
+        for ba in book.bookauthor_set.select_related("person")
+        if ba.person
+    ]
+    key = citation_key(book)
+    response = render(
+        request,
+        "books/cite/bibtex.txt",
+        {"book": book, "key": key, "authors": authors},
+        content_type="text/x-bibtex; charset=utf-8",
+    )
+    response["Content-Disposition"] = f'attachment; filename="{key}.bib"'
+    return response

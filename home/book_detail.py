@@ -204,3 +204,31 @@ SECTIONS: list[Section] = [
 def visible_sections(book: Book) -> list[Section]:
     """Return SECTIONS in order, filtered to those with data for this book."""
     return [s for s in SECTIONS if s.has_data(book)]
+
+
+import re
+
+
+def citation_key(book: Book) -> str:
+    """
+    Generate a BibTeX-style citation key:
+        <surname-of-first-author or 'anon'><year or 'nd'>
+
+    Lowercased, ASCII-only, no spaces. Collisions are accepted; downstream
+    tools can disambiguate.
+    """
+    first_author = (
+        book.bookauthor_set.select_related("person").order_by("role").first()
+    )
+    if first_author and first_author.person:
+        label = first_author.person.pref_label or str(first_author.person)
+        surname = label.split(",")[0].strip().split()[-1] if label else "anon"
+    else:
+        surname = "anon"
+
+    year_raw = book.gregorian_year or book.year_in_book or "nd"
+    year = str(year_raw).strip() or "nd"
+
+    key = f"{surname}{year}".lower()
+    key = re.sub(r"[^a-z0-9]", "", key)
+    return key or "anonnd"

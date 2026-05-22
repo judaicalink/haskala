@@ -23,3 +23,29 @@ class BookDetailViewSmokeTest(TestCase):
     def test_404_for_unknown_book(self):
         resp = Client().get(reverse("book-detail", args=["nonexistent-book"]))
         self.assertEqual(resp.status_code, 404)
+
+
+class BookCiteBibtexTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.publisher = Publisher.objects.create(name="Sample Verlag")
+        cls.city = City.objects.create(name="Berlin")
+        cls.book = Book.objects.create(
+            name="Cited Book",
+            full_title="Cited Book: With Subtitle",
+            gregorian_year="1797",
+            publisher=cls.publisher,
+            publication_place=cls.city,
+        )
+
+    def test_bibtex_endpoint_returns_bibtex(self):
+        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.name]))
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("text/x-bibtex", resp["Content-Type"])
+        body = resp.content.decode()
+        self.assertIn("@book{", body)
+        self.assertIn("title", body)
+        self.assertIn("Cited Book", body)
+        self.assertIn("1797", body)
+        self.assertIn("Sample Verlag", body)
+        self.assertIn("Berlin", body)

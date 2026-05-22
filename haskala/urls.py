@@ -24,7 +24,7 @@ from drf_spectacular.views import (
 )
 
 from .api import api_router
-from home.views import book_detail_view, books_list_view, digital_books_list_view, persons_list_view, \
+from home.views import book_detail_view, books_list_view, book_cite_bibtex, digital_books_list_view, persons_list_view, \
     person_detail_view, place_detail_view, places_list_view, search_view, topics_list_view, topic_detail_view, \
     publishers_list_view, publisher_detail_view, occupation_detail_view, occupations_list_view, robots_txt, \
     security_txt, series_list_view, series_detail_view, search_api_view
@@ -61,6 +61,7 @@ urlpatterns += [
 
     # Book detail page
     path('books/', books_list_view, name='books-list'),
+    path('books/<title>/cite.bib', book_cite_bibtex, name='book-cite-bibtex'),
     path('books/<title>/', book_detail_view, name='book-detail'),
 
     # Digital books
