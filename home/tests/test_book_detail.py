@@ -77,3 +77,25 @@ class BookCiteBibtexTest(TestCase):
         # The brace in the title must be escaped, not leak through as raw.
         self.assertNotIn("title with } a brace", body)  # raw form must not appear
         self.assertIn("title with \\} a brace", body)   # escaped form must appear
+
+
+class BookCiteRisTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.book = Book.objects.create(
+            name="Risky Book",
+            full_title="Risky Book: A Subtitle",
+            gregorian_year="1797",
+        )
+
+    def test_ris_endpoint_returns_ris(self):
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn(
+            "application/x-research-info-systems", resp["Content-Type"]
+        )
+        body = resp.content.decode()
+        self.assertIn("TY  - BOOK", body)
+        self.assertIn("TI  - Risky Book", body)
+        self.assertIn("PY  - 1797", body)
+        self.assertTrue(body.rstrip().endswith("ER  -"))

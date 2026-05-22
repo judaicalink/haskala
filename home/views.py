@@ -876,3 +876,22 @@ def book_cite_bibtex(request, title):
     )
     response["Content-Disposition"] = f'attachment; filename="{key}.bib"'
     return response
+
+
+def book_cite_ris(request, title):
+    book = get_object_or_404(Book, name=title)
+    authors = [
+        ba.person.pref_label or str(ba.person)
+        for ba in book.bookauthor_set.select_related("person")
+        if ba.person
+    ]
+    languages = [str(lang) for lang in book.languages.all()]
+    response = render(
+        request,
+        "books/cite/ris.txt",
+        {"book": book, "authors": authors, "languages": languages},
+        content_type="application/x-research-info-systems; charset=utf-8",
+    )
+    key = citation_key(book)
+    response["Content-Disposition"] = f'attachment; filename="{key}.ris"'
+    return response
