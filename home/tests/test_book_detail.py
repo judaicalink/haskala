@@ -1,7 +1,7 @@
 from django.test import TestCase, Client, override_settings
 from django.urls import reverse
 
-from home.models import Book, Person, City, Publisher
+from home.models import Book, City, Publisher
 
 
 @override_settings(
@@ -75,8 +75,9 @@ class BookCiteBibtexTest(TestCase):
         resp = Client().get(reverse("book-cite-bibtex", args=[nasty.name]))
         body = resp.content.decode()
         # The brace in the title must be escaped, not leak through as raw.
-        self.assertNotIn("title with } a brace", body)  # raw form must not appear
-        self.assertIn("title with \\} a brace", body)   # escaped form must appear
+        # Raw form must not appear; escaped form must.
+        self.assertNotIn("title with } a brace", body)
+        self.assertIn("title with \\} a brace", body)
 
 
 class BookCiteRisTest(TestCase):
@@ -99,3 +100,30 @@ class BookCiteRisTest(TestCase):
         self.assertIn("TI  - Risky Book", body)
         self.assertIn("PY  - 1797", body)
         self.assertTrue(body.rstrip().endswith("ER  -"))
+
+
+@override_settings(
+    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
+)
+class BookCiteModalTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.publisher = Publisher.objects.create(name="Modal Verlag")
+        cls.city = City.objects.create(name="Frankfurt")
+        cls.book = Book.objects.create(
+            name="Modal Book",
+            full_title="Modal Book: With Subtitle",
+            gregorian_year="1799",
+            publisher=cls.publisher,
+            publication_place=cls.city,
+        )
+
+    def test_detail_page_includes_cite_modal_with_plain_citation(self):
+        resp = Client().get(reverse("book-detail", args=[self.book.name]))
+        self.assertEqual(resp.status_code, 200)
+        html = resp.content.decode()
+        self.assertIn("book-cite-modal", html)
+        self.assertIn("Modal Book", html)
+        self.assertIn("1799", html)
+        self.assertIn("Modal Verlag", html)
+        self.assertIn("Frankfurt", html)
