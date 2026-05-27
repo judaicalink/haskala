@@ -4,9 +4,22 @@ from django.urls import reverse
 from home.models import Book, BookAuthor, City, Person, Publisher
 
 
-@override_settings(
-    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
+# Tests that hit views rendered through base.html need a non-manifest static
+# files storage; tests that hit cached views need a dummy cache so a stale
+# Redis entry from a prior run does not bleed in.
+TEST_OVERRIDES = override_settings(
+    STATICFILES_STORAGE=(
+        "django.contrib.staticfiles.storage.StaticFilesStorage"
+    ),
+    CACHES={
+        "default": {
+            "BACKEND": "django.core.cache.backends.dummy.DummyCache",
+        },
+    },
 )
+
+
+@TEST_OVERRIDES
 class BookDetailViewSmokeTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -25,9 +38,7 @@ class BookDetailViewSmokeTest(TestCase):
         self.assertEqual(resp.status_code, 404)
 
 
-@override_settings(
-    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
-)
+@TEST_OVERRIDES
 class BookCiteBibtexTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -80,6 +91,7 @@ class BookCiteBibtexTest(TestCase):
         self.assertIn("title with \\} a brace", body)
 
 
+@TEST_OVERRIDES
 class BookCiteRisTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -102,9 +114,7 @@ class BookCiteRisTest(TestCase):
         self.assertTrue(body.rstrip().endswith("ER  -"))
 
 
-@override_settings(
-    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
-)
+@TEST_OVERRIDES
 class BookCiteModalTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -129,9 +139,7 @@ class BookCiteModalTest(TestCase):
         self.assertIn("Frankfurt", html)
 
 
-@override_settings(
-    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
-)
+@TEST_OVERRIDES
 class BookHeaderTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -162,3 +170,29 @@ class BookHeaderTest(TestCase):
         self.assertIn("1800", html)
         # Person chip links to the person detail
         self.assertIn(f"/persons/{self.person.uuid}/", html)
+
+
+@TEST_OVERRIDES
+class BookTOCTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.publisher = Publisher.objects.create(name="TOC Verlag")
+        cls.city = City.objects.create(name="Vienna")
+        cls.book = Book.objects.create(
+            name="TOC Book",
+            full_title="TOC Book",
+            gregorian_year="1810",
+            publisher=cls.publisher,
+            publication_place=cls.city,
+        )
+
+    def test_toc_lists_visible_sections_only(self):
+        html = Client().get(
+            reverse("book-detail", args=[self.book.name])
+        ).content.decode()
+        # Publication has data -> appears in TOC and as a section anchor.
+        self.assertIn('href="#publication"', html)
+        self.assertIn('id="publication"', html)
+        # Censorship has no data -> must not appear at all.
+        self.assertNotIn('href="#censorship"', html)
+        self.assertNotIn('id="censorship"', html)
