@@ -1,7 +1,7 @@
 from django.test import TestCase, Client, override_settings
 from django.urls import reverse
 
-from home.models import Book, City, Publisher
+from home.models import Book, BookAuthor, City, Person, Publisher
 
 
 @override_settings(
@@ -127,3 +127,38 @@ class BookCiteModalTest(TestCase):
         self.assertIn("1799", html)
         self.assertIn("Modal Verlag", html)
         self.assertIn("Frankfurt", html)
+
+
+@override_settings(
+    STATICFILES_STORAGE="django.contrib.staticfiles.storage.StaticFilesStorage"
+)
+class BookHeaderTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.person = Person.objects.create(pref_label="Pemberton, Dr.")
+        cls.publisher = Publisher.objects.create(name="Header Verlag")
+        cls.city = City.objects.create(name="Leipzig")
+        cls.book = Book.objects.create(
+            name="Header Book",
+            full_title="Header Book: A Subtitle",
+            title_in_latin_characters="Sefer Test",
+            gregorian_year="1800",
+            publisher=cls.publisher,
+            publication_place=cls.city,
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.person, role="original_text_author",
+        )
+
+    def test_header_shows_title_subtitle_author_pub_line(self):
+        html = Client().get(
+            reverse("book-detail", args=[self.book.name])
+        ).content.decode()
+        self.assertIn("Header Book: A Subtitle", html)
+        self.assertIn("Sefer Test", html)
+        self.assertIn("Pemberton, Dr.", html)
+        self.assertIn("Leipzig", html)
+        self.assertIn("Header Verlag", html)
+        self.assertIn("1800", html)
+        # Person chip links to the person detail
+        self.assertIn(f"/persons/{self.person.uuid}/", html)
