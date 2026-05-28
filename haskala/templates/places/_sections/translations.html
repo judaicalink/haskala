@@ -1,0 +1,19 @@
+<ul class="list-unstyled mb-0">
+    {% for tr in translations_here %}
+        <li class="mb-1">
+            {% if tr.book %}
+                <a href="{% url 'book-detail' tr.book.name %}" class="link-primary">
+                    {{ tr.book.full_title|default:tr.book.name|default:"[untitled]" }}
+                </a>
+            {% else %}
+                <span class="text-muted">[unlinked translation]</span>
+            {% endif %}
+            {% if tr.language %}
+                <span class="text-muted small">&middot; {{ tr.language.name }}</span>
+            {% endif %}
+            {% if tr.year %}
+                <span class="text-muted small">&middot; {{ tr.year }}</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,37 @@
+{% load static %}
+<header class="place-header mb-4">
+    <p class="text-muted small mb-1">
+        <a href="{% url 'places-list' %}">Places</a>
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ city.name }}</span>
+    </p>
+
+    <h1 class="place-header__title h2 mb-2">{{ city.name }}</h1>
+
+    <p class="place-header__stats text-muted mb-3">
+        {{ books_published_here|length }} book{{ books_published_here|length|pluralize }}
+        &middot; {{ editions_here|length }} edition{{ editions_here|length|pluralize }}
+        &middot; {{ translations_here|length }} translation{{ translations_here|length|pluralize }}
+        &middot; {{ born_here|length }} born
+        &middot; {{ died_here|length }} died
+    </p>
+
+    {% if geolocation %}
+        <div class="place-header__map mb-3" style="height: 280px;">
+            <div id="map"
+                 style="width: 100%; height: 100%;"
+                 data-lat="{{ geolocation.lat }}"
+                 data-lng="{{ geolocation.lng }}"
+                 data-name="{{ city.name|escapejs }}">
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="place-header__actions">
+        <button type="button" class="btn btn-sm btn-outline-secondary"
+                data-permalink="{{ request.build_absolute_uri }}"
+                aria-label="Copy permalink">
+            <i class="bi bi-link-45deg"></i> Permalink
+        </button>
+    </div>
+</header>

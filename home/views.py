@@ -13,6 +13,7 @@ from rest_framework.decorators import api_view
 
 from .book_detail import visible_sections, citation_key
 from .person_detail import visible_sections as person_visible_sections
+from .place_detail import visible_sections as place_visible_sections
 from .models import Book, Person, Geolocation, City, Edition, Translation, Mention, Language, Occupation, Topic, \
     Publisher, BookAuthor, Preface, Production, Series
 from .serializers import BookSerializer, PersonSerializer, CitySerializer
@@ -301,32 +302,39 @@ def place_detail_view(request, city_slug):
     """
     city = _get_place_by_slug(city_slug)
 
-    # Geocoordinates
     geolocation = Geolocation.objects.filter(city=city).first()
 
-    # Books published here
-    books_published_here = Book.objects.filter(
-        Q(publication_place=city)
-        | Q(publication_place_other=city)
-        | Q(original_publication_place=city)
-    ).distinct()
-
-    # Editions & translations
-    editions_here = Edition.objects.filter(city=city).select_related("book").distinct()
-    translations_here = (
-        Translation.objects.filter(city=city)
-        .select_related("book", "language")
+    books_published_here = (
+        Book.objects.filter(
+            Q(publication_place=city)
+            | Q(publication_place_other=city)
+            | Q(original_publication_place=city)
+        )
+        .order_by("gregorian_year", "name")
         .distinct()
     )
 
-    # Mentions / persons
-    mentions_here = Mention.objects.filter(mentionee_city=city).select_related(
-        "mentionee", "mentionee_description"
+    editions_here = (
+        Edition.objects.filter(city=city)
+        .select_related("book")
+        .order_by("year")
+        .distinct()
+    )
+    translations_here = (
+        Translation.objects.filter(city=city)
+        .select_related("book", "language")
+        .order_by("year")
+        .distinct()
     )
 
-    # Persons born/died here (via related_name)
-    born_here = city.born_here.all()
-    died_here = city.died_here.all()
+    mentions_here = (
+        Mention.objects.filter(mentionee_city=city)
+        .select_related("book", "mentionee", "mentionee_description")
+        .order_by("mentionee__pref_label")
+    )
+
+    born_here = city.born_here.all().order_by("pref_label")
+    died_here = city.died_here.all().order_by("pref_label")
 
     context = {
         "city": city,
@@ -339,6 +347,7 @@ def place_detail_view(request, city_slug):
         "died_here": died_here,
         "nonce": secrets.token_hex(16),
     }
+    context["visible_sections"] = place_visible_sections(context)
     return render(request, "places/place_detail_page.html", context)
 
 

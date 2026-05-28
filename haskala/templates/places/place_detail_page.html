@@ -4,143 +4,38 @@
 {% load leaflet_tags %}
 {% load utils %}
 
-{% block meta %}
-    <meta name="description" content="{{ city.description|truncatechars:160 }}">
-    <meta property="og:title" content="{{ city.name }}">
-    <meta property="og:description" content="{{ city.description|truncatechars:160 }}">
-{% endblock %}
-
-
 {% block title %}{{ city.name }} | Places{% endblock %}
 
+{% block meta %}
+    <meta name="description" content="Place detail: {{ city.name }}">
+    <meta property="og:title" content="{{ city.name }}">
+{% endblock %}
 
 {% block content %}
-    <div class="container my-4">
+    <div class="container place-detail my-4">
+        {% include "places/_place_header.html" %}
 
-        <header class="mb-4">
-                <h1>{{ city.name }}</h1>
-        </header>
+        <div class="row gx-md-5">
+            <aside class="col-md-3 place-detail__toc-col d-none d-md-block">
+                <div class="place-toc-sticky">
+                    {% include "places/_place_toc.html" %}
+                </div>
+            </aside>
 
-        <div class="row mb-4">
-            <div class="row mb-4">
-                {% if geolocation %}
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <div id="map"
-                             data-lat="{{ geolocation.lat }}"
-                             data-lng="{{ geolocation.lng }}"
-                             data-name="{{ city.name|escapejs }}">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                {% else %}
-                    <div class="col-md-12">
-                {% endif %}
-
-                <h2>Overview</h2>
-                <ul class="list-unstyled">
-                    <li><strong>Books published here:</strong> {{ books_published_here|length }}</li>
-                    <li><strong>Editions printed here:</strong> {{ editions_here|length }}</li>
-                    <li><strong>Translations from here:</strong> {{ translations_here|length }}</li>
-                    <li><strong>People born here:</strong> {{ born_here|length }}</li>
-                    <li><strong>People died here:</strong> {{ died_here|length }}</li>
-                </ul>
-
+            <div class="col-md-9 place-detail__content-col">
                 {% if page and page.body %}
-                    <div class="mt-3">
+                    <section class="place-section">
                         {{ page.body|richtext }}
-                    </div>
-                {% endif %}
-                </div>
-                </div>
-
-                {% if books_published_here %}
-                    <div class="row mb-4">
-                        <div class="col">
-                            <h2>Books published in {{ city.name }}</h2>
-                            <ul class="list-unstyled">
-                                {% for book in books_published_here %}
-                                    <li>
-                                        <a href="{% url 'book-detail' book.name %}">
-                                            {{ book.name|default:"[untitled]" }}
-                                        </a>
-                                        {% if book.gregorian_year %}
-                                            ({{ book.gregorian_year }})
-                                        {% endif %}
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
+                    </section>
                 {% endif %}
 
-                {% if editions_here %}
-                    <div class="row mb-4">
-                        <div class="col">
-                            <h2>Editions from {{ city.name }}</h2>
-                            <ul class="list-unstyled">
-                                {% for edition in editions_here %}
-                                    <li>
-                                        <a href="{% url 'book-detail' edition.book.name %}">
-                                            {{ edition.book.name|default:"[untitled]" }}
-                                        </a>
-                                        {% if edition.year %}
-                                            ({{ edition.year }})
-                                        {% endif %}
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                {% endif %}
-
-                {% if translations_here %}
-                    <div class="row mb-4">
-                        <div class="col">
-                            <h2>Translations related to {{ city.name }}</h2>
-                            <ul class="list-unstyled">
-                                {% for tr in translations_here %}
-                                    <li>
-                                        <a href="{% url 'book-detail' tr.book.name %}">
-                                            {{ tr.book.name|default:"[untitled]" }}
-                                        </a>
-                                        {% if tr.language %} – {{ tr.language.name }}{% endif %}
-                                        {% if tr.year %} ({{ tr.year }}){% endif %}
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                {% endif %}
-
-                {# Born here #}
-                {% if born_here %}
-                    <h2>Born in {{ city.name }}</h2>
-                    <ul class="list-unstyled">
-                        {% for person in born_here %}
-                            <li>
-                                <a href="{% url 'person-detail' person.uuid %}">
-                                    {{ person }}
-                                </a>
-                                {% if person.date_of_birth %} ({{ person.date_of_birth }}){% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-
-                {# Died here #}
-                {% if died_here %}
-                    <h2>Died in {{ city.name }}</h2>
-                    <ul class="list-unstyled">
-                        {% for person in died_here %}
-                            <li>
-                                <a href="{% url 'person-detail' person.uuid %}">
-                                    {{ person }}
-                                </a>
-                                {% if person.date_of_death %} ({{ person.date_of_death }}){% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
+                {% for section in visible_sections %}
+                    <section id="{{ section.slug }}" class="place-section">
+                        <h2 class="place-section__heading h4">{{ section.label }}</h2>
+                        {% include "places/_sections/"|add:section.slug|add:".html" %}
+                    </section>
+                {% endfor %}
             </div>
         </div>
+    </div>
 {% endblock %}

@@ -1,0 +1,18 @@
+<dl class="row mb-0 small text-muted">
+    {% if city.legacy_tid %}
+        <dt class="col-sm-4">Legacy taxonomy ID</dt>
+        <dd class="col-sm-8">{{ city.legacy_tid }}</dd>
+    {% endif %}
+    {% if city.legacy_nid %}
+        <dt class="col-sm-4">Legacy node ID</dt>
+        <dd class="col-sm-8">{{ city.legacy_nid }}</dd>
+    {% endif %}
+    {% if city.legacy_created %}
+        <dt class="col-sm-4">Imported</dt>
+        <dd class="col-sm-8">{{ city.legacy_created|date:"Y-m-d" }}</dd>
+    {% endif %}
+    {% if city.legacy_changed %}
+        <dt class="col-sm-4">Last changed in source</dt>
+        <dd class="col-sm-8">{{ city.legacy_changed|date:"Y-m-d" }}</dd>
+    {% endif %}
+</dl>
