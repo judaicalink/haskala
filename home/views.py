@@ -574,10 +574,7 @@ def publishers_list_view(request):
     Overview of all publishers, alphabetically grouped.
     """
 
-    publishers_qs = get_object_or_404(Publisher, slug=publisher_slug)
-    Publisher.objects.all().order_by("name")
-
-    print("Publishers QS:", publishers_qs)
+    publishers_qs = Publisher.objects.all().order_by("name")
 
     grouped = defaultdict(list)
     for pub in publishers_qs:
