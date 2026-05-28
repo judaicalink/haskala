@@ -1,0 +1,19 @@
+{% for role_label, books in person_books_by_role.items %}
+    <h3 class="h6 mt-3">{{ role_label }}
+        <span class="text-muted small fw-normal">({{ books|length }})</span>
+    </h3>
+    <ul class="list-unstyled mb-3">
+        {% for book in books %}
+            <li>
+                <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                    {{ book.full_title|default:book.name|default:"[untitled]" }}
+                </a>
+                {% if book.gregorian_year or book.year_in_book %}
+                    <span class="text-muted small">
+                        &middot; {{ book.gregorian_year|default:book.year_in_book }}
+                    </span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}

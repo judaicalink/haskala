@@ -1,0 +1,10 @@
+<dl class="row mb-0">
+    {% if person.viaf_id %}
+        <dt class="col-sm-4">VIAF</dt>
+        <dd class="col-sm-8">
+            <a href="https://viaf.org/viaf/{{ person.viaf_id }}/" target="_blank" rel="noopener">
+                {{ person.viaf_id }}
+            </a>
+        </dd>
+    {% endif %}
+</dl>

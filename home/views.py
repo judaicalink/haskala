@@ -12,6 +12,7 @@ from requests import Response
 from rest_framework.decorators import api_view
 
 from .book_detail import visible_sections, citation_key
+from .person_detail import visible_sections as person_visible_sections
 from .models import Book, Person, Geolocation, City, Edition, Translation, Mention, Language, Occupation, Topic, \
     Publisher, BookAuthor, Preface, Production, Series
 from .serializers import BookSerializer, PersonSerializer, CitySerializer
@@ -178,22 +179,27 @@ def person_detail_view(request, person_uuid):
     """
     Detail view of a person, identified by UUID.
     """
-    person = get_object_or_404(Person, pk=person_uuid)
+    person = (
+        Person.objects
+        .select_related("gender", "place_of_birth", "place_of_death")
+        .prefetch_related("occupations")
+        .filter(pk=person_uuid)
+        .first()
+    )
+    if person is None:
+        raise Http404("Person not found")
 
-    # Group books by role (BookAuthor through model)
-    books_by_role = defaultdict(list)
+    books_by_role: dict[str, list[Book]] = defaultdict(list)
     for ba in (
         BookAuthor.objects
         .filter(person=person)
         .select_related("book")
-        .order_by("book__name")
+        .order_by("role", "book__name")
     ):
         if not ba.book:
             continue
-        role_label = ba.get_role_display()  # e.g. "Old text author"
-        books_by_role[role_label].append(ba.book)
+        books_by_role[ba.get_role_display()].append(ba.book)
 
-    # Prefaces, productions, mentions
     prefaces = (
         Preface.objects
         .filter(writer=person)
@@ -209,19 +215,17 @@ def person_detail_view(request, person_uuid):
     mentions = (
         Mention.objects
         .filter(mentionee=person)
-        .select_related("mentionee_city", "mentionee_description")
+        .select_related("book", "mentionee_city", "mentionee_description")
         .order_by("mentionee_city__name")
     )
 
-    has_additional_info = bool(books_by_role or prefaces or productions or mentions)
-
     context = {
         "person": person,
+        "visible_sections": person_visible_sections(person),
         "person_books_by_role": dict(books_by_role),
         "prefaces_by_person": prefaces,
         "productions_by_person": productions,
         "mentions_of_person": mentions,
-        "has_additional_info": has_additional_info,
     }
 
     return render(request, "persons/person_detail_page.html", context)
