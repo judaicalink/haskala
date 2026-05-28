@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     initMap();
+    initPlacesMap();
     initScrollTopButton();
 });
 
@@ -23,6 +24,47 @@ function initMap() {
     }).addTo(map);
 
     L.marker([lat, lng]).addTo(map).bindPopup(name);
+}
+
+// ------------------
+// Multi-marker map for the places index
+// ------------------
+function initPlacesMap() {
+    var el = document.getElementById('places-map');
+    if (!el) return;
+
+    var raw = el.dataset.markers;
+    if (!raw) return;
+
+    var markers;
+    try {
+        markers = JSON.parse(raw);
+    } catch (e) {
+        return;
+    }
+    if (!Array.isArray(markers) || markers.length === 0) return;
+
+    var map = L.map('places-map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var group = L.featureGroup();
+    markers.forEach(function (m) {
+        if (m.lat == null || m.lng == null) return;
+        var popup = m.url
+            ? '<a href="' + m.url + '">' + m.name + '</a>'
+            : m.name;
+        L.marker([m.lat, m.lng]).bindPopup(popup).addTo(group);
+    });
+    group.addTo(map);
+
+    var bounds = group.getBounds();
+    if (bounds.isValid()) {
+        map.fitBounds(bounds, {padding: [20, 20], maxZoom: 8});
+    } else {
+        map.setView([50, 10], 4);
+    }
 }
 
 // ------------------

@@ -95,7 +95,6 @@ def books_list_view(request):
     # Sort dictionary by letter
     books_by_letter = dict(sorted(grouped.items(), key=lambda item: item[0]))
 
-    # Alphabets for the filter navigation
     alphabet = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     hebrew_alphabet = list("אבגדהוזחטיכלמנסעפצקרשת")
 
@@ -103,6 +102,7 @@ def books_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "books_by_letter": books_by_letter,
+        "total_count": sum(len(v) for v in books_by_letter.values()),
     }
 
     return render(request, "books/books_page.html", context)
@@ -132,7 +132,6 @@ def digital_books_list_view(request):
         first_letter = name[0].upper()
         grouped[first_letter].append(book)
 
-    # sort dict by letter
     books_by_letter = dict(sorted(grouped.items(), key=lambda item: item[0]))
 
     alphabet = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -142,6 +141,7 @@ def digital_books_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "books_by_letter": books_by_letter,
+        "total_count": sum(len(v) for v in books_by_letter.values()),
     }
 
     return render(request, "digital-books/digital_books_page.html", context)
@@ -171,6 +171,7 @@ def persons_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "persons_by_letter": persons_by_letter,
+        "total_count": sum(len(v) for v in persons_by_letter.values()),
     }
     return render(request, "persons/persons_page.html", context)
 
@@ -249,7 +250,7 @@ def places_list_view(request):
         if not name:
             continue
         first_letter = name[0].upper()
-        grouped[first_letter].append(name)
+        grouped[first_letter].append(city)
 
     cities_by_letter = dict(sorted(grouped.items(), key=lambda item: item[0]))
 
@@ -280,6 +281,7 @@ def places_list_view(request):
         "cities_by_letter": cities_by_letter,
         "city_markers_json": json.dumps(markers),
         "nonce": secrets.token_hex(16),
+        "total_count": sum(len(v) for v in cities_by_letter.values()),
     }
     return render(request, "places/places_page.html", context)
 
@@ -543,6 +545,7 @@ def topics_list_view(request):
     context = {
         "alphabet": alphabet,
         "topics_by_letter": topics_by_letter,
+        "total_count": sum(len(v) for v in topics_by_letter.values()),
     }
     return render(request, "topics/topics_page.html", context)
 
@@ -593,6 +596,7 @@ def publishers_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "publishers_by_letter": publishers_by_letter,
+        "total_count": sum(len(v) for v in publishers_by_letter.values()),
     }
     return render(request, "publishers/publishers_page.html", context)
 
@@ -647,6 +651,7 @@ def occupations_list_view(request):
     context = {
         "alphabet": alphabet,
         "occupations_by_letter": occupations_by_letter,
+        "total_count": sum(len(v) for v in occupations_by_letter.values()),
     }
     return render(request, "occupations/occupations_page.html", context)
 
@@ -723,6 +728,7 @@ def series_list_view(request):
     context = {
         "alphabet": alphabet,
         "series_by_letter": series_by_letter,
+        "total_count": sum(len(v) for v in series_by_letter.values()),
     }
     return render(request, "series/series_page.html", context)
 

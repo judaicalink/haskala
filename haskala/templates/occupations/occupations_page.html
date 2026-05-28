@@ -3,38 +3,35 @@
 {% block title %}Occupations{% endblock %}
 
 {% block content %}
-<div class="container my-4">
-    <h1 class="h2 mb-4">Occupations</h1>
+    <div class="container index-page my-4">
+        <header class="index-header mb-4">
+            <h1 class="h2 mb-2">Occupations</h1>
+            <p class="text-muted mb-0">
+                {{ total_count }} occupation{{ total_count|pluralize }} in total
+            </p>
+        </header>
 
-    <section class="mb-3">
-        <nav class="eng">
-            <ul class="list-inline">
-                {% for letter in alphabet %}
-                    <li class="list-inline-item">
-                        <strong>{{ letter }}</strong>
-                    </li>
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="index-list">
+            {% if occupations_by_letter %}
+                {% for letter, occs in occupations_by_letter.items %}
+                    <div class="index-group mb-4" id="letter-{{ letter }}">
+                        <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
+                        <ul class="list-unstyled mb-0">
+                            {% for occ in occs %}
+                                <li class="mb-1">
+                                    <a href="{% url 'occupation-detail' occ.name|slugify %}" class="link-primary">
+                                        {{ occ.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 {% endfor %}
-            </ul>
-        </nav>
-    </section>
-
-    <section class="terms-list">
-        <div class="letter-wrapper">
-            {% for letter, occs in occupations_by_letter.items %}
-                <div class="letter en mt-3">
-                    <span class="fw-bold">{{ letter }}</span>
-                </div>
-                <div class="terms-by-letter">
-                    {% for occ in occs %}
-                        <div class="terms-title">
-                            <a href="{% url 'occupation-detail' occ.name|slugify %}">
-                                {{ occ.name }}
-                            </a>
-                        </div>
-                    {% endfor %}
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-</div>
+            {% else %}
+                <p class="text-muted">No occupations found.</p>
+            {% endif %}
+        </section>
+    </div>
 {% endblock %}
