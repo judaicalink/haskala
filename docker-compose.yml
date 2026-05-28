@@ -1,4 +1,14 @@
 # docker-compose.yml
+#
+# Full development stack for the Haskala library platform.
+# Services:
+#   web         - Django/Wagtail application (gunicorn behind nginx)
+#   db          - PostgreSQL 16 seeded from ./haskala.sql on first boot
+#   redis       - cache and django-redis backend
+#   solr        - search index
+#   fuseki      - RDF triple store
+#   mailserver  - MailHog dev SMTP/HTTP UI
+#   nginx       - reverse proxy in front of web
 
 services:
   web:
@@ -6,42 +16,62 @@ services:
       context: .
       dockerfile: Dockerfile
     image: haskala
-    command: /start
     volumes:
       - .:/app
-    ports:
-      - 8000:8000
+      # Keep build artifacts produced inside the image from being shadowed
+      # by the bind mount above:
+      - /app/node_modules
+      - /app/haskala/static/css
+      - /app/haskala/static/js
+      # STATIC_ROOT (per settings.base): /app/static is also where
+      # collectstatic writes during the image build; sharing it with nginx
+      # via the named volume lets nginx serve those files directly.
+      - static_data:/app/static
+    expose:
+      - "8000"
     env_file:
-      - ./.env/.dev-sample
-    depends_on:
-      - db
-      - redis
-      - solr
-      - fuseki
-      - mailserver
-
+      - ./.env
     environment:
-      - DATABASE_URL=postgres://haskala:haskala@db:5432/haskala # postgres://USER:PASSWORD@HOST:PORT/NAME
-      - REDIS_URL=redis://redis:6379/0
-      - SOLR_URL=http://solr:8983/solr/haskala
-      - FUSEKI_URL=http://fuseki:3030/haskala
-      - EMAIL_HOST=mailserver
-      - EMAIL_PORT=1025
+      # Override the values in .env that point at the host's localhost so
+      # the container talks to the sibling services instead.
+      DATABASE_HOST: db
+      DATABASE_PORT: "5432"
+      REDIS_URL: redis://redis:6379/haskala
+      SOLR_URL: http://solr:8983/solr/haskala
+      FUSEKI_URL: http://fuseki:3030/haskala
+      EMAIL_HOST: mailserver
+      EMAIL_PORT: "1025"
+      DJANGO_SETTINGS_MODULE: haskala.settings.dev
+      # SECRET_KEY in .env contains literal '$' sequences that docker compose
+      # would try to interpolate as variables. Override here with a value
+      # that is safe to ship in compose (dev-only stack).
+      SECRET_KEY: "docker-dev-insecure-key-only-for-local-stack"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
 
   db:
-    image: postgres:13
+    image: postgres:16
     environment:
       POSTGRES_DB: haskala
       POSTGRES_USER: haskala
       POSTGRES_PASSWORD: haskala
     volumes:
-      - ./haskala.sql:/docker-entrypoint-initdb.d/haskala.sql
+      - ./haskala.sql:/docker-entrypoint-initdb.d/haskala.sql:ro
       - postgres_data:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U haskala -d haskala"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   redis:
     image: redis:alpine
-    ports:
-      - "6379:6379"
+    # No host port mapping: the web container reaches redis via the
+    # internal service name "redis". Exposing on the host conflicts with
+    # any local Redis already running on 6379.
 
   solr:
     image: solr:8
@@ -70,9 +100,13 @@ services:
     depends_on:
       - web
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - static_data:/var/www/static:ro
     ports:
-      - "80:80"
+      # Host port 8080 to avoid clashing with any local web server
+      # already bound to 80; site is then reachable at http://localhost:8080
+      - "8080:80"
 
 volumes:
   postgres_data:
+  static_data:
