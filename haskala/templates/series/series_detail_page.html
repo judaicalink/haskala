@@ -2,28 +2,58 @@
 
 {% block title %}{{ series.name }} | Series{% endblock %}
 
-{% block content %}
-<div class="container my-4">
-    <h1 class="h2 mb-4">{{ series.name }}</h1>
+{% block meta %}
+    <meta name="description" content="Series: {{ series.name }}">
+    <meta property="og:title" content="{{ series.name }}">
+{% endblock %}
 
-    {% if books_in_series %}
-        <section class="mb-4">
-            <h2 class="h5">Books in this series</h2>
-            <ul class="list-unstyled">
-                {% for book in books_in_series %}
-                    <li>
-                        <a href="{% url 'book-detail' book.name %}" class="link-primary">
-                            {{ book.name|default:"[untitled]" }}
-                        </a>
-                        {% if book.gregorian_year %}
-                            ({{ book.gregorian_year }})
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-    {% else %}
-        <p class="text-muted">No books linked to this series yet.</p>
-    {% endif %}
-</div>
+{% block content %}
+    <div class="container series-detail my-4">
+        <header class="series-header mb-4">
+            <p class="text-muted small mb-1">
+                <a href="{% url 'series-list' %}">Series</a>
+                <span aria-hidden="true">&rsaquo;</span>
+                <span>{{ series.name }}</span>
+            </p>
+
+            <h1 class="series-header__title h2 mb-2">{{ series.name }}</h1>
+
+            <p class="series-header__stats text-muted mb-3">
+                {{ books_in_series|length }} book{{ books_in_series|length|pluralize }}
+            </p>
+
+            <div class="series-header__actions">
+                <button type="button" class="btn btn-sm btn-outline-secondary"
+                        data-permalink="{{ request.build_absolute_uri }}"
+                        aria-label="Copy permalink">
+                    <i class="bi bi-link-45deg"></i> Permalink
+                </button>
+            </div>
+        </header>
+
+        {% if books_in_series %}
+            <section class="series-section mb-4">
+                <h2 class="series-section__heading h4">Books in this series</h2>
+                <ul class="list-unstyled mb-0">
+                    {% for book in books_in_series %}
+                        <li class="mb-1">
+                            {% if book.series_part %}
+                                <span class="text-muted small me-1">[{{ book.series_part }}]</span>
+                            {% endif %}
+                            <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                {{ book.full_title|default:book.name|default:"[untitled]" }}
+                            </a>
+                            {% if book.gregorian_year or book.year_in_book %}
+                                <span class="text-muted small">
+                                    &middot; {{ book.gregorian_year|default:book.year_in_book }}
+                                </span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% else %}
+            <p class="text-muted">No books linked to this series yet.</p>
+        {% endif %}
+    </div>
 {% endblock %}

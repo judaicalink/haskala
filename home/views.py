@@ -554,7 +554,11 @@ def topic_detail_view(request, topic_slug):
     """
     topic = _get_object_by_slug(Topic.objects.all(), topic_slug)
 
-    books_with_topic = Book.objects.filter(topic=topic).order_by("name").distinct()
+    books_with_topic = (
+        Book.objects.filter(topic=topic)
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
 
     context = {
         "topic": topic,
@@ -603,13 +607,22 @@ def publisher_detail_view(request, publisher_slug):
     """
     publisher = _get_object_by_slug(Publisher.objects.all(), publisher_slug)
 
-    books_published = Book.objects.filter(
-        Q(publisher=publisher) | Q(original_publisher=publisher)
-    ).order_by("name").distinct()
+    books_published = (
+        Book.objects.filter(publisher=publisher)
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
+    books_original = (
+        Book.objects.filter(original_publisher=publisher)
+        .exclude(publisher=publisher)
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
 
     context = {
         "publisher": publisher,
         "books_published": books_published,
+        "books_original": books_original,
     }
     return render(request, "publishers/publisher_detail_page.html", context)
 
@@ -649,6 +662,7 @@ def occupation_detail_view(request, occupation_slug):
 
     persons_with_occupation = (
         Person.objects.filter(occupations=occupation)
+        .select_related("place_of_birth", "place_of_death")
         .order_by("pref_label", "german_name", "hebrew_name")
         .distinct()
     )
@@ -725,7 +739,7 @@ def series_detail_view(request, series_slug):
 
     books_in_series = (
         Book.objects.filter(series=series)
-        .order_by("name")
+        .order_by("series_part", "gregorian_year", "name")
         .distinct()
     )
 

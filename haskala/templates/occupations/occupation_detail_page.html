@@ -2,25 +2,55 @@
 
 {% block title %}{{ occupation.name }} | Occupations{% endblock %}
 
-{% block content %}
-<div class="container my-4">
-    <h1 class="h2 mb-4">{{ occupation.name }}</h1>
+{% block meta %}
+    <meta name="description" content="Occupation: {{ occupation.name }}">
+    <meta property="og:title" content="{{ occupation.name }}">
+{% endblock %}
 
-    {% if persons_with_occupation %}
-        <section class="mb-4">
-            <h2 class="h5">Persons with this occupation</h2>
-            <ul class="list-unstyled">
-                {% for person in persons_with_occupation %}
-                    <li>
-                        <a href="{% url 'person-detail' person.pk %}" class="link-primary">
-                            {{ person }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-    {% else %}
-        <p class="text-muted">No persons linked to this occupation yet.</p>
-    {% endif %}
-</div>
+{% block content %}
+    <div class="container occupation-detail my-4">
+        <header class="occupation-header mb-4">
+            <p class="text-muted small mb-1">
+                <a href="{% url 'occupations-list' %}">Occupations</a>
+                <span aria-hidden="true">&rsaquo;</span>
+                <span>{{ occupation.name }}</span>
+            </p>
+
+            <h1 class="occupation-header__title h2 mb-2">{{ occupation.name }}</h1>
+
+            <p class="occupation-header__stats text-muted mb-3">
+                {{ persons_with_occupation|length }} person{{ persons_with_occupation|length|pluralize }}
+            </p>
+
+            <div class="occupation-header__actions">
+                <button type="button" class="btn btn-sm btn-outline-secondary"
+                        data-permalink="{{ request.build_absolute_uri }}"
+                        aria-label="Copy permalink">
+                    <i class="bi bi-link-45deg"></i> Permalink
+                </button>
+            </div>
+        </header>
+
+        {% if persons_with_occupation %}
+            <section class="occupation-section mb-4">
+                <h2 class="occupation-section__heading h4">Persons with this occupation</h2>
+                <ul class="list-unstyled mb-0">
+                    {% for person in persons_with_occupation %}
+                        <li class="mb-1">
+                            <a href="{% url 'person-detail' person.uuid %}" class="link-primary">
+                                {{ person }}
+                            </a>
+                            {% if person.date_of_birth or person.date_of_death %}
+                                <span class="text-muted small">
+                                    &middot; {{ person.date_of_birth|default:"?" }}&ndash;{{ person.date_of_death|default:"?" }}
+                                </span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% else %}
+            <p class="text-muted">No persons linked to this occupation yet.</p>
+        {% endif %}
+    </div>
 {% endblock %}
