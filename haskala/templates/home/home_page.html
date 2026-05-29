@@ -4,36 +4,83 @@
 
 {% block title %}The Library of the Haskala{% endblock %}
 
+{% block body_class %}front{% endblock %}
+
 {% block content %}
-  <section class="homepage-intro mb-3">
-      {% if page.body %}
-        <div class="intro lead">
-          {{ page.body|richtext }}
-        </div>
-      {% endif %}
-  </section>
+    <div class="container homepage my-4">
+        <section class="homepage-hero text-center mb-5">
+            <h1 class="display-5 mb-3">The Library of the Haskala</h1>
+            {% if page.body %}
+                <div class="homepage-intro lead mx-auto" style="max-width: 720px;">
+                    {{ page.body|richtext }}
+                </div>
+            {% endif %}
+        </section>
 
-  <section class="homepage-search">
-      <form action="{% url 'search' %}" method="get"
-            id="search-api-page-search-form-haskala"
-            class="search-hero form-inline">
+        <section class="homepage-search mb-5">
+            <form action="{% url 'search' %}" method="get"
+                  id="search-api-page-search-form-haskala"
+                  class="search-hero">
+                <div class="search-hero-inner mx-auto" style="max-width: 720px;">
+                    <div class="input-group input-group-lg">
+                        <input type="text"
+                               name="q"
+                               id="id_q"
+                               class="form-control rounded-start-5"
+                               placeholder="Search the Library of the Haskala"
+                               aria-label="Search">
+                        <button type="submit"
+                                class="btn btn-primary rounded-end-5 text-white px-4">
+                            <i class="bi bi-search"></i>
+                            <span class="visually-hidden">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
 
-          <div class="search-hero-inner mb-3">
+        <section class="homepage-browse mb-5">
+            <h2 class="h4 text-center mb-4">Browse the library</h2>
+            <div class="row g-3 row-cols-2 row-cols-md-4">
+                <div class="col">
+                    <a href="{% url 'books-list' %}"
+                       class="card h-100 text-decoration-none text-body">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book-half display-6 text-primary"></i>
+                            <h3 class="h6 mt-2 mb-0">Books</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'persons-list' %}"
+                       class="card h-100 text-decoration-none text-body">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people display-6 text-primary"></i>
+                            <h3 class="h6 mt-2 mb-0">Persons</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'places-list' %}"
+                       class="card h-100 text-decoration-none text-body">
+                        <div class="card-body text-center">
+                            <i class="bi bi-geo-alt display-6 text-primary"></i>
+                            <h3 class="h6 mt-2 mb-0">Places</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'digital-books-list' %}"
+                       class="card h-100 text-decoration-none text-body">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cloud-download display-6 text-primary"></i>
+                            <h3 class="h6 mt-2 mb-0">Digital books</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-              <div class="input-group">
-                  <input type="text"
-                         name="q"
-                         id="id_q"
-                         class="form-control form-control-lg rounded-start-5"
-                         placeholder="Search the Library of the Haskala">
-                  <button type="submit" class="btn btn-primary btn-lg rounded-end-5 text-white">
-                      <i class="bi bi-search"></i>
-                  </button>
-              </div>
-          </div>
-      </form>
-  </section>
-
-  {% topic_tagcloud %}
-
+        {% topic_tagcloud %}
+    </div>
 {% endblock %}
