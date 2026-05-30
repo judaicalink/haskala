@@ -358,6 +358,13 @@ MATOMO_URL = env("MATOMO_URL", default="")
 MATOMO_SITE_IDS = json.loads(os.environ.get("MATOMO_SITE_IDS", "{}"))
 USE_X_FORWARDED_HOST = True
 
+# RDF export (haskala_rdf). HASKALA_DUMPS_ROOT is the parent directory
+# under which one subdirectory per dataset (named after HASKALA_SLUG)
+# holds /current and /archive/<timestamp> snapshots.
+HASKALA_DUMPS_ROOT = env("HASKALA_DUMPS_ROOT", default=os.path.join(BASE_DIR, "dumps"))
+HASKALA_SLUG = env("HASKALA_SLUG", default="haskala")
+HASKALA_GND_MAPPING_CSV = env("HASKALA_GND_MAPPING_CSV", default="")
+
 # Mail
 EMAIL_BACKEND = env("EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend")
 EMAIL_HOST = env("EMAIL_HOST", default="smtp.example.com")

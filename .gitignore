@@ -19,6 +19,9 @@ node_modules/
 *.dump
 *.sql
 
+# RDF export output (settings.HASKALA_DUMPS_ROOT default location)
+/dumps/
+
 # Generated theme assets (built via `npm run build:*` and `npm run copy:icons`)
 haskala/static/css/haskala.css
 haskala/static/css/haskala.css.map
