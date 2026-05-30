@@ -15,9 +15,11 @@ from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, Field
 from wagtail.contrib.forms.models import AbstractFormField, AbstractEmailForm
 from wagtail.contrib.forms.panels import FormSubmissionsPanel
 from wagtail.fields import RichTextField
-from wagtail.models import Page
+from wagtail.models import Page, RevisionMixin
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
+
+from .book_admin import build_book_panels
 
 # Create a bundle choice field for the options of translation, edition, mention and preface
 BUNDLE_CHOICES = (
@@ -347,7 +349,7 @@ class LanguageCount(models.Model):
 
 
 @register_snippet
-class City(LegacyImportedModel):
+class City(RevisionMixin, LegacyImportedModel):
     """
     Model for the cities
     """
@@ -403,7 +405,7 @@ class Occupation(models.Model):
 
 
 @register_snippet
-class Person(LegacyImportedModel):
+class Person(RevisionMixin, LegacyImportedModel):
     """
     Model for the person.
     """
@@ -606,6 +608,7 @@ class Topic(models.Model):
         return self.name
 
 
+@register_snippet
 class BookAuthor(models.Model):
     book = models.ForeignKey("Book", on_delete=models.CASCADE)
     person = models.ForeignKey("Person", on_delete=models.CASCADE)
@@ -684,7 +687,7 @@ class OriginalType(models.Model):
         return self.name
 
 
-class Book(LegacyImportedModel):
+class Book(RevisionMixin, LegacyImportedModel):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -1405,6 +1408,8 @@ class Book(LegacyImportedModel):
         index.SearchField("name", partial_match=True),
         index.SearchField("authors", partial_match=True),
     ]
+
+    panels = build_book_panels()
 
     class Meta:
         verbose_name = "Book"
