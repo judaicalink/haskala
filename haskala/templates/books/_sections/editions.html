@@ -1,0 +1,80 @@
+{% if book.editions.all %}
+    <h3 class="h6 mt-3">Known editions</h3>
+    <ul class="list-unstyled mb-3">
+        {% for ed in book.editions.all %}
+            <li class="mb-1">
+                {{ ed.name|default:"[unnamed edition]" }}
+                {% if ed.year %}<span class="text-muted small">&middot; {{ ed.year }}</span>{% endif %}
+                {% if ed.city %}<span class="text-muted small">&middot; {{ ed.city.name }}</span>{% endif %}
+                {% if ed.changes %}<div class="small text-muted">{{ ed.changes }}</div>{% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<dl class="row mb-0">
+    {% if book.total_number_of_editions %}
+        <dt class="col-sm-4">Total number of editions</dt>
+        <dd class="col-sm-8">{{ book.total_number_of_editions }}</dd>
+    {% endif %}
+    {% if book.last_known_edition %}
+        <dt class="col-sm-4">Last known edition</dt>
+        <dd class="col-sm-8">{{ book.last_known_edition }}</dd>
+    {% endif %}
+    {% if book.editions_notes %}
+        <dt class="col-sm-4">Editions notes</dt>
+        <dd class="col-sm-8">{{ book.editions_notes }}</dd>
+    {% endif %}
+    {% if book.references_for_editions %}
+        <dt class="col-sm-4">References for editions</dt>
+        <dd class="col-sm-8">{{ book.references_for_editions }}</dd>
+    {% endif %}
+    {% if book.new_edition_general_notes %}
+        <dt class="col-sm-4">New edition notes</dt>
+        <dd class="col-sm-8">{{ book.new_edition_general_notes }}</dd>
+    {% endif %}
+    {% if book.new_edition_type_in_text %}
+        <dt class="col-sm-4">New edition type (in book)</dt>
+        <dd class="col-sm-8">{{ book.new_edition_type_in_text }}</dd>
+    {% endif %}
+    {% if book.new_edition_type_elsewhere %}
+        <dt class="col-sm-4">New edition type (elsewhere)</dt>
+        <dd class="col-sm-8">{{ book.new_edition_type_elsewhere }}</dd>
+    {% endif %}
+    {% if book.new_edition_type_reference %}
+        <dt class="col-sm-4">New edition type reference</dt>
+        <dd class="col-sm-8">{{ book.new_edition_type_reference }}</dd>
+    {% endif %}
+    {% if book.new_edition_type_else_ref %}
+        <dt class="col-sm-4">New edition type (other reference)</dt>
+        <dd class="col-sm-8">{{ book.new_edition_type_else_ref }}</dd>
+    {% endif %}
+    {% if book.new_edition_type_notes %}
+        <dt class="col-sm-4">New edition type notes</dt>
+        <dd class="col-sm-8">{{ book.new_edition_type_notes }}</dd>
+    {% endif %}
+    {% if book.new_edition_type_else_note %}
+        <dt class="col-sm-4">New edition type (other notes)</dt>
+        <dd class="col-sm-8">{{ book.new_edition_type_else_note }}</dd>
+    {% endif %}
+    {% if book.copy_of_book_used %}
+        <dt class="col-sm-4">Copy of book used</dt>
+        <dd class="col-sm-8">{{ book.copy_of_book_used }}</dd>
+    {% endif %}
+    {% if book.other_volumes %}
+        <dt class="col-sm-4">Other volumes</dt>
+        <dd class="col-sm-8">{{ book.other_volumes }}</dd>
+    {% endif %}
+    {% if book.volumes_notes %}
+        <dt class="col-sm-4">Volume notes</dt>
+        <dd class="col-sm-8">{{ book.volumes_notes }}</dd>
+    {% endif %}
+    {% if book.volumes_published_number %}
+        <dt class="col-sm-4">Volumes published</dt>
+        <dd class="col-sm-8">{{ book.volumes_published_number }}</dd>
+    {% endif %}
+    {% if book.planned_volumes %}
+        <dt class="col-sm-4">Planned volumes</dt>
+        <dd class="col-sm-8">{{ book.planned_volumes }}</dd>
+    {% endif %}
+</dl>

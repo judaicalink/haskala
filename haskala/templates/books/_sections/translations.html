@@ -1,0 +1,38 @@
+{% if book.translations.all %}
+    <h3 class="h6 mt-3">Known translations</h3>
+    <ul class="list-unstyled mb-3">
+        {% for tr in book.translations.all %}
+            <li class="mb-1">
+                {% if tr.translator %}
+                    <a href="{% url 'person-detail' tr.translator.uuid %}" class="link-primary">
+                        {{ tr.translator }}
+                    </a>
+                {% else %}
+                    <span class="text-muted">[unknown translator]</span>
+                {% endif %}
+                {% if tr.language %}<span class="text-muted small">&middot; into {{ tr.language.name }}</span>{% endif %}
+                {% if tr.city %}<span class="text-muted small">&middot; {{ tr.city.name }}</span>{% endif %}
+                {% if tr.year %}<span class="text-muted small">&middot; {{ tr.year }}</span>{% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<dl class="row mb-0">
+    {% if book.translation_type %}
+        <dt class="col-sm-4">Translation type</dt>
+        <dd class="col-sm-8">{{ book.translation_type.name }}</dd>
+    {% endif %}
+    {% if book.translation_notes %}
+        <dt class="col-sm-4">Translation notes</dt>
+        <dd class="col-sm-8">{{ book.translation_notes }}</dd>
+    {% endif %}
+    {% if book.presented_as_translation_refe %}
+        <dt class="col-sm-4">Presented as translation (reference)</dt>
+        <dd class="col-sm-8">{{ book.presented_as_translation_refe }}</dd>
+    {% endif %}
+    {% if book.presented_as_translatio_notes %}
+        <dt class="col-sm-4">Presented as translation (notes)</dt>
+        <dd class="col-sm-8">{{ book.presented_as_translatio_notes }}</dd>
+    {% endif %}
+</dl>

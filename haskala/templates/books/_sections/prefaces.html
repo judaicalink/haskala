@@ -1,0 +1,17 @@
+<ul class="list-unstyled mb-0">
+    {% for pf in book.prefaces.all %}
+        <li class="mb-2">
+            <strong>{{ pf.title|default:"Preface" }}</strong>
+            {% if pf.number %}
+                <span class="text-muted small">&middot; #{{ pf.number }}</span>
+            {% endif %}
+            {% if pf.writer %}
+                &mdash; by
+                <a href="{% url 'person-detail' pf.writer.uuid %}" class="link-primary">{{ pf.writer }}</a>
+            {% endif %}
+            {% if pf.notes %}
+                <div class="small text-muted">{{ pf.notes|linebreaksbr }}</div>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

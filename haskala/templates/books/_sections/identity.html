@@ -1,0 +1,50 @@
+<dl class="row mb-0">
+    {% if book.full_title %}
+        <dt class="col-sm-4">Full title</dt>
+        <dd class="col-sm-8">{{ book.full_title }}</dd>
+    {% endif %}
+    {% if book.title_in_latin_characters %}
+        <dt class="col-sm-4">Title in Latin characters</dt>
+        <dd class="col-sm-8 fst-italic">{{ book.title_in_latin_characters }}</dd>
+    {% endif %}
+    {% if book.motto %}
+        <dt class="col-sm-4">Motto</dt>
+        <dd class="col-sm-8">{{ book.motto }}</dd>
+    {% endif %}
+    {% if book.old_name_in_book %}
+        <dt class="col-sm-4">Old name in book</dt>
+        <dd class="col-sm-8">{{ book.old_name_in_book }}</dd>
+    {% endif %}
+    {% if book.other_books_names %}
+        <dt class="col-sm-4">Other names of this book</dt>
+        <dd class="col-sm-8">{{ book.other_books_names }}</dd>
+    {% endif %}
+    {% if book.original_text_name %}
+        <dt class="col-sm-4">Original text name</dt>
+        <dd class="col-sm-8">{{ book.original_text_name }}</dd>
+    {% endif %}
+    {% if book.original_title %}
+        <dt class="col-sm-4">Original title</dt>
+        <dd class="col-sm-8">{{ book.original_title }}</dd>
+    {% endif %}
+    {% if book.original_title_else_refer %}
+        <dt class="col-sm-4">Original title (reference)</dt>
+        <dd class="col-sm-8">{{ book.original_title_else_refer }}</dd>
+    {% endif %}
+    {% if book.original_title_elsewhere %}
+        <dt class="col-sm-4">Original title elsewhere</dt>
+        <dd class="col-sm-8">{{ book.original_title_elsewhere }}</dd>
+    {% endif %}
+    {% if book.presented_as_original %}
+        <dt class="col-sm-4">Presented as original</dt>
+        <dd class="col-sm-8">{{ book.presented_as_original }}</dd>
+    {% endif %}
+    {% if book.presented_as_translation %}
+        <dt class="col-sm-4">Presented as translation</dt>
+        <dd class="col-sm-8">{{ book.presented_as_translation }}</dd>
+    {% endif %}
+    {% if book.presented_new_edition %}
+        <dt class="col-sm-4">Presented as new edition</dt>
+        <dd class="col-sm-8">{{ book.presented_new_edition }}</dd>
+    {% endif %}
+</dl>

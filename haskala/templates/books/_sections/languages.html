@@ -1,0 +1,32 @@
+<dl class="row mb-0">
+    {% if book.languages.all %}
+        <dt class="col-sm-4">Languages</dt>
+        <dd class="col-sm-8">
+            {% for lang in book.languages.all %}{{ lang.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.original_language %}
+        <dt class="col-sm-4">Original language</dt>
+        <dd class="col-sm-8">{{ book.original_language.name }}</dd>
+    {% endif %}
+    {% if book.languages_number %}
+        <dt class="col-sm-4">Number of languages</dt>
+        <dd class="col-sm-8">{{ book.languages_number.name }}</dd>
+    {% endif %}
+    {% if book.footnote_languages.all %}
+        <dt class="col-sm-4">Footnote languages</dt>
+        <dd class="col-sm-8">
+            {% for lang in book.footnote_languages.all %}{{ lang.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.location_of_footnotes %}
+        <dt class="col-sm-4">Location of footnotes</dt>
+        <dd class="col-sm-8">{{ book.location_of_footnotes.name }}</dd>
+    {% endif %}
+    {% if book.occasional_words_languages.all %}
+        <dt class="col-sm-4">Occasional-word languages</dt>
+        <dd class="col-sm-8">
+            {% for lang in book.occasional_words_languages.all %}{{ lang.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+</dl>
