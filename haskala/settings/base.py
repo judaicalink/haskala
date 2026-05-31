@@ -316,8 +316,9 @@ COOKIEBANNER = {
     "header_text": _("We are using cookies on this website. A few are essential, others are not."),
     "footer_text": _("Please accept our cookies"),
     "footer_links": [
-        {"title": _("Imprint"), "href": "/imprint"},
-        {"title": _("Privacy"), "href": "/privacy"},
+        {"title": _("Legal Notice"), "href": "/legal-notice/"},
+        {"title": _("Privacy Policy"), "href": "/privacy-policy/"},
+        {"title": _("Cookie Policy"), "href": "/cookie-policy/"},
     ],
     "groups": [
         {
