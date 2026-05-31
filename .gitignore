@@ -11,6 +11,27 @@ db.sqlite3
 db.sqlite3-journal
 media
 
+### Project ###
+# npm dependencies
+node_modules/
+
+# Database dumps
+*.dump
+*.sql
+
+# RDF export output (settings.HASKALA_DUMPS_ROOT default location)
+/dumps/
+
+# Generated theme assets (built via `npm run build:*` and `npm run copy:icons`)
+haskala/static/css/haskala.css
+haskala/static/css/haskala.css.map
+haskala/static/css/bootstrap-icons.css
+haskala/static/js/app.js
+haskala/static/js/bootstrap.bundle.js
+haskala/static/js/bootstrap-icons.json
+haskala/static/fonts/bootstrap-icons.woff
+haskala/static/fonts/bootstrap-icons.woff2
+
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
 # <django-project-name>/staticfiles/

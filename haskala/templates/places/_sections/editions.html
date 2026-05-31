@@ -1,0 +1,19 @@
+<ul class="list-unstyled mb-0">
+    {% for ed in editions_here %}
+        <li class="mb-1">
+            {% if ed.book %}
+                <a href="{% url 'book-detail' ed.book.name %}" class="link-primary">
+                    {{ ed.book.full_title|default:ed.book.name|default:"[untitled]" }}
+                </a>
+            {% else %}
+                <span class="text-muted">[unlinked edition]</span>
+            {% endif %}
+            {% if ed.year %}
+                <span class="text-muted small">&middot; {{ ed.year }}</span>
+            {% endif %}
+            {% if ed.name %}
+                <span class="text-muted small">&middot; {{ ed.name }}</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

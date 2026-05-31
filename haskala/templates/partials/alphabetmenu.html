@@ -1,0 +1,23 @@
+{# Alphabetic Filter Navigation (Latin) #}
+<section class="books-filter my-3">
+    <nav class="eng mb-2">
+        <ul class="list-inline">
+            {% for letter in alphabet %}
+                <li class="list-inline-item">
+                    <a href="#letter-{{ letter }}" class="h3">{{ letter }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    {# Hebrew #}
+    <nav class="heb">
+        <ul class="list-inline">
+            {% for letter in hebrew_alphabet %}
+                <li class="list-inline-item">
+                    <a href="#letter-{{ letter }}" class="h3">{{ letter }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</section>

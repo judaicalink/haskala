@@ -1,0 +1,42 @@
+{% if book.bookauthor_set.all %}
+    <h3 class="h6 mt-3">Persons</h3>
+    <ul class="list-unstyled mb-3">
+        {% for ba in book.bookauthor_set.all %}
+            {% if ba.person %}
+                <li class="mb-1">
+                    <a href="{% url 'person-detail' ba.person.uuid %}" class="link-primary">
+                        {{ ba.person }}
+                    </a>
+                    <span class="text-muted small">&middot; {{ ba.get_role_display }}</span>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<dl class="row mb-0">
+    {% if book.original_author %}
+        <dt class="col-sm-4">Original author</dt>
+        <dd class="col-sm-8">{{ book.original_author }}</dd>
+    {% endif %}
+    {% if book.original_author_else_refer %}
+        <dt class="col-sm-4">Original author (reference)</dt>
+        <dd class="col-sm-8">{{ book.original_author_else_refer }}</dd>
+    {% endif %}
+    {% if book.original_author_elsewhere %}
+        <dt class="col-sm-4">Original author elsewhere</dt>
+        <dd class="col-sm-8">{{ book.original_author_elsewhere }}</dd>
+    {% endif %}
+    {% if book.original_author_other_name %}
+        <dt class="col-sm-4">Original author (other name)</dt>
+        <dd class="col-sm-8">{{ book.original_author_other_name }}</dd>
+    {% endif %}
+    {% if book.founders %}
+        <dt class="col-sm-4">Founders</dt>
+        <dd class="col-sm-8">{{ book.founders }}</dd>
+    {% endif %}
+    {% if book.proofreaders %}
+        <dt class="col-sm-4">Proofreaders</dt>
+        <dd class="col-sm-8">{{ book.proofreaders }}</dd>
+    {% endif %}
+</dl>

@@ -1,0 +1,23 @@
+<ul class="list-unstyled mb-0">
+    {% for m in mentions_of_person %}
+        <li class="mb-2">
+            {% if m.mentionee_description %}
+                <strong>{{ m.mentionee_description.name }}</strong>
+            {% else %}
+                <strong>Mention</strong>
+            {% endif %}
+            {% if m.mentionee_city %}
+                in
+                <a href="{% url 'place-detail' m.mentionee_city.name|slugify %}">
+                    {{ m.mentionee_city.name }}
+                </a>
+            {% endif %}
+            {% if m.book %}
+                &mdash;
+                <a href="{% url 'book-detail' m.book.name %}" class="link-primary">
+                    {{ m.book.full_title|default:m.book.name|default:"[untitled]" }}
+                </a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

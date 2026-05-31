@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load utils %}
+
+{% block title %}Series{% endblock %}
+
+{% block content %}
+    <div class="container index-page my-4">
+        <header class="index-header mb-4">
+            <h1 class="h2 mb-2">Series</h1>
+            <p class="text-muted mb-0">
+                {{ total_count }} series in total
+            </p>
+        </header>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="index-list">
+            {% if series_by_letter %}
+                {% for letter, series_list in series_by_letter.items %}
+                    <div class="index-group mb-4" id="letter-{{ letter }}">
+                        <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
+                        <ul class="list-unstyled mb-0">
+                            {% for s in series_list %}
+                                <li class="mb-1">
+                                    {% if s.slug %}
+                                        <a href="{% url 'series-detail' s.slug %}" class="link-primary">
+                                            {{ s.name }}
+                                        </a>
+                                    {% else %}
+                                        <span>{{ s.name }}</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-muted">No series found.</p>
+            {% endif %}
+        </section>
+    </div>
+{% endblock %}

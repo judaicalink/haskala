@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Topics{% endblock %}
+
+{% block content %}
+    <div class="container index-page my-4">
+        <header class="index-header mb-4">
+            <h1 class="h2 mb-2">Topics</h1>
+            <p class="text-muted mb-0">
+                {{ total_count }} topic{{ total_count|pluralize }} in total
+            </p>
+        </header>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="index-list">
+            {% if topics_by_letter %}
+                {% for letter, topics in topics_by_letter.items %}
+                    <div class="index-group mb-4" id="letter-{{ letter }}">
+                        <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
+                        <ul class="list-unstyled mb-0">
+                            {% for topic in topics %}
+                                <li class="mb-1">
+                                    <a href="{% url 'topic-detail' topic.name|slugify %}" class="link-primary">
+                                        {{ topic.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-muted">No topics found.</p>
+            {% endif %}
+        </section>
+    </div>
+{% endblock %}

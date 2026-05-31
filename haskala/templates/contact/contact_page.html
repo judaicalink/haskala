@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <h1 class="mb-3">{{ page.title }}</h1>
+
+            {% if page.body %}
+                <div class="mb-4">
+                    {{ page.body|richtext }}
+                </div>
+            {% endif %}
+
+            {# Django messages: Erfolg / Fehler #}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags|default:'info' }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <form action="{% pageurl page %}" method="POST" novalidate>
+                        {% csrf_token %}
+
+                        {# Form-Fehler oben gesammelt #}
+                        {% if form.non_field_errors %}
+                            <div class="alert alert-danger">
+                                {{ form.non_field_errors }}
+                            </div>
+                        {% endif %}
+
+                        {{ form.as_p }}
+
+                        <button type="submit" class="btn btn-primary">
+                            Send message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

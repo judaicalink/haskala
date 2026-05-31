@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Bad Request{% endblock %}
+{% block body_class %}template-400{% endblock %}
+
+{% block content %}
+    <h1>Bad Request (400)</h1>
+    <h2>Sorry, your request could not be processed.</h2>
+
+    <p>
+        If you believe this is an error, please try again or contact the site administrator.
+    </p>
+
+    <p><a href="/">Return to the homepage</a></p>
+{% endblock %}

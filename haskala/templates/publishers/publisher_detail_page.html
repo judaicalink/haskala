@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}{{ publisher.name }} | Publishers{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Publisher: {{ publisher.name }}">
+    <meta property="og:title" content="{{ publisher.name }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container publisher-detail my-4">
+        <header class="publisher-header mb-4">
+            <p class="text-muted small mb-1">
+                <a href="{% url 'publishers-list' %}">Publishers</a>
+                <span aria-hidden="true">&rsaquo;</span>
+                <span>{{ publisher.name }}</span>
+            </p>
+
+            <h1 class="publisher-header__title h2 mb-2">{{ publisher.name }}</h1>
+
+            <p class="publisher-header__stats text-muted mb-3">
+                {{ books_published|length }} published
+                {% if books_original %}
+                    &middot; {{ books_original|length }} as original publisher
+                {% endif %}
+            </p>
+
+            <div class="publisher-header__actions">
+                <button type="button" class="btn btn-sm btn-outline-secondary"
+                        data-permalink="{{ request.build_absolute_uri }}"
+                        aria-label="Copy permalink">
+                    <i class="bi bi-link-45deg"></i> Permalink
+                </button>
+            </div>
+        </header>
+
+        {% if books_published %}
+            <section class="publisher-section mb-4">
+                <h2 class="publisher-section__heading h4">Books published</h2>
+                <ul class="list-unstyled mb-0">
+                    {% for book in books_published %}
+                        <li class="mb-1">
+                            <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                {{ book.full_title|default:book.name|default:"[untitled]" }}
+                            </a>
+                            {% if book.gregorian_year or book.year_in_book %}
+                                <span class="text-muted small">
+                                    &middot; {{ book.gregorian_year|default:book.year_in_book }}
+                                </span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endif %}
+
+        {% if books_original %}
+            <section class="publisher-section mb-4">
+                <h2 class="publisher-section__heading h4">Books with this publisher as original publisher</h2>
+                <ul class="list-unstyled mb-0">
+                    {% for book in books_original %}
+                        <li class="mb-1">
+                            <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                {{ book.full_title|default:book.name|default:"[untitled]" }}
+                            </a>
+                            {% if book.gregorian_year or book.year_in_book %}
+                                <span class="text-muted small">
+                                    &middot; {{ book.gregorian_year|default:book.year_in_book }}
+                                </span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endif %}
+
+        {% if not books_published and not books_original %}
+            <p class="text-muted">No books linked to this publisher yet.</p>
+        {% endif %}
+    </div>
+{% endblock %}

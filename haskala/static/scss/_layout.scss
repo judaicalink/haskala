@@ -1,0 +1,216 @@
+// scss/_layout.scss
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fff url('../images/site_background.jpg') no-repeat center top;
+  background-size: 100%;
+  overflow-x: hidden;
+  font-family: $font-family-base;
+  font-size: small;
+  color: $body-color;
+  text-align: center;
+  padding: 0 $site-padding-x;
+  position: relative; // kommt aus overrides.css
+}
+
+// Überschriften: uppercase + Haskala-Headline-Font
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+// Links – nutzen nur noch die Bootstrap-Variablen
+a,
+a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-hover-color;
+  text-decoration: none;
+}
+
+// Wrapper (Layout-Zentrum)
+.wrapper {
+  max-width: $wrapper-max-width;
+  margin: 17px auto 14px;
+  line-height: 1.7;
+}
+
+// HR-Titel (blaue Linien rechts/links)
+.wrapper .hr-title {
+  color: $haskala-blue;
+  font-family: $headings-font-family;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid $haskala-blue;
+    width: 38%;
+    padding-top: 11px;
+  }
+
+  &:before { float: left;  }
+  &:after  { float: right; }
+}
+
+// Site-Name im Header
+.wrapper header .site-name {
+  font-family: $headings-font-family;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  letter-spacing: 11.3px;
+
+  a,
+  a:hover {
+    color: $haskala-brown;
+  }
+
+  span {
+    font-size: 35px;
+    display: block;
+    text-transform: none;
+    letter-spacing: 11.2px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 35px;
+
+    span {
+      font-size: 15px;
+      letter-spacing: 9.5px;
+    }
+  }
+}
+
+// Breadcrumbs
+.wrapper header .bread-crumbs {
+  margin-right: 4px;
+  margin-top: 10px;
+
+  ul {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  li {
+    display: inline;
+    font-weight: 400;
+
+    &:after {
+      content: ' >';
+    }
+
+    &.last:after {
+      content: '';
+    }
+  }
+}
+// =====================================
+// Scroll-to-top Button
+// =====================================
+
+#scrollTopBtn {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background-color: $haskala-brown;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;              // neu: flex für zentriertes Icon
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.2s ease;
+  z-index: 1050;
+
+  &:hover {
+    background-color: $haskala-blue;
+    transform: translateY(-2px);
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  i {
+    font-size: 1.5rem;        // Icon-Größe
+    line-height: 1;
+  }
+}
+
+// Haskala Buttons (Bootstrap .btn-Klassen überschreiben)
+
+.btn {
+  font-weight: $btn-font-weight;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: $haskala-blue;
+  border-color: darken($haskala-blue, 5%);
+
+  &:hover,
+  &:focus {
+    background-color: darken($haskala-blue, 5%);
+    border-color: darken($haskala-blue, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $haskala-grayblue;
+  border-color: darken($haskala-grayblue, 5%);
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: darken($haskala-grayblue, 5%);
+    border-color: darken($haskala-grayblue, 10%);
+    color: #fff;
+  }
+}
+
+.btn-outline-primary {
+  color: $haskala-blue;
+  border-color: $haskala-blue;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $haskala-blue;
+    border-color: $haskala-blue;
+  }
+}
+
+.btn-link {
+  color: $haskala-blue;
+
+  &:hover,
+  &:focus {
+    color: $haskala-gold;
+  }
+}

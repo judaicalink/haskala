@@ -1,0 +1,13 @@
+{% comment %}
+This is a plain-text BibTeX entry. Literal braces are emitted via
+{% templatetag openbrace %} and {% templatetag closebrace %} because
+Django template delimiters conflict with BibTeX's own brace syntax.
+{% endcomment %}
+{% load bibtex_filters %}@book{% templatetag openbrace %}{{ key }},
+  title     = {% templatetag openbrace %}{% templatetag openbrace %}{{ book.full_title|default:book.name|bibtex_escape }}{% templatetag closebrace %}{% templatetag closebrace %},{% if authors %}
+  author    = {% templatetag openbrace %}{% for a in authors %}{{ a|bibtex_escape }}{% if not forloop.last %} and {% endif %}{% endfor %}{% templatetag closebrace %},{% endif %}{% if book.gregorian_year or book.year_in_book %}
+  year      = {% templatetag openbrace %}{{ book.gregorian_year|default:book.year_in_book }}{% templatetag closebrace %},{% endif %}{% if book.publisher %}
+  publisher = {% templatetag openbrace %}{% templatetag openbrace %}{{ book.publisher.name|bibtex_escape }}{% templatetag closebrace %}{% templatetag closebrace %},{% endif %}{% if book.publication_place %}
+  address   = {% templatetag openbrace %}{% templatetag openbrace %}{{ book.publication_place.name|bibtex_escape }}{% templatetag closebrace %}{% templatetag closebrace %},{% endif %}{% if book.title_in_latin_characters %}
+  note      = {% templatetag openbrace %}Latin title: {{ book.title_in_latin_characters|bibtex_escape }}{% templatetag closebrace %},{% endif %}
+{% templatetag closebrace %}

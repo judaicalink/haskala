@@ -1,0 +1,26 @@
+<dl class="row mb-0">
+    {% if person.date_of_birth %}
+        <dt class="col-sm-4">Date of birth</dt>
+        <dd class="col-sm-8">{{ person.date_of_birth }}</dd>
+    {% endif %}
+    {% if person.place_of_birth %}
+        <dt class="col-sm-4">Place of birth</dt>
+        <dd class="col-sm-8">
+            <a href="{% url 'place-detail' person.place_of_birth.name|slugify %}">
+                {{ person.place_of_birth.name }}
+            </a>
+        </dd>
+    {% endif %}
+    {% if person.date_of_death %}
+        <dt class="col-sm-4">Date of death</dt>
+        <dd class="col-sm-8">{{ person.date_of_death }}</dd>
+    {% endif %}
+    {% if person.place_of_death %}
+        <dt class="col-sm-4">Place of death</dt>
+        <dd class="col-sm-8">
+            <a href="{% url 'place-detail' person.place_of_death.name|slugify %}">
+                {{ person.place_of_death.name }}
+            </a>
+        </dd>
+    {% endif %}
+</dl>

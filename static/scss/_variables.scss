@@ -1,0 +1,154 @@
+// =========================================================
+// HASKALA COLOR SYSTEM
+// =========================================================
+
+// --- Brand Colors ---
+$haskala-brown:    #615f59;  // Hauptschriftfarbe / Grundton
+$haskala-blue:     #7dbad7;  // Linkfarbe / Akzent hellblau
+$haskala-gold:     #d8bf82;  // Hover-Akzent / Gold
+$haskala-yellow:   #ffcd36;  // Hervorhebung / Warnung (hell)
+$haskala-dark:     #363327;  // Sehr dunkler Kontrastton
+
+// --- Extended Palette (z. B. für Kategorien, Facetten, Hinweise) ---
+$haskala-darkblue: #3e4f57;
+$haskala-beige:    #d6ad7c;
+$haskala-grayblue: #7d8e96;
+$haskala-green:    #a4d67c;
+$haskala-purple:   #d07cd6;
+$haskala-mint:     #7cd6c2;
+$haskala-oliv:     #d6c07c;
+
+// =========================================================
+// TYPOGRAPHY
+// =========================================================
+
+$font-family-sans-serif: 'open_sansregular', Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
+
+$headings-font-family:    'bell_mtbold', $font-family-sans-serif;
+$headings-font-weight:    700;
+$headings-line-height:    1.1;
+
+// =========================================================
+// GLOBAL COLORS (Bootstrap)
+// =========================================================
+
+// Background + Text
+$body-bg:      #ffffff;
+$body-color:   $haskala-brown; // Haupttextfarbe
+
+// Text and Links
+$link-color:         $haskala-blue;
+$link-hover-color:   $haskala-gold;
+$link-decoration:    none;
+$link-hover-decoration: none;
+
+// Borders
+$border-color:       #eae9e7;
+$hr-border-color:    $haskala-brown;
+
+// =========================================================
+// BOOTSTRAP THEME OVERRIDES
+// =========================================================
+
+// Primary Theme Colors
+$primary:   $haskala-blue;
+$secondary: $haskala-grayblue;
+$success:   $haskala-green;
+$info:      $haskala-darkblue;
+$warning:   $haskala-yellow;
+$danger:    $haskala-purple;  // du kannst statt Lila auch Rot definieren
+
+// Bootstrap 4/5
+$primary:   $haskala-blue;
+$secondary: $haskala-grayblue;
+$success:   $haskala-green;
+$info:      $haskala-mint;
+$warning:   $haskala-yellow;
+$danger:    $haskala-purple;
+
+// Bootstrap 3-Kompatibilität
+$brand-primary:   $haskala-blue;
+$brand-success:   $haskala-green;
+$brand-info:      $haskala-mint;
+$brand-warning:   $haskala-yellow;
+$brand-danger:    $haskala-purple;
+
+// Buttons konkreter
+$btn-border-radius: 4px;
+$btn-font-weight:        600;
+
+$btn-primary-bg:         $haskala-blue;
+$btn-primary-border:     darken($haskala-blue, 5%);
+
+$btn-default-bg:         #ffffff;
+$btn-default-color:      $haskala-brown;
+$btn-default-border:     $border-color;
+
+$btn-success-bg:         $haskala-green;
+$btn-success-border:     darken($haskala-green, 5%);
+
+$btn-info-bg:            $haskala-mint;
+$btn-info-border:        darken($haskala-mint, 5%);
+
+$btn-warning-bg:         $haskala-yellow;
+$btn-warning-border:     darken($haskala-yellow, 5%);
+
+$btn-danger-bg:          $haskala-purple;
+$btn-danger-border:      darken($haskala-purple, 5%);
+
+// Navbar (falls du Bootstrap-Navigation nutzt)
+$navbar-default-color:                $haskala-brown;
+$navbar-default-link-color:           $haskala-brown;
+$navbar-default-link-hover-color:     $haskala-blue;
+$navbar-default-brand-color:          $haskala-brown;
+$navbar-default-brand-hover-color:    $haskala-blue;
+
+
+// Forms
+$input-border-color:      $border-color;
+$input-color:             $haskala-brown;
+
+// Tables
+$table-border-color:      $border-color;
+
+// Pagination
+$pagination-color:         $haskala-blue;
+$pagination-hover-color:   $haskala-gold;
+
+// Cards (Bootstrap 4/5)
+$card-border-color:        $border-color;
+
+// =========================================================
+// LAYOUT
+// =========================================================
+
+// Wrapper Layout
+$wrapper-max-width: 950px;
+$site-padding-x:    20px;
+
+// =========================================================
+// OPTIONAL: CUSTOM COLOR MAP (für spätere automatische Generierung)
+// =========================================================
+
+// Diese Map erlaubt dir, für Kategorien oder Facettengruppen sofort Farben zuzuweisen.
+
+$haskala-color-map: (
+  "brown":     $haskala-brown,
+  "blue":      $haskala-blue,
+  "gold":      $haskala-gold,
+  "yellow":    $haskala-yellow,
+  "dark":      $haskala-dark,
+  "darkblue":  $haskala-darkblue,
+  "beige":     $haskala-beige,
+  "grayblue":  $haskala-grayblue,
+  "green":     $haskala-green,
+  "purple":    $haskala-purple,
+  "mint":      $haskala-mint,
+  "oliv":      $haskala-oliv,
+);
+
+
+@function color($name) {
+  @return map-get($haskala-color-map, $name);
+}

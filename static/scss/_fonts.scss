@@ -1,0 +1,41 @@
+// scss/_fonts.scss
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-regular-webfont.woff2')       format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff')        format('woff'),
+       url('../fonts/opensans-regular-webfont.ttf')         format('truetype'),
+       url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bell_mtbold';
+  src: url('../fonts/bellb-webfont.eot');
+  src: url('../fonts/bellb-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/bellb-webfont.woff2')      format('woff2'),
+       url('../fonts/bellb-webfont.woff')       format('woff'),
+       url('../fonts/bellb-webfont.ttf')        format('truetype'),
+       url('../fonts/bellb-webfont.svg#bell_mtbold') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alef';
+  src: url('../fonts/Alef-Bold.eot');
+  src: url('../fonts/Alef-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Alef-Bold.woff')       format('woff'),
+       url('../fonts/Alef-Bold.ttf')        format('truetype'),
+       url('../fonts/Alef-Bold.svg#alefbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Optional: Utility-Klassen
+.font-base   { font-family: 'open_sansregular', Arial, sans-serif; }
+.font-title  { font-family: 'bell_mtbold', 'open_sansregular', Arial, sans-serif; }
+.font-hebrew { font-family: 'Alef', 'open_sansregular', Arial, sans-serif; }

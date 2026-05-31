@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% load utils %}
+
+{% block title %}
+    {{ book.full_title|default:book.name|default:"Book detail" }}
+{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="{{ book.description|truncatechars:160 }}">
+    <meta property="og:title" content="{{ book.name }}">
+    <meta property="og:description" content="{{ book.description|truncatechars:160 }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container book-detail my-4">
+        {% include "books/_book_header.html" %}
+
+        <div class="row gx-md-5">
+            <aside class="col-md-3 book-detail__toc-col d-none d-md-block">
+                <div class="book-toc-sticky">
+                    {% include "books/_book_toc.html" %}
+                </div>
+            </aside>
+
+            <div class="col-md-9 book-detail__content-col">
+                {% for section in visible_sections %}
+                    <section id="{{ section.slug }}" class="book-section">
+                        <h2 class="book-section__heading h4">{{ section.label }}</h2>
+                        {% include "books/_sections/"|add:section.slug|add:".html" %}
+                    </section>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% include "books/_book_cite_modal.html" %}
+    </div>
+
+    {# Mobile-only floating button + offcanvas with the same TOC. #}
+    <button class="btn btn-primary book-toc-fab d-md-none" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#book-toc-offcanvas"
+            aria-controls="book-toc-offcanvas">
+        <i class="bi bi-list-ul"></i> Sections
+    </button>
+    <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="book-toc-offcanvas"
+         aria-labelledby="book-toc-offcanvas-label">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title h6" id="book-toc-offcanvas-label">On this page</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            {% include "books/_book_toc.html" %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script type="module" src="{% static 'js/book_detail.js' %}"></script>
+{% endblock %}

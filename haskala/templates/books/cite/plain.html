@@ -1,0 +1,3 @@
+{% spaceless %}
+<span class="citation-plain">{% for a in authors %}{{ a }}{% if not forloop.last %}; {% endif %}{% endfor %}{% if authors %}. {% endif %}<em>{{ book.full_title|default:book.name }}</em>.{% if book.publication_place %} {{ book.publication_place.name }}{% if book.publisher %}: {{ book.publisher.name }}{% endif %},{% elif book.publisher %} {{ book.publisher.name }},{% endif %}{% if book.gregorian_year or book.year_in_book %} {{ book.gregorian_year|default:book.year_in_book }}{% endif %}.</span>
+{% endspaceless %}

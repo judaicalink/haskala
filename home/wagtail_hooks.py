@@ -1,35 +1,30 @@
-from django.contrib.admin import ModelAdmin
 from wagtail import hooks
-from wagtail.admin.forms import WagtailAdminModelForm
 from wagtail.admin.menu import MenuItem
-from django.urls import reverse
-from django.utils.html import format_html
-from wagtail.admin.forms.models import WagtailAdminModelForm
+from wagtail.snippets.models import register_snippet
+from wagtail.snippets.views.snippets import SnippetViewSet
 
-from .models import City, MyCustomModel
+from .models import Book
 
 
-# TODO: reenable
 @hooks.register('register_admin_menu_item')
 def register_front_page_menu_item():
-    # URL of the front page of your app
-    url = '/'
-
-    # Create a new menu item
-    menu_item = MenuItem('Front Page', url, icon_name='home', order=10000)
-
-    return menu_item
+    return MenuItem('Home Page', '/', icon_name='home', order=10000)
 
 
-def CityForm(WagtailAdminModelForm):
-    class Meta:
-        model = City
-        fields = '__all__'
+class BookViewSet(SnippetViewSet):
+    model = Book
+    menu_label = "Books"
+    menu_icon = "book"
+    menu_order = 200
+
+    list_display = ("name", "author_names", "bundle", "gregorian_year")
+    list_filter = ("bundle", "gregorian_year")
+    search_fields = (
+        "name",
+        "authors__pref_label",
+        "authors__german_name",
+        "authors__hebrew_name",
+    )
 
 
-class MyCustomModelAdmin(ModelAdmin):
-    model = MyCustomModel
-    menu_label = 'Custom Data'
-    menu_icon = 'snippet'  # You can choose an appropriate icon here
-    list_display = ('title', 'description')
-    search_fields = ('title', 'description')
+register_snippet(BookViewSet)

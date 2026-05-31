@@ -1,20 +1,16 @@
-# Use an official Python runtime based on Debian 10 "buster" as a parent image.
-FROM python:3.14-rc-bookworm
+FROM python:3.12-bookworm
 
-# Add user that will be used in the container.
-RUN useradd wagtail
+# Application user
+RUN useradd --create-home --shell /bin/bash haskala
 
-# Port used by this container to serve HTTP.
+# HTTP port
 EXPOSE 8000
 
-# Set environment variables.
-# 1. Force Python stdout and stderr streams to be unbuffered.
-# 2. Set PORT variable that is used by Gunicorn. This should match "EXPOSE"
-#    command.
 ENV PYTHONUNBUFFERED=1 \
     PORT=8000
 
-# Install system packages required by Wagtail and Django.
+# System dependencies for Wagtail, Pillow, the database client, GeoDjango
+# (libgdal for django-leaflet) and the asset pipeline.
 RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-recommends \
     gnupg2 \
     ca-certificates \
@@ -25,66 +21,47 @@ RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-r
     libjpeg62-turbo-dev \
     zlib1g-dev \
     libwebp-dev \
+    libgdal-dev \
+    gdal-bin \
     cron \
     nodejs \
     npm \
  && rm -rf /var/lib/apt/lists/*
 
-# Install the application server.
-RUN pip install "gunicorn==20.0.4"
+# Application server is installed via requirements.txt (the explicit
+# gunicorn pin used to live here, but the old release pulled pkg_resources
+# from setuptools which is no longer available by default on Python 3.14).
 
-# Create cronjob
+# Daily RDF export cronjob.
 RUN echo "0 0 * * * /usr/local/bin/python /app/manage.py export_rdf" > /etc/cron.d/export_rdf \
  && chmod 0644 /etc/cron.d/export_rdf \
  && crontab /etc/cron.d/export_rdf
 
-# Install the project requirements.
+# Python dependencies.
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
-# Use /app folder as a directory where the source code is stored.
 WORKDIR /app
 
-# Set this directory to be owned by the "wagtail" user. This Wagtail project
-# uses SQLite, the folder needs to be owned by the user that
-# will be writing to the database file.
-RUN chown haskala:haskala /app
-
-# Copy the source code of the project into the container.
+# Source code, owned by the application user.
 COPY --chown=haskala:haskala . .
+RUN chown -R haskala:haskala /app
 
-# Import the initial data required by Wagtail.
-RUN psql -U haskala -d haskala < haskala_dump.sql
-
-# Use user "wagtail" to run the build commands below and the server itself.
 USER haskala
 
+# Build the front-end theme.
 RUN npm install
-
 RUN npm run copy:icons
 RUN npm run build:css
 RUN npm run build:js
 
-# Collect static files.
+# Collect static files into STATIC_ROOT.
 RUN python manage.py collectstatic --noinput --clear
 
-# Migrate database
-RUN python manage.py makemigrations
-RUN python manage.py migrate --noinput
+# The database dump is loaded by the postgres container via
+# /docker-entrypoint-initdb.d on first boot (see docker-compose.yml).
+# Migrations live in the repository and are applied at container start.
 
-# TODO: load initial data
-# RUN python manage.py loaddata initial_data.json
-
-# Create a superuser account with default credentials.
-RUN python manage.py createsuperuser --noinput --username admin --email info@haskala-library.net --password admin
-
-# Runtime command that executes when "docker run" is called, it does the
-# following:
-#   1. Migrate the database.
-#   2. Start the application server.
-# WARNING:
-#   Migrating database at the same time as starting the server IS NOT THE BEST
-#   PRACTICE. The database should be migrated manually or using the release
-#   phase facilities of your hosting platform. This is used only so the
-#   Wagtail instance can be started with a simple "docker run" command.
-CMD set -xe; python manage.py migrate --noinput; gunicorn haskala.wsgi:application
+CMD set -xe; \
+    python manage.py migrate --noinput; \
+    exec gunicorn --bind 0.0.0.0:8000 --workers 3 --access-logfile - haskala.wsgi:application

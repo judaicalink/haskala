@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% load leaflet_tags %}
+{% load utils %}
+
+{% block title %}{{ city.name }} | Places{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Place detail: {{ city.name }}">
+    <meta property="og:title" content="{{ city.name }}">
+{% endblock %}
+
+{% block extra_js %}
+    <script type="module" src="{% static 'js/book_detail.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container place-detail my-4">
+        {% include "places/_place_header.html" %}
+
+        <div class="row gx-md-5">
+            <aside class="col-md-3 place-detail__toc-col d-none d-md-block">
+                <div class="place-toc-sticky">
+                    {% include "places/_place_toc.html" %}
+                </div>
+            </aside>
+
+            <button class="btn btn-primary place-toc-fab d-md-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#place-toc-offcanvas"
+                    aria-controls="place-toc-offcanvas">
+                <i class="bi bi-list-ul"></i> Sections
+            </button>
+            <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="place-toc-offcanvas"
+                 aria-labelledby="place-toc-offcanvas-label">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title h6" id="place-toc-offcanvas-label">On this page</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    {% include "places/_place_toc.html" %}
+                </div>
+            </div>
+
+            <div class="col-md-9 place-detail__content-col">
+                {% if page and page.body %}
+                    <section class="place-section">
+                        {{ page.body|richtext }}
+                    </section>
+                {% endif %}
+
+                {% for section in visible_sections %}
+                    <section id="{{ section.slug }}" class="place-section">
+                        <h2 class="place-section__heading h4">{{ section.label }}</h2>
+                        {% include "places/_sections/"|add:section.slug|add:".html" %}
+                    </section>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

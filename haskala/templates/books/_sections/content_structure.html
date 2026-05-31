@@ -1,0 +1,74 @@
+<dl class="row mb-0">
+    {% if book.topic %}
+        <dt class="col-sm-4">Topic</dt>
+        <dd class="col-sm-8">
+            <a href="{% url 'topic-detail' book.topic.name|slugify %}">{{ book.topic.name }}</a>
+        </dd>
+    {% endif %}
+    {% if book.target_audience.all %}
+        <dt class="col-sm-4">Target audience</dt>
+        <dd class="col-sm-8">
+            {% for ta in book.target_audience.all %}{{ ta.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.target_audience_notes %}
+        <dt class="col-sm-4">Target audience notes</dt>
+        <dd class="col-sm-8">{{ book.target_audience_notes }}</dd>
+    {% endif %}
+    {% if book.original_type %}
+        <dt class="col-sm-4">Original type</dt>
+        <dd class="col-sm-8">{{ book.original_type.name }}</dd>
+    {% endif %}
+    {% if book.main_textual_models.all %}
+        <dt class="col-sm-4">Main textual models</dt>
+        <dd class="col-sm-8">
+            {% for tm in book.main_textual_models.all %}{{ tm.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.secondary_textual_models.all %}
+        <dt class="col-sm-4">Secondary textual models</dt>
+        <dd class="col-sm-8">
+            {% for tm in book.secondary_textual_models.all %}{{ tm.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.textual_model_notes %}
+        <dt class="col-sm-4">Textual model notes</dt>
+        <dd class="col-sm-8">{{ book.textual_model_notes }}</dd>
+    {% endif %}
+    {% if book.structure_notes %}
+        <dt class="col-sm-4">Structure notes</dt>
+        <dd class="col-sm-8">{{ book.structure_notes }}</dd>
+    {% endif %}
+    {% if book.structure_preface_notes %}
+        <dt class="col-sm-4">Structure / preface notes</dt>
+        <dd class="col-sm-8">{{ book.structure_preface_notes }}</dd>
+    {% endif %}
+    {% if book.table_of_content %}
+        <dt class="col-sm-4">Table of contents</dt>
+        <dd class="col-sm-8">{{ book.table_of_content|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.contents_table_notes %}
+        <dt class="col-sm-4">Table of contents notes</dt>
+        <dd class="col-sm-8">{{ book.contents_table_notes }}</dd>
+    {% endif %}
+    {% if book.preface %}
+        <dt class="col-sm-4">Preface</dt>
+        <dd class="col-sm-8">{{ book.preface|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.epilogue %}
+        <dt class="col-sm-4">Epilogue</dt>
+        <dd class="col-sm-8">{{ book.epilogue|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.epilogue_notes %}
+        <dt class="col-sm-4">Epilogue notes</dt>
+        <dd class="col-sm-8">{{ book.epilogue_notes }}</dd>
+    {% endif %}
+    {% if book.dedications %}
+        <dt class="col-sm-4">Dedications</dt>
+        <dd class="col-sm-8">{{ book.dedications|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.dedications_notes %}
+        <dt class="col-sm-4">Dedications notes</dt>
+        <dd class="col-sm-8">{{ book.dedications_notes }}</dd>
+    {% endif %}
+</dl>

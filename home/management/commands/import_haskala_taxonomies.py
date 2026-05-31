@@ -22,33 +22,32 @@ from home.models import (
     FootnoteLocation,
     OriginalType,
     MentionDescription,
-    ProductionRole,
 )
 
 
 class Command(BaseCommand):
-    help = "Importiert Haskala-Taxonomien und Cities aus CSV-Dateien"
+    help = "Import Haskala taxonomies and cities from CSV files"
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--base-dir",
             type=str,
-            help="Basisverzeichnis, in dem die Export-CSV-Dateien liegen",
+            help="Base directory containing the export CSV files",
             required=True,
         )
 
-    # ---------- Hilfsfunktionen ----------
+    # ---------- Helper functions ----------
 
     def _open_csv(self, path):
         if not os.path.exists(path):
-            raise CommandError(f"CSV-Datei nicht gefunden: {path}")
-        self.stdout.write(self.style.NOTICE(f"Lese {path} ..."))
+            raise CommandError(f"CSV file not found: {path}")
+        self.stdout.write(self.style.NOTICE(f"Reading {path} ..."))
         return open(path, newline="", encoding="utf-8")
 
     def _import_simple_vocab(self, Model, csv_path, name_field="name"):
         """
-        Importiert ein einfaches Vokabular:
-        Erwartet Spalten: `tid`, `name` (oder konfigurierbar).
+        Imports a simple vocabulary:
+        Expects columns: `tid`, `name` (or configurable).
         """
         created_count = 0
         updated_count = 0
@@ -78,16 +77,16 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"{Model.__name__}: {created_count} erstellt, {updated_count} aktualisiert."
+                f"{Model.__name__}: {created_count} created, {updated_count} updated."
             )
         )
 
-    # ---------- Import-Methoden ----------
+    # ---------- Import methods ----------
 
     def import_cities(self, base_dir):
         """
-        Importiert Cities + Geolocation.
-        Erwartete Spalten (aus deinem Notebook-Export):
+        Imports cities + geolocation.
+        Expected columns (from the notebook export):
         tid,vid,name,description,
         field_geolocation_lat,
         field_geolocation_lng,
@@ -95,7 +94,7 @@ class Command(BaseCommand):
         field_geolocation_lat_cos,
         field_geolocation_lng_rad
         """
-        path = os.path.join(base_dir, "cities_with_geolocation.csv")  # ggf. anpassen
+        path = os.path.join(base_dir, "cities_with_geolocation.csv")  # adjust if necessary
         created_city = 0
         updated_city = 0
         created_geo = 0
@@ -114,7 +113,7 @@ class Command(BaseCommand):
 
                 name = (row.get("name") or "").strip()
 
-                # City anlegen / aktualisieren
+                # Create / update city
                 city, created = City.objects.update_or_create(
                     legacy_tid=tid_int,
                     defaults={
@@ -128,14 +127,14 @@ class Command(BaseCommand):
                 else:
                     updated_city += 1
 
-                # Geolocation aus den Spalten lesen
+                # Read geolocation from the columns
                 lat = row.get("field_geolocation_lat")
                 lng = row.get("field_geolocation_lng")
                 lat_sin = row.get("field_geolocation_lat_sin")
                 lat_cos = row.get("field_geolocation_lat_cos")
                 lng_rad = row.get("field_geolocation_lng_rad")
 
-                # Wenn keine Koordinaten vorhanden sind, Geolocation überspringen
+                # If no coordinates are present, skip the geolocation
                 if not any([lat, lng, lat_sin, lat_cos, lng_rad]):
                     continue
 
@@ -166,12 +165,12 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"City: {created_city} erstellt, {updated_city} aktualisiert."
+                f"City: {created_city} created, {updated_city} updated."
             )
         )
         self.stdout.write(
             self.style.SUCCESS(
-                f"Geolocation: {created_geo} erstellt, {updated_geo} aktualisiert."
+                f"Geolocation: {created_geo} created, {updated_geo} updated."
             )
         )
 
@@ -179,13 +178,13 @@ class Command(BaseCommand):
         base_dir = options["base_dir"]
 
         if not os.path.isdir(base_dir):
-            raise CommandError(f"{base_dir} ist kein Verzeichnis")
+            raise CommandError(f"{base_dir} is not a directory")
 
-        # 1. Cities (Taxonomie vid=1 + Geolocation-Feld)
+        # 1. Cities (taxonomy vid=1 + geolocation field)
         self.import_cities(base_dir)
 
-        # 2. Einfache Taxonomien
-        # Passe die Dateinamen an deine tatsächlichen Export-Dateien an!
+        # 2. Simple taxonomies
+        # Adjust the filenames to match your actual export files!
         vocab_files = [
             (Gender, "taxonomy_gender.csv"),
             (Occupation, "taxonomy_occupation.csv"),
@@ -202,20 +201,22 @@ class Command(BaseCommand):
             (FootnoteLocation, "taxonomy_footnote_locations.csv"),
             (OriginalType, "taxonomy_original_type.csv"),
             (MentionDescription, "taxonomy_description_of_mentionee.csv"),
-            (ProductionRole, "taxonomy_production_role.csv"),
+            # ProductionRole has no dedicated Drupal vocabulary; the
+            # role TIDs live in the Occupation vocabulary (vid=6) and are
+            # seeded on demand by the relations importer.
         ]
 
         for Model, filename in vocab_files:
             csv_path = os.path.join(base_dir, filename)
             if not os.path.exists(csv_path):
                 self.stdout.write(
-                    self.style.WARNING(f"Überspringe {Model.__name__}: {filename} nicht gefunden.")
+                    self.style.WARNING(f"Skipping {Model.__name__}: {filename} not found.")
                 )
                 continue
             self._import_simple_vocab(Model, csv_path)
 
-        # 3. Languages – wenn du sie als separates CSV exportiert hast
-        # Z.B. Spalten: tid, name, language_code
+        # 3. Languages - if exported as a separate CSV
+        # E.g. columns: tid, name, language_code
         languages_path = os.path.join(base_dir, "taxonomy_languages.csv")
         if os.path.exists(languages_path):
             created = 0
@@ -247,12 +248,12 @@ class Command(BaseCommand):
                         updated += 1
             self.stdout.write(
                 self.style.SUCCESS(
-                    f"Language: {created} erstellt, {updated} aktualisiert."
+                    f"Language: {created} created, {updated} updated."
                 )
             )
         else:
             self.stdout.write(
-                self.style.WARNING("Languages-CSV (taxonomy_languages.csv) nicht gefunden.")
+                self.style.WARNING("Languages CSV (taxonomy_languages.csv) not found.")
             )
 
-        self.stdout.write(self.style.SUCCESS("Taxonomie-Import abgeschlossen."))
+        self.stdout.write(self.style.SUCCESS("Taxonomy import finished."))

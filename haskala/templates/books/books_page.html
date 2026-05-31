@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block title %}Books{% endblock %}
+
+{% block content %}
+    <div class="container index-page my-4">
+        <header class="index-header mb-4">
+            <h1 class="h2 mb-2">Books</h1>
+            <p class="text-muted mb-0">
+                {{ total_count }} book{{ total_count|pluralize }} in total
+            </p>
+        </header>
+
+        {% include 'partials/alphabetmenu.html' %}
+
+        <section class="index-list">
+            {% if books_by_letter %}
+                {% for letter, books in books_by_letter.items %}
+                    <div class="index-group mb-4" id="letter-{{ letter }}">
+                        <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
+                        <ul class="list-unstyled mb-0">
+                            {% for book in books %}
+                                <li class="mb-1">
+                                    <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                        {{ book.full_title|default:book.name }}
+                                    </a>
+                                    {% if book.gregorian_year or book.year_in_book %}
+                                        <span class="text-muted small">
+                                            &middot; {{ book.gregorian_year|default:book.year_in_book }}
+                                        </span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-muted">No books found.</p>
+            {% endif %}
+        </section>
+    </div>
+{% endblock %}

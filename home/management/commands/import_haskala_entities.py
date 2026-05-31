@@ -16,33 +16,30 @@ from home.models import (
 
 
 class Command(BaseCommand):
-    help = "Importiert Personen, Bücher und Hilfsmodelle aus Export-CSV"
+    help = "Import persons, books and supporting models from export CSV files"
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--base-dir",
             type=str,
-            help="Basisverzeichnis für die CSV-Dateien",
+            help="Base directory containing the CSV files",
             required=True,
         )
 
     def _open_csv(self, path):
         if not os.path.exists(path):
-            raise CommandError(f"CSV-Datei nicht gefunden: {path}")
-        self.stdout.write(self.style.NOTICE(f"Lese {path} ..."))
+            raise CommandError(f"CSV file not found: {path}")
+        self.stdout.write(self.style.NOTICE(f"Reading {path} ..."))
         return open(path, newline="", encoding="utf-8")
 
-    # --------- Beispiel: Personen ----------
-
     def import_persons(self, base_dir):
-        path = os.path.join(base_dir, "persons_for_django.csv")  # anpassen
+        path = os.path.join(base_dir, "persons_for_django.csv")
         created = 0
         updated = 0
 
         with self._open_csv(path) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                # Hier musst du die Spaltennamen an deine CSV anpassen!
                 nid = row.get("nid") or row.get("legacy_nid")
                 vid = row.get("vid") or row.get("legacy_vid")
                 if not nid:
@@ -62,7 +59,6 @@ class Command(BaseCommand):
                         "pref_label": pref_label,
                         "german_name": german_name,
                         "hebrew_name": hebrew_name,
-                        # hier ggf. weitere Felder aus deiner CSV
                     },
                 )
                 if created_flag:
@@ -72,14 +68,12 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Person: {created} erstellt, {updated} aktualisiert."
+                f"Person: {created} created, {updated} updated."
             )
         )
 
-    # --------- Beispiel: Bücher ----------
-
     def import_books(self, base_dir):
-        path = os.path.join(base_dir, "books_for_django.csv")  # anpassen
+        path = os.path.join(base_dir, "books_for_django.csv")
         created = 0
         updated = 0
 
@@ -98,7 +92,6 @@ class Command(BaseCommand):
                 subtitle = (row.get("subtitle") or "").strip()
                 full_title = (row.get("full_title") or "").strip()
 
-                # Beispiel: Publication place über legacy_tid → City
                 pub_place_tid = row.get("publication_place_tid")
                 publication_place = None
                 if pub_place_tid:
@@ -115,11 +108,9 @@ class Command(BaseCommand):
                         "subtitle": subtitle,
                         "full_title": full_title,
                         "publication_place": publication_place,
-                        # hier weitere Felder mappen
                     },
                 )
 
-                # Beispiel: Sprachen (tid-Liste → ManyToMany)
                 language_tids = (row.get("language_tids") or "").split(";")
                 book.languages.clear()
                 for tid in language_tids:
@@ -139,22 +130,18 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Book: {created} erstellt, {updated} aktualisiert."
+                f"Book: {created} created, {updated} updated."
             )
         )
-
-    # --------- handle() ----------
 
     def handle(self, *args, **options):
         base_dir = options["base_dir"]
 
         if not os.path.isdir(base_dir):
-            raise CommandError(f"{base_dir} ist kein Verzeichnis")
+            raise CommandError(f"{base_dir} is not a directory")
 
-        # Reihenfolge: erst Personen, dann Bücher, dann Hilfsmodelle
+        # Run order: persons first, then books.
         self.import_persons(base_dir)
         self.import_books(base_dir)
-        # hier kannst du analog import_editions, import_translations, ...
-        # implementieren und aufrufen.
 
-        self.stdout.write(self.style.SUCCESS("Entity-Import abgeschlossen."))
+        self.stdout.write(self.style.SUCCESS("Entity import finished."))
