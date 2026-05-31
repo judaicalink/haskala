@@ -1,8 +1,8 @@
-TY  - BOOK
-TI  - {{ book.full_title|default:book.name }}{% for a in authors %}
-AU  - {{ a }}{% endfor %}{% if book.gregorian_year or book.year_in_book %}
-PY  - {{ book.gregorian_year|default:book.year_in_book }}{% endif %}{% if book.publisher %}
-PB  - {{ book.publisher.name }}{% endif %}{% if book.publication_place %}
-CY  - {{ book.publication_place.name }}{% endif %}{% for lang in languages %}
-LA  - {{ lang }}{% endfor %}
+{% load bibtex_filters %}TY  - BOOK
+TI  - {{ book.full_title|default:book.name|ris_escape }}{% for a in authors %}
+AU  - {{ a|ris_escape }}{% endfor %}{% if book.gregorian_year or book.year_in_book %}
+PY  - {{ book.gregorian_year|default:book.year_in_book|ris_escape }}{% endif %}{% if book.publisher %}
+PB  - {{ book.publisher.name|ris_escape }}{% endif %}{% if book.publication_place %}
+CY  - {{ book.publication_place.name|ris_escape }}{% endif %}{% for lang in languages %}
+LA  - {{ lang|ris_escape }}{% endfor %}
 ER  -

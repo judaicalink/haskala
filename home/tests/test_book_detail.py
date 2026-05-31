@@ -1,7 +1,7 @@
 from django.test import TestCase, Client, override_settings
 from django.urls import reverse
 
-from home.models import Book, BookAuthor, City, Person, Publisher
+from home.models import Book, BookAuthor, City, Language, Person, Publisher
 
 
 # Tests that hit views rendered through base.html need a non-manifest static
@@ -92,6 +92,30 @@ class BookCiteBibtexTest(TestCase):
 
 
 @TEST_OVERRIDES
+class BookCiteBibtexMultiAuthorTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.first = Person.objects.create(pref_label="Mendelssohn, Moses")
+        cls.second = Person.objects.create(pref_label="Maimon, Salomon")
+        cls.book = Book.objects.create(
+            name="Two Author Book",
+            full_title="Two Author Book",
+            gregorian_year="1789",
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.first, role="original_text_author",
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.second, role="old_text_author",
+        )
+
+    def test_bibtex_joins_multiple_authors_with_and(self):
+        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.name]))
+        body = resp.content.decode()
+        self.assertIn("Mendelssohn, Moses and Maimon, Salomon", body)
+
+
+@TEST_OVERRIDES
 class BookCiteRisTest(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -112,6 +136,77 @@ class BookCiteRisTest(TestCase):
         self.assertIn("TI  - Risky Book", body)
         self.assertIn("PY  - 1797", body)
         self.assertTrue(body.rstrip().endswith("ER  -"))
+
+
+@TEST_OVERRIDES
+class BookCiteRisMultiAuthorLanguageTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.first = Person.objects.create(pref_label="Mendelssohn, Moses")
+        cls.second = Person.objects.create(pref_label="Maimon, Salomon")
+        cls.hebrew = Language.objects.create(name="Hebrew")
+        cls.german = Language.objects.create(name="German")
+        cls.book = Book.objects.create(
+            name="RIS Multi Book",
+            full_title="RIS Multi Book",
+            gregorian_year="1789",
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.first, role="original_text_author",
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.second, role="old_text_author",
+        )
+        cls.book.languages.add(cls.hebrew, cls.german)
+
+    def test_ris_emits_one_au_line_per_author(self):
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        body = resp.content.decode()
+        au_lines = [ln for ln in body.splitlines() if ln.startswith("AU  - ")]
+        self.assertEqual(len(au_lines), 2)
+        self.assertIn("AU  - Mendelssohn, Moses", au_lines)
+        self.assertIn("AU  - Maimon, Salomon", au_lines)
+
+    def test_ris_emits_one_la_line_per_language(self):
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        body = resp.content.decode()
+        la_lines = [ln for ln in body.splitlines() if ln.startswith("LA  - ")]
+        self.assertEqual(len(la_lines), 2)
+        self.assertIn("LA  - Hebrew", la_lines)
+        self.assertIn("LA  - German", la_lines)
+
+
+@TEST_OVERRIDES
+class BookCiteRisNewlineSafetyTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        # An author whose pref_label happens to contain a newline must
+        # not be allowed to split the AU line into two lines that RIS
+        # readers would then misinterpret.
+        cls.person = Person.objects.create(
+            pref_label="Smith,\nJohn",
+        )
+        cls.publisher = Publisher.objects.create(name="Multi\rLine\nVerlag")
+        cls.book = Book.objects.create(
+            name="Newline Book",
+            full_title="Title\nWith\nNewlines",
+            gregorian_year="1800",
+            publisher=cls.publisher,
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.person, role="original_text_author",
+        )
+
+    def test_ris_keeps_one_tag_per_line(self):
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        body = resp.content.decode()
+        for line in body.splitlines():
+            if line and not line.startswith(("TY", "TI", "AU", "PY", "PB",
+                                             "CY", "LA", "ER")):
+                self.fail(
+                    f"Found a RIS line with no leading tag, indicating a "
+                    f"smuggled newline: {line!r}"
+                )
 
 
 @TEST_OVERRIDES
