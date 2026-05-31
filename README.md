@@ -1,30 +1,57 @@
 # The Library of the Haskala
 
-The Library of the [Haskala](https://www.haskala-library.net/) is a database for the Haskala.
+The Library of the [Haskala](https://www.haskala-library.net/) is a research
+database of Hebrew and German books from the Jewish Enlightenment (Haskala)
+period, together with the people, places, publishers, series, topics and
+occupations that surround them.
 
-The original repository for the old Drupal version is (https://github.com/Gizra/haskala)[https://github.com/Gizra/haskala].
+The site is built on Django 6 and Wagtail 7.4, runs in Docker, and ships its
+catalogue as RDF (Turtle) alongside the human-readable site.
 
-The new version is a built on Django 4.2. and Wagtail 4.1.2.
+## Quick start
 
-The data is build as RDF-Turtle, which was exported from the previous project (a Drupal database).
-To serve the data you need a triple store (Apache Jena Fuseki).
-The data is fetched from the triple store with [pubby-django](https://github.com/lod-pubby/pubby-django).
+```bash
+git clone git@github.com:judaicalink/haskala.git
+cd haskala
+docker compose up -d
+```
 
-## Installation
-Clone the repositoryi `git clone `. 
+The site comes up on <http://localhost:8080/>. The Postgres dump in
+`haskala.sql` is loaded on the very first boot of the `db` container.
 
-Go into the directory `cd haskala`.
+The Wagtail admin lives at <http://localhost:8080/admin/>. Create a
+superuser:
 
-Activate the venv `source venv/bin/activate`.
+```bash
+docker compose exec web python manage.py createsuperuser
+```
 
-Install the requirements `pip install -r requirements.txt`.
+## Documentation
 
-Migrate and apply the migrations `python manage.py makemigrations && python manage.py migrate`.
+Three audiences, three sub-trees under [`docs/`](docs/):
 
-Start the server with `python manage.py runserver`.
+- [docs/users/](docs/users/) — researchers and lay readers: how to navigate
+  the site, search, read the detail pages, export citations.
+- [docs/admins/](docs/admins/) — content editors: pushing data through the
+  Wagtail admin, working with snippets and revisions, when to reach for a
+  management command.
+- [docs/developers/](docs/developers/) — contributors: local setup,
+  architecture, data model, importer workflow, tests, contribution
+  conventions, RDF export pipeline.
 
-## Data
+## Stack
 
-There is a directory named `data` for the data containing the triple files.
+| Service     | Port (host) | Purpose                                       |
+| ----------- | ----------- | --------------------------------------------- |
+| `web`       | (via nginx) | Django + Wagtail under gunicorn               |
+| `nginx`     | 8080        | reverse proxy + `/static/` served from volume |
+| `db`        | —           | PostgreSQL 16 (seeded from `haskala.sql`)     |
+| `redis`     | —           | django-redis cache                            |
+| `solr`      | 8983        | search index                                  |
+| `fuseki`    | 3030        | RDF triple store (Apache Jena)                |
+| `mailserver`| 1025 / 8025 | MailHog (dev SMTP + UI)                       |
 
-To apply the data run the script.
+## License
+
+The platform code is published under the MIT license; the dataset is
+published under CC-BY 4.0.
