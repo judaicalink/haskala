@@ -1,0 +1,7 @@
+# Haskala database backup schedule.
+# Times are interpreted in the container's TZ (UTC unless overridden).
+#
+# Daily full dump at 02:30. Output is streamed straight into the
+# /backups volume; retention prunes anything older than 14 days
+# (override via BACKUP_RETENTION_DAYS).
+30 2 * * * /usr/local/bin/backup.sh >> /var/log/backup.log 2>&1

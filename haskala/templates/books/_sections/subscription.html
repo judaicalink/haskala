@@ -1,0 +1,62 @@
+<dl class="row mb-0">
+    {% if book.subscribers %}
+        <dt class="col-sm-4">Subscribers</dt>
+        <dd class="col-sm-8">{{ book.subscribers|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.subscribers_notes %}
+        <dt class="col-sm-4">Subscribers notes</dt>
+        <dd class="col-sm-8">{{ book.subscribers_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.subscription_appeal %}
+        <dt class="col-sm-4">Subscription appeal</dt>
+        <dd class="col-sm-8">{{ book.subscription_appeal|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.subscription_appeal_notes %}
+        <dt class="col-sm-4">Subscription appeal notes</dt>
+        <dd class="col-sm-8">{{ book.subscription_appeal_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.recommendations %}
+        <dt class="col-sm-4">Recommendations</dt>
+        <dd class="col-sm-8">{{ book.recommendations|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.recommendations_notes %}
+        <dt class="col-sm-4">Recommendation notes</dt>
+        <dd class="col-sm-8">{{ book.recommendations_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.price %}
+        <dt class="col-sm-4">Price</dt>
+        <dd class="col-sm-8">{{ book.price }}</dd>
+    {% endif %}
+    {% if book.sellers %}
+        <dt class="col-sm-4">Sellers</dt>
+        <dd class="col-sm-8">{{ book.sellers|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.sellers_notes %}
+        <dt class="col-sm-4">Seller notes</dt>
+        <dd class="col-sm-8">{{ book.sellers_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.thanks %}
+        <dt class="col-sm-4">Thanks</dt>
+        <dd class="col-sm-8">{{ book.thanks|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.thanks_notes %}
+        <dt class="col-sm-4">Thanks notes</dt>
+        <dd class="col-sm-8">{{ book.thanks_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.contacts_official_agents %}
+        <dt class="col-sm-4">Official agents</dt>
+        <dd class="col-sm-8">{{ book.contacts_official_agents|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.contacts_other_people %}
+        <dt class="col-sm-4">Other contacts</dt>
+        <dd class="col-sm-8">{{ book.contacts_other_people|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.personal_address %}
+        <dt class="col-sm-4">Personal address</dt>
+        <dd class="col-sm-8">{{ book.personal_address }}</dd>
+    {% endif %}
+    {% if book.personal_address_notes %}
+        <dt class="col-sm-4">Personal address notes</dt>
+        <dd class="col-sm-8">{{ book.personal_address_notes|linebreaksbr }}</dd>
+    {% endif %}
+</dl>

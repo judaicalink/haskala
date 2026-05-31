@@ -1,17 +1,35 @@
 {% load static %}
 
-<footer>
-    <nav class="icons-nav nav-bar d-flex justify-content-center">
-        <ul class="menu nav">
-            <li class="first leaf"><a href="/books">Books</a></li>
-            <li class="leaf"><a href="/digital-books">Digital Books</a></li>
-            <li class="leaf"><a href="/persons">Persons</a></li>
-            <li class="last leaf"><a href="/places">Places</a></li>
-        </ul>
-    </nav>
-    <div class="login-area">
-        <ul class="menu nav">
-            <li class="first last leaf"><a href="/dashboard" title="">LOGIN</a></li>
-        </ul>
+<footer class="site-footer mt-5 py-4 border-top">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h2 class="h6 text-uppercase text-muted mb-2">Browse</h2>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="/books">Books</a></li>
+                    <li><a href="/digital-books">Digital Books</a></li>
+                    <li><a href="/persons">Persons</a></li>
+                    <li><a href="/places">Places</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2 class="h6 text-uppercase text-muted mb-2">Legal</h2>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="/legal-notice/">Legal Notice</a></li>
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="/cookie-policy/">Cookie Policy</a></li>
+                    <li><a href="/terms-conditions-terms-of-use/">Terms &amp; Conditions</a></li>
+                    <li><a href="/copyright-licensing/">Copyright &amp; Licensing</a></li>
+                    <li><a href="/accessibility/">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2 class="h6 text-uppercase text-muted mb-2">About</h2>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="/about/">About this project</a></li>
+                    <li><a href="/dashboard">Login</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>

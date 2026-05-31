@@ -1,0 +1,112 @@
+<dl class="row mb-0">
+    {% if book.publisher %}
+        <dt class="col-sm-4">Publisher</dt>
+        <dd class="col-sm-8">
+            {% if book.publisher.slug %}
+                <a href="{% url 'publisher-detail' book.publisher.slug %}">{{ book.publisher.name }}</a>
+            {% else %}
+                {{ book.publisher.name }}
+            {% endif %}
+        </dd>
+    {% endif %}
+    {% if book.original_publisher %}
+        <dt class="col-sm-4">Original publisher</dt>
+        <dd class="col-sm-8">
+            {% if book.original_publisher.slug %}
+                <a href="{% url 'publisher-detail' book.original_publisher.slug %}">{{ book.original_publisher.name }}</a>
+            {% else %}
+                {{ book.original_publisher.name }}
+            {% endif %}
+        </dd>
+    {% endif %}
+    {% if book.publication_place %}
+        <dt class="col-sm-4">Publication place</dt>
+        <dd class="col-sm-8">
+            <a href="{% url 'place-detail' book.publication_place.name|slugify %}">
+                {{ book.publication_place.name }}
+            </a>
+        </dd>
+    {% endif %}
+    {% if book.publication_place_other %}
+        <dt class="col-sm-4">Other publication place</dt>
+        <dd class="col-sm-8">{{ book.publication_place_other.name }}</dd>
+    {% endif %}
+    {% if book.gregorian_year %}
+        <dt class="col-sm-4">Year (Gregorian)</dt>
+        <dd class="col-sm-8">{{ book.gregorian_year }}</dd>
+    {% endif %}
+    {% if book.year_in_book %}
+        <dt class="col-sm-4">Year as in book</dt>
+        <dd class="col-sm-8">{{ book.year_in_book }}</dd>
+    {% endif %}
+    {% if book.year_in_other %}
+        <dt class="col-sm-4">Year (other reference)</dt>
+        <dd class="col-sm-8">{{ book.year_in_other }}</dd>
+    {% endif %}
+    {% if book.hebrew_year_of_publication %}
+        <dt class="col-sm-4">Hebrew year of publication</dt>
+        <dd class="col-sm-8">{{ book.hebrew_year_of_publication }}</dd>
+    {% endif %}
+    {% if book.hebrew_year_pub_other %}
+        <dt class="col-sm-4">Hebrew year (other reference)</dt>
+        <dd class="col-sm-8">{{ book.hebrew_year_pub_other }}</dd>
+    {% endif %}
+    {% if book.gregorian_year_pub_other %}
+        <dt class="col-sm-4">Gregorian year (other reference)</dt>
+        <dd class="col-sm-8">{{ book.gregorian_year_pub_other }}</dd>
+    {% endif %}
+    {% if book.format_of_publication_date %}
+        <dt class="col-sm-4">Format of publication date</dt>
+        <dd class="col-sm-8">{{ book.format_of_publication_date.name }}</dd>
+    {% endif %}
+    {% if book.partial_publication %}
+        <dt class="col-sm-4">Partial publication</dt>
+        <dd class="col-sm-8">{{ book.partial_publication }}</dd>
+    {% endif %}
+    {% if book.printed_originally %}
+        <dt class="col-sm-4">Printed originally</dt>
+        <dd class="col-sm-8">{{ book.printed_originally }}</dd>
+    {% endif %}
+    {% if book.original_publication_place %}
+        <dt class="col-sm-4">Original publication place</dt>
+        <dd class="col-sm-8">
+            <a href="{% url 'place-detail' book.original_publication_place.name|slugify %}">
+                {{ book.original_publication_place.name }}
+            </a>
+        </dd>
+    {% endif %}
+    {% if book.original_publication_year %}
+        <dt class="col-sm-4">Original publication year</dt>
+        <dd class="col-sm-8">{{ book.original_publication_year }}</dd>
+    {% endif %}
+    {% if book.printers %}
+        <dt class="col-sm-4">Printers</dt>
+        <dd class="col-sm-8">{{ book.printers }}</dd>
+    {% endif %}
+    {% if book.printing_press_notes %}
+        <dt class="col-sm-4">Printing press notes</dt>
+        <dd class="col-sm-8">{{ book.printing_press_notes }}</dd>
+    {% endif %}
+    {% if book.printing_press_references %}
+        <dt class="col-sm-4">Printing press references</dt>
+        <dd class="col-sm-8">{{ book.printing_press_references }}</dd>
+    {% endif %}
+    {% if book.production_evidence %}
+        <dt class="col-sm-4">Production evidence</dt>
+        <dd class="col-sm-8">{{ book.production_evidence }}</dd>
+    {% endif %}
+    {% if book.series %}
+        <dt class="col-sm-4">Series</dt>
+        <dd class="col-sm-8">
+            {% if book.series.slug %}
+                <a href="{% url 'series-detail' book.series.slug %}">{{ book.series.name }}</a>
+            {% else %}
+                {{ book.series.name }}
+            {% endif %}
+            {% if book.series_part %}<span class="text-muted small">&middot; part {{ book.series_part }}</span>{% endif %}
+        </dd>
+    {% elif book.series_part %}
+        <dt class="col-sm-4">Series part</dt>
+        <dd class="col-sm-8">{{ book.series_part }}</dd>
+    {% endif %}
+</dl>

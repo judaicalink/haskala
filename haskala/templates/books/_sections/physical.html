@@ -1,0 +1,42 @@
+<dl class="row mb-0">
+    {% if book.pages_number %}
+        <dt class="col-sm-4">Pages</dt>
+        <dd class="col-sm-8">{{ book.pages_number }}</dd>
+    {% endif %}
+    {% if book.height %}
+        <dt class="col-sm-4">Height</dt>
+        <dd class="col-sm-8">{{ book.height }}</dd>
+    {% endif %}
+    {% if book.width %}
+        <dt class="col-sm-4">Width</dt>
+        <dd class="col-sm-8">{{ book.width }}</dd>
+    {% endif %}
+    {% if book.alignment %}
+        <dt class="col-sm-4">Alignment</dt>
+        <dd class="col-sm-8">{{ book.alignment.name }}</dd>
+    {% endif %}
+    {% if book.fonts.all %}
+        <dt class="col-sm-4">Fonts</dt>
+        <dd class="col-sm-8">
+            {% for f in book.fonts.all %}{{ f.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.typography.all %}
+        <dt class="col-sm-4">Typography</dt>
+        <dd class="col-sm-8">
+            {% for t in book.typography.all %}{{ t.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </dd>
+    {% endif %}
+    {% if book.illustrations_diagrams %}
+        <dt class="col-sm-4">Illustrations / diagrams</dt>
+        <dd class="col-sm-8">{{ book.illustrations_diagrams }}</dd>
+    {% endif %}
+    {% if book.diagrams_notes %}
+        <dt class="col-sm-4">Diagram notes</dt>
+        <dd class="col-sm-8">{{ book.diagrams_notes }}</dd>
+    {% endif %}
+    {% if book.diagrams_book_pages %}
+        <dt class="col-sm-4">Diagram book pages</dt>
+        <dd class="col-sm-8">{{ book.diagrams_book_pages }}</dd>
+    {% endif %}
+</dl>

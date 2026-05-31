@@ -1,0 +1,191 @@
+// scss/_book_detail.scss
+//
+// Visual polish for the Book / Person / Place / secondary detail pages.
+// The page templates share BEM-ish class roots so this partial covers
+// all of them: .book-header, .book-toc, .book-section, plus the
+// matching person-/place-/topic-/series-/publisher-/occupation-
+// variants.
+
+// Sticky TOC column. Falls back to plain block on viewports where
+// position:sticky is not honoured (older browsers, print).
+.book-toc-sticky,
+.person-toc-sticky,
+.place-toc-sticky {
+  position: sticky;
+  top: 1.5rem;
+}
+
+// TOC list — keep it quiet so it doesn't compete with the content.
+%detail-toc {
+  .book-toc__heading,
+  .person-toc__heading,
+  .place-toc__heading {
+    letter-spacing: 0.05em;
+  }
+
+  ol {
+    border-left: 2px solid var(--bs-border-color);
+    padding-left: 0.75rem;
+    margin-left: 0.25rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+  }
+
+  a {
+    color: var(--bs-secondary-color);
+    text-decoration: none;
+    font-size: 0.92rem;
+    display: block;
+    padding: 0.15rem 0 0.15rem 0.25rem;
+    border-left: 2px solid transparent;
+    margin-left: -0.95rem;
+    padding-left: 0.7rem;
+    transition: color 120ms ease, border-color 120ms ease;
+
+    &:hover,
+    &:focus {
+      color: var(--bs-primary);
+    }
+
+    // .is-active is toggled by book_detail.js based on which section
+    // is currently in the viewport.
+    &.is-active {
+      color: var(--bs-primary);
+      border-left-color: var(--bs-primary);
+      font-weight: 600;
+    }
+  }
+}
+
+.book-toc,
+.person-toc,
+.place-toc {
+  @extend %detail-toc;
+}
+
+// Hero header — give the title some breathing room and de-emphasise
+// secondary lines.
+.book-header,
+.person-header,
+.place-header,
+.publisher-header,
+.series-header,
+.topic-header,
+.occupation-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  margin-bottom: 1.5rem;
+
+  &__title { line-height: 1.2; }
+  &__latin { color: var(--bs-secondary-color); }
+  &__alt { line-height: 1.3; }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+// Person chip — used in the Book header to list authors with their role.
+.person-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--bs-border-color);
+  background: var(--bs-tertiary-bg);
+  color: var(--bs-body-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    background: var(--bs-secondary-bg);
+    color: var(--bs-primary);
+  }
+
+  &__role {
+    color: var(--bs-secondary-color);
+    font-size: 0.78rem;
+  }
+}
+
+// Section spacing on the content column. The first section sits flush
+// with the header bottom; subsequent ones get a comfortable gap.
+.book-section,
+.person-section,
+.place-section,
+.publisher-section,
+.series-section,
+.topic-section,
+.occupation-section {
+  scroll-margin-top: 5rem; // sticky-header offset for #anchor jumps
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+
+  &:not(:first-of-type) {
+    border-top: 1px solid var(--bs-border-color);
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+    color: var(--bs-emphasis-color);
+  }
+
+  // Definition lists are the workhorse format on these pages.
+  dl.row {
+    dt {
+      color: var(--bs-secondary-color);
+      font-weight: 500;
+      font-size: 0.92rem;
+    }
+    dd {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// "Show more" text expander for very long fields (table_of_contents,
+// preface, etc.). Hidden by default; book_detail.js promotes the
+// collapsed copy when it sees data attributes.
+.detail-clamp {
+  position: relative;
+  max-height: 14rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+
+  &.is-expanded {
+    max-height: none;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+.detail-clamp-toggle {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+// Mobile-only floating action button that opens the TOC offcanvas.
+// Hidden on md+; on small screens it lives in the bottom-left so the
+// thumb can reach it without covering the active section heading.
+.book-toc-fab,
+.person-toc-fab,
+.place-toc-fab {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1030;
+  border-radius: 999px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.875rem;
+}

@@ -2,28 +2,55 @@
 
 {% block title %}{{ topic.name }} | Topics{% endblock %}
 
-{% block content %}
-<div class="container my-4">
-    <h1 class="h2 mb-4">{{ topic.name }}</h1>
+{% block meta %}
+    <meta name="description" content="Topic: {{ topic.name }}">
+    <meta property="og:title" content="{{ topic.name }}">
+{% endblock %}
 
-    {% if books_with_topic %}
-        <section class="mb-4">
-            <h2 class="h5">Books with this topic</h2>
-            <ul class="list-unstyled">
-                {% for book in books_with_topic %}
-                    <li>
-                        <a href="{% url 'book-detail' book.name %}" class="link-primary">
-                            {{ book.name|default:"[untitled]" }}
-                        </a>
-                        {% if book.gregorian_year %}
-                            ({{ book.gregorian_year }})
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-    {% else %}
-        <p class="text-muted">No books for this topic yet.</p>
-    {% endif %}
-</div>
+{% block content %}
+    <div class="container topic-detail my-4">
+        <header class="topic-header mb-4">
+            <p class="text-muted small mb-1">
+                <a href="{% url 'topics-list' %}">Topics</a>
+                <span aria-hidden="true">&rsaquo;</span>
+                <span>{{ topic.name }}</span>
+            </p>
+
+            <h1 class="topic-header__title h2 mb-2">{{ topic.name }}</h1>
+
+            <p class="topic-header__stats text-muted mb-3">
+                {{ books_with_topic|length }} book{{ books_with_topic|length|pluralize }}
+            </p>
+
+            <div class="topic-header__actions">
+                <button type="button" class="btn btn-sm btn-outline-secondary"
+                        data-permalink="{{ request.build_absolute_uri }}"
+                        aria-label="Copy permalink">
+                    <i class="bi bi-link-45deg"></i> Permalink
+                </button>
+            </div>
+        </header>
+
+        {% if books_with_topic %}
+            <section class="topic-section mb-4">
+                <h2 class="topic-section__heading h4">Books with this topic</h2>
+                <ul class="list-unstyled mb-0">
+                    {% for book in books_with_topic %}
+                        <li class="mb-1">
+                            <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                {{ book.full_title|default:book.name|default:"[untitled]" }}
+                            </a>
+                            {% if book.gregorian_year or book.year_in_book %}
+                                <span class="text-muted small">
+                                    &middot; {{ book.gregorian_year|default:book.year_in_book }}
+                                </span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% else %}
+            <p class="text-muted">No books for this topic yet.</p>
+        {% endif %}
+    </div>
 {% endblock %}

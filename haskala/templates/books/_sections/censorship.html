@@ -1,0 +1,18 @@
+<dl class="row mb-0">
+    {% if book.censorship %}
+        <dt class="col-sm-4">Censorship</dt>
+        <dd class="col-sm-8">{{ book.censorship|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.bans %}
+        <dt class="col-sm-4">Bans</dt>
+        <dd class="col-sm-8">{{ book.bans|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.rabbinical_approbations %}
+        <dt class="col-sm-4">Rabbinical approbations</dt>
+        <dd class="col-sm-8">{{ book.rabbinical_approbations|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.rabbinical_approbation_notes %}
+        <dt class="col-sm-4">Approbation notes</dt>
+        <dd class="col-sm-8">{{ book.rabbinical_approbation_notes|linebreaksbr }}</dd>
+    {% endif %}
+</dl>

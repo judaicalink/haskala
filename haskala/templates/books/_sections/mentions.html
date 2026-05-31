@@ -1,0 +1,45 @@
+{% if book.mentions.all %}
+    <ul class="list-unstyled mb-3">
+        {% for m in book.mentions.all %}
+            <li class="mb-2">
+                {% if m.mentionee %}
+                    <a href="{% url 'person-detail' m.mentionee.uuid %}" class="link-primary">{{ m.mentionee }}</a>
+                {% else %}
+                    <strong>Mention</strong>
+                {% endif %}
+                {% if m.mentionee_description %}
+                    <span class="text-muted small">&middot; {{ m.mentionee_description.name }}</span>
+                {% endif %}
+                {% if m.mentionee_city %}
+                    <span class="text-muted small">
+                        &middot;
+                        <a href="{% url 'place-detail' m.mentionee_city.name|slugify %}">{{ m.mentionee_city.name }}</a>
+                    </span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<dl class="row mb-0">
+    {% if book.mention_general_notes %}
+        <dt class="col-sm-4">General mention notes</dt>
+        <dd class="col-sm-8">{{ book.mention_general_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.mentions_in_reviews %}
+        <dt class="col-sm-4">Mentions in reviews</dt>
+        <dd class="col-sm-8">{{ book.mentions_in_reviews|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.contemporary_disputes %}
+        <dt class="col-sm-4">Contemporary disputes</dt>
+        <dd class="col-sm-8">{{ book.contemporary_disputes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.contemporary_references %}
+        <dt class="col-sm-4">Contemporary references</dt>
+        <dd class="col-sm-8">{{ book.contemporary_references|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.later_references %}
+        <dt class="col-sm-4">Later references</dt>
+        <dd class="col-sm-8">{{ book.later_references|linebreaksbr }}</dd>
+    {% endif %}
+</dl>

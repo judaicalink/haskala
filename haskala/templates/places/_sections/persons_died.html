@@ -1,0 +1,12 @@
+<ul class="list-unstyled mb-0">
+    {% for person in died_here %}
+        <li class="mb-1">
+            <a href="{% url 'person-detail' person.uuid %}" class="link-primary">
+                {{ person }}
+            </a>
+            {% if person.date_of_death %}
+                <span class="text-muted small">&middot; &#8224; {{ person.date_of_death }}</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,30 @@
+<dl class="row mb-0">
+    {% if person.pref_label %}
+        <dt class="col-sm-4">Preferred label</dt>
+        <dd class="col-sm-8">{{ person.pref_label }}</dd>
+    {% endif %}
+    {% if person.german_name %}
+        <dt class="col-sm-4">German name</dt>
+        <dd class="col-sm-8">{{ person.german_name }}</dd>
+    {% endif %}
+    {% if person.hebrew_name %}
+        <dt class="col-sm-4">Hebrew name</dt>
+        <dd class="col-sm-8" lang="he" dir="rtl">{{ person.hebrew_name }}</dd>
+    {% endif %}
+    {% if person.pseudonym %}
+        <dt class="col-sm-4">Pseudonym</dt>
+        <dd class="col-sm-8">{{ person.pseudonym }}</dd>
+    {% endif %}
+    {% if person.gender %}
+        <dt class="col-sm-4">Gender</dt>
+        <dd class="col-sm-8">{{ person.gender }}</dd>
+    {% endif %}
+    {% if person.occupations.all %}
+        <dt class="col-sm-4">Occupations</dt>
+        <dd class="col-sm-8">
+            {% for occ in person.occupations.all %}
+                <a href="{% url 'occupation-detail' occ.name|slugify %}">{{ occ.name }}</a>{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </dd>
+    {% endif %}
+</dl>

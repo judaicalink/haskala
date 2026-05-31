@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
+    "django.contrib.postgres",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
@@ -171,8 +172,18 @@ STATICFILES_DIRS = [
 
 # ManifestStaticFilesStorage is recommended in production, to prevent outdated
 # JavaScript / CSS assets being served from cache (e.g. after a Wagtail upgrade).
+# manifest_strict=False lets collectstatic tolerate CSS files that reference
+# assets which are not actually shipped (e.g. legacy CSS still living in the
+# tree). Without this flag the docker build aborts on the first dangling URL.
 # See https://docs.djangoproject.com/en/4.1/ref/contrib/staticfiles/#manifeststaticfilesstorage
-STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
@@ -248,7 +259,7 @@ LOGGING = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/haskala',
+        'LOCATION': env('REDIS_URL', default='redis://127.0.0.1:6379/haskala'),
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -305,8 +316,9 @@ COOKIEBANNER = {
     "header_text": _("We are using cookies on this website. A few are essential, others are not."),
     "footer_text": _("Please accept our cookies"),
     "footer_links": [
-        {"title": _("Imprint"), "href": "/imprint"},
-        {"title": _("Privacy"), "href": "/privacy"},
+        {"title": _("Legal Notice"), "href": "/legal-notice/"},
+        {"title": _("Privacy Policy"), "href": "/privacy-policy/"},
+        {"title": _("Cookie Policy"), "href": "/cookie-policy/"},
     ],
     "groups": [
         {
@@ -346,6 +358,13 @@ COOKIEBANNER = {
 MATOMO_URL = env("MATOMO_URL", default="")
 MATOMO_SITE_IDS = json.loads(os.environ.get("MATOMO_SITE_IDS", "{}"))
 USE_X_FORWARDED_HOST = True
+
+# RDF export (haskala_rdf). HASKALA_DUMPS_ROOT is the parent directory
+# under which one subdirectory per dataset (named after HASKALA_SLUG)
+# holds /current and /archive/<timestamp> snapshots.
+HASKALA_DUMPS_ROOT = env("HASKALA_DUMPS_ROOT", default=os.path.join(BASE_DIR, "dumps"))
+HASKALA_SLUG = env("HASKALA_SLUG", default="haskala")
+HASKALA_GND_MAPPING_CSV = env("HASKALA_GND_MAPPING_CSV", default="")
 
 # Mail
 EMAIL_BACKEND = env("EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend")

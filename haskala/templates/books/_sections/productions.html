@@ -1,0 +1,19 @@
+<ul class="list-unstyled mb-0">
+    {% for prod in book.productions.all %}
+        <li class="mb-2">
+            {% if prod.producer %}
+                <a href="{% url 'person-detail' prod.producer.uuid %}" class="link-primary">
+                    {{ prod.producer }}
+                </a>
+            {% else %}
+                <span>{{ prod.title|default:"[untitled production]" }}</span>
+            {% endif %}
+            {% if prod.role %}<span class="text-muted small">&middot; {{ prod.role.name }}</span>{% endif %}
+            {% if prod.name_in_book %}
+                <div class="small text-muted">
+                    Appears in book as &ldquo;{{ prod.name_in_book }}&rdquo;
+                </div>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

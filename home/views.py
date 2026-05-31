@@ -3,7 +3,7 @@ import json
 import secrets
 from collections import defaultdict
 
-from django.db.models import Q
+from django.db.models import Prefetch, Q
 from django.http import Http404, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
@@ -11,18 +11,68 @@ from django.views.decorators.cache import cache_page
 from requests import Response
 from rest_framework.decorators import api_view
 
+from .book_detail import visible_sections, citation_key
+from .person_detail import visible_sections as person_visible_sections
+from .place_detail import visible_sections as place_visible_sections
 from .models import Book, Person, Geolocation, City, Edition, Translation, Mention, Language, Occupation, Topic, \
     Publisher, BookAuthor, Preface, Production, Series
 from .serializers import BookSerializer, PersonSerializer, CitySerializer
 
 
-@cache_page(60 * 60)  # cache for 15 minutes
+@cache_page(60 * 60)  # cache for 1 hour
 def book_detail_view(request, title):
-    # Fetch the book page using the title (slug)
-    book = get_object_or_404(Book, name=title)
+    book = get_object_or_404(
+        Book.objects.select_related(
+            "publisher", "original_publisher",
+            "publication_place", "publication_place_other",
+            "original_publication_place",
+            "topic", "series", "alignment", "original_type",
+            "location_of_footnotes", "format_of_publication_date",
+            "languages_number", "original_language",
+            "translation_type",
+        ).prefetch_related(
+            Prefetch(
+                "bookauthor_set",
+                queryset=BookAuthor.objects.select_related("person"),
+            ),
+            Prefetch(
+                "editions",
+                queryset=Edition.objects.select_related("city").order_by("year"),
+            ),
+            Prefetch(
+                "translations",
+                queryset=Translation.objects.select_related("translator", "city", "language"),
+            ),
+            Prefetch(
+                "prefaces",
+                queryset=Preface.objects.select_related("writer").order_by("number"),
+            ),
+            Prefetch(
+                "productions",
+                queryset=Production.objects.select_related("producer", "role"),
+            ),
+            Prefetch(
+                "mentions",
+                queryset=Mention.objects.select_related(
+                    "mentionee", "mentionee_city", "mentionee_description",
+                ),
+            ),
+            "main_textual_models",
+            "secondary_textual_models",
+            "languages",
+            "footnote_languages",
+            "occasional_words_languages",
+            "fonts",
+            "typography",
+            "target_audience",
+        ),
+        name=title,
+    )
 
-    # You can pass additional context here if needed
-    return render(request, 'books/book_detail_page.html', {'book': book})
+    return render(request, "books/book_detail_page.html", {
+        "book": book,
+        "visible_sections": visible_sections(book),
+    })
 
 
 @cache_page(60 * 60)
@@ -45,7 +95,6 @@ def books_list_view(request):
     # Sort dictionary by letter
     books_by_letter = dict(sorted(grouped.items(), key=lambda item: item[0]))
 
-    # Alphabets for the filter navigation
     alphabet = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     hebrew_alphabet = list("אבגדהוזחטיכלמנסעפצקרשת")
 
@@ -53,6 +102,7 @@ def books_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "books_by_letter": books_by_letter,
+        "total_count": sum(len(v) for v in books_by_letter.values()),
     }
 
     return render(request, "books/books_page.html", context)
@@ -82,7 +132,6 @@ def digital_books_list_view(request):
         first_letter = name[0].upper()
         grouped[first_letter].append(book)
 
-    # sort dict by letter
     books_by_letter = dict(sorted(grouped.items(), key=lambda item: item[0]))
 
     alphabet = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -92,6 +141,7 @@ def digital_books_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "books_by_letter": books_by_letter,
+        "total_count": sum(len(v) for v in books_by_letter.values()),
     }
 
     return render(request, "digital-books/digital_books_page.html", context)
@@ -121,6 +171,7 @@ def persons_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "persons_by_letter": persons_by_letter,
+        "total_count": sum(len(v) for v in persons_by_letter.values()),
     }
     return render(request, "persons/persons_page.html", context)
 
@@ -130,22 +181,27 @@ def person_detail_view(request, person_uuid):
     """
     Detail view of a person, identified by UUID.
     """
-    person = get_object_or_404(Person, pk=person_uuid)
+    person = (
+        Person.objects
+        .select_related("gender", "place_of_birth", "place_of_death")
+        .prefetch_related("occupations")
+        .filter(pk=person_uuid)
+        .first()
+    )
+    if person is None:
+        raise Http404("Person not found")
 
-    # Group books by role (BookAuthor through model)
-    books_by_role = defaultdict(list)
+    books_by_role: dict[str, list[Book]] = defaultdict(list)
     for ba in (
         BookAuthor.objects
         .filter(person=person)
         .select_related("book")
-        .order_by("book__name")
+        .order_by("role", "book__name")
     ):
         if not ba.book:
             continue
-        role_label = ba.get_role_display()  # e.g. "Old text author"
-        books_by_role[role_label].append(ba.book)
+        books_by_role[ba.get_role_display()].append(ba.book)
 
-    # Prefaces, productions, mentions
     prefaces = (
         Preface.objects
         .filter(writer=person)
@@ -161,19 +217,17 @@ def person_detail_view(request, person_uuid):
     mentions = (
         Mention.objects
         .filter(mentionee=person)
-        .select_related("mentionee_city", "mentionee_description")
+        .select_related("book", "mentionee_city", "mentionee_description")
         .order_by("mentionee_city__name")
     )
 
-    has_additional_info = bool(books_by_role or prefaces or productions or mentions)
-
     context = {
         "person": person,
+        "visible_sections": person_visible_sections(person),
         "person_books_by_role": dict(books_by_role),
         "prefaces_by_person": prefaces,
         "productions_by_person": productions,
         "mentions_of_person": mentions,
-        "has_additional_info": has_additional_info,
     }
 
     return render(request, "persons/person_detail_page.html", context)
@@ -196,7 +250,7 @@ def places_list_view(request):
         if not name:
             continue
         first_letter = name[0].upper()
-        grouped[first_letter].append(name)
+        grouped[first_letter].append(city)
 
     cities_by_letter = dict(sorted(grouped.items(), key=lambda item: item[0]))
 
@@ -227,6 +281,7 @@ def places_list_view(request):
         "cities_by_letter": cities_by_letter,
         "city_markers_json": json.dumps(markers),
         "nonce": secrets.token_hex(16),
+        "total_count": sum(len(v) for v in cities_by_letter.values()),
     }
     return render(request, "places/places_page.html", context)
 
@@ -249,32 +304,39 @@ def place_detail_view(request, city_slug):
     """
     city = _get_place_by_slug(city_slug)
 
-    # Geocoordinates
     geolocation = Geolocation.objects.filter(city=city).first()
 
-    # Books published here
-    books_published_here = Book.objects.filter(
-        Q(publication_place=city)
-        | Q(publication_place_other=city)
-        | Q(original_publication_place=city)
-    ).distinct()
-
-    # Editions & translations
-    editions_here = Edition.objects.filter(city=city).select_related("book").distinct()
-    translations_here = (
-        Translation.objects.filter(city=city)
-        .select_related("book", "language")
+    books_published_here = (
+        Book.objects.filter(
+            Q(publication_place=city)
+            | Q(publication_place_other=city)
+            | Q(original_publication_place=city)
+        )
+        .order_by("gregorian_year", "name")
         .distinct()
     )
 
-    # Mentions / persons
-    mentions_here = Mention.objects.filter(mentionee_city=city).select_related(
-        "mentionee", "mentionee_description"
+    editions_here = (
+        Edition.objects.filter(city=city)
+        .select_related("book")
+        .order_by("year")
+        .distinct()
+    )
+    translations_here = (
+        Translation.objects.filter(city=city)
+        .select_related("book", "language")
+        .order_by("year")
+        .distinct()
     )
 
-    # Persons born/died here (via related_name)
-    born_here = city.born_here.all()
-    died_here = city.died_here.all()
+    mentions_here = (
+        Mention.objects.filter(mentionee_city=city)
+        .select_related("book", "mentionee", "mentionee_description")
+        .order_by("mentionee__pref_label")
+    )
+
+    born_here = city.born_here.all().order_by("pref_label")
+    died_here = city.died_here.all().order_by("pref_label")
 
     context = {
         "city": city,
@@ -287,6 +349,7 @@ def place_detail_view(request, city_slug):
         "died_here": died_here,
         "nonce": secrets.token_hex(16),
     }
+    context["visible_sections"] = place_visible_sections(context)
     return render(request, "places/place_detail_page.html", context)
 
 
@@ -482,6 +545,7 @@ def topics_list_view(request):
     context = {
         "alphabet": alphabet,
         "topics_by_letter": topics_by_letter,
+        "total_count": sum(len(v) for v in topics_by_letter.values()),
     }
     return render(request, "topics/topics_page.html", context)
 
@@ -493,7 +557,11 @@ def topic_detail_view(request, topic_slug):
     """
     topic = _get_object_by_slug(Topic.objects.all(), topic_slug)
 
-    books_with_topic = Book.objects.filter(topic=topic).order_by("name").distinct()
+    books_with_topic = (
+        Book.objects.filter(topic=topic)
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
 
     context = {
         "topic": topic,
@@ -509,10 +577,7 @@ def publishers_list_view(request):
     Overview of all publishers, alphabetically grouped.
     """
 
-    publishers_qs = get_object_or_404(Publisher, slug=publisher_slug)
-    Publisher.objects.all().order_by("name")
-
-    print("Publishers QS:", publishers_qs)
+    publishers_qs = Publisher.objects.all().order_by("name")
 
     grouped = defaultdict(list)
     for pub in publishers_qs:
@@ -531,6 +596,7 @@ def publishers_list_view(request):
         "alphabet": alphabet,
         "hebrew_alphabet": hebrew_alphabet,
         "publishers_by_letter": publishers_by_letter,
+        "total_count": sum(len(v) for v in publishers_by_letter.values()),
     }
     return render(request, "publishers/publishers_page.html", context)
 
@@ -542,13 +608,22 @@ def publisher_detail_view(request, publisher_slug):
     """
     publisher = _get_object_by_slug(Publisher.objects.all(), publisher_slug)
 
-    books_published = Book.objects.filter(
-        Q(publisher=publisher) | Q(original_publisher=publisher)
-    ).order_by("name").distinct()
+    books_published = (
+        Book.objects.filter(publisher=publisher)
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
+    books_original = (
+        Book.objects.filter(original_publisher=publisher)
+        .exclude(publisher=publisher)
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
 
     context = {
         "publisher": publisher,
         "books_published": books_published,
+        "books_original": books_original,
     }
     return render(request, "publishers/publisher_detail_page.html", context)
 
@@ -576,6 +651,7 @@ def occupations_list_view(request):
     context = {
         "alphabet": alphabet,
         "occupations_by_letter": occupations_by_letter,
+        "total_count": sum(len(v) for v in occupations_by_letter.values()),
     }
     return render(request, "occupations/occupations_page.html", context)
 
@@ -588,6 +664,7 @@ def occupation_detail_view(request, occupation_slug):
 
     persons_with_occupation = (
         Person.objects.filter(occupations=occupation)
+        .select_related("place_of_birth", "place_of_death")
         .order_by("pref_label", "german_name", "hebrew_name")
         .distinct()
     )
@@ -651,6 +728,7 @@ def series_list_view(request):
     context = {
         "alphabet": alphabet,
         "series_by_letter": series_by_letter,
+        "total_count": sum(len(v) for v in series_by_letter.values()),
     }
     return render(request, "series/series_page.html", context)
 
@@ -664,7 +742,7 @@ def series_detail_view(request, series_slug):
 
     books_in_series = (
         Book.objects.filter(series=series)
-        .order_by("name")
+        .order_by("series_part", "gregorian_year", "name")
         .distinct()
     )
 
@@ -673,23 +751,6 @@ def series_detail_view(request, series_slug):
         "books_in_series": books_in_series,
     }
     return render(request, "series/series_detail_page.html", context)
-
-all_fields = [f.name for f in Book._meta.get_fields() if f.concrete]
-used_in_template = {
-    "name", "full_title", "title_in_latin_characters",
-    "authors", "publication_place", "gregorian_year", "year_in_book",
-    "publisher", "original_publisher", "languages", "pages_number",
-    "digital_book_url", "topic", "series",
-    "location_of_footnotes", "table_of_content",
-    "target_audience", "structure_notes", "type_general_notes",
-    "studies", "bibliographical_citations",
-}
-
-missing = sorted(
-    f for f in all_fields
-    if not f.endswith("_format") and f not in used_in_template
-)
-print(f"Missing: {missing}")
 
 
 @api_view(["GET"])
@@ -827,3 +888,40 @@ def search_api_view(request):
             "places": CitySerializer(places, many=True).data,
         },
     })
+
+
+def book_cite_bibtex(request, title):
+    book = get_object_or_404(Book, name=title)
+    authors = [
+        ba.person.pref_label or str(ba.person)
+        for ba in book.bookauthor_set.select_related("person")
+        if ba.person
+    ]
+    key = citation_key(book)
+    response = render(
+        request,
+        "books/cite/bibtex.txt",
+        {"book": book, "key": key, "authors": authors},
+        content_type="text/x-bibtex; charset=utf-8",
+    )
+    response["Content-Disposition"] = f'attachment; filename="{key}.bib"'
+    return response
+
+
+def book_cite_ris(request, title):
+    book = get_object_or_404(Book, name=title)
+    authors = [
+        ba.person.pref_label or str(ba.person)
+        for ba in book.bookauthor_set.select_related("person")
+        if ba.person
+    ]
+    languages = [str(lang) for lang in book.languages.all()]
+    response = render(
+        request,
+        "books/cite/ris.txt",
+        {"book": book, "authors": authors, "languages": languages},
+        content_type="application/x-research-info-systems; charset=utf-8",
+    )
+    key = citation_key(book)
+    response["Content-Disposition"] = f'attachment; filename="{key}.ris"'
+    return response

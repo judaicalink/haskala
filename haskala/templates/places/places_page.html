@@ -1,41 +1,53 @@
 {% extends 'base.html' %}
 {% load wagtailcore_tags %}
-{% load leaflet_tags %}
 
-{% block title %}places{% endblock %}
+{% block title %}Places{% endblock %}
 
 {% block content %}
-    <div class="container my-4">
-        <h1>Places</h1>
+    <div class="container index-page my-4">
+        <header class="index-header mb-4">
+            <h1 class="h2 mb-2">Places</h1>
+            <p class="text-muted mb-0">
+                {{ total_count }} place{{ total_count|pluralize }} in total
+            </p>
+        </header>
+
+        {% if city_markers_json and city_markers_json != "[]" %}
+            <section class="places-map-section mb-4">
+                <div id="places-map"
+                     style="width: 100%; height: 380px;"
+                     data-markers="{{ city_markers_json }}">
+                </div>
+            </section>
+        {% endif %}
 
         {% include 'partials/alphabetmenu.html' %}
 
-        <section class="places-list">
+        <section class="index-list">
             {% if cities_by_letter %}
-                {% for letter, names in cities_by_letter.items %}
-                    <div class="people-group mb-4" id="letter-{{ letter }}">
-                        <h2>{{ letter }}</h2>
-                        <ul class="list-unstyled">
-                            {% for city in names %}
-                                <li>
-                                    <a href="/places/{{ city|lower }}">
-                                        {{ city }}
-                                    </a>
+                {% for letter, cities in cities_by_letter.items %}
+                    <div class="index-group mb-4" id="letter-{{ letter }}">
+                        <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
+                        <ul class="list-unstyled mb-0">
+                            {% for city in cities %}
+                                <li class="mb-1">
+                                    {% with slug=city.name|slugify %}
+                                        {% if slug %}
+                                            <a href="{% url 'place-detail' slug %}" class="link-primary">
+                                                {{ city.name }}
+                                            </a>
+                                        {% else %}
+                                            <span>{{ city.name }}</span>
+                                        {% endif %}
+                                    {% endwith %}
                                 </li>
                             {% endfor %}
                         </ul>
                     </div>
                 {% endfor %}
             {% else %}
-                <p>No places found.</p>
+                <p class="text-muted">No places found.</p>
             {% endif %}
-        </section>
-
-        <section class="map-section my-5">
-            <h2>Map of Places</h2>
-            {% leaflet_map map %}
-
         </section>
     </div>
 {% endblock %}
-

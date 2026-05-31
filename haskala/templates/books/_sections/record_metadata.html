@@ -1,0 +1,14 @@
+<dl class="row mb-0 small text-muted">
+    {% if book.legacy_nid %}
+        <dt class="col-sm-4">Legacy node ID</dt>
+        <dd class="col-sm-8">{{ book.legacy_nid }}</dd>
+    {% endif %}
+    {% if book.legacy_created %}
+        <dt class="col-sm-4">Imported</dt>
+        <dd class="col-sm-8">{{ book.legacy_created|date:"Y-m-d" }}</dd>
+    {% endif %}
+    {% if book.legacy_changed %}
+        <dt class="col-sm-4">Last changed in source</dt>
+        <dd class="col-sm-8">{{ book.legacy_changed|date:"Y-m-d" }}</dd>
+    {% endif %}
+</dl>

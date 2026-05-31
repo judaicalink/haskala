@@ -1,0 +1,74 @@
+{% load static %}
+<header class="person-header mb-4">
+    <p class="text-muted small mb-1">
+        <a href="{% url 'persons-list' %}">Persons</a>
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ person.pref_label|default:person.german_name|default:person.hebrew_name|default:person.pk }}</span>
+    </p>
+
+    <h1 class="person-header__title h2 mb-1">
+        {{ person.pref_label|default:person.german_name|default:person.hebrew_name|default:person.pk }}
+    </h1>
+
+    {% if person.hebrew_name and person.hebrew_name != person.pref_label %}
+        <p class="person-header__alt mb-1" lang="he" dir="rtl">{{ person.hebrew_name }}</p>
+    {% endif %}
+    {% if person.german_name and person.german_name != person.pref_label %}
+        <p class="person-header__alt text-muted fst-italic mb-1">{{ person.german_name }}</p>
+    {% endif %}
+    {% if person.pseudonym %}
+        <p class="person-header__alt text-muted mb-1">aka {{ person.pseudonym }}</p>
+    {% endif %}
+
+    {% if person.occupations.all %}
+        <p class="person-header__chips mb-2">
+            {% for occ in person.occupations.all %}
+                <a href="{% url 'occupation-detail' occ.name|slugify %}"
+                   class="badge rounded-pill text-bg-light border text-decoration-none">
+                    {{ occ.name }}
+                </a>{% if not forloop.last %} {% endif %}
+            {% endfor %}
+        </p>
+    {% endif %}
+
+    {% if person.date_of_birth or person.place_of_birth or person.date_of_death or person.place_of_death %}
+        <p class="person-header__life text-muted mb-3">
+            {% if person.date_of_birth or person.place_of_birth %}
+                <span class="me-2">
+                    &#42; {% if person.date_of_birth %}{{ person.date_of_birth }}{% endif %}
+                    {% if person.place_of_birth %}
+                        {% if person.date_of_birth %}, {% endif %}
+                        <a href="{% url 'place-detail' person.place_of_birth.name|slugify %}" class="link-secondary">
+                            {{ person.place_of_birth.name }}
+                        </a>
+                    {% endif %}
+                </span>
+            {% endif %}
+            {% if person.date_of_death or person.place_of_death %}
+                <span>
+                    &#8224; {% if person.date_of_death %}{{ person.date_of_death }}{% endif %}
+                    {% if person.place_of_death %}
+                        {% if person.date_of_death %}, {% endif %}
+                        <a href="{% url 'place-detail' person.place_of_death.name|slugify %}" class="link-secondary">
+                            {{ person.place_of_death.name }}
+                        </a>
+                    {% endif %}
+                </span>
+            {% endif %}
+        </p>
+    {% endif %}
+
+    <div class="person-header__actions">
+        {% if person.viaf_id %}
+            <a href="https://viaf.org/viaf/{{ person.viaf_id }}/" target="_blank" rel="noopener"
+               class="btn btn-sm btn-outline-info">
+                <i class="bi bi-box-arrow-up-right"></i> VIAF {{ person.viaf_id }}
+            </a>
+        {% endif %}
+        <button type="button" class="btn btn-sm btn-outline-secondary"
+                data-permalink="{{ request.build_absolute_uri }}"
+                aria-label="Copy permalink">
+            <i class="bi bi-link-45deg"></i> Permalink
+        </button>
+    </div>
+</header>

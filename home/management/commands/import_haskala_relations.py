@@ -10,13 +10,24 @@ Source files (one CSV per node type):
     research/export/prefaces_for_django.csv
     research/export/productions_for_django.csv
 
+Multi-value Book taxonomy links (one row per assignment):
+    research/export/main_textual_models.csv
+    research/export/secondary_textual_models.csv
+
+Book.authors (BookAuthor through table) is materialized from three sources:
+    - books_for_django.csv columns old_text_author_target_id and
+      original_text_author_target_id (one Person per role per book)
+    - the producer FK on already-imported Production rows
+The role values match BookAuthor.role choices: old_text_author,
+original_text_author, producer.
+
 For Mention, Preface and Production the link to the parent Book is not in the
 per-node CSV but in Drupal's multi-value table:
     Database/field_data_field_book.csv
 
 ProductionRole values are not their own Drupal vocabulary; the role TIDs live
 in the Occupation vocabulary. This command seeds ProductionRole rows on the
-fly. TranslationType is also seeded with the single value "translation".
+fly from the matching Occupation name.
 """
 
 import csv
@@ -29,6 +40,7 @@ from django.utils import timezone
 
 from home.models import (
     Book,
+    BookAuthor,
     City,
     Edition,
     Language,
@@ -39,8 +51,8 @@ from home.models import (
     Preface,
     Production,
     ProductionRole,
+    TextualModel,
     Translation,
-    TranslationType,
 )
 
 
@@ -221,9 +233,6 @@ class Command(BaseCommand):
             self.stdout.write(self.style.WARNING(f"Skipping translations: {path} not found."))
             return
 
-        # Drupal only ever uses one type ("translation"); seed it.
-        TranslationType.objects.get_or_create(name="translation")
-
         books = self._book_by_nid()
         persons = self._person_by_nid()
         cities = self._city_by_tid()
@@ -247,6 +256,7 @@ class Command(BaseCommand):
                     "legacy_status": parse_bool(row.get("status")),
                     "legacy_created": parse_timestamp(row.get("created")),
                     "legacy_changed": parse_timestamp(row.get("changed")),
+                    "title": clean(row.get("title")),
                     "book": book,
                     "translator": persons.get(parse_int(row.get("translator_target_id"))),
                     "city": cities.get(parse_int(row.get("translation_city_tid"))),
@@ -254,8 +264,6 @@ class Command(BaseCommand):
                     "references_format": clean(row.get("translation_references_format")) or "NULL",
                     "year": clean(row.get("translation_year")),
                     "year_format": clean(row.get("translation_year_format")) or "NULL",
-                    # Note: `title` from CSV is not stored - the Translation
-                    # model has no title field yet.
                 }
                 _, created_flag = Translation.objects.update_or_create(
                     legacy_nid=legacy_nid, defaults=defaults
@@ -269,16 +277,17 @@ class Command(BaseCommand):
             f"Translation: {created} created, {updated} updated, {missing_book} skipped (book missing)."
         ))
 
-    def import_mentions(self, export_dir: Path):
+    def import_mentions(self, export_dir: Path, book_backlink: dict[int, int]):
         path = export_dir / "mentions_for_django.csv"
         if not path.exists():
             self.stdout.write(self.style.WARNING(f"Skipping mentions: {path} not found."))
             return
 
+        books = self._book_by_nid()
         persons = self._person_by_nid()
         cities = self._city_by_tid()
         descriptions = self._mention_description_by_tid()
-        created = updated = 0
+        created = updated = without_book = 0
 
         with path.open(newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
@@ -287,11 +296,17 @@ class Command(BaseCommand):
                 if legacy_nid is None:
                     continue
 
+                book_nid = book_backlink.get(legacy_nid)
+                book = books.get(book_nid) if book_nid else None
+                if book is None:
+                    without_book += 1
+
                 defaults = {
                     "legacy_vid": parse_int(row.get("vid")),
                     "legacy_status": parse_bool(row.get("status")),
                     "legacy_created": parse_timestamp(row.get("created")),
                     "legacy_changed": parse_timestamp(row.get("changed")),
+                    "book": book,
                     "mentionee": persons.get(parse_int(row.get("mentionee_target_id"))),
                     "mentionee_city": cities.get(parse_int(row.get("mentionee_city_tid"))),
                     "mentionee_description": descriptions.get(
@@ -307,7 +322,7 @@ class Command(BaseCommand):
                     updated += 1
 
         self.stdout.write(self.style.SUCCESS(
-            f"Mention: {created} created, {updated} updated."
+            f"Mention: {created} created, {updated} updated, {without_book} without book link."
         ))
 
     def import_prefaces(self, export_dir: Path, book_backlink: dict[int, int]):
@@ -388,6 +403,8 @@ class Command(BaseCommand):
                     "legacy_created": parse_timestamp(row.get("created")),
                     "legacy_changed": parse_timestamp(row.get("changed")),
                     "title": clean(row.get("title")) or None,
+                    "name_in_book": clean(row.get("name_in_book")),
+                    "person_name_appear": clean(row.get("person_name_appear")),
                     "book": book,
                     "producer": persons.get(parse_int(row.get("producer_target_id"))),
                     "role": role,
@@ -430,6 +447,137 @@ class Command(BaseCommand):
         )
         return role
 
+    def import_textual_model_links(self, export_dir: Path):
+        """
+        Populate the Book.main_textual_models and Book.secondary_textual_models
+        ManyToMany relations from Drupal's multi-value tables. The per-book CSV
+        only carries a single TID per field (the first delta), so we treat the
+        relation tables as authoritative and overwrite the M2M sets here.
+        """
+        sources = [
+            ("main", "main_textual_models.csv", "main_textual_models"),
+            ("secondary", "secondary_textual_models.csv", "secondary_textual_models"),
+        ]
+
+        books = self._book_by_nid()
+        models_by_tid = {
+            t.legacy_tid: t
+            for t in TextualModel.objects.exclude(legacy_tid__isnull=True)
+        }
+
+        for label, filename, m2m_attr in sources:
+            path = export_dir / filename
+            if not path.exists():
+                self.stdout.write(self.style.WARNING(
+                    f"Skipping {label} textual models: {path} not found."
+                ))
+                continue
+
+            grouped: dict[int, list[TextualModel]] = {}
+            unknown_tids = set()
+            with path.open(newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    nid = parse_int(row.get("nid"))
+                    tid = parse_int(row.get("tid"))
+                    if nid is None or tid is None:
+                        continue
+                    tm = models_by_tid.get(tid)
+                    if tm is None:
+                        unknown_tids.add(tid)
+                        continue
+                    grouped.setdefault(nid, []).append(tm)
+
+            updated = without_book = total_links = 0
+            for nid, tms in grouped.items():
+                book = books.get(nid)
+                if book is None:
+                    without_book += 1
+                    continue
+                getattr(book, m2m_attr).set(tms)
+                updated += 1
+                total_links += len(tms)
+
+            msg = (
+                f"{label.capitalize()} textual models: {updated} books linked, "
+                f"{total_links} M2M rows, {without_book} without book."
+            )
+            if unknown_tids:
+                msg += f" Unknown TIDs skipped: {sorted(unknown_tids)}."
+            self.stdout.write(self.style.SUCCESS(msg))
+
+    def import_book_authors(self, export_dir: Path):
+        """
+        Materialize Book.authors (through BookAuthor) from:
+        - books_for_django.csv columns old_text_author_target_id and
+          original_text_author_target_id;
+        - existing Production rows (book + producer) for the producer role.
+
+        BookAuthor has no DB-level uniqueness, so we wipe and rebuild to keep
+        the import idempotent.
+        """
+        books = self._book_by_nid()
+        persons = self._person_by_nid()
+
+        seen: set[tuple] = set()
+        rows: list[BookAuthor] = []
+        unknown_persons = 0
+
+        # 1) Text-author roles from the books CSV
+        path = export_dir / "books_for_django.csv"
+        if path.exists():
+            csv_role_columns = [
+                ("old_text_author_target_id", "old_text_author"),
+                ("original_text_author_target_id", "original_text_author"),
+            ]
+            with path.open(newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    book = books.get(parse_int(row.get("nid")))
+                    if book is None:
+                        continue
+                    for col, role in csv_role_columns:
+                        pid = parse_int(row.get(col))
+                        if pid is None:
+                            continue
+                        person = persons.get(pid)
+                        if person is None:
+                            unknown_persons += 1
+                            continue
+                        key = (book.uuid, person.uuid, role)
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        rows.append(BookAuthor(
+                            book_id=book.uuid, person_id=person.uuid, role=role,
+                        ))
+        else:
+            self.stdout.write(self.style.WARNING(
+                f"Skipping text-author roles: {path} not found."
+            ))
+
+        # 2) Producer role from already-imported Production rows
+        producer_pairs = Production.objects.filter(
+            book__isnull=False, producer__isnull=False,
+        ).values_list("book_id", "producer_id")
+        for book_id, person_id in producer_pairs:
+            key = (book_id, person_id, "producer")
+            if key in seen:
+                continue
+            seen.add(key)
+            rows.append(BookAuthor(
+                book_id=book_id, person_id=person_id, role="producer",
+            ))
+
+        BookAuthor.objects.all().delete()
+        BookAuthor.objects.bulk_create(rows)
+
+        per_role = {}
+        for r in rows:
+            per_role[r.role] = per_role.get(r.role, 0) + 1
+        self.stdout.write(self.style.SUCCESS(
+            f"BookAuthor: {len(rows)} rows ({per_role}); "
+            f"{unknown_persons} CSV target_ids without matching Person."
+        ))
+
     # -- entry point ---------------------------------------------------------
 
     @transaction.atomic
@@ -449,8 +597,10 @@ class Command(BaseCommand):
         # then mentions/prefaces/productions which use book_backlink.
         self.import_editions(export_dir)
         self.import_translations(export_dir)
-        self.import_mentions(export_dir)
+        self.import_mentions(export_dir, book_backlink)
         self.import_prefaces(export_dir, book_backlink)
         self.import_productions(export_dir, book_backlink)
+        self.import_textual_model_links(export_dir)
+        self.import_book_authors(export_dir)
 
         self.stdout.write(self.style.SUCCESS("Relation import finished."))

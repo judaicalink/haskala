@@ -15,9 +15,11 @@ from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, Field
 from wagtail.contrib.forms.models import AbstractFormField, AbstractEmailForm
 from wagtail.contrib.forms.panels import FormSubmissionsPanel
 from wagtail.fields import RichTextField
-from wagtail.models import Page
+from wagtail.models import Page, RevisionMixin
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
+
+from .book_admin import build_book_panels
 
 # Create a bundle choice field for the options of translation, edition, mention and preface
 BUNDLE_CHOICES = (
@@ -347,7 +349,7 @@ class LanguageCount(models.Model):
 
 
 @register_snippet
-class City(LegacyImportedModel):
+class City(RevisionMixin, LegacyImportedModel):
     """
     Model for the cities
     """
@@ -403,7 +405,7 @@ class Occupation(models.Model):
 
 
 @register_snippet
-class Person(LegacyImportedModel):
+class Person(RevisionMixin, LegacyImportedModel):
     """
     Model for the person.
     """
@@ -449,7 +451,7 @@ class Edition(LegacyImportedModel):
     Model for the editions.
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255, unique=True, blank=True, null=True)
+    name = models.CharField(max_length=255, blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -502,6 +504,8 @@ class Translation(LegacyImportedModel):
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
+    title = models.CharField(max_length=255, blank=True)
+
     # Belongs to book
     book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="translations")
 
@@ -515,7 +519,7 @@ class Translation(LegacyImportedModel):
     city = models.ForeignKey(City, null=True, blank=True, on_delete=models.SET_NULL)
 
     # References
-    references = models.CharField(max_length=255, blank=True, null=True)
+    references = models.TextField(blank=True, null=True)
     references_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Year
@@ -529,7 +533,13 @@ class Mention(LegacyImportedModel):
     Model for Mentions
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    # Belongs to book, but not found in tables
+    book = models.ForeignKey(
+        "Book",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="mentions",
+    )
 
     # Mentionee
     mentionee = models.ForeignKey(Person, null=True, blank=True, on_delete=models.SET_NULL)
@@ -551,7 +561,7 @@ class Preface(LegacyImportedModel):
     book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True, blank=True, related_name="prefaces")
 
     # Notes
-    notes = models.CharField(max_length=255, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
     notes_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Number
@@ -559,7 +569,7 @@ class Preface(LegacyImportedModel):
     number_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Title
-    title = models.CharField(max_length=255, blank=True, null=True)
+    title = models.TextField(blank=True, null=True)
     title_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
     # Writer
@@ -577,6 +587,8 @@ class Production(LegacyImportedModel):
     """
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255, blank=True, null=True)
+    name_in_book = models.CharField(max_length=255, blank=True)
+    person_name_appear = models.CharField(max_length=255, blank=True)
     # Belongs to book
     book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="productions", null=True, blank=True)
 
@@ -596,6 +608,7 @@ class Topic(models.Model):
         return self.name
 
 
+@register_snippet
 class BookAuthor(models.Model):
     book = models.ForeignKey("Book", on_delete=models.CASCADE)
     person = models.ForeignKey("Person", on_delete=models.CASCADE)
@@ -604,6 +617,14 @@ class BookAuthor(models.Model):
         ("original_text_author", "Original text author"),
         ("producer", "Producer"),
     ])
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["book", "person", "role"],
+                name="unique_book_author_role",
+            ),
+        ]
 
 
 @register_snippet
@@ -666,8 +687,7 @@ class OriginalType(models.Model):
         return self.name
 
 
-@register_snippet
-class Book(LegacyImportedModel):
+class Book(RevisionMixin, LegacyImportedModel):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -1388,6 +1408,8 @@ class Book(LegacyImportedModel):
         index.SearchField("name", partial_match=True),
         index.SearchField("authors", partial_match=True),
     ]
+
+    panels = build_book_panels()
 
     class Meta:
         verbose_name = "Book"

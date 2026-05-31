@@ -1,0 +1,50 @@
+<dl class="row mb-0">
+    {% if book.not_available %}
+        <dt class="col-sm-4">Availability</dt>
+        <dd class="col-sm-8"><span class="text-warning">Not currently available</span></dd>
+    {% endif %}
+    {% if book.availability_notes %}
+        <dt class="col-sm-4">Availability notes</dt>
+        <dd class="col-sm-8">{{ book.availability_notes|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.digital_book_url %}
+        <dt class="col-sm-4">Digital copy</dt>
+        <dd class="col-sm-8">
+            <a href="{{ book.digital_book_url }}" target="_blank" rel="noopener">
+                {{ book.digital_book_title|default:"Open digital copy" }}
+                <i class="bi bi-box-arrow-up-right small"></i>
+            </a>
+            {% if book.digital_book_attributes %}
+                <div class="small text-muted">{{ book.digital_book_attributes }}</div>
+            {% endif %}
+        </dd>
+    {% endif %}
+    {% if book.other_libraries %}
+        <dt class="col-sm-4">Other libraries</dt>
+        <dd class="col-sm-8">{{ book.other_libraries|linebreaksbr }}</dd>
+    {% endif %}
+</dl>
+
+{% if book.bar_ilan_library_id or book.berlin_library_id or book.british_library_id or book.frankfurt_library_id or book.huji_library_id or book.new_york_library_id or book.tel_aviv_library_id %}
+    <h3 class="h6 mt-3">Library catalog IDs</h3>
+    <dl class="row mb-0 small">
+        {% if book.bar_ilan_library_id %}<dt class="col-sm-4">Bar Ilan</dt><dd class="col-sm-8">{{ book.bar_ilan_library_id }}</dd>{% endif %}
+        {% if book.berlin_library_id %}<dt class="col-sm-4">Berlin</dt><dd class="col-sm-8">{{ book.berlin_library_id }}</dd>{% endif %}
+        {% if book.british_library_id %}<dt class="col-sm-4">British Library</dt><dd class="col-sm-8">{{ book.british_library_id }}</dd>{% endif %}
+        {% if book.frankfurt_library_id %}<dt class="col-sm-4">Frankfurt</dt><dd class="col-sm-8">{{ book.frankfurt_library_id }}</dd>{% endif %}
+        {% if book.huji_library_id %}<dt class="col-sm-4">HUJI</dt><dd class="col-sm-8">{{ book.huji_library_id }}</dd>{% endif %}
+        {% if book.new_york_library_id %}<dt class="col-sm-4">New York</dt><dd class="col-sm-8">{{ book.new_york_library_id }}</dd>{% endif %}
+        {% if book.tel_aviv_library_id %}<dt class="col-sm-4">Tel Aviv</dt><dd class="col-sm-8">{{ book.tel_aviv_library_id }}</dd>{% endif %}
+    </dl>
+{% endif %}
+
+<dl class="row mb-0 mt-3">
+    {% if book.preservation_references %}
+        <dt class="col-sm-4">Preservation references</dt>
+        <dd class="col-sm-8">{{ book.preservation_references|linebreaksbr }}</dd>
+    {% endif %}
+    {% if book.catalog_numbers_notes %}
+        <dt class="col-sm-4">Catalog number notes</dt>
+        <dd class="col-sm-8">{{ book.catalog_numbers_notes|linebreaksbr }}</dd>
+    {% endif %}
+</dl>

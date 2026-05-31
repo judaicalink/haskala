@@ -1,0 +1,48 @@
+{% load static %}
+<header class="book-header mb-4">
+    <p class="text-muted small mb-1">
+        <a href="{% url 'books-list' %}">Books</a>
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{{ book.name }}</span>
+    </p>
+
+    <h1 class="book-header__title h2 mb-1">
+        {{ book.full_title|default:book.name }}
+    </h1>
+
+    {% if book.title_in_latin_characters %}
+        <p class="book-header__latin text-muted fst-italic mb-2">
+            {{ book.title_in_latin_characters }}
+        </p>
+    {% endif %}
+
+    {% if book.bookauthor_set.all %}
+        <p class="book-header__authors mb-2">
+            {% for ba in book.bookauthor_set.all %}{% if ba.person %}{% include "books/_cards/_person_chip.html" with person=ba.person role=ba.get_role_display %}{% if not forloop.last %} {% endif %}{% endif %}{% endfor %}
+        </p>
+    {% endif %}
+
+    <p class="book-header__pub text-muted mb-3">
+        {% if book.publication_place %}{{ book.publication_place.name }}{% endif %}
+        {% if book.publisher %}{% if book.publication_place %} · {% endif %}{{ book.publisher.name }}{% endif %}
+        {% if book.gregorian_year or book.year_in_book %}{% if book.publication_place or book.publisher %} · {% endif %}{{ book.gregorian_year|default:book.year_in_book }}{% endif %}
+    </p>
+
+    <div class="book-header__actions">
+        {% if book.digital_book_url %}
+            <a href="{{ book.digital_book_url }}" target="_blank" rel="noopener"
+               class="btn btn-sm btn-outline-info">
+                <i class="bi bi-book"></i> View digital copy
+            </a>
+        {% endif %}
+        <button type="button" class="btn btn-sm btn-outline-secondary"
+                data-bs-toggle="modal" data-bs-target="#book-cite-modal">
+            <i class="bi bi-quote"></i> Cite
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-secondary"
+                data-permalink="{{ request.build_absolute_uri }}"
+                aria-label="Copy permalink">
+            <i class="bi bi-link-45deg"></i> Permalink
+        </button>
+    </div>
+</header>
