@@ -51,18 +51,22 @@ updated rather than duplicated.
 
 ## Re-running on the live database
 
-Always take a Postgres backup before a bulk import:
+Always take a Postgres backup before a bulk import. The dedicated
+`backups` container handles this in one command (it writes a
+timestamped, gzipped dump into the `backups_data` volume):
 
 ```bash
-docker compose exec db pg_dump -U haskala haskala \
-    > backups/$(date +%Y-%m-%d)-pre-import.sql
+docker compose run --rm backups backup.sh
 ```
 
-Restore with:
+If something goes wrong, restore the most recent dump:
 
 ```bash
-docker compose exec -T db psql -U haskala -d haskala < backups/<file>.sql
+docker compose run --rm backups restore.sh latest
+docker compose exec redis redis-cli FLUSHALL
 ```
+
+See [backups.md](backups.md) for the full backup / restore workflow.
 
 ## After an import
 

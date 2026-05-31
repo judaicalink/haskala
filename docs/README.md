@@ -31,6 +31,7 @@ The Haskala documentation is split by audience.
 - [Wagtail admin tour](admins/wagtail-admin.md)
 - [Data imports](admins/data-imports.md)
 - [Revisions and versioning](admins/revisions.md)
+- [Backups and restore](admins/backups.md)
 
 ### Developers
 

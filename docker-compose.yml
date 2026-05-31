@@ -9,6 +9,7 @@
 #   fuseki      - RDF triple store
 #   mailserver  - MailHog dev SMTP/HTTP UI
 #   nginx       - reverse proxy in front of web
+#   backups     - scheduled pg_dump of db into the named backups_data volume
 
 services:
   web:
@@ -107,6 +108,27 @@ services:
       # already bound to 80; site is then reachable at http://localhost:8080
       - "8080:80"
 
+  backups:
+    build:
+      context: ./docker/backups
+    image: haskala-backups
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PORT: "5432"
+      POSTGRES_DB: haskala
+      POSTGRES_USER: haskala
+      POSTGRES_PASSWORD: haskala
+      BACKUP_DIR: /backups
+      BACKUP_RETENTION_DAYS: "14"
+      TZ: Europe/Berlin
+    volumes:
+      - backups_data:/backups
+    restart: unless-stopped
+
 volumes:
   postgres_data:
   static_data:
+  backups_data:
