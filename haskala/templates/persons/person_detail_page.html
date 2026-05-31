@@ -13,6 +13,10 @@
     <meta property="og:title" content="{{ person.pref_label|default:person.german_name|default:person.hebrew_name }}">
 {% endblock %}
 
+{% block extra_js %}
+    <script type="module" src="{% static 'js/book_detail.js' %}"></script>
+{% endblock %}
+
 {% block content %}
     <div class="container person-detail my-4">
         {% include "persons/_person_header.html" %}
@@ -23,6 +27,22 @@
                     {% include "persons/_person_toc.html" %}
                 </div>
             </aside>
+
+            <button class="btn btn-primary person-toc-fab d-md-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#person-toc-offcanvas"
+                    aria-controls="person-toc-offcanvas">
+                <i class="bi bi-list-ul"></i> Sections
+            </button>
+            <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="person-toc-offcanvas"
+                 aria-labelledby="person-toc-offcanvas-label">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title h6" id="person-toc-offcanvas-label">On this page</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    {% include "persons/_person_toc.html" %}
+                </div>
+            </div>
 
             <div class="col-md-9 person-detail__content-col">
                 {% if page.body %}
