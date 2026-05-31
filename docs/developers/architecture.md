@@ -80,3 +80,25 @@ are wrapped in `@cache_page(60 * 60)`; cache invalidation is
 manual (`FLUSHALL`) for now. In dev the cache should be flushed
 between major template changes so editors and developers see the
 new render right away.
+
+## Edge layer (nginx)
+
+The `nginx` container sits between the browser and gunicorn:
+
+- **gzip + gzip_static**: text-like responses (HTML, CSS, JS, JSON,
+  SVG, fonts) are gzip-compressed on the fly. `gzip_static on` lets
+  nginx prefer a pre-built `<file>.gz` sibling when one exists so we
+  can ship pre-compressed bundles from `collectstatic` later without
+  reconfiguring. Compression cuts the home HTML from ~50 KB to ~6 KB
+  and `haskala.css` from ~250 KB to ~36 KB.
+- **Static asset caching**: `/static/` carries
+  `Cache-Control: public, max-age=2592000, immutable` (30 days).
+  The asset bundles do not yet carry a content hash in their
+  filename — once `ManifestStaticFilesStorage` is turned back on,
+  this can safely go to 1 year.
+- **Upstream keepalive**: `upstream haskala_web` keeps up to 16 idle
+  TCP connections to gunicorn open, so each request does not pay
+  the connect-handshake cost. The reverse-proxy block sets HTTP/1.1
+  and an empty `Connection:` header on the upstream side.
+- **JS deferred**: the global `app.js` script tag in `base.html`
+  carries `defer` so it does not block the first render.
