@@ -2,35 +2,67 @@ name: Django CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main, development]
   pull_request:
-    branches: [ "main" ]
+    branches: [main, development]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.10]
+        # Quoted so YAML doesn't read 3.12 as the number 3.12 (which it
+        # would silently truncate to 3.1 and look up a non-existent
+        # Python release). The Docker image ships 3.12.
+        python-version: ["3.12"]
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: haskala
+          POSTGRES_USER: haskala
+          POSTGRES_PASSWORD: haskala
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U haskala -d haskala"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DJANGO_SETTINGS_MODULE: haskala.settings.dev
+      DATABASE_HOST: localhost
+      DATABASE_PORT: "5432"
+      DATABASE_NAME: haskala
+      DATABASE_USER: haskala
+      DATABASE_PASSWORD: haskala
+      SECRET_KEY: ci-insecure-key-only-used-by-the-test-runner
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run Tests
-      run: |
-        python manage.py test
-    - name: Make migrations
-      run: |
-        python manage.py makemigrations && python manage.py migrate   
-    - name: Run server
-      run: |
-        python manage.py runserver
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install system packages for psycopg2 / Pillow / GeoDjango
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            libpq-dev libjpeg-dev zlib1g-dev libwebp-dev libgdal-dev gdal-bin
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Django tests
+        run: |
+          python manage.py test --noinput --verbosity=2
