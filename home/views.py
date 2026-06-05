@@ -232,6 +232,7 @@ def person_detail_view(request, person_uuid):
 
     return render(request, "persons/person_detail_page.html", context)
 
+
 @cache_page(60 * 60)
 def places_list_view(request):
     """

@@ -2,7 +2,7 @@
 
 from django import template
 from django.conf import settings
-from wagtail.models import Page, Site
+from wagtail.models import Site
 
 register = template.Library()
 

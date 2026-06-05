@@ -35,14 +35,6 @@ def _died_has_data(ctx): return _nonempty(ctx, "died_here")
 def _mentions_has_data(ctx): return _nonempty(ctx, "mentions_here")
 
 
-def _record_metadata_has_data(ctx) -> bool:
-    city = ctx.get("city")
-    if city is None:
-        return False
-    return bool(city.legacy_tid or city.legacy_nid or city.legacy_created
-                or city.legacy_changed)
-
-
 SECTIONS: list[Section] = [
     Section("books_published", "Books published here", _books_has_data),
     Section("editions", "Editions printed here", _editions_has_data),
@@ -50,7 +42,6 @@ SECTIONS: list[Section] = [
     Section("persons_born", "People born here", _born_has_data),
     Section("persons_died", "People died here", _died_has_data),
     Section("mentions", "Mentions in this city", _mentions_has_data),
-    Section("record_metadata", "Record metadata", _record_metadata_has_data),
 ]
 
 

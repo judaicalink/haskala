@@ -8,9 +8,19 @@ from home.models import Book, BookAuthor, City, Language, Person, Publisher
 # files storage; tests that hit cached views need a dummy cache so a stale
 # Redis entry from a prior run does not bleed in.
 TEST_OVERRIDES = override_settings(
-    STATICFILES_STORAGE=(
-        "django.contrib.staticfiles.storage.StaticFilesStorage"
-    ),
+    # The production STORAGES uses ManifestStaticFilesStorage, which
+    # walks every static file the template touches and aborts when one
+    # is missing. The test DB does not need that guarantee and most
+    # collected admin assets are never written for the test
+    # in-memory finder — so drop the hashing step for tests.
+    STORAGES={
+        "default": {
+            "BACKEND": "django.core.files.storage.FileSystemStorage",
+        },
+        "staticfiles": {
+            "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+        },
+    },
     CACHES={
         "default": {
             "BACKEND": "django.core.cache.backends.dummy.DummyCache",
