@@ -2,7 +2,7 @@
     {% for prod in book.productions.all %}
         <li class="mb-2">
             {% if prod.producer %}
-                <a href="{% url 'person-detail' prod.producer.uuid %}" class="link-primary">
+                <a href="{% url 'person-detail' prod.producer.slug %}" class="link-primary">
                     {{ prod.producer }}
                 </a>
             {% else %}

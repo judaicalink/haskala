@@ -22,7 +22,7 @@
                         <ul class="list-unstyled mb-0">
                             {% for book in books %}
                                 <li class="mb-1">
-                                    <a href="{% url 'book-detail' book.name %}" class="link-primary">
+                                    <a href="{% url 'book-detail' book.slug %}" class="link-primary">
                                         {{ book.full_title|default:book.name }}
                                     </a>
                                     {% if book.gregorian_year or book.year_in_book %}

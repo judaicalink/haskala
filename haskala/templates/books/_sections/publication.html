@@ -22,7 +22,7 @@
     {% if book.publication_place %}
         <dt class="col-sm-4">Publication place</dt>
         <dd class="col-sm-8">
-            <a href="{% url 'place-detail' book.publication_place.name|slugify %}">
+            <a href="{% url 'place-detail' book.publication_place.slug %}">
                 {{ book.publication_place.name }}
             </a>
         </dd>
@@ -70,7 +70,7 @@
     {% if book.original_publication_place %}
         <dt class="col-sm-4">Original publication place</dt>
         <dd class="col-sm-8">
-            <a href="{% url 'place-detail' book.original_publication_place.name|slugify %}">
+            <a href="{% url 'place-detail' book.original_publication_place.slug %}">
                 {{ book.original_publication_place.name }}
             </a>
         </dd>

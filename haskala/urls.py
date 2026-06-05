@@ -25,6 +25,7 @@ from drf_spectacular.views import (
 
 from .api import api_router
 from home.views import book_detail_view, books_list_view, book_cite_bibtex, book_cite_ris, \
+    book_export, person_export, place_export, \
     digital_books_list_view, persons_list_view, \
     person_detail_view, place_detail_view, places_list_view, search_view, topics_list_view, topic_detail_view, \
     publishers_list_view, publisher_detail_view, occupation_detail_view, occupations_list_view, robots_txt, \
@@ -62,20 +63,23 @@ urlpatterns += [
 
     # Book detail page
     path('books/', books_list_view, name='books-list'),
-    path('books/<title>/cite.bib', book_cite_bibtex, name='book-cite-bibtex'),
-    path('books/<title>/cite.ris', book_cite_ris, name='book-cite-ris'),
-    path('books/<title>/', book_detail_view, name='book-detail'),
+    path('books/<slug:slug>/cite.bib', book_cite_bibtex, name='book-cite-bibtex'),
+    path('books/<slug:slug>/cite.ris', book_cite_ris, name='book-cite-ris'),
+    path('books/<slug:slug>/export.<str:fmt>', book_export, name='book-export'),
+    path('books/<slug:slug>/', book_detail_view, name='book-detail'),
 
     # Digital books
     path('digital-books/', digital_books_list_view, name='digital-books-list'),
 
     # Persons
     path("persons/", persons_list_view, name="persons-list"),
-    path("persons/<uuid:person_uuid>/", person_detail_view, name="person-detail"),
+    path("persons/<slug:slug>/export.<str:fmt>", person_export, name="person-export"),
+    path("persons/<slug:slug>/", person_detail_view, name="person-detail"),
 
     # Places
     path("places/", places_list_view, name="places-list"),
-    path("places/<slug:city_slug>/", place_detail_view, name="place-detail"),
+    path("places/<slug:slug>/export.<str:fmt>", place_export, name="place-export"),
+    path("places/<slug:slug>/", place_detail_view, name="place-detail"),
 
     # Topics
     path("topics/", topics_list_view, name="topics-list"),

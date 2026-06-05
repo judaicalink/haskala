@@ -2,7 +2,7 @@
     {% for tr in translations_here %}
         <li class="mb-1">
             {% if tr.book %}
-                <a href="{% url 'book-detail' tr.book.name %}" class="link-primary">
+                <a href="{% url 'book-detail' tr.book.slug %}" class="link-primary">
                     {{ tr.book.full_title|default:tr.book.name|default:"[untitled]" }}
                 </a>
             {% else %}

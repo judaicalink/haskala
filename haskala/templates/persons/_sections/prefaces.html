@@ -6,7 +6,7 @@
                 {% if preface.book %} &mdash; {% endif %}
             {% endif %}
             {% if preface.book %}
-                <a href="{% url 'book-detail' preface.book.name %}" class="link-primary">
+                <a href="{% url 'book-detail' preface.book.slug %}" class="link-primary">
                     {{ preface.book.full_title|default:preface.book.name|default:"[untitled book]" }}
                 </a>
             {% elif not preface.title %}

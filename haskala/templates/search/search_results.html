@@ -142,7 +142,7 @@
             <ul class="list-unstyled">
                 {% for book in books %}
                     <li>
-                        <a href="{% url 'book-detail' book.name %}">
+                        <a href="{% url 'book-detail' book.slug %}">
                             {{ book.name|default:book.pk }}
                         </a>
                         {% if book.gregorian_year %}
@@ -152,7 +152,7 @@
                         {% if book.authors.all %}
                             – by
                             {% for person in book.authors.all %}
-                                <a href="{% url 'person-detail' person.uuid %}">{{ person }}</a>
+                                <a href="{% url 'person-detail' person.slug %}">{{ person }}</a>
                                 {% if not forloop.last %}, {% endif %}
                             {% endfor %}
                         {% endif %}
@@ -170,7 +170,7 @@
             <ul class="list-unstyled">
                 {% for person in persons %}
                     <li>
-                        <a href="{% url 'person-detail' person.uuid %}">
+                        <a href="{% url 'person-detail' person.slug %}">
                             {{ person.pref_label|default:person.german_name|default:person.hebrew_name|default:person.pk }}
                         </a>
                         {% if person.date_of_birth or person.place_of_birth %}
@@ -180,7 +180,7 @@
                             {% endif %}
                             {% if person.place_of_birth %}
                                 in
-                                <a href="{% url 'place-detail' person.place_of_birth.name|slugify %}">
+                                <a href="{% url 'place-detail' person.place_of_birth.slug %}">
                                     {{ person.place_of_birth.name }}
                                 </a>
                             {% endif %}
@@ -196,7 +196,7 @@
             <ul class="list-unstyled">
                 {% for place in places %}
                     <li>
-                        <a href="{% url 'place-detail' place.name|slugify %}">
+                        <a href="{% url 'place-detail' place.slug %}">
                             {{ place.name }}
                         </a>
                     </li>

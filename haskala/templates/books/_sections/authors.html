@@ -4,7 +4,7 @@
         {% for ba in book.bookauthor_set.all %}
             {% if ba.person %}
                 <li class="mb-1">
-                    <a href="{% url 'person-detail' ba.person.uuid %}" class="link-primary">
+                    <a href="{% url 'person-detail' ba.person.slug %}" class="link-primary">
                         {{ ba.person }}
                     </a>
                     <span class="text-muted small">&middot; {{ ba.get_role_display }}</span>
