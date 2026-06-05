@@ -26,7 +26,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = env("SECRET_KEY", default="")
 DEBUG = env.bool("DEBUG", default=False)
 
-#ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1'])
+# ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1'])
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -170,18 +170,20 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, "static"),
 ]
 
-# ManifestStaticFilesStorage is recommended in production, to prevent outdated
-# JavaScript / CSS assets being served from cache (e.g. after a Wagtail upgrade).
-# manifest_strict=False lets collectstatic tolerate CSS files that reference
-# assets which are not actually shipped (e.g. legacy CSS still living in the
-# tree). Without this flag the docker build aborts on the first dangling URL.
-# See https://docs.djangoproject.com/en/4.1/ref/contrib/staticfiles/#manifeststaticfilesstorage
+# ManifestStaticFilesStorage rewrites every collected asset to a
+# content-hashed filename (e.g. haskala.4f2c8b.css) and serves a
+# manifest that maps logical → hashed names. Combined with the long
+# Cache-Control: immutable header in nginx, this lets browsers cache
+# /static/* aggressively without ever serving a stale bundle after a
+# deploy. The custom subclass turns off the default strict mode so a
+# dangling url(...) reference in legacy CSS does not crash the
+# `collectstatic` step of the docker build.
 STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
     },
     "staticfiles": {
-        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+        "BACKEND": "haskala.storage.TolerantManifestStaticFilesStorage",
     },
 }
 
@@ -290,7 +292,9 @@ WAGTAILMARKDOWN = {
     "extensions": [],  # optional. a list of python-markdown supported extensions
     "extension_configs": {},  # optional. a dictionary with the extension name as key, and its configuration as value
     "extensions_settings_mode": "extend",  # optional. Possible values: "extend" or "override". Defaults to "extend".
-    "tab_length": 4,  # optional. Sets the length of tabs used by python-markdown to render the output. This is the number of spaces used to replace with a tab character. Defaults to 4.
+    # tab_length: tab width python-markdown uses when expanding tabs;
+    # 4 is the python-markdown default.
+    "tab_length": 4,
 }
 
 REST_FRAMEWORK = {

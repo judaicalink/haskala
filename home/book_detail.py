@@ -178,10 +178,6 @@ def _availability_has_data(b: Book) -> bool:
     )
 
 
-def _record_metadata_has_data(b: Book) -> bool:
-    return _any(b.legacy_nid, b.legacy_created, b.legacy_changed)
-
-
 SECTIONS: list[Section] = [
     Section("identity", "Identity & Titles", _identity_has_data),
     Section("authors", "Authors & Persons", _authors_has_data),
@@ -198,7 +194,6 @@ SECTIONS: list[Section] = [
     Section("censorship", "Censorship & Approbation", _censorship_has_data),
     Section("subscription", "Subscription & Marketing", _subscription_has_data),
     Section("availability", "Availability & Catalog", _availability_has_data),
-    Section("record_metadata", "Record metadata", _record_metadata_has_data),
 ]
 
 

@@ -108,9 +108,6 @@ SECTIONS: list[tuple[str, list[str]]] = [
         "digital_book_attributes", "preservation_references",
         "catalog_numbers_notes",
     ]),
-    ("Record metadata", [
-        "legacy_nid", "legacy_created", "legacy_changed",
-    ]),
 ]
 
 
