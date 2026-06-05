@@ -4,7 +4,7 @@
         {% for tr in book.translations.all %}
             <li class="mb-1">
                 {% if tr.translator %}
-                    <a href="{% url 'person-detail' tr.translator.uuid %}" class="link-primary">
+                    <a href="{% url 'person-detail' tr.translator.slug %}" class="link-primary">
                         {{ tr.translator }}
                     </a>
                 {% else %}

@@ -8,6 +8,7 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from django.views.decorators.cache import cache_page
+from django.views.decorators.vary import vary_on_headers
 from requests import Response
 from rest_framework.decorators import api_view
 
@@ -19,8 +20,35 @@ from .models import Book, Person, Geolocation, City, Edition, Translation, Menti
 from .serializers import BookSerializer, PersonSerializer, CitySerializer
 
 
+def _negotiate_rdf_response(request, obj):
+    """
+    If the request's Accept header asks for an RDF mime type, return
+    the serialized graph directly. Otherwise return None so the view
+    falls back to the HTML template.
+    """
+    from haskala_rdf.entity import ACCEPT_TO_FORMAT, serialize_entity
+
+    accept = request.headers.get("Accept", "")
+    if not accept:
+        return None
+    # Walk the Accept header in declaration order; the first RDF type
+    # found wins. text/html and */* short-circuit to HTML.
+    for chunk in accept.split(","):
+        mime = chunk.split(";", 1)[0].strip().lower()
+        if mime in ("text/html", "application/xhtml+xml", "*/*", ""):
+            return None
+        if mime in ACCEPT_TO_FORMAT:
+            fmt = ACCEPT_TO_FORMAT[mime]
+            body, served_mime = serialize_entity(obj, fmt)
+            response = HttpResponse(body, content_type=f"{served_mime}; charset=utf-8")
+            response["Vary"] = "Accept"
+            return response
+    return None
+
+
 @cache_page(60 * 60)  # cache for 1 hour
-def book_detail_view(request, title):
+@vary_on_headers("Accept")
+def book_detail_view(request, slug):
     book = get_object_or_404(
         Book.objects.select_related(
             "publisher", "original_publisher",
@@ -66,8 +94,12 @@ def book_detail_view(request, title):
             "typography",
             "target_audience",
         ),
-        name=title,
+        slug=slug,
     )
+
+    rdf_response = _negotiate_rdf_response(request, book)
+    if rdf_response is not None:
+        return rdf_response
 
     return render(request, "books/book_detail_page.html", {
         "book": book,
@@ -177,15 +209,16 @@ def persons_list_view(request):
 
 
 @cache_page(60 * 60)
-def person_detail_view(request, person_uuid):
+@vary_on_headers("Accept")
+def person_detail_view(request, slug):
     """
-    Detail view of a person, identified by UUID.
+    Detail view of a person, identified by slug.
     """
     person = (
         Person.objects
         .select_related("gender", "place_of_birth", "place_of_death")
         .prefetch_related("occupations")
-        .filter(pk=person_uuid)
+        .filter(slug=slug)
         .first()
     )
     if person is None:
@@ -220,6 +253,10 @@ def person_detail_view(request, person_uuid):
         .select_related("book", "mentionee_city", "mentionee_description")
         .order_by("mentionee_city__name")
     )
+
+    rdf_response = _negotiate_rdf_response(request, person)
+    if rdf_response is not None:
+        return rdf_response
 
     context = {
         "person": person,
@@ -287,23 +324,13 @@ def places_list_view(request):
     return render(request, "places/places_page.html", context)
 
 
-def _get_place_by_slug(city_slug: str) -> City:
-    """
-    Helper: finds a city by slug.
-    Slug is generated via slugify(city.name).
-    """
-    for city in City.objects.all():
-        if slugify(city.name) == city_slug:
-            return city
-    raise Http404("Place not found")
-
-
 @cache_page(60 * 60)
-def place_detail_view(request, city_slug):
+@vary_on_headers("Accept")
+def place_detail_view(request, slug):
     """
-    Detail view of a city as a regular Django view.
+    Detail view of a city, addressed by slug.
     """
-    city = _get_place_by_slug(city_slug)
+    city = get_object_or_404(City, slug=slug)
 
     geolocation = Geolocation.objects.filter(city=city).first()
 
@@ -351,6 +378,11 @@ def place_detail_view(request, city_slug):
         "nonce": secrets.token_hex(16),
     }
     context["visible_sections"] = place_visible_sections(context)
+
+    rdf_response = _negotiate_rdf_response(request, city)
+    if rdf_response is not None:
+        return rdf_response
+
     return render(request, "places/place_detail_page.html", context)
 
 
@@ -891,8 +923,8 @@ def search_api_view(request):
     })
 
 
-def book_cite_bibtex(request, title):
-    book = get_object_or_404(Book, name=title)
+def book_cite_bibtex(request, slug):
+    book = get_object_or_404(Book, slug=slug)
     authors = [
         ba.person.pref_label or str(ba.person)
         for ba in book.bookauthor_set.select_related("person")
@@ -909,8 +941,8 @@ def book_cite_bibtex(request, title):
     return response
 
 
-def book_cite_ris(request, title):
-    book = get_object_or_404(Book, name=title)
+def book_cite_ris(request, slug):
+    book = get_object_or_404(Book, slug=slug)
     authors = [
         ba.person.pref_label or str(ba.person)
         for ba in book.bookauthor_set.select_related("person")
@@ -926,3 +958,37 @@ def book_cite_ris(request, title):
     key = citation_key(book)
     response["Content-Disposition"] = f'attachment; filename="{key}.ris"'
     return response
+
+
+# ---------- Entity export (Turtle / JSON-LD / RDF/XML) ----------
+
+def _serialize_entity_response(obj, fmt, *, attachment_basename):
+    """Serialize one entity to RDF and wrap it in an HttpResponse."""
+    from haskala_rdf.entity import SERIALIZATION, serialize_entity
+
+    if fmt not in SERIALIZATION:
+        raise Http404("Unknown export format")
+    body, mime = serialize_entity(obj, fmt)
+    response = HttpResponse(body, content_type=f"{mime}; charset=utf-8")
+    extension = "ttl" if fmt in ("ttl", "turtle") else \
+                "jsonld" if fmt in ("jsonld", "json-ld") else \
+                "nt" if fmt == "nt" else "rdf"
+    response["Content-Disposition"] = (
+        f'attachment; filename="{attachment_basename}.{extension}"'
+    )
+    return response
+
+
+def book_export(request, slug, fmt):
+    book = get_object_or_404(Book, slug=slug)
+    return _serialize_entity_response(book, fmt, attachment_basename=book.slug)
+
+
+def person_export(request, slug, fmt):
+    person = get_object_or_404(Person, slug=slug)
+    return _serialize_entity_response(person, fmt, attachment_basename=person.slug)
+
+
+def place_export(request, slug, fmt):
+    city = get_object_or_404(City, slug=slug)
+    return _serialize_entity_response(city, fmt, attachment_basename=city.slug)

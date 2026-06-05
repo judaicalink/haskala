@@ -1,7 +1,6 @@
 # home/sitemaps.py
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
-from django.utils.text import slugify
 
 from .models import Book, Person, City, HomePage, ContactPage, StaticPage
 
@@ -46,9 +45,7 @@ class BookSitemap(Sitemap):
         return obj.updated_at
 
     def location(self, obj):
-        # URL pattern: path('books/<title>/', book_detail_view, name='book-detail')
-        # -> <title> corresponds to Book.name
-        return reverse("book-detail", kwargs={"title": obj.name})
+        return reverse("book-detail", kwargs={"slug": obj.slug})
 
 
 class PersonSitemap(Sitemap):
@@ -62,8 +59,7 @@ class PersonSitemap(Sitemap):
         return Person.objects.all()
 
     def location(self, obj):
-        # URL pattern: path("persons/<uuid:person_uuid>/", ..., name="person-detail")
-        return reverse("person-detail", kwargs={"person_uuid": obj.pk})
+        return reverse("person-detail", kwargs={"slug": obj.slug})
 
 
 class PlaceSitemap(Sitemap):
@@ -78,9 +74,7 @@ class PlaceSitemap(Sitemap):
         return City.objects.all()
 
     def location(self, obj):
-        slug = slugify(obj.name)
-        # URL pattern: path("places/<slug:city_slug>/", ..., name="place-detail")
-        return reverse("place-detail", kwargs={"city_slug": slug})
+        return reverse("place-detail", kwargs={"slug": obj.slug})
 
 
 class WagtailPageSitemap(Sitemap):

@@ -3,7 +3,7 @@
         {% for m in book.mentions.all %}
             <li class="mb-2">
                 {% if m.mentionee %}
-                    <a href="{% url 'person-detail' m.mentionee.uuid %}" class="link-primary">{{ m.mentionee }}</a>
+                    <a href="{% url 'person-detail' m.mentionee.slug %}" class="link-primary">{{ m.mentionee }}</a>
                 {% else %}
                     <strong>Mention</strong>
                 {% endif %}
@@ -13,7 +13,7 @@
                 {% if m.mentionee_city %}
                     <span class="text-muted small">
                         &middot;
-                        <a href="{% url 'place-detail' m.mentionee_city.name|slugify %}">{{ m.mentionee_city.name }}</a>
+                        <a href="{% url 'place-detail' m.mentionee_city.slug %}">{{ m.mentionee_city.name }}</a>
                     </span>
                 {% endif %}
             </li>
