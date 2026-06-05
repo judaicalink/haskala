@@ -43,7 +43,6 @@ from home.models import (
     BookAuthor,
     City,
     Edition,
-    Language,
     Mention,
     MentionDescription,
     Occupation,

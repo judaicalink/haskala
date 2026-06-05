@@ -3,11 +3,15 @@
 // =========================================================
 
 // --- Brand Colors ---
-$haskala-brown:    #615f59;  // Hauptschriftfarbe / Grundton
-$haskala-blue:     #7dbad7;  // Linkfarbe / Akzent hellblau
-$haskala-gold:     #d8bf82;  // Hover-Akzent / Gold
-$haskala-yellow:   #ffcd36;  // Hervorhebung / Warnung (hell)
-$haskala-dark:     #363327;  // Sehr dunkler Kontrastton
+// Primary text/link colours target WCAG AA (4.5:1) against white. The
+// old #7dbad7 sat at ~2.5:1 and failed; the deeper teal-blue below
+// is ~6.7:1.
+$haskala-brown:      #615f59;  // Hauptschriftfarbe / Grundton
+$haskala-blue:       #1f6e94;  // Linkfarbe / Akzent (kontrastreich)
+$haskala-blue-light: #7dbad7;  // historisches Hellblau, dekorativ
+$haskala-gold:       #a07a2c;  // Hover-Akzent (kontrastreich)
+$haskala-yellow:     #ffcd36;  // Hervorhebung / Warnung (hell)
+$haskala-dark:       #363327;  // Sehr dunkler Kontrastton
 
 // --- Extended Palette (z. B. für Kategorien, Facetten, Hinweise) ---
 $haskala-darkblue: #3e4f57;
@@ -22,12 +26,19 @@ $haskala-oliv:     #d6c07c;
 // TYPOGRAPHY
 // =========================================================
 
-$font-family-sans-serif: 'open_sansregular', Arial, sans-serif;
+// Modern system-font stack with Open Sans (already shipped) layered
+// on top for the typographic flavour we want. The bell_mtbold display
+// face is kept available via the .font-title utility but is no longer
+// used for every heading on every page.
+$font-family-sans-serif: 'open_sansregular',
+                         -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", Roboto, "Helvetica Neue",
+                         Arial, sans-serif;
 $font-family-base:        $font-family-sans-serif;
 
-$headings-font-family:    'bell_mtbold', $font-family-sans-serif;
+$headings-font-family:    $font-family-sans-serif;
 $headings-font-weight:    700;
-$headings-line-height:    1.1;
+$headings-line-height:    1.2;
 
 // =========================================================
 // GLOBAL COLORS (Bootstrap)

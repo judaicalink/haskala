@@ -12,42 +12,47 @@
             </p>
         </header>
 
-        {% if city_markers_json and city_markers_json != "[]" %}
-            <section class="places-map-section mb-4">
-                <div id="places-map"
-                     style="width: 100%; height: 380px;"
-                     data-markers="{{ city_markers_json }}">
-                </div>
-            </section>
-        {% endif %}
-
         {% include 'partials/alphabetmenu.html' %}
 
-        <section class="index-list">
-            {% if cities_by_letter %}
-                {% for letter, cities in cities_by_letter.items %}
-                    <div class="index-group mb-4" id="letter-{{ letter }}">
-                        <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
-                        <ul class="list-unstyled mb-0">
-                            {% for city in cities %}
-                                <li class="mb-1">
-                                    {% with slug=city.name|slugify %}
-                                        {% if slug %}
-                                            <a href="{% url 'place-detail' slug %}" class="link-primary">
-                                                {{ city.name }}
-                                            </a>
-                                        {% else %}
-                                            <span>{{ city.name }}</span>
-                                        {% endif %}
-                                    {% endwith %}
-                                </li>
-                            {% endfor %}
-                        </ul>
+        <div class="row gx-md-4">
+            <section class="col-lg-8 index-list">
+                {% if cities_by_letter %}
+                    {% for letter, cities in cities_by_letter.items %}
+                        <div class="index-group mb-4" id="letter-{{ letter }}">
+                            <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
+                            <ul class="list-unstyled mb-0">
+                                {% for city in cities %}
+                                    <li class="mb-1">
+                                        {% with slug=city.name|slugify %}
+                                            {% if slug %}
+                                                <a href="{% url 'place-detail' slug %}" class="link-primary">
+                                                    {{ city.name }}
+                                                </a>
+                                            {% else %}
+                                                <span>{{ city.name }}</span>
+                                            {% endif %}
+                                        {% endwith %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-muted">No places found.</p>
+                {% endif %}
+            </section>
+
+            {% if city_markers_json and city_markers_json != "[]" %}
+                <aside class="col-lg-4 places-map-col d-none d-lg-block">
+                    <div class="places-map-sticky">
+                        <h2 class="h6 text-uppercase text-muted mb-2">Overview map</h2>
+                        <div id="places-map"
+                             style="width: 100%; height: 70vh; min-height: 480px;"
+                             data-markers="{{ city_markers_json }}">
+                        </div>
                     </div>
-                {% endfor %}
-            {% else %}
-                <p class="text-muted">No places found.</p>
+                </aside>
             {% endif %}
-        </section>
+        </div>
     </div>
 {% endblock %}

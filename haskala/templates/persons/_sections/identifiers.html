@@ -7,4 +7,12 @@
             </a>
         </dd>
     {% endif %}
+    {% if person.gnd_id %}
+        <dt class="col-sm-4">GND</dt>
+        <dd class="col-sm-8">
+            <a href="https://d-nb.info/gnd/{{ person.gnd_id }}" target="_blank" rel="noopener">
+                {{ person.gnd_id }}
+            </a>
+        </dd>
+    {% endif %}
 </dl>

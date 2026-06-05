@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.urls import include, path, re_path
+from django.urls import include, path
 from django.contrib import admin
 from django.conf.urls.static import static
 
@@ -32,7 +32,7 @@ from home.views import book_detail_view, books_list_view, book_cite_bibtex, book
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-#from search import views as search_views
+# from search import views as search_views
 
 if settings.DEBUG:
     from debug_toolbar.toolbar import debug_toolbar_urls
@@ -58,7 +58,7 @@ urlpatterns += [
     path('dashboard/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
 
-    #path('books/books-detail-page/', include(wagtail_urls)),
+    # path('books/books-detail-page/', include(wagtail_urls)),
 
     # Book detail page
     path('books/', books_list_view, name='books-list'),

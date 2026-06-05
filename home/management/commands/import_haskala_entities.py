@@ -5,11 +5,6 @@ import os
 from home.models import (
     Person,
     Book,
-    Edition,
-    Translation,
-    Preface,
-    Mention,
-    Production,
     City,
     Language,
 )
