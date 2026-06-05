@@ -40,7 +40,7 @@ class BookDetailViewSmokeTest(TestCase):
         )
 
     def test_returns_200_for_existing_book(self):
-        resp = Client().get(reverse("book-detail", args=[self.book.name]))
+        resp = Client().get(reverse("book-detail", args=[self.book.slug]))
         self.assertEqual(resp.status_code, 200)
 
     def test_404_for_unknown_book(self):
@@ -63,7 +63,7 @@ class BookCiteBibtexTest(TestCase):
         )
 
     def test_bibtex_endpoint_returns_bibtex(self):
-        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.slug]))
         self.assertEqual(resp.status_code, 200)
         self.assertIn("text/x-bibtex", resp["Content-Type"])
         body = resp.content.decode()
@@ -75,7 +75,7 @@ class BookCiteBibtexTest(TestCase):
         self.assertIn("Berlin", body)
 
     def test_bibtex_has_no_template_comment_leak(self):
-        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.slug]))
         body = resp.content.decode()
         # Encoding explanation must be stripped by Django's template engine.
         self.assertNotIn("plain-text BibTeX", body)
@@ -93,7 +93,7 @@ class BookCiteBibtexTest(TestCase):
             full_title="A {weird} title with } a brace",
             gregorian_year="1800",
         )
-        resp = Client().get(reverse("book-cite-bibtex", args=[nasty.name]))
+        resp = Client().get(reverse("book-cite-bibtex", args=[nasty.slug]))
         body = resp.content.decode()
         # The brace in the title must be escaped, not leak through as raw.
         # Raw form must not appear; escaped form must.
@@ -120,7 +120,7 @@ class BookCiteBibtexMultiAuthorTest(TestCase):
         )
 
     def test_bibtex_joins_multiple_authors_with_and(self):
-        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-bibtex", args=[self.book.slug]))
         body = resp.content.decode()
         self.assertIn("Mendelssohn, Moses and Maimon, Salomon", body)
 
@@ -136,7 +136,7 @@ class BookCiteRisTest(TestCase):
         )
 
     def test_ris_endpoint_returns_ris(self):
-        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.slug]))
         self.assertEqual(resp.status_code, 200)
         self.assertIn(
             "application/x-research-info-systems", resp["Content-Type"]
@@ -170,7 +170,7 @@ class BookCiteRisMultiAuthorLanguageTest(TestCase):
         cls.book.languages.add(cls.hebrew, cls.german)
 
     def test_ris_emits_one_au_line_per_author(self):
-        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.slug]))
         body = resp.content.decode()
         au_lines = [ln for ln in body.splitlines() if ln.startswith("AU  - ")]
         self.assertEqual(len(au_lines), 2)
@@ -178,7 +178,7 @@ class BookCiteRisMultiAuthorLanguageTest(TestCase):
         self.assertIn("AU  - Maimon, Salomon", au_lines)
 
     def test_ris_emits_one_la_line_per_language(self):
-        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.slug]))
         body = resp.content.decode()
         la_lines = [ln for ln in body.splitlines() if ln.startswith("LA  - ")]
         self.assertEqual(len(la_lines), 2)
@@ -208,7 +208,7 @@ class BookCiteRisNewlineSafetyTest(TestCase):
         )
 
     def test_ris_keeps_one_tag_per_line(self):
-        resp = Client().get(reverse("book-cite-ris", args=[self.book.name]))
+        resp = Client().get(reverse("book-cite-ris", args=[self.book.slug]))
         body = resp.content.decode()
         for line in body.splitlines():
             if line and not line.startswith(("TY", "TI", "AU", "PY", "PB",
@@ -234,7 +234,7 @@ class BookCiteModalTest(TestCase):
         )
 
     def test_detail_page_includes_cite_modal_with_plain_citation(self):
-        resp = Client().get(reverse("book-detail", args=[self.book.name]))
+        resp = Client().get(reverse("book-detail", args=[self.book.slug]))
         self.assertEqual(resp.status_code, 200)
         html = resp.content.decode()
         self.assertIn("book-cite-modal", html)
@@ -265,7 +265,7 @@ class BookHeaderTest(TestCase):
 
     def test_header_shows_title_subtitle_author_pub_line(self):
         html = Client().get(
-            reverse("book-detail", args=[self.book.name])
+            reverse("book-detail", args=[self.book.slug])
         ).content.decode()
         self.assertIn("Header Book: A Subtitle", html)
         self.assertIn("Sefer Test", html)
@@ -274,7 +274,7 @@ class BookHeaderTest(TestCase):
         self.assertIn("Header Verlag", html)
         self.assertIn("1800", html)
         # Person chip links to the person detail
-        self.assertIn(f"/persons/{self.person.uuid}/", html)
+        self.assertIn(f"/persons/{self.person.slug}/", html)
 
 
 @TEST_OVERRIDES
@@ -291,13 +291,115 @@ class BookTOCTest(TestCase):
             publication_place=cls.city,
         )
 
-    def test_toc_lists_visible_sections_only(self):
+    def test_only_sections_with_data_render(self):
         html = Client().get(
-            reverse("book-detail", args=[self.book.name])
+            reverse("book-detail", args=[self.book.slug])
         ).content.decode()
-        # Publication has data -> appears in TOC and as a section anchor.
-        self.assertIn('href="#publication"', html)
+        # Publication has data -> the section element shows up.
         self.assertIn('id="publication"', html)
-        # Censorship has no data -> must not appear at all.
-        self.assertNotIn('href="#censorship"', html)
+        # Censorship has no data -> must not be rendered at all.
         self.assertNotIn('id="censorship"', html)
+
+
+@TEST_OVERRIDES
+class SlugLookupTest(TestCase):
+    """Auto-slug generation transliterates non-ASCII names so the
+    URL always lands on something readable."""
+
+    def test_book_slug_is_set_automatically(self):
+        book = Book.objects.create(name="Voß: Phädon (1789)")
+        self.assertEqual(book.slug, "voss-phadon-1789")
+        self.assertEqual(book.get_absolute_url(), f"/books/{book.slug}/")
+
+    def test_person_slug_falls_back_to_hebrew(self):
+        person = Person.objects.create(hebrew_name="אהרן יוסף")
+        self.assertTrue(person.slug)
+        self.assertIn("hrn", person.slug)
+
+    def test_city_slug_is_unique_on_collision(self):
+        a = City.objects.create(name="Vienna")
+        b = City.objects.create(name="Vienna")
+        self.assertEqual(a.slug, "vienna")
+        self.assertEqual(b.slug, "vienna-2")
+
+
+@TEST_OVERRIDES
+class EntityExportTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.book = Book.objects.create(
+            name="Export Test Book", full_title="Export Test Book",
+            gregorian_year="1797",
+        )
+        cls.person = Person.objects.create(
+            pref_label="Test, Tester", viaf_id="12345", gnd_id="118582143",
+        )
+        cls.city = City.objects.create(name="Hamburg")
+
+    def test_book_turtle_export(self):
+        resp = Client().get(reverse("book-export", args=[self.book.slug, "ttl"]))
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("text/turtle", resp["Content-Type"])
+        body = resp.content.decode()
+        self.assertIn("@prefix", body)
+        self.assertIn(self.book.uuid.hex, body.replace("-", ""))
+
+    def test_person_jsonld_export(self):
+        resp = Client().get(reverse("person-export", args=[self.person.slug, "jsonld"]))
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("application/ld+json", resp["Content-Type"])
+        body = resp.content.decode()
+        # GND alignment shows up in the body.
+        self.assertIn("118582143", body)
+
+    def test_place_rdfxml_export(self):
+        resp = Client().get(reverse("place-export", args=[self.city.slug, "rdf"]))
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("application/rdf+xml", resp["Content-Type"])
+        self.assertIn(b"<rdf:RDF", resp.content)
+
+    def test_unknown_format_404(self):
+        resp = Client().get(reverse("book-export", args=[self.book.slug, "yaml"]))
+        self.assertEqual(resp.status_code, 404)
+
+
+@TEST_OVERRIDES
+class ContentNegotiationTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.book = Book.objects.create(name="Neg Book", full_title="Neg Book")
+        cls.person = Person.objects.create(pref_label="Neg, Person")
+        cls.city = City.objects.create(name="Negstadt")
+
+    def test_text_html_returns_html(self):
+        resp = Client().get(
+            reverse("book-detail", args=[self.book.slug]),
+            HTTP_ACCEPT="text/html",
+        )
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("text/html", resp["Content-Type"])
+
+    def test_text_turtle_returns_turtle(self):
+        resp = Client().get(
+            reverse("book-detail", args=[self.book.slug]),
+            HTTP_ACCEPT="text/turtle",
+        )
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("text/turtle", resp["Content-Type"])
+        self.assertEqual(resp["Vary"], "Accept")
+
+    def test_jsonld_on_person_detail(self):
+        resp = Client().get(
+            reverse("person-detail", args=[self.person.slug]),
+            HTTP_ACCEPT="application/ld+json",
+        )
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("application/ld+json", resp["Content-Type"])
+
+    def test_rdfxml_on_place_detail(self):
+        resp = Client().get(
+            reverse("place-detail", args=[self.city.slug]),
+            HTTP_ACCEPT="application/rdf+xml",
+        )
+        self.assertEqual(resp.status_code, 200)
+        self.assertIn("application/rdf+xml", resp["Content-Type"])

@@ -38,7 +38,7 @@
                     &#42; {% if person.date_of_birth %}{{ person.date_of_birth }}{% endif %}
                     {% if person.place_of_birth %}
                         {% if person.date_of_birth %}, {% endif %}
-                        <a href="{% url 'place-detail' person.place_of_birth.name|slugify %}" class="link-secondary">
+                        <a href="{% url 'place-detail' person.place_of_birth.slug %}" class="link-secondary">
                             {{ person.place_of_birth.name }}
                         </a>
                     {% endif %}
@@ -49,7 +49,7 @@
                     &#8224; {% if person.date_of_death %}{{ person.date_of_death }}{% endif %}
                     {% if person.place_of_death %}
                         {% if person.date_of_death %}, {% endif %}
-                        <a href="{% url 'place-detail' person.place_of_death.name|slugify %}" class="link-secondary">
+                        <a href="{% url 'place-detail' person.place_of_death.slug %}" class="link-secondary">
                             {{ person.place_of_death.name }}
                         </a>
                     {% endif %}
@@ -71,6 +71,10 @@
                 <i class="bi bi-box-arrow-up-right"></i> GND {{ person.gnd_id }}
             </a>
         {% endif %}
+        <button type="button" class="btn btn-sm btn-outline-secondary"
+                data-bs-toggle="modal" data-bs-target="#person-export-modal">
+            <i class="bi bi-file-earmark-arrow-down"></i> Export
+        </button>
         <button type="button" class="btn btn-sm btn-outline-secondary"
                 data-permalink="{{ request.build_absolute_uri }}"
                 aria-label="Copy permalink">

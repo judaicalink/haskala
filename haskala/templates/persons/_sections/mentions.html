@@ -8,13 +8,13 @@
             {% endif %}
             {% if m.mentionee_city %}
                 in
-                <a href="{% url 'place-detail' m.mentionee_city.name|slugify %}">
+                <a href="{% url 'place-detail' m.mentionee_city.slug %}">
                     {{ m.mentionee_city.name }}
                 </a>
             {% endif %}
             {% if m.book %}
                 &mdash;
-                <a href="{% url 'book-detail' m.book.name %}" class="link-primary">
+                <a href="{% url 'book-detail' m.book.slug %}" class="link-primary">
                     {{ m.book.full_title|default:m.book.name|default:"[untitled]" }}
                 </a>
             {% endif %}

@@ -350,9 +350,9 @@ class City(RevisionMixin, LegacyImportedModel):
     """
     Model for the cities
     """
-    # id = models.AutoField(primary_key=True)
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, auto_created=True, unique=True)
     name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
 
     class Meta:
@@ -360,6 +360,14 @@ class City(RevisionMixin, LegacyImportedModel):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if self.name and not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return f"/places/{self.slug}/" if self.slug else f"/places/{self.uuid}/"
 
 
 @register_snippet
@@ -411,6 +419,7 @@ class Person(RevisionMixin, LegacyImportedModel):
     pref_label = models.CharField(max_length=255, blank=True)
     german_name = models.CharField(max_length=255, blank=True)
     hebrew_name = models.CharField(max_length=255, blank=True)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
 
     gender = models.ForeignKey(Gender, null=True, blank=True, on_delete=models.SET_NULL)
     occupations = models.ManyToManyField(Occupation, blank=True)
@@ -446,6 +455,20 @@ class Person(RevisionMixin, LegacyImportedModel):
 
     def __str__(self):
         return self.pref_label or self.german_name or self.hebrew_name or str(self.pk)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            source = (
+                self.pref_label
+                or self.german_name
+                or self.hebrew_name
+                or f"person-{self.pk}"
+            )
+            self.slug = generate_unique_slug(self, source)
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return f"/persons/{self.slug}/" if self.slug else f"/persons/{self.uuid}/"
 
 
 @register_snippet
@@ -693,6 +716,7 @@ class OriginalType(models.Model):
 class Book(RevisionMixin, LegacyImportedModel):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.TextField(blank=True, null=True)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -1422,6 +1446,15 @@ class Book(RevisionMixin, LegacyImportedModel):
     def __str__(self):
         return self.name or f"Book {self.pk}"
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            source = self.name or f"book-{self.pk}"
+            self.slug = generate_unique_slug(self, source)
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return f"/books/{self.slug}/" if self.slug else f"/books/{self.uuid}/"
+
     def author_names(self):
         """
         Comma-separated list of authors for admin list views.
@@ -1950,18 +1983,23 @@ class StaticPage(Page):
 
 def generate_unique_slug(instance, value, slug_field_name="slug"):
     """
-    Generates a unique slug for instance, based on value (e.g. name).
+    Generate a unique slug for instance, based on value (e.g. name).
+
+    The input is first transliterated to ASCII so Hebrew, Cyrillic,
+    German umlauts and other non-Latin scripts produce sensible
+    URLs ("אהרן, יוסף" → "ahrn-yvsf", "Voß" → "voss") rather than
+    slugifying to an empty string.
     """
+    from anyascii import anyascii
+
     ModelClass = instance.__class__
 
-    base = slugify(value or "")
+    base = slugify(anyascii(value or ""))
     if not base:
-        # Fallback if name is empty or only special characters
         base = f"{ModelClass.__name__.lower()}-{instance.pk or ''}".strip("-")
 
     slug = base
     i = 2
-    # Check for collisions and append -2, -3, ... if necessary
     while ModelClass.objects.filter(**{slug_field_name: slug}).exclude(pk=instance.pk).exists():
         slug = f"{base}-{i}"
         i += 1

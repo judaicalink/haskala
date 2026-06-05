@@ -2,7 +2,7 @@
     {% for m in mentions_here %}
         <li class="mb-2">
             {% if m.mentionee %}
-                <a href="{% url 'person-detail' m.mentionee.uuid %}" class="link-primary">
+                <a href="{% url 'person-detail' m.mentionee.slug %}" class="link-primary">
                     {{ m.mentionee }}
                 </a>
             {% else %}
@@ -14,7 +14,7 @@
             {% if m.book %}
                 <span class="text-muted small">
                     &mdash;
-                    <a href="{% url 'book-detail' m.book.name %}" class="link-secondary">
+                    <a href="{% url 'book-detail' m.book.slug %}" class="link-secondary">
                         {{ m.book.full_title|default:m.book.name|default:"[untitled]" }}
                     </a>
                 </span>

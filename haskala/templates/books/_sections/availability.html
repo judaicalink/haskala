@@ -1,3 +1,4 @@
+{% load utils %}
 <dl class="row mb-0">
     {% if book.not_available %}
         <dt class="col-sm-4">Availability</dt>
@@ -28,13 +29,23 @@
 {% if book.bar_ilan_library_id or book.berlin_library_id or book.british_library_id or book.frankfurt_library_id or book.huji_library_id or book.new_york_library_id or book.tel_aviv_library_id %}
     <h3 class="h6 mt-3">Library catalog IDs</h3>
     <dl class="row mb-0 small">
-        {% if book.bar_ilan_library_id %}<dt class="col-sm-4">Bar Ilan</dt><dd class="col-sm-8">{{ book.bar_ilan_library_id }}</dd>{% endif %}
-        {% if book.berlin_library_id %}<dt class="col-sm-4">Berlin</dt><dd class="col-sm-8">{{ book.berlin_library_id }}</dd>{% endif %}
-        {% if book.british_library_id %}<dt class="col-sm-4">British Library</dt><dd class="col-sm-8">{{ book.british_library_id }}</dd>{% endif %}
-        {% if book.frankfurt_library_id %}<dt class="col-sm-4">Frankfurt</dt><dd class="col-sm-8">{{ book.frankfurt_library_id }}</dd>{% endif %}
-        {% if book.huji_library_id %}<dt class="col-sm-4">HUJI</dt><dd class="col-sm-8">{{ book.huji_library_id }}</dd>{% endif %}
-        {% if book.new_york_library_id %}<dt class="col-sm-4">New York</dt><dd class="col-sm-8">{{ book.new_york_library_id }}</dd>{% endif %}
-        {% if book.tel_aviv_library_id %}<dt class="col-sm-4">Tel Aviv</dt><dd class="col-sm-8">{{ book.tel_aviv_library_id }}</dd>{% endif %}
+        {% for label, value, key in book|catalog_ids %}
+            {% if value %}
+                <dt class="col-sm-4">{{ label }}</dt>
+                <dd class="col-sm-8">
+                    {% with link=value|library_catalog_url:key %}
+                        {% if link %}
+                            <a href="{{ link }}" target="_blank" rel="noopener">
+                                {{ value }}
+                                <i class="bi bi-box-arrow-up-right small"></i>
+                            </a>
+                        {% else %}
+                            {{ value }}
+                        {% endif %}
+                    {% endwith %}
+                </dd>
+            {% endif %}
+        {% endfor %}
     </dl>
 {% endif %}
 

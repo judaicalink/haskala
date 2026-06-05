@@ -1,5 +1,5 @@
 {# Usage: {% include "books/_cards/_person_chip.html" with person=person role=role %} #}
-<a class="person-chip" href="{% url 'person-detail' person.uuid %}">
+<a class="person-chip" href="{% url 'person-detail' person.slug %}">
     <span class="person-chip__label">{{ person }}</span>{% if role %}
     <span class="person-chip__role badge text-bg-secondary ms-1">{{ role }}</span>{% endif %}
 </a>

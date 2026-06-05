@@ -1,0 +1,75 @@
+{% comment %}
+Generic "Export this record" modal.
+
+Usage:
+    {% include "partials/_export_modal.html" with modal_id="book-export-modal" entity="book" slug=book.slug title=book.full_title %}
+
+Required context:
+    modal_id   - DOM id of the wrapping modal (also used for aria-labelledby).
+    entity     - "book" | "person" | "place" — wired to the matching {entity}-export URL name.
+    slug       - the slug to interpolate into the URL.
+    title      - human-readable label of the record (shown in the modal header).
+{% endcomment %}
+<div class="modal fade" id="{{ modal_id }}" tabindex="-1" aria-labelledby="{{ modal_id }}-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="{{ modal_id }}-label">Export this record</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted small mb-3">
+          Download the full record about
+          <strong>{{ title }}</strong>
+          as Linked Data. Every format carries the same triples; pick
+          the one your tooling consumes.
+        </p>
+
+        <div class="list-group">
+          <a href="{% url entity|add:'-export' slug 'ttl' %}"
+             class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-semibold">Turtle</div>
+              <div class="small text-muted">text/turtle &middot; the canonical human-readable RDF syntax</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">.ttl</span>
+          </a>
+
+          <a href="{% url entity|add:'-export' slug 'jsonld' %}"
+             class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-semibold">JSON-LD</div>
+              <div class="small text-muted">application/ld+json &middot; for JSON-first toolchains</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">.jsonld</span>
+          </a>
+
+          <a href="{% url entity|add:'-export' slug 'rdf' %}"
+             class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-semibold">RDF/XML</div>
+              <div class="small text-muted">application/rdf+xml &middot; the W3C legacy serialisation</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">.rdf</span>
+          </a>
+
+          <a href="{% url entity|add:'-export' slug 'nt' %}"
+             class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-semibold">N-Triples</div>
+              <div class="small text-muted">application/n-triples &middot; one statement per line</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">.nt</span>
+          </a>
+        </div>
+
+        <p class="small text-muted mt-3 mb-0">
+          The same data is served via content negotiation on the
+          record's own URL — request it with
+          <code>Accept: text/turtle</code> (or any of the formats above)
+          and the server replies in that format.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

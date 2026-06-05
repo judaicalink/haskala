@@ -7,7 +7,7 @@
             {% endif %}
             {% if pf.writer %}
                 &mdash; by
-                <a href="{% url 'person-detail' pf.writer.uuid %}" class="link-primary">{{ pf.writer }}</a>
+                <a href="{% url 'person-detail' pf.writer.slug %}" class="link-primary">{{ pf.writer }}</a>
             {% endif %}
             {% if pf.notes %}
                 <div class="small text-muted">{{ pf.notes|linebreaksbr }}</div>
