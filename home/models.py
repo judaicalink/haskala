@@ -79,7 +79,7 @@ def get_people_names(self):
             PREFIX owl: <http://www.w3.org/2002/07/owl#>
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX hs: <http://localhost/ontology#>
-            
+
             SELECT ?person ?name ?gender ?occupation ?german_name ?hebrew_name ?VIAF_ID ?same_as
             WHERE { ?person foaf:name ?name .
             }
@@ -197,13 +197,11 @@ class Publisher(models.Model):
             self.slug = generate_unique_slug(self, self.name)
         super().save(*args, **kwargs)
 
-
     panels = [
         FieldPanel("name"),
         FieldPanel("slug"),
         FieldPanel("legacy_tid"),
     ]
-
 
     class Meta:
         verbose_name_plural = "Publishers"
@@ -232,7 +230,6 @@ class Series(models.Model):
         if self.name and not self.slug:
             self.slug = generate_unique_slug(self, self.name)
         super().save(*args, **kwargs)
-
 
     class Meta:
         verbose_name_plural = "Series"
@@ -419,6 +416,12 @@ class Person(RevisionMixin, LegacyImportedModel):
     occupations = models.ManyToManyField(Occupation, blank=True)
 
     viaf_id = models.CharField(max_length=255, blank=True)
+    gnd_id = models.CharField(
+        max_length=64, blank=True,
+        help_text="GND identifier (Gemeinsame Normdatei). Numeric ID only, "
+                  "e.g. 118582143 — gets prefixed with https://d-nb.info/gnd/ "
+                  "in the public link.",
+    )
 
     date_of_birth = models.CharField(max_length=255, blank=True)
     date_of_death = models.CharField(max_length=255, blank=True)
@@ -1944,8 +1947,6 @@ class StaticPage(Page):
         FieldPanel("body"),
     ]
 
-
-from django.utils.text import slugify
 
 def generate_unique_slug(instance, value, slug_field_name="slug"):
     """

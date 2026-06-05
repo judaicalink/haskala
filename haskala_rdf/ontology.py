@@ -43,6 +43,7 @@ PROPERTY_ALIGNMENTS = {
     "hebrew_name": SKOS.altLabel,
     "pseudonym": SKOS.altLabel,
     "viaf_id": DCTERMS.identifier,
+    "gnd_id": GND.gndIdentifier,
     "date_of_birth": JL.birthDate,
     "date_of_death": JL.deathDate,
     "place_of_birth": JL.birthLocationURI,

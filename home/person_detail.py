@@ -49,11 +49,7 @@ def _mentions_has_data(p: Person) -> bool:
 
 
 def _identifiers_has_data(p: Person) -> bool:
-    return bool(p.viaf_id)
-
-
-def _record_metadata_has_data(p: Person) -> bool:
-    return _any(p.legacy_nid, p.legacy_created, p.legacy_changed)
+    return bool(p.viaf_id or p.gnd_id)
 
 
 SECTIONS: list[Section] = [
@@ -64,7 +60,6 @@ SECTIONS: list[Section] = [
     Section("productions", "Productions", _productions_has_data),
     Section("mentions", "Mentions", _mentions_has_data),
     Section("identifiers", "Identifiers", _identifiers_has_data),
-    Section("record_metadata", "Record metadata", _record_metadata_has_data),
 ]
 
 
