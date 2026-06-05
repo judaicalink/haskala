@@ -75,6 +75,7 @@ PROV = Namespace("http://www.w3.org/ns/prov#")
 # URI-Helfer für Instanzen
 # ---------------------------------------------------------
 
+
 def person_uri(person: Person) -> URIRef:
     """Stabile URI für Personen (uuid-basiert)."""
     return HSK[f"person/{person.uuid}"]
@@ -347,7 +348,7 @@ def export_places(g: Graph) -> None:
     cities = City.objects.all().prefetch_related("geolocation_set")
 
     for city in cities:
-        s = add_model_instance(g, city, extra_types=[JL.Place])
+        add_model_instance(g, city, extra_types=[JL.Place])
 
         # Ergänze Geolocation-Infos (auch generisch)
         geos = list(city.geolocation_set.all())
@@ -520,6 +521,7 @@ def build_data_graph() -> Graph:
 
     return g
 
+
 def init_meta_graph() -> Graph:
     """
     Initialisiert einen RDF-Graphen für den Metagraph (VoID/DCAT/PROV).
@@ -622,6 +624,7 @@ def build_meta_graph(
     g.add((activity_uri, PROV.endedAtTime, Literal(today, datatype=XSD.date)))
 
     return g
+
 
 def build_frontmatter_md(
     *,

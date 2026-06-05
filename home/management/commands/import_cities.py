@@ -49,14 +49,17 @@ class Command(BaseCommand):
                 lng = row.get("field_geolocation_lng")
 
                 if lat or lng:
+                    lat_sin = row.get("field_geolocation_lat_sin")
+                    lat_cos = row.get("field_geolocation_lat_cos")
+                    lng_rad = row.get("field_geolocation_lng_rad")
                     geo, geo_created = Geolocation.objects.get_or_create(
                         city=city,
                         defaults={
                             "lat": float(lat) if lat else None,
                             "lng": float(lng) if lng else None,
-                            "lat_sin": float(row["field_geolocation_lat_sin"]) if row.get("field_geolocation_lat_sin") else None,
-                            "lat_cos": float(row["field_geolocation_lat_cos"]) if row.get("field_geolocation_lat_cos") else None,
-                            "lng_rad": float(row["field_geolocation_lng_rad"]) if row.get("field_geolocation_lng_rad") else None,
+                            "lat_sin": float(lat_sin) if lat_sin else None,
+                            "lat_cos": float(lat_cos) if lat_cos else None,
+                            "lng_rad": float(lng_rad) if lng_rad else None,
                         },
                     )
                     if geo_created:

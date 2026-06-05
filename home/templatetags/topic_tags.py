@@ -1,6 +1,5 @@
 # home/templatetags/topic_tags.py
 from django import template
-from django.utils.text import slugify
 
 from home.models import Topic
 

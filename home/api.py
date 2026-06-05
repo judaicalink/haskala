@@ -121,7 +121,6 @@ class PersonViewSet(ReadOnlyBaseViewSet):
 class CityViewSet(ReadOnlyBaseViewSet):
     queryset = City.objects.all()
     serializer_class = CitySerializer
-    filterset_fields = ["legacy_tid"]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["name"]
@@ -163,7 +162,6 @@ class MentionViewSet(ReadOnlyBaseViewSet):
 class LanguageViewSet(ReadOnlyBaseViewSet):
     queryset = Language.objects.all()
     serializer_class = LanguageSerializer
-    filterset_fields = ["legacy_tid"]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["name"]

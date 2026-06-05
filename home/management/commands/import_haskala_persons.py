@@ -9,6 +9,7 @@ from home.models import (
     City,
 )
 
+
 def parse_tid(value):
     """
     Converts TID values like '402', '402.0', ' 402 ', '' to int or None.
@@ -26,7 +27,6 @@ def parse_tid(value):
         return int(float(v))
     except ValueError:
         return None
-
 
 
 class Command(BaseCommand):
