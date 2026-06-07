@@ -50,7 +50,7 @@ def _negotiate_rdf_response(request, obj):
 @vary_on_headers("Accept")
 def book_detail_view(request, slug):
     book = get_object_or_404(
-        Book.objects.select_related(
+        Book.objects.filter(live=True).select_related(
             "publisher", "original_publisher",
             "publication_place", "publication_place_other",
             "original_publication_place",
@@ -113,7 +113,7 @@ def books_list_view(request):
     Lists all books alphabetically grouped by the first letter of the name.
     """
     # Fetch all books, ideally sorted by name
-    books = Book.objects.all().order_by("name")
+    books = Book.objects.filter(live=True).order_by("name")
 
     # Group by first letter
     grouped = defaultdict(list)
@@ -150,7 +150,7 @@ def digital_books_list_view(request):
     # Only books with a non-empty http/https URL
     books_qs = (
         Book.objects
-        .filter(digital_book_url__isnull=False)
+        .filter(live=True, digital_book_url__isnull=False)
         .exclude(digital_book_url='')
         .filter(digital_book_url__regex=r'^https?://')
         .order_by("name")
@@ -184,7 +184,7 @@ def persons_list_view(request):
     Lists all persons alphabetically, grouped by first letter
     of the display name (pref_label / german_name / hebrew_name).
     """
-    persons_qs = Person.objects.all().order_by("pref_label", "german_name", "hebrew_name")
+    persons_qs = Person.objects.filter(live=True).order_by("pref_label", "german_name", "hebrew_name")
 
     grouped = defaultdict(list)
     for person in persons_qs:
@@ -218,7 +218,7 @@ def person_detail_view(request, slug):
         Person.objects
         .select_related("gender", "place_of_birth", "place_of_death")
         .prefetch_related("occupations")
-        .filter(slug=slug)
+        .filter(slug=slug, live=True)
         .first()
     )
     if person is None:
@@ -281,7 +281,7 @@ def places_list_view(request):
 
     # Group cities alphabetically
     grouped = defaultdict(list)
-    cities_qs = City.objects.all().order_by("name")
+    cities_qs = City.objects.filter(live=True).order_by("name")
 
     for city in cities_qs:
         name = (city.name or "").strip()
@@ -330,12 +330,13 @@ def place_detail_view(request, slug):
     """
     Detail view of a city, addressed by slug.
     """
-    city = get_object_or_404(City, slug=slug)
+    city = get_object_or_404(City, slug=slug, live=True)
 
     geolocation = Geolocation.objects.filter(city=city).first()
 
     books_published_here = (
-        Book.objects.filter(
+        Book.objects.filter(live=True)
+        .filter(
             Q(publication_place=city)
             | Q(publication_place_other=city)
             | Q(original_publication_place=city)
@@ -363,8 +364,8 @@ def place_detail_view(request, slug):
         .order_by("mentionee__pref_label")
     )
 
-    born_here = city.born_here.all().order_by("pref_label")
-    died_here = city.died_here.all().order_by("pref_label")
+    born_here = city.born_here.filter(live=True).order_by("pref_label")
+    died_here = city.died_here.filter(live=True).order_by("pref_label")
 
     context = {
         "city": city,
@@ -404,16 +405,16 @@ def search_view(request):
 
     # --- Base querysets -----------------------------------------------------
     books_qs = (
-        Book.objects.all()
+        Book.objects.filter(live=True)
         .select_related("publication_place", "publisher")
         .prefetch_related("languages", "authors")
     )
     persons_qs = (
-        Person.objects.all()
+        Person.objects.filter(live=True)
         .select_related("place_of_birth", "place_of_death")
         .prefetch_related("occupations")
     )
-    places_qs = City.objects.all()
+    places_qs = City.objects.filter(live=True)
 
     # --- Full-text query ----------------------------------------------------
     if q:
@@ -591,7 +592,7 @@ def topic_detail_view(request, topic_slug):
     topic = _get_object_by_slug(Topic.objects.all(), topic_slug)
 
     books_with_topic = (
-        Book.objects.filter(topic=topic)
+        Book.objects.filter(live=True, topic=topic)
         .order_by("gregorian_year", "name")
         .distinct()
     )
@@ -642,12 +643,12 @@ def publisher_detail_view(request, publisher_slug):
     publisher = _get_object_by_slug(Publisher.objects.all(), publisher_slug)
 
     books_published = (
-        Book.objects.filter(publisher=publisher)
+        Book.objects.filter(live=True, publisher=publisher)
         .order_by("gregorian_year", "name")
         .distinct()
     )
     books_original = (
-        Book.objects.filter(original_publisher=publisher)
+        Book.objects.filter(live=True, original_publisher=publisher)
         .exclude(publisher=publisher)
         .order_by("gregorian_year", "name")
         .distinct()
@@ -696,7 +697,7 @@ def occupation_detail_view(request, occupation_slug):
     occupation = _get_object_by_slug(Occupation.objects.all(), occupation_slug)
 
     persons_with_occupation = (
-        Person.objects.filter(occupations=occupation)
+        Person.objects.filter(live=True, occupations=occupation)
         .select_related("place_of_birth", "place_of_death")
         .order_by("pref_label", "german_name", "hebrew_name")
         .distinct()
@@ -774,7 +775,7 @@ def series_detail_view(request, series_slug):
     series = _get_object_by_slug(Series.objects.all(), series_slug)
 
     books_in_series = (
-        Book.objects.filter(series=series)
+        Book.objects.filter(live=True, series=series)
         .order_by("series_part", "gregorian_year", "name")
         .distinct()
     )
@@ -804,16 +805,16 @@ def search_api_view(request):
 
     # Base querysets (as in search_view)
     books_qs = (
-        Book.objects.all()
+        Book.objects.filter(live=True)
         .select_related("publication_place", "publisher")
         .prefetch_related("languages", "authors")
     )
     persons_qs = (
-        Person.objects.all()
+        Person.objects.filter(live=True)
         .select_related("place_of_birth", "place_of_death")
         .prefetch_related("occupations")
     )
-    places_qs = City.objects.all()
+    places_qs = City.objects.filter(live=True)
 
     # Full-text
     if q:
@@ -924,7 +925,7 @@ def search_api_view(request):
 
 
 def book_cite_bibtex(request, slug):
-    book = get_object_or_404(Book, slug=slug)
+    book = get_object_or_404(Book, slug=slug, live=True)
     authors = [
         ba.person.pref_label or str(ba.person)
         for ba in book.bookauthor_set.select_related("person")
@@ -942,7 +943,7 @@ def book_cite_bibtex(request, slug):
 
 
 def book_cite_ris(request, slug):
-    book = get_object_or_404(Book, slug=slug)
+    book = get_object_or_404(Book, slug=slug, live=True)
     authors = [
         ba.person.pref_label or str(ba.person)
         for ba in book.bookauthor_set.select_related("person")
@@ -980,15 +981,15 @@ def _serialize_entity_response(obj, fmt, *, attachment_basename):
 
 
 def book_export(request, slug, fmt):
-    book = get_object_or_404(Book, slug=slug)
+    book = get_object_or_404(Book, slug=slug, live=True)
     return _serialize_entity_response(book, fmt, attachment_basename=book.slug)
 
 
 def person_export(request, slug, fmt):
-    person = get_object_or_404(Person, slug=slug)
+    person = get_object_or_404(Person, slug=slug, live=True)
     return _serialize_entity_response(person, fmt, attachment_basename=person.slug)
 
 
 def place_export(request, slug, fmt):
-    city = get_object_or_404(City, slug=slug)
+    city = get_object_or_404(City, slug=slug, live=True)
     return _serialize_entity_response(city, fmt, attachment_basename=city.slug)

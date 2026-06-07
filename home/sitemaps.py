@@ -38,7 +38,7 @@ class BookSitemap(Sitemap):
     priority = 0.8
 
     def items(self):
-        return Book.objects.all()
+        return Book.objects.filter(live=True)
 
     def lastmod(self, obj):
         # created_at / updated_at are available on the Book model
@@ -56,7 +56,7 @@ class PersonSitemap(Sitemap):
     priority = 0.6
 
     def items(self):
-        return Person.objects.all()
+        return Person.objects.filter(live=True)
 
     def location(self, obj):
         return reverse("person-detail", kwargs={"slug": obj.slug})
@@ -71,7 +71,7 @@ class PlaceSitemap(Sitemap):
     priority = 0.6
 
     def items(self):
-        return City.objects.all()
+        return City.objects.filter(live=True)
 
     def location(self, obj):
         return reverse("place-detail", kwargs={"slug": obj.slug})

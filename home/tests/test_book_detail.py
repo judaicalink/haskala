@@ -403,3 +403,88 @@ class ContentNegotiationTest(TestCase):
         )
         self.assertEqual(resp.status_code, 200)
         self.assertIn("application/rdf+xml", resp["Content-Type"])
+
+
+@TEST_OVERRIDES
+class DraftStateVisibilityTest(TestCase):
+    """DraftStateMixin: live=False rows must 404 on every public path."""
+
+    @classmethod
+    def setUpTestData(cls):
+        cls.book = Book.objects.create(name="Draft Book", full_title="Draft Book")
+        cls.person = Person.objects.create(pref_label="Draft, Person")
+        cls.city = City.objects.create(name="Draftstadt")
+
+    def _toggle_live(self, obj, value):
+        obj.live = value
+        obj.save(update_fields=["live"])
+
+    def test_book_draft_returns_404_on_detail(self):
+        self._toggle_live(self.book, False)
+        resp = Client().get(reverse("book-detail", args=[self.book.slug]))
+        self.assertEqual(resp.status_code, 404)
+
+    def test_person_draft_returns_404_on_detail(self):
+        self._toggle_live(self.person, False)
+        resp = Client().get(reverse("person-detail", args=[self.person.slug]))
+        self.assertEqual(resp.status_code, 404)
+
+    def test_city_draft_returns_404_on_detail(self):
+        self._toggle_live(self.city, False)
+        resp = Client().get(reverse("place-detail", args=[self.city.slug]))
+        self.assertEqual(resp.status_code, 404)
+
+    def test_book_draft_404s_on_export(self):
+        self._toggle_live(self.book, False)
+        resp = Client().get(reverse("book-export", args=[self.book.slug, "ttl"]))
+        self.assertEqual(resp.status_code, 404)
+
+    def test_book_draft_hidden_from_list(self):
+        self._toggle_live(self.book, False)
+        html = Client().get(reverse("books-list")).content.decode()
+        self.assertNotIn(self.book.slug, html)
+
+    def test_live_book_is_visible(self):
+        # Sanity check the default state — live=True out of the box.
+        self.assertTrue(self.book.live)
+        resp = Client().get(reverse("book-detail", args=[self.book.slug]))
+        self.assertEqual(resp.status_code, 200)
+
+
+@TEST_OVERRIDES
+class InlineAuthorsTest(TestCase):
+    """ParentalKey on BookAuthor.book lets the Wagtail admin form
+    show authors inline. Confirm the new wiring still lets the
+    public detail page render the author chip."""
+
+    @classmethod
+    def setUpTestData(cls):
+        cls.book = Book.objects.create(name="Inline Book", full_title="Inline Book")
+        cls.first = Person.objects.create(pref_label="Inline, Alpha")
+        cls.second = Person.objects.create(pref_label="Inline, Beta")
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.first, role="original_text_author",
+        )
+        BookAuthor.objects.create(
+            book=cls.book, person=cls.second, role="old_text_author",
+        )
+
+    def test_book_detail_lists_both_authors(self):
+        html = Client().get(
+            reverse("book-detail", args=[self.book.slug])
+        ).content.decode()
+        self.assertIn("Inline, Alpha", html)
+        self.assertIn("Inline, Beta", html)
+
+    def test_book_panels_include_inline_panel(self):
+        from wagtail.admin.panels import InlinePanel
+        # The Authors & persons MultiFieldPanel's first child should
+        # be the BookAuthor InlinePanel, mounted on bookauthor_set.
+        authors_section = next(
+            p for p in Book.panels if getattr(p, "heading", "") == "Authors & persons"
+        )
+        children = list(authors_section.children)
+        self.assertTrue(any(isinstance(c, InlinePanel) for c in children),
+                        "Authors panel should expose an InlinePanel")
+        inline = next(c for c in children if isinstance(c, InlinePanel))
+        self.assertEqual(inline.relation_name, "bookauthor_set")
