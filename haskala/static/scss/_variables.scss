@@ -26,26 +26,12 @@ $haskala-oliv:     #d6c07c;
 // TYPOGRAPHY
 // =========================================================
 
-// Body text uses Open Sans (already shipped via _fonts.scss) on top
-// of a modern system sans-serif stack. Headings switch to a serif
-// stack — readers expect a serious / scholarly face on a research
-// library, and the system-serif cascade below renders the historical
-// Garamond/Palatino feel on the systems that ship those fonts and
-// degrades to Georgia (very high-quality on-screen) and finally to
-// Times on the rest.
-$font-family-sans-serif: 'open_sansregular',
-                         -apple-system, BlinkMacSystemFont,
-                         "Segoe UI", Roboto, "Helvetica Neue",
-                         Arial, sans-serif;
-$font-family-serif:      'Iowan Old Style', 'Palatino Linotype',
-                         Palatino, 'Source Serif Pro',
-                         Cambria, Georgia, 'Times New Roman',
-                         Times, serif;
+$font-family-sans-serif: 'open_sansregular', Arial, sans-serif;
 $font-family-base:        $font-family-sans-serif;
 
-$headings-font-family:    $font-family-serif;
-$headings-font-weight:    600;
-$headings-line-height:    1.25;
+$headings-font-family:    'bell_mtbold', $font-family-sans-serif;
+$headings-font-weight:    700;
+$headings-line-height:    1.1;
 
 // =========================================================
 // GLOBAL COLORS (Bootstrap)
