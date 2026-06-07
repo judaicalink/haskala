@@ -9,11 +9,17 @@ the editor; they remain accessible via the API and the Django admin.
 """
 from __future__ import annotations
 
-from wagtail.admin.panels import FieldPanel, MultiFieldPanel
+from wagtail.admin.panels import FieldPanel, InlinePanel, MultiFieldPanel
 
 
 def _panels(field_names):
     return [FieldPanel(name) for name in field_names]
+
+
+# Sentinel that build_book_panels() expands to an InlinePanel for the
+# bookauthor_set reverse relation, so the section list below stays
+# uniform and grouping-friendly.
+AUTHORS_INLINE = "__authors_inline__"
 
 
 # Each entry: (heading, [field names]).
@@ -31,6 +37,7 @@ SECTIONS: list[tuple[str, list[str]]] = [
         "presented_original_referen",
     ]),
     ("Authors & persons", [
+        AUTHORS_INLINE,
         "original_author", "original_author_else_refer", "original_author_elsewhere",
         "original_author_other_name", "old_author_addition_names",
         "old_author_names_other_sor", "founders", "founders_notes",
@@ -111,14 +118,25 @@ SECTIONS: list[tuple[str, list[str]]] = [
 ]
 
 
+def _expand_field(name):
+    if name == AUTHORS_INLINE:
+        return InlinePanel(
+            "bookauthor_set",
+            label="Author / role",
+            heading="Authors (people + role)",
+        )
+    return FieldPanel(name)
+
+
 def build_book_panels():
     panels = []
     for heading, fields in SECTIONS:
+        children = [_expand_field(name) for name in fields]
         if heading == "Basics":
-            panels.append(MultiFieldPanel(_panels(fields), heading=heading))
+            panels.append(MultiFieldPanel(children, heading=heading))
         else:
             panels.append(MultiFieldPanel(
-                _panels(fields),
+                children,
                 heading=heading,
                 classname="collapsed",
             ))

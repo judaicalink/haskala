@@ -11,11 +11,12 @@ from django.utils.decorators import method_decorator
 from django.utils.translation import gettext_lazy as _
 from django.views.decorators.cache import cache_page
 from modelcluster.fields import ParentalKey
+from modelcluster.models import ClusterableModel
 from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, FieldRowPanel
 from wagtail.contrib.forms.models import AbstractFormField, AbstractEmailForm
 from wagtail.contrib.forms.panels import FormSubmissionsPanel
 from wagtail.fields import RichTextField
-from wagtail.models import Page, RevisionMixin
+from wagtail.models import Page, RevisionMixin, DraftStateMixin
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
 
@@ -346,7 +347,7 @@ class LanguageCount(models.Model):
 
 
 @register_snippet
-class City(RevisionMixin, LegacyImportedModel):
+class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
     """
     Model for the cities
     """
@@ -410,7 +411,7 @@ class Occupation(models.Model):
 
 
 @register_snippet
-class Person(RevisionMixin, LegacyImportedModel):
+class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
     """
     Model for the person.
     """
@@ -636,7 +637,7 @@ class Topic(models.Model):
 
 @register_snippet
 class BookAuthor(models.Model):
-    book = models.ForeignKey("Book", on_delete=models.CASCADE)
+    book = ParentalKey("Book", on_delete=models.CASCADE)
     person = models.ForeignKey("Person", on_delete=models.CASCADE)
     role = models.CharField(max_length=50, choices=[
         ("old_text_author", "Old text author"),
@@ -713,7 +714,7 @@ class OriginalType(models.Model):
         return self.name
 
 
-class Book(RevisionMixin, LegacyImportedModel):
+class Book(DraftStateMixin, RevisionMixin, LegacyImportedModel, ClusterableModel):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.TextField(blank=True, null=True)
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
