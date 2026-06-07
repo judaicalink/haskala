@@ -315,7 +315,7 @@ def export_persons(g: Graph, gnd_mapping: Optional[Dict[str, str]] = None) -> No
     if gnd_mapping is None:
         gnd_mapping = {}
 
-    persons = Person.objects.all().select_related(
+    persons = Person.objects.filter(live=True).select_related(
         "gender", "place_of_birth", "place_of_death"
     ).prefetch_related("occupations")
 
@@ -345,7 +345,7 @@ def export_places(g: Graph) -> None:
     - generische hs:* Properties für City und Geolocation
     - zusätzlicher Typ jl:Place + wgs84-Lat/Lon
     """
-    cities = City.objects.all().prefetch_related("geolocation_set")
+    cities = City.objects.filter(live=True).prefetch_related("geolocation_set")
 
     for city in cities:
         add_model_instance(g, city, extra_types=[JL.Place])
@@ -371,7 +371,7 @@ def export_books(g: Graph) -> None:
     - digitale Links zusätzlich als foaf:page
     - bundle-Feld als zusätzlicher rdf:type
     """
-    books = Book.objects.all().prefetch_related(
+    books = Book.objects.filter(live=True).prefetch_related(
         "authors",
         "languages",
         "footnote_languages",
