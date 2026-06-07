@@ -52,11 +52,12 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
 
-      - name: Install system packages for psycopg2 / Pillow / GeoDjango
+      - name: Install system packages for psycopg2 / Pillow / GeoDjango / pg_dump
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends \
-            libpq-dev libjpeg-dev zlib1g-dev libwebp-dev libgdal-dev gdal-bin
+            libpq-dev postgresql-client \
+            libjpeg-dev zlib1g-dev libwebp-dev libgdal-dev gdal-bin
 
       - name: Install Python dependencies
         run: |
@@ -66,3 +67,41 @@ jobs:
       - name: Run Django tests
         run: |
           python manage.py test --noinput --verbosity=2
+
+      - name: Backup + restore smoke test
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: "5432"
+          POSTGRES_DB: haskala
+          POSTGRES_USER: haskala
+          POSTGRES_PASSWORD: haskala
+          BACKUP_DIR: /tmp/haskala-backups
+          PGPASSWORD: haskala
+        run: |
+          set -euo pipefail
+          mkdir -p "$BACKUP_DIR"
+
+          python manage.py migrate --noinput
+
+          python manage.py shell -c "
+          from home.models import Book
+          Book.objects.create(name='CI backup smoke probe')
+          print('books before backup:', Book.objects.count())
+          "
+
+          bash docker/backups/backup.sh
+          ls -lh "$BACKUP_DIR"/haskala-*.sql.gz
+
+          # Drop the entire schema so the restore really has to do work.
+          psql --host=localhost --username=haskala --dbname=haskala \
+               -v ON_ERROR_STOP=1 \
+               -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+
+          bash docker/backups/restore.sh latest
+
+          python manage.py shell -c "
+          from home.models import Book
+          n = Book.objects.filter(name='CI backup smoke probe').count()
+          print('probe row count after restore:', n)
+          assert n == 1, f'restore lost the probe row, count={n}'
+          "
