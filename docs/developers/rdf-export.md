@@ -67,20 +67,39 @@ haskala_rdf/
 
 Override via environment variables of the same name.
 
-## Loading into Fuseki
+## Loading into a SPARQL endpoint
 
-Manual upload for now (the project Fuseki was down during the
-migration window):
+The `export_rdf` command can push the freshly-built data graph to a
+remote SPARQL endpoint as the last step of every run, using the HTTP
+Graph Store Protocol (PUT) by default, or SPARQL 1.1 Update over POST.
+Set `HASKALA_SPARQL_PUSH_URL` to enable it; leave it empty to keep the
+push disabled.
 
-```bash
-curl --upload-file dumps/haskala/current/haskala.ttl.gz \
-     -u admin:<password> \
-     http://fuseki:3030/haskala/data
-```
+| Setting                            | Default                                       | Purpose                                                                  |
+| ---------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------ |
+| `HASKALA_SPARQL_PUSH_URL`          | `""` (disabled)                               | GSP endpoint, e.g. `http://fuseki:3030/haskala/data`                     |
+| `HASKALA_SPARQL_PUSH_GRAPH`        | `http://data.judaicalink.org/data/haskala`    | Named graph IRI                                                          |
+| `HASKALA_SPARQL_PUSH_PROTOCOL`     | `gsp`                                         | `gsp` (PUT) or `update` (POST `application/sparql-update`)               |
+| `HASKALA_SPARQL_PUSH_USER`         | `""`                                          | Optional HTTP Basic Auth username                                        |
+| `HASKALA_SPARQL_PUSH_PASSWORD`     | `""`                                          | Matching password                                                        |
+| `HASKALA_SPARQL_PUSH_TIMEOUT`      | `60`                                          | Seconds                                                                  |
 
-Auto-push is on the [open workstream list](../../docs/) as a future
-task; for the time being the dumps are static files served from the
-data portal.
+The push replaces the named graph wholesale — successive runs converge
+on the same end state without accumulating stale triples.
+
+`python manage.py export_rdf` runs both the local file export and the
+push (in that order). To skip the push for a single run pass
+`--no-push`.
+
+`python manage.py push_rdf` skips the export and re-uploads the most
+recent dump from `<HASKALA_DUMPS_ROOT>/<HASKALA_SLUG>/current/`. Use
+this after fixing a transient endpoint failure, or pass `--source` to
+upload a hand-edited Turtle file.
+
+For Fuseki specifically: the GSP endpoint is
+`http(s)://<host>:3030/<dataset>/data`; the SPARQL Update endpoint is
+`http(s)://<host>:3030/<dataset>/update`. The bundled dev `fuseki`
+service ships with admin/admin credentials.
 
 ## Namespaces
 

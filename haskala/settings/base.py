@@ -370,6 +370,26 @@ HASKALA_DUMPS_ROOT = env("HASKALA_DUMPS_ROOT", default=os.path.join(BASE_DIR, "d
 HASKALA_SLUG = env("HASKALA_SLUG", default="haskala")
 HASKALA_GND_MAPPING_CSV = env("HASKALA_GND_MAPPING_CSV", default="")
 
+# Auto-push to a remote SPARQL endpoint. Leave HASKALA_SPARQL_PUSH_URL
+# empty to disable; the export step still writes its files to
+# HASKALA_DUMPS_ROOT regardless.
+#
+# Default protocol is "gsp" (HTTP Graph Store Protocol — Fuseki accepts
+# the wholesale graph replacement via PUT). The endpoint then is
+# .../<dataset>/data, e.g.
+#   HASKALA_SPARQL_PUSH_URL=http://fuseki:3030/haskala/data
+# Set HASKALA_SPARQL_PUSH_PROTOCOL=update to use SPARQL 1.1 Update
+# instead (endpoint .../<dataset>/update).
+HASKALA_SPARQL_PUSH_URL = env("HASKALA_SPARQL_PUSH_URL", default="")
+HASKALA_SPARQL_PUSH_GRAPH = env(
+    "HASKALA_SPARQL_PUSH_GRAPH",
+    default="http://data.judaicalink.org/data/haskala",
+)
+HASKALA_SPARQL_PUSH_PROTOCOL = env("HASKALA_SPARQL_PUSH_PROTOCOL", default="gsp")
+HASKALA_SPARQL_PUSH_USER = env("HASKALA_SPARQL_PUSH_USER", default="")
+HASKALA_SPARQL_PUSH_PASSWORD = env("HASKALA_SPARQL_PUSH_PASSWORD", default="")
+HASKALA_SPARQL_PUSH_TIMEOUT = env("HASKALA_SPARQL_PUSH_TIMEOUT", default=60, cast=int)
+
 # Mail
 EMAIL_BACKEND = env("EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend")
 EMAIL_HOST = env("EMAIL_HOST", default="smtp.example.com")
