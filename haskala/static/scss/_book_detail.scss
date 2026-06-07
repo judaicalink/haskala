@@ -2,69 +2,8 @@
 //
 // Visual polish for the Book / Person / Place / secondary detail pages.
 // The page templates share BEM-ish class roots so this partial covers
-// all of them: .book-header, .book-toc, .book-section, plus the
-// matching person-/place-/topic-/series-/publisher-/occupation-
-// variants.
-
-// Sticky TOC column. Falls back to plain block on viewports where
-// position:sticky is not honoured (older browsers, print).
-.book-toc-sticky,
-.person-toc-sticky,
-.place-toc-sticky {
-  position: sticky;
-  top: 1.5rem;
-}
-
-// TOC list — keep it quiet so it doesn't compete with the content.
-%detail-toc {
-  .book-toc__heading,
-  .person-toc__heading,
-  .place-toc__heading {
-    letter-spacing: 0.05em;
-  }
-
-  ol {
-    border-left: 2px solid var(--bs-border-color);
-    padding-left: 0.75rem;
-    margin-left: 0.25rem;
-  }
-
-  li {
-    margin-bottom: 0.25rem;
-    line-height: 1.4;
-  }
-
-  a {
-    color: var(--bs-secondary-color);
-    text-decoration: none;
-    font-size: 0.92rem;
-    display: block;
-    padding: 0.15rem 0 0.15rem 0.25rem;
-    border-left: 2px solid transparent;
-    margin-left: -0.95rem;
-    padding-left: 0.7rem;
-    transition: color 120ms ease, border-color 120ms ease;
-
-    &:hover,
-    &:focus {
-      color: var(--bs-primary);
-    }
-
-    // .is-active is toggled by book_detail.js based on which section
-    // is currently in the viewport.
-    &.is-active {
-      color: var(--bs-primary);
-      border-left-color: var(--bs-primary);
-      font-weight: 600;
-    }
-  }
-}
-
-.book-toc,
-.person-toc,
-.place-toc {
-  @extend %detail-toc;
-}
+// all of them: .book-header, .book-section, plus the matching
+// person-/place-/topic-/series-/publisher-/occupation- variants.
 
 // Hero header — give the title some breathing room and de-emphasise
 // secondary lines.
@@ -178,20 +117,4 @@
 .places-map-sticky {
   position: sticky;
   top: 1.5rem;
-}
-
-// Mobile-only floating action button that opens the TOC offcanvas.
-// Hidden on md+; on small screens it lives in the bottom-left so the
-// thumb can reach it without covering the active section heading.
-.book-toc-fab,
-.person-toc-fab,
-.place-toc-fab {
-  position: fixed;
-  left: 1rem;
-  bottom: 1rem;
-  z-index: 1030;
-  border-radius: 999px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.5rem 0.9rem;
-  font-size: 0.875rem;
 }
