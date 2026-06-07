@@ -9,10 +9,21 @@ from django.core.management.base import BaseCommand
 from haskala_rdf.beacon import build_beacon_lines
 from haskala_rdf.export import build_data_graph, build_meta_graph
 from haskala_rdf.frontmatter import build_frontmatter_md
+from haskala_rdf.push import push_graph, target_from_settings
 
 
 class Command(BaseCommand):
-    help = "Export Haskala data to RDF (TTL + GZ), metagraph, frontmatter and BEACON."
+    help = (
+        "Export Haskala data to RDF (TTL + GZ), metagraph, frontmatter and "
+        "BEACON. Optionally push the data graph to a remote SPARQL endpoint."
+    )
+
+    def add_arguments(self, parser):
+        parser.add_argument(
+            "--no-push",
+            action="store_true",
+            help="Skip the SPARQL push even if HASKALA_SPARQL_PUSH_URL is set.",
+        )
 
     def handle(self, *args, **options):
         base = Path(settings.HASKALA_DUMPS_ROOT) / settings.HASKALA_SLUG
@@ -25,10 +36,10 @@ class Command(BaseCommand):
         # only ever holds the freshly produced files.
         if any(current.iterdir()):
             timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-            target = archive / timestamp
-            target.mkdir(parents=True)
+            target_dir = archive / timestamp
+            target_dir.mkdir(parents=True)
             for f in current.iterdir():
-                shutil.move(str(f), target / f.name)
+                shutil.move(str(f), target_dir / f.name)
 
         data_graph = build_data_graph()
         meta_graph = build_meta_graph(
@@ -65,4 +76,23 @@ class Command(BaseCommand):
 
         self.stdout.write(self.style.SUCCESS(
             f"Haskala RDF export completed: {current}"
+        ))
+
+        if options.get("no_push"):
+            return
+
+        push_target = target_from_settings(settings)
+        if push_target is None:
+            self.stdout.write(
+                "  (SPARQL push disabled — HASKALA_SPARQL_PUSH_URL is empty)"
+            )
+            return
+
+        self.stdout.write(
+            f"  Pushing {len(data_graph)} triples to {push_target.url} "
+            f"(graph: {push_target.graph_iri}, protocol: {push_target.protocol})"
+        )
+        response = push_graph(data_graph, push_target)
+        self.stdout.write(self.style.SUCCESS(
+            f"  SPARQL push complete: HTTP {response.status_code}"
         ))
