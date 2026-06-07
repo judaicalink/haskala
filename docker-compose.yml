@@ -19,11 +19,9 @@ services:
     image: haskala
     volumes:
       - .:/app
-      # Keep build artifacts produced inside the image from being shadowed
-      # by the bind mount above:
+      # Keep node_modules from being shadowed by the host bind mount —
+      # the image installs them, the host directory is gitignored.
       - /app/node_modules
-      - /app/haskala/static/css
-      - /app/haskala/static/js
       # STATIC_ROOT (per settings.base): /app/static is also where
       # collectstatic writes during the image build; sharing it with nginx
       # via the named volume lets nginx serve those files directly.
