@@ -1,15 +1,26 @@
 # docker-compose.yml
 #
-# Full development stack for the Haskala library platform.
+# Base stack for the Haskala library platform. Production overlays
+# monit / awstats / cron / postfix via docker-compose.prod.yml; for
+# day-to-day dev work this file is enough on its own.
+#
 # Services:
 #   web         - Django/Wagtail application (gunicorn behind nginx)
-#   db          - PostgreSQL 16 seeded from ./haskala.sql on first boot
+#   db          - PostgreSQL 16, restored on first boot from the
+#                 newest dump in ${HASKALA_DATA_DIR}/backups/{daily,
+#                 monthly}/ — or seeded from ${HASKALA_DATA_DIR}/
+#                 initial/haskala.sql when no backup exists.
 #   redis       - cache and django-redis backend
 #   solr        - search index
-#   fuseki      - RDF triple store
-#   mailserver  - MailHog dev SMTP/HTTP UI
+#   fuseki      - persistent TDB2 RDF store at ${HASKALA_DATA_DIR}/fuseki
+#   mailserver  - MailHog dev SMTP/HTTP UI (dev-only; production override
+#                 swaps in a postfix sidecar)
 #   nginx       - reverse proxy in front of web
-#   backups     - scheduled pg_dump of db into the named backups_data volume
+#   backups     - scheduled pg_dump of db into ${HASKALA_DATA_DIR}/
+#                 backups (daily 14d + monthly 12mo)
+#
+# All host-bound state lives under ${HASKALA_DATA_DIR} (default
+# ./data). Override for production with HASKALA_DATA_DIR=/srv/haskala.
 
 services:
   web:
@@ -58,7 +69,13 @@ services:
       POSTGRES_USER: haskala
       POSTGRES_PASSWORD: haskala
     volumes:
-      - ./haskala.sql:/docker-entrypoint-initdb.d/haskala.sql:ro
+      # On a fresh volume the init script auto-loads the newest dump
+      # under /backups/{daily,monthly}/ — falling back to /initial/
+      # haskala.sql when no backup is around. See docker/db-init/
+      # 00-restore-or-seed.sh.
+      - ./docker/db-init:/docker-entrypoint-initdb.d:ro
+      - ${HASKALA_DATA_DIR:-./data}/backups:/backups:ro
+      - ${HASKALA_DATA_DIR:-./data}/initial:/initial:ro
       - postgres_data:/var/lib/postgresql/data/
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U haskala -d haskala"]
@@ -83,10 +100,23 @@ services:
   fuseki:
     image: stain/jena-fuseki
     environment:
-      - ADMIN_PASSWORD=admin
+      - ADMIN_PASSWORD=${FUSEKI_ADMIN_PASSWORD:-admin}
+      # The image's entrypoint creates /fuseki-base/databases/$FUSEKI_DATASET
+      # and starts the server with --tdb2 --update at that location.
+      - FUSEKI_DATASET_1=haskala
     ports:
       - "3030:3030"
-    command: /jena-fuseki/fuseki-server --mem --update /haskala
+    volumes:
+      # /fuseki is the image's FUSEKI_BASE; it carries databases/,
+      # configuration/, backups/ and the shiro.ini auth file. Binding
+      # the whole tree means TDB2 data survives restarts, the named
+      # dataset stays put, and any admin tweaks via the API persist.
+      - ${HASKALA_DATA_DIR:-./data}/fuseki:/fuseki
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3030/$$/ping || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   mailserver:
     image: mailhog/mailhog
@@ -120,13 +150,13 @@ services:
       POSTGRES_USER: haskala
       POSTGRES_PASSWORD: haskala
       BACKUP_DIR: /backups
-      BACKUP_RETENTION_DAYS: "14"
+      BACKUP_RETENTION_DAYS_DAILY: "14"
+      BACKUP_RETENTION_DAYS_MONTHLY: "365"
       TZ: Europe/Berlin
     volumes:
-      - backups_data:/backups
+      - ${HASKALA_DATA_DIR:-./data}/backups:/backups
     restart: unless-stopped
 
 volumes:
   postgres_data:
   static_data:
-  backups_data:
