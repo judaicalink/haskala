@@ -1,0 +1,15 @@
+# Production cron schedule. Times are interpreted in the container's
+# TZ (Europe/Berlin per docker-compose.prod.yml).
+#
+# Daily Postgres backup is owned by the `backups` service in
+# docker-compose.yml — don't duplicate it here.
+
+# AWStats refresh every 30 minutes.
+*/30 * * * * /usr/local/bin/update_awstats.sh >> /var/log/cron-awstats.log 2>&1
+
+# Monthly Fuseki dump on the 1st at 04:15. Lands next to the SQL
+# monthlies under $BACKUP_DIR/monthly/.
+15 4 1 * * /usr/local/bin/backup_fuseki.sh >> /var/log/cron-fuseki.log 2>&1
+
+# Weekly logrotate of the AWStats access log and the cron own logs.
+0 3 * * 0 /usr/sbin/logrotate -f /etc/logrotate.d/haskala >> /var/log/cron-logrotate.log 2>&1
