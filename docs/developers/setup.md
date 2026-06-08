@@ -11,10 +11,39 @@ cd haskala
 docker compose up -d
 ```
 
-On first boot the `db` container loads `haskala.sql` from the repo
-root, the `web` container runs `python manage.py migrate`, and nginx
-proxies <http://localhost:8080/> to gunicorn. Solr, Redis, Fuseki and
-MailHog come up alongside.
+On first boot the `db` container runs
+`docker/db-init/00-restore-or-seed.sh` against the (empty) postgres
+data volume. The script:
+
+1. looks for the newest dump in `${HASKALA_DATA_DIR}/backups/daily/`,
+   then `monthly/`, and restores it via `psql`;
+2. if no backup exists, falls back to
+   `${HASKALA_DATA_DIR}/initial/haskala.sql`;
+3. if neither exists, leaves the database empty for `manage.py
+   migrate` to populate.
+
+`HASKALA_DATA_DIR` defaults to `./data`; set it via `.env` to point at
+a production location like `/srv/haskala`. After the DB is ready the
+`web` container runs `python manage.py migrate`, nginx proxies
+<http://localhost:8080/> to gunicorn, and Solr, Redis, Fuseki (persistent
+TDB2 at `${HASKALA_DATA_DIR}/fuseki/`) and MailHog come up alongside.
+
+The `backups` service runs a daily `pg_dump` at 02:30 UTC into
+`${HASKALA_DATA_DIR}/backups/daily/` (kept 14 days). On the first day of
+the month it additionally drops a monthly snapshot under
+`${HASKALA_DATA_DIR}/backups/monthly/` (kept 365 days). Force a backup
+at any time with:
+
+```bash
+docker compose exec backups /usr/local/bin/backup.sh
+```
+
+Restore the latest dump (across daily + monthly) into the running DB
+with:
+
+```bash
+docker compose exec backups /usr/local/bin/restore.sh latest
+```
 
 A superuser:
 

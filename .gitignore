@@ -22,6 +22,10 @@ node_modules/
 # RDF export output (settings.HASKALA_DUMPS_ROOT default location)
 /dumps/
 
+# Persistent host bind-mount for the docker stack (HASKALA_DATA_DIR).
+# Holds backups, fuseki data, initial seed SQL, awstats output etc.
+/data/
+
 # Generated theme assets (built via `npm run build:*` and `npm run copy:icons`)
 haskala/static/css/haskala.css
 haskala/static/css/haskala.css.map
