@@ -28,16 +28,26 @@ fi
 target="$1"
 
 if [ "${target}" = "latest" ]; then
-    target=$(ls -1t "${BACKUP_DIR}"/haskala-*.sql.gz 2>/dev/null | head -n 1 || true)
+    # Newest across daily/ and monthly/ wins.
+    target=$(ls -1t \
+        "${BACKUP_DIR}"/daily/haskala-*.sql.gz \
+        "${BACKUP_DIR}"/monthly/haskala-*.sql.gz \
+        2>/dev/null | head -n 1 || true)
     if [ -z "${target}" ]; then
-        echo "No backups found in ${BACKUP_DIR}" >&2
+        echo "No backups found under ${BACKUP_DIR}/{daily,monthly}/" >&2
         exit 1
     fi
 fi
 
 # Allow the caller to pass a bare filename or a fully-qualified path.
+# Bare names get resolved against daily/ first, then monthly/.
 if [[ "${target}" != /* ]]; then
-    target="${BACKUP_DIR}/${target}"
+    for candidate in "${BACKUP_DIR}/daily/${target}" "${BACKUP_DIR}/monthly/${target}" "${BACKUP_DIR}/${target}"; do
+        if [ -f "${candidate}" ]; then
+            target="${candidate}"
+            break
+        fi
+    done
 fi
 
 if [ ! -f "${target}" ]; then

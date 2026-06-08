@@ -11,10 +11,68 @@ cd haskala
 docker compose up -d
 ```
 
-On first boot the `db` container loads `haskala.sql` from the repo
-root, the `web` container runs `python manage.py migrate`, and nginx
-proxies <http://localhost:8080/> to gunicorn. Solr, Redis, Fuseki and
-MailHog come up alongside.
+On first boot the `db` container runs
+`docker/db-init/00-restore-or-seed.sh` against the (empty) postgres
+data volume. The script:
+
+1. looks for the newest dump in `${HASKALA_DATA_DIR}/backups/daily/`,
+   then `monthly/`, and restores it via `psql`;
+2. if no backup exists, falls back to
+   `${HASKALA_DATA_DIR}/initial/haskala.sql`;
+3. if neither exists, leaves the database empty for `manage.py
+   migrate` to populate.
+
+`HASKALA_DATA_DIR` defaults to `./data`; set it via `.env` to point at
+a production location like `/srv/haskala`. After the DB is ready the
+`web` container runs `python manage.py migrate`, nginx proxies
+<http://localhost:8080/> to gunicorn, and Solr, Redis, Fuseki (persistent
+TDB2 at `${HASKALA_DATA_DIR}/fuseki/`) and MailHog come up alongside.
+
+The `backups` service runs a daily `pg_dump` at 02:30 UTC into
+`${HASKALA_DATA_DIR}/backups/daily/` (kept 14 days). On the first day of
+the month it additionally drops a monthly snapshot under
+`${HASKALA_DATA_DIR}/backups/monthly/` (kept 365 days). Force a backup
+at any time with:
+
+```bash
+docker compose exec backups /usr/local/bin/backup.sh
+```
+
+Restore the latest dump (across daily + monthly) into the running DB
+with:
+
+```bash
+docker compose exec backups /usr/local/bin/restore.sh latest
+```
+
+### Production stack
+
+Production layers a second compose file on top of the base. It adds
+**monit** (watchdog), **awstats** (web statistics), **cron** (monthly
+Fuseki dump + AWStats refresh + logrotate) and a **postfix** sidecar
+that relays the Django contact form through the institutional SMTP
+server. MailHog is gated behind the `dev-only` compose profile and is
+not started.
+
+```bash
+cp .env.example .env
+# Edit .env: SECRET_KEY, ALLOWED_HOSTS, CSRF_TRUSTED_ORIGINS,
+# EMAIL_RELAY_HOST/USER/PASSWORD, FUSEKI_ADMIN_PASSWORD,
+# MONIT_USERNAME/PASSWORD, HASKALA_DATA_DIR=/srv/haskala (or similar).
+
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+```
+
+After the first cron tick, the proxied admin surfaces are reachable at:
+
+- `https://<host>/awstats/awstats.pl?config=haskala` — web statistics.
+- `https://<host>/monit/` — watchdog UI (basic auth via
+  `MONIT_USERNAME` / `MONIT_PASSWORD`).
+
+Monit polls each container every 30 s; if the relevant port stays
+unresponsive for five cycles it triggers `docker restart` via the
+mounted docker socket. See `docker/monit/monit.cfg` for the per-service
+rules.
 
 A superuser:
 

@@ -90,7 +90,7 @@ jobs:
           "
 
           bash docker/backups/backup.sh
-          ls -lh "$BACKUP_DIR"/haskala-*.sql.gz
+          ls -lh "$BACKUP_DIR"/daily/haskala-*.sql.gz
 
           # Drop the entire schema so the restore really has to do work.
           psql --host=localhost --username=haskala --dbname=haskala \
@@ -98,6 +98,21 @@ jobs:
                -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
 
           bash docker/backups/restore.sh latest
+
+          # Monthly-rollover exercise: re-run the backup with a date
+          # patched to "01" and confirm a monthly/ snapshot lands.
+          mkdir -p /tmp/_datebin
+          cat > /tmp/_datebin/date <<'PATCH'
+          #!/bin/sh
+          case "$*" in
+              *"+%d"*) echo 01 ;;
+              *"+%Y-%m"*) echo 2999-01 ;;
+              *) exec /usr/bin/date "$@" ;;
+          esac
+          PATCH
+          chmod +x /tmp/_datebin/date
+          PATH=/tmp/_datebin:$PATH bash docker/backups/backup.sh
+          ls -lh "$BACKUP_DIR"/monthly/haskala-2999-01.sql.gz
 
           python manage.py shell -c "
           from home.models import Book
