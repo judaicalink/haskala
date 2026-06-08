@@ -45,6 +45,35 @@ with:
 docker compose exec backups /usr/local/bin/restore.sh latest
 ```
 
+### Production stack
+
+Production layers a second compose file on top of the base. It adds
+**monit** (watchdog), **awstats** (web statistics), **cron** (monthly
+Fuseki dump + AWStats refresh + logrotate) and a **postfix** sidecar
+that relays the Django contact form through the institutional SMTP
+server. MailHog is gated behind the `dev-only` compose profile and is
+not started.
+
+```bash
+cp .env.example .env
+# Edit .env: SECRET_KEY, ALLOWED_HOSTS, CSRF_TRUSTED_ORIGINS,
+# EMAIL_RELAY_HOST/USER/PASSWORD, FUSEKI_ADMIN_PASSWORD,
+# MONIT_USERNAME/PASSWORD, HASKALA_DATA_DIR=/srv/haskala (or similar).
+
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+```
+
+After the first cron tick, the proxied admin surfaces are reachable at:
+
+- `https://<host>/awstats/awstats.pl?config=haskala` — web statistics.
+- `https://<host>/monit/` — watchdog UI (basic auth via
+  `MONIT_USERNAME` / `MONIT_PASSWORD`).
+
+Monit polls each container every 30 s; if the relevant port stays
+unresponsive for five cycles it triggers `docker restart` via the
+mounted docker socket. See `docker/monit/monit.cfg` for the per-service
+rules.
+
 A superuser:
 
 ```bash
