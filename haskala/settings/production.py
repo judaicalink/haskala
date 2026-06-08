@@ -49,6 +49,15 @@ SECURE_REFERRER_POLICY = env(
 )
 X_FRAME_OPTIONS = env("X_FRAME_OPTIONS", default="DENY")
 
+# In production the postfix sidecar accepts plain SMTP on the docker
+# network and relays out via the institutional SMTP server (see
+# docker-compose.prod.yml). Override the base module's TLS-on-465
+# defaults that target an external SMTP directly.
+EMAIL_HOST = env("EMAIL_HOST", default="postfix")
+EMAIL_PORT = env("EMAIL_PORT", default=25, cast=int)
+EMAIL_USE_TLS = env("EMAIL_USE_TLS", default=False, cast=bool)
+EMAIL_USE_SSL = env("EMAIL_USE_SSL", default=False, cast=bool)
+
 try:
     from .local import *  # noqa: F401,F403
 except ImportError:

@@ -1,0 +1,103 @@
+# Production overlay. Combines with the base docker-compose.yml:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#
+# What this file adds:
+#   monit     - watchdog + HTTP UI on :2812 (proxied via nginx as /monit/).
+#   awstats   - web statistics, reads nginx access logs via shared volume.
+#   cron      - scheduled work: AWStats refresh, monthly Fuseki dump,
+#               logrotate. (Daily Postgres backup stays on the `backups`
+#               service from the base file.)
+#   postfix   - relays outbound mail to the institutional SMTP server.
+#
+# What this file overrides:
+#   web       - point EMAIL_HOST at the postfix sidecar.
+#   mailserver - moved behind the "dev-only" compose profile so it does
+#               not start in production.
+#
+# Every host-bound state path lives under ${HASKALA_DATA_DIR:-./data}
+# — set it via .env for a production deploy (e.g. /srv/haskala).
+
+services:
+  web:
+    environment:
+      EMAIL_HOST: postfix
+      EMAIL_PORT: "25"
+      EMAIL_USE_TLS: "False"
+      DJANGO_SETTINGS_MODULE: haskala.settings.production
+
+  mailserver:
+    # MailHog is dev-only. Gating it behind a profile makes
+    # `docker compose up` (with the prod overlay and no profile flag)
+    # skip the container entirely.
+    profiles: ["dev-only"]
+
+  nginx:
+    # In production, nginx's access log lives on the same bind-mount
+    # AWStats reads from. The cron container rotates it.
+    volumes:
+      - ${HASKALA_DATA_DIR:-./data}/awstats/logs:/var/local/log
+
+  monit:
+    image: maltyxx/monit:latest
+    container_name: haskala-monit-1
+    environment:
+      MONIT_USERNAME: ${MONIT_USERNAME:-admin}
+      MONIT_PASSWORD: ${MONIT_PASSWORD:-admin}
+    volumes:
+      - ./docker/monit/monit.cfg:/etc/monit/monit.d/monit.cfg:ro
+      - ${HASKALA_DATA_DIR:-./data}/monit/logs:/var/log/monit
+      # Mounting the docker socket lets monit restart sibling
+      # containers when their health check fails. Read-only because
+      # monit only needs the "docker restart" verb.
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    expose: ["2812"]
+    restart: unless-stopped
+    depends_on: [web, nginx, db, redis, solr, fuseki]
+
+  awstats:
+    image: pabra/awstats:latest
+    container_name: haskala-awstats-1
+    environment:
+      TZ: Europe/Berlin
+    volumes:
+      - ./docker/awstats/config:/etc/awstats:ro
+      - ${HASKALA_DATA_DIR:-./data}/awstats/logs:/var/local/log:ro
+      - ${HASKALA_DATA_DIR:-./data}/awstats/data:/var/lib/awstats
+    expose: ["80"]
+    restart: unless-stopped
+    depends_on: [nginx]
+
+  cron:
+    build: ./docker/cron
+    container_name: haskala-cron-1
+    environment:
+      BACKUP_DIR: /backups
+      FUSEKI_URL: http://fuseki:3030
+      FUSEKI_USER: admin
+      FUSEKI_PASSWORD: ${FUSEKI_ADMIN_PASSWORD:-admin}
+      FUSEKI_DATASET: haskala
+      TZ: Europe/Berlin
+    volumes:
+      - ${HASKALA_DATA_DIR:-./data}/backups:/backups
+      - ${HASKALA_DATA_DIR:-./data}/awstats/logs:/var/local/log
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: unless-stopped
+    depends_on: [fuseki]
+
+  postfix:
+    image: boky/postfix:latest
+    container_name: haskala-postfix-1
+    environment:
+      # Without ALLOWED_SENDER_DOMAINS the relay would happily accept
+      # mail from anywhere on the docker network. Set this to the
+      # public mail-from domain (e.g. haskala-library.org).
+      ALLOWED_SENDER_DOMAINS: ${EMAIL_SENDER_DOMAIN:-}
+      RELAYHOST: ${EMAIL_RELAY_HOST:-}
+      RELAYHOST_USERNAME: ${EMAIL_RELAY_USER:-}
+      RELAYHOST_PASSWORD: ${EMAIL_RELAY_PASSWORD:-}
+      RELAYHOST_TLS_LEVEL: ${EMAIL_RELAY_TLS_LEVEL:-encrypt}
+    volumes:
+      - ${HASKALA_DATA_DIR:-./data}/postfix/spool:/var/spool/postfix
+    expose: ["25"]
+    restart: unless-stopped
