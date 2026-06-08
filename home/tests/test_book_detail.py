@@ -311,16 +311,33 @@ class SlugLookupTest(TestCase):
         self.assertEqual(book.slug, "voss-phadon-1789")
         self.assertEqual(book.get_absolute_url(), f"/books/{book.slug}/")
 
-    def test_person_slug_falls_back_to_hebrew(self):
+    def test_mixed_latin_hebrew_drops_the_hebrew_half(self):
+        person = Person.objects.create(
+            pref_label="Aaron, Joseph Philipp - אהרן, יוסף",
+        )
+        self.assertEqual(person.slug, "aaron-joseph-philipp")
+
+    def test_hebrew_only_person_falls_back_to_short_uuid(self):
         person = Person.objects.create(hebrew_name="אהרן יוסף")
-        self.assertTrue(person.slug)
-        self.assertIn("hrn", person.slug)
+        prefix, _, suffix = person.slug.partition("-")
+        self.assertEqual(prefix, "person")
+        self.assertEqual(len(suffix), 8)
 
     def test_city_slug_is_unique_on_collision(self):
         a = City.objects.create(name="Vienna")
         b = City.objects.create(name="Vienna")
         self.assertEqual(a.slug, "vienna")
         self.assertEqual(b.slug, "vienna-2")
+
+    def test_cyrillic_dropped_like_hebrew(self):
+        person = Person.objects.create(pref_label="Pushkin, Aleksander Сергеевич")
+        self.assertEqual(person.slug, "pushkin-aleksander")
+
+    def test_diacritics_survive_via_anyascii(self):
+        # Strip only non-Latin scripts; Latin-1 supplement diacritics
+        # should still flow through anyascii as expected.
+        book = Book.objects.create(name="Łódź für Voß")
+        self.assertEqual(book.slug, "lodz-fur-voss")
 
 
 @TEST_OVERRIDES

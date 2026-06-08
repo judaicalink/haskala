@@ -1982,22 +1982,70 @@ class StaticPage(Page):
     ]
 
 
+# Non-Latin Unicode ranges we drop from a slug source before
+# transliteration kicks in. Hebrew, Arabic and CJK don't have useful
+# ASCII transliterations for our use case — anyascii produces stubs
+# like "hrn-yvsf" for "אהרן, יוסף" that read as random consonant
+# noise next to the actual Latin name. Stripping them up front leaves
+# only the Latin parts ("Aaron, Joseph Philipp"), which anyascii can
+# then normalise to ASCII for diacritics like umlauts.
+_NON_LATIN_SCRIPT_RANGES = (
+    (0x0370, 0x03FF),   # Greek
+    (0x0400, 0x04FF),   # Cyrillic
+    (0x0500, 0x052F),   # Cyrillic Supplement
+    (0x0530, 0x058F),   # Armenian
+    (0x0590, 0x05FF),   # Hebrew
+    (0x0600, 0x06FF),   # Arabic
+    (0x0700, 0x074F),   # Syriac
+    (0x0750, 0x077F),   # Arabic Supplement
+    (0x0780, 0x07BF),   # Thaana
+    (0x0900, 0x097F),   # Devanagari
+    (0x4E00, 0x9FFF),   # CJK Unified Ideographs
+    (0x3040, 0x309F),   # Hiragana
+    (0x30A0, 0x30FF),   # Katakana
+    (0xAC00, 0xD7AF),   # Hangul syllables
+)
+
+
+def _strip_non_latin_script(value: str) -> str:
+    """Remove characters from non-Latin Unicode scripts."""
+    if not value:
+        return ""
+    out_chars = []
+    for ch in value:
+        cp = ord(ch)
+        if any(lo <= cp <= hi for lo, hi in _NON_LATIN_SCRIPT_RANGES):
+            continue
+        out_chars.append(ch)
+    return "".join(out_chars)
+
+
 def generate_unique_slug(instance, value, slug_field_name="slug"):
     """
     Generate a unique slug for instance, based on value (e.g. name).
 
-    The input is first transliterated to ASCII so Hebrew, Cyrillic,
-    German umlauts and other non-Latin scripts produce sensible
-    URLs ("אהרן, יוסף" → "ahrn-yvsf", "Voß" → "voss") rather than
-    slugifying to an empty string.
+    Pipeline:
+      1. Strip characters from non-Latin scripts (Hebrew, Cyrillic,
+         Arabic, CJK, Greek, …) so they don't bleed into the slug as
+         transliterated noise.
+      2. anyascii the remainder so Latin diacritics ("Voß" → "voss",
+         "Łódź" → "lodz") survive intact.
+      3. slugify and de-duplicate against the existing rows by
+         appending -2, -3, …
+
+    If the source string transliterates to empty (a Hebrew-only name,
+    say), fall back to <modelclass>-<short uuid> so the URL is still
+    short and recognisable.
     """
     from anyascii import anyascii
 
     ModelClass = instance.__class__
 
-    base = slugify(anyascii(value or ""))
+    cleaned = _strip_non_latin_script(value or "")
+    base = slugify(anyascii(cleaned))
     if not base:
-        base = f"{ModelClass.__name__.lower()}-{instance.pk or ''}".strip("-")
+        short_id = str(instance.pk or "")[:8]
+        base = f"{ModelClass.__name__.lower()}-{short_id}".strip("-")
 
     slug = base
     i = 2
