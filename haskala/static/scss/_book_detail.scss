@@ -21,7 +21,14 @@
   margin-bottom: 1.5rem;
   text-align: center;
 
-  &__title { line-height: 1.2; }
+  &__title {
+    line-height: 1.2;
+    // Body headings are uppercased globally (see _layout.scss).
+    // The entity title carries the actual book/person/place name and
+    // can be long; uppercasing makes a five-word German title nearly
+    // unreadable. Keep the original case.
+    text-transform: none;
+  }
   &__latin { color: var(--bs-secondary-color); }
   &__alt {
     line-height: 1.3;
@@ -121,13 +128,17 @@
   // RTL contexts) instead of stacking centered.
   text-align: start;
 
+  // Section body is text-align: start, but every heading inside
+  // the section (including __heading, sub-section h3s, etc.) sits
+  // centered so it reads as a divider rather than as another body
+  // row.
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
   &__heading {
     margin-bottom: 1rem;
     color: var(--bs-emphasis-color);
-    // The body of the section sits left-aligned (text-align: start
-    // on the section block), but the H2 heading itself stays
-    // centered as a divider between sections.
-    text-align: center;
   }
 
   // Definition lists are the workhorse format on these pages.

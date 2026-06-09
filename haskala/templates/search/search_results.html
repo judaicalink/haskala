@@ -12,7 +12,6 @@
             {# --- Query row: full-width input, Search + Reset on the right --- #}
             <div class="row g-2 align-items-end">
                 <div class="col-md-9">
-                    <label for="id_q" class="form-label">Search for</label>
                     <input
                             type="text"
                             name="q"
@@ -20,6 +19,7 @@
                             class="form-control form-control-lg"
                             value="{{ query }}"
                             placeholder="Search in books, persons, places…"
+                            aria-label="Search"
                             autofocus
                     >
                 </div>
