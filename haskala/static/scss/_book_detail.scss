@@ -6,7 +6,9 @@
 // person-/place-/topic-/series-/publisher-/occupation- variants.
 
 // Hero header — give the title some breathing room and de-emphasise
-// secondary lines.
+// secondary lines. The header now centers its own action row and
+// keeps Hebrew / Latin alt-titles aligned inside the header block
+// rather than letting them drift into the section grid below.
 .book-header,
 .person-header,
 .place-header,
@@ -17,31 +19,70 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--bs-border-color);
   margin-bottom: 1.5rem;
+  text-align: center;
 
   &__title { line-height: 1.2; }
   &__latin { color: var(--bs-secondary-color); }
-  &__alt { line-height: 1.3; }
+  &__alt {
+    line-height: 1.3;
+    // Hebrew / alt-script lines that aren't tagged with dir="rtl" on
+    // the element still need to sit centered inside the header block,
+    // not bleed into the first section's grid layout below.
+    display: block;
+    margin-top: 0.35rem;
+    direction: rtl;
+    unicode-bidi: isolate;
+    font-size: 1.125rem;
+  }
 
   &__actions {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+
+    // Badge-shaped action chips need their own padding because the
+    // .badge utility otherwise renders them flush — and a darker
+    // fill with light text reads better against the warm cream / white
+    // background of the header.
+    .badge,
+    a.badge,
+    a.btn.badge,
+    .book-header__action {
+      padding: 0.5rem 0.85rem;
+      font-size: 0.875rem;
+      line-height: 1.2;
+      color: #fff;
+      background-color: $haskala-black;
+      border-color: $haskala-black;
+
+      &:hover,
+      &:focus {
+        background-color: $haskala-blue;
+        border-color: $haskala-blue;
+        color: #fff;
+      }
+    }
   }
 }
 
 // Person chip — used in the Book header to list authors with their role.
+// Uses !important on padding because Bootstrap's .badge utility (which
+// the chip extends in some templates) sets its own padding that would
+// otherwise win the cascade.
 .person-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.15rem 0.5rem;
+  gap: 0.5rem;
+  padding: 0.45rem 0.95rem !important;
   border-radius: 999px;
   border: 1px solid var(--bs-border-color);
   background: var(--bs-tertiary-bg);
   color: var(--bs-body-color);
   text-decoration: none;
-  font-size: 0.875rem;
-  line-height: 1.2;
+  font-size: 0.92rem;
+  line-height: 1.25;
 
   &:hover,
   &:focus {
@@ -51,8 +92,16 @@
 
   &__role {
     color: var(--bs-secondary-color);
-    font-size: 0.78rem;
+    font-size: 0.82rem;
   }
+}
+
+// Force a readable foreground on Bootstrap's secondary-text-bg badge.
+// Bootstrap's default for .text-bg-secondary picks #000 against a mid
+// grey — passes contrast but reads weak. Use white instead.
+.badge.text-bg-secondary,
+.badge.bg-secondary {
+  color: #fff !important;
 }
 
 // Section spacing on the content column. The first section sits flush
@@ -113,8 +162,89 @@
   font-size: 0.875rem;
 }
 
-// Sticky overview map on the right of the /places/ index page.
-.places-map-sticky {
-  position: sticky;
-  top: 1.5rem;
+// Search results page — chip-style facet bar that replaces the
+// dropdown "Result type" select. The active facet uses the brand
+// blue fill; inactive facets read as outlined neutrals.
+.search-facets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-facet {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--bs-body-color);
+  background: #fff;
+  text-decoration: none;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+
+  &:hover,
+  &:focus {
+    background: var(--bs-tertiary-bg);
+    color: var(--bs-primary);
+  }
+
+  &__count {
+    color: var(--bs-secondary-color);
+    font-weight: 400;
+    text-transform: none;
+    font-size: 0.875rem;
+  }
+
+  &.is-active {
+    background: $haskala-blue;
+    color: #fff;
+    border-color: $haskala-blue;
+
+    .search-facet__count {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.search-results-heading {
+  margin: 1.5rem 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+.search-results-section {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.search-empty {
+  font-size: 1.05rem;
+  padding: 1.5rem 0;
+}
+
+// Landscape overview map at the top of the /places/ index page.
+// Full-width banner with a fixed pixel height — long aspect ratio
+// works better than a tall sidebar map for the European geography
+// the dataset covers.
+.places-map-landscape {
+  width: 100%;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem 1rem;
+  background: #fff;
+
+  h2 {
+    letter-spacing: 0.05em;
+  }
+
+  #places-map {
+    border-radius: 4px;
+    overflow: hidden;
+  }
 }

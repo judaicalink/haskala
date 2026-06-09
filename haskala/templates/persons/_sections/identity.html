@@ -1,23 +1,24 @@
+{% load value_filters %}
 <dl class="row mb-0">
-    {% if person.pref_label %}
+    {% if person.pref_label|clean_value %}
         <dt class="col-sm-4">Preferred label</dt>
-        <dd class="col-sm-8">{{ person.pref_label }}</dd>
+        <dd class="col-sm-8">{{ person.pref_label|clean_value }}</dd>
     {% endif %}
-    {% if person.german_name %}
+    {% if person.german_name|clean_value %}
         <dt class="col-sm-4">German name</dt>
-        <dd class="col-sm-8">{{ person.german_name }}</dd>
+        <dd class="col-sm-8">{{ person.german_name|clean_value }}</dd>
     {% endif %}
-    {% if person.hebrew_name %}
+    {% if person.hebrew_name|clean_value %}
         <dt class="col-sm-4">Hebrew name</dt>
-        <dd class="col-sm-8" lang="he" dir="rtl">{{ person.hebrew_name }}</dd>
+        <dd class="col-sm-8" lang="he" dir="rtl">{{ person.hebrew_name|clean_value }}</dd>
     {% endif %}
-    {% if person.pseudonym %}
+    {% if person.pseudonym|clean_value %}
         <dt class="col-sm-4">Pseudonym</dt>
-        <dd class="col-sm-8">{{ person.pseudonym }}</dd>
+        <dd class="col-sm-8">{{ person.pseudonym|clean_value }}</dd>
     {% endif %}
-    {% if person.gender %}
+    {% if person.gender|clean_value %}
         <dt class="col-sm-4">Gender</dt>
-        <dd class="col-sm-8">{{ person.gender }}</dd>
+        <dd class="col-sm-8">{{ person.gender|clean_value }}</dd>
     {% endif %}
     {% if person.occupations.all %}
         <dt class="col-sm-4">Occupations</dt>
