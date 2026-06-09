@@ -17,7 +17,6 @@ from wagtail.contrib.forms.panels import FormSubmissionsPanel
 from wagtail.fields import RichTextField
 from wagtail.models import Page, RevisionMixin, DraftStateMixin
 from wagtail.search import index
-from wagtail.snippets.models import register_snippet
 
 from .book_admin import build_book_panels
 
@@ -85,7 +84,6 @@ class LegacyImportedModel(models.Model):
 
 
 # Language model
-@register_snippet
 class Language(models.Model):
     """
     Model for the languages.
@@ -107,7 +105,6 @@ class Language(models.Model):
 
 
 # Alignment of text (vid = 7)
-@register_snippet
 class Alignment(models.Model):
     """
     Alignment of text (Drupal vocabulary: 'Alignment of text', vid = 7)
@@ -128,7 +125,6 @@ class Alignment(models.Model):
 
 
 # Fonts (vid = 10)
-@register_snippet
 class Font(models.Model):
     """
     Fonts used in the publications (Drupal vocabulary: 'Fonts', vid = 10)
@@ -149,7 +145,6 @@ class Font(models.Model):
 
 
 # Publishers (vid = 14)
-@register_snippet
 class Publisher(models.Model):
     """
     Publishers (Drupal vocabulary: 'Publishers', vid = 14)
@@ -177,7 +172,6 @@ class Publisher(models.Model):
 
 
 # Series (vid = 16)
-@register_snippet
 class Series(models.Model):
     """
     Series titles (Drupal vocabulary: 'Series', vid = 16)
@@ -205,7 +199,6 @@ class Series(models.Model):
 
 
 # Target audience (vid = 17)
-@register_snippet
 class TargetAudience(models.Model):
     """
     Target audience (Drupal vocabulary: 'Target audience', vid = 17)
@@ -226,7 +219,6 @@ class TargetAudience(models.Model):
 
 
 # Typography (vid = 19)
-@register_snippet
 class Typography(models.Model):
     """
     Typography (Drupal vocabulary: 'Typography', vid = 19)
@@ -247,7 +239,6 @@ class Typography(models.Model):
 
 
 # Date format (vid = 8)
-@register_snippet
 class DateFormat(models.Model):
     """
     Format of dates (Drupal vocabulary: 'Date format', vid = 8)
@@ -268,7 +259,6 @@ class DateFormat(models.Model):
 
 
 # Textual models (vid = 3: 'Models')
-@register_snippet
 class TextualModel(models.Model):
     """
     Textual models (Drupal vocabulary: 'Models', vid = 3)
@@ -290,7 +280,6 @@ class TextualModel(models.Model):
 
 
 # Language counts (vid = 2: 'Language counts')
-@register_snippet
 class LanguageCount(models.Model):
     """
     Language count categories (Drupal vocabulary: 'Language counts', vid = 2)
@@ -311,7 +300,6 @@ class LanguageCount(models.Model):
         return self.name
 
 
-@register_snippet
 class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
     """
     Model for the cities
@@ -336,7 +324,6 @@ class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
         return f"/places/{self.slug}/" if self.slug else f"/places/{self.uuid}/"
 
 
-@register_snippet
 # Geolocations
 class Geolocation(models.Model):
     """
@@ -357,7 +344,6 @@ class Geolocation(models.Model):
         return self.city.name
 
 
-@register_snippet
 class Gender(models.Model):
     name = models.CharField(max_length=255)
     legacy_tid = models.IntegerField(unique=True)
@@ -366,7 +352,6 @@ class Gender(models.Model):
         return self.name
 
 
-@register_snippet
 class Occupation(models.Model):
     name = models.CharField(max_length=255)
     legacy_tid = models.IntegerField(unique=True)
@@ -375,7 +360,6 @@ class Occupation(models.Model):
         return self.name
 
 
-@register_snippet
 class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
     """
     Model for the person.
@@ -437,7 +421,6 @@ class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
         return f"/persons/{self.slug}/" if self.slug else f"/persons/{self.uuid}/"
 
 
-@register_snippet
 class Edition(LegacyImportedModel):
     """
     Model for the editions.
@@ -474,7 +457,6 @@ class Edition(LegacyImportedModel):
 
 
 # Translation type
-@register_snippet
 class TranslationType(models.Model):
     """
     Model for the translation types
@@ -489,7 +471,6 @@ class TranslationType(models.Model):
         return self.name
 
 
-@register_snippet
 class Translation(LegacyImportedModel):
     """
     Model for the Translations
@@ -519,7 +500,6 @@ class Translation(LegacyImportedModel):
     year_format = models.CharField(max_length=255, choices=FORMAT_CHOICES, default='NULL', blank=True, null=True)
 
 
-@register_snippet
 class Mention(LegacyImportedModel):
     """
     Model for Mentions
@@ -543,7 +523,6 @@ class Mention(LegacyImportedModel):
     mentionee_description = models.ForeignKey("MentionDescription", null=True, blank=True, on_delete=models.SET_NULL)
 
 
-@register_snippet
 class Preface(LegacyImportedModel):
     """
     Model for the Prefaces
@@ -572,7 +551,6 @@ class Preface(LegacyImportedModel):
         verbose_name_plural = "Prefaces"
 
 
-@register_snippet
 class Production(LegacyImportedModel):
     """
     Model for the Production
@@ -591,7 +569,6 @@ class Production(LegacyImportedModel):
     role = models.ForeignKey("ProductionRole", null=True, blank=True, on_delete=models.SET_NULL)
 
 
-@register_snippet
 class Topic(models.Model):
     name = models.CharField(max_length=255)
     legacy_tid = models.IntegerField(unique=True)
@@ -600,7 +577,6 @@ class Topic(models.Model):
         return self.name
 
 
-@register_snippet
 class BookAuthor(models.Model):
     book = ParentalKey("Book", on_delete=models.CASCADE)
     person = models.ForeignKey("Person", on_delete=models.CASCADE)
@@ -619,7 +595,6 @@ class BookAuthor(models.Model):
         ]
 
 
-@register_snippet
 class MentionDescription(models.Model):
     name = models.CharField(max_length=255)
     legacy_tid = models.IntegerField(unique=True)
@@ -628,7 +603,6 @@ class MentionDescription(models.Model):
         return self.name
 
 
-@register_snippet
 class ProductionRole(models.Model):
     name = models.CharField(max_length=255)
     legacy_tid = models.IntegerField(unique=True)
@@ -637,7 +611,6 @@ class ProductionRole(models.Model):
         return self.name
 
 
-@register_snippet
 class FootnoteLocation(models.Model):
     """
     Location of footnotes (e.g. bottom of page, end of chapter, end of book).
@@ -658,7 +631,6 @@ class FootnoteLocation(models.Model):
         return self.name
 
 
-@register_snippet
 class OriginalType(models.Model):
     """
     Original type (Drupal vocabulary for 'original_type', e.g. original work,
