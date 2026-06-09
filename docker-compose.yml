@@ -95,7 +95,9 @@ services:
       - solr-precreate
       - haskala
     ports:
-      - "8983:8983"
+      # Bind to the loopback only — Solr has no auth in our dev setup
+      # and would otherwise be reachable from any host on the LAN.
+      - "127.0.0.1:8983:8983"
 
   fuseki:
     image: stain/jena-fuseki
@@ -105,7 +107,9 @@ services:
       # and starts the server with --tdb2 --update at that location.
       - FUSEKI_DATASET_1=haskala
     ports:
-      - "3030:3030"
+      # Loopback-only: dev Fuseki uses admin/admin and would otherwise
+      # be reachable from any host on the LAN.
+      - "127.0.0.1:3030:3030"
     volumes:
       # /fuseki is the image's FUSEKI_BASE; it carries databases/,
       # configuration/, backups/ and the shiro.ini auth file. Binding
@@ -121,8 +125,9 @@ services:
   mailserver:
     image: mailhog/mailhog
     ports:
-      - "1025:1025"
-      - "8025:8025"
+      # Loopback-only for the same reason as Solr / Fuseki below.
+      - "127.0.0.1:1025:1025"
+      - "127.0.0.1:8025:8025"
 
   nginx:
     image: nginx:alpine

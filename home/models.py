@@ -2,7 +2,6 @@ import secrets
 import uuid as uuid
 from collections import defaultdict
 
-from SPARQLWrapper import SPARQLWrapper, JSON
 from django.contrib import messages
 from django.db import models
 from django.template.defaultfilters import slugify
@@ -61,40 +60,6 @@ def sort_and_group_by_name(objects):
         grouped_names[first_letter].append(name)
 
     return grouped_names
-
-
-def get_people_names(self):
-    """
-    This function queries the rdf file for all instances of the class Person and returns their names
-    :param self:
-    :return: results
-    """
-    # make a request to the rdf file
-    try:
-        sparql = SPARQLWrapper("http://localhost:3030/haskala/sparql")
-        # write the query which selects all instances of the class Person per name
-        sparql.setQuery("""
-            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            PREFIX hs: <http://localhost/ontology#>
-
-            SELECT ?person ?name ?gender ?occupation ?german_name ?hebrew_name ?VIAF_ID ?same_as
-            WHERE { ?person foaf:name ?name .
-            }
-            ORDER BY asc(?name)
-        """)
-        sparql.setReturnFormat(JSON)
-        results = sparql.query().convert()
-        # print(results)
-        return results
-    except Exception as e:
-        print(e)
-        print("No people found")
-        print("Check FUSEKI server")
-        return None
 
 
 def group_names_by_first_letter(names):

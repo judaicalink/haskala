@@ -1,0 +1,69 @@
+# Dependabot keeps the three ecosystems we ship under version
+# control current with their upstream releases:
+#   - pip:    requirements.txt
+#   - npm:    package.json / package-lock.json
+#   - github-actions: every workflow under .github/workflows/
+#
+# All three open weekly PRs against the development branch. Major
+# version bumps land in their own PR so the upgrade work stays
+# reviewable; patch and minor bumps batch together.
+version: 2
+
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 5
+    target-branch: development
+    labels: [dependencies, python]
+    commit-message:
+      prefix: "deps(pip)"
+    groups:
+      # Batch patch+minor bumps for the noisy core stack so review
+      # stays manageable; majors still file individually.
+      django-ecosystem:
+        patterns:
+          - "Django*"
+          - "django-*"
+          - "wagtail*"
+        update-types:
+          - patch
+          - minor
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 5
+    target-branch: development
+    labels: [dependencies, javascript]
+    commit-message:
+      prefix: "deps(npm)"
+    groups:
+      bootstrap-stack:
+        patterns:
+          - "bootstrap*"
+          - "@popperjs/*"
+        update-types:
+          - patch
+          - minor
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 3
+    target-branch: development
+    labels: [dependencies, ci]
+    commit-message:
+      prefix: "deps(actions)"
