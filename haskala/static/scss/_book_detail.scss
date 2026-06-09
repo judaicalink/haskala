@@ -116,14 +116,18 @@
   scroll-margin-top: 5rem; // sticky-header offset for #anchor jumps
   padding-top: 1.25rem;
   padding-bottom: 1rem;
-
-  &:not(:first-of-type) {
-    border-top: 1px solid var(--bs-border-color);
-  }
+  // Body sets `text-align: center` globally; reset to the natural
+  // start edge so dl rows read left-to-right (or right-to-left in
+  // RTL contexts) instead of stacking centered.
+  text-align: start;
 
   &__heading {
     margin-bottom: 1rem;
     color: var(--bs-emphasis-color);
+    // The body of the section sits left-aligned (text-align: start
+    // on the section block), but the H2 heading itself stays
+    // centered as a divider between sections.
+    text-align: center;
   }
 
   // Definition lists are the workhorse format on these pages.
