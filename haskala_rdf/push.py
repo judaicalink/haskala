@@ -5,10 +5,12 @@ Two protocols are supported:
 
 - **Graph Store Protocol (GSP)** — the default. Uploads the serialized
   Turtle as the entire content of one named graph via HTTP PUT. Fuseki
-  exposes this at ``/<dataset>/data``.
-- **SPARQL 1.1 Update** — falls back to inline ``DROP SILENT GRAPH …;
-  INSERT DATA { GRAPH … { … } }`` over HTTP POST when ``protocol="update"``.
-  Fuseki's update endpoint is ``/<dataset>/update``.
+  exposes this at ``/<dataset>/data``. djangordf's FusekiBackend does
+  not cover GSP itself, so this path stays on plain ``requests.put``.
+- **SPARQL 1.1 Update** — routes through
+  :class:`djangordf.backends.fuseki.FusekiBackend`. We send one
+  ``DROP SILENT GRAPH …; INSERT DATA { GRAPH … { … } }`` transaction
+  that the backend posts to ``/<dataset>/update``.
 
 Both paths replace the named graph wholesale; calling the push twice
 produces the same end state.
@@ -30,19 +32,19 @@ class PushTarget:
     timeout_seconds: int = 60
 
 
-def push_graph(graph: Graph, target: PushTarget) -> requests.Response:
+def push_graph(graph: Graph, target: PushTarget):
     """
-    Push *graph* to *target.url*. Returns the underlying HTTP Response.
+    Push *graph* to *target.url*. Returns either a ``requests.Response``
+    (gsp path) or ``None`` (update path — djangordf's backend has no
+    response object to surface).
 
     Raises ``requests.HTTPError`` on a 4xx/5xx response so callers can
-    fail loudly. Otherwise the caller gets the response object back
-    and can inspect status / headers.
+    fail loudly.
     """
-    body = graph.serialize(format="turtle")
-    if isinstance(body, str):
-        body = body.encode("utf-8")
-
     if target.protocol == "gsp":
+        body = graph.serialize(format="turtle")
+        if isinstance(body, str):
+            body = body.encode("utf-8")
         response = requests.put(
             target.url,
             params={"graph": target.graph_iri},
@@ -51,34 +53,45 @@ def push_graph(graph: Graph, target: PushTarget) -> requests.Response:
             auth=target.auth,
             timeout=target.timeout_seconds,
         )
-    elif target.protocol == "update":
-        # Strip the @prefix and @base lines out of the Turtle and wrap
-        # the rest in a SPARQL UPDATE block. rdflib's `application/
-        # sparql-update` is easier to construct from N-Triples than
-        # from Turtle because UPDATE statements use SPARQL syntax for
-        # prefixes — keep things simple and ship the triples raw.
+        response.raise_for_status()
+        return response
+
+    if target.protocol == "update":
+        # Route through djangordf's FusekiBackend so the same library
+        # handles SPARQL writes everywhere in the JudaicaLink stack.
+        # We pass the dataset root (stripping a /update / /data tail
+        # if the caller pre-attached one).
+        from djangordf.backends.fuseki import FusekiBackend
+
+        endpoint = target.url
+        for suffix in ("/update", "/data", "/query"):
+            if endpoint.endswith(suffix):
+                endpoint = endpoint[: -len(suffix)]
+                break
+        backend_kwargs: dict = {"endpoint": endpoint}
+        if target.auth is not None:
+            backend_kwargs["user"], backend_kwargs["password"] = target.auth
+        backend = FusekiBackend(**backend_kwargs)
+
+        # Serialize the graph to N-Triples and wrap in a single SPARQL
+        # transaction. djangordf's backend.update() POSTs the body to
+        # /<dataset>/update with the right content-type.
         nt = graph.serialize(format="nt")
-        if isinstance(nt, str):
-            nt = nt.encode("utf-8")
-        update = (
+        if isinstance(nt, bytes):
+            nt = nt.decode("utf-8")
+        sparql = (
             f"DROP SILENT GRAPH <{target.graph_iri}> ;\n"
             f"INSERT DATA {{ GRAPH <{target.graph_iri}> {{\n"
-        ).encode("utf-8") + nt + b"\n} }"
-        response = requests.post(
-            target.url,
-            data=update,
-            headers={"Content-Type": "application/sparql-update; charset=utf-8"},
-            auth=target.auth,
-            timeout=target.timeout_seconds,
+            f"{nt}\n"
+            f"}} }}"
         )
-    else:
-        raise ValueError(
-            f"Unsupported push protocol: {target.protocol!r} "
-            f"(expected 'gsp' or 'update')"
-        )
+        backend.update(sparql)
+        return None
 
-    response.raise_for_status()
-    return response
+    raise ValueError(
+        f"Unsupported push protocol: {target.protocol!r} "
+        f"(expected 'gsp' or 'update')"
+    )
 
 
 def target_from_settings(settings_module) -> PushTarget | None:
