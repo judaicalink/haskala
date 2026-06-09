@@ -13,10 +13,12 @@
 //     updating the moodboard) ---
 $haskala-base:    #5e5d58;  // body text & icons (warm grey)
 $haskala-dark:    #595752;  // hover state for body text / dividers
-$haskala-black:   #0D0D0D;  // headings & high-contrast text
+$haskala-black:   #0D0D0D;  // optional high-contrast accent (kept for callers)
 $haskala-cream:   #F2F1DC;  // page wash / decorative background
 
-$haskala-blue:    #4992F2;  // primary link / brand
+// Links stay on the historical teal-blue; the moodboard cobalt
+// (#4992F2) didn't carry the same scholarly tone.
+$haskala-blue:    #1f6e94;  // primary link / brand
 $haskala-blue-2:  #5F94D9;  // secondary blue (info / muted accents)
 $haskala-cyan:    #82C0D9;  // soft accent / success-ish
 $haskala-violet:  #797FF2;  // info / facets
@@ -58,7 +60,9 @@ $font-family-base:        $font-family-sans-serif;
 $headings-font-family:    'bell_mtbold', $font-family-sans-serif;
 $headings-font-weight:    700;
 $headings-line-height:    1.15;
-$headings-color:          $haskala-black;
+// Headings track the body colour rather than near-black; the user
+// finds the latter too punchy against the warm grey of body copy.
+$headings-color:          $haskala-base;
 
 // =========================================================
 // GLOBAL COLORS (Bootstrap)
