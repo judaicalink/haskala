@@ -12,7 +12,6 @@
             {# --- Query row: full-width input, Search + Reset on the right --- #}
             <div class="row g-2 align-items-end">
                 <div class="col-md-9">
-                    <label for="id_q" class="form-label">Search for</label>
                     <input
                             type="text"
                             name="q"
@@ -20,12 +19,13 @@
                             class="form-control form-control-lg"
                             value="{{ query }}"
                             placeholder="Search in books, persons, places…"
+                            aria-label="Search"
                             autofocus
                     >
                 </div>
                 <div class="col-md-3 d-flex gap-2">
                     <button type="submit" class="btn btn-primary flex-grow-1">Search</button>
-                    <a href="{% url 'search' %}" class="btn btn-outline-secondary">Reset</a>
+                    <a href="{% url 'search' %}" class="btn btn-secondary">Reset</a>
                 </div>
             </div>
 

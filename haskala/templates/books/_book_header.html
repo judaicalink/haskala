@@ -11,7 +11,7 @@
     </h1>
 
     {% if book.title_in_latin_characters %}
-        <p class="book-header__latin text-muted fst-italic mb-2">
+        <p class="book-header__latin text-muted mb-2">
             {{ book.title_in_latin_characters }}
         </p>
     {% endif %}
@@ -31,19 +31,19 @@
     <div class="book-header__actions">
         {% if book.digital_book_url %}
             <a href="{{ book.digital_book_url }}" target="_blank" rel="noopener"
-               class="btn btn-sm btn-outline-info">
+               class="btn btn-sm btn-secondary">
                 <i class="bi bi-book"></i> View digital copy
             </a>
         {% endif %}
-        <button type="button" class="btn btn-sm btn-outline-secondary"
+        <button type="button" class="badge text-bg-secondary"
                 data-bs-toggle="modal" data-bs-target="#book-cite-modal">
             <i class="bi bi-quote"></i> Cite
         </button>
-        <button type="button" class="btn btn-sm btn-outline-secondary"
+        <button type="button" class="badge text-bg-secondary"
                 data-bs-toggle="modal" data-bs-target="#book-export-modal">
             <i class="bi bi-file-earmark-arrow-down"></i> Export
         </button>
-        <button type="button" class="btn btn-sm btn-outline-secondary"
+        <button type="button" class="badge text-bg-secondary"
                 data-permalink="{{ request.build_absolute_uri }}"
                 aria-label="Copy permalink">
             <i class="bi bi-link-45deg"></i> Permalink

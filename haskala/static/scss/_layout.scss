@@ -21,12 +21,13 @@ body {
   position: relative; // kommt aus overrides.css
 }
 
-// Überschriften: uppercase + Haskala-Headline-Font
+// Überschriften: uppercase + Haskala-Headline-Font + body grey
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
+  color: $haskala-base;
 }
 
 // Links – nutzen nur noch die Bootstrap-Variablen

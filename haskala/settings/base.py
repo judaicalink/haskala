@@ -391,6 +391,13 @@ HASKALA_SPARQL_PUSH_USER = env("HASKALA_SPARQL_PUSH_USER", default="")
 HASKALA_SPARQL_PUSH_PASSWORD = env("HASKALA_SPARQL_PUSH_PASSWORD", default="")
 HASKALA_SPARQL_PUSH_TIMEOUT = env("HASKALA_SPARQL_PUSH_TIMEOUT", default=60, cast=int)
 
+# hCaptcha keys for the public /contact/ form. Get them from
+# https://dashboard.hcaptcha.com/. Leave empty to disable the
+# challenge (e.g. on local dev where you'd otherwise need real
+# keys to submit the form).
+HCAPTCHA_SITE_KEY = env("HCAPTCHA_SITE_KEY", default="")
+HCAPTCHA_SECRET_KEY = env("HCAPTCHA_SECRET_KEY", default="")
+
 # djangordf is the JudaicaLink-internal Django/RDF bridge. We use it
 # from haskala_rdf.push() to talk SPARQL Update to Fuseki; the
 # build_data_graph() pipeline keeps producing the raw rdflib graph

@@ -10,9 +10,13 @@ ENV PYTHONUNBUFFERED=1 \
     PORT=8000
 
 # System dependencies for Wagtail, Pillow, the database client, GeoDjango
-# (libgdal for django-leaflet) and the asset pipeline.
+# (libgdal for django-leaflet) and the asset pipeline. Node 22 comes
+# from NodeSource — the Debian-bookworm package is Node 18, which can't
+# `require()` an ES Module, and our sass dependency pulls in
+# chokidar@4 which is ESM-only.
 RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-recommends \
     gnupg2 \
+    curl \
     ca-certificates \
     build-essential \
     libpq-dev \
@@ -24,8 +28,8 @@ RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-r
     libgdal-dev \
     gdal-bin \
     cron \
-    nodejs \
-    npm \
+ && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+ && apt-get install --yes --quiet --no-install-recommends nodejs \
  && rm -rf /var/lib/apt/lists/*
 
 # Application server is installed via requirements.txt (the explicit
