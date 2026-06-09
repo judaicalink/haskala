@@ -10,10 +10,6 @@
         </ul>
     </nav>
 
-    {# Hebrew alphabet — direction and unicode-bidi: isolate so the
-       letters render in their canonical right-to-left order. Without
-       these, list-inline puts the elements left-to-right and the
-       Hebrew alphabet reads backwards. #}
     <nav class="heb" dir="rtl">
         <ul class="list-inline" style="unicode-bidi: isolate;">
             {% for letter in hebrew_alphabet %}
