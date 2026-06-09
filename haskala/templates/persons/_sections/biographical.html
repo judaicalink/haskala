@@ -1,9 +1,10 @@
+{% load value_filters %}
 <dl class="row mb-0">
-    {% if person.date_of_birth %}
+    {% if person.date_of_birth|clean_value %}
         <dt class="col-sm-4">Date of birth</dt>
-        <dd class="col-sm-8">{{ person.date_of_birth }}</dd>
+        <dd class="col-sm-8">{{ person.date_of_birth|clean_value }}</dd>
     {% endif %}
-    {% if person.place_of_birth %}
+    {% if person.place_of_birth|clean_value %}
         <dt class="col-sm-4">Place of birth</dt>
         <dd class="col-sm-8">
             <a href="{% url 'place-detail' person.place_of_birth.slug %}">
@@ -11,11 +12,11 @@
             </a>
         </dd>
     {% endif %}
-    {% if person.date_of_death %}
+    {% if person.date_of_death|clean_value %}
         <dt class="col-sm-4">Date of death</dt>
-        <dd class="col-sm-8">{{ person.date_of_death }}</dd>
+        <dd class="col-sm-8">{{ person.date_of_death|clean_value }}</dd>
     {% endif %}
-    {% if person.place_of_death %}
+    {% if person.place_of_death|clean_value %}
         <dt class="col-sm-4">Place of death</dt>
         <dd class="col-sm-8">
             <a href="{% url 'place-detail' person.place_of_death.slug %}">

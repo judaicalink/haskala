@@ -1,5 +1,6 @@
+{% load value_filters %}
 <dl class="row mb-0">
-    {% if book.publisher %}
+    {% if book.publisher|clean_value %}
         <dt class="col-sm-4">Publisher</dt>
         <dd class="col-sm-8">
             {% if book.publisher.slug %}
@@ -9,7 +10,7 @@
             {% endif %}
         </dd>
     {% endif %}
-    {% if book.original_publisher %}
+    {% if book.original_publisher|clean_value %}
         <dt class="col-sm-4">Original publisher</dt>
         <dd class="col-sm-8">
             {% if book.original_publisher.slug %}
@@ -19,7 +20,7 @@
             {% endif %}
         </dd>
     {% endif %}
-    {% if book.publication_place %}
+    {% if book.publication_place|clean_value %}
         <dt class="col-sm-4">Publication place</dt>
         <dd class="col-sm-8">
             <a href="{% url 'place-detail' book.publication_place.slug %}">
@@ -27,47 +28,47 @@
             </a>
         </dd>
     {% endif %}
-    {% if book.publication_place_other %}
+    {% if book.publication_place_other|clean_value %}
         <dt class="col-sm-4">Other publication place</dt>
         <dd class="col-sm-8">{{ book.publication_place_other.name }}</dd>
     {% endif %}
-    {% if book.gregorian_year %}
+    {% if book.gregorian_year|clean_value %}
         <dt class="col-sm-4">Year (Gregorian)</dt>
-        <dd class="col-sm-8">{{ book.gregorian_year }}</dd>
+        <dd class="col-sm-8">{{ book.gregorian_year|clean_value }}</dd>
     {% endif %}
-    {% if book.year_in_book %}
+    {% if book.year_in_book|clean_value %}
         <dt class="col-sm-4">Year as in book</dt>
-        <dd class="col-sm-8">{{ book.year_in_book }}</dd>
+        <dd class="col-sm-8">{{ book.year_in_book|clean_value }}</dd>
     {% endif %}
-    {% if book.year_in_other %}
+    {% if book.year_in_other|clean_value %}
         <dt class="col-sm-4">Year (other reference)</dt>
-        <dd class="col-sm-8">{{ book.year_in_other }}</dd>
+        <dd class="col-sm-8">{{ book.year_in_other|clean_value }}</dd>
     {% endif %}
-    {% if book.hebrew_year_of_publication %}
+    {% if book.hebrew_year_of_publication|clean_value %}
         <dt class="col-sm-4">Hebrew year of publication</dt>
-        <dd class="col-sm-8">{{ book.hebrew_year_of_publication }}</dd>
+        <dd class="col-sm-8">{{ book.hebrew_year_of_publication|clean_value }}</dd>
     {% endif %}
-    {% if book.hebrew_year_pub_other %}
+    {% if book.hebrew_year_pub_other|clean_value %}
         <dt class="col-sm-4">Hebrew year (other reference)</dt>
-        <dd class="col-sm-8">{{ book.hebrew_year_pub_other }}</dd>
+        <dd class="col-sm-8">{{ book.hebrew_year_pub_other|clean_value }}</dd>
     {% endif %}
-    {% if book.gregorian_year_pub_other %}
+    {% if book.gregorian_year_pub_other|clean_value %}
         <dt class="col-sm-4">Gregorian year (other reference)</dt>
-        <dd class="col-sm-8">{{ book.gregorian_year_pub_other }}</dd>
+        <dd class="col-sm-8">{{ book.gregorian_year_pub_other|clean_value }}</dd>
     {% endif %}
-    {% if book.format_of_publication_date %}
+    {% if book.format_of_publication_date|clean_value %}
         <dt class="col-sm-4">Format of publication date</dt>
         <dd class="col-sm-8">{{ book.format_of_publication_date.name }}</dd>
     {% endif %}
-    {% if book.partial_publication %}
+    {% if book.partial_publication|clean_value %}
         <dt class="col-sm-4">Partial publication</dt>
-        <dd class="col-sm-8">{{ book.partial_publication }}</dd>
+        <dd class="col-sm-8">{{ book.partial_publication|clean_value }}</dd>
     {% endif %}
-    {% if book.printed_originally %}
+    {% if book.printed_originally|clean_value %}
         <dt class="col-sm-4">Printed originally</dt>
-        <dd class="col-sm-8">{{ book.printed_originally }}</dd>
+        <dd class="col-sm-8">{{ book.printed_originally|clean_value }}</dd>
     {% endif %}
-    {% if book.original_publication_place %}
+    {% if book.original_publication_place|clean_value %}
         <dt class="col-sm-4">Original publication place</dt>
         <dd class="col-sm-8">
             <a href="{% url 'place-detail' book.original_publication_place.slug %}">
@@ -75,27 +76,27 @@
             </a>
         </dd>
     {% endif %}
-    {% if book.original_publication_year %}
+    {% if book.original_publication_year|clean_value %}
         <dt class="col-sm-4">Original publication year</dt>
-        <dd class="col-sm-8">{{ book.original_publication_year }}</dd>
+        <dd class="col-sm-8">{{ book.original_publication_year|clean_value }}</dd>
     {% endif %}
-    {% if book.printers %}
+    {% if book.printers|clean_value %}
         <dt class="col-sm-4">Printers</dt>
-        <dd class="col-sm-8">{{ book.printers }}</dd>
+        <dd class="col-sm-8">{{ book.printers|clean_value }}</dd>
     {% endif %}
-    {% if book.printing_press_notes %}
+    {% if book.printing_press_notes|clean_value %}
         <dt class="col-sm-4">Printing press notes</dt>
-        <dd class="col-sm-8">{{ book.printing_press_notes }}</dd>
+        <dd class="col-sm-8">{{ book.printing_press_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.printing_press_references %}
+    {% if book.printing_press_references|clean_value %}
         <dt class="col-sm-4">Printing press references</dt>
-        <dd class="col-sm-8">{{ book.printing_press_references }}</dd>
+        <dd class="col-sm-8">{{ book.printing_press_references|clean_value }}</dd>
     {% endif %}
-    {% if book.production_evidence %}
+    {% if book.production_evidence|clean_value %}
         <dt class="col-sm-4">Production evidence</dt>
-        <dd class="col-sm-8">{{ book.production_evidence }}</dd>
+        <dd class="col-sm-8">{{ book.production_evidence|clean_value }}</dd>
     {% endif %}
-    {% if book.series %}
+    {% if book.series|clean_value %}
         <dt class="col-sm-4">Series</dt>
         <dd class="col-sm-8">
             {% if book.series.slug %}
@@ -103,10 +104,10 @@
             {% else %}
                 {{ book.series.name }}
             {% endif %}
-            {% if book.series_part %}<span class="text-muted small">&middot; part {{ book.series_part }}</span>{% endif %}
+            {% if book.series_part|clean_value %}<span class="text-muted small">&middot; part {{ book.series_part|clean_value }}</span>{% endif %}
         </dd>
     {% elif book.series_part %}
         <dt class="col-sm-4">Series part</dt>
-        <dd class="col-sm-8">{{ book.series_part }}</dd>
+        <dd class="col-sm-8">{{ book.series_part|clean_value }}</dd>
     {% endif %}
 </dl>

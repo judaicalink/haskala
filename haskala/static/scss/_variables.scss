@@ -1,157 +1,180 @@
 // =========================================================
-// HASKALA COLOR SYSTEM
+// HASKALA COLOR SYSTEM (curated palette, 2026-06)
 // =========================================================
+//
+// Palette taken from the designer's mood boards. The old grey-brown
+// (#615f59) read as washed-out on white; the new base (#5e5d58)
+// keeps the same warm grey character but with a touch more weight,
+// and headings shift to a near-black (#0D0D0D) so titles actually
+// punch out from body copy. The blues swap from teal towards a
+// modern cobalt; gold and wine stay as the heritage accents.
 
-// --- Brand Colors ---
-// Primary text/link colours target WCAG AA (4.5:1) against white. The
-// old #7dbad7 sat at ~2.5:1 and failed; the deeper teal-blue below
-// is ~6.7:1.
-$haskala-brown:      #615f59;  // Hauptschriftfarbe / Grundton
-$haskala-blue:       #1f6e94;  // Linkfarbe / Akzent (kontrastreich)
-$haskala-blue-light: #7dbad7;  // historisches Hellblau, dekorativ
-$haskala-gold:       #a07a2c;  // Hover-Akzent (kontrastreich)
-$haskala-yellow:     #ffcd36;  // Hervorhebung / Warnung (hell)
-$haskala-dark:       #363327;  // Sehr dunkler Kontrastton
+// --- Curated palette (do not edit individual swatches without
+//     updating the moodboard) ---
+$haskala-base:    #5e5d58;  // body text & icons (warm grey)
+$haskala-dark:    #595752;  // hover state for body text / dividers
+$haskala-black:   #0D0D0D;  // headings & high-contrast text
+$haskala-cream:   #F2F1DC;  // page wash / decorative background
 
-// --- Extended Palette (z. B. für Kategorien, Facetten, Hinweise) ---
-$haskala-darkblue: #3e4f57;
-$haskala-beige:    #d6ad7c;
-$haskala-grayblue: #7d8e96;
-$haskala-green:    #a4d67c;
-$haskala-purple:   #d07cd6;
-$haskala-mint:     #7cd6c2;
-$haskala-oliv:     #d6c07c;
+$haskala-blue:    #4992F2;  // primary link / brand
+$haskala-blue-2:  #5F94D9;  // secondary blue (info / muted accents)
+$haskala-cyan:    #82C0D9;  // soft accent / success-ish
+$haskala-violet:  #797FF2;  // info / facets
+
+$haskala-gold:    #A67F38;  // hover accent / warning
+$haskala-red:     #D92B4B;  // danger / strong highlight
+$haskala-wine:    #733C3C;  // heritage accent / book-header trim
+
+// --- Aliases kept for older partials that still reference the
+//     pre-2026 names. New code should reach for the curated names
+//     above. ---
+$haskala-brown:      $haskala-base;
+$haskala-darkblue:   $haskala-blue-2;
+$haskala-blue-light: $haskala-cyan;
+$haskala-yellow:     $haskala-gold;
+$haskala-beige:      $haskala-cream;
+$haskala-grayblue:   $haskala-blue-2;
+$haskala-green:      $haskala-cyan;
+$haskala-purple:     $haskala-violet;
+$haskala-mint:       $haskala-cyan;
+$haskala-oliv:       $haskala-gold;
 
 // =========================================================
 // TYPOGRAPHY
 // =========================================================
+
+// Bump the base font from Bootstrap's 16px-but-with-13px-effective
+// to a clean 16px so body copy is comfortable to read on dense
+// catalog pages. Headings stay relative to this so the whole scale
+// grows together.
+$font-size-base:   1rem;
+$font-size-sm:     0.875rem;
+$font-size-lg:     1.125rem;
+$line-height-base: 1.55;
 
 $font-family-sans-serif: 'open_sansregular', Arial, sans-serif;
 $font-family-base:        $font-family-sans-serif;
 
 $headings-font-family:    'bell_mtbold', $font-family-sans-serif;
 $headings-font-weight:    700;
-$headings-line-height:    1.1;
+$headings-line-height:    1.15;
+$headings-color:          $haskala-black;
 
 // =========================================================
 // GLOBAL COLORS (Bootstrap)
 // =========================================================
 
-// Background + Text
 $body-bg:      #ffffff;
-$body-color:   $haskala-brown; // Haupttextfarbe
+$body-color:   $haskala-base;
 
-// Text and Links
-$link-color:         $haskala-blue;
-$link-hover-color:   $haskala-gold;
-$link-decoration:    none;
+$link-color:            $haskala-blue;
+$link-hover-color:      $haskala-gold;
+$link-decoration:       none;
 $link-hover-decoration: none;
 
-// Borders
-$border-color:       #eae9e7;
-$hr-border-color:    $haskala-brown;
+$border-color:    #eae9e7;
+$hr-border-color: $haskala-base;
 
 // =========================================================
 // BOOTSTRAP THEME OVERRIDES
 // =========================================================
 
-// Primary Theme Colors
 $primary:   $haskala-blue;
-$secondary: $haskala-grayblue;
-$success:   $haskala-green;
-$info:      $haskala-darkblue;
-$warning:   $haskala-yellow;
-$danger:    $haskala-purple;  // du kannst statt Lila auch Rot definieren
+$secondary: $haskala-base;       // dark badges (per request)
+$success:   $haskala-cyan;
+$info:      $haskala-violet;
+$warning:   $haskala-gold;
+$danger:    $haskala-red;
 
-// Bootstrap 4/5
-$primary:   $haskala-blue;
-$secondary: $haskala-grayblue;
-$success:   $haskala-green;
-$info:      $haskala-mint;
-$warning:   $haskala-yellow;
-$danger:    $haskala-purple;
+// Bootstrap 3-Kompatibilität (some older partials still use these)
+$brand-primary: $haskala-blue;
+$brand-success: $haskala-cyan;
+$brand-info:    $haskala-violet;
+$brand-warning: $haskala-gold;
+$brand-danger:  $haskala-red;
 
-// Bootstrap 3-Kompatibilität
-$brand-primary:   $haskala-blue;
-$brand-success:   $haskala-green;
-$brand-info:      $haskala-mint;
-$brand-warning:   $haskala-yellow;
-$brand-danger:    $haskala-purple;
-
-// Buttons konkreter
+// Buttons
 $btn-border-radius: 4px;
-$btn-font-weight:        600;
+$btn-font-weight:   600;
 
-$btn-primary-bg:         $haskala-blue;
-$btn-primary-border:     darken($haskala-blue, 5%);
+$btn-primary-bg:     $haskala-blue;
+$btn-primary-border: darken($haskala-blue, 5%);
 
-$btn-default-bg:         #ffffff;
-$btn-default-color:      $haskala-brown;
-$btn-default-border:     $border-color;
+$btn-default-bg:     #ffffff;
+$btn-default-color:  $haskala-base;
+$btn-default-border: $border-color;
 
-$btn-success-bg:         $haskala-green;
-$btn-success-border:     darken($haskala-green, 5%);
+$btn-success-bg:     $haskala-cyan;
+$btn-success-border: darken($haskala-cyan, 5%);
 
-$btn-info-bg:            $haskala-mint;
-$btn-info-border:        darken($haskala-mint, 5%);
+$btn-info-bg:        $haskala-violet;
+$btn-info-border:    darken($haskala-violet, 5%);
 
-$btn-warning-bg:         $haskala-yellow;
-$btn-warning-border:     darken($haskala-yellow, 5%);
+$btn-warning-bg:     $haskala-gold;
+$btn-warning-border: darken($haskala-gold, 5%);
 
-$btn-danger-bg:          $haskala-purple;
-$btn-danger-border:      darken($haskala-purple, 5%);
+$btn-danger-bg:      $haskala-red;
+$btn-danger-border:  darken($haskala-red, 5%);
 
-// Navbar (falls du Bootstrap-Navigation nutzt)
-$navbar-default-color:                $haskala-brown;
-$navbar-default-link-color:           $haskala-brown;
-$navbar-default-link-hover-color:     $haskala-blue;
-$navbar-default-brand-color:          $haskala-brown;
-$navbar-default-brand-hover-color:    $haskala-blue;
-
+// Navbar
+$navbar-default-color:             $haskala-base;
+$navbar-default-link-color:        $haskala-base;
+$navbar-default-link-hover-color:  $haskala-blue;
+$navbar-default-brand-color:       $haskala-base;
+$navbar-default-brand-hover-color: $haskala-blue;
 
 // Forms
-$input-border-color:      $border-color;
-$input-color:             $haskala-brown;
+$input-border-color: $border-color;
+$input-color:        $haskala-base;
 
 // Tables
-$table-border-color:      $border-color;
+$table-border-color: $border-color;
 
 // Pagination
-$pagination-color:         $haskala-blue;
-$pagination-hover-color:   $haskala-gold;
+$pagination-color:       $haskala-blue;
+$pagination-hover-color: $haskala-gold;
 
-// Cards (Bootstrap 4/5)
-$card-border-color:        $border-color;
+// Cards
+$card-border-color: $border-color;
 
 // =========================================================
 // LAYOUT
 // =========================================================
 
-// Wrapper Layout
-$wrapper-max-width: 950px;
-$site-padding-x:    20px;
+// Wider wrapper so the catalog detail pages don't squeeze rich
+// definition lists into a narrow column on desktop. Legal pages
+// get their own narrow wrapper via .container--narrow below.
+$wrapper-max-width: 1280px;
+$wrapper-narrow-max-width: 760px;
+$site-padding-x:    24px;
 
 // =========================================================
-// OPTIONAL: CUSTOM COLOR MAP (für spätere automatische Generierung)
+// Custom colour map (kept for legacy callers + future generation)
 // =========================================================
-
-// Diese Map erlaubt dir, für Kategorien oder Facettengruppen sofort Farben zuzuweisen.
 
 $haskala-color-map: (
-  "brown":     $haskala-brown,
-  "blue":      $haskala-blue,
-  "gold":      $haskala-gold,
-  "yellow":    $haskala-yellow,
-  "dark":      $haskala-dark,
-  "darkblue":  $haskala-darkblue,
-  "beige":     $haskala-beige,
-  "grayblue":  $haskala-grayblue,
-  "green":     $haskala-green,
-  "purple":    $haskala-purple,
-  "mint":      $haskala-mint,
-  "oliv":      $haskala-oliv,
+  "base":     $haskala-base,
+  "dark":     $haskala-dark,
+  "black":    $haskala-black,
+  "cream":    $haskala-cream,
+  "blue":     $haskala-blue,
+  "blue-2":   $haskala-blue-2,
+  "cyan":     $haskala-cyan,
+  "violet":   $haskala-violet,
+  "gold":     $haskala-gold,
+  "red":      $haskala-red,
+  "wine":     $haskala-wine,
+  // legacy aliases:
+  "brown":    $haskala-base,
+  "yellow":   $haskala-gold,
+  "darkblue": $haskala-blue-2,
+  "beige":    $haskala-cream,
+  "grayblue": $haskala-blue-2,
+  "green":    $haskala-cyan,
+  "purple":   $haskala-violet,
+  "mint":     $haskala-cyan,
+  "oliv":     $haskala-gold,
 );
-
 
 @function color($name) {
   @return map-get($haskala-color-map, $name);

@@ -1,3 +1,4 @@
+{% load value_filters %}
 {% if book.editions.all %}
     <h3 class="h6 mt-3">Known editions</h3>
     <ul class="list-unstyled mb-3">
@@ -13,68 +14,68 @@
 {% endif %}
 
 <dl class="row mb-0">
-    {% if book.total_number_of_editions %}
+    {% if book.total_number_of_editions|clean_value %}
         <dt class="col-sm-4">Total number of editions</dt>
-        <dd class="col-sm-8">{{ book.total_number_of_editions }}</dd>
+        <dd class="col-sm-8">{{ book.total_number_of_editions|clean_value }}</dd>
     {% endif %}
-    {% if book.last_known_edition %}
+    {% if book.last_known_edition|clean_value %}
         <dt class="col-sm-4">Last known edition</dt>
-        <dd class="col-sm-8">{{ book.last_known_edition }}</dd>
+        <dd class="col-sm-8">{{ book.last_known_edition|clean_value }}</dd>
     {% endif %}
-    {% if book.editions_notes %}
+    {% if book.editions_notes|clean_value %}
         <dt class="col-sm-4">Editions notes</dt>
-        <dd class="col-sm-8">{{ book.editions_notes }}</dd>
+        <dd class="col-sm-8">{{ book.editions_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.references_for_editions %}
+    {% if book.references_for_editions|clean_value %}
         <dt class="col-sm-4">References for editions</dt>
-        <dd class="col-sm-8">{{ book.references_for_editions }}</dd>
+        <dd class="col-sm-8">{{ book.references_for_editions|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_general_notes %}
+    {% if book.new_edition_general_notes|clean_value %}
         <dt class="col-sm-4">New edition notes</dt>
-        <dd class="col-sm-8">{{ book.new_edition_general_notes }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_general_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_type_in_text %}
+    {% if book.new_edition_type_in_text|clean_value %}
         <dt class="col-sm-4">New edition type (in book)</dt>
-        <dd class="col-sm-8">{{ book.new_edition_type_in_text }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_type_in_text|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_type_elsewhere %}
+    {% if book.new_edition_type_elsewhere|clean_value %}
         <dt class="col-sm-4">New edition type (elsewhere)</dt>
-        <dd class="col-sm-8">{{ book.new_edition_type_elsewhere }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_type_elsewhere|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_type_reference %}
+    {% if book.new_edition_type_reference|clean_value %}
         <dt class="col-sm-4">New edition type reference</dt>
-        <dd class="col-sm-8">{{ book.new_edition_type_reference }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_type_reference|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_type_else_ref %}
+    {% if book.new_edition_type_else_ref|clean_value %}
         <dt class="col-sm-4">New edition type (other reference)</dt>
-        <dd class="col-sm-8">{{ book.new_edition_type_else_ref }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_type_else_ref|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_type_notes %}
+    {% if book.new_edition_type_notes|clean_value %}
         <dt class="col-sm-4">New edition type notes</dt>
-        <dd class="col-sm-8">{{ book.new_edition_type_notes }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_type_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.new_edition_type_else_note %}
+    {% if book.new_edition_type_else_note|clean_value %}
         <dt class="col-sm-4">New edition type (other notes)</dt>
-        <dd class="col-sm-8">{{ book.new_edition_type_else_note }}</dd>
+        <dd class="col-sm-8">{{ book.new_edition_type_else_note|clean_value }}</dd>
     {% endif %}
-    {% if book.copy_of_book_used %}
+    {% if book.copy_of_book_used|clean_value %}
         <dt class="col-sm-4">Copy of book used</dt>
-        <dd class="col-sm-8">{{ book.copy_of_book_used }}</dd>
+        <dd class="col-sm-8">{{ book.copy_of_book_used|clean_value }}</dd>
     {% endif %}
-    {% if book.other_volumes %}
+    {% if book.other_volumes|clean_value %}
         <dt class="col-sm-4">Other volumes</dt>
-        <dd class="col-sm-8">{{ book.other_volumes }}</dd>
+        <dd class="col-sm-8">{{ book.other_volumes|clean_value }}</dd>
     {% endif %}
-    {% if book.volumes_notes %}
+    {% if book.volumes_notes|clean_value %}
         <dt class="col-sm-4">Volume notes</dt>
-        <dd class="col-sm-8">{{ book.volumes_notes }}</dd>
+        <dd class="col-sm-8">{{ book.volumes_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.volumes_published_number %}
+    {% if book.volumes_published_number|clean_value %}
         <dt class="col-sm-4">Volumes published</dt>
-        <dd class="col-sm-8">{{ book.volumes_published_number }}</dd>
+        <dd class="col-sm-8">{{ book.volumes_published_number|clean_value }}</dd>
     {% endif %}
-    {% if book.planned_volumes %}
+    {% if book.planned_volumes|clean_value %}
         <dt class="col-sm-4">Planned volumes</dt>
-        <dd class="col-sm-8">{{ book.planned_volumes }}</dd>
+        <dd class="col-sm-8">{{ book.planned_volumes|clean_value }}</dd>
     {% endif %}
 </dl>

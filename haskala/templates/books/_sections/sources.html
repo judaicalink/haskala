@@ -1,54 +1,55 @@
+{% load value_filters %}
 <dl class="row mb-0">
-    {% if book.bibliographical_citations %}
+    {% if book.bibliographical_citations|clean_value %}
         <dt class="col-sm-4">Bibliographical citations</dt>
-        <dd class="col-sm-8">{{ book.bibliographical_citations|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.bibliographical_citations|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.studies %}
+    {% if book.studies|clean_value %}
         <dt class="col-sm-4">Studies</dt>
-        <dd class="col-sm-8">{{ book.studies|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.studies|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.sources_exist %}
+    {% if book.sources_exist|clean_value %}
         <dt class="col-sm-4">Sources exist</dt>
-        <dd class="col-sm-8">{{ book.sources_exist }}</dd>
+        <dd class="col-sm-8">{{ book.sources_exist|clean_value }}</dd>
     {% endif %}
-    {% if book.sources_list %}
+    {% if book.sources_list|clean_value %}
         <dt class="col-sm-4">Sources</dt>
-        <dd class="col-sm-8">{{ book.sources_list|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.sources_list|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.sources_not_mentioned %}
+    {% if book.sources_not_mentioned|clean_value %}
         <dt class="col-sm-4">Sources not mentioned in book</dt>
-        <dd class="col-sm-8">{{ book.sources_not_mentioned }}</dd>
+        <dd class="col-sm-8">{{ book.sources_not_mentioned|clean_value }}</dd>
     {% endif %}
-    {% if book.sources_not_mentioned_list %}
+    {% if book.sources_not_mentioned_list|clean_value %}
         <dt class="col-sm-4">Sources not mentioned (list)</dt>
-        <dd class="col-sm-8">{{ book.sources_not_mentioned_list|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.sources_not_mentioned_list|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.sources_not_mentioned_ref %}
+    {% if book.sources_not_mentioned_ref|clean_value %}
         <dt class="col-sm-4">Sources not mentioned (reference)</dt>
-        <dd class="col-sm-8">{{ book.sources_not_mentioned_ref }}</dd>
+        <dd class="col-sm-8">{{ book.sources_not_mentioned_ref|clean_value }}</dd>
     {% endif %}
-    {% if book.sources_references %}
+    {% if book.sources_references|clean_value %}
         <dt class="col-sm-4">Source references</dt>
-        <dd class="col-sm-8">{{ book.sources_references|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.sources_references|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.jewish_sources_quotes %}
+    {% if book.jewish_sources_quotes|clean_value %}
         <dt class="col-sm-4">Quotes from Jewish sources</dt>
-        <dd class="col-sm-8">{{ book.jewish_sources_quotes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.jewish_sources_quotes|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.non_jewish_sources_quotes %}
+    {% if book.non_jewish_sources_quotes|clean_value %}
         <dt class="col-sm-4">Quotes from non-Jewish sources</dt>
-        <dd class="col-sm-8">{{ book.non_jewish_sources_quotes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.non_jewish_sources_quotes|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.original_sources_mention %}
+    {% if book.original_sources_mention|clean_value %}
         <dt class="col-sm-4">Original source mention</dt>
-        <dd class="col-sm-8">{{ book.original_sources_mention }}</dd>
+        <dd class="col-sm-8">{{ book.original_sources_mention|clean_value }}</dd>
     {% endif %}
-    {% if book.references_notes %}
+    {% if book.references_notes|clean_value %}
         <dt class="col-sm-4">References notes</dt>
-        <dd class="col-sm-8">{{ book.references_notes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.references_notes|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.secondary_sources %}
+    {% if book.secondary_sources|clean_value %}
         <dt class="col-sm-4">Secondary sources</dt>
-        <dd class="col-sm-8">{{ book.secondary_sources|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.secondary_sources|clean_value|linebreaksbr }}</dd>
     {% endif %}
 </dl>
