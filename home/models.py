@@ -1506,9 +1506,26 @@ class ContactPage(AbstractEmailForm):
     def serve(self, request, *args, **kwargs):
         """
         Handle form display + submission with success/error messages.
+
+        When HCAPTCHA_SITE_KEY + HCAPTCHA_SECRET_KEY are set, the
+        h-captcha-response field is verified against hCaptcha's
+        siteverify endpoint before the form-data is processed. An
+        empty / failed verification re-renders the form with an
+        error so spam can't reach the inbox.
         """
         if request.method == "POST":
             form = self.get_form(request.POST, request.FILES)
+
+            hcaptcha_error = self._verify_hcaptcha(request)
+            if hcaptcha_error:
+                context = self.get_context(request)
+                context["form"] = form
+                context["hcaptcha_error"] = hcaptcha_error
+                return TemplateResponse(
+                    request,
+                    self.get_template(request),
+                    context,
+                )
 
             if form.is_valid():
                 try:
@@ -1568,6 +1585,50 @@ class ContactPage(AbstractEmailForm):
             self.get_template(request),
             context,
         )
+
+    def get_context(self, request, *args, **kwargs):
+        """Expose HCAPTCHA_SITE_KEY so the template can render the
+        widget. Empty string disables the widget cleanly."""
+        from django.conf import settings as dj_settings
+        ctx = super().get_context(request, *args, **kwargs)
+        ctx["HCAPTCHA_SITE_KEY"] = getattr(dj_settings, "HCAPTCHA_SITE_KEY", "") or ""
+        return ctx
+
+    def _verify_hcaptcha(self, request):
+        """Verify the h-captcha-response field against hCaptcha's
+        siteverify endpoint. Returns None on success or when the
+        feature is disabled (no secret configured), otherwise an
+        error string the template renders next to the widget."""
+        import requests
+        from django.conf import settings as dj_settings
+
+        secret = getattr(dj_settings, "HCAPTCHA_SECRET_KEY", "") or ""
+        if not secret:
+            # hCaptcha disabled; treat every submission as verified.
+            return None
+
+        token = request.POST.get("h-captcha-response", "")
+        if not token:
+            return "Please complete the captcha challenge."
+
+        try:
+            response = requests.post(
+                "https://api.hcaptcha.com/siteverify",
+                data={"secret": secret, "response": token,
+                      "remoteip": request.META.get("REMOTE_ADDR", "")},
+                timeout=10,
+            )
+            response.raise_for_status()
+        except requests.RequestException:
+            # If the verifier is unreachable we err on the safe side
+            # and reject — better a temporary "try again" than a spam
+            # leak through an outage.
+            return "Captcha verification is unavailable right now. Please try again later."
+
+        data = response.json()
+        if data.get("success"):
+            return None
+        return "Captcha verification failed. Please try again."
 
 
 class BookDetailPage(Page):
