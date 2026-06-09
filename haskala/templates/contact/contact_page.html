@@ -28,7 +28,7 @@
 
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <form action="{% pageurl page %}" method="POST" novalidate>
+                    <form action="{% pageurl page %}" method="POST">
                         {% csrf_token %}
 
                         {# Form-Fehler oben gesammelt #}
