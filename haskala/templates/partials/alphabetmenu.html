@@ -10,9 +10,8 @@
         </ul>
     </nav>
 
-    {# Hebrew #}
-    <nav class="heb">
-        <ul class="list-inline">
+    <nav class="heb" dir="rtl">
+        <ul class="list-inline" style="unicode-bidi: isolate;">
             {% for letter in hebrew_alphabet %}
                 <li class="list-inline-item">
                     <a href="#letter-{{ letter }}" class="h3">{{ letter }}</a>

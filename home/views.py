@@ -484,7 +484,17 @@ def search_view(request):
     facet_places_count = places_qs.count()
 
     # --- Which type should be visible in the result list? -------------------
-    if result_type == "books":
+    # An empty query with no filters returns no results — the index pages
+    # already exist for "browse everything" and dumping every Book +
+    # Person + City into the search view confused users into thinking
+    # the search was broken.
+    has_search = bool(q or year_from or year_to or language_id or place_id or has_digital)
+
+    if not has_search:
+        books = Book.objects.none()
+        persons = Person.objects.none()
+        places = City.objects.none()
+    elif result_type == "books":
         books = books_qs
         persons = Person.objects.none()
         places = City.objects.none()
@@ -519,10 +529,12 @@ def search_view(request):
         "facet_books_count": facet_books_count,
         "facet_persons_count": facet_persons_count,
         "facet_places_count": facet_places_count,
+        "facet_total_count": facet_books_count + facet_persons_count + facet_places_count,
         "result_type": result_type,
         "languages": languages,
         "places_choices": places_choices,
         "bundle_choices": bundle_choices,
+        "has_search": has_search,
         "selected": {
             "year_from": year_from,
             "year_to": year_to,
