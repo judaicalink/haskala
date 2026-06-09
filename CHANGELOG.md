@@ -7,6 +7,8 @@ versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.2] — 2026-06-09
+
 ### Security
 
 - Bind dev ports for Solr (`8983`), Fuseki (`3030`) and MailHog
@@ -91,6 +93,7 @@ First release after the full roadmap-plus-hardening sweep.
 - CI exercises the backup + restore round-trip plus the monthly
   rollover on every push.
 
-[Unreleased]: https://github.com/judaicalink/haskala/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/judaicalink/haskala/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/judaicalink/haskala/releases/tag/v1.0.2
 [1.0.1]: https://github.com/judaicalink/haskala/releases/tag/v1.0.1
 [1.0.0]: https://github.com/judaicalink/haskala/releases/tag/v1.0.0
