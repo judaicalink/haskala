@@ -43,7 +43,7 @@ jobs:
       SECRET_KEY: ci-insecure-key-only-used-by-the-test-runner
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
