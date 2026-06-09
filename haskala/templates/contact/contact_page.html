@@ -40,6 +40,19 @@
 
                         {{ form.as_p }}
 
+                        {% if HCAPTCHA_SITE_KEY %}
+                            {# hCaptcha challenge. Renders an iframe + a
+                               hidden h-captcha-response field that the
+                               server verifies in ContactPage.serve(). #}
+                            <div class="mb-3">
+                                <div class="h-captcha" data-sitekey="{{ HCAPTCHA_SITE_KEY }}"></div>
+                                {% if hcaptcha_error %}
+                                    <div class="text-danger small mt-2">{{ hcaptcha_error }}</div>
+                                {% endif %}
+                            </div>
+                            <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+                        {% endif %}
+
                         <button type="submit" class="btn btn-primary">
                             Send message
                         </button>
