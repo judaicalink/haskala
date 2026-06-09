@@ -50,24 +50,23 @@
     margin-top: 1rem;
 
     // Badge-shaped action chips need their own padding because the
-    // .badge utility otherwise renders them flush — and a darker
-    // fill with light text reads better against the warm cream / white
-    // background of the header.
+    // .badge utility otherwise renders them flush. Background +
+    // text colour come from Bootstrap's .text-bg-secondary utility
+    // (which we override to use white text in PR #65); no need to
+    // re-set the colour here.
     .badge,
     a.badge,
+    button.badge,
     a.btn.badge,
     .book-header__action {
       padding: 0.5rem 0.85rem;
       font-size: 0.875rem;
       line-height: 1.2;
-      color: #fff;
-      background-color: $haskala-black;
-      border-color: $haskala-black;
+      border: 0;
 
       &:hover,
       &:focus {
-        background-color: $haskala-blue;
-        border-color: $haskala-blue;
+        background-color: rgba(var(--bs-secondary-rgb), 0.85);
         color: #fff;
       }
     }
@@ -241,6 +240,21 @@
 .search-empty {
   font-size: 1.05rem;
   padding: 1.5rem 0;
+}
+
+// Index pages (books / persons / places / digital-books). The
+// global body { text-align: center } would otherwise center every
+// list item under the alphabet heading; we want the alphabetic list
+// to read flush-left like a real catalog. The h2 letter heading
+// keeps its centered look from the section h1-h6 rule above by
+// virtue of having its own __heading rule.
+.index-list,
+.index-group {
+  text-align: start;
+}
+
+.index-group__heading {
+  text-align: center;
 }
 
 // Landscape overview map at the top of the /places/ index page.

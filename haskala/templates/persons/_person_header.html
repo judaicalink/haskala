@@ -61,21 +61,21 @@
     <div class="person-header__actions">
         {% if person.viaf_id %}
             <a href="https://viaf.org/viaf/{{ person.viaf_id }}/" target="_blank" rel="noopener"
-               class="btn btn-sm btn-outline-info">
+               class="badge text-bg-secondary">
                 <i class="bi bi-box-arrow-up-right"></i> VIAF {{ person.viaf_id }}
             </a>
         {% endif %}
         {% if person.gnd_id %}
             <a href="https://d-nb.info/gnd/{{ person.gnd_id }}" target="_blank" rel="noopener"
-               class="btn btn-sm btn-outline-info">
+               class="badge text-bg-secondary">
                 <i class="bi bi-box-arrow-up-right"></i> GND {{ person.gnd_id }}
             </a>
         {% endif %}
-        <button type="button" class="btn btn-sm btn-outline-secondary"
+        <button type="button" class="badge text-bg-secondary"
                 data-bs-toggle="modal" data-bs-target="#person-export-modal">
             <i class="bi bi-file-earmark-arrow-down"></i> Export
         </button>
-        <button type="button" class="btn btn-sm btn-outline-secondary"
+        <button type="button" class="badge text-bg-secondary"
                 data-permalink="{{ request.build_absolute_uri }}"
                 aria-label="Copy permalink">
             <i class="bi bi-link-45deg"></i> Permalink
