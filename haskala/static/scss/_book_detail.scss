@@ -121,13 +121,17 @@
   // RTL contexts) instead of stacking centered.
   text-align: start;
 
+  // Section body is text-align: start, but every heading inside
+  // the section (including __heading, sub-section h3s, etc.) sits
+  // centered so it reads as a divider rather than as another body
+  // row.
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
   &__heading {
     margin-bottom: 1rem;
     color: var(--bs-emphasis-color);
-    // The body of the section sits left-aligned (text-align: start
-    // on the section block), but the H2 heading itself stays
-    // centered as a divider between sections.
-    text-align: center;
   }
 
   // Definition lists are the workhorse format on these pages.

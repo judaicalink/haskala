@@ -8,14 +8,6 @@
 
 {% block content %}
     <div class="container homepage my-4">
-        <section class="homepage-hero text-center mb-5">
-            <h1 class="display-5 mb-3">The Library of the Haskala</h1>
-            {% if page.body %}
-                <div class="homepage-intro lead mx-auto" style="max-width: 720px;">
-                    {{ page.body|richtext }}
-                </div>
-            {% endif %}
-        </section>
 
         <section class="homepage-search mb-5">
             <form action="{% url 'search' %}" method="get"
