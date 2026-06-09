@@ -24,7 +24,30 @@ node_modules/
 
 # Persistent host bind-mount for the docker stack (HASKALA_DATA_DIR).
 # Holds backups, fuseki data, initial seed SQL, awstats output etc.
-/data/
+#
+# Git refuses to re-include a file when its parent dir is already
+# ignored, so the pattern below works dir-by-dir: ignore the dir's
+# contents, re-include the next dir, then again ignore its contents.
+# The expected sub-tree skeleton (the four .gitkeep files) survives
+# so first-time `docker compose up` finds the bind-mount paths and
+# the layout is discoverable without booting the stack.
+/data/*
+!/data/awstats/
+/data/awstats/*
+!/data/awstats/logs/
+/data/awstats/logs/*
+!/data/awstats/logs/.gitkeep
+!/data/backups/
+/data/backups/*
+!/data/backups/daily/
+!/data/backups/monthly/
+/data/backups/daily/*
+/data/backups/monthly/*
+!/data/backups/daily/.gitkeep
+!/data/backups/monthly/.gitkeep
+!/data/initial/
+/data/initial/*
+!/data/initial/.gitkeep
 
 # Generated theme assets (built via `npm run build:*` and `npm run copy:icons`)
 haskala/static/css/haskala.css
