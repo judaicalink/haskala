@@ -8,7 +8,7 @@ from django.template.defaultfilters import slugify
 from django.template.response import TemplateResponse
 from django.utils.decorators import method_decorator
 from django.utils.translation import gettext_lazy as _
-from django.views.decorators.cache import cache_page
+from django.views.decorators.cache import cache_page, never_cache
 from modelcluster.fields import ParentalKey
 from modelcluster.models import ClusterableModel
 from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, FieldRowPanel
@@ -1475,6 +1475,11 @@ class ContactPage(AbstractEmailForm):
     template = "contact/contact_page.html"
     landing_page_template = "contact/contact_page_landing.html"
 
+    # The global `UpdateCacheMiddleware` would otherwise cache the
+    # GET response and strip the CSRF cookie, so a subsequent POST
+    # would fail with "CSRF cookie not set". Mark the page as
+    # never-cached so the token is set on every visit.
+    @method_decorator(never_cache)
     def serve(self, request, *args, **kwargs):
         """
         Handle form display + submission with success/error messages.
