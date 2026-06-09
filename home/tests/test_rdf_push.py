@@ -45,28 +45,34 @@ class PushGraphTest(TestCase):
         )
         self.assertIn(b"hello", kwargs["data"])
 
-    def test_update_uses_post_with_sparql_update_body(self):
+    def test_update_routes_through_djangordf_fuseki_backend(self):
+        """The 'update' protocol delegates to djangordf's FusekiBackend
+        so SPARQL writes flow through the JudaicaLink-internal RDF
+        layer instead of plain requests.post()."""
         target = PushTarget(
             url="http://fuseki.example/update",
             graph_iri="http://example.org/g",
             protocol="update",
         )
-        with patch("haskala_rdf.push.requests") as mock_requests:
-            mock_requests.post.return_value.status_code = 200
-            mock_requests.post.return_value.raise_for_status.return_value = None
+        with patch("djangordf.backends.fuseki.FusekiBackend") as MockBackend:
+            instance = MockBackend.return_value
+            instance.update.return_value = None
             push_graph(_sample_graph(), target)
 
-        mock_requests.post.assert_called_once()
-        _args, kwargs = mock_requests.post.call_args
-        self.assertEqual(
-            kwargs["headers"]["Content-Type"],
-            "application/sparql-update; charset=utf-8",
-        )
-        body = kwargs["data"]
-        self.assertIn(b"DROP SILENT GRAPH <http://example.org/g>", body)
-        self.assertIn(b"INSERT DATA", body)
+        # FusekiBackend was instantiated with the dataset root (the
+        # /update suffix is stripped before handing it over).
+        MockBackend.assert_called_once()
+        kwargs = MockBackend.call_args.kwargs
+        self.assertEqual(kwargs["endpoint"], "http://fuseki.example")
+
+        # The backend's update() was called once with a single SPARQL
+        # transaction wrapping DROP + INSERT DATA on the target graph.
+        instance.update.assert_called_once()
+        sparql = instance.update.call_args.args[0]
+        self.assertIn("DROP SILENT GRAPH <http://example.org/g>", sparql)
+        self.assertIn("INSERT DATA", sparql)
         # N-Triples-encoded triple from the sample graph.
-        self.assertIn(b"<http://example.org/s>", body)
+        self.assertIn("<http://example.org/s>", sparql)
 
     def test_basic_auth_threaded_through(self):
         target = PushTarget(

@@ -93,6 +93,11 @@ class Command(BaseCommand):
             f"(graph: {push_target.graph_iri}, protocol: {push_target.protocol})"
         )
         response = push_graph(data_graph, push_target)
-        self.stdout.write(self.style.SUCCESS(
-            f"  SPARQL push complete: HTTP {response.status_code}"
-        ))
+        # FusekiBackend.update() (the 'update' protocol path) returns
+        # None on success; only the gsp path surfaces a raw Response.
+        if response is not None:
+            self.stdout.write(self.style.SUCCESS(
+                f"  SPARQL push complete: HTTP {response.status_code}"
+            ))
+        else:
+            self.stdout.write(self.style.SUCCESS("  SPARQL push complete"))

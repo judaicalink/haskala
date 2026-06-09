@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_filters",
     "drf_spectacular",
+    "djangordf",
 ]
 
 MIDDLEWARE = [
@@ -389,6 +390,47 @@ HASKALA_SPARQL_PUSH_PROTOCOL = env("HASKALA_SPARQL_PUSH_PROTOCOL", default="gsp"
 HASKALA_SPARQL_PUSH_USER = env("HASKALA_SPARQL_PUSH_USER", default="")
 HASKALA_SPARQL_PUSH_PASSWORD = env("HASKALA_SPARQL_PUSH_PASSWORD", default="")
 HASKALA_SPARQL_PUSH_TIMEOUT = env("HASKALA_SPARQL_PUSH_TIMEOUT", default=60, cast=int)
+
+# djangordf is the JudaicaLink-internal Django/RDF bridge. We use it
+# from haskala_rdf.push() to talk SPARQL Update to Fuseki; the
+# build_data_graph() pipeline keeps producing the raw rdflib graph
+# (it encodes domain-specific ontology mappings djangordf doesn't
+# know about) and the push then routes through djangordf's
+# FusekiBackend so the same library handles writes everywhere in the
+# JudaicaLink ecosystem.
+#
+# When HASKALA_SPARQL_PUSH_URL is empty djangordf falls back to its
+# bundled InMemoryBackend (no network traffic) and the push() helper
+# becomes a no-op — convenient for running the Django test suite or
+# the management commands without a triple store at hand.
+if HASKALA_SPARQL_PUSH_URL:
+    # The FusekiBackend expects the dataset root, not the GSP/update
+    # endpoint. Strip a trailing /data or /update so the user can paste
+    # in either flavour as HASKALA_SPARQL_PUSH_URL.
+    _dataset_root = HASKALA_SPARQL_PUSH_URL
+    for _suffix in ("/data", "/update", "/query"):
+        if _dataset_root.endswith(_suffix):
+            _dataset_root = _dataset_root[: -len(_suffix)]
+            break
+    DJANGORDF_BACKEND = {
+        "class": "djangordf.backends.fuseki.FusekiBackend",
+        "endpoint": _dataset_root,
+    }
+    if HASKALA_SPARQL_PUSH_USER:
+        DJANGORDF_BACKEND["user"] = HASKALA_SPARQL_PUSH_USER
+        DJANGORDF_BACKEND["password"] = HASKALA_SPARQL_PUSH_PASSWORD
+else:
+    DJANGORDF_BACKEND = {
+        "class": "djangordf.backends.memory.InMemoryBackend",
+    }
+DJANGORDF_DEFAULT_NAMESPACE = "http://data.judaicalink.org/data/haskala/"
+DJANGORDF_DEFAULT_GRAPH = HASKALA_SPARQL_PUSH_GRAPH
+DJANGORDF_NAMESPACES = {
+    "hs": "http://data.judaicalink.org/ontology/haskala#",
+    "hsk": "http://data.judaicalink.org/data/haskala/",
+    "jl": "http://data.judaicalink.org/ontology/",
+    "gndo": "http://d-nb.info/standards/elementset/gnd#",
+}
 
 # Mail
 EMAIL_BACKEND = env("EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend")

@@ -71,6 +71,12 @@ class Command(BaseCommand):
             f" protocol: {push_target.protocol})"
         )
         response = push_graph(graph, push_target)
-        self.stdout.write(self.style.SUCCESS(
-            f"  push complete: HTTP {response.status_code}"
-        ))
+        # The 'update' protocol goes through djangordf's FusekiBackend
+        # which returns None on success; only the gsp path surfaces a
+        # requests.Response.
+        if response is not None:
+            self.stdout.write(self.style.SUCCESS(
+                f"  push complete: HTTP {response.status_code}"
+            ))
+        else:
+            self.stdout.write(self.style.SUCCESS("  push complete"))
