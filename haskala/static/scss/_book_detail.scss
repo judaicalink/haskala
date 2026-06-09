@@ -137,7 +137,11 @@
 
   &__heading {
     margin-bottom: 1rem;
-    color: var(--bs-emphasis-color);
+    // The global h1-h6 rule already picks $haskala-base, but bootstrap's
+    // utility .h4 sneaks --bs-heading-color in via the h4 element-level
+    // style on the .index-group__heading h4 ancestor. Force the warm
+    // grey explicitly so dividers stay tonal with the body.
+    color: $haskala-base;
   }
 
   // Definition lists are the workhorse format on these pages.

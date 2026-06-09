@@ -30,12 +30,6 @@
                                             &middot; {{ book.gregorian_year|default:book.year_in_book }}
                                         </span>
                                     {% endif %}
-                                    {% if book.digital_book_url %}
-                                        <a href="{{ book.digital_book_url }}" target="_blank" rel="noopener"
-                                           class="badge text-bg-secondary ms-2">
-                                            <i class="bi bi-box-arrow-up-right"></i> Open digital copy
-                                        </a>
-                                    {% endif %}
                                 </li>
                             {% endfor %}
                         </ul>
