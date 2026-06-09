@@ -22,7 +22,7 @@ pytz==2023.3.post1
 rdflib==7.0.0
 requests==2.33.0
 djangordf==0.4.1
-six==1.16.0
+six==1.17.0
 soupsieve==2.5
 sqlparse==0.5.4
 urllib3>=2.2.2
