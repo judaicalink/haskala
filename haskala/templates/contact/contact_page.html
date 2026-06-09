@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags crispy_forms_tags %}
 
 {% block title %}{{ page.title }}{% endblock %}
 
@@ -38,7 +38,7 @@
                             </div>
                         {% endif %}
 
-                        {{ form.as_p }}
+                        {{ form|crispy }}
 
                         {% if HCAPTCHA_SITE_KEY %}
                             {# hCaptcha challenge. Renders an iframe + a
@@ -54,7 +54,7 @@
                         {% endif %}
 
                         <button type="submit" class="btn btn-primary">
-                            Send message
+                            <i class="bi bi-send"></i> Send message
                         </button>
                     </form>
                 </div>

@@ -70,7 +70,14 @@ INSTALLED_APPS = [
     "django_filters",
     "drf_spectacular",
     "djangordf",
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
+
+# Tell django-crispy-forms to render via the Bootstrap-5 template pack
+# (matches the rest of the public theme).
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
