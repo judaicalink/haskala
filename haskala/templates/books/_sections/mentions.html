@@ -1,3 +1,4 @@
+{% load value_filters %}
 {% if book.mentions.all %}
     <ul class="list-unstyled mb-3">
         {% for m in book.mentions.all %}
@@ -22,24 +23,24 @@
 {% endif %}
 
 <dl class="row mb-0">
-    {% if book.mention_general_notes %}
+    {% if book.mention_general_notes|clean_value %}
         <dt class="col-sm-4">General mention notes</dt>
-        <dd class="col-sm-8">{{ book.mention_general_notes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.mention_general_notes|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.mentions_in_reviews %}
+    {% if book.mentions_in_reviews|clean_value %}
         <dt class="col-sm-4">Mentions in reviews</dt>
-        <dd class="col-sm-8">{{ book.mentions_in_reviews|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.mentions_in_reviews|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.contemporary_disputes %}
+    {% if book.contemporary_disputes|clean_value %}
         <dt class="col-sm-4">Contemporary disputes</dt>
-        <dd class="col-sm-8">{{ book.contemporary_disputes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.contemporary_disputes|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.contemporary_references %}
+    {% if book.contemporary_references|clean_value %}
         <dt class="col-sm-4">Contemporary references</dt>
-        <dd class="col-sm-8">{{ book.contemporary_references|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.contemporary_references|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.later_references %}
+    {% if book.later_references|clean_value %}
         <dt class="col-sm-4">Later references</dt>
-        <dd class="col-sm-8">{{ book.later_references|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.later_references|clean_value|linebreaksbr }}</dd>
     {% endif %}
 </dl>

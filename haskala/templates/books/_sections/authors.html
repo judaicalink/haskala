@@ -1,3 +1,4 @@
+{% load value_filters %}
 {% if book.bookauthor_set.all %}
     <h3 class="h6 mt-3">Persons</h3>
     <ul class="list-unstyled mb-3">
@@ -15,28 +16,28 @@
 {% endif %}
 
 <dl class="row mb-0">
-    {% if book.original_author %}
+    {% if book.original_author|clean_value %}
         <dt class="col-sm-4">Original author</dt>
-        <dd class="col-sm-8">{{ book.original_author }}</dd>
+        <dd class="col-sm-8">{{ book.original_author|clean_value }}</dd>
     {% endif %}
-    {% if book.original_author_else_refer %}
+    {% if book.original_author_else_refer|clean_value %}
         <dt class="col-sm-4">Original author (reference)</dt>
-        <dd class="col-sm-8">{{ book.original_author_else_refer }}</dd>
+        <dd class="col-sm-8">{{ book.original_author_else_refer|clean_value }}</dd>
     {% endif %}
-    {% if book.original_author_elsewhere %}
+    {% if book.original_author_elsewhere|clean_value %}
         <dt class="col-sm-4">Original author elsewhere</dt>
-        <dd class="col-sm-8">{{ book.original_author_elsewhere }}</dd>
+        <dd class="col-sm-8">{{ book.original_author_elsewhere|clean_value }}</dd>
     {% endif %}
-    {% if book.original_author_other_name %}
+    {% if book.original_author_other_name|clean_value %}
         <dt class="col-sm-4">Original author (other name)</dt>
-        <dd class="col-sm-8">{{ book.original_author_other_name }}</dd>
+        <dd class="col-sm-8">{{ book.original_author_other_name|clean_value }}</dd>
     {% endif %}
-    {% if book.founders %}
+    {% if book.founders|clean_value %}
         <dt class="col-sm-4">Founders</dt>
-        <dd class="col-sm-8">{{ book.founders }}</dd>
+        <dd class="col-sm-8">{{ book.founders|clean_value }}</dd>
     {% endif %}
-    {% if book.proofreaders %}
+    {% if book.proofreaders|clean_value %}
         <dt class="col-sm-4">Proofreaders</dt>
-        <dd class="col-sm-8">{{ book.proofreaders }}</dd>
+        <dd class="col-sm-8">{{ book.proofreaders|clean_value }}</dd>
     {% endif %}
 </dl>

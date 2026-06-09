@@ -1,17 +1,18 @@
+{% load value_filters %}
 <dl class="row mb-0">
-    {% if book.pages_number %}
+    {% if book.pages_number|clean_value %}
         <dt class="col-sm-4">Pages</dt>
-        <dd class="col-sm-8">{{ book.pages_number }}</dd>
+        <dd class="col-sm-8">{{ book.pages_number|clean_value }}</dd>
     {% endif %}
-    {% if book.height %}
+    {% if book.height|clean_value %}
         <dt class="col-sm-4">Height</dt>
-        <dd class="col-sm-8">{{ book.height }}</dd>
+        <dd class="col-sm-8">{{ book.height|clean_value }}</dd>
     {% endif %}
-    {% if book.width %}
+    {% if book.width|clean_value %}
         <dt class="col-sm-4">Width</dt>
-        <dd class="col-sm-8">{{ book.width }}</dd>
+        <dd class="col-sm-8">{{ book.width|clean_value }}</dd>
     {% endif %}
-    {% if book.alignment %}
+    {% if book.alignment|clean_value %}
         <dt class="col-sm-4">Alignment</dt>
         <dd class="col-sm-8">{{ book.alignment.name }}</dd>
     {% endif %}
@@ -27,16 +28,16 @@
             {% for t in book.typography.all %}{{ t.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
         </dd>
     {% endif %}
-    {% if book.illustrations_diagrams %}
+    {% if book.illustrations_diagrams|clean_value %}
         <dt class="col-sm-4">Illustrations / diagrams</dt>
-        <dd class="col-sm-8">{{ book.illustrations_diagrams }}</dd>
+        <dd class="col-sm-8">{{ book.illustrations_diagrams|clean_value }}</dd>
     {% endif %}
-    {% if book.diagrams_notes %}
+    {% if book.diagrams_notes|clean_value %}
         <dt class="col-sm-4">Diagram notes</dt>
-        <dd class="col-sm-8">{{ book.diagrams_notes }}</dd>
+        <dd class="col-sm-8">{{ book.diagrams_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.diagrams_book_pages %}
+    {% if book.diagrams_book_pages|clean_value %}
         <dt class="col-sm-4">Diagram book pages</dt>
-        <dd class="col-sm-8">{{ book.diagrams_book_pages }}</dd>
+        <dd class="col-sm-8">{{ book.diagrams_book_pages|clean_value }}</dd>
     {% endif %}
 </dl>

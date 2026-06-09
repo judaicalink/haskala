@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from typing import Callable
 
 from .models import Person
+from .templatetags.value_filters import clean_value
 
 
 @dataclass(frozen=True)
@@ -19,7 +20,7 @@ class Section:
 
 
 def _any(*values) -> bool:
-    return any(bool(v) for v in values)
+    return any(bool(clean_value(v)) for v in values)
 
 
 def _identity_has_data(p: Person) -> bool:

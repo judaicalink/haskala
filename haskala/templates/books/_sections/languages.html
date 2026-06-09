@@ -1,3 +1,4 @@
+{% load value_filters %}
 <dl class="row mb-0">
     {% if book.languages.all %}
         <dt class="col-sm-4">Languages</dt>
@@ -5,11 +6,11 @@
             {% for lang in book.languages.all %}{{ lang.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
         </dd>
     {% endif %}
-    {% if book.original_language %}
+    {% if book.original_language|clean_value %}
         <dt class="col-sm-4">Original language</dt>
         <dd class="col-sm-8">{{ book.original_language.name }}</dd>
     {% endif %}
-    {% if book.languages_number %}
+    {% if book.languages_number|clean_value %}
         <dt class="col-sm-4">Number of languages</dt>
         <dd class="col-sm-8">{{ book.languages_number.name }}</dd>
     {% endif %}
@@ -19,7 +20,7 @@
             {% for lang in book.footnote_languages.all %}{{ lang.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
         </dd>
     {% endif %}
-    {% if book.location_of_footnotes %}
+    {% if book.location_of_footnotes|clean_value %}
         <dt class="col-sm-4">Location of footnotes</dt>
         <dd class="col-sm-8">{{ book.location_of_footnotes.name }}</dd>
     {% endif %}

@@ -10,6 +10,7 @@ from dataclasses import dataclass
 from typing import Callable
 
 from .models import Book
+from .templatetags.value_filters import clean_value
 
 
 @dataclass(frozen=True)
@@ -20,7 +21,14 @@ class Section:
 
 
 def _any(*values) -> bool:
-    return any(bool(v) for v in values)
+    """True when at least one value has meaningful content.
+
+    Wraps clean_value() so legacy Drupal flags like ``"0.0"`` or
+    ``"0"`` count as "no data" — without this, every Book would
+    advertise its Subscription / Dedications / Printers section
+    regardless of whether real text lives behind those flags.
+    """
+    return any(bool(clean_value(v)) for v in values)
 
 
 def _identity_has_data(b: Book) -> bool:

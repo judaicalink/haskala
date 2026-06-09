@@ -1,3 +1,4 @@
+{% load value_filters %}
 {% for role_label, books in person_books_by_role.items %}
     <h3 class="h6 mt-3">{{ role_label }}
         <span class="text-muted small fw-normal">({{ books|length }})</span>

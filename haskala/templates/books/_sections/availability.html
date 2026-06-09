@@ -1,28 +1,29 @@
+{% load value_filters %}
 {% load utils %}
 <dl class="row mb-0">
-    {% if book.not_available %}
+    {% if book.not_available|clean_value %}
         <dt class="col-sm-4">Availability</dt>
         <dd class="col-sm-8"><span class="text-warning">Not currently available</span></dd>
     {% endif %}
-    {% if book.availability_notes %}
+    {% if book.availability_notes|clean_value %}
         <dt class="col-sm-4">Availability notes</dt>
-        <dd class="col-sm-8">{{ book.availability_notes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.availability_notes|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.digital_book_url %}
+    {% if book.digital_book_url|clean_value %}
         <dt class="col-sm-4">Digital copy</dt>
         <dd class="col-sm-8">
-            <a href="{{ book.digital_book_url }}" target="_blank" rel="noopener">
+            <a href="{{ book.digital_book_url|clean_value }}" target="_blank" rel="noopener">
                 {{ book.digital_book_title|default:"Open digital copy" }}
                 <i class="bi bi-box-arrow-up-right small"></i>
             </a>
-            {% if book.digital_book_attributes %}
-                <div class="small text-muted">{{ book.digital_book_attributes }}</div>
+            {% if book.digital_book_attributes|clean_value %}
+                <div class="small text-muted">{{ book.digital_book_attributes|clean_value }}</div>
             {% endif %}
         </dd>
     {% endif %}
-    {% if book.other_libraries %}
+    {% if book.other_libraries|clean_value %}
         <dt class="col-sm-4">Other libraries</dt>
-        <dd class="col-sm-8">{{ book.other_libraries|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.other_libraries|clean_value|linebreaksbr }}</dd>
     {% endif %}
 </dl>
 
@@ -50,12 +51,12 @@
 {% endif %}
 
 <dl class="row mb-0 mt-3">
-    {% if book.preservation_references %}
+    {% if book.preservation_references|clean_value %}
         <dt class="col-sm-4">Preservation references</dt>
-        <dd class="col-sm-8">{{ book.preservation_references|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.preservation_references|clean_value|linebreaksbr }}</dd>
     {% endif %}
-    {% if book.catalog_numbers_notes %}
+    {% if book.catalog_numbers_notes|clean_value %}
         <dt class="col-sm-4">Catalog number notes</dt>
-        <dd class="col-sm-8">{{ book.catalog_numbers_notes|linebreaksbr }}</dd>
+        <dd class="col-sm-8">{{ book.catalog_numbers_notes|clean_value|linebreaksbr }}</dd>
     {% endif %}
 </dl>

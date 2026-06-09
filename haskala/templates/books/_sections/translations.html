@@ -1,3 +1,4 @@
+{% load value_filters %}
 {% if book.translations.all %}
     <h3 class="h6 mt-3">Known translations</h3>
     <ul class="list-unstyled mb-3">
@@ -19,20 +20,20 @@
 {% endif %}
 
 <dl class="row mb-0">
-    {% if book.translation_type %}
+    {% if book.translation_type|clean_value %}
         <dt class="col-sm-4">Translation type</dt>
         <dd class="col-sm-8">{{ book.translation_type.name }}</dd>
     {% endif %}
-    {% if book.translation_notes %}
+    {% if book.translation_notes|clean_value %}
         <dt class="col-sm-4">Translation notes</dt>
-        <dd class="col-sm-8">{{ book.translation_notes }}</dd>
+        <dd class="col-sm-8">{{ book.translation_notes|clean_value }}</dd>
     {% endif %}
-    {% if book.presented_as_translation_refe %}
+    {% if book.presented_as_translation_refe|clean_value %}
         <dt class="col-sm-4">Presented as translation (reference)</dt>
-        <dd class="col-sm-8">{{ book.presented_as_translation_refe }}</dd>
+        <dd class="col-sm-8">{{ book.presented_as_translation_refe|clean_value }}</dd>
     {% endif %}
-    {% if book.presented_as_translatio_notes %}
+    {% if book.presented_as_translatio_notes|clean_value %}
         <dt class="col-sm-4">Presented as translation (notes)</dt>
-        <dd class="col-sm-8">{{ book.presented_as_translatio_notes }}</dd>
+        <dd class="col-sm-8">{{ book.presented_as_translatio_notes|clean_value }}</dd>
     {% endif %}
 </dl>

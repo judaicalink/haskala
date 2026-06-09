@@ -10,7 +10,11 @@ body {
   background-size: 100%;
   overflow-x: hidden;
   font-family: $font-family-base;
-  font-size: small;
+  // 1rem = 16px (set on :root by Bootstrap). The old `font-size: small`
+  // shrunk effective body copy to ~13px which hurt readability on long
+  // catalog pages. Headings + UI continue to scale relative to this.
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   color: $body-color;
   text-align: center;
   padding: 0 $site-padding-x;
@@ -37,11 +41,17 @@ a:hover {
   text-decoration: none;
 }
 
-// Wrapper (Layout-Zentrum)
+// Wrapper (Layout-Zentrum). The default wrapper now uses the wider
+// catalog width; pages that hold long-form legal/cookie text opt into
+// the narrow wrapper so the line length stays under 80 characters.
 .wrapper {
   max-width: $wrapper-max-width;
   margin: 17px auto 14px;
   line-height: 1.7;
+
+  &--narrow {
+    max-width: $wrapper-narrow-max-width;
+  }
 }
 
 // HR-Titel (blaue Linien rechts/links)
