@@ -162,8 +162,89 @@
   font-size: 0.875rem;
 }
 
-// Sticky overview map on the right of the /places/ index page.
-.places-map-sticky {
-  position: sticky;
-  top: 1.5rem;
+// Search results page — chip-style facet bar that replaces the
+// dropdown "Result type" select. The active facet uses the brand
+// blue fill; inactive facets read as outlined neutrals.
+.search-facets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-facet {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--bs-body-color);
+  background: #fff;
+  text-decoration: none;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+
+  &:hover,
+  &:focus {
+    background: var(--bs-tertiary-bg);
+    color: var(--bs-primary);
+  }
+
+  &__count {
+    color: var(--bs-secondary-color);
+    font-weight: 400;
+    text-transform: none;
+    font-size: 0.875rem;
+  }
+
+  &.is-active {
+    background: $haskala-blue;
+    color: #fff;
+    border-color: $haskala-blue;
+
+    .search-facet__count {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.search-results-heading {
+  margin: 1.5rem 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+.search-results-section {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.search-empty {
+  font-size: 1.05rem;
+  padding: 1.5rem 0;
+}
+
+// Landscape overview map at the top of the /places/ index page.
+// Full-width banner with a fixed pixel height — long aspect ratio
+// works better than a tall sidebar map for the European geography
+// the dataset covers.
+.places-map-landscape {
+  width: 100%;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem 1rem;
+  background: #fff;
+
+  h2 {
+    letter-spacing: 0.05em;
+  }
+
+  #places-map {
+    border-radius: 4px;
+    overflow: hidden;
+  }
 }
