@@ -28,7 +28,10 @@ from home.models import Person
 
 _PARENS_PREFIX = re.compile(r"^\([^)]*\)\s*")
 _QUOTE_WRAP = re.compile(r'^"(.*)"$')
-_LEADING_JUNK = re.compile(r"^[\s,.;:'\"]+")
+# Leading punctuation strip. Includes the hyphen because `(Feder)-
+# Guttmann` would otherwise resolve to `-Guttmann` after the parens
+# prefix is dropped.
+_LEADING_JUNK = re.compile(r"^[\s,.;:'\"\-]+")
 _MULTI_WS = re.compile(r"\s{2,}")
 
 
