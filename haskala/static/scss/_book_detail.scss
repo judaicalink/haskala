@@ -21,7 +21,14 @@
   margin-bottom: 1.5rem;
   text-align: center;
 
-  &__title { line-height: 1.2; }
+  &__title {
+    line-height: 1.2;
+    // Body headings are uppercased globally (see _layout.scss).
+    // The entity title carries the actual book/person/place name and
+    // can be long; uppercasing makes a five-word German title nearly
+    // unreadable. Keep the original case.
+    text-transform: none;
+  }
   &__latin { color: var(--bs-secondary-color); }
   &__alt {
     line-height: 1.3;
