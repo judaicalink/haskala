@@ -4,7 +4,7 @@
     <ul class="list-unstyled mb-3">
         {% for ba in book.bookauthor_set.all %}
             {% if ba.person %}
-                <li class="mb-1">
+                <li class="mb-1" dir="auto">
                     <a href="{% url 'person-detail' ba.person.slug %}" class="link-primary">
                         {{ ba.person }}
                     </a>

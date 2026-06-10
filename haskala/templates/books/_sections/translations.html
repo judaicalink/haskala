@@ -3,7 +3,7 @@
     <h3 class="h6 mt-3">Known translations</h3>
     <ul class="list-unstyled mb-3">
         {% for tr in book.translations.all %}
-            <li class="mb-1">
+            <li class="mb-1" dir="auto">
                 {% if tr.translator %}
                     <a href="{% url 'person-detail' tr.translator.slug %}" class="link-primary">
                         {{ tr.translator }}

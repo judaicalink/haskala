@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for prod in book.productions.all %}
-        <li class="mb-2">
+        <li class="mb-2" dir="auto">
             {% if prod.producer %}
                 <a href="{% url 'person-detail' prod.producer.slug %}" class="link-primary">
                     {{ prod.producer }}

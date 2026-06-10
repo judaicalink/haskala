@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for tr in translations_here %}
-        <li class="mb-1">
+        <li class="mb-1" dir="auto">
             {% if tr.book %}
                 <a href="{% url 'book-detail' tr.book.slug %}" class="link-primary">
                     {{ tr.book.full_title|default:tr.book.name|default:"[untitled]" }}

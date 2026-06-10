@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for m in mentions_of_person %}
-        <li class="mb-2">
+        <li class="mb-2" dir="auto">
             {% if m.mentionee_description %}
                 <strong>{{ m.mentionee_description.name }}</strong>
             {% else %}

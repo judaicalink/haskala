@@ -2,7 +2,7 @@
 {% if book.mentions.all %}
     <ul class="list-unstyled mb-3">
         {% for m in book.mentions.all %}
-            <li class="mb-2">
+            <li class="mb-2" dir="auto">
                 {% if m.mentionee %}
                     <a href="{% url 'person-detail' m.mentionee.slug %}" class="link-primary">{{ m.mentionee }}</a>
                 {% else %}

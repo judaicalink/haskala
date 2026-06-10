@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for ed in editions_here %}
-        <li class="mb-1">
+        <li class="mb-1" dir="auto">
             {% if ed.book %}
                 <a href="{% url 'book-detail' ed.book.slug %}" class="link-primary">
                     {{ ed.book.full_title|default:ed.book.name|default:"[untitled]" }}
