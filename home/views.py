@@ -559,9 +559,15 @@ def robots_txt(request):
 
 def _get_object_by_slug(queryset, slug: str):
     """
-    Simple helper: finds an object via slugify(obj.name).
-    Used for Topic, Publisher, Occupation.
+    Find an object via its persisted .slug column first (the path the
+    new templates use). Falls back to the legacy slugify(obj.name)
+    match so old bookmarks built before the slug columns existed
+    keep resolving. Used for Topic, Publisher, Series, Occupation.
     """
+    if hasattr(queryset.model, "slug"):
+        match = queryset.filter(slug=slug).first()
+        if match is not None:
+            return match
     for obj in queryset:
         name = getattr(obj, "name", "") or ""
         if slugify(name) == slug:

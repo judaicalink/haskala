@@ -21,7 +21,7 @@
                         <ul class="list-unstyled mb-0">
                             {% for occ in occs %}
                                 <li class="mb-1">
-                                    <a href="{% url 'occupation-detail' occ.name|slugify %}" class="link-primary">
+                                    <a href="{% url 'occupation-detail' occ.slug %}" class="link-primary">
                                         {{ occ.name }}
                                     </a>
                                 </li>

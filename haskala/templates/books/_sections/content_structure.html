@@ -3,7 +3,7 @@
     {% if book.topic|clean_value %}
         <dt class="col-sm-4">Topic</dt>
         <dd class="col-sm-8" dir="auto">
-            <a href="{% url 'topic-detail' book.topic.name|slugify %}">{{ book.topic.name }}</a>
+            <a href="{% url 'topic-detail' book.topic.slug %}">{{ book.topic.name }}</a>
         </dd>
     {% endif %}
     {% if book.target_audience.all %}
