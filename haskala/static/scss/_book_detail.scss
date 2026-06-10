@@ -167,7 +167,10 @@
       min-width: 0;
     }
     dt {
-      color: var(--bs-secondary-color);
+      // Inherits body colour (--bs-body-color, i.e. $haskala-base);
+      // the previous secondary-color was too muted against the
+      // already-muted theme.
+      color: inherit;
       font-weight: 500;
       font-size: 0.92rem;
     }
