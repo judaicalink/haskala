@@ -2,6 +2,68 @@
 // MAIN MENU (Top Navigation)
 // =====================================
 
+// Sticky top bar that wraps the desktop nav + mobile hamburger.
+// Bootstrap's .sticky-top sets position: sticky / top: 0 / z-index;
+// the extra rules below give the bar a white opaque background so
+// scrolling content doesn't bleed through.
+.site-topbar {
+  background: $body-bg;
+  padding: 0.25rem 0;
+  // Shadow only kicks in once the bar is actually stuck (visually
+  // separates it from the page hero scrolling behind).
+  box-shadow: 0 1px 0 var(--bs-border-color);
+  // Flex so the desktop nav stays centered AND the mobile hamburger
+  // can push itself to the right edge via margin-left: auto.
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-topbar__toggle {
+  font-size: 1.6rem;
+  padding: 0.25rem 0.5rem;
+  color: $haskala-base;
+  // Right edge of the bar on mobile (where this button is the only
+  // visible child of the flex .site-topbar).
+  margin-left: auto;
+  // No fill — the icon sits flat on the page.
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+
+  &:hover,
+  &:focus {
+    background: transparent !important;
+    color: $haskala-blue;
+  }
+}
+
+// Mobile offcanvas nav — vertical list of links, large hit areas
+// so taps don't miss on small phones.
+.mobile-nav-list {
+  margin: 0;
+  padding: 0;
+
+  li + li {
+    border-top: 1px solid var(--bs-border-color);
+  }
+
+  a {
+    display: block;
+    padding: 0.75rem 0.25rem;
+    color: $haskala-base;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $haskala-blue;
+    }
+  }
+}
+
 .wrapper {
   header {
     // Links im Header
