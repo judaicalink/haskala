@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for pf in book.prefaces.all %}
-        <li class="mb-2">
+        <li class="mb-2" dir="auto">
             <strong>{{ pf.title|default:"Preface" }}</strong>
             {% if pf.number %}
                 <span class="text-muted small">&middot; #{{ pf.number }}</span>

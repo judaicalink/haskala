@@ -3,7 +3,7 @@
     <h3 class="h6 mt-3">Known editions</h3>
     <ul class="list-unstyled mb-3">
         {% for ed in book.editions.all %}
-            <li class="mb-1">
+            <li class="mb-1" dir="auto">
                 {{ ed.name|default:"[unnamed edition]" }}
                 {% if ed.year %}<span class="text-muted small">&middot; {{ ed.year }}</span>{% endif %}
                 {% if ed.city %}<span class="text-muted small">&middot; {{ ed.city.name }}</span>{% endif %}

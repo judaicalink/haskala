@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for person in died_here %}
-        <li class="mb-1">
+        <li class="mb-1" dir="auto">
             <a href="{% url 'person-detail' person.slug %}" class="link-primary">
                 {{ person }}
             </a>

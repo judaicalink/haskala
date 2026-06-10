@@ -5,7 +5,7 @@
     </h3>
     <ul class="list-unstyled mb-3">
         {% for book in books %}
-            <li>
+            <li dir="auto">
                 <a href="{% url 'book-detail' book.slug %}" class="link-primary">
                     {{ book.full_title|default:book.name|default:"[untitled]" }}
                 </a>
