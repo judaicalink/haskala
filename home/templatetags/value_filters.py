@@ -15,6 +15,8 @@ and inside templates via the registered ``|clean_value`` filter.
 """
 from __future__ import annotations
 
+import re
+
 from django import template
 
 register = template.Library()
@@ -24,6 +26,13 @@ register = template.Library()
 # them. The float and int forms cover any future code that hands the
 # filter a real number.
 _ZEROISH = {"", "0", "0.0", "0.00", "0.000", 0, 0.0, False, None}
+
+# Drupal-6 emitted PHP-serialised empty arrays into TextField columns
+# whenever a multi-value form was left blank. The wire format is
+# ``a:0:{}`` for an empty array and ``a:N:{ … }`` for non-empty. The
+# regex below catches every empty form (``a:0:{}``, ``a:0:{};``) so
+# the rendered detail rows don't surface "a:0:{}" as the field value.
+_PHP_EMPTY_ARRAY = re.compile(r'^a:0:\{\}\s*;?\s*$')
 
 
 def clean_value(value):
@@ -52,6 +61,8 @@ def clean_value(value):
     if isinstance(value, str):
         stripped = value.strip()
         if stripped in _ZEROISH:
+            return ""
+        if _PHP_EMPTY_ARRAY.match(stripped):
             return ""
         try:
             as_float = float(stripped)
