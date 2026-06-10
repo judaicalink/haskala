@@ -1,0 +1,204 @@
+model,field,value,uuids
+Person,german_name,"hoym, karl heinrich graf von (graf, minister)",86d0fec1-915a-49f2-8bcd-76eec875cc4d;701666e2-8dd8-4cc2-a608-5f3106d16c64
+Person,german_name,"jacobson, israel",e56457ad-c4b3-45d4-8956-cc79b03177ca;30c063e4-e083-401b-aab5-dafd06c16e60
+Person,german_name,joseph ii. (kaiser),293652f4-b217-48c7-b043-b666a44594de;432cbe39-df1d-4ec6-bd99-2eac04d57e2d
+Person,german_name,"kaskel, michel",69fc0563-9299-404c-bbc9-fb236ba4231a;f26adbc5-8dcb-47a8-a03e-d1b6c85987fe
+Person,german_name,"kaulla, wolf",e9131f27-7264-4c01-b068-02655963a5c3;885c9bb8-eaaa-447c-9949-0a82f357774e
+Person,german_name,"moses, jacob",b2eb22e0-f3f6-4220-a6fe-9249fa6eb141;8c48a2dc-02cb-464f-9e18-f25bbd3db010
+Person,german_name,אברהם,44c9ab95-2d68-4cb7-8e56-7b0c6a277368;cdd4bcaa-1136-49ac-aa1a-157edc693139;3f92ae0a-8edf-4b49-a547-6a5a4c958314
+Person,german_name,"אברהם ב""ר צבי הירש",9b8f065f-c5ec-4618-b110-a73483e41b97;85678d60-b4fe-46e9-94ae-d63fe796fbd4
+Person,german_name,"אברהם בר""נ ה""ש",39ed0dc3-1d27-4420-9b1b-98f544f512e3;b3625ca8-83c2-47fc-be32-58bb95f3b070;ae2bf34c-3328-47e9-8bcc-ab12ca27af72
+Person,german_name,"אברהם בר""פ כ""ץ",e3be9a0a-4cd2-4727-a96c-14849870d462;d75a2618-e4a6-41f7-8a94-ee70bd0bbadf
+Person,german_name,אברהם מרדכי,1de98862-ae14-4e99-bbb3-dc23b140d911;4c0bd184-5a89-4f7f-b7e5-259478528a61;13309ad7-d5f7-4d0c-b858-b005ad899d19
+Person,german_name,אברהם צבי,12bf673a-7577-4102-9fe4-540e6fd14cdd;5b0882c1-8549-4650-b2b5-f4882f7fada0
+Person,german_name,אייזק דעסויא,3a073a04-119c-4c73-b04f-db53bb759b17;ab22eee2-6b55-462d-9dc0-1b9c0fe678a8
+Person,german_name,אלעזר קאליר,c7be9e4c-007d-49a1-8161-de5919ea636d;727ed808-a8d2-454b-957d-a01521722564
+Person,german_name,ארי' ליב,5a985999-4765-445e-b7c0-21e1c5af9882;afe5d5dc-2e78-48c9-bf00-00b7fc06c630
+Person,german_name,אריה ליב,2a01211e-e5ad-473f-a276-b10bc3116045;db24a1fd-1f30-410c-8b8e-8cc3033c7291;48cfa72d-3c62-469e-b057-70abd04fb23c
+Person,german_name,"בונם בר""ד פ""ל",f47d54aa-34f1-4a08-9897-df7e7c5577d4;b771ba4c-397f-402f-9273-786654f369ff
+Person,german_name,"בוקי, אליהו",71c3e2db-deea-415f-bae0-c2907427b38f;24169297-15f9-4f07-9af3-08760f3f3040;5b6cbc63-f416-4fb7-9a80-e086d5820a77
+Person,german_name,"בנימין בר""פ",b7653e32-f046-45cf-859b-b87b7e8b0ccd;4b7a4d31-cb79-42e3-8b48-0984e847d279;bccbb72d-0edb-4473-8036-6d6f57d9aea1
+Person,german_name,דוד,d9e464b6-f18c-4e2f-bd96-2f1da5d12ed0;2de627c6-204e-4f89-b4f0-9150bb3b275c;89d5b8a9-e9d5-4fae-94a0-968a04ab1a67
+Person,german_name,הירץ,73733939-43f2-4a4c-a1a2-0650f6f9cddb;5cc85615-3bd5-4757-878e-07ed064ef37a
+Person,german_name,"הירש בר""נ",263075d9-1c7f-4fe5-be32-6091a75f054a;b936f84f-9115-4898-a9d3-bb0b8994bcd2
+Person,german_name,וואלף האללי,c57d914e-3e2a-4473-968d-32596cb319a0;e5539cea-a78d-4013-94ab-83b664a51d1f
+Person,german_name,חיים מצאנז,3bc5f452-aba2-485c-981b-b529c802b935;15b94603-bd96-4592-868f-793116aba026
+Person,german_name,יונה גלויגא,07b122b4-f085-4fad-b293-fec430d3a3d8;902786d2-7291-4fdb-aeaa-ab9f9a1ab414
+Person,german_name,יוסף,2ee393ae-f158-44f8-896f-2f3484cc456e;7a831014-cbb0-4dfd-a18e-7d91ff89bad4;c095cfb7-6475-4276-9874-e6ba07ba76dc;8c2347c1-b7cc-4c4d-9983-aa47fbd1bf6b;6b1d1e4b-fa49-44e7-b78c-9c8e1c02cc6f
+Person,german_name,יחזקאל לנדא,b2adb9d1-96b5-4688-85d1-6d2fd6a060e8;24a5e7c8-7df3-42cc-bdc3-5d4018616af4
+Person,german_name,"יעקב בער כ""ץ",c80573bf-ed54-4e4e-87b1-bbf1b84c96cb;f28013c4-ca8a-49af-8711-3dc3e64760fd
+Person,german_name,יצחק הלוי מלבוב,0a46350d-fbac-471c-b941-e2ec0833ab04;753777e5-59e6-4804-a1b3-2c94fa063ba5
+Person,german_name,"ירמי' בר""י",851a840b-b3f5-4154-bee1-50834a452a34;5eae5612-5b12-410a-8f99-7a5684961524
+Person,german_name,"ישראל בר""י בה""ש",2a88681e-87aa-40f1-a572-6382b24a73d2;0bf160e8-cd40-4151-8cbf-4fb37c79c991
+Person,german_name,"לאמניץ, סענדר",1bbd0c78-1e83-4996-a2a9-3de0aed85305;a0ebd3f7-38c2-4037-80e9-364fc14926fa
+Person,german_name,"לוי, יעקב",1915a1c4-2ed8-43c2-87a8-ea6101b80b21;9298a867-1c3f-4892-8607-2dfd4b66f13b
+Person,german_name,"ליב בר""מ",aaf39c4c-e82e-452b-9b55-40c4d066dc38;52b6e6eb-5462-4360-9f0d-9ae5a51de98d
+Person,german_name,"ליב בר""פ כ""ץ",0a1ffb56-6942-4cac-bb8e-f6b85565157d;226367a1-ae3d-4133-864a-53f91a93a4c6;28c29559-450c-47cf-9e27-3608ae085826
+Person,german_name,ליזר בישיטץ,a1185167-b0ea-460f-b061-5e9bcdc6ee34;f4e2eb7b-defe-45ec-bd9b-fcd0f972a616
+Person,german_name,מאיר הויזן,8f050208-6cc0-4a8c-bd57-22f8bba5eac9;2c30fa7b-15b3-4957-8d5c-7aef2cf9373d
+Person,german_name,מאיר פיורדא,91958028-536b-4c69-8406-c26cb4906371;237c0b34-730d-42eb-b0f8-f35ea75797c4
+Person,german_name,מאיר פירדא,837c5a25-b2ea-4391-bf97-c8d769e9c3f6;50469467-8735-4279-826e-43aa92740124
+Person,german_name,מענדל ליידסדורף,d7f0b00c-20bf-4b3a-a18b-a05e32868f2e;d3816036-edf1-416c-9586-30edb2fe44a4
+Person,german_name,מרדכי,4e21776e-7644-45e7-8302-378f527f9ec1;c3e5da96-e7f7-4b61-bc29-40aafb90d87a;d4aca39b-e8cd-4fea-b3e9-a4c5724399f2;f340bf92-b95a-48bf-876b-972c543f0627
+Person,german_name,משה בישיטץ,9d40ab6b-14a4-4003-9cd0-c911a6f7d94f;2488e101-b950-450c-8a74-1b3da68d1a34
+Person,german_name,"משה בר""ד פ""ל",5e25a29c-c050-4543-b1ad-6a8f3c23ecac;91c41858-557f-4622-9ebd-d4011f49c296;9518870c-6d8c-4fc2-84f9-28d9460851f6
+Person,german_name,משה זלאטווי,7c5097f9-80e6-46c4-83a8-15e8ef80ff15;7cbafc3e-a605-41a7-beac-2277446aacc3
+Person,german_name,משה מינץ מבראד,ec8c9906-e538-4601-bc1f-7c8030dd8626;e8c65bbc-a046-497b-a941-02d6287e92cb
+Person,german_name,"סמטור, דוד",66cf1c38-3756-411f-8037-2cd4c3755015;afc78854-19c2-40e3-a6aa-c0064af5afc6;b456c9f2-5e53-488b-84ec-a3e921f7d279;2914bac3-5117-4eca-ae14-d6b25f8114b5
+Person,german_name,"עזריאל ווירמש בפפ""ד",305241ae-07a6-4bbd-818f-02dd2bafc093;150a6d85-ebe2-44c7-a338-05137fd592db
+Person,german_name,"עלקיש, יצחק",4dee76b3-8ec4-4d1b-ba7d-ba005909510a;4a318182-cfbe-44f1-b2b6-1ef59667a6b9
+Person,german_name,"פאן, זלמן",73243696-a23e-40a2-9639-1194ebc1b4cc;8a3ff912-0953-4ae3-9517-8a2de41db92a;e1cc95c5-2b0e-4f6a-9c62-ad2128498974
+Person,german_name,"פייבל ש""ל",d5445c18-fec1-477f-932e-976c4a724cff;0de00039-39ce-43b8-ae4b-9a303f2af136
+Person,german_name,פייבש וויצנהויזן,180c7082-39bc-411a-8f8d-dad8b2a764ba;f76f537d-ad26-4a04-ad0d-737800cf9a34;343926d9-2b92-4c3c-891d-61de202ea3fd
+Person,german_name,"פרענקל, ליב",cd8ee9b4-8f72-43f9-86e9-61a2f32bbe73;b2d52a85-1230-47be-b40f-10ba3164358a
+Person,german_name,צבי הירש,c4f26ab5-ad18-4793-95c6-e1bc8f127a05;5961a737-9ef4-4340-9290-47e1e0e8bec6;54b8cdb0-6db8-410b-b189-5a679baf8e1a;89ea11af-77fe-44ca-af53-cbc554df81c5;7916da3a-903b-4bc1-98f3-ef7b9e72c7be;2b3177f7-717a-41b6-a0f8-79f101816c33;c78af583-bc45-4ff5-b948-bb08809fb0ba;31407537-6705-48c6-8da2-505feb0a855c;08cd28f3-d636-4689-94ed-681cc77a25f1;5ced172a-001b-401b-ad8e-d5ddd53a1645;6b1b28b8-2132-4e1d-936d-624fcc8d518f;76a32602-726f-4c3a-8eae-806e52a903fe;6a829a15-1f4c-4633-be3a-5ddc8f06bb12;a32bd66b-6662-4140-bcd1-12379f5eaafc;b433dc0e-7726-4942-b7d7-d5878a94b7d4
+Person,german_name,צבי הירש ליבשיץ,8bd007a0-05c6-414d-97e0-e43792af7d0d;16755649-1a11-4d4b-a668-5a0a09dfdb08
+Person,german_name,צבי הירש מייזיל,3f8f85c1-1d15-4fde-8173-b82ef8159a52;24d5e56c-75ef-4760-8cad-7eba8a082846;ad933033-797a-4e51-bb5f-0091cc8947aa
+Person,german_name,צבי הירש מירלש,01603920-7209-4891-9f08-98871c41713c;bc57ff38-c31a-4be3-8a21-13a57f1887a7
+Person,german_name,קארל קעניגסבערג,8096fee0-817b-4090-9765-6e18627db39f;40d28b78-ab14-4cbc-9a94-53e2e1467e25
+Person,german_name,"ראובן בר""ש",b9f17f89-cf23-4521-b088-b7f493841e2f;876edab2-0aef-4cb4-87fb-3e2e1ff20499;7b250a28-b702-4230-9f93-4c8fb7821813
+Person,german_name,ראובן גומפערטץ,e1acc0b8-5e13-40c6-8015-aa93af57c59e;9bb346fc-6a62-4558-a6cb-5fdcfef7baa0
+Person,german_name,שאול,42f804b1-1682-4759-aaa4-e877903d84e2;3b231788-7f99-4fb7-a779-4eca7a7bf59c;a8d2328b-b9ef-4206-866e-bba6cfbf4ef1
+Person,german_name,שבתי בן דוד מיאנוב,79047fe0-9eba-4d28-8f5f-8697a9f8c616;c665de9f-94e5-44ce-8db9-22c462ae5fd7
+Person,german_name,"שלאחטב, ברוך",c52fc832-1269-469d-b55b-20eb75d2c846;449dc07e-3004-4143-a77f-816d091ff447
+Person,german_name,שלמה,2c3862b4-0774-47a8-bea6-ed70e3688852;24b4aff6-47e2-4b80-a6dc-18a1e57abcbb;f9100958-a01b-404c-94f0-6d031d3842e1
+Person,german_name,שלמה רונקל,8bcdfab8-f489-476f-bdd1-e69b369a882f;9f44c3fa-0dad-4847-b5ae-1dc7ff7e5712
+Person,german_name,שלמה שלם,87be345f-bb0d-4875-a7ad-460e9548adfd;6e68f3e7-71d4-4006-9438-c6b6c6cfda3c;d5f30602-b141-4a3e-a9fa-098c7054249c;b93e078d-6585-4990-8f80-4ccbab3047b7;5104c0c7-84cc-46fb-a316-4273e18775b7
+Person,german_name,"שמואל בר""א",da8e01e2-34d5-4f4f-8a7d-c51667562bb7;5bbe2c31-d972-4383-9dba-22e532a4ad35
+Person,german_name,שמעון פייט,fc9deb2f-869b-4e52-a02e-72ab8704cd4e;36acccca-69b9-496f-8528-74f1dc08774a
+Person,hebrew_name,itzig,c59c6ae1-c3a4-4a1e-872c-37f3d66dccc2;cccf3ea5-a152-42e9-88e4-7bddbb77e144
+Person,hebrew_name,"אברהם ב""ר צבי הירש (אב""ד ור""מ)",9b8f065f-c5ec-4618-b110-a73483e41b97;85678d60-b4fe-46e9-94ae-d63fe796fbd4
+Person,hebrew_name,"אברהם בר""נ ה""ש",39ed0dc3-1d27-4420-9b1b-98f544f512e3;b3625ca8-83c2-47fc-be32-58bb95f3b070;ae2bf34c-3328-47e9-8bcc-ab12ca27af72
+Person,hebrew_name,"אברהם בר""פ כ""ץ",e3be9a0a-4cd2-4727-a96c-14849870d462;d75a2618-e4a6-41f7-8a94-ee70bd0bbadf
+Person,hebrew_name,"אברהם מרדכי (אב""ד זאלקוי)",1de98862-ae14-4e99-bbb3-dc23b140d911;4c0bd184-5a89-4f7f-b7e5-259478528a61
+Person,hebrew_name,אברהם צבי,12bf673a-7577-4102-9fe4-540e6fd14cdd;5b0882c1-8549-4650-b2b5-f4882f7fada0
+Person,hebrew_name,"בוקי (פו""מ), אליהו",71c3e2db-deea-415f-bae0-c2907427b38f;24169297-15f9-4f07-9af3-08760f3f3040
+Person,hebrew_name,"הוים, קרל היינריך פון",86d0fec1-915a-49f2-8bcd-76eec875cc4d;701666e2-8dd8-4cc2-a608-5f3106d16c64
+Person,hebrew_name,"הירש (רב, אב""ד), צבי",54b8cdb0-6db8-410b-b189-5a679baf8e1a;08cd28f3-d636-4689-94ed-681cc77a25f1
+Person,hebrew_name,וואלף האללי,c57d914e-3e2a-4473-968d-32596cb319a0;e5539cea-a78d-4013-94ab-83b664a51d1f
+Person,hebrew_name,יוסף השני,293652f4-b217-48c7-b043-b666a44594de;432cbe39-df1d-4ec6-bd99-2eac04d57e2d
+Person,hebrew_name,"יעקב בער כ""ץ",c80573bf-ed54-4e4e-87b1-bbf1b84c96cb;f28013c4-ca8a-49af-8711-3dc3e64760fd
+Person,hebrew_name,"יפה, דניאל",23670a84-977b-4c08-aae8-72339aca4f31;6f871c1e-851f-4e42-8a26-6ac3d2e9767c;3b7cf424-1cb6-4bcd-ae08-9e970a734cb0
+Person,hebrew_name,"ירמי' בר""י",851a840b-b3f5-4154-bee1-50834a452a34;5eae5612-5b12-410a-8f99-7a5684961524
+Person,hebrew_name,"ישראל בר""י בה""ש",2a88681e-87aa-40f1-a572-6382b24a73d2;0bf160e8-cd40-4151-8cbf-4fb37c79c991
+Person,hebrew_name,"לאמניץ, סענדר",1bbd0c78-1e83-4996-a2a9-3de0aed85305;a0ebd3f7-38c2-4037-80e9-364fc14926fa
+Person,hebrew_name,"לוי, יעקב",1915a1c4-2ed8-43c2-87a8-ea6101b80b21;9298a867-1c3f-4892-8607-2dfd4b66f13b
+Person,hebrew_name,"ליב בר""מ (פו""מ)",aaf39c4c-e82e-452b-9b55-40c4d066dc38;52b6e6eb-5462-4360-9f0d-9ae5a51de98d
+Person,hebrew_name,"ליב בר""פ כ""ץ",0a1ffb56-6942-4cac-bb8e-f6b85565157d;226367a1-ae3d-4133-864a-53f91a93a4c6;28c29559-450c-47cf-9e27-3608ae085826
+Person,hebrew_name,ליזר בישיטץ,a1185167-b0ea-460f-b061-5e9bcdc6ee34;f4e2eb7b-defe-45ec-bd9b-fcd0f972a616
+Person,hebrew_name,מאיר הויזן,8f050208-6cc0-4a8c-bd57-22f8bba5eac9;2c30fa7b-15b3-4957-8d5c-7aef2cf9373d
+Person,hebrew_name,מאיר פיורדא,91958028-536b-4c69-8406-c26cb4906371;237c0b34-730d-42eb-b0f8-f35ea75797c4
+Person,hebrew_name,מאיר פירדא,837c5a25-b2ea-4391-bf97-c8d769e9c3f6;50469467-8735-4279-826e-43aa92740124
+Person,hebrew_name,מיכעל קאסקעל,69fc0563-9299-404c-bbc9-fb236ba4231a;f26adbc5-8dcb-47a8-a03e-d1b6c85987fe
+Person,hebrew_name,מענדל ליידסדורף,d7f0b00c-20bf-4b3a-a18b-a05e32868f2e;d3816036-edf1-416c-9586-30edb2fe44a4
+Person,hebrew_name,"מרדכי (בע""מ שער המלך)",4e21776e-7644-45e7-8302-378f527f9ec1;c3e5da96-e7f7-4b61-bc29-40aafb90d87a;f340bf92-b95a-48bf-876b-972c543f0627
+Person,hebrew_name,משה בישיטץ,9d40ab6b-14a4-4003-9cd0-c911a6f7d94f;2488e101-b950-450c-8a74-1b3da68d1a34
+Person,hebrew_name,"משה בר""ד פ""ל",5e25a29c-c050-4543-b1ad-6a8f3c23ecac;91c41858-557f-4622-9ebd-d4011f49c296;9518870c-6d8c-4fc2-84f9-28d9460851f6
+Person,hebrew_name,משה זלאטווי,7c5097f9-80e6-46c4-83a8-15e8ef80ff15;7cbafc3e-a605-41a7-beac-2277446aacc3
+Person,hebrew_name,"סמטור, דוד",66cf1c38-3756-411f-8037-2cd4c3755015;afc78854-19c2-40e3-a6aa-c0064af5afc6;b456c9f2-5e53-488b-84ec-a3e921f7d279;2914bac3-5117-4eca-ae14-d6b25f8114b5
+Person,hebrew_name,"עזריאל ווירמש בפפ""ד",305241ae-07a6-4bbd-818f-02dd2bafc093;150a6d85-ebe2-44c7-a338-05137fd592db
+Person,hebrew_name,"עלקיש, יצחק",4dee76b3-8ec4-4d1b-ba7d-ba005909510a;4a318182-cfbe-44f1-b2b6-1ef59667a6b9
+Person,hebrew_name,"פייבל ש""ל",d5445c18-fec1-477f-932e-976c4a724cff;0de00039-39ce-43b8-ae4b-9a303f2af136
+Person,hebrew_name,פייבש וויצנהויזן,180c7082-39bc-411a-8f8d-dad8b2a764ba;f76f537d-ad26-4a04-ad0d-737800cf9a34;343926d9-2b92-4c3c-891d-61de202ea3fd
+Person,hebrew_name,"פרענקל (פו""מ), ליב",cd8ee9b4-8f72-43f9-86e9-61a2f32bbe73;b2d52a85-1230-47be-b40f-10ba3164358a;c5ec634b-1188-4237-8943-73b900f40a7e
+Person,hebrew_name,צבי הירש,c4f26ab5-ad18-4793-95c6-e1bc8f127a05;2b3177f7-717a-41b6-a0f8-79f101816c33;c78af583-bc45-4ff5-b948-bb08809fb0ba;5ced172a-001b-401b-ad8e-d5ddd53a1645;6b1b28b8-2132-4e1d-936d-624fcc8d518f;6a829a15-1f4c-4633-be3a-5ddc8f06bb12;a32bd66b-6662-4140-bcd1-12379f5eaafc;5dd57214-35cf-4f7d-a7a0-c0fb02547098;1f10a489-38d8-448f-9962-48babbc4533b;b433dc0e-7726-4942-b7d7-d5878a94b7d4
+Person,hebrew_name,"צבי הירש (רב, אב""ד)",89ea11af-77fe-44ca-af53-cbc554df81c5;7916da3a-903b-4bc1-98f3-ef7b9e72c7be;76a32602-726f-4c3a-8eae-806e52a903fe
+Person,hebrew_name,"צבי הירש מייזיל (חו""בק זאלקוי)",24d5e56c-75ef-4760-8cad-7eba8a082846;ad933033-797a-4e51-bb5f-0091cc8947aa
+Person,hebrew_name,צבי הירש מירלש,01603920-7209-4891-9f08-98871c41713c;bc57ff38-c31a-4be3-8a21-13a57f1887a7
+Person,hebrew_name,צבי הירש מלונדן,5558ac6a-cf0d-4c42-a136-b8589600d86d;853ec532-df97-4be7-b11a-cc1c849a4efe
+Person,hebrew_name,קארל קעניגסבערג,8096fee0-817b-4090-9765-6e18627db39f;40d28b78-ab14-4cbc-9a94-53e2e1467e25
+Person,hebrew_name,"ראובן בר""ש",b9f17f89-cf23-4521-b088-b7f493841e2f;876edab2-0aef-4cb4-87fb-3e2e1ff20499;7b250a28-b702-4230-9f93-4c8fb7821813
+Person,hebrew_name,ראובן גומפערטץ,e1acc0b8-5e13-40c6-8015-aa93af57c59e;9bb346fc-6a62-4558-a6cb-5fdcfef7baa0
+Person,hebrew_name,"שאול (אב""ד באמסטרדם)",5f0ed2c6-023c-4619-a4b9-74bb6b88b361;7a169892-1540-482f-98f3-f91f32ae81d0;d022ddea-d5b6-4c5c-9100-0683a47f255b;0e26f6e5-c707-454b-a99e-6485b4f8be51;0e754494-34d6-4caa-afbb-6374a6b7106f
+Person,hebrew_name,שאול כהנא,978e4895-2686-452e-86b7-9abe698658ce;ad26e821-5a22-43d1-b699-ebd54f9d176b
+Person,hebrew_name,שבתי בן דוד מיאנוב,79047fe0-9eba-4d28-8f5f-8697a9f8c616;c665de9f-94e5-44ce-8db9-22c462ae5fd7
+Person,hebrew_name,"שלאחטב, ברוך",c52fc832-1269-469d-b55b-20eb75d2c846;449dc07e-3004-4143-a77f-816d091ff447
+Person,hebrew_name,שלמה,2c3862b4-0774-47a8-bea6-ed70e3688852;f9100958-a01b-404c-94f0-6d031d3842e1
+Person,hebrew_name,שלמה רונקל,8bcdfab8-f489-476f-bdd1-e69b369a882f;9f44c3fa-0dad-4847-b5ae-1dc7ff7e5712
+Person,hebrew_name,שלמה שלם,87be345f-bb0d-4875-a7ad-460e9548adfd;b93e078d-6585-4990-8f80-4ccbab3047b7
+Person,hebrew_name,"שלמה שלם (אב""ד ור""מ קהילת הספרדים)",d5f30602-b141-4a3e-a9fa-098c7054249c;5104c0c7-84cc-46fb-a316-4273e18775b7
+Person,hebrew_name,"שמואל בר""א",da8e01e2-34d5-4f4f-8a7d-c51667562bb7;5bbe2c31-d972-4383-9dba-22e532a4ad35
+Person,hebrew_name,שמואל ברסלא,24397fe5-1293-4d3d-9e89-71af012b08c0;39176f09-d631-4e19-9d27-a7f67a16d184
+Person,hebrew_name,שמואל זנוויל,6492b753-b5fe-4018-966c-daabace3023b;623b352c-f032-4264-a442-943a26e383d8
+Person,hebrew_name,שמואל שמעלקא ליב,f7638210-c068-4c1e-9a32-5c360fb35faa;0b4cbce7-e6af-4761-93f6-592236045d51
+Person,hebrew_name,שמעון פייט,fc9deb2f-869b-4e52-a02e-72ab8704cd4e;36acccca-69b9-496f-8528-74f1dc08774a
+Person,pref_label,"hoym, karl heinrich graf von (graf, minister)",86d0fec1-915a-49f2-8bcd-76eec875cc4d;701666e2-8dd8-4cc2-a608-5f3106d16c64
+Person,pref_label,"jacobson, israel",e56457ad-c4b3-45d4-8956-cc79b03177ca;30c063e4-e083-401b-aab5-dafd06c16e60
+Person,pref_label,joseph ii. (kaiser),293652f4-b217-48c7-b043-b666a44594de;432cbe39-df1d-4ec6-bd99-2eac04d57e2d
+Person,pref_label,"kaskel, michel",69fc0563-9299-404c-bbc9-fb236ba4231a;f26adbc5-8dcb-47a8-a03e-d1b6c85987fe
+Person,pref_label,"kaulla, wolf",e9131f27-7264-4c01-b068-02655963a5c3;885c9bb8-eaaa-447c-9949-0a82f357774e
+Person,pref_label,"moses, jacob",b2eb22e0-f3f6-4220-a6fe-9249fa6eb141;8c48a2dc-02cb-464f-9e18-f25bbd3db010
+Person,pref_label,"satanow, isaak - סטנוב, יצחק",4afa71f6-3441-4a99-a563-95013123093a;11cc4faa-70f9-45ba-b5ee-62cfaedeea94
+Person,pref_label,אברהם,44c9ab95-2d68-4cb7-8e56-7b0c6a277368;cdd4bcaa-1136-49ac-aa1a-157edc693139;3f92ae0a-8edf-4b49-a547-6a5a4c958314
+Person,pref_label,"אברהם ב""ר צבי הירש",9b8f065f-c5ec-4618-b110-a73483e41b97;85678d60-b4fe-46e9-94ae-d63fe796fbd4
+Person,pref_label,"אברהם בר""נ ה""ש",39ed0dc3-1d27-4420-9b1b-98f544f512e3;b3625ca8-83c2-47fc-be32-58bb95f3b070;ae2bf34c-3328-47e9-8bcc-ab12ca27af72
+Person,pref_label,"אברהם בר""פ כ""ץ",e3be9a0a-4cd2-4727-a96c-14849870d462;d75a2618-e4a6-41f7-8a94-ee70bd0bbadf
+Person,pref_label,אברהם מרדכי,1de98862-ae14-4e99-bbb3-dc23b140d911;4c0bd184-5a89-4f7f-b7e5-259478528a61;13309ad7-d5f7-4d0c-b858-b005ad899d19
+Person,pref_label,אברהם צבי,12bf673a-7577-4102-9fe4-540e6fd14cdd;5b0882c1-8549-4650-b2b5-f4882f7fada0
+Person,pref_label,אהרן בן יוסף אהרן הלוי הורוויץ,75f07217-41a0-4c00-bcfd-d713c2d89b56;950b0b26-0e52-4375-9996-278f5be6bf1e
+Person,pref_label,אייזק דעסויא,3a073a04-119c-4c73-b04f-db53bb759b17;ab22eee2-6b55-462d-9dc0-1b9c0fe678a8
+Person,pref_label,אלעזר קאליר,c7be9e4c-007d-49a1-8161-de5919ea636d;727ed808-a8d2-454b-957d-a01521722564
+Person,pref_label,ארי' ליב,5a985999-4765-445e-b7c0-21e1c5af9882;afe5d5dc-2e78-48c9-bf00-00b7fc06c630
+Person,pref_label,אריה ליב,2a01211e-e5ad-473f-a276-b10bc3116045;db24a1fd-1f30-410c-8b8e-8cc3033c7291;48cfa72d-3c62-469e-b057-70abd04fb23c
+Person,pref_label,"בונם בר""ד פ""ל",f47d54aa-34f1-4a08-9897-df7e7c5577d4;b771ba4c-397f-402f-9273-786654f369ff
+Person,pref_label,"בוקי, אליהו",71c3e2db-deea-415f-bae0-c2907427b38f;24169297-15f9-4f07-9af3-08760f3f3040;5b6cbc63-f416-4fb7-9a80-e086d5820a77
+Person,pref_label,"בנימין בר""פ",b7653e32-f046-45cf-859b-b87b7e8b0ccd;4b7a4d31-cb79-42e3-8b48-0984e847d279;bccbb72d-0edb-4473-8036-6d6f57d9aea1
+Person,pref_label,דוד,d9e464b6-f18c-4e2f-bd96-2f1da5d12ed0;2de627c6-204e-4f89-b4f0-9150bb3b275c;89d5b8a9-e9d5-4fae-94a0-968a04ab1a67
+Person,pref_label,הירץ,73733939-43f2-4a4c-a1a2-0650f6f9cddb;5cc85615-3bd5-4757-878e-07ed064ef37a
+Person,pref_label,"הירש בר""נ",263075d9-1c7f-4fe5-be32-6091a75f054a;b936f84f-9115-4898-a9d3-bb0b8994bcd2
+Person,pref_label,וואלף האללי,c57d914e-3e2a-4473-968d-32596cb319a0;e5539cea-a78d-4013-94ab-83b664a51d1f
+Person,pref_label,חיים מצאנז,3bc5f452-aba2-485c-981b-b529c802b935;15b94603-bd96-4592-868f-793116aba026
+Person,pref_label,יונה גלויגא,07b122b4-f085-4fad-b293-fec430d3a3d8;902786d2-7291-4fdb-aeaa-ab9f9a1ab414
+Person,pref_label,יוסף,2ee393ae-f158-44f8-896f-2f3484cc456e;7a831014-cbb0-4dfd-a18e-7d91ff89bad4;c095cfb7-6475-4276-9874-e6ba07ba76dc;8c2347c1-b7cc-4c4d-9983-aa47fbd1bf6b;6b1d1e4b-fa49-44e7-b78c-9c8e1c02cc6f
+Person,pref_label,יחזקאל לנדא,b2adb9d1-96b5-4688-85d1-6d2fd6a060e8;24a5e7c8-7df3-42cc-bdc3-5d4018616af4
+Person,pref_label,"יעקב בער כ""ץ",c80573bf-ed54-4e4e-87b1-bbf1b84c96cb;f28013c4-ca8a-49af-8711-3dc3e64760fd
+Person,pref_label,יצחק הלוי מלבוב,0a46350d-fbac-471c-b941-e2ec0833ab04;753777e5-59e6-4804-a1b3-2c94fa063ba5
+Person,pref_label,"ירמי' בר""י",851a840b-b3f5-4154-bee1-50834a452a34;5eae5612-5b12-410a-8f99-7a5684961524
+Person,pref_label,"ישראל בר""י בה""ש",2a88681e-87aa-40f1-a572-6382b24a73d2;0bf160e8-cd40-4151-8cbf-4fb37c79c991
+Person,pref_label,"לאמניץ, סענדר",1bbd0c78-1e83-4996-a2a9-3de0aed85305;a0ebd3f7-38c2-4037-80e9-364fc14926fa
+Person,pref_label,"לוי, יעקב",1915a1c4-2ed8-43c2-87a8-ea6101b80b21;9298a867-1c3f-4892-8607-2dfd4b66f13b
+Person,pref_label,"ליב בר""מ",aaf39c4c-e82e-452b-9b55-40c4d066dc38;52b6e6eb-5462-4360-9f0d-9ae5a51de98d
+Person,pref_label,"ליב בר""פ כ""ץ",0a1ffb56-6942-4cac-bb8e-f6b85565157d;226367a1-ae3d-4133-864a-53f91a93a4c6;28c29559-450c-47cf-9e27-3608ae085826
+Person,pref_label,ליזר בישיטץ,a1185167-b0ea-460f-b061-5e9bcdc6ee34;f4e2eb7b-defe-45ec-bd9b-fcd0f972a616
+Person,pref_label,מאיר הויזן,8f050208-6cc0-4a8c-bd57-22f8bba5eac9;2c30fa7b-15b3-4957-8d5c-7aef2cf9373d
+Person,pref_label,מאיר פיורדא,91958028-536b-4c69-8406-c26cb4906371;237c0b34-730d-42eb-b0f8-f35ea75797c4
+Person,pref_label,מאיר פירדא,837c5a25-b2ea-4391-bf97-c8d769e9c3f6;50469467-8735-4279-826e-43aa92740124
+Person,pref_label,מענדל ליידסדורף,d7f0b00c-20bf-4b3a-a18b-a05e32868f2e;d3816036-edf1-416c-9586-30edb2fe44a4
+Person,pref_label,"מרגליות, יהודה ליב בן אשר זליג",b7cb407e-6bbd-4192-89a1-39d463c6684b;62fb38e6-9f5d-473c-a9e9-bc3b009a6f31;0730572b-8040-4613-8427-6ac63543fc84
+Person,pref_label,מרדכי,4e21776e-7644-45e7-8302-378f527f9ec1;c3e5da96-e7f7-4b61-bc29-40aafb90d87a;d4aca39b-e8cd-4fea-b3e9-a4c5724399f2;f340bf92-b95a-48bf-876b-972c543f0627
+Person,pref_label,מרדכי זאב,797c7269-23fc-49c0-a1b0-7aefe4feaf1f;f9427653-caac-4817-beb2-24a341c286a0
+Person,pref_label,משה בישיטץ,9d40ab6b-14a4-4003-9cd0-c911a6f7d94f;2488e101-b950-450c-8a74-1b3da68d1a34
+Person,pref_label,"משה בר""ד פ""ל",5e25a29c-c050-4543-b1ad-6a8f3c23ecac;91c41858-557f-4622-9ebd-d4011f49c296;9518870c-6d8c-4fc2-84f9-28d9460851f6
+Person,pref_label,משה זלאטווי,7c5097f9-80e6-46c4-83a8-15e8ef80ff15;7cbafc3e-a605-41a7-beac-2277446aacc3
+Person,pref_label,משה מינץ מבראד,ec8c9906-e538-4601-bc1f-7c8030dd8626;e8c65bbc-a046-497b-a941-02d6287e92cb
+Person,pref_label,"סמטור, דוד",66cf1c38-3756-411f-8037-2cd4c3755015;afc78854-19c2-40e3-a6aa-c0064af5afc6;b456c9f2-5e53-488b-84ec-a3e921f7d279;2914bac3-5117-4eca-ae14-d6b25f8114b5
+Person,pref_label,"עזריאל ווירמש בפפ""ד",305241ae-07a6-4bbd-818f-02dd2bafc093;150a6d85-ebe2-44c7-a338-05137fd592db
+Person,pref_label,"עלקיש, יצחק",4dee76b3-8ec4-4d1b-ba7d-ba005909510a;4a318182-cfbe-44f1-b2b6-1ef59667a6b9
+Person,pref_label,"פאן, זלמן",73243696-a23e-40a2-9639-1194ebc1b4cc;8a3ff912-0953-4ae3-9517-8a2de41db92a;e1cc95c5-2b0e-4f6a-9c62-ad2128498974
+Person,pref_label,"פולק, אהרן",95d42a10-86d2-477c-9759-884335a684e7;02ba80c0-d656-4392-a0a1-b9987cb25958
+Person,pref_label,פועלי בית הדפוס חנוך נערים,d20709d5-656d-42a1-a8b1-32c38e791ed4;c5e02ca5-1e5b-4bf4-8db2-c0a1834bbb31
+Person,pref_label,"פייבל ש""ל",d5445c18-fec1-477f-932e-976c4a724cff;0de00039-39ce-43b8-ae4b-9a303f2af136
+Person,pref_label,פייבש וויצנהויזן,180c7082-39bc-411a-8f8d-dad8b2a764ba;f76f537d-ad26-4a04-ad0d-737800cf9a34;343926d9-2b92-4c3c-891d-61de202ea3fd
+Person,pref_label,"פרענקל, ליב",cd8ee9b4-8f72-43f9-86e9-61a2f32bbe73;b2d52a85-1230-47be-b40f-10ba3164358a
+Person,pref_label,צבי הירש,c4f26ab5-ad18-4793-95c6-e1bc8f127a05;5961a737-9ef4-4340-9290-47e1e0e8bec6;54b8cdb0-6db8-410b-b189-5a679baf8e1a;89ea11af-77fe-44ca-af53-cbc554df81c5;7916da3a-903b-4bc1-98f3-ef7b9e72c7be;2b3177f7-717a-41b6-a0f8-79f101816c33;c78af583-bc45-4ff5-b948-bb08809fb0ba;31407537-6705-48c6-8da2-505feb0a855c;08cd28f3-d636-4689-94ed-681cc77a25f1;5ced172a-001b-401b-ad8e-d5ddd53a1645;6b1b28b8-2132-4e1d-936d-624fcc8d518f;76a32602-726f-4c3a-8eae-806e52a903fe;6a829a15-1f4c-4633-be3a-5ddc8f06bb12;a32bd66b-6662-4140-bcd1-12379f5eaafc;5dd57214-35cf-4f7d-a7a0-c0fb02547098;1f10a489-38d8-448f-9962-48babbc4533b;b433dc0e-7726-4942-b7d7-d5878a94b7d4
+Person,pref_label,צבי הירש ליבשיץ,8bd007a0-05c6-414d-97e0-e43792af7d0d;16755649-1a11-4d4b-a668-5a0a09dfdb08
+Person,pref_label,צבי הירש מייזיל,3f8f85c1-1d15-4fde-8173-b82ef8159a52;24d5e56c-75ef-4760-8cad-7eba8a082846;ad933033-797a-4e51-bb5f-0091cc8947aa
+Person,pref_label,צבי הירש מירלש,01603920-7209-4891-9f08-98871c41713c;bc57ff38-c31a-4be3-8a21-13a57f1887a7
+Person,pref_label,צבי הירש מלונדן,5558ac6a-cf0d-4c42-a136-b8589600d86d;853ec532-df97-4be7-b11a-cc1c849a4efe
+Person,pref_label,קארל קעניגסבערג,8096fee0-817b-4090-9765-6e18627db39f;40d28b78-ab14-4cbc-9a94-53e2e1467e25
+Person,pref_label,"ראובן בר""ש",b9f17f89-cf23-4521-b088-b7f493841e2f;876edab2-0aef-4cb4-87fb-3e2e1ff20499;7b250a28-b702-4230-9f93-4c8fb7821813
+Person,pref_label,ראובן גומפערטץ,e1acc0b8-5e13-40c6-8015-aa93af57c59e;9bb346fc-6a62-4558-a6cb-5fdcfef7baa0
+Person,pref_label,שאול,42f804b1-1682-4759-aaa4-e877903d84e2;3b231788-7f99-4fb7-a779-4eca7a7bf59c;a8d2328b-b9ef-4206-866e-bba6cfbf4ef1
+Person,pref_label,"שאול (אב""ד באמסטרדם)",5f0ed2c6-023c-4619-a4b9-74bb6b88b361;7a169892-1540-482f-98f3-f91f32ae81d0;d022ddea-d5b6-4c5c-9100-0683a47f255b;0e26f6e5-c707-454b-a99e-6485b4f8be51;0e754494-34d6-4caa-afbb-6374a6b7106f
+Person,pref_label,שאול כהנא,978e4895-2686-452e-86b7-9abe698658ce;ad26e821-5a22-43d1-b699-ebd54f9d176b
+Person,pref_label,שבתי בן דוד מיאנוב,79047fe0-9eba-4d28-8f5f-8697a9f8c616;c665de9f-94e5-44ce-8db9-22c462ae5fd7
+Person,pref_label,"שלאחטב, ברוך",c52fc832-1269-469d-b55b-20eb75d2c846;449dc07e-3004-4143-a77f-816d091ff447
+Person,pref_label,שלמה,2c3862b4-0774-47a8-bea6-ed70e3688852;24b4aff6-47e2-4b80-a6dc-18a1e57abcbb;f9100958-a01b-404c-94f0-6d031d3842e1
+Person,pref_label,שלמה רונקל,8bcdfab8-f489-476f-bdd1-e69b369a882f;9f44c3fa-0dad-4847-b5ae-1dc7ff7e5712
+Person,pref_label,שלמה שלם,87be345f-bb0d-4875-a7ad-460e9548adfd;6e68f3e7-71d4-4006-9438-c6b6c6cfda3c;d5f30602-b141-4a3e-a9fa-098c7054249c;b93e078d-6585-4990-8f80-4ccbab3047b7;5104c0c7-84cc-46fb-a316-4273e18775b7
+Person,pref_label,"שמואל בר""א",da8e01e2-34d5-4f4f-8a7d-c51667562bb7;5bbe2c31-d972-4383-9dba-22e532a4ad35
+Person,pref_label,שמואל ברסלא,24397fe5-1293-4d3d-9e89-71af012b08c0;39176f09-d631-4e19-9d27-a7f67a16d184
+Person,pref_label,שמואל זנוויל,6492b753-b5fe-4018-966c-daabace3023b;623b352c-f032-4264-a442-943a26e383d8
+Person,pref_label,שמואל שמעלקא ליב,f7638210-c068-4c1e-9a32-5c360fb35faa;0b4cbce7-e6af-4761-93f6-592236045d51
+Person,pref_label,שמעון פיורדא,9f887c3f-84a8-44ec-aeef-88976327c2a1;4de6abf2-5a9c-407d-b91c-dc13b3e30dc5
+Person,pref_label,שמעון פייט,fc9deb2f-869b-4e52-a02e-72ab8704cd4e;36acccca-69b9-496f-8528-74f1dc08774a
