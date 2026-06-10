@@ -21,7 +21,7 @@
                         <h2 class="index-group__heading h4 pb-1">{{ letter }}</h2>
                         <ul class="list-unstyled mb-0">
                             {% for person in persons %}
-                                <li class="mb-1">
+                                <li class="mb-1" dir="auto">
                                     <a href="{% url 'person-detail' person.slug %}" class="link-primary">
                                         {{ person }}
                                     </a>
