@@ -24,7 +24,7 @@
         <dt class="col-sm-4">Occupations</dt>
         <dd class="col-sm-8" dir="auto">
             {% for occ in person.occupations.all %}
-                <a href="{% url 'occupation-detail' occ.name|slugify %}">{{ occ.name }}</a>{% if not forloop.last %}, {% endif %}
+                <a href="{% url 'occupation-detail' occ.slug %}">{{ occ.name }}</a>{% if not forloop.last %}, {% endif %}
             {% endfor %}
         </dd>
     {% endif %}

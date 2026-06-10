@@ -21,7 +21,7 @@
                         <ul class="list-unstyled mb-0">
                             {% for topic in topics %}
                                 <li class="mb-1">
-                                    <a href="{% url 'topic-detail' topic.name|slugify %}" class="link-primary">
+                                    <a href="{% url 'topic-detail' topic.slug %}" class="link-primary">
                                         {{ topic.name }}
                                     </a>
                                 </li>

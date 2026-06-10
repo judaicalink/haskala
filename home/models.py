@@ -354,10 +354,16 @@ class Gender(models.Model):
 
 class Occupation(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
 
 
 class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
@@ -571,10 +577,16 @@ class Production(LegacyImportedModel):
 
 class Topic(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
 
 
 class BookAuthor(models.Model):
