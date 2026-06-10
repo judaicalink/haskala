@@ -1,7 +1,7 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for preface in prefaces_by_person %}
-        <li class="mb-2">
+        <li class="mb-2" dir="auto">
             {% if preface.title %}
                 <strong>{{ preface.title }}</strong>
                 {% if preface.book %} &mdash; {% endif %}

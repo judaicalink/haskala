@@ -33,15 +33,13 @@
                             <ul class="list-unstyled mb-0">
                                 {% for city in cities %}
                                     <li class="mb-1">
-                                        {% with slug=city.name|slugify %}
-                                            {% if slug %}
-                                                <a href="{% url 'place-detail' slug %}" class="link-primary">
-                                                    {{ city.name }}
-                                                </a>
-                                            {% else %}
-                                                <span>{{ city.name }}</span>
-                                            {% endif %}
-                                        {% endwith %}
+                                        {% if city.slug %}
+                                            <a href="{% url 'place-detail' city.slug %}" class="link-primary">
+                                                {{ city.name }}
+                                            </a>
+                                        {% else %}
+                                            <span>{{ city.name }}</span>
+                                        {% endif %}
                                     </li>
                                 {% endfor %}
                             </ul>

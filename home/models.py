@@ -8,7 +8,7 @@ from django.template.defaultfilters import slugify
 from django.template.response import TemplateResponse
 from django.utils.decorators import method_decorator
 from django.utils.translation import gettext_lazy as _
-from django.views.decorators.cache import cache_page
+from django.views.decorators.cache import cache_page, never_cache
 from modelcluster.fields import ParentalKey
 from modelcluster.models import ClusterableModel
 from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, FieldRowPanel
@@ -354,10 +354,16 @@ class Gender(models.Model):
 
 class Occupation(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
 
 
 class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
@@ -571,10 +577,16 @@ class Production(LegacyImportedModel):
 
 class Topic(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = generate_unique_slug(self, self.name)
+        super().save(*args, **kwargs)
 
 
 class BookAuthor(models.Model):
@@ -1475,6 +1487,11 @@ class ContactPage(AbstractEmailForm):
     template = "contact/contact_page.html"
     landing_page_template = "contact/contact_page_landing.html"
 
+    # The global `UpdateCacheMiddleware` would otherwise cache the
+    # GET response and strip the CSRF cookie, so a subsequent POST
+    # would fail with "CSRF cookie not set". Mark the page as
+    # never-cached so the token is set on every visit.
+    @method_decorator(never_cache)
     def serve(self, request, *args, **kwargs):
         """
         Handle form display + submission with success/error messages.
@@ -1504,7 +1521,7 @@ class ContactPage(AbstractEmailForm):
                     # Standard handling from AbstractEmailForm:
                     # - send email
                     # - save submission
-                    self.process_form(form)
+                    self.process_form_submission(form)
                 except Exception:
                     messages.error(
                         request,
@@ -1527,7 +1544,8 @@ class ContactPage(AbstractEmailForm):
                 )
 
                 # Render landing page (thank-you page)
-                context = self.get_landing_page_context(request, form=form)
+                context = self.get_context(request)
+                context["form"] = form
                 return TemplateResponse(
                     request,
                     self.get_landing_page_template(request),
@@ -1575,8 +1593,11 @@ class ContactPage(AbstractEmailForm):
         from django.conf import settings as dj_settings
 
         secret = getattr(dj_settings, "HCAPTCHA_SECRET_KEY", "") or ""
-        if not secret:
-            # hCaptcha disabled; treat every submission as verified.
+        site = getattr(dj_settings, "HCAPTCHA_SITE_KEY", "") or ""
+        if not secret or not site:
+            # Either half of the hCaptcha config missing → feature
+            # disabled. The widget isn't rendered (template gates on
+            # SITE_KEY) and no submission is verified.
             return None
 
         token = request.POST.get("h-captcha-response", "")
@@ -1601,6 +1622,34 @@ class ContactPage(AbstractEmailForm):
         if data.get("success"):
             return None
         return "Captcha verification failed. Please try again."
+
+    def _populate_email_defaults(self):
+        """Fill the page's to_address / from_address from
+        settings.CONTACT_TO_EMAIL / DEFAULT_FROM_EMAIL when the
+        editor has left them blank in Wagtail. Mutates self
+        in-memory only — values are not persisted to the page row.
+        """
+        from django.conf import settings as dj_settings
+        if not self.to_address:
+            self.to_address = getattr(
+                dj_settings, "CONTACT_TO_EMAIL", ""
+            ) or dj_settings.DEFAULT_FROM_EMAIL
+        if not self.from_address:
+            self.from_address = dj_settings.DEFAULT_FROM_EMAIL
+
+    def process_form_submission(self, form):
+        # Wagtail's base only calls send_mail when self.to_address is
+        # truthy. Populate the default addresses BEFORE calling super
+        # so the mail goes out even on a freshly-created ContactPage
+        # without manually configured recipient fields.
+        self._populate_email_defaults()
+        return super().process_form_submission(form)
+
+    def send_mail(self, form):
+        # Defence in depth: any direct caller of send_mail (e.g. tests)
+        # also picks up the defaults.
+        self._populate_email_defaults()
+        super().send_mail(form)
 
 
 class BookDetailPage(Page):

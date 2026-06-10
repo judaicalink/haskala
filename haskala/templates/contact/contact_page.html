@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags crispy_forms_tags %}
 
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block content %}
-<div class="container my-5">
+<div class="container my-5 text-start">
     <div class="row justify-content-center">
         <div class="col-lg-8">
 
@@ -28,7 +28,7 @@
 
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <form action="{% pageurl page %}" method="POST" novalidate>
+                    <form action="{% pageurl page %}" method="POST">
                         {% csrf_token %}
 
                         {# Form-Fehler oben gesammelt #}
@@ -38,12 +38,9 @@
                             </div>
                         {% endif %}
 
-                        {{ form.as_p }}
+                        {{ form|crispy }}
 
                         {% if HCAPTCHA_SITE_KEY %}
-                            {# hCaptcha challenge. Renders an iframe + a
-                               hidden h-captcha-response field that the
-                               server verifies in ContactPage.serve(). #}
                             <div class="mb-3">
                                 <div class="h-captcha" data-sitekey="{{ HCAPTCHA_SITE_KEY }}"></div>
                                 {% if hcaptcha_error %}
@@ -54,7 +51,7 @@
                         {% endif %}
 
                         <button type="submit" class="btn btn-primary">
-                            Send message
+                            <i class="bi bi-send"></i> Send message
                         </button>
                     </form>
                 </div>

@@ -2,6 +2,70 @@
 // MAIN MENU (Top Navigation)
 // =====================================
 
+// Top bar that wraps the desktop nav + mobile hamburger. Sticky
+// behaviour applies only below md so the hamburger stays reachable
+// while the page scrolls on small screens; the full desktop nav
+// keeps scrolling with the page so it doesn't camp on the title
+// strip.
+.site-topbar {
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 767.98px) {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: $body-bg;
+  }
+}
+
+.site-topbar__toggle {
+  font-size: 1.6rem;
+  padding: 0.25rem 0.5rem;
+  color: $haskala-base;
+  // Right edge of the bar on mobile (where this button is the only
+  // visible child of the flex .site-topbar).
+  margin-left: auto;
+  // No fill — the icon sits flat on the page.
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+
+  &:hover,
+  &:focus {
+    background: transparent !important;
+    color: $haskala-blue;
+  }
+}
+
+// Mobile offcanvas nav — vertical list of links, large hit areas
+// so taps don't miss on small phones.
+.mobile-nav-list {
+  margin: 0;
+  padding: 0;
+
+  li + li {
+    border-top: 1px solid var(--bs-border-color);
+  }
+
+  a {
+    display: block;
+    padding: 0.75rem 0.25rem;
+    color: $haskala-base;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $haskala-blue;
+    }
+  }
+}
+
 .wrapper {
   header {
     // Links im Header
@@ -36,6 +100,16 @@
 
         &.first:before {
           content: none;
+        }
+
+        // Mobile: drop the dot separators. With items wrapping to
+        // multiple rows, dots at line-start read as stray punctuation
+        // rather than as separators.
+        @media (max-width: 767.98px) {
+          &:before {
+            content: none;
+            margin-right: 0;
+          }
         }
 
         &:first-child {

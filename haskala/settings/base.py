@@ -70,7 +70,14 @@ INSTALLED_APPS = [
     "django_filters",
     "drf_spectacular",
     "djangordf",
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
+
+# Tell django-crispy-forms to render via the Bootstrap-5 template pack
+# (matches the rest of the public theme).
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -447,5 +454,13 @@ EMAIL_USE_TLS = env("EMAIL_USE_TLS", default=True, cast=bool)
 EMAIL_HOST_USER = env("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="")
 
-DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="")
-SERVER_EMAIL = env("SERVER_EMAIL", default="")
+# `or` lets an empty .env entry fall back to the safe default — the
+# repository ships .env with DEFAULT_FROM_EMAIL="" which would
+# otherwise win over the env()-level default.
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="") or "noreply@haskala.local"
+SERVER_EMAIL = env("SERVER_EMAIL", default="") or DEFAULT_FROM_EMAIL
+
+# Recipient inbox for the public /contact/ form when the Wagtail page's
+# own `to_address` field is empty. Set CONTACT_TO_EMAIL via .env to
+# override.
+CONTACT_TO_EMAIL = env("CONTACT_TO_EMAIL", default="") or DEFAULT_FROM_EMAIL

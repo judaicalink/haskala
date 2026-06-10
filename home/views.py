@@ -6,6 +6,7 @@ from collections import defaultdict
 from django.db.models import Prefetch, Q
 from django.http import Http404, HttpResponse
 from django.shortcuts import render, get_object_or_404
+from django.template.loader import render_to_string
 from django.utils.text import slugify
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_headers
@@ -558,9 +559,15 @@ def robots_txt(request):
 
 def _get_object_by_slug(queryset, slug: str):
     """
-    Simple helper: finds an object via slugify(obj.name).
-    Used for Topic, Publisher, Occupation.
+    Find an object via its persisted .slug column first (the path the
+    new templates use). Falls back to the legacy slugify(obj.name)
+    match so old bookmarks built before the slug columns existed
+    keep resolving. Used for Topic, Publisher, Series, Occupation.
     """
+    if hasattr(queryset.model, "slug"):
+        match = queryset.filter(slug=slug).first()
+        if match is not None:
+            return match
     for obj in queryset:
         name = getattr(obj, "name", "") or ""
         if slugify(name) == slug:
@@ -992,16 +999,98 @@ def _serialize_entity_response(obj, fmt, *, attachment_basename):
     return response
 
 
+def _pdf_entity_response(request, obj, *, template_name, attachment_basename, context_extra=None):
+    """Render *obj* via *template_name* and return the result as a PDF."""
+    from weasyprint import HTML
+
+    context = {"object": obj, "request": request, **(context_extra or {})}
+    html_string = render_to_string(template_name, context, request=request)
+    base_url = request.build_absolute_uri("/")
+    pdf_bytes = HTML(string=html_string, base_url=base_url).write_pdf()
+    response = HttpResponse(pdf_bytes, content_type="application/pdf")
+    response["Content-Disposition"] = (
+        f'attachment; filename="{attachment_basename}.pdf"'
+    )
+    return response
+
+
 def book_export(request, slug, fmt):
     book = get_object_or_404(Book, slug=slug, live=True)
+    if fmt == "pdf":
+        return _pdf_entity_response(
+            request, book,
+            template_name="books/_pdf/book_pdf.html",
+            attachment_basename=book.slug,
+            context_extra={"book": book, "visible_sections": visible_sections(book)},
+        )
     return _serialize_entity_response(book, fmt, attachment_basename=book.slug)
 
 
 def person_export(request, slug, fmt):
     person = get_object_or_404(Person, slug=slug, live=True)
+    if fmt == "pdf":
+        return _pdf_entity_response(
+            request, person,
+            template_name="persons/_pdf/person_pdf.html",
+            attachment_basename=person.slug,
+            context_extra={"person": person,
+                           "visible_sections": person_visible_sections(person)},
+        )
     return _serialize_entity_response(person, fmt, attachment_basename=person.slug)
 
 
 def place_export(request, slug, fmt):
     city = get_object_or_404(City, slug=slug, live=True)
+    if fmt == "pdf":
+        # Pass the same context the HTML place_detail_view assembles
+        # so the PDF picks up books_published_here / born_here / etc.
+        ctx = _place_context_for_pdf(request, city)
+        return _pdf_entity_response(
+            request, city,
+            template_name="places/_pdf/place_pdf.html",
+            attachment_basename=city.slug,
+            context_extra=ctx,
+        )
     return _serialize_entity_response(city, fmt, attachment_basename=city.slug)
+
+
+def _place_context_for_pdf(request, city):
+    """Reuse the place detail view's context for the PDF render."""
+    geolocation = Geolocation.objects.filter(city=city).first()
+    books_published_here = (
+        Book.objects.filter(live=True)
+        .filter(
+            Q(publication_place=city)
+            | Q(publication_place_other=city)
+            | Q(original_publication_place=city)
+        )
+        .order_by("gregorian_year", "name")
+        .distinct()
+    )
+    editions_here = (
+        Edition.objects.filter(city=city).select_related("book")
+        .order_by("year").distinct()
+    )
+    translations_here = (
+        Translation.objects.filter(city=city).select_related("book", "language")
+        .order_by("year").distinct()
+    )
+    mentions_here = (
+        Mention.objects.filter(mentionee_city=city)
+        .select_related("book", "mentionee", "mentionee_description")
+        .order_by("mentionee__pref_label")
+    )
+    born_here = city.born_here.filter(live=True).order_by("pref_label")
+    died_here = city.died_here.filter(live=True).order_by("pref_label")
+    ctx = {
+        "city": city,
+        "geolocation": geolocation,
+        "books_published_here": books_published_here,
+        "editions_here": editions_here,
+        "translations_here": translations_here,
+        "mentions_here": mentions_here,
+        "born_here": born_here,
+        "died_here": died_here,
+    }
+    ctx["visible_sections"] = place_visible_sections(ctx)
+    return ctx

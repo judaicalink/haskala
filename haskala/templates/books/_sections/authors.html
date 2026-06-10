@@ -4,7 +4,7 @@
     <ul class="list-unstyled mb-3">
         {% for ba in book.bookauthor_set.all %}
             {% if ba.person %}
-                <li class="mb-1">
+                <li class="mb-1" dir="auto">
                     <a href="{% url 'person-detail' ba.person.slug %}" class="link-primary">
                         {{ ba.person }}
                     </a>
@@ -18,26 +18,26 @@
 <dl class="row mb-0">
     {% if book.original_author|clean_value %}
         <dt class="col-sm-4">Original author</dt>
-        <dd class="col-sm-8">{{ book.original_author|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_author_else_refer|clean_value %}
         <dt class="col-sm-4">Original author (reference)</dt>
-        <dd class="col-sm-8">{{ book.original_author_else_refer|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author_else_refer|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_author_elsewhere|clean_value %}
         <dt class="col-sm-4">Original author elsewhere</dt>
-        <dd class="col-sm-8">{{ book.original_author_elsewhere|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author_elsewhere|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_author_other_name|clean_value %}
         <dt class="col-sm-4">Original author (other name)</dt>
-        <dd class="col-sm-8">{{ book.original_author_other_name|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author_other_name|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.founders|clean_value %}
         <dt class="col-sm-4">Founders</dt>
-        <dd class="col-sm-8">{{ book.founders|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.founders|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.proofreaders|clean_value %}
         <dt class="col-sm-4">Proofreaders</dt>
-        <dd class="col-sm-8">{{ book.proofreaders|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.proofreaders|clean_value|safe_inline }}</dd>
     {% endif %}
 </dl>

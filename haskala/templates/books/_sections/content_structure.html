@@ -2,74 +2,74 @@
 <dl class="row mb-0">
     {% if book.topic|clean_value %}
         <dt class="col-sm-4">Topic</dt>
-        <dd class="col-sm-8">
-            <a href="{% url 'topic-detail' book.topic.name|slugify %}">{{ book.topic.name }}</a>
+        <dd class="col-sm-8" dir="auto">
+            <a href="{% url 'topic-detail' book.topic.slug %}">{{ book.topic.name }}</a>
         </dd>
     {% endif %}
     {% if book.target_audience.all %}
         <dt class="col-sm-4">Target audience</dt>
-        <dd class="col-sm-8">
+        <dd class="col-sm-8" dir="auto">
             {% for ta in book.target_audience.all %}{{ ta.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
         </dd>
     {% endif %}
     {% if book.target_audience_notes|clean_value %}
         <dt class="col-sm-4">Target audience notes</dt>
-        <dd class="col-sm-8">{{ book.target_audience_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.target_audience_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_type|clean_value %}
         <dt class="col-sm-4">Original type</dt>
-        <dd class="col-sm-8">{{ book.original_type.name }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_type.name }}</dd>
     {% endif %}
     {% if book.main_textual_models.all %}
         <dt class="col-sm-4">Main textual models</dt>
-        <dd class="col-sm-8">
+        <dd class="col-sm-8" dir="auto">
             {% for tm in book.main_textual_models.all %}{{ tm.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
         </dd>
     {% endif %}
     {% if book.secondary_textual_models.all %}
         <dt class="col-sm-4">Secondary textual models</dt>
-        <dd class="col-sm-8">
+        <dd class="col-sm-8" dir="auto">
             {% for tm in book.secondary_textual_models.all %}{{ tm.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
         </dd>
     {% endif %}
     {% if book.textual_model_notes|clean_value %}
         <dt class="col-sm-4">Textual model notes</dt>
-        <dd class="col-sm-8">{{ book.textual_model_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.textual_model_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.structure_notes|clean_value %}
         <dt class="col-sm-4">Structure notes</dt>
-        <dd class="col-sm-8">{{ book.structure_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.structure_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.structure_preface_notes|clean_value %}
         <dt class="col-sm-4">Structure / preface notes</dt>
-        <dd class="col-sm-8">{{ book.structure_preface_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.structure_preface_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.table_of_content|clean_value %}
         <dt class="col-sm-4">Table of contents</dt>
-        <dd class="col-sm-8">{{ book.table_of_content|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.table_of_content|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.contents_table_notes|clean_value %}
         <dt class="col-sm-4">Table of contents notes</dt>
-        <dd class="col-sm-8">{{ book.contents_table_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.contents_table_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.preface|clean_value %}
         <dt class="col-sm-4">Preface</dt>
-        <dd class="col-sm-8">{{ book.preface|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.preface|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.epilogue|clean_value %}
         <dt class="col-sm-4">Epilogue</dt>
-        <dd class="col-sm-8">{{ book.epilogue|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.epilogue|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.epilogue_notes|clean_value %}
         <dt class="col-sm-4">Epilogue notes</dt>
-        <dd class="col-sm-8">{{ book.epilogue_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.epilogue_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.dedications|clean_value %}
         <dt class="col-sm-4">Dedications</dt>
-        <dd class="col-sm-8">{{ book.dedications|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.dedications|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.dedications_notes|clean_value %}
         <dt class="col-sm-4">Dedications notes</dt>
-        <dd class="col-sm-8">{{ book.dedications_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.dedications_notes|clean_value|safe_inline }}</dd>
     {% endif %}
 </dl>

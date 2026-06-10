@@ -1,12 +1,12 @@
 {% load value_filters %}
 <ul class="list-unstyled mb-0">
     {% for person in died_here %}
-        <li class="mb-1">
+        <li class="mb-1" dir="auto">
             <a href="{% url 'person-detail' person.slug %}" class="link-primary">
                 {{ person }}
             </a>
             {% if person.date_of_death|clean_value %}
-                <span class="text-muted small">&middot; &#8224; {{ person.date_of_death|clean_value }}</span>
+                <span class="text-muted small">&middot; &#8224; {{ person.date_of_death|clean_value|safe_inline }}</span>
             {% endif %}
         </li>
     {% endfor %}
