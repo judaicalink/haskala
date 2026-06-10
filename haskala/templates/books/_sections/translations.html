@@ -26,14 +26,14 @@
     {% endif %}
     {% if book.translation_notes|clean_value %}
         <dt class="col-sm-4">Translation notes</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.translation_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.translation_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.presented_as_translation_refe|clean_value %}
         <dt class="col-sm-4">Presented as translation (reference)</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.presented_as_translation_refe|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.presented_as_translation_refe|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.presented_as_translatio_notes|clean_value %}
         <dt class="col-sm-4">Presented as translation (notes)</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.presented_as_translatio_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.presented_as_translatio_notes|clean_value|safe_inline }}</dd>
     {% endif %}
 </dl>

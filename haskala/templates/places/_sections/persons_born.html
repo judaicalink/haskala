@@ -6,7 +6,7 @@
                 {{ person }}
             </a>
             {% if person.date_of_birth|clean_value %}
-                <span class="text-muted small">&middot; &#42; {{ person.date_of_birth|clean_value }}</span>
+                <span class="text-muted small">&middot; &#42; {{ person.date_of_birth|clean_value|safe_inline }}</span>
             {% endif %}
         </li>
     {% endfor %}

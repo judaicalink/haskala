@@ -2,50 +2,50 @@
 <dl class="row mb-0">
     {% if book.full_title|clean_value %}
         <dt class="col-sm-4">Full title</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.full_title|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.full_title|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.title_in_latin_characters|clean_value %}
         <dt class="col-sm-4">Title in Latin characters</dt>
-        <dd class="col-sm-8 fst-italic" dir="auto">{{ book.title_in_latin_characters|clean_value }}</dd>
+        <dd class="col-sm-8 fst-italic" dir="auto">{{ book.title_in_latin_characters|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.motto|clean_value %}
         <dt class="col-sm-4">Motto</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.motto|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.motto|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.old_name_in_book|clean_value %}
         <dt class="col-sm-4">Old name in book</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.old_name_in_book|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.old_name_in_book|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.other_books_names|clean_value %}
         <dt class="col-sm-4">Other names of this book</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.other_books_names|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.other_books_names|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_text_name|clean_value %}
         <dt class="col-sm-4">Original text name</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.original_text_name|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_text_name|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_title|clean_value %}
         <dt class="col-sm-4">Original title</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.original_title|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_title|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_title_else_refer|clean_value %}
         <dt class="col-sm-4">Original title (reference)</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.original_title_else_refer|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_title_else_refer|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.original_title_elsewhere|clean_value %}
         <dt class="col-sm-4">Original title elsewhere</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.original_title_elsewhere|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_title_elsewhere|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.presented_as_original|clean_value %}
         <dt class="col-sm-4">Presented as original</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.presented_as_original|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.presented_as_original|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.presented_as_translation|clean_value %}
         <dt class="col-sm-4">Presented as translation</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.presented_as_translation|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.presented_as_translation|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.presented_new_edition|clean_value %}
         <dt class="col-sm-4">Presented as new edition</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.presented_new_edition|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.presented_new_edition|clean_value|safe_inline }}</dd>
     {% endif %}
 </dl>
