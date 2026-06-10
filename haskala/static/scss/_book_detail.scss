@@ -146,6 +146,16 @@
 
   // Definition lists are the workhorse format on these pages.
   dl.row {
+    // Flex children with text default to min-width: auto, which the
+    // browser computes from intrinsic content width. With a long
+    // Hebrew dd cell, that intrinsic width can exceed col-sm-8's
+    // 66.66% allowance and push the dd onto the next row. Setting
+    // min-width: 0 lets the cell shrink to its assigned column
+    // width and the content wraps inside it.
+    > dt,
+    > dd {
+      min-width: 0;
+    }
     dt {
       color: var(--bs-secondary-color);
       font-weight: 500;
@@ -153,12 +163,14 @@
     }
     dd {
       margin-bottom: 0.5rem;
-      // Let the browser auto-detect direction per cell: Latin-starting
-      // values stay left-aligned, Hebrew-starting values flip to
-      // right-aligned. unicode-bidi: plaintext is the standards-
-      // compliant equivalent of dir="auto", without having to mark
-      // every <dd> in every section template by hand.
+      // Defence-in-depth alongside the dir="auto" attribute on every
+      // section <dd>: the bidi algorithm uses the first strong
+      // directional character to pick the inline flow direction.
       unicode-bidi: plaintext;
+      // RTL content needs to wrap inside the dd box. word-break:
+      // break-word keeps long Hebrew strings from creating a
+      // horizontal scroll on small viewports.
+      overflow-wrap: anywhere;
     }
   }
 }
