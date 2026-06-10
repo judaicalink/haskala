@@ -7,11 +7,9 @@
 // the extra rules below give the bar a white opaque background so
 // scrolling content doesn't bleed through.
 .site-topbar {
-  background: $body-bg;
   padding: 0.25rem 0;
   // Shadow only kicks in once the bar is actually stuck (visually
   // separates it from the page hero scrolling behind).
-  box-shadow: 0 1px 0 var(--bs-border-color);
   // Flex so the desktop nav stays centered AND the mobile hamburger
   // can push itself to the right edge via margin-left: auto.
   display: flex;
