@@ -18,26 +18,26 @@
 <dl class="row mb-0">
     {% if book.original_author|clean_value %}
         <dt class="col-sm-4">Original author</dt>
-        <dd class="col-sm-8">{{ book.original_author|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author|clean_value }}</dd>
     {% endif %}
     {% if book.original_author_else_refer|clean_value %}
         <dt class="col-sm-4">Original author (reference)</dt>
-        <dd class="col-sm-8">{{ book.original_author_else_refer|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author_else_refer|clean_value }}</dd>
     {% endif %}
     {% if book.original_author_elsewhere|clean_value %}
         <dt class="col-sm-4">Original author elsewhere</dt>
-        <dd class="col-sm-8">{{ book.original_author_elsewhere|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author_elsewhere|clean_value }}</dd>
     {% endif %}
     {% if book.original_author_other_name|clean_value %}
         <dt class="col-sm-4">Original author (other name)</dt>
-        <dd class="col-sm-8">{{ book.original_author_other_name|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.original_author_other_name|clean_value }}</dd>
     {% endif %}
     {% if book.founders|clean_value %}
         <dt class="col-sm-4">Founders</dt>
-        <dd class="col-sm-8">{{ book.founders|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.founders|clean_value }}</dd>
     {% endif %}
     {% if book.proofreaders|clean_value %}
         <dt class="col-sm-4">Proofreaders</dt>
-        <dd class="col-sm-8">{{ book.proofreaders|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.proofreaders|clean_value }}</dd>
     {% endif %}
 </dl>

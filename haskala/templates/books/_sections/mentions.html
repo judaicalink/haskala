@@ -25,22 +25,22 @@
 <dl class="row mb-0">
     {% if book.mention_general_notes|clean_value %}
         <dt class="col-sm-4">General mention notes</dt>
-        <dd class="col-sm-8">{{ book.mention_general_notes|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.mention_general_notes|clean_value|linebreaksbr }}</dd>
     {% endif %}
     {% if book.mentions_in_reviews|clean_value %}
         <dt class="col-sm-4">Mentions in reviews</dt>
-        <dd class="col-sm-8">{{ book.mentions_in_reviews|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.mentions_in_reviews|clean_value|linebreaksbr }}</dd>
     {% endif %}
     {% if book.contemporary_disputes|clean_value %}
         <dt class="col-sm-4">Contemporary disputes</dt>
-        <dd class="col-sm-8">{{ book.contemporary_disputes|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.contemporary_disputes|clean_value|linebreaksbr }}</dd>
     {% endif %}
     {% if book.contemporary_references|clean_value %}
         <dt class="col-sm-4">Contemporary references</dt>
-        <dd class="col-sm-8">{{ book.contemporary_references|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.contemporary_references|clean_value|linebreaksbr }}</dd>
     {% endif %}
     {% if book.later_references|clean_value %}
         <dt class="col-sm-4">Later references</dt>
-        <dd class="col-sm-8">{{ book.later_references|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.later_references|clean_value|linebreaksbr }}</dd>
     {% endif %}
 </dl>
