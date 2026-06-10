@@ -22,6 +22,7 @@ pytz==2026.2
 rdflib==7.6.0
 requests==2.33.0
 djangordf==0.4.1
+weasyprint==69.0
 six==1.17.0
 soupsieve==2.5
 sqlparse==0.5.4

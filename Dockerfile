@@ -28,6 +28,11 @@ RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-r
     libgdal-dev \
     gdal-bin \
     cron \
+    libpango-1.0-0 \
+    libpangoft2-1.0-0 \
+    libharfbuzz0b \
+    libfontconfig1 \
+    fonts-dejavu \
  && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
  && apt-get install --yes --quiet --no-install-recommends nodejs \
  && rm -rf /var/lib/apt/lists/*

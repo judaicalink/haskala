@@ -26,6 +26,15 @@ Required context:
         </p>
 
         <div class="list-group">
+          <a href="{% url entity|add:'-export' slug 'pdf' %}"
+             class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-semibold">PDF</div>
+              <div class="small text-muted">application/pdf &middot; printable record for offline use</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">.pdf</span>
+          </a>
+
           <a href="{% url entity|add:'-export' slug 'ttl' %}"
              class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
             <div>
