@@ -41,9 +41,6 @@
                         {{ form|crispy }}
 
                         {% if HCAPTCHA_SITE_KEY %}
-                            {# hCaptcha challenge. Renders an iframe + a
-                               hidden h-captcha-response field that the
-                               server verifies in ContactPage.serve(). #}
                             <div class="mb-3">
                                 <div class="h-captcha" data-sitekey="{{ HCAPTCHA_SITE_KEY }}"></div>
                                 {% if hcaptcha_error %}
