@@ -1581,8 +1581,11 @@ class ContactPage(AbstractEmailForm):
         from django.conf import settings as dj_settings
 
         secret = getattr(dj_settings, "HCAPTCHA_SECRET_KEY", "") or ""
-        if not secret:
-            # hCaptcha disabled; treat every submission as verified.
+        site = getattr(dj_settings, "HCAPTCHA_SITE_KEY", "") or ""
+        if not secret or not site:
+            # Either half of the hCaptcha config missing → feature
+            # disabled. The widget isn't rendered (template gates on
+            # SITE_KEY) and no submission is verified.
             return None
 
         token = request.POST.get("h-captcha-response", "")
