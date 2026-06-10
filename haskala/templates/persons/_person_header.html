@@ -24,7 +24,7 @@
         <p class="person-header__chips mb-2">
             {% for occ in person.occupations.all %}
                 <a href="{% url 'occupation-detail' occ.name|slugify %}"
-                   class="badge p-2 rounded-pill text-bg-secondary border text-decoration-none">
+                   class="badge p-2 rounded-pill text-bg-primary border text-decoration-none">
                     {{ occ.name }}
                 </a>{% if not forloop.last %} {% endif %}
             {% endfor %}

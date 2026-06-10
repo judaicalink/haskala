@@ -153,6 +153,12 @@
     }
     dd {
       margin-bottom: 0.5rem;
+      // Let the browser auto-detect direction per cell: Latin-starting
+      // values stay left-aligned, Hebrew-starting values flip to
+      // right-aligned. unicode-bidi: plaintext is the standards-
+      // compliant equivalent of dir="auto", without having to mark
+      // every <dd> in every section template by hand.
+      unicode-bidi: plaintext;
     }
   }
 }
