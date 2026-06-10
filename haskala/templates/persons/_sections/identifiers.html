@@ -2,7 +2,7 @@
 <dl class="row mb-0">
     {% if person.viaf_id|clean_value %}
         <dt class="col-sm-4">VIAF</dt>
-        <dd class="col-sm-8">
+        <dd class="col-sm-8" dir="auto">
             <a href="https://viaf.org/viaf/{{ person.viaf_id|clean_value }}/" target="_blank" rel="noopener">
                 {{ person.viaf_id|clean_value }}
             </a>
@@ -10,7 +10,7 @@
     {% endif %}
     {% if person.gnd_id|clean_value %}
         <dt class="col-sm-4">GND</dt>
-        <dd class="col-sm-8">
+        <dd class="col-sm-8" dir="auto">
             <a href="https://d-nb.info/gnd/{{ person.gnd_id|clean_value }}" target="_blank" rel="noopener">
                 {{ person.gnd_id|clean_value }}
             </a>
