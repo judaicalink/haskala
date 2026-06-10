@@ -1509,7 +1509,7 @@ class ContactPage(AbstractEmailForm):
                     # Standard handling from AbstractEmailForm:
                     # - send email
                     # - save submission
-                    self.process_form(form)
+                    self.process_form_submission(form)
                 except Exception:
                     messages.error(
                         request,
@@ -1532,7 +1532,8 @@ class ContactPage(AbstractEmailForm):
                 )
 
                 # Render landing page (thank-you page)
-                context = self.get_landing_page_context(request, form=form)
+                context = self.get_context(request)
+                context["form"] = form
                 return TemplateResponse(
                     request,
                     self.get_landing_page_template(request),
@@ -1606,6 +1607,34 @@ class ContactPage(AbstractEmailForm):
         if data.get("success"):
             return None
         return "Captcha verification failed. Please try again."
+
+    def _populate_email_defaults(self):
+        """Fill the page's to_address / from_address from
+        settings.CONTACT_TO_EMAIL / DEFAULT_FROM_EMAIL when the
+        editor has left them blank in Wagtail. Mutates self
+        in-memory only — values are not persisted to the page row.
+        """
+        from django.conf import settings as dj_settings
+        if not self.to_address:
+            self.to_address = getattr(
+                dj_settings, "CONTACT_TO_EMAIL", ""
+            ) or dj_settings.DEFAULT_FROM_EMAIL
+        if not self.from_address:
+            self.from_address = dj_settings.DEFAULT_FROM_EMAIL
+
+    def process_form_submission(self, form):
+        # Wagtail's base only calls send_mail when self.to_address is
+        # truthy. Populate the default addresses BEFORE calling super
+        # so the mail goes out even on a freshly-created ContactPage
+        # without manually configured recipient fields.
+        self._populate_email_defaults()
+        return super().process_form_submission(form)
+
+    def send_mail(self, form):
+        # Defence in depth: any direct caller of send_mail (e.g. tests)
+        # also picks up the defaults.
+        self._populate_email_defaults()
+        super().send_mail(form)
 
 
 class BookDetailPage(Page):
