@@ -7,12 +7,12 @@
     {% endif %}
     {% if book.availability_notes|clean_value %}
         <dt class="col-sm-4">Availability notes</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.availability_notes|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.availability_notes|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.digital_book_url|clean_value %}
         <dt class="col-sm-4">Digital copy</dt>
         <dd class="col-sm-8" dir="auto">
-            <a href="{{ book.digital_book_url|clean_value }}" target="_blank" rel="noopener">
+            <a href="{{ book.digital_book_url|clean_value|safe_inline }}" target="_blank" rel="noopener">
                 {{ book.digital_book_title|default:"Open digital copy" }}
                 <i class="bi bi-box-arrow-up-right small"></i>
             </a>
@@ -20,7 +20,7 @@
     {% endif %}
     {% if book.other_libraries|clean_value %}
         <dt class="col-sm-4">Other libraries</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.other_libraries|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.other_libraries|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
 </dl>
 
@@ -50,10 +50,10 @@
 <dl class="row mb-0 mt-3">
     {% if book.preservation_references|clean_value %}
         <dt class="col-sm-4">Preservation references</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.preservation_references|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.preservation_references|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.catalog_numbers_notes|clean_value %}
         <dt class="col-sm-4">Catalog number notes</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.catalog_numbers_notes|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.catalog_numbers_notes|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
 </dl>

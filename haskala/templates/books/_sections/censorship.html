@@ -2,18 +2,18 @@
 <dl class="row mb-0">
     {% if book.censorship|clean_value %}
         <dt class="col-sm-4">Censorship</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.censorship|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.censorship|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.bans|clean_value %}
         <dt class="col-sm-4">Bans</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.bans|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.bans|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.rabbinical_approbations|clean_value %}
         <dt class="col-sm-4">Rabbinical approbations</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.rabbinical_approbations|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.rabbinical_approbations|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
     {% if book.rabbinical_approbation_notes|clean_value %}
         <dt class="col-sm-4">Approbation notes</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.rabbinical_approbation_notes|clean_value|linebreaksbr }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.rabbinical_approbation_notes|clean_value|safe_inline|linebreaksbr }}</dd>
     {% endif %}
 </dl>

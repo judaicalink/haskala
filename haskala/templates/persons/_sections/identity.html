@@ -2,23 +2,23 @@
 <dl class="row mb-0">
     {% if person.pref_label|clean_value %}
         <dt class="col-sm-4">Preferred label</dt>
-        <dd class="col-sm-8" dir="auto">{{ person.pref_label|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ person.pref_label|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if person.german_name|clean_value %}
         <dt class="col-sm-4">German name</dt>
-        <dd class="col-sm-8" dir="auto">{{ person.german_name|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ person.german_name|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if person.hebrew_name|clean_value %}
         <dt class="col-sm-4">Hebrew name</dt>
-        <dd class="col-sm-8" lang="he" dir="auto">{{ person.hebrew_name|clean_value }}</dd>
+        <dd class="col-sm-8" lang="he" dir="auto">{{ person.hebrew_name|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if person.pseudonym|clean_value %}
         <dt class="col-sm-4">Pseudonym</dt>
-        <dd class="col-sm-8" dir="auto">{{ person.pseudonym|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ person.pseudonym|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if person.gender|clean_value %}
         <dt class="col-sm-4">Gender</dt>
-        <dd class="col-sm-8" dir="auto">{{ person.gender|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ person.gender|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if person.occupations.all %}
         <dt class="col-sm-4">Occupations</dt>

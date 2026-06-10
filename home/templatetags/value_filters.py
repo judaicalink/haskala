@@ -18,6 +18,8 @@ from __future__ import annotations
 import re
 
 from django import template
+from django.utils.html import escape
+from django.utils.safestring import mark_safe
 
 register = template.Library()
 
@@ -80,6 +82,34 @@ def clean_value(value):
     return value
 
 
+# Inline HTML tags carried over from the Drupal-6 import that we
+# want to render rather than display as escaped text. Anything else
+# (script, style, iframe, attributes, etc.) stays escaped, so the
+# filter is safe to use on legacy editor-controlled content.
+_ALLOWED_INLINE = re.compile(
+    r'&lt;(?P<close>/?)(?P<tag>strong|em|b|i|u|br|p|sub|sup)(?P<slash>\s*/?)&gt;',
+    re.IGNORECASE,
+)
+
+
+def safe_inline(value):
+    """
+    HTML-escape *value*, then re-introduce a small allowlist of inline
+    formatting tags (``<strong>``, ``<em>``, ``<b>``, ``<i>``, ``<u>``,
+    ``<br>``, ``<p>``, ``<sub>``, ``<sup>``). The result is marked safe
+    for template output. Attributes are NOT preserved — that closes the
+    door on inline event handlers / javascript URLs.
+    """
+    if not value:
+        return value
+    escaped = escape(str(value))
+    rendered = _ALLOWED_INLINE.sub(
+        lambda m: f'<{m.group("close")}{m.group("tag").lower()}{m.group("slash")}>',
+        escaped,
+    )
+    return mark_safe(rendered)
+
+
 @register.filter
 def clean_value_filter(value):
     """Template-side wrapper. Name kept short via the alias below."""
@@ -89,3 +119,4 @@ def clean_value_filter(value):
 # Register under the short ``clean_value`` name as well — that's the
 # form the templates actually use.
 register.filter("clean_value", clean_value)
+register.filter("safe_inline", safe_inline)

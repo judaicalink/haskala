@@ -2,15 +2,15 @@
 <dl class="row mb-0">
     {% if book.pages_number|clean_value %}
         <dt class="col-sm-4">Pages</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.pages_number|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.pages_number|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.height|clean_value %}
         <dt class="col-sm-4">Height</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.height|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.height|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.width|clean_value %}
         <dt class="col-sm-4">Width</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.width|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.width|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.alignment|clean_value %}
         <dt class="col-sm-4">Alignment</dt>
@@ -30,14 +30,14 @@
     {% endif %}
     {% if book.illustrations_diagrams|clean_value %}
         <dt class="col-sm-4">Illustrations / diagrams</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.illustrations_diagrams|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.illustrations_diagrams|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.diagrams_notes|clean_value %}
         <dt class="col-sm-4">Diagram notes</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.diagrams_notes|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.diagrams_notes|clean_value|safe_inline }}</dd>
     {% endif %}
     {% if book.diagrams_book_pages|clean_value %}
         <dt class="col-sm-4">Diagram book pages</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.diagrams_book_pages|clean_value }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.diagrams_book_pages|clean_value|safe_inline }}</dd>
     {% endif %}
 </dl>
