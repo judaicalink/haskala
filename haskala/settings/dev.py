@@ -15,8 +15,14 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8080",
 ]
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
+# Dev sends through the bundled MailHog service (host:port from
+# base.py's EMAIL_HOST / EMAIL_PORT env-overrides; in the docker
+# stack the web container reaches MailHog as mailserver:1025 and
+# the inbox UI is at http://localhost:8025/). MailHog is a plain
+# SMTP sink — no STARTTLS / SSL.
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = False
 
 try:
     from .local import *  # noqa: F401,F403

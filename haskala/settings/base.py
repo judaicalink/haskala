@@ -454,5 +454,13 @@ EMAIL_USE_TLS = env("EMAIL_USE_TLS", default=True, cast=bool)
 EMAIL_HOST_USER = env("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="")
 
-DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="")
-SERVER_EMAIL = env("SERVER_EMAIL", default="")
+# `or` lets an empty .env entry fall back to the safe default — the
+# repository ships .env with DEFAULT_FROM_EMAIL="" which would
+# otherwise win over the env()-level default.
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="") or "noreply@haskala.local"
+SERVER_EMAIL = env("SERVER_EMAIL", default="") or DEFAULT_FROM_EMAIL
+
+# Recipient inbox for the public /contact/ form when the Wagtail page's
+# own `to_address` field is empty. Set CONTACT_TO_EMAIL via .env to
+# override.
+CONTACT_TO_EMAIL = env("CONTACT_TO_EMAIL", default="") or DEFAULT_FROM_EMAIL
