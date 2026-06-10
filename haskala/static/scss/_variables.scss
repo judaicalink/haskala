@@ -148,7 +148,14 @@ $card-border-color: $border-color;
 // Wider wrapper so the catalog detail pages don't squeeze rich
 // definition lists into a narrow column on desktop. Legal pages
 // get their own narrow wrapper via .container--narrow below.
-$wrapper-max-width: 1280px;
+// Catalog detail pages (Books, Persons, Places) have dl-row pairs
+// with long German titles + Hebrew strings; squeezing them into
+// 1280px on a desktop pushed too many lines onto multi-row wraps.
+// 1480px gives an extra ~200px of horizontal breathing room without
+// drifting into "line too long to read" territory (the dd column at
+// 1:2 grid lands around 950px — still well below the 80-character
+// readability cap with the 16px base font).
+$wrapper-max-width: 1480px;
 $wrapper-narrow-max-width: 760px;
 $site-padding-x:    24px;
 
