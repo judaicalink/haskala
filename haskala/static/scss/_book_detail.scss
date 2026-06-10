@@ -183,11 +183,23 @@
 // Search results page — chip-style facet bar that replaces the
 // dropdown "Result type" select. The active facet uses the brand
 // blue fill; inactive facets read as outlined neutrals.
+// The page body uses text-align: start (see .search-page below) so
+// result lists read flush-left; the facet chip bar overrides this
+// with justify-content: center so the chips sit balanced above the
+// results.
 .search-facets {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+// Search page body — list items + result rows flow from the start
+// edge. The global body { text-align: center } would otherwise
+// center every result line.
+.search-page {
+  text-align: start;
 }
 
 .search-facet {
