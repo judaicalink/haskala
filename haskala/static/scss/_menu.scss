@@ -38,6 +38,16 @@
           content: none;
         }
 
+        // Mobile: drop the dot separators. With items wrapping to
+        // multiple rows, dots at line-start read as stray punctuation
+        // rather than as separators.
+        @media (max-width: 767.98px) {
+          &:before {
+            content: none;
+            margin-right: 0;
+          }
+        }
+
         &:first-child {
           margin-left: 0;
         }
