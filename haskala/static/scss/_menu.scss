@@ -2,19 +2,23 @@
 // MAIN MENU (Top Navigation)
 // =====================================
 
-// Sticky top bar that wraps the desktop nav + mobile hamburger.
-// Bootstrap's .sticky-top sets position: sticky / top: 0 / z-index;
-// the extra rules below give the bar a white opaque background so
-// scrolling content doesn't bleed through.
+// Top bar that wraps the desktop nav + mobile hamburger. Sticky
+// behaviour applies only below md so the hamburger stays reachable
+// while the page scrolls on small screens; the full desktop nav
+// keeps scrolling with the page so it doesn't camp on the title
+// strip.
 .site-topbar {
   padding: 0.25rem 0;
-  // Shadow only kicks in once the bar is actually stuck (visually
-  // separates it from the page hero scrolling behind).
-  // Flex so the desktop nav stays centered AND the mobile hamburger
-  // can push itself to the right edge via margin-left: auto.
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 767.98px) {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: $body-bg;
+  }
 }
 
 .site-topbar__toggle {
