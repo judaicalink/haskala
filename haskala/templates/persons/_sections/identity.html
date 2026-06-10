@@ -10,7 +10,7 @@
     {% endif %}
     {% if person.hebrew_name|clean_value %}
         <dt class="col-sm-4">Hebrew name</dt>
-        <dd class="col-sm-8" lang="he" dir="rtl">{{ person.hebrew_name|clean_value }}</dd>
+        <dd class="col-sm-8" lang="he">{{ person.hebrew_name|clean_value }}</dd>
     {% endif %}
     {% if person.pseudonym|clean_value %}
         <dt class="col-sm-4">Pseudonym</dt>
