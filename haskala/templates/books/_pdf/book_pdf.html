@@ -1,0 +1,82 @@
+{% load wagtailcore_tags utils value_filters %}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ book.full_title|default:book.name }} — Haskala</title>
+<style>
+    @page {
+        size: A4;
+        margin: 2cm 1.8cm;
+        @bottom-right {
+            content: "Haskala Library  •  page " counter(page) " / " counter(pages);
+            font-size: 9pt;
+            color: #595752;
+        }
+    }
+    body {
+        font-family: "DejaVu Sans", "Open Sans", sans-serif;
+        font-size: 10pt;
+        color: #5e5d58;
+        line-height: 1.45;
+    }
+    h1, h2, h3 {
+        color: #0D0D0D;
+        font-family: "DejaVu Serif", serif;
+        page-break-after: avoid;
+    }
+    h1 { font-size: 18pt; margin: 0 0 .2cm; }
+    h1 .latin { display: block; font-size: 11pt; color: #595752; font-weight: 400; font-style: italic; margin-top: .15cm; }
+    h2 { font-size: 13pt; margin: .8cm 0 .3cm; border-bottom: 1px solid #eae9e7; padding-bottom: .1cm; }
+    h3 { font-size: 11pt; margin: .4cm 0 .15cm; }
+    .meta { color: #595752; font-size: 9pt; margin-bottom: .8cm; }
+    /* Section dl rows render as a two-column grid for print. */
+    dl.row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        column-gap: .5cm;
+        row-gap: .15cm;
+        margin: 0 0 .3cm;
+    }
+    dl dt { color: #5e5d58; font-weight: 600; font-size: 9pt; }
+    dl dd { margin: 0; }
+    /* Auto-bidi support — for elements that carry dir="auto" the
+       browser already picks rtl/ltr per content; this keeps the
+       inline flow consistent inside the cells. */
+    [dir="auto"], [lang="he"] { unicode-bidi: plaintext; overflow-wrap: anywhere; }
+    a { color: #1f6e94; text-decoration: none; }
+    ul { padding-left: 1.2em; margin: 0 0 .3cm; }
+    li { margin-bottom: .1cm; }
+    .small, .text-muted { color: #797972; font-size: 8.5pt; }
+    /* Hide Bootstrap-utility classes that wouldn't make sense in print. */
+    .col-sm-4, .col-sm-8 { display: contents; }
+    .badge, .btn { display: none; }
+    section { break-inside: avoid; margin-bottom: .3cm; }
+    .header-block { border-bottom: 1px solid #eae9e7; padding-bottom: .4cm; margin-bottom: .6cm; }
+</style>
+</head>
+<body>
+
+<div class="header-block">
+    <h1>
+        {{ book.full_title|default:book.name }}
+        {% if book.title_in_latin_characters %}
+            <span class="latin" dir="auto">{{ book.title_in_latin_characters }}</span>
+        {% endif %}
+    </h1>
+    <p class="meta">
+        {% if book.bookauthor_set.all %}{% for ba in book.bookauthor_set.all %}{% if ba.person %}{{ ba.person }}{% if ba.role %} ({{ ba.get_role_display }}){% endif %}{% if not forloop.last %}; {% endif %}{% endif %}{% endfor %} ·{% endif %}
+        {% if book.publication_place %} {{ book.publication_place.name }}{% endif %}
+        {% if book.publisher %}{% if book.publication_place %} · {% endif %}{{ book.publisher.name }}{% endif %}
+        {% if book.gregorian_year or book.year_in_book %}{% if book.publication_place or book.publisher %} · {% endif %}{{ book.gregorian_year|default:book.year_in_book }}{% endif %}
+    </p>
+</div>
+
+{% for section in visible_sections %}
+    <section class="book-section">
+        <h2>{{ section.label }}</h2>
+        {% include "books/_sections/"|add:section.slug|add:".html" %}
+    </section>
+{% endfor %}
+
+</body>
+</html>

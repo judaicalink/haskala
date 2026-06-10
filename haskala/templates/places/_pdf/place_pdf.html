@@ -1,0 +1,53 @@
+{% load wagtailcore_tags utils value_filters %}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ city.name }} — Haskala</title>
+<style>
+    @page {
+        size: A4;
+        margin: 2cm 1.8cm;
+        @bottom-right {
+            content: "Haskala Library  •  page " counter(page) " / " counter(pages);
+            font-size: 9pt;
+            color: #595752;
+        }
+    }
+    body { font-family: "DejaVu Sans", sans-serif; font-size: 10pt; color: #5e5d58; line-height: 1.45; }
+    h1, h2 { color: #0D0D0D; font-family: "DejaVu Serif", serif; page-break-after: avoid; }
+    h1 { font-size: 18pt; margin: 0 0 .2cm; }
+    h2 { font-size: 13pt; margin: .8cm 0 .3cm; border-bottom: 1px solid #eae9e7; padding-bottom: .1cm; }
+    h3 { font-size: 11pt; margin: .4cm 0 .15cm; }
+    .meta { color: #595752; font-size: 9pt; margin-bottom: .8cm; }
+    dl.row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); column-gap: .5cm; row-gap: .15cm; margin: 0 0 .3cm; }
+    dl dt { color: #5e5d58; font-weight: 600; font-size: 9pt; }
+    dl dd { margin: 0; }
+    [dir="auto"], [lang="he"] { unicode-bidi: plaintext; overflow-wrap: anywhere; }
+    a { color: #1f6e94; text-decoration: none; }
+    ul { padding-left: 1.2em; margin: 0 0 .3cm; }
+    li { margin-bottom: .1cm; }
+    .small, .text-muted { color: #797972; font-size: 8.5pt; }
+    .col-sm-4, .col-sm-8 { display: contents; }
+    .badge, .btn { display: none; }
+    section { break-inside: avoid; margin-bottom: .3cm; }
+    .header-block { border-bottom: 1px solid #eae9e7; padding-bottom: .4cm; margin-bottom: .6cm; }
+</style>
+</head>
+<body>
+
+<div class="header-block">
+    <h1 dir="auto">{{ city.name }}</h1>
+    {% if geolocation %}
+        <p class="meta">{{ geolocation.lat }}, {{ geolocation.lng }}</p>
+    {% endif %}
+</div>
+
+{% for section in visible_sections %}
+    <section class="place-section">
+        <h2>{{ section.label }}</h2>
+        {% include "places/_sections/"|add:section.slug|add:".html" %}
+    </section>
+{% endfor %}
+
+</body>
+</html>
