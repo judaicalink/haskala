@@ -1,7 +1,23 @@
+import re
+
 from django import template
 from django.utils.text import slugify as django_slugify
 
 register = template.Library()
+
+
+# Strip stray HTML-tag annotations that crept in from the legacy
+# Drupal import — e.g. ``Ez 6310<a>`` for "Ez 6310, copy a" in Berlin.
+# The tag wasn't a real shelfmark suffix, so it makes the catalog
+# search miss when included. We strip them both from the displayed
+# label and from the URL query parameter.
+_STRAY_HTML_TAG = re.compile(r'</?[a-z][a-z0-9]*\s*/?>', re.IGNORECASE)
+
+
+def _strip_html_noise(value):
+    if not value:
+        return value
+    return _STRAY_HTML_TAG.sub('', str(value)).strip()
 
 
 @register.filter
@@ -27,24 +43,40 @@ LIBRARY_CATALOG_URLS = {
     "bar_ilan": (
         "https://biu.primo.exlibrisgroup.com/discovery/search"
         "?query=any,contains,{id}"
-        "&tab=Everything&search_scope=MyInst_and_CI&vid=972BIU_VU1"
+        "&vid=972BIU_INST:972BIU"
     ),
-    "berlin": "https://stabikat.de/Search/Results?lookfor={id}&type=AllFields",
+    # StabiKat shelf-mark search — type=CallNumber returns records
+    # filed under that signature instead of a free-text any-field hit.
+    "berlin": (
+        "https://stabikat.de/Search/Results"
+        "?join=AND&lookfor0%5B%5D={id}&type0%5B%5D=CallNumber"
+    ),
     "british": (
-        "https://bll01.primo.exlibrisgroup.com/discovery/search"
-        "?query=any,contains,{id}"
-        "&tab=Everything&search_scope=Not_BL_Suppress&vid=44BL_INST:BLL01"
+        "https://catalogue.bl.uk/nde/search"
+        "?query={id}&tab=LibraryCatalog&search_scope=MyInstitution"
+        "&vid=44BL_MAIN:BLL01_NDE&lang=en"
     ),
     # Frankfurt mixes URNs (urn:nbn:de:hebis:30-…) with shelf marks;
     # the URN form is handled in library_catalog_url() below so the
-    # NBN resolver opens the record directly.
-    "frankfurt": "https://hds.hebis.de/ubffm/Search/Results?lookfor={id}&type=AllFields",
+    # NBN resolver opens the record directly. Shelf marks go through
+    # the UB Frankfurt PICA OPAC; ACT=SRCHA + IKT=8060 is the
+    # signature-search index ("Signatur").
+    "frankfurt": (
+        "http://cbsopac.rz.uni-frankfurt.de/LNG=DU/DB=2.1/"
+        "CMD?ACT=SRCHA&IKT=8060&TRM={id}"
+    ),
     "huji": (
         "https://huji.primo.exlibrisgroup.com/discovery/search"
         "?query=any,contains,{id}"
-        "&tab=Everything&search_scope=MyInst_and_CI&vid=972HUJI_MAIN_VU2"
+        "&vid=972HUJI_INST:972HUJI_V1"
     ),
-    "new_york": "https://search.library.columbia.edu/catalog?q={id}",
+    # CLIO (Columbia) catalog. The negative f[-format] filter
+    # excludes FOIA Documents that otherwise show up at the top of
+    # most signature searches.
+    "new_york": (
+        "https://clio.columbia.edu/catalog"
+        "?datasource=catalog&f%5B-format%5D%5B%5D=FOIA+Document&q={id}"
+    ),
     "tel_aviv": (
         "https://tau-primo.hosted.exlibrisgroup.com/primo-explore/search"
         "?query=any,contains,{id}"
@@ -71,10 +103,12 @@ def catalog_ids(book):
     """
     Yield (label, value, key) for each library catalog ID set on this
     Book. Use together with the library_catalog_url filter to render
-    each ID as a link.
+    each ID as a link. Stray HTML-tag annotations carried over from
+    the Drupal import (``Ez 6310<a>`` → ``Ez 6310``) are stripped
+    from the displayed label.
     """
     for label, attr, key in LIBRARY_CATALOG_FIELDS:
-        yield label, getattr(book, attr, ""), key
+        yield label, _strip_html_noise(getattr(book, attr, "")), key
 
 
 @register.filter
@@ -98,7 +132,9 @@ def library_catalog_url(value, library):
 
     if not value:
         return ""
-    raw = str(value).strip()
+    raw = _strip_html_noise(value)
+    if not raw:
+        return ""
 
     # Frankfurt records that carry a Nationalbibliographie URN are
     # routed through the NBN resolver — it returns the actual record
