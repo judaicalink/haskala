@@ -144,16 +144,26 @@
     color: $haskala-base;
   }
 
-  // Definition lists are the workhorse format on these pages.
+  // Definition lists. Bootstrap's `.row` makes dt+dd a flex pair,
+  // but flex's intrinsic-min-width race condition pushes a long
+  // Hebrew dd onto the next row even with min-width: 0. Switching
+  // the wrapper to CSS Grid pins the columns at a fixed 1:2 ratio
+  // regardless of content width — the cells shrink to fit, the
+  // content wraps inside.
   dl.row {
-    // Flex children with text default to min-width: auto, which the
-    // browser computes from intrinsic content width. With a long
-    // Hebrew dd cell, that intrinsic width can exceed col-sm-8's
-    // 66.66% allowance and push the dd onto the next row. Setting
-    // min-width: 0 lets the cell shrink to its assigned column
-    // width and the content wraps inside it.
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+
     > dt,
     > dd {
+      // Bootstrap's col-sm-* utilities set max-width / flex-basis;
+      // unset them so grid-template-columns wins.
+      max-width: none;
+      flex: none;
+      padding-left: 0;
+      padding-right: 0;
       min-width: 0;
     }
     dt {
@@ -162,14 +172,13 @@
       font-size: 0.92rem;
     }
     dd {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0;
       // Defence-in-depth alongside the dir="auto" attribute on every
       // section <dd>: the bidi algorithm uses the first strong
       // directional character to pick the inline flow direction.
       unicode-bidi: plaintext;
-      // RTL content needs to wrap inside the dd box. word-break:
-      // break-word keeps long Hebrew strings from creating a
-      // horizontal scroll on small viewports.
+      // Long unbreakable runs (URLs, long Hebrew strings) wrap
+      // inside the cell rather than forcing horizontal scroll.
       overflow-wrap: anywhere;
     }
   }
