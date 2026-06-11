@@ -388,6 +388,31 @@ def place_detail_view(request, slug):
     return render(request, "places/place_detail_page.html", context)
 
 
+# Field names skipped by the introspective search helper. Slug / uuid
+# / id wouldn't surface a meaningful free-text hit; ``legacy_language``
+# is a 2-3 letter code that matches everything; the Drupal-6 importer
+# also dropped ``*_format`` sister columns for every editable text
+# field which only ever carry the value ``"filtered_html"`` / ``"php"``.
+_SEARCH_SKIP_FIELDS = {"slug", "uuid", "id", "legacy_language"}
+
+
+def _text_field_q(q, model_cls, extra_paths=()):
+    """Build an OR'd ``Q`` that searches every TextField / CharField on
+    *model_cls* with ``__icontains``. *extra_paths* gets the same
+    treatment and is meant for related-model traversals
+    (e.g. ``authors__pref_label`` on Book)."""
+    q_obj = Q()
+    for f in model_cls._meta.fields:
+        if f.get_internal_type() not in ("TextField", "CharField"):
+            continue
+        if f.name in _SEARCH_SKIP_FIELDS or f.name.endswith("_format"):
+            continue
+        q_obj |= Q(**{f"{f.name}__icontains": q})
+    for path in extra_paths:
+        q_obj |= Q(**{f"{path}__icontains": q})
+    return q_obj
+
+
 @cache_page(60 * 5)
 def search_view(request):
     """
@@ -418,63 +443,24 @@ def search_view(request):
     places_qs = City.objects.filter(live=True)
 
     # --- Full-text query ----------------------------------------------------
-    # The whitelist below covers the legacy Drupal-6 free-text columns
-    # that carry real catalog signal — titles + author names + the
-    # narrative columns ("subscribers_notes", "mention_general_notes",
-    # "references_notes", "printers", "motto", "dedications", …) — plus
-    # the seven per-library shelfmark columns so librarians can paste a
-    # call number and find the matching Book. Numeric / format /
-    # year-in-other columns are deliberately omitted because their hits
-    # are noise.
+    # The query runs an OR'd icontains across every TextField /
+    # CharField on Book, Person, and City — built by introspection so
+    # the search stays exhaustive as new columns are added to the
+    # models. ``_text_field_q`` skips the Drupal-6 ``*_format`` sister
+    # columns, primary keys, slug fields, and ``legacy_language``
+    # tokens; Book also gets the author M2M traversal paths.
     if q:
         books_qs = books_qs.filter(
-            # Titles + author names
-            Q(name__icontains=q)
-            | Q(full_title__icontains=q)
-            | Q(title_in_latin_characters__icontains=q)
-            | Q(authors__pref_label__icontains=q)
-            | Q(authors__german_name__icontains=q)
-            | Q(authors__hebrew_name__icontains=q)
-            # Narrative columns from the legacy import
-            | Q(subscribers__icontains=q)
-            | Q(subscribers_notes__icontains=q)
-            | Q(mention_general_notes__icontains=q)
-            | Q(references_notes__icontains=q)
-            | Q(recommendations_notes__icontains=q)
-            | Q(sources_references__icontains=q)
-            | Q(secondary_sources__icontains=q)
-            | Q(printers__icontains=q)
-            | Q(printers_notes__icontains=q)
-            | Q(motto__icontains=q)
-            | Q(dedications_notes__icontains=q)
-            | Q(target_audience_notes__icontains=q)
-            | Q(thanks__icontains=q)
-            | Q(thanks_notes__icontains=q)
-            | Q(digital_book_title__icontains=q)
-            # Bibliographic provenance — librarians paste "UB Kiel: Ka …"
-            # into search and expect to find the matching copy.
-            | Q(copy_of_book_used__icontains=q)
-            | Q(volumes_notes__icontains=q)
-            # Per-library catalog identifiers
-            | Q(bar_ilan_library_id__icontains=q)
-            | Q(berlin_library_id__icontains=q)
-            | Q(british_library_id__icontains=q)
-            | Q(frankfurt_library_id__icontains=q)
-            | Q(huji_library_id__icontains=q)
-            | Q(new_york_library_id__icontains=q)
-            | Q(tel_aviv_library_id__icontains=q)
+            _text_field_q(q, Book, extra_paths=(
+                "authors__pref_label",
+                "authors__german_name",
+                "authors__hebrew_name",
+            ))
         ).distinct()
 
-        persons_qs = persons_qs.filter(
-            Q(pref_label__icontains=q)
-            | Q(german_name__icontains=q)
-            | Q(hebrew_name__icontains=q)
-            | Q(pseudonym__icontains=q)
-            | Q(viaf_id__icontains=q)
-            | Q(gnd_id__icontains=q)
-        ).distinct()
+        persons_qs = persons_qs.filter(_text_field_q(q, Person)).distinct()
 
-        places_qs = places_qs.filter(name__icontains=q)
+        places_qs = places_qs.filter(_text_field_q(q, City))
 
     # --- Advanced filters for books only ------------------------------------
     # Year range (gregorian_year)
