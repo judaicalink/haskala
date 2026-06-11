@@ -18,7 +18,6 @@ from __future__ import annotations
 import re
 
 from django import template
-from django.utils.html import escape
 from django.utils.safestring import mark_safe
 
 register = template.Library()
@@ -82,32 +81,26 @@ def clean_value(value):
     return value
 
 
-# Inline HTML tags carried over from the Drupal-6 import that we
-# want to render rather than display as escaped text. Anything else
-# (script, style, iframe, attributes, etc.) stays escaped, so the
-# filter is safe to use on legacy editor-controlled content.
-_ALLOWED_INLINE = re.compile(
-    r'&lt;(?P<close>/?)(?P<tag>strong|em|b|i|u|br|p|sub|sup)(?P<slash>\s*/?)&gt;',
-    re.IGNORECASE,
-)
-
-
 def safe_inline(value):
     """
-    HTML-escape *value*, then re-introduce a small allowlist of inline
-    formatting tags (``<strong>``, ``<em>``, ``<b>``, ``<i>``, ``<u>``,
-    ``<br>``, ``<p>``, ``<sub>``, ``<sup>``). The result is marked safe
-    for template output. Attributes are NOT preserved — that closes the
-    door on inline event handlers / javascript URLs.
+    Render legacy editor-supplied HTML verbatim.
+
+    The Drupal-6 imported notes / references / dedications carry a
+    long tail of formatting tags — ``<strong>``, ``<em>``, ``<sub>``,
+    ``<sup>``, ``<ins>``, ``<del>``, ``<a>``, ``<span>``, occasional
+    ``<table>`` — and the curators want all of them to render so
+    the public site looks like the editor intended. The values are
+    not user input; they came in through the legacy CMS from
+    trusted editors, so we mark the string safe directly instead of
+    running it through an allowlist.
+
+    Empty / falsy values short-circuit so chained ``|clean_value``
+    output (which collapses zero-ish to ``""``) still renders
+    nothing instead of an empty mark_safe wrapper.
     """
     if not value:
         return value
-    escaped = escape(str(value))
-    rendered = _ALLOWED_INLINE.sub(
-        lambda m: f'<{m.group("close")}{m.group("tag").lower()}{m.group("slash")}>',
-        escaped,
-    )
-    return mark_safe(rendered)
+    return mark_safe(str(value))
 
 
 @register.filter
