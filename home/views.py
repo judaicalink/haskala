@@ -418,51 +418,14 @@ def search_view(request):
     places_qs = City.objects.filter(live=True)
 
     # --- Full-text query ----------------------------------------------------
-    # The whitelist below covers the legacy Drupal-6 free-text columns
-    # that carry real catalog signal — titles + author names + the
-    # narrative columns ("subscribers_notes", "mention_general_notes",
-    # "references_notes", "printers", "motto", "dedications", …) — plus
-    # the seven per-library shelfmark columns so librarians can paste a
-    # call number and find the matching Book. Numeric / format /
-    # year-in-other columns are deliberately omitted because their hits
-    # are noise.
     if q:
         books_qs = books_qs.filter(
-            # Titles + author names
             Q(name__icontains=q)
             | Q(full_title__icontains=q)
             | Q(title_in_latin_characters__icontains=q)
             | Q(authors__pref_label__icontains=q)
             | Q(authors__german_name__icontains=q)
             | Q(authors__hebrew_name__icontains=q)
-            # Narrative columns from the legacy import
-            | Q(subscribers__icontains=q)
-            | Q(subscribers_notes__icontains=q)
-            | Q(mention_general_notes__icontains=q)
-            | Q(references_notes__icontains=q)
-            | Q(recommendations_notes__icontains=q)
-            | Q(sources_references__icontains=q)
-            | Q(secondary_sources__icontains=q)
-            | Q(printers__icontains=q)
-            | Q(printers_notes__icontains=q)
-            | Q(motto__icontains=q)
-            | Q(dedications_notes__icontains=q)
-            | Q(target_audience_notes__icontains=q)
-            | Q(thanks__icontains=q)
-            | Q(thanks_notes__icontains=q)
-            | Q(digital_book_title__icontains=q)
-            # Bibliographic provenance — librarians paste "UB Kiel: Ka …"
-            # into search and expect to find the matching copy.
-            | Q(copy_of_book_used__icontains=q)
-            | Q(volumes_notes__icontains=q)
-            # Per-library catalog identifiers
-            | Q(bar_ilan_library_id__icontains=q)
-            | Q(berlin_library_id__icontains=q)
-            | Q(british_library_id__icontains=q)
-            | Q(frankfurt_library_id__icontains=q)
-            | Q(huji_library_id__icontains=q)
-            | Q(new_york_library_id__icontains=q)
-            | Q(tel_aviv_library_id__icontains=q)
         ).distinct()
 
         persons_qs = persons_qs.filter(
@@ -470,8 +433,6 @@ def search_view(request):
             | Q(german_name__icontains=q)
             | Q(hebrew_name__icontains=q)
             | Q(pseudonym__icontains=q)
-            | Q(viaf_id__icontains=q)
-            | Q(gnd_id__icontains=q)
         ).distinct()
 
         places_qs = places_qs.filter(name__icontains=q)
