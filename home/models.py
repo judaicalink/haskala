@@ -309,6 +309,43 @@ class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True, null=True, blank=True)
 
+    # Wikidata QID anchors this row to a single authoritative entity.
+    # Used by the upcoming auto-enrichment command and by the audit to
+    # spot duplicates ("two rows claiming the same QID").
+    wikidata_id = models.CharField(
+        max_length=32,
+        blank=True,
+        default="",
+        help_text="Wikidata QID, e.g. 'Q64' for Berlin.",
+    )
+
+    # Hierarchical parent — e.g. "Hirschberg a. Lissa" points to its
+    # historical containing town "Lissa". Optional. Drives nested
+    # browsing and helps the auto-matcher resolve ambiguous names.
+    parent_place = models.ForeignKey(
+        "self",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="children",
+        help_text="Containing/parent place if this is a district, "
+                  "village, or sub-region.",
+    )
+
+    # Soft-dedup pointer. When two rows describe the same real place
+    # we keep both records but link the duplicate at this field; the
+    # public site routes the duplicate to its canonical row.
+    merged_into = models.ForeignKey(
+        "self",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="merged_from",
+        help_text="Canonical row this entry has been merged into. "
+                  "Setting this hides the row from listings but "
+                  "preserves the FK target for legacy data.",
+    )
+
     class Meta:
         verbose_name_plural = "Cities"
 
@@ -322,6 +359,17 @@ class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
 
     def get_absolute_url(self):
         return f"/places/{self.slug}/" if self.slug else f"/places/{self.uuid}/"
+
+    @property
+    def canonical(self):
+        """Walk the merged_into chain (max 5 hops) so loops or long
+        chains don't hang a request. Returns ``self`` when not
+        merged."""
+        c, hops = self, 0
+        while c.merged_into_id and hops < 5:
+            c = c.merged_into
+            hops += 1
+        return c
 
 
 # Geolocations
