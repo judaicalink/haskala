@@ -3,7 +3,7 @@ Catalog-level data audit. Writes three CSVs into
 ``HASKALA_DUMPS_ROOT/<HASKALA_SLUG>/audit/`` and prints summary lines
 so cron can chain it into an alert.
 
-Three checks:
+Four checks:
 
 - orphan_places.csv — City rows that no Book / Person / Edition /
   Translation / Mention references. These leaked through the
@@ -14,6 +14,11 @@ Three checks:
   name field instead of into a separate title column.
 - duplicates.csv — Persons sharing the same pref_label or
   hebrew_name; same shape for Books and Cities.
+- city_wikidata_status.csv — every live City with its current
+  ``wikidata_id`` / ``parent_place`` / ``merged_into`` triple so
+  the Phase 2 enrichment loop can find unanchored rows. Reports
+  duplicate QIDs (two rows claiming the same anchor) as a
+  separate warning line.
 
 The command is read-only. Use the dedicated fix commands
 (``clean_person_names``, ``mark_orphan_places_draft``) to act on
@@ -72,6 +77,22 @@ class Command(BaseCommand):
             f"duplicates: {sum(len(v) for v in dups.values())} keys "
             f"across {sum(len(rows) for v in dups.values() for rows in v.values())} rows"
         ))
+
+        wd_rows, wd_dupes = self._collect_city_wikidata_status()
+        self._write_city_wikidata_status(
+            out_dir / "city_wikidata_status.csv", wd_rows,
+        )
+        unanchored = sum(1 for r in wd_rows if not r["wikidata_id"])
+        self.stdout.write(self.style.WARNING(
+            f"city_wikidata_status: {len(wd_rows)} live cities, "
+            f"{unanchored} without wikidata_id, "
+            f"{len(wd_dupes)} duplicate QID group(s)"
+        ))
+        if wd_dupes:
+            for qid, names in sorted(wd_dupes.items()):
+                self.stdout.write(self.style.ERROR(
+                    f"  duplicate QID {qid}: {', '.join(names)}"
+                ))
 
         self.stdout.write(self.style.SUCCESS(f"Reports written to {out_dir}"))
 
@@ -153,3 +174,41 @@ class Command(BaseCommand):
             for model_name, by_key in dups.items():
                 for (fname, key), ids in sorted(by_key.items()):
                     w.writerow([model_name, fname, key, ";".join(str(i) for i in ids)])
+
+    def _collect_city_wikidata_status(self):
+        """Snapshot the Phase 1 anchor fields of every live City.
+
+        Returns a tuple ``(rows, duplicates)`` where ``rows`` is a list
+        of dicts (one per live city, alphabetical by name) and
+        ``duplicates`` is ``{qid: [name, …]}`` for QIDs that show up
+        on more than one row."""
+        rows = []
+        seen = {}
+        for c in City.objects.filter(live=True).order_by("name"):
+            qid = (c.wikidata_id or "").strip()
+            parent = c.parent_place.name if c.parent_place_id else ""
+            merged = c.merged_into.name if c.merged_into_id else ""
+            rows.append({
+                "uuid": str(c.pk),
+                "name": c.name,
+                "slug": c.slug or "",
+                "wikidata_id": qid,
+                "parent_place": parent,
+                "merged_into": merged,
+            })
+            if qid:
+                seen.setdefault(qid, []).append(c.name)
+        duplicates = {q: names for q, names in seen.items() if len(names) > 1}
+        return rows, duplicates
+
+    def _write_city_wikidata_status(self, path, rows):
+        with path.open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(
+                f,
+                fieldnames=[
+                    "uuid", "name", "slug",
+                    "wikidata_id", "parent_place", "merged_into",
+                ],
+            )
+            w.writeheader()
+            w.writerows(rows)

@@ -80,9 +80,13 @@ class CityViewSet(SnippetViewSet):
     menu_icon = "site"
     menu_order = 220
 
-    list_display = ("name", "slug", "legacy_language", "live")
+    list_display = (
+        "name", "slug", "wikidata_id",
+        "parent_place", "merged_into",
+        "legacy_language", "live",
+    )
     list_filter = ("legacy_language", "live")
-    search_fields = ("name", "slug")
+    search_fields = ("name", "slug", "wikidata_id")
 
 
 class BookAuthorViewSet(SnippetViewSet):
