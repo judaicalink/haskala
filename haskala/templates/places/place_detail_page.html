@@ -36,4 +36,5 @@
 
         {% include "partials/_export_modal.html" with modal_id="place-export-modal" entity="place" slug=city.slug title=city.name %}
     </div>
+    {% include "partials/_edit_in_admin.html" with modelname="city" pk=city.pk %}
 {% endblock %}
