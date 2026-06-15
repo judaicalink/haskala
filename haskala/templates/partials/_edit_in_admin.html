@@ -1,0 +1,18 @@
+{% comment %}
+Edit-in-admin badge link shown to authenticated curators on the
+public detail pages. The Wagtail snippet admin URL pattern is
+``/admin/snippets/home/<modelname>/edit/<pk>/`` for every model
+registered as a snippet. Anonymous users see nothing.
+
+Required context:
+  app:        Wagtail app label (almost always "home").
+  modelname:  lower-case model name (e.g. "book", "city", "topic").
+  pk:         the row's primary key (UUID or int).
+{% endcomment %}
+{% if request.user.is_authenticated %}
+    <a class="badge text-bg-secondary edit-in-admin"
+       href="/admin/snippets/{{ app|default:'home' }}/{{ modelname }}/edit/{{ pk }}/"
+       title="Open this row in the Wagtail snippet admin">
+        <i class="bi bi-pencil-square"></i> Edit
+    </a>
+{% endif %}

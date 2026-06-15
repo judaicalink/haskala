@@ -16,7 +16,10 @@
                 <span>{{ series.name }}</span>
             </p>
 
-            <h1 class="series-header__title h2 mb-2">{{ series.name }}</h1>
+            <h1 class="series-header__title h2 mb-2">
+                {{ series.name }}
+                {% include "partials/_edit_in_admin.html" with modelname="series" pk=series.pk %}
+            </h1>
 
             <p class="series-header__stats text-muted mb-3">
                 {{ books_in_series|length }} book{{ books_in_series|length|pluralize }}
