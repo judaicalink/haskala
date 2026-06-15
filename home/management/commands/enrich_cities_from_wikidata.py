@@ -194,12 +194,28 @@ class Command(BaseCommand):
             if not name:
                 continue
 
-            candidates = self._search_wikidata(
-                session, name,
-                limit=options["limit_candidates"],
-                language=options["language"],
-            )
-            time.sleep(options["delay"])
+            # Multi-language search: a single language=en pass misses
+            # Hebrew-script names entirely and a few quirks like
+            # "Vienna" where wbsearch ranks US homonyms before Wien
+            # (Q1741). Pull candidates in en + de + he, merge by QID
+            # while preserving each candidate's BEST search position
+            # across all passes.
+            languages = ("en", "de", "he")
+            seen = {}
+            for lang in languages:
+                hits = self._search_wikidata(
+                    session, name,
+                    limit=options["limit_candidates"],
+                    language=lang,
+                )
+                time.sleep(options["delay"])
+                for pos, h in enumerate(hits):
+                    qid = h["id"]
+                    if qid not in seen or pos < seen[qid][0]:
+                        seen[qid] = (pos, h)
+            candidates = [
+                h for _, h in sorted(seen.values(), key=lambda t: t[0])
+            ]
 
             scored = []
             for pos, cand in enumerate(candidates):
