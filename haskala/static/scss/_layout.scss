@@ -177,14 +177,16 @@ a:hover {
 // =====================================
 // Edit-in-admin floating action button
 // =====================================
-// Bottom-left counterpart to #scrollTopBtn for authenticated curators.
-// Only rendered server-side when request.user.is_authenticated, so
-// anonymous visitors never see it. Always visible (no scroll gate)
-// because curators expect the edit affordance on every detail page.
+// Sits to the left of #scrollTopBtn at bottom-right for authenticated
+// curators. #scrollTopBtn is 42px wide with right: 1.5rem, so this
+// button lands at right: 1.5rem + 42px + 0.5rem gap. Only rendered
+// server-side when request.user.is_authenticated, so anonymous
+// visitors never see it. Always visible (no scroll gate) because
+// curators expect the edit affordance on every detail page.
 
 .edit-in-admin-fab {
   position: fixed;
-  left: 1.5rem;
+  right: calc(1.5rem + 42px + 0.5rem);
   bottom: 1.5rem;
   width: 42px;
   height: 42px;
