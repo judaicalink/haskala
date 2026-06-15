@@ -1,8 +1,9 @@
 {% comment %}
-Edit-in-admin badge link shown to authenticated curators on the
-public detail pages. The Wagtail snippet admin URL pattern is
-``/admin/snippets/home/<modelname>/edit/<pk>/`` for every model
-registered as a snippet. Anonymous users see nothing.
+Floating edit-in-admin button rendered bottom-left for authenticated
+curators, mirroring the bottom-right scrollTopBtn. Clicks lead to
+the Wagtail snippet edit form. Wagtail's admin lives at /dashboard/
+on this deployment, not /admin/ (which is reserved for Django's
+contrib.admin and was the source of the initial bad link).
 
 Required context:
   app:        Wagtail app label (almost always "home").
@@ -10,9 +11,11 @@ Required context:
   pk:         the row's primary key (UUID or int).
 {% endcomment %}
 {% if request.user.is_authenticated %}
-    <a class="badge text-bg-secondary edit-in-admin"
-       href="/admin/snippets/{{ app|default:'home' }}/{{ modelname }}/edit/{{ pk }}/"
-       title="Open this row in the Wagtail snippet admin">
-        <i class="bi bi-pencil-square"></i> Edit
+    <a id="editInAdminBtn"
+       class="edit-in-admin-fab"
+       href="/dashboard/snippets/{{ app|default:'home' }}/{{ modelname }}/edit/{{ pk }}/"
+       aria-label="Edit in admin"
+       title="Edit in admin">
+        <i class="bi bi-pencil-square"></i>
     </a>
 {% endif %}

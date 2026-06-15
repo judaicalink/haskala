@@ -18,7 +18,6 @@
 
             <h1 class="occupation-header__title h2 mb-2" dir="auto">
                 {{ occupation.name }}
-                {% include "partials/_edit_in_admin.html" with modelname="occupation" pk=occupation.pk %}
             </h1>
 
             <p class="occupation-header__stats text-muted mb-3">
@@ -56,4 +55,5 @@
             <p class="text-muted">No persons linked to this occupation yet.</p>
         {% endif %}
     </div>
+    {% include "partials/_edit_in_admin.html" with modelname="occupation" pk=occupation.pk %}
 {% endblock %}

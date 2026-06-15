@@ -29,6 +29,7 @@
         {% include "books/_book_cite_modal.html" %}
         {% include "partials/_export_modal.html" with modal_id="book-export-modal" entity="book" slug=book.slug title=book.full_title|default:book.name %}
     </div>
+    {% include "partials/_edit_in_admin.html" with modelname="book" pk=book.pk %}
 {% endblock %}
 
 {% block extra_js %}
