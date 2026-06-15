@@ -13,10 +13,10 @@
             <p class="text-muted small mb-1">
                 <a href="{% url 'topics-list' %}">Topics</a>
                 <span aria-hidden="true">&rsaquo;</span>
-                <span>{{ topic.name }}</span>
+                <span dir="auto">{{ topic.name }}</span>
             </p>
 
-            <h1 class="topic-header__title h2 mb-2">
+            <h1 class="topic-header__title h2 mb-2" dir="auto">
                 {{ topic.name }}
                 {% include "partials/_edit_in_admin.html" with modelname="topic" pk=topic.pk %}
             </h1>
@@ -39,7 +39,7 @@
                 <h2 class="topic-section__heading h4">Books with this topic</h2>
                 <ul class="list-unstyled mb-0">
                     {% for book in books_with_topic %}
-                        <li class="mb-1">
+                        <li class="mb-1" dir="auto">
                             <a href="{% url 'book-detail' book.slug %}" class="link-primary">
                                 {{ book.full_title|default:book.name|default:"[untitled]" }}
                             </a>

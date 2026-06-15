@@ -20,7 +20,7 @@
                         <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
                         <ul class="list-unstyled mb-0">
                             {% for occ in occs %}
-                                <li class="mb-1">
+                                <li class="mb-1" dir="auto">
                                     <a href="{% url 'occupation-detail' occ.slug %}" class="link-primary">
                                         {{ occ.name }}
                                     </a>
