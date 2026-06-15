@@ -16,7 +16,10 @@
                 <span>{{ publisher.name }}</span>
             </p>
 
-            <h1 class="publisher-header__title h2 mb-2">{{ publisher.name }}</h1>
+            <h1 class="publisher-header__title h2 mb-2">
+                {{ publisher.name }}
+                {% include "partials/_edit_in_admin.html" with modelname="publisher" pk=publisher.pk %}
+            </h1>
 
             <p class="publisher-header__stats text-muted mb-3">
                 {{ books_published|length }} published

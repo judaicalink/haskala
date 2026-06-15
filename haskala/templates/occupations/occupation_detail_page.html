@@ -16,7 +16,10 @@
                 <span>{{ occupation.name }}</span>
             </p>
 
-            <h1 class="occupation-header__title h2 mb-2">{{ occupation.name }}</h1>
+            <h1 class="occupation-header__title h2 mb-2">
+                {{ occupation.name }}
+                {% include "partials/_edit_in_admin.html" with modelname="occupation" pk=occupation.pk %}
+            </h1>
 
             <p class="occupation-header__stats text-muted mb-3">
                 {{ persons_with_occupation|length }} person{{ persons_with_occupation|length|pluralize }}
