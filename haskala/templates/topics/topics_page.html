@@ -20,7 +20,7 @@
                         <h2 class="index-group__heading h4 border-bottom pb-1">{{ letter }}</h2>
                         <ul class="list-unstyled mb-0">
                             {% for topic in topics %}
-                                <li class="mb-1">
+                                <li class="mb-1" dir="auto">
                                     <a href="{% url 'topic-detail' topic.slug %}" class="link-primary">
                                         {{ topic.name }}
                                     </a>

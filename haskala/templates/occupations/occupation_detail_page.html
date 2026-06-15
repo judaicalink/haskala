@@ -13,10 +13,10 @@
             <p class="text-muted small mb-1">
                 <a href="{% url 'occupations-list' %}">Occupations</a>
                 <span aria-hidden="true">&rsaquo;</span>
-                <span>{{ occupation.name }}</span>
+                <span dir="auto">{{ occupation.name }}</span>
             </p>
 
-            <h1 class="occupation-header__title h2 mb-2">
+            <h1 class="occupation-header__title h2 mb-2" dir="auto">
                 {{ occupation.name }}
                 {% include "partials/_edit_in_admin.html" with modelname="occupation" pk=occupation.pk %}
             </h1>
@@ -39,7 +39,7 @@
                 <h2 class="occupation-section__heading h4">Persons with this occupation</h2>
                 <ul class="list-unstyled mb-0">
                     {% for person in persons_with_occupation %}
-                        <li class="mb-1">
+                        <li class="mb-1" dir="auto">
                             <a href="{% url 'person-detail' person.slug %}" class="link-primary">
                                 {{ person }}
                             </a>
