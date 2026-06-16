@@ -458,10 +458,14 @@ class Person(
     # entity, mirroring the City field. Populated by the upcoming
     # enrich_persons_from_wikidata command -- which uses ``viaf_id``
     # (P214) and ``gnd_id`` (P227) as strong-signal lookups before
-    # falling back to fuzzy name search.
+    # falling back to fuzzy name search. ``null=True`` is needed
+    # because the Wagtail snippet-add form sends NULL for empty
+    # CharField widgets despite ``default=""``; the Postgres
+    # NOT-NULL constraint then rejects the INSERT.
     wikidata_id = models.CharField(
         max_length=32,
         blank=True,
+        null=True,
         default="",
         help_text="Wikidata QID, e.g. 'Q937' for Albert Einstein.",
     )
