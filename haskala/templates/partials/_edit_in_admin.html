@@ -1,9 +1,9 @@
 {% comment %}
-Floating edit-in-admin button rendered bottom-left for authenticated
-curators, mirroring the bottom-right scrollTopBtn. Clicks lead to
-the Wagtail snippet edit form. Wagtail's admin lives at /dashboard/
-on this deployment, not /admin/ (which is reserved for Django's
-contrib.admin and was the source of the initial bad link).
+Floating edit-in-admin badge for authenticated curators. Styled to
+match the action chips at the top of the detail page (badge with
+dark background + white text, icon on the left, label on the right),
+positioned fixed at bottom-right next to #scrollTopBtn. Wagtail's
+admin lives at /dashboard/ on this deployment, not /admin/.
 
 Required context:
   app:        Wagtail app label (almost always "home").
@@ -12,10 +12,9 @@ Required context:
 {% endcomment %}
 {% if request.user.is_authenticated %}
     <a id="editInAdminBtn"
-       class="edit-in-admin-fab"
+       class="badge text-bg-secondary edit-in-admin-fab"
        href="/dashboard/snippets/{{ app|default:'home' }}/{{ modelname }}/edit/{{ pk }}/"
-       aria-label="Edit in admin"
        title="Edit in admin">
-        <i class="bi bi-pencil-square"></i>
+        <i class="bi bi-pencil-square me-1"></i>Edit
     </a>
 {% endif %}
