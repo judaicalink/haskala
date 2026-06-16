@@ -185,7 +185,11 @@ a:hover {
 
 #editInAdminBtn {
   position: fixed;
-  right: 3.5rem;
+  // scrollTopBtn sits at right:1.5rem with width:42px, so its left
+  // edge is at 1.5rem + 42px from the viewport edge. Add 0.5rem
+  // breathing room so the edit button's right edge clears that
+  // left edge cleanly instead of overlapping.
+  right: calc(1.5rem + 42px + 0.5rem);
   bottom: 1.5rem;
   height: 42px;
   border-radius: 50%;
