@@ -466,6 +466,27 @@ class Person(
         help_text="Wikidata QID, e.g. 'Q937' for Albert Einstein.",
     )
 
+    # Wikidata + GND distinguish "human" (Q5 / Tp1) from "corporate
+    # body / organisation" (Q43229 / Tb1). The legacy import dumped
+    # both kinds into the Person table; this field lets us flag the
+    # non-human rows so the Wikidata enrichment skips them (Q5
+    # filter would reject anyway) and the public-site + RDF output
+    # can render them as foaf:Organization / schema:Organization
+    # instead of foaf:Person.
+    ENTITY_TYPE_CHOICES = [
+        ("person", "Person (Wikidata Q5 / GND Tp)"),
+        ("organization", "Organization (Wikidata Q43229 / GND Tb)"),
+    ]
+    entity_type = models.CharField(
+        max_length=20,
+        choices=ENTITY_TYPE_CHOICES,
+        default="person",
+        help_text="Switch to 'organization' for catalog rows that "
+                  "represent corporate bodies (schools, libraries, "
+                  "societies). Drives the Wikidata enrichment, the "
+                  "RDF class on output, and downstream filtering.",
+    )
+
     date_of_birth = models.CharField(max_length=255, blank=True)
     date_of_death = models.CharField(max_length=255, blank=True)
 
@@ -490,6 +511,7 @@ class Person(
         FieldPanel("german_name"),
         FieldPanel("hebrew_name"),
         FieldPanel("pseudonym"),
+        FieldPanel("entity_type"),
         FieldPanel("wikidata_id"),
         FieldPanel("viaf_id"),
         FieldPanel("gnd_id"),
