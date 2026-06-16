@@ -200,48 +200,79 @@ def nonzero_stats(*pairs, sep=" · "):
 # Alias-name helpers — surface Wikidata-sourced + manually curated
 # alternative names on the public site.
 # ---------------------------------------------------------------------
-@register.simple_tag
-def aliases_inline(target, limit=4):
-    """Return up to *limit* distinct alias values for *target* as a
-    single comma-separated string, suitable for the gray
-    "(Lwiw, Lwów, Львів)" suffix on index-page entries.
 
-    Skips values that equal the target's primary display name so
-    we don't repeat the row's own ``name`` / ``pref_label``.
-    Sorted by language to keep the output deterministic between
-    requests."""
-    if target is None or not hasattr(target, "aliases"):
-        return ""
-    primary = (
+# Languages shown on the index-page inline preview. Kept short on
+# purpose: the long tail (Latin, Ukrainian, Lithuanian, Belarusian,
+# Russian, ...) is interesting on the detail page but noisy in the
+# alphabetical city list. Order matters -- output respects it.
+INLINE_INDEX_LANGUAGES = ("en", "de", "he")
+
+
+def _target_primary(target):
+    """Best-effort 'this is the row's main display name' string,
+    used to filter the row's own name out of the alias output."""
+    return (
         getattr(target, "name", None)
         or getattr(target, "pref_label", None)
         or ""
-    ).strip().lower()
-    seen = []
-    for alias in target.aliases.all().order_by("language", "value"):
-        val = (alias.value or "").strip()
-        if not val or val.lower() == primary:
-            continue
-        if val not in seen:
-            seen.append(val)
-        if len(seen) >= limit:
-            break
-    return ", ".join(seen)
+    ).strip()
+
+
+@register.simple_tag
+def aliases_inline(target):
+    """Return a short comma-separated alias string for the gray
+    "(Lwów, Lviv, ...)" suffix on index-page entries.
+
+    Picks at most one alias per language from ``INLINE_INDEX_LANGUAGES``
+    in declared order (``en``, ``de``, ``he``). Skips an entry when
+    its value equals the row's own primary name -- e.g. Berlin's
+    German label is "Berlin", same as the catalog name, so we
+    don't surface "Berlin (Berlin, ברלין)"; just "Berlin (ברלין)".
+
+    Prefers the ``is_preferred`` label per language; falls back to
+    the first available alias when no preferred row exists."""
+    if target is None or not hasattr(target, "aliases"):
+        return ""
+    primary_lower = _target_primary(target).lower()
+
+    # Only consider the ``is_preferred`` row per language. If the
+    # preferred label matches the catalog row's own primary name we
+    # skip the whole language; we never fall back to a non-preferred
+    # alias because the goal is exactly one canonical alternative per
+    # language. ``preferred_by_lang`` is built fresh from the queryset
+    # so duplicate ``is_preferred=True`` rows (shouldn't happen in
+    # practice) collapse to the first one Django returns.
+    preferred_by_lang = {}
+    for alias in (
+        target.aliases.all()
+        .filter(language__in=INLINE_INDEX_LANGUAGES, is_preferred=True)
+        .order_by("language", "value")
+    ):
+        preferred_by_lang.setdefault(
+            alias.language, (alias.value or "").strip(),
+        )
+
+    out = []
+    for lang in INLINE_INDEX_LANGUAGES:
+        val = preferred_by_lang.get(lang, "")
+        if val and val.lower() != primary_lower and val not in out:
+            out.append(val)
+    return ", ".join(out)
 
 
 @register.inclusion_tag("partials/_aliases_block.html")
 def aliases_block(target):
-    """Render the "Auch bekannt als" section under the detail-page
-    title, grouped by language. Falls back to an empty block when
-    the target has no aliases so the template can be included
-    unconditionally."""
+    """Render the "Also known as" section under the detail-page
+    title as a Bootstrap accordion: one accordion item per
+    language, the item header shows the language code + the
+    canonical label for that language, the body lists all
+    variants for that language (preferred first, then aliases).
+
+    Falls back to an empty groups list when the target has no
+    aliases so the template can be included unconditionally."""
     if target is None or not hasattr(target, "aliases"):
-        return {"groups": []}
-    primary = (
-        getattr(target, "name", None)
-        or getattr(target, "pref_label", None)
-        or ""
-    ).strip().lower()
+        return {"groups": [], "instance_id": ""}
+    primary_lower = _target_primary(target).lower()
 
     by_lang = {}
     for alias in (
@@ -249,12 +280,30 @@ def aliases_block(target):
         .order_by("language", "-is_preferred", "value")
     ):
         val = (alias.value or "").strip()
-        if not val or val.lower() == primary:
+        if not val or val.lower() == primary_lower:
             continue
         by_lang.setdefault(alias.language or "—", []).append(val)
 
-    groups = [
-        {"language": lang, "values": vals}
-        for lang, vals in sorted(by_lang.items())
-    ]
-    return {"groups": groups}
+    groups = []
+    for lang, values in sorted(by_lang.items()):
+        # Dedupe values within the language while preserving the
+        # preferred-first order from the queryset.
+        seen, dedup = set(), []
+        for v in values:
+            if v in seen:
+                continue
+            seen.add(v)
+            dedup.append(v)
+        groups.append({
+            "language": lang,
+            "primary": dedup[0],
+            "values": dedup,
+            "extras": len(dedup) - 1,
+        })
+
+    return {
+        "groups": groups,
+        "instance_id": (
+            f"aliases-{getattr(target, 'pk', '')}".replace('-', '')
+        ),
+    }
