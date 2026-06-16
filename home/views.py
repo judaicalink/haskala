@@ -413,6 +413,32 @@ def _text_field_q(q, model_cls, extra_paths=()):
     return q_obj
 
 
+def _alias_matching_pks(model_cls, q):
+    """Return the PKs of *model_cls* rows that have at least one
+    ``AliasName`` whose value matches *q* (case-insensitive
+    substring). Used by ``search_view`` so a user typing
+    ``Lwiw`` / ``Львів`` / ``לבוב`` finds the catalog row for
+    Lemberg even when the row's own primary name doesn't carry
+    the spelling. All 17 synced languages participate -- the
+    display-side ``DETAIL_BLOCK_LANGUAGES`` filter does NOT
+    restrict search.
+
+    Returns a Python ``set`` of strings (the UUID/int PKs as
+    stored in ``AliasName.object_id``). Materialising avoids the
+    Postgres "operator does not exist: uuid = character varying"
+    error that fires when a UUID-pk model gets a CharField
+    subquery handed straight to ``pk__in``."""
+    from .models import AliasName  # local import to dodge a cycle
+    from django.contrib.contenttypes.models import ContentType
+
+    ct = ContentType.objects.get_for_model(model_cls)
+    return set(
+        AliasName.objects
+        .filter(content_type=ct, value__icontains=q)
+        .values_list("object_id", flat=True)
+    )
+
+
 @cache_page(60 * 5)
 def search_view(request):
     """
@@ -450,17 +476,30 @@ def search_view(request):
     # columns, primary keys, slug fields, and ``legacy_language``
     # tokens; Book also gets the author M2M traversal paths.
     if q:
+        # Alias matches are added on top of the column-level
+        # text match so all 17 synced languages are searchable
+        # even when the row's own ``name`` / ``pref_label`` only
+        # carries one spelling. PKs come back as strings (UUIDs
+        # serialised in object_id) — Django's __in coerces.
+        book_alias_pks = _alias_matching_pks(Book, q)
+        person_alias_pks = _alias_matching_pks(Person, q)
+        city_alias_pks = _alias_matching_pks(City, q)
+
         books_qs = books_qs.filter(
             _text_field_q(q, Book, extra_paths=(
                 "authors__pref_label",
                 "authors__german_name",
                 "authors__hebrew_name",
-            ))
+            )) | Q(pk__in=book_alias_pks)
         ).distinct()
 
-        persons_qs = persons_qs.filter(_text_field_q(q, Person)).distinct()
+        persons_qs = persons_qs.filter(
+            _text_field_q(q, Person) | Q(pk__in=person_alias_pks)
+        ).distinct()
 
-        places_qs = places_qs.filter(_text_field_q(q, City))
+        places_qs = places_qs.filter(
+            _text_field_q(q, City) | Q(pk__in=city_alias_pks)
+        )
 
     # --- Advanced filters for books only ------------------------------------
     # Year range (gregorian_year)
