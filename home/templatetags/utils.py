@@ -270,21 +270,20 @@ def aliases_inline(target):
 @register.inclusion_tag("partials/_aliases_block.html")
 def aliases_block(target):
     """Render the "Also known as" section under the detail-page
-    title as a flat one-line-per-language list.
+    title as a Bootstrap accordion. One accordion item per
+    language in ``DETAIL_BLOCK_LANGUAGES`` (en, de, he, yi). The
+    header shows ``Sprache | Primary`` (language code + the
+    canonical label for that language). The collapsed body lists
+    every spelling for that language in preferred-first order so
+    curators / readers can quickly scan all known variants.
 
-    Order: ``DETAIL_BLOCK_LANGUAGES`` (en, de, he, yi). The catalog
-    row's own name acts as the implicit "Default" anchor displayed
-    above this block (the H1), so when one of the four languages'
-    preferred label equals that primary name we skip the row to
-    avoid surfacing the same spelling twice.
+    The catalog row's own name (H1 above) is the implicit Default
+    anchor; when a language's preferred label equals it we skip
+    the whole language to avoid echo.
 
-    Per language we emit the preferred label first followed by any
-    additional aliases for that language, deduped and joined with
-    commas.
-
-    Returns ``{"rows": []}`` when no row survives so the template
-    can be included unconditionally and won't render a stray empty
-    <section>."""
+    Returns ``{"rows": [], "instance_id": ""}`` when no row
+    survives so the template can be included unconditionally and
+    won't render an empty <section>."""
     if target is None or not hasattr(target, "aliases"):
         return {"rows": []}
     primary = _target_primary(target)
@@ -311,15 +310,12 @@ def aliases_block(target):
             continue
         # All-or-nothing per language: if the preferred label
         # (first entry) equals the catalog row's own name, skip
-        # the whole language. We don't want to surface stray
-        # ``Germany`` / ``DE-BE`` aliases that Wikidata attaches
-        # to Q64's English entry just because the English label
-        # itself is "Berlin", same as ours.
+        # the whole language. Otherwise dedupe within the
+        # language, preserving preferred-first order. Drop any
+        # later entry that happens to equal the catalog primary
+        # too (rare but possible).
         if raw_values[0].lower() == primary_lower:
             continue
-        # Dedupe within the language, preserving preferred-first
-        # order. Drop any later entry that happens to equal the
-        # catalog primary too (rare but possible).
         seen, kept = set(), []
         for v in raw_values:
             if v.lower() == primary_lower or v in seen:
@@ -327,6 +323,16 @@ def aliases_block(target):
             seen.add(v)
             kept.append(v)
         if kept:
-            rows.append({"language": lang, "values": kept})
+            rows.append({
+                "language": lang,
+                "primary": kept[0],
+                "values": kept,
+                "extras": len(kept) - 1,
+            })
 
-    return {"rows": rows}
+    return {
+        "rows": rows,
+        "instance_id": (
+            f"aliases-{getattr(target, 'pk', '')}".replace('-', '')
+        ),
+    }

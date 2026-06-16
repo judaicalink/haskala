@@ -1,33 +1,78 @@
 {% comment %}
-"Also known as" block rendered under the detail-page title for
+"Also known as" accordion rendered under the detail-page title for
 City / Person / Topic / Occupation entities with one or more
-AliasName rows. The catalog row's own name shown in the page H1
-acts as the implicit Default anchor; this block lists the four
-audience-relevant translations (EN, DE, HE, YI) in that fixed
-order, skipping any whose preferred label matches the H1 to avoid
-echo. Per language the preferred label leads, followed by any
-additional aliases for that language separated by commas.
+AliasName rows for the audience-facing languages (EN, DE, HE, YI).
+
+One accordion item per language: the header shows
+``Sprache | Primary`` (language code on the left, canonical label
+on the right plus a "+N variants" hint when applicable), the
+collapsed body lists every spelling for that language in
+preferred-first order separated by commas.
 
 Context (provided by the ``aliases_block`` inclusion tag in
 ``home.templatetags.utils``):
 
-  rows: list of ``{"language": iso, "values": [str, ...]}`` --
-        already filtered and ordered en, de, he, yi.
+  rows: list of {
+          language: ISO code,
+          primary:  canonical label for that language,
+          values:   [str, ...] all spellings for that language,
+          extras:   len(values) - 1,
+        }
+  instance_id: per-target slug used to scope the accordion's DOM
+               ids so multiple aliases_block calls on one page
+               don't collide.
 {% endcomment %}
 {% if rows %}
     <section class="aliases-block mb-3" aria-label="Also known as">
         <h2 class="aliases-block__heading h6 text-uppercase text-muted mb-2">
             Also known as
         </h2>
-        <dl class="aliases-block__list row gx-3 mb-0">
+        <div class="accordion accordion-flush"
+             id="{{ instance_id|default:'aliases-accordion' }}">
             {% for row in rows %}
-                <dt class="col-auto text-muted small text-uppercase">
-                    {{ row.language }}
-                </dt>
-                <dd class="col mb-1" dir="auto">
-                    {{ row.values|join:", " }}
-                </dd>
+                {% if row.extras %}
+                    {# Multiple values for this language -> collapsible #}
+                    <div class="accordion-item">
+                        <h3 class="accordion-header"
+                            id="{{ instance_id }}-h-{{ forloop.counter }}">
+                            <button class="accordion-button collapsed py-2"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#{{ instance_id }}-b-{{ forloop.counter }}"
+                                    aria-expanded="false"
+                                    aria-controls="{{ instance_id }}-b-{{ forloop.counter }}">
+                                <span class="text-muted small text-uppercase me-3"
+                                      style="min-width: 2.5rem;">
+                                    {{ row.language }}
+                                </span>
+                                <span dir="auto">{{ row.primary }}</span>
+                                <span class="text-muted small ms-2">
+                                    +{{ row.extras }}
+                                    variant{{ row.extras|pluralize }}
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="{{ instance_id }}-b-{{ forloop.counter }}"
+                             class="accordion-collapse collapse"
+                             aria-labelledby="{{ instance_id }}-h-{{ forloop.counter }}">
+                            <div class="accordion-body py-2" dir="auto">
+                                {{ row.values|slice:"1:"|join:", " }}
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    {# Single value -> flat row, no collapse #}
+                    <div class="accordion-item">
+                        <div class="d-flex align-items-center py-2 px-3">
+                            <span class="text-muted small text-uppercase me-3"
+                                  style="min-width: 2.5rem;">
+                                {{ row.language }}
+                            </span>
+                            <span dir="auto">{{ row.primary }}</span>
+                        </div>
+                    </div>
+                {% endif %}
             {% endfor %}
-        </dl>
+        </div>
     </section>
 {% endif %}
