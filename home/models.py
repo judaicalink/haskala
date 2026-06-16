@@ -304,7 +304,9 @@ class LanguageCount(models.Model):
         return self.name
 
 
-class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
+class City(
+    index.Indexed, DraftStateMixin, RevisionMixin, LegacyImportedModel,
+):
     """
     Model for the cities
     """
@@ -372,6 +374,19 @@ class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
         FieldPanel("merged_into"),
         FieldPanel("legacy_tid"),
         FieldPanel("legacy_language"),
+    ]
+
+    # Wagtail's snippet chooser modal only renders a search box when
+    # the MODEL itself declares ``search_fields`` via
+    # ``wagtail.search.index.SearchField`` -- the SnippetViewSet's
+    # ``search_fields`` list only powers the list view. Add it here
+    # so the parent_place / merged_into pickers (and any other
+    # chooser pointed at City, e.g. the publication_place pickers
+    # on Book) get a working live-filter input.
+    search_fields = [
+        index.SearchField("name", partial_match=True),
+        index.SearchField("slug", partial_match=True),
+        index.SearchField("wikidata_id", partial_match=True),
     ]
 
     class Meta:
