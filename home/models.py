@@ -1,5 +1,9 @@
 import secrets
 import uuid as uuid
+
+from django.contrib.contenttypes.fields import (
+    GenericForeignKey, GenericRelation,
+)
 from collections import defaultdict
 
 from django.contrib import messages
@@ -346,6 +350,12 @@ class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
                   "preserves the FK target for legacy data.",
     )
 
+    aliases = GenericRelation(
+        "AliasName",
+        object_id_field="object_id",
+        content_type_field="content_type",
+    )
+
     class Meta:
         verbose_name_plural = "Cities"
 
@@ -405,6 +415,12 @@ class Occupation(models.Model):
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True)
 
+    aliases = GenericRelation(
+        "AliasName",
+        object_id_field="object_id",
+        content_type_field="content_type",
+    )
+
     def __str__(self):
         return self.name
 
@@ -445,6 +461,12 @@ class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
                                        related_name="died_here")
 
     pseudonym = models.CharField(max_length=255, blank=True)
+
+    aliases = GenericRelation(
+        "AliasName",
+        object_id_field="object_id",
+        content_type_field="content_type",
+    )
 
     search_fields = [
         index.SearchField('pref_label', partial_match=True),
@@ -627,6 +649,12 @@ class Topic(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     legacy_tid = models.IntegerField(unique=True)
+
+    aliases = GenericRelation(
+        "AliasName",
+        object_id_field="object_id",
+        content_type_field="content_type",
+    )
 
     def __str__(self):
         return self.name
@@ -2149,3 +2177,83 @@ def generate_unique_slug(instance, value, slug_field_name="slug"):
         i += 1
 
     return slug
+
+
+# ---------------------------------------------------------------------
+# AliasName -- alternative names for City / Person / Topic / Occupation
+# ---------------------------------------------------------------------
+class AliasName(models.Model):
+    """
+    Alternative spelling/translation of a catalog entity's name,
+    sourced from Wikidata labels/aliases or entered manually by
+    curators. Lets us surface historical, regional, and
+    transliteration variants on the same row -- e.g. "Lemberg" /
+    "Lwów" / "Львів" / "Lviv" all point at the same City entity.
+
+    The target is a GenericForeignKey so the same table serves
+    City, Person, Topic, and Occupation without four parallel
+    relation tables. ``object_id`` is a CharField because the
+    catalog mixes UUID (City/Person) and int (Topic/Occupation)
+    primary keys.
+
+    The (target, language, value) triple is unique so re-running
+    the Wikidata sync command is idempotent: the same alias never
+    gets stored twice for the same row.
+    """
+
+    SOURCE_CHOICES = [
+        ("wikidata", "Wikidata"),
+        ("manual", "Manual"),
+        ("import", "Legacy import"),
+    ]
+
+    content_type = models.ForeignKey(
+        "contenttypes.ContentType",
+        on_delete=models.CASCADE,
+        related_name="+",
+    )
+    object_id = models.CharField(max_length=64)
+    target = GenericForeignKey("content_type", "object_id")
+
+    language = models.CharField(
+        max_length=12,
+        blank=True,
+        default="",
+        help_text="BCP-47 / ISO 639 language code "
+                  "(e.g. 'en', 'de', 'he', 'pl', 'uk', 'yi').",
+    )
+    value = models.CharField(max_length=255)
+    source = models.CharField(
+        max_length=32,
+        choices=SOURCE_CHOICES,
+        default="wikidata",
+    )
+    is_preferred = models.BooleanField(
+        default=False,
+        help_text="Mark the canonical label in this language. "
+                  "At most one preferred alias per (target, language) "
+                  "is enforced at the application layer.",
+    )
+
+    class Meta:
+        verbose_name = "Alias name"
+        verbose_name_plural = "Alias names"
+        indexes = [
+            models.Index(
+                fields=["content_type", "object_id"],
+                name="alias_target_idx",
+            ),
+            models.Index(fields=["value"], name="alias_value_idx"),
+        ]
+        constraints = [
+            models.UniqueConstraint(
+                fields=["content_type", "object_id", "language", "value"],
+                name="unique_alias_per_target_lang_value",
+            ),
+        ]
+
+    def __str__(self):
+        return (
+            f"{self.value} ({self.language})" if self.language
+            else self.value
+        )
