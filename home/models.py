@@ -485,6 +485,8 @@ class Person(
         max_length=20,
         choices=ENTITY_TYPE_CHOICES,
         default="person",
+        blank=True,
+        null=True,
         help_text="Switch to 'organization' for catalog rows that "
                   "represent corporate bodies (schools, libraries, "
                   "societies). Drives the Wikidata enrichment, the "
