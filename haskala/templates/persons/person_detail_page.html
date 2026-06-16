@@ -38,5 +38,8 @@
 
         {% include "partials/_export_modal.html" with modal_id="person-export-modal" entity="person" slug=person.slug title=person %}
     </div>
+{% endblock %}
+
+{% block floating_actions %}
     {% include "partials/_edit_in_admin.html" with modelname="person" pk=person.pk %}
 {% endblock %}
