@@ -177,44 +177,50 @@ a:hover {
 // =====================================
 // Edit-in-admin floating button
 // =====================================
-// Twin of #scrollTopBtn — same circular 42×42 shape, same brown
-// background, same hover lift — sitting immediately to its left.
-// #scrollTopBtn is at right: 1.5rem; this button lands at
-// right: 1.5rem + 42px + 0.5rem gap. Always visible (no scroll
-// gate); rendered server-side only when
-// request.user.is_authenticated, so anonymous visitors never see
-// it.
+// Twin of #scrollTopBtn — same height, same dark-grey background,
+// same hover lift — sitting immediately to its left. The base
+// state is hidden so a future scroll-gated behaviour only needs to
+// toggle the .show class; the partial applies .show on render so
+// the button is visible on page load for any authenticated curator.
 
-.edit-in-admin-fab {
+#editInAdminBtn {
   position: fixed;
-  right: calc(1.5rem + 42px + 0.5rem);
+  right: 3.5rem;
   bottom: 1.5rem;
-  width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-color: $haskala-brown;
+  border: none;
+  background-color: #5e5d58;
   color: #fff;
-  cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   transition:
-    background-color 0.2s ease,
+    opacity 0.3s ease,
+    visibility 0.3s ease,
     transform 0.2s ease;
   z-index: 1050;
+  padding: 0 1rem;
+  text-decoration: none;
+  gap: 0.4rem;
 
   &:hover,
   &:focus {
-    background-color: $haskala-blue;
     color: #fff;
     transform: translateY(-2px);
     text-decoration: none;
   }
 
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
   i {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1;
   }
 }

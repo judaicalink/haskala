@@ -1,8 +1,11 @@
 {% comment %}
-Floating edit-in-admin button for authenticated curators. Mirrors
-the #scrollTopBtn directly to its left — same circular 42×42 shape,
-same dark brown background, same hover state. Wagtail's admin lives
-at /dashboard/ on this deployment, not /admin/.
+Floating edit-in-admin button for authenticated curators. Sits left
+of #scrollTopBtn at bottom-right. Wagtail's admin lives at
+/dashboard/ on this deployment, not /admin/. The ``show`` class is
+applied immediately so the button is visible on page load — the
+fade-in transition machinery on .edit-in-admin-fab exists so a
+future scroll-gated behaviour (if desired) only needs to swap the
+class toggle.
 
 Required context:
   app:        Wagtail app label (almost always "home").
@@ -11,10 +14,10 @@ Required context:
 {% endcomment %}
 {% if request.user.is_authenticated %}
     <a id="editInAdminBtn"
-       class="edit-in-admin-fab"
+       class="edit-in-admin-fab show"
        href="/dashboard/snippets/{{ app|default:'home' }}/{{ modelname }}/edit/{{ pk }}/"
        aria-label="Edit in admin"
        title="Edit in admin">
-        <i class="bi bi-pencil-square"></i>
+        <i class="bi bi-pencil-square"></i> Edit
     </a>
 {% endif %}
