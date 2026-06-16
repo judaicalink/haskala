@@ -48,7 +48,7 @@ def _negotiate_rdf_response(request, obj):
 
 
 @cache_page(60 * 60)  # cache for 1 hour
-@vary_on_headers("Accept")
+@vary_on_headers("Accept", "Cookie")
 def book_detail_view(request, slug):
     book = get_object_or_404(
         Book.objects.filter(live=True).select_related(
@@ -210,7 +210,7 @@ def persons_list_view(request):
 
 
 @cache_page(60 * 60)
-@vary_on_headers("Accept")
+@vary_on_headers("Accept", "Cookie")
 def person_detail_view(request, slug):
     """
     Detail view of a person, identified by slug.
@@ -326,7 +326,7 @@ def places_list_view(request):
 
 
 @cache_page(60 * 60)
-@vary_on_headers("Accept")
+@vary_on_headers("Accept", "Cookie")
 def place_detail_view(request, slug):
     """
     Detail view of a city, addressed by slug.
@@ -628,6 +628,7 @@ def topics_list_view(request):
     return render(request, "topics/topics_page.html", context)
 
 
+@vary_on_headers("Cookie")
 def topic_detail_view(request, topic_slug):
     """
     Detail view of a topic with associated books.
@@ -679,6 +680,7 @@ def publishers_list_view(request):
     return render(request, "publishers/publishers_page.html", context)
 
 
+@vary_on_headers("Cookie")
 def publisher_detail_view(request, publisher_slug):
     """
     Detail view of a publisher with all associated books
@@ -734,6 +736,7 @@ def occupations_list_view(request):
     return render(request, "occupations/occupations_page.html", context)
 
 
+@vary_on_headers("Cookie")
 def occupation_detail_view(request, occupation_slug):
     """
     Detail view of an occupation with all persons who have this profession.
@@ -811,6 +814,7 @@ def series_list_view(request):
     return render(request, "series/series_page.html", context)
 
 
+@vary_on_headers("Cookie")
 def series_detail_view(request, series_slug):
     """
     Detail view of a series: all books in this series.
