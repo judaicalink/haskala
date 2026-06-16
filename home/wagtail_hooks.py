@@ -25,11 +25,11 @@ from wagtail.snippets.models import register_snippet
 from wagtail.snippets.views.snippets import SnippetViewSet
 
 from .models import (
-    Alignment, Book, BookAuthor, City, DateFormat, Edition, FootnoteLocation,
-    Font, Gender, Language, LanguageCount, Mention, MentionDescription,
-    Occupation, OriginalType, Person, Preface, Production, ProductionRole,
-    Publisher, Series, TargetAudience, TextualModel, Topic, Translation,
-    TranslationType, Typography,
+    Alignment, AliasName, Book, BookAuthor, City, DateFormat, Edition,
+    FootnoteLocation, Font, Gender, Language, LanguageCount, Mention,
+    MentionDescription, Occupation, OriginalType, Person, Preface,
+    Production, ProductionRole, Publisher, Series, TargetAudience,
+    TextualModel, Topic, Translation, TranslationType, Typography,
 )
 
 
@@ -208,6 +208,25 @@ class OccupationViewSet(SnippetViewSet):
     search_fields = ("name",)
 
 
+class AliasNameViewSet(SnippetViewSet):
+    """
+    Wagtail snippet admin for the cross-model AliasName rows. Used
+    when curators want to spot-check or hand-edit aliases that the
+    sync_wikidata_aliases command has populated. The
+    ``content_type`` column lets the curator filter by which target
+    model the alias belongs to (City / Person / Topic / Occupation).
+    """
+    model = AliasName
+    menu_label = "Alias names"
+    menu_icon = "tag"
+    menu_order = 330
+    list_display = (
+        "value", "language", "source", "is_preferred", "content_type",
+    )
+    list_filter = ("language", "source", "is_preferred", "content_type")
+    search_fields = ("value", "language")
+
+
 # ---------------------------------------------------------------------
 # Simple lookup tables. All carry just a `name` field; bulk-register
 # with a uniform ViewSet so the admin gains search + list-display
@@ -255,7 +274,7 @@ for viewset in [
     BookViewSet, PersonViewSet, CityViewSet, BookAuthorViewSet,
     EditionViewSet, TranslationViewSet, MentionViewSet, PrefaceViewSet,
     ProductionViewSet, PublisherViewSet, SeriesViewSet, TopicViewSet,
-    OccupationViewSet,
+    OccupationViewSet, AliasNameViewSet,
 ]:
     register_snippet(viewset)
 
