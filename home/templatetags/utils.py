@@ -207,6 +207,13 @@ def nonzero_stats(*pairs, sep=" · "):
 # alphabetical city list. Order matters -- output respects it.
 INLINE_INDEX_LANGUAGES = ("en", "de", "he")
 
+# Languages shown on the detail-page "Also known as" block. Order
+# matters: rows render top-to-bottom in this sequence so the most
+# audience-relevant translations land first. Anything else (Russian,
+# Polish, Czech, Latin, ...) is intentionally hidden -- they're in
+# the AliasName table for search + RDF, just not for display.
+DETAIL_BLOCK_LANGUAGES = ("en", "de", "he", "yi")
+
 
 def _target_primary(target):
     """Best-effort 'this is the row's main display name' string,
@@ -263,47 +270,63 @@ def aliases_inline(target):
 @register.inclusion_tag("partials/_aliases_block.html")
 def aliases_block(target):
     """Render the "Also known as" section under the detail-page
-    title as a Bootstrap accordion: one accordion item per
-    language, the item header shows the language code + the
-    canonical label for that language, the body lists all
-    variants for that language (preferred first, then aliases).
+    title as a flat one-line-per-language list.
 
-    Falls back to an empty groups list when the target has no
-    aliases so the template can be included unconditionally."""
+    Order: ``DETAIL_BLOCK_LANGUAGES`` (en, de, he, yi). The catalog
+    row's own name acts as the implicit "Default" anchor displayed
+    above this block (the H1), so when one of the four languages'
+    preferred label equals that primary name we skip the row to
+    avoid surfacing the same spelling twice.
+
+    Per language we emit the preferred label first followed by any
+    additional aliases for that language, deduped and joined with
+    commas.
+
+    Returns ``{"rows": []}`` when no row survives so the template
+    can be included unconditionally and won't render a stray empty
+    <section>."""
     if target is None or not hasattr(target, "aliases"):
-        return {"groups": [], "instance_id": ""}
-    primary_lower = _target_primary(target).lower()
+        return {"rows": []}
+    primary = _target_primary(target)
+    primary_lower = primary.lower()
 
+    # Build per-language value lists. The queryset is ordered
+    # preferred-first so by_lang[lang][0] is the canonical label
+    # for that language.
     by_lang = {}
     for alias in (
         target.aliases.all()
+        .filter(language__in=DETAIL_BLOCK_LANGUAGES)
         .order_by("language", "-is_preferred", "value")
     ):
         val = (alias.value or "").strip()
-        if not val or val.lower() == primary_lower:
+        if not val:
             continue
-        by_lang.setdefault(alias.language or "—", []).append(val)
+        by_lang.setdefault(alias.language, []).append(val)
 
-    groups = []
-    for lang, values in sorted(by_lang.items()):
-        # Dedupe values within the language while preserving the
-        # preferred-first order from the queryset.
-        seen, dedup = set(), []
-        for v in values:
-            if v in seen:
+    rows = []
+    for lang in DETAIL_BLOCK_LANGUAGES:
+        raw_values = by_lang.get(lang, [])
+        if not raw_values:
+            continue
+        # All-or-nothing per language: if the preferred label
+        # (first entry) equals the catalog row's own name, skip
+        # the whole language. We don't want to surface stray
+        # ``Germany`` / ``DE-BE`` aliases that Wikidata attaches
+        # to Q64's English entry just because the English label
+        # itself is "Berlin", same as ours.
+        if raw_values[0].lower() == primary_lower:
+            continue
+        # Dedupe within the language, preserving preferred-first
+        # order. Drop any later entry that happens to equal the
+        # catalog primary too (rare but possible).
+        seen, kept = set(), []
+        for v in raw_values:
+            if v.lower() == primary_lower or v in seen:
                 continue
             seen.add(v)
-            dedup.append(v)
-        groups.append({
-            "language": lang,
-            "primary": dedup[0],
-            "values": dedup,
-            "extras": len(dedup) - 1,
-        })
+            kept.append(v)
+        if kept:
+            rows.append({"language": lang, "values": kept})
 
-    return {
-        "groups": groups,
-        "instance_id": (
-            f"aliases-{getattr(target, 'pk', '')}".replace('-', '')
-        ),
-    }
+    return {"rows": rows}

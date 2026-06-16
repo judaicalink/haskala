@@ -1,65 +1,33 @@
 {% comment %}
-"Also known as" Bootstrap accordion rendered under the detail-page
-title for City / Person / Topic / Occupation entities that carry
-one or more AliasName rows. Sourced from Wikidata labels + aliases
-(see sync_wikidata_aliases) plus any manually curated entries.
-
-Each accordion item is one language: the header shows the language
-code + the canonical label for that language (+ " +N variants"
-when there's more than one), the body lists every spelling for
-that language in preferred-first order.
+"Also known as" block rendered under the detail-page title for
+City / Person / Topic / Occupation entities with one or more
+AliasName rows. The catalog row's own name shown in the page H1
+acts as the implicit Default anchor; this block lists the four
+audience-relevant translations (EN, DE, HE, YI) in that fixed
+order, skipping any whose preferred label matches the H1 to avoid
+echo. Per language the preferred label leads, followed by any
+additional aliases for that language separated by commas.
 
 Context (provided by the ``aliases_block`` inclusion tag in
 ``home.templatetags.utils``):
 
-  groups: list of {
-            language: ISO code,
-            primary:  canonical label for that language,
-            values:   [str, ...] all spellings for that language,
-            extras:   len(values) - 1,
-          }
-  instance_id: per-target string slug used to scope the accordion's
-               DOM ids so several aliases_block calls on the same
-               page don't collide.
+  rows: list of ``{"language": iso, "values": [str, ...]}`` --
+        already filtered and ordered en, de, he, yi.
 {% endcomment %}
-{% if groups %}
+{% if rows %}
     <section class="aliases-block mb-3" aria-label="Also known as">
         <h2 class="aliases-block__heading h6 text-uppercase text-muted mb-2">
             Also known as
         </h2>
-        <div class="accordion accordion-flush"
-             id="{{ instance_id|default:'aliases-accordion' }}">
-            {% for group in groups %}
-                <div class="accordion-item">
-                    <h3 class="accordion-header"
-                        id="{{ instance_id }}-h-{{ forloop.counter }}">
-                        <button class="accordion-button collapsed py-2"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#{{ instance_id }}-b-{{ forloop.counter }}"
-                                aria-expanded="false"
-                                aria-controls="{{ instance_id }}-b-{{ forloop.counter }}">
-                            <span class="text-muted small text-uppercase me-2">
-                                {{ group.language }}
-                            </span>
-                            <span dir="auto">{{ group.primary }}</span>
-                            {% if group.extras %}
-                                <span class="text-muted small ms-2">
-                                    +{{ group.extras }}
-                                    variant{{ group.extras|pluralize }}
-                                </span>
-                            {% endif %}
-                        </button>
-                    </h3>
-                    <div id="{{ instance_id }}-b-{{ forloop.counter }}"
-                         class="accordion-collapse collapse"
-                         aria-labelledby="{{ instance_id }}-h-{{ forloop.counter }}">
-                        <div class="accordion-body py-2" dir="auto">
-                            {{ group.values|join:", " }}
-                        </div>
-                    </div>
-                </div>
+        <dl class="aliases-block__list row gx-3 mb-0">
+            {% for row in rows %}
+                <dt class="col-auto text-muted small text-uppercase">
+                    {{ row.language }}
+                </dt>
+                <dd class="col mb-1" dir="auto">
+                    {{ row.values|join:", " }}
+                </dd>
             {% endfor %}
-        </div>
+        </dl>
     </section>
 {% endif %}
