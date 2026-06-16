@@ -356,8 +356,33 @@ class City(DraftStateMixin, RevisionMixin, LegacyImportedModel):
         content_type_field="content_type",
     )
 
+    # Explicit Wagtail-admin layout. Without this, the snippet form
+    # falls back to a plain auto-generated form with select-dropdown
+    # widgets for FK fields. FieldPanel on a FK whose target is a
+    # registered snippet (City -> City self-FK here) renders the
+    # snippet chooser instead, which honours the model's
+    # ``search_fields`` and ``Meta.ordering`` -- so curators get a
+    # searchable, alphabetically-sorted modal when picking
+    # parent_place / merged_into.
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("slug"),
+        FieldPanel("wikidata_id"),
+        FieldPanel("parent_place"),
+        FieldPanel("merged_into"),
+        FieldPanel("legacy_tid"),
+        FieldPanel("legacy_language"),
+    ]
+
     class Meta:
         verbose_name_plural = "Cities"
+        # Alphabetical default ordering. Drives the snippet-list
+        # admin view AND every <select> / chooser populated from
+        # the City queryset (parent_place + merged_into FK pickers,
+        # the publication_place / publication_place_other /
+        # original_publication_place pickers on Book, etc.) so
+        # curators see the cities in the order they expect.
+        ordering = ("name",)
 
     def __str__(self):
         return self.name
