@@ -403,7 +403,11 @@ class ContentNegotiationTest(TestCase):
         )
         self.assertEqual(resp.status_code, 200)
         self.assertIn("text/turtle", resp["Content-Type"])
-        self.assertEqual(resp["Vary"], "Accept")
+        # Vary contains "Accept" so content-negotiation works; "Cookie"
+        # is also present because the view's auth-aware Edit FAB block
+        # forces per-user cache keys (see book_detail_view decorators).
+        vary_tokens = {v.strip() for v in resp["Vary"].split(",")}
+        self.assertIn("Accept", vary_tokens)
 
     def test_jsonld_on_person_detail(self):
         resp = Client().get(
