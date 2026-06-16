@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load wagtailcore_tags %}
+{% load utils %}
 
 {% block title %}Places{% endblock %}
 
@@ -32,13 +33,17 @@
                             <h2 class="index-group__heading h4 pb-1">{{ letter }}</h2>
                             <ul class="list-unstyled mb-0">
                                 {% for city in cities %}
-                                    <li class="mb-1">
+                                    <li class="mb-1" dir="auto">
                                         {% if city.slug %}
                                             <a href="{% url 'place-detail' city.slug %}" class="link-primary">
                                                 {{ city.name }}
                                             </a>
                                         {% else %}
                                             <span>{{ city.name }}</span>
+                                        {% endif %}
+                                        {% aliases_inline city as alt %}
+                                        {% if alt %}
+                                            <span class="text-muted small">({{ alt }})</span>
                                         {% endif %}
                                     </li>
                                 {% endfor %}

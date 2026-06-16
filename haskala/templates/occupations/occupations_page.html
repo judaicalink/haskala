@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load utils %}
 
 {% block title %}Occupations{% endblock %}
 
@@ -24,6 +25,10 @@
                                     <a href="{% url 'occupation-detail' occ.slug %}" class="link-primary">
                                         {{ occ.name }}
                                     </a>
+                                    {% aliases_inline occ as alt %}
+                                    {% if alt %}
+                                        <span class="text-muted small">({{ alt }})</span>
+                                    {% endif %}
                                 </li>
                             {% endfor %}
                         </ul>

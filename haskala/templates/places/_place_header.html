@@ -1,4 +1,5 @@
 {% load static %}
+{% load utils %}
 <header class="place-header mb-4">
     <p class="text-muted small mb-1">
         <a href="{% url 'places-list' %}">Places</a>
@@ -8,13 +9,12 @@
 
     <h1 class="place-header__title h2 mb-2">{{ city.name }}</h1>
 
-    <p class="place-header__stats text-muted mb-3">
-        {{ books_published_here|length }} book{{ books_published_here|length|pluralize }}
-        &middot; {{ editions_here|length }} edition{{ editions_here|length|pluralize }}
-        &middot; {{ translations_here|length }} translation{{ translations_here|length|pluralize }}
-        &middot; {{ born_here|length }} born
-        &middot; {{ died_here|length }} died
-    </p>
+    {% aliases_block city %}
+
+    {% nonzero_stats books_published_here|length "{n} book{s}" editions_here|length "{n} edition{s}" translations_here|length "{n} translation{s}" born_here|length "{n} born" died_here|length "{n} died" as stats_line %}
+    {% if stats_line %}
+        <p class="place-header__stats text-muted mb-3">{{ stats_line }}</p>
+    {% endif %}
 
     {% if geolocation %}
         <div class="place-header__map mb-3" style="height: 280px;">

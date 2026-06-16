@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags %}
+{% load utils %}
 
 {% block title %}Persons{% endblock %}
 
@@ -25,6 +26,10 @@
                                     <a href="{% url 'person-detail' person.slug %}" class="link-primary">
                                         {{ person }}
                                     </a>
+                                    {% aliases_inline person as alt %}
+                                    {% if alt %}
+                                        <span class="text-muted small">({{ alt }})</span>
+                                    {% endif %}
                                     {% if person.date_of_birth or person.date_of_death %}
                                         <span class="text-muted small">
                                             &middot; {{ person.date_of_birth|default:"?" }}&ndash;{{ person.date_of_death|default:"?" }}

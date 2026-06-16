@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load utils %}
 
 {% block title %}{{ occupation.name }} | Occupations{% endblock %}
 
@@ -20,9 +21,13 @@
                 {{ occupation.name }}
             </h1>
 
-            <p class="occupation-header__stats text-muted mb-3">
-                {{ persons_with_occupation|length }} person{{ persons_with_occupation|length|pluralize }}
-            </p>
+            {% aliases_block occupation %}
+
+            {% if persons_with_occupation|length %}
+                <p class="occupation-header__stats text-muted mb-3">
+                    {{ persons_with_occupation|length }} person{{ persons_with_occupation|length|pluralize }}
+                </p>
+            {% endif %}
 
             <div class="occupation-header__actions">
                 <button type="button" class="badge text-bg-secondary"

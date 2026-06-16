@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load utils %}
 
 {% block title %}Topics{% endblock %}
 
@@ -24,6 +25,10 @@
                                     <a href="{% url 'topic-detail' topic.slug %}" class="link-primary">
                                         {{ topic.name }}
                                     </a>
+                                    {% aliases_inline topic as alt %}
+                                    {% if alt %}
+                                        <span class="text-muted small">({{ alt }})</span>
+                                    {% endif %}
                                 </li>
                             {% endfor %}
                         </ul>

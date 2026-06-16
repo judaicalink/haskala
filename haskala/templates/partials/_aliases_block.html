@@ -1,0 +1,30 @@
+{% comment %}
+"Also known as" section rendered under the detail-page title for
+City / Person / Topic / Occupation entities that carry one or more
+AliasName rows. Sourced from Wikidata labels + aliases (see
+sync_wikidata_aliases) plus any manually curated entries.
+
+Context (provided by the ``aliases_block`` inclusion tag in
+``home.templatetags.utils``):
+
+  groups: list of ``{"language": str, "values": [str, ...]}`` --
+          already sorted alphabetically by language code and with
+          the row's own primary name filtered out.
+{% endcomment %}
+{% if groups %}
+    <section class="aliases-block mb-3" aria-label="Also known as">
+        <h2 class="aliases-block__heading h6 text-uppercase text-muted mb-2">
+            Also known as
+        </h2>
+        <dl class="aliases-block__list row gx-3 mb-0">
+            {% for group in groups %}
+                <dt class="col-auto text-muted small text-uppercase">
+                    {{ group.language }}
+                </dt>
+                <dd class="col mb-1" dir="auto">
+                    {{ group.values|join:", " }}
+                </dd>
+            {% endfor %}
+        </dl>
+    </section>
+{% endif %}

@@ -20,9 +20,11 @@
                 {{ series.name }}
             </h1>
 
-            <p class="series-header__stats text-muted mb-3">
-                {{ books_in_series|length }} book{{ books_in_series|length|pluralize }}
-            </p>
+            {% if books_in_series|length %}
+                <p class="series-header__stats text-muted mb-3">
+                    {{ books_in_series|length }} book{{ books_in_series|length|pluralize }}
+                </p>
+            {% endif %}
 
             <div class="series-header__actions">
                 <button type="button" class="badge text-bg-secondary"

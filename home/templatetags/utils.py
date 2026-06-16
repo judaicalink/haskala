@@ -146,3 +146,115 @@ def library_catalog_url(value, library):
     if not pattern:
         return ""
     return pattern.format(id=quote_plus(raw))
+
+
+# ---------------------------------------------------------------------
+# Header-stats join: drop zero entries before joining
+# ---------------------------------------------------------------------
+@register.simple_tag
+def nonzero_stats(*pairs, sep=" · "):
+    """Render header stats lines such as
+    ``27 books · 7 editions · 0 translations · 0 born · 0 died``
+    without the zero-count tail, leaving ``27 books · 7 editions``.
+
+    Accepts an even-length argument list of alternating
+    ``(count, label_template)`` pairs::
+
+        {% nonzero_stats
+            books|length "{n} book{s}"
+            editions|length "{n} edition{s}"
+            translations|length "{n} translation{s}"
+            born|length "{n} born"
+            died|length "{n} died"
+        %}
+
+    The ``label_template`` is a ``str.format``-style string with
+    ``{n}`` substituted with the count and ``{s}`` substituted with
+    "s" when count != 1 (English plural). Curated labels that don't
+    pluralize (e.g. "born", "died") simply omit ``{s}``.
+
+    Entries whose count is zero (or falsy) are skipped entirely so
+    the join doesn't surface noise. Returns the empty string when
+    no pair survives so the surrounding ``<p>`` can also be hidden
+    with ``{% if %}`` if desired.
+    """
+    if len(pairs) % 2:
+        return ""
+    out = []
+    for i in range(0, len(pairs), 2):
+        count = pairs[i]
+        try:
+            n = int(count)
+        except (TypeError, ValueError):
+            n = 0
+        if not n:
+            continue
+        tpl = pairs[i + 1] or "{n}"
+        out.append(
+            str(tpl).format(n=n, s="" if n == 1 else "s")
+        )
+    return sep.join(out)
+
+
+# ---------------------------------------------------------------------
+# Alias-name helpers — surface Wikidata-sourced + manually curated
+# alternative names on the public site.
+# ---------------------------------------------------------------------
+@register.simple_tag
+def aliases_inline(target, limit=4):
+    """Return up to *limit* distinct alias values for *target* as a
+    single comma-separated string, suitable for the gray
+    "(Lwiw, Lwów, Львів)" suffix on index-page entries.
+
+    Skips values that equal the target's primary display name so
+    we don't repeat the row's own ``name`` / ``pref_label``.
+    Sorted by language to keep the output deterministic between
+    requests."""
+    if target is None or not hasattr(target, "aliases"):
+        return ""
+    primary = (
+        getattr(target, "name", None)
+        or getattr(target, "pref_label", None)
+        or ""
+    ).strip().lower()
+    seen = []
+    for alias in target.aliases.all().order_by("language", "value"):
+        val = (alias.value or "").strip()
+        if not val or val.lower() == primary:
+            continue
+        if val not in seen:
+            seen.append(val)
+        if len(seen) >= limit:
+            break
+    return ", ".join(seen)
+
+
+@register.inclusion_tag("partials/_aliases_block.html")
+def aliases_block(target):
+    """Render the "Auch bekannt als" section under the detail-page
+    title, grouped by language. Falls back to an empty block when
+    the target has no aliases so the template can be included
+    unconditionally."""
+    if target is None or not hasattr(target, "aliases"):
+        return {"groups": []}
+    primary = (
+        getattr(target, "name", None)
+        or getattr(target, "pref_label", None)
+        or ""
+    ).strip().lower()
+
+    by_lang = {}
+    for alias in (
+        target.aliases.all()
+        .order_by("language", "-is_preferred", "value")
+    ):
+        val = (alias.value or "").strip()
+        if not val or val.lower() == primary:
+            continue
+        by_lang.setdefault(alias.language or "—", []).append(val)
+
+    groups = [
+        {"language": lang, "values": vals}
+        for lang, vals in sorted(by_lang.items())
+    ]
+    return {"groups": groups}

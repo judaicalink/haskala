@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load utils %}
 
 {% block title %}{{ publisher.name }} | Publishers{% endblock %}
 
@@ -20,12 +21,10 @@
                 {{ publisher.name }}
             </h1>
 
-            <p class="publisher-header__stats text-muted mb-3">
-                {{ books_published|length }} published
-                {% if books_original %}
-                    &middot; {{ books_original|length }} as original publisher
-                {% endif %}
-            </p>
+            {% nonzero_stats books_published|length "{n} published" books_original|length "{n} as original publisher" as pub_stats %}
+            {% if pub_stats %}
+                <p class="publisher-header__stats text-muted mb-3">{{ pub_stats }}</p>
+            {% endif %}
 
             <div class="publisher-header__actions">
                 <button type="button" class="badge text-bg-secondary"

@@ -1,4 +1,5 @@
 {% load static %}
+{% load utils %}
 <header class="person-header mb-4">
     <p class="text-muted small mb-1">
         <a href="{% url 'persons-list' %}">Persons</a>
@@ -19,6 +20,8 @@
     {% if person.pseudonym %}
         <p class="person-header__alt text-muted mb-1">aka {{ person.pseudonym }}</p>
     {% endif %}
+
+    {% aliases_block person %}
 
     {% if person.occupations.all %}
         <p class="person-header__chips mb-2">
