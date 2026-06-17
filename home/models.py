@@ -470,7 +470,9 @@ class Occupation(models.Model):
         super().save(*args, **kwargs)
 
 
-class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
+class Person(
+    index.Indexed, DraftStateMixin, RevisionMixin, LegacyImportedModel,
+):
     """
     Model for the person.
     """
@@ -492,6 +494,45 @@ class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
                   "in the public link.",
     )
 
+    # Wikidata QID anchors the Person row to a single authoritative
+    # entity, mirroring the City field. Populated by the upcoming
+    # enrich_persons_from_wikidata command -- which uses ``viaf_id``
+    # (P214) and ``gnd_id`` (P227) as strong-signal lookups before
+    # falling back to fuzzy name search. ``null=True`` is needed
+    # because the Wagtail snippet-add form sends NULL for empty
+    # CharField widgets despite ``default=""``; the Postgres
+    # NOT-NULL constraint then rejects the INSERT.
+    wikidata_id = models.CharField(
+        max_length=32,
+        blank=True,
+        null=True,
+        default="",
+        help_text="Wikidata QID, e.g. 'Q937' for Albert Einstein.",
+    )
+
+    # Wikidata + GND distinguish "human" (Q5 / Tp1) from "corporate
+    # body / organisation" (Q43229 / Tb1). The legacy import dumped
+    # both kinds into the Person table; this field lets us flag the
+    # non-human rows so the Wikidata enrichment skips them (Q5
+    # filter would reject anyway) and the public-site + RDF output
+    # can render them as foaf:Organization / schema:Organization
+    # instead of foaf:Person.
+    ENTITY_TYPE_CHOICES = [
+        ("person", "Person (Wikidata Q5 / GND Tp)"),
+        ("organization", "Organization (Wikidata Q43229 / GND Tb)"),
+    ]
+    entity_type = models.CharField(
+        max_length=20,
+        choices=ENTITY_TYPE_CHOICES,
+        default="person",
+        blank=True,
+        null=True,
+        help_text="Switch to 'organization' for catalog rows that "
+                  "represent corporate bodies (schools, libraries, "
+                  "societies). Drives the Wikidata enrichment, the "
+                  "RDF class on output, and downstream filtering.",
+    )
+
     date_of_birth = models.CharField(max_length=255, blank=True)
     date_of_death = models.CharField(max_length=255, blank=True)
 
@@ -508,10 +549,39 @@ class Person(DraftStateMixin, RevisionMixin, LegacyImportedModel):
         content_type_field="content_type",
     )
 
+    # Wagtail-admin layout. Uses FieldPanel so the place_of_birth /
+    # place_of_death FK fields render as searchable City chooser
+    # modals (parity with the City self-FK fix).
+    panels = [
+        FieldPanel("pref_label"),
+        FieldPanel("german_name"),
+        FieldPanel("hebrew_name"),
+        FieldPanel("pseudonym"),
+        FieldPanel("entity_type"),
+        FieldPanel("wikidata_id"),
+        FieldPanel("viaf_id"),
+        FieldPanel("gnd_id"),
+        FieldPanel("date_of_birth"),
+        FieldPanel("date_of_death"),
+        FieldPanel("place_of_birth"),
+        FieldPanel("place_of_death"),
+        FieldPanel("gender"),
+        FieldPanel("occupations"),
+        FieldPanel("slug"),
+    ]
+
+    # ``index.SearchField`` declarations on the model (not just the
+    # SnippetViewSet) are what Wagtail's snippet chooser modal
+    # reads to decide whether to render a search box. Mirrors the
+    # City fix in PR #142.
     search_fields = [
         index.SearchField('pref_label', partial_match=True),
         index.SearchField('german_name', partial_match=True),
         index.SearchField('hebrew_name', partial_match=True),
+        index.SearchField('pseudonym', partial_match=True),
+        index.SearchField('wikidata_id', partial_match=True),
+        index.SearchField('viaf_id', partial_match=True),
+        index.SearchField('gnd_id', partial_match=True),
     ]
 
     class Meta:
