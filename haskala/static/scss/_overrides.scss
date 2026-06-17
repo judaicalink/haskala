@@ -784,3 +784,11 @@ table {
     padding-left: 1.5rem; /* sichert konsistente Abstände */
     list-style-position: outside;
 }
+
+// Cookie banner -- vanilla django-cookiebanner template ships
+// without z-index, so Leaflet map panes on /places/ and the
+// frontpage box stack overlay it. 9999 lifts the banner above
+// every other element on the page until the user has decided.
+#cookiebannerModal {
+  z-index: 9999;
+}
