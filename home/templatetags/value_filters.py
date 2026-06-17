@@ -120,30 +120,38 @@ register.filter("safe_inline", safe_inline)
 # ---------------------------------------------------------------------
 @register.filter
 def hebrew_to_gregorian(value):
-    """Render Hebrew year fields with their Gregorian equivalent
-    appended in parentheses. Gregorian-only input is returned
-    unchanged; non-year free text passes through too.
+    """Render Hebrew calendar fields with their Gregorian
+    equivalent appended in parentheses. Gregorian-only input is
+    returned unchanged; non-Hebrew free text passes through too.
 
-    Usage in templates::
+    Handles three input shapes (see ``home.hebrew_calendar``):
 
-        {{ book.year_in_book|hebrew_to_gregorian }}
+      year-only:    "תקנד"        -> "תקנד (1793/1794)"
+      year+month:   "אדר תקנד"    -> "אדר תקנד (March 1794)"
+      full date:    "כ' אדר תקנד" -> "כ' אדר תקנד (12 March 1794)"
 
-    Examples:
+    Plus:
 
-      "תקנד"   -> "תקנד (1793/1794)"
-      "5554"   -> "5554 (1793/1794)"
-      "1789"   -> "1789"
+      "5554"   -> "5554 (1793/1794)"   (numeric Hebrew)
+      "1789"   -> "1789"                (Gregorian; pass-through)
       ""       -> ""
 
-    The conversion module lives at ``home.hebrew_calendar`` so the
-    template tag stays a thin wrapper; that module handles
-    gimatria parsing, the explicit-millennium ``ה'`` prefix, and
-    the call into ``hebrewcal``.
+    The full-date branch goes through
+    ``hebrew_calendar.to_gregorian_string``; the year-only branch
+    delegates to ``to_gregorian_year`` so we still surface the
+    Tishri-to-Elul span for inputs that don't carry a month.
     """
     if value in (None, ""):
         return value
-    from home.hebrew_calendar import to_gregorian_year
-    span = to_gregorian_year(value)
-    if not span:
+    from home.hebrew_calendar import (
+        to_gregorian_string, to_gregorian_year,
+    )
+    # Prefer the richer full-date path; fall back to year-only
+    # when the date parser couldn't extract a month or day so the
+    # filter still adds value for plain Hebrew year strings.
+    rendered = to_gregorian_string(value)
+    if not rendered:
+        rendered = to_gregorian_year(value)
+    if not rendered:
         return value
-    return f"{value} ({span})"
+    return f"{value} ({rendered})"

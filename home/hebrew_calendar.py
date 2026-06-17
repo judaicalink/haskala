@@ -140,6 +140,124 @@ def parse_hebrew_year(value):
     return None
 
 
+# ---------------------------------------------------------------------
+# Hebrew month names -> hebrewcal month indices (Nissan-counted).
+# Multiple spellings accepted: "חשון" / "מרחשון", "כסלו" / "כסליו",
+# bare Adar maps to month 12 (the catalog's data doesn't carry leap-
+# year disambiguation; if it ever does, "אדר א" and "אדר ב" can be
+# added without breaking the simple "אדר" lookup).
+# ---------------------------------------------------------------------
+HEBREW_MONTHS = {
+    "ניסן": 1,
+    "אייר": 2, "איר": 2,
+    "סיון": 3, "סיוון": 3,
+    "תמוז": 4,
+    "אב": 5, "מנחם-אב": 5, "מנחם אב": 5,
+    "אלול": 6,
+    "תשרי": 7,
+    "חשון": 8, "חשוון": 8, "מרחשון": 8, "מרחשוון": 8,
+    "כסלו": 9, "כסליו": 9,
+    "טבת": 10,
+    "שבט": 11,
+    "אדר": 12, "אדר א": 12, "אדר ב": 12, "אדר א'": 12, "אדר ב'": 12,
+}
+
+# Tokeniser splits on whitespace + the geresh / gershayim cluster
+# so "כ\"א אדר תקנד" yields three meaningful tokens. Inner punctuation
+# inside a single token (e.g. "תקפ\"ט") is then handled by the
+# per-token gimatria parser.
+_SPACE_RE = re.compile(r"\s+")
+
+
+def _gimatria_sum(token):
+    """Sum the gimatria values of every Hebrew letter in *token*,
+    ignoring punctuation. Returns 0 if no Hebrew letter is present."""
+    total = 0
+    for ch in token:
+        if ch in _GIMATRIA:
+            total += _GIMATRIA[ch]
+    return total
+
+
+def parse_hebrew_date(value):
+    """Best-effort parse of a Hebrew-calendar date string into a
+    ``(year, month, day)`` tuple where missing components are
+    ``None``.
+
+    Recognises the common Maskil-era shapes:
+
+    - year-only gimatria: ``"תקנד"``         -> ``(5554, None, None)``
+    - month + year:       ``"אדר תקנד"``     -> ``(5554, 12, None)``
+    - full date:          ``"כ' אדר תקנד"``  -> ``(5554, 12, 20)``
+    - explicit millennium prefix on the year:
+                           ``"ה'תקנד"``       -> year 5554
+
+    Returns ``None`` when no recognisable Hebrew calendar
+    information is found (the caller can fall back to the plain
+    year-only ``parse_hebrew_year`` path).
+    """
+    if value is None:
+        return None
+    s = str(value).strip()
+    if not s:
+        return None
+
+    # Tokenise. Compound month names like "מנחם אב" / "אדר א" need
+    # special handling: we try the longest match first by also
+    # joining adjacent tokens.
+    tokens = [t for t in _SPACE_RE.split(s) if t]
+    if not tokens:
+        return None
+
+    year = month = day = None
+
+    # Walk left-to-right. Order matters: month -> day -> year.
+    # We check day BEFORE year because a one- or two-letter
+    # gimatria token like ``כ'`` (= 20) would otherwise be
+    # promoted to a 5xxx year by parse_hebrew_year and steal the
+    # day slot. A true Hebrew year token carries enough letters
+    # to push the gimatria sum past 30 (e.g. ``תקנד`` = 554), so
+    # the day check naturally rejects it and falls through to
+    # the year parser. Multi-token shapes (``"5554"`` etc.) still
+    # land via parse_hebrew_year because their gimatria sum is
+    # large enough to exit the 1..30 window.
+    i = 0
+    while i < len(tokens):
+        tok = tokens[i]
+        # Month: greedy 2-token then 1-token lookup.
+        if i + 1 < len(tokens):
+            joined = f"{tok} {tokens[i + 1]}"
+            if joined in HEBREW_MONTHS:
+                month = HEBREW_MONTHS[joined]
+                i += 2
+                continue
+        if tok in HEBREW_MONTHS:
+            month = HEBREW_MONTHS[tok]
+            i += 1
+            continue
+        # Day: gimatria sum in 1..30 wins before the year parser
+        # gets a chance to promote it.
+        if day is None:
+            d = _gimatria_sum(tok)
+            if 1 <= d <= 30:
+                day = d
+                i += 1
+                continue
+        # Year: full year parser handles numerics, implicit /
+        # explicit millennium prefixes, gimatria.
+        y = parse_hebrew_year(tok)
+        if y is not None:
+            year = y
+            i += 1
+            continue
+        # Token didn't fit any slot -- skip and move on.
+        i += 1
+
+    if year is None and month is None and day is None:
+        return None
+    return (year, month, day)
+
+
 def hebrew_year_to_gregorian_span(year):
     """Return the Gregorian-year span for the Hebrew year *year*
     as a string. A Hebrew year starts on 1 Tishri (autumn of the
@@ -179,3 +297,51 @@ def to_gregorian_year(value):
     if year is None:
         return ""
     return hebrew_year_to_gregorian_span(year)
+
+
+# English month-name lookup used when we materialise a Hebrew date
+# back to a human-readable Gregorian string. Keeps the catalog
+# language-consistent with the rest of the UI (which is English).
+_GREGORIAN_MONTH_NAMES = [
+    "", "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
+
+
+def to_gregorian_string(value):
+    """High-level helper for the template filter: convert a
+    Hebrew-calendar string (year-only, year + month, or full
+    date) into a human-readable Gregorian rendering.
+
+    Returns:
+
+    - ``""`` for empty / unparseable input or for input that's
+      already a Gregorian year (the caller already has it).
+    - ``"YYYY"`` or ``"YYYY/YYYY"`` for a year-only Hebrew input.
+    - ``"<Month> YYYY"`` (e.g. ``"March 1794"``) for a year+month
+      Hebrew input.
+    - ``"D <Month> YYYY"`` (e.g. ``"12 March 1794"``) for a full
+      Hebrew date.
+
+    A Hebrew calendar date converts cleanly to one Gregorian date;
+    only year-only inputs straddle two Gregorian years.
+    """
+    parsed = parse_hebrew_date(value)
+    if parsed is None:
+        return ""
+    year, month, day = parsed
+    if year is None:
+        # Without a year we can't compute anything Gregorian.
+        return ""
+    if month is None and day is None:
+        return hebrew_year_to_gregorian_span(year)
+    # Default the day to the first of the month so we have a
+    # legal HebrewDate even for year+month inputs; the rendered
+    # output then drops the day.
+    g = hebrewcal.to_gregorian(
+        hebrewcal.HebrewDate(year, month or 7, day or 1),
+    )
+    month_name = _GREGORIAN_MONTH_NAMES[g.month]
+    if day is not None:
+        return f"{g.day} {month_name} {g.year}"
+    return f"{month_name} {g.year}"
