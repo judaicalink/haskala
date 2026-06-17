@@ -113,3 +113,37 @@ def clean_value_filter(value):
 # form the templates actually use.
 register.filter("clean_value", clean_value)
 register.filter("safe_inline", safe_inline)
+
+
+# ---------------------------------------------------------------------
+# Hebrew -> Gregorian year conversion
+# ---------------------------------------------------------------------
+@register.filter
+def hebrew_to_gregorian(value):
+    """Render Hebrew year fields with their Gregorian equivalent
+    appended in parentheses. Gregorian-only input is returned
+    unchanged; non-year free text passes through too.
+
+    Usage in templates::
+
+        {{ book.year_in_book|hebrew_to_gregorian }}
+
+    Examples:
+
+      "תקנד"   -> "תקנד (1793/1794)"
+      "5554"   -> "5554 (1793/1794)"
+      "1789"   -> "1789"
+      ""       -> ""
+
+    The conversion module lives at ``home.hebrew_calendar`` so the
+    template tag stays a thin wrapper; that module handles
+    gimatria parsing, the explicit-millennium ``ה'`` prefix, and
+    the call into ``hebrewcal``.
+    """
+    if value in (None, ""):
+        return value
+    from home.hebrew_calendar import to_gregorian_year
+    span = to_gregorian_year(value)
+    if not span:
+        return value
+    return f"{value} ({span})"

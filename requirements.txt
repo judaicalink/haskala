@@ -40,3 +40,4 @@ django-leaflet
 django-cookiebanner
 wagtail-markdown
 psycopg2-binary
+hebrewcal>=1.5,<2

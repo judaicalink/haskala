@@ -38,15 +38,15 @@
     {% endif %}
     {% if book.year_in_book|clean_value %}
         <dt class="col-sm-4">Year as in book</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.year_in_book|clean_value|safe_inline }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.year_in_book|clean_value|hebrew_to_gregorian|safe_inline }}</dd>
     {% endif %}
     {% if book.year_in_other|clean_value %}
         <dt class="col-sm-4">Year (other reference)</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.year_in_other|clean_value|safe_inline }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.year_in_other|clean_value|hebrew_to_gregorian|safe_inline }}</dd>
     {% endif %}
     {% if book.hebrew_year_of_publication|clean_value %}
         <dt class="col-sm-4">Hebrew year of publication</dt>
-        <dd class="col-sm-8" dir="auto">{{ book.hebrew_year_of_publication|clean_value|safe_inline }}</dd>
+        <dd class="col-sm-8" dir="auto">{{ book.hebrew_year_of_publication|clean_value|hebrew_to_gregorian|safe_inline }}</dd>
     {% endif %}
     {% if book.hebrew_year_pub_other|clean_value %}
         <dt class="col-sm-4">Hebrew year (other reference)</dt>
