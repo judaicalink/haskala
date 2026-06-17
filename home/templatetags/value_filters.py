@@ -113,3 +113,45 @@ def clean_value_filter(value):
 # form the templates actually use.
 register.filter("clean_value", clean_value)
 register.filter("safe_inline", safe_inline)
+
+
+# ---------------------------------------------------------------------
+# Hebrew -> Gregorian year conversion
+# ---------------------------------------------------------------------
+@register.filter
+def hebrew_to_gregorian(value):
+    """Render Hebrew calendar fields with their Gregorian
+    equivalent appended in parentheses. Gregorian-only input is
+    returned unchanged; non-Hebrew free text passes through too.
+
+    Handles three input shapes (see ``home.hebrew_calendar``):
+
+      year-only:    "תקנד"        -> "תקנד (1793/1794)"
+      year+month:   "אדר תקנד"    -> "אדר תקנד (March 1794)"
+      full date:    "כ' אדר תקנד" -> "כ' אדר תקנד (12 March 1794)"
+
+    Plus:
+
+      "5554"   -> "5554 (1793/1794)"   (numeric Hebrew)
+      "1789"   -> "1789"                (Gregorian; pass-through)
+      ""       -> ""
+
+    The full-date branch goes through
+    ``hebrew_calendar.to_gregorian_string``; the year-only branch
+    delegates to ``to_gregorian_year`` so we still surface the
+    Tishri-to-Elul span for inputs that don't carry a month.
+    """
+    if value in (None, ""):
+        return value
+    from home.hebrew_calendar import (
+        to_gregorian_string, to_gregorian_year,
+    )
+    # Prefer the richer full-date path; fall back to year-only
+    # when the date parser couldn't extract a month or day so the
+    # filter still adds value for plain Hebrew year strings.
+    rendered = to_gregorian_string(value)
+    if not rendered:
+        rendered = to_gregorian_year(value)
+    if not rendered:
+        return value
+    return f"{value} ({rendered})"

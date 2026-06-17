@@ -1,5 +1,6 @@
 {% load static %}
 {% load utils %}
+{% load value_filters %}
 <header class="person-header mb-4">
     <p class="text-muted small mb-1">
         <a href="{% url 'persons-list' %}">Persons</a>
@@ -38,7 +39,7 @@
         <p class="person-header__life text-muted mb-3">
             {% if person.date_of_birth or person.place_of_birth %}
                 <span class="me-2">
-                    &#42; {% if person.date_of_birth %}{{ person.date_of_birth }}{% endif %}
+                    &#42; {% if person.date_of_birth %}{{ person.date_of_birth|hebrew_to_gregorian }}{% endif %}
                     {% if person.place_of_birth %}
                         {% if person.date_of_birth %}, {% endif %}
                         <a href="{% url 'place-detail' person.place_of_birth.slug %}" class="link-secondary">
@@ -49,7 +50,7 @@
             {% endif %}
             {% if person.date_of_death or person.place_of_death %}
                 <span>
-                    &#8224; {% if person.date_of_death %}{{ person.date_of_death }}{% endif %}
+                    &#8224; {% if person.date_of_death %}{{ person.date_of_death|hebrew_to_gregorian }}{% endif %}
                     {% if person.place_of_death %}
                         {% if person.date_of_death %}, {% endif %}
                         <a href="{% url 'place-detail' person.place_of_death.slug %}" class="link-secondary">
