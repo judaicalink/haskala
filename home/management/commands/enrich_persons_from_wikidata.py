@@ -42,6 +42,7 @@ Run pattern (same shape as enrich_cities_from_wikidata):
 from __future__ import annotations
 
 import csv
+import gc
 import json
 import re
 import time
@@ -180,12 +181,29 @@ class Command(BaseCommand):
             f"margin={options['margin']})"
         )
 
-        session = requests.Session()
-        session.headers["User-Agent"] = USER_AGENT
+        # Recycle the session every ~50 persons. Previous runs
+        # died silently after 100-170 rows with no Python
+        # traceback -- best guess: requests.Session keeps a TCP
+        # pool + reads accumulating response bodies that the
+        # garbage collector doesn't free aggressively enough on
+        # its own when each Wikidata entity payload is large.
+        # Closing the session forces the pool to drain.
+        SESSION_RESET_EVERY = 50
+
+        def _new_session():
+            s = requests.Session()
+            s.headers["User-Agent"] = USER_AGENT
+            return s
+
+        session = _new_session()
 
         rows = []
         applied = 0
         for idx, p in enumerate(persons, 1):
+            if idx > 1 and (idx - 1) % SESSION_RESET_EVERY == 0:
+                session.close()
+                session = _new_session()
+                gc.collect()
             scored, signal_source = self._match_one(
                 session, p,
                 limit_candidates=options["limit_candidates"],
