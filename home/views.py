@@ -5,7 +5,7 @@ from collections import defaultdict
 
 from django.db.models import Prefetch, Q
 from django.http import Http404, HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.template.loader import render_to_string
 from django.utils.text import slugify
 from django.views.decorators.cache import cache_page
@@ -225,6 +225,15 @@ def person_detail_view(request, slug):
     if person is None:
         raise Http404("Person not found")
 
+    # Soft-merge redirect: a duplicate row links to its canonical
+    # via merged_into. The detail page for the duplicate 301s to
+    # the canonical so search engines and bookmarks consolidate.
+    if person.merged_into_id and person.merged_into.slug:
+        return redirect(
+            "person-detail", slug=person.merged_into.slug,
+            permanent=True,
+        )
+
     books_by_role: dict[str, list[Book]] = defaultdict(list)
     for ba in (
         BookAuthor.objects
@@ -332,6 +341,13 @@ def place_detail_view(request, slug):
     Detail view of a city, addressed by slug.
     """
     city = get_object_or_404(City, slug=slug, live=True)
+
+    # Soft-merge redirect (mirrors person_detail_view).
+    if city.merged_into_id and city.merged_into.slug:
+        return redirect(
+            "place-detail", slug=city.merged_into.slug,
+            permanent=True,
+        )
 
     geolocation = Geolocation.objects.filter(city=city).first()
 

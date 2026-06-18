@@ -240,7 +240,12 @@ class Command(BaseCommand):
     def _emit_persons(self, lines, base, retrieved):
         count = 0
         wikidata_field_present = hasattr(Person, "wikidata_id")
-        qs = Person.objects.filter(live=True)
+        qs = Person.objects.filter(
+            live=True,
+            merged_into__isnull=True,
+        )
+        if hasattr(Person, "entity_type"):
+            qs = qs.filter(entity_type="person")
         if wikidata_field_present:
             qs = qs.exclude(wikidata_id="")
         else:
@@ -298,7 +303,7 @@ class Command(BaseCommand):
     def _emit_cities(self, lines, base, retrieved):
         count = 0
         for c in (
-            City.objects.filter(live=True)
+            City.objects.filter(live=True, merged_into__isnull=True)
             .exclude(wikidata_id="")
             .iterator(chunk_size=200)
         ):
