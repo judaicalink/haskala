@@ -543,6 +543,24 @@ class Person(
 
     pseudonym = models.CharField(max_length=255, blank=True)
 
+    # Soft-dedup pointer. Mirrors the City field added in Phase 1:
+    # two rows that describe the same person stay in the database
+    # so any legacy FK pointing at the merged row still resolves,
+    # but the public-site detail page can redirect to the canonical
+    # row + the Wikidata / BEACON / search layers can filter out
+    # the duplicate. The curator verifies each merge against the
+    # GND / VIAF / Wikidata anchor before pointing merged_into.
+    merged_into = models.ForeignKey(
+        "self",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="merged_from",
+        help_text="Canonical Person row this entry has been merged "
+                  "into. Setting this hides the row from listings "
+                  "but preserves the FK target for legacy data.",
+    )
+
     aliases = GenericRelation(
         "AliasName",
         object_id_field="object_id",
@@ -550,8 +568,8 @@ class Person(
     )
 
     # Wagtail-admin layout. Uses FieldPanel so the place_of_birth /
-    # place_of_death FK fields render as searchable City chooser
-    # modals (parity with the City self-FK fix).
+    # place_of_death + merged_into FK fields render as searchable
+    # chooser modals (parity with the City self-FK fix).
     panels = [
         FieldPanel("pref_label"),
         FieldPanel("german_name"),
@@ -567,6 +585,7 @@ class Person(
         FieldPanel("place_of_death"),
         FieldPanel("gender"),
         FieldPanel("occupations"),
+        FieldPanel("merged_into"),
         FieldPanel("slug"),
     ]
 
@@ -605,6 +624,17 @@ class Person(
 
     def get_absolute_url(self):
         return f"/persons/{self.slug}/" if self.slug else f"/persons/{self.uuid}/"
+
+    @property
+    def canonical(self):
+        """Walk the merged_into chain (5-hop cap so a curator-side
+        misconfiguration / loop can't hang a request). Returns
+        ``self`` for rows that aren't merged."""
+        c, hops = self, 0
+        while c.merged_into_id and hops < 5:
+            c = c.merged_into
+            hops += 1
+        return c
 
 
 class Edition(LegacyImportedModel):
