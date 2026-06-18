@@ -166,6 +166,7 @@ class Command(BaseCommand):
             .filter(
                 live=True,
                 entity_type="person",
+                merged_into__isnull=True,
             )
             .filter(wikidata_id__in=("", None))
             .order_by("pref_label")

@@ -157,11 +157,14 @@ class Command(BaseCommand):
             .exclude(**{attr: ""})
             .order_by(attr)
         )
-        # Restrict Person rows to actual humans -- organizations
-        # use different authority-record families and shouldn't be
-        # advertised against, say, GND-Tp.
+        # Restrict Person rows to actual humans (skip organisations)
+        # AND to non-merged rows -- when a duplicate has been
+        # soft-merged into a canonical, only the canonical should
+        # advertise the back-link.
         if model is Person and hasattr(model, "entity_type"):
             qs = qs.filter(entity_type="person")
+        if model is Person and hasattr(model, "merged_into"):
+            qs = qs.filter(merged_into__isnull=True)
         # Restrict City rows to live + non-merged ones so merged
         # alternate rows (Pressburg -> Bratislava) don't show up
         # alongside their canonical.
