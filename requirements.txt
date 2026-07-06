@@ -17,7 +17,7 @@ isodate==0.7.2
 l18n==2021.3
 openpyxl==3.1.2
 Pillow
-pyparsing==3.1.1
+pyparsing==3.3.2
 pytz==2026.2
 rdflib==7.6.0
 requests==2.34.2
