@@ -15,7 +15,7 @@ html5lib==1.1
 idna==3.18
 isodate==0.7.2
 l18n==2021.3
-openpyxl==3.1.2
+openpyxl==3.1.5
 Pillow
 pyparsing==3.3.2
 pytz==2026.2
