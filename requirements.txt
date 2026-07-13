@@ -4,7 +4,7 @@ beautifulsoup4>=4.15.0
 certifi==2026.6.17
 charset-normalizer==3.3.2
 defusedxml==0.7.1
-Django>=6.0.6,<7
+Django>=6.0.7,<7
 djangorestframework
 django-filter
 drf-spectacular
